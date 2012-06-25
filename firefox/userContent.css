@@ -1,0 +1,65 @@
+#plusone,         /* Publicly recommend on Google */
+.fb-like,         /* Facebook Like button         */
+[class*=addthis], /* addthis.com                  */
+[href*=addthis]   /* addthis.com                  */
+    { display: none !important; }
+
+@-moz-document domain(facebook.com) {
+#rightCol /* Games You May Like, etc. */
+    { display: none !important; }
+}
+
+@-moz-document url-prefix(http://superuser.com) {
+/* Need http to filter out meta.superuser.com */
+.question-hyperlink         /* Colors were reversed */
+    { color: #13b3bd !important; }
+.question-hyperlink:visited /* Colors were reversed */
+    { color: #1086a4 !important; }
+}
+
+@-moz-document
+domain(serverfault.com),
+domain(stackexchange.com),
+domain(stackoverflow.com),
+domain(superuser.com) {
+#tag-menu,           /* Shows when you hover on a tag */
+#hlinks-custom,      /* Blog                          */
+.community-bulletin, /* Community Bulletin            */
+.profile-popup,      /* Profile popup                 */
+.profile-triangle    /* Profile triangle              */
+    { display: none !important; }
+}
+
+@-moz-document domain(google.com) {
+#ab_ctl_ps, /* Show personal results  */
+#gbq1,      /* Doodle on results page */
+#hplogo,    /* Doodle on landing page */
+#lc,        /* Change location        */
+#ms,        /* Search type            */
+#rhs_block, /* Map for                */
+.esw,       /* +1 button              */
+.lnsep,     /* Line separator         */
+.pmoabs,    /* Install Google Chrome  */
+.vspib      /* Instant Previews       */
+    { display: none !important; }
+.vshid /* Cached links */
+    { display: block !important; }
+}
+
+@-moz-document domain(youtube.com) {
+#alerts /* Alerts */
+    { display: none !important; }
+}
+
+@-moz-document domain(wikipedia.org) {
+#siteNotice,       /* Wikipedia ad      */
+#watchlist-message /* Watchlist message */
+    { display: none !important; }
+}
+
+@-moz-document domain(github.com) {
+.github-jobs-promotion, /* Jobs ad */
+.native-clones, /* Windows clone */
+.octofication /* Broadcasts */
+    { display: none !important; }
+}

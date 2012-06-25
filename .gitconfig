@@ -1,0 +1,19 @@
+# stackoverflow.com/questions/572549
+# "git commit -a", modified and deleted files
+# "git add .", modified and new files
+# "git add -u", modified and deleted files
+# "git add -A", modified, new and deleted files
+[alias]
+  c = "!git add -A; git commit -m \"$(git status -s)\""
+[color]
+  ui = true
+[core]
+  # lets try notepad function
+  editor = notepad
+[sendemail]
+  smtpencryption = tls
+  smtpserver = smtp.gmail.com
+  smtpuser = svnpenn@gmail.com
+[user]
+  email = svnpenn@gmail.com
+  name = Steven Penny

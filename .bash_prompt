@@ -1,0 +1,10 @@
+git_ps1(){
+    g=$(cat .git/HEAD 2>/dev/null) && {
+        test ${#g} = 40 && g=${g:0:7} || g=${g##*/}
+        printf "($g)"
+    }
+}
+
+PS1='\e];Cygwin\a
+\e[32m\u@\h \e[33m\w $(git_ps1)\e[m
+$ '
