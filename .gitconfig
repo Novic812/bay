@@ -8,7 +8,6 @@
 [color]
   ui = true
 [core]
-  # lets try notepad function
   editor = notepad
 [sendemail]
   smtpencryption = tls
