@@ -7,9 +7,10 @@ mklink(){
 }
 
 # ~ files
-for i in .bash_profile .bash_prompt .gemrc .gitconfig .inputrc .ssh .wgetrc; do
+for i in .{bash_profile,bash_prompt,exports,gemrc,gitconfig,inputrc,ssh,wgetrc}; do
   mklink "$i" "/c/home/GitHub/dotfiles/$i"
 done
+# git ls-files | grep -v -e .gitignore -e README -e bootstrap.sh -e /
 
 # Symlink all Firefox profiles
 for i in "$APPDATA"/*/*/Profiles/*; do
