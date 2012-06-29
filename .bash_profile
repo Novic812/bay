@@ -9,15 +9,6 @@ PATH+=":/c/home/GitHub/etc"
 PATH+=":/c/php"
 PATH+=":$(cygpath -S)" # notepad.exe
 
-# Functions; need to export so that scripts can use them
-clear(){
-    printf '\ec'
-}
-notepad(){
-  cygpath -m "$1" | xargs notepad
-}
-export -f clear notepad
-
 # CYGWIN; needs to be first
 export CYGWIN='nodosfilewarning'
 
@@ -26,3 +17,4 @@ git config core.filemode false 2>/dev/null
 
 # Load dotfiles
 . ~/.bash_prompt
+. ~/.functions
