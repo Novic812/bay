@@ -1,23 +1,29 @@
 #!/bin/bash
 
 mklink(){
-  mapfile -t a < <(cygpath -w "$@")
+  mapfile -t a < <(cygpath -aw "$@")
   [ -d "$2" ] && d=/d || d=
   cmd /c mklink $d "${a[@]}"
 }
 
-# ~ files
-for i in .{bash_profile,bash_prompt,exports,gemrc,gitconfig,inputrc,ssh,wgetrc}; do
-  mklink "$i" "/c/home/GitHub/dotfiles/$i"
+# ~
+cd "C:/home/GitHub/dotfiles"
+git ls-files -ix ".*" | while read line; do
+  mklink "$HOME/$line" "$line"
 done
-# git ls-files | grep -v -e .gitignore -e README -e bootstrap.sh -e /
 
-# Symlink all Firefox profiles
+# firefox
+cd firefox
 for i in "$APPDATA"/*/*/Profiles/*; do
-  cd "$i"
-  mklink "user.js" "/c/home/GitHub/dotfiles/firefox/user.js"
-  mklink "chrome" "/c/home/GitHub/dotfiles/firefox/chrome"
+  mklink "$i/user.js" "user.js"
+  mklink "$i/chrome" "chrome"
 done
+cd -
+
+# notepad2
+cd notepad2
+cp * "$APPDATA"/Notepad2
+cd -
 
 # Mount C:
 mount -c "/"
