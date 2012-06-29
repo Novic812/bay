@@ -12,6 +12,6 @@ read PATH < <(printf ":%s" "${paths[@]}" | cut -c2-)
 git config core.filemode false 2>/dev/null
 
 # Load dotfiles
-. ~/.bash_prompt
-. ~/.functions
-. ~/.exports
+for file in ~/.{bash_prompt,exports,functions}; do
+  . "$file"
+done
