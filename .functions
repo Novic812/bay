@@ -12,9 +12,6 @@ notepad(){
 export -f clear notepad
 
 bootstrap(){
-  # Use cp instead of symlink
-  #   mathiasbynens/dotfiles is using it
-  #   cp prevents programs from writing to the repo
   cd ~/dotfiles
   # ~
   git ls-files -ix ".*" | xargs cp -t ~
@@ -22,9 +19,20 @@ bootstrap(){
   cp -r firefox/. "$APPDATA"/*/*/Profiles/*
   # notepad2
   cp -r notepad2/. "$APPDATA"/Notepad2
-  # Mount C:
-  mount -c /
-  mount -m > /etc/fstab
   # Hide dotfiles
   # attrib /d /s +h ".*"
+}
+
+chere(){
+  # Add Cygwin to right click menus
+  keys=(
+    /root/Directory/Background/shell/Cygwin
+    /root/Directory/shell/Cygwin
+  )
+  data="wscript $(cygpath -m $HOME)/dotfiles/.vbs \"%v\""
+  for key in "${keys[@]}"; do
+    regtool add "$key"
+    regtool add "$key/command"
+    regtool set "$key/command/" "$data"
+  done
 }
