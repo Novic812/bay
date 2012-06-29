@@ -1,0 +1,6 @@
+# CYGWIN; needs to be first
+export CYGWIN='nodosfilewarning'
+
+# History
+HISTCONTROL='ignoredups'
+PROMPT_COMMAND='history -a'

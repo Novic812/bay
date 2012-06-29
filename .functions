@@ -10,31 +10,3 @@ notepad(){
 }
 
 export -f clear notepad
-
-bootstrap(){
-  cd ~/dotfiles
-  # ~
-  git ls-files -ix ".*" | xargs cp -t ~
-  # firefox
-  cp -r firefox/. "$APPDATA"/*/*/Profiles/*
-  # notepad2
-  cp -r notepad2/. "$APPDATA"/Notepad2
-  # Hide dotfiles
-  # attrib /d /s +h ".*"
-  . ~/.bash_profile
-  cd -
-}
-
-purple(){
-  printf "\e[1;35m%s\e[m" "$1"
-}
-
-status(){
-  for i in ~/*/; do
-    clear
-    cd $i
-    git status
-    purple $i
-    read
-  done
-}

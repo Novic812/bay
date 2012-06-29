@@ -1,16 +1,12 @@
-# History
-HISTCONTROL='ignoredups'
-PROMPT_COMMAND='history -a'
-
 # PATH
-PATH="/usr/bin"
-PATH+=":/usr/local/bin"
-PATH+=":/c/home/GitHub/etc"
-PATH+=":/c/php"
-PATH+=":$(cygpath -S)" # notepad.exe
-
-# CYGWIN; needs to be first
-export CYGWIN='nodosfilewarning'
+paths=(
+  /c/php
+  /usr/bin
+  /usr/local/bin
+  ~/etc
+  $(cygpath -S) # notepad.exe
+)
+read PATH < <(printf ":%s" "${paths[@]}" | cut -c2-)
 
 # Ignore incorrect file modes
 git config core.filemode false 2>/dev/null
@@ -18,3 +14,4 @@ git config core.filemode false 2>/dev/null
 # Load dotfiles
 . ~/.bash_prompt
 . ~/.functions
+. ~/.exports
