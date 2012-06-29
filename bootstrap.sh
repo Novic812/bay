@@ -1,29 +1,17 @@
-#!/bin/bash
-
-mklink(){
-  mapfile -t a < <(cygpath -aw "$@")
-  [ -d "$2" ] && d=/d || d=
-  cmd /c mklink $d "${a[@]}"
-}
+#!/bin/sh
+# Use cp instead of symlink
+#   mathiasbynens/dotfiles is using it
+#   cp prevents programs from writing to the repo
+cd "${0##*/}"
 
 # ~
-cd "C:/home/GitHub/dotfiles"
-git ls-files -ix ".*" | while read line; do
-  mklink "$HOME/$line" "$line"
-done
+git ls-files -ix ".*" | xargs cp -t ~
 
 # firefox
-cd firefox
-for i in "$APPDATA"/*/*/Profiles/*; do
-  mklink "$i/user.js" "user.js"
-  mklink "$i/chrome" "chrome"
-done
-cd -
+cp -r firefox/. "$APPDATA"/*/*/Profiles/*
 
 # notepad2
-cd notepad2
-cp * "$APPDATA"/Notepad2
-cd -
+cp -r notepad2/. "$APPDATA"/Notepad2
 
 # Mount C:
 mount -c "/"
