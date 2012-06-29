@@ -1,0 +1,25 @@
+#!/bin/sh
+# Cygwin post install
+
+# Add Cygwin to right click menus
+keys=(
+  /root/Directory/Background/shell/Cygwin
+  /root/Directory/shell/Cygwin
+)
+data="wscript $(cygpath -m $HOME)/dotfiles/.vbs \"%v\""
+for key in "${keys[@]}"; do
+  regtool add "$key"
+  regtool add "$key/command"
+  regtool set "$key/command/" "$data"
+done
+
+# technet.microsoft.com/en-us/library/cc957410
+regtool set '/user/Console/QuickEdit' 1
+# 0x01900384 (26215300)
+regtool set '/user/Console/WindowPosition' 26215300
+# 0x00190050 (1638480)
+regtool set '/user/Console/WindowSize' 1638480
+
+# Mount C:
+mount -c /
+mount -m > /etc/fstab

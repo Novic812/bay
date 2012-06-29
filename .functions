@@ -21,18 +21,5 @@ bootstrap(){
   cp -r notepad2/. "$APPDATA"/Notepad2
   # Hide dotfiles
   # attrib /d /s +h ".*"
-}
-
-chere(){
-  # Add Cygwin to right click menus
-  keys=(
-    /root/Directory/Background/shell/Cygwin
-    /root/Directory/shell/Cygwin
-  )
-  data="wscript $(cygpath -m $HOME)/dotfiles/.vbs \"%v\""
-  for key in "${keys[@]}"; do
-    regtool add "$key"
-    regtool add "$key/command"
-    regtool set "$key/command/" "$data"
-  done
+  . ~/.bash_profile
 }
