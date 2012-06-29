@@ -22,4 +22,19 @@ bootstrap(){
   # Hide dotfiles
   # attrib /d /s +h ".*"
   . ~/.bash_profile
+  cd -
+}
+
+purple(){
+  printf "\e[1;35m%s\e[m" "$1"
+}
+
+status(){
+  for i in ~/*/; do
+    clear
+    cd $i
+    git status
+    purple $i
+    read
+  done
 }
