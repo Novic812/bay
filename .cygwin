@@ -6,7 +6,7 @@ keys=(
   /root/Directory/Background/shell/Cygwin
   /root/Directory/shell/Cygwin
 )
-data="wscript $(cygpath -m $HOME)/dotfiles/.vbs \"%v\""
+data="cmd /c set CHERE_INVOKING=1 & cd %v & start C:\cygwin\bin\bash -l"
 for key in "${keys[@]}"; do
   regtool add "$key"
   regtool add "$key/command"
