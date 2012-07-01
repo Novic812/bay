@@ -1,17 +1,19 @@
 #!/bin/sh
 # Cygwin post install
 
+# Warnings
+setx -m CYGWIN nodosfilewarning
+
 # Add Cygwin to right click menus
 setx -m CHERE_INVOKING 1
 keys=(
   /root/Directory/Background/shell/Cygwin
   /root/Directory/shell/Cygwin
 )
-data="cmd /c cd %v & start C:\cygwin\bin\bash -l"
 for key in "${keys[@]}"; do
   regtool add "$key"
   regtool add "$key/command"
-  regtool set "$key/command/" "$data"
+  regtool set "$key/command/" "cmd /c cd %v & start C:\cygwin\bin\bash -l"
 done
 
 # technet.microsoft.com/en-us/library/cc957410
