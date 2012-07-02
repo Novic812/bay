@@ -1,3 +1,4 @@
+#!/bin/sh
 git_ps1(){
     g=$(cat .git/HEAD 2>/dev/null) && {
         test ${#g} = 40 && g=${g:0:7} || g=${g##*/}
