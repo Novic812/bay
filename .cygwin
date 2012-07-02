@@ -34,4 +34,4 @@ wget -qO- sources.redhat.com/cygwin/mirrors.lst \
   | cut -d\; -f1 \
   | while read; do
     echo "${#REPLY} $REPLY"
-  done | sort -n
+  done | sort
