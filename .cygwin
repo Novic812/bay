@@ -38,6 +38,5 @@ wget -qO- sources.redhat.com/cygwin/mirrors.lst \
   | grep "United States" \
   | grep "ftp" \
   | cut -d\; -f1 \
-  | while read; do
-    echo "${#REPLY} $REPLY"
-  done | sort
+  | while read r; do echo "${#r} $r"; done \
+  | sort
