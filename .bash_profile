@@ -1,9 +1,8 @@
 # PATH
 paths=(
-  /c/php
+  /opt/etc
   /usr/bin
   /usr/local/bin
-  ~/etc
   $(cygpath -S) # notepad.exe
 )
 read PATH < <(printf ":%s" "${paths[@]}" | cut -c2-)
