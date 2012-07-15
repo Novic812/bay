@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script need to be sourced
-[ $SHLVL = 2 ] && echo "Usage: . ${0##*/}" && exit
+[ $SHLVL = 2 ] && echo "Usage:  . $0" && exit
 
 # cp prevents programs from writing to the repo
 pushd /opt/dotfiles
