@@ -3,16 +3,12 @@
 [ $SHLVL = 2 ] && echo "Usage: . ${0##*/}" && exit
 
 # cp prevents programs from writing to the repo
-pushd ~/dotfiles
+pushd /opt/dotfiles
 git ls-files -ix ".*" | xargs cp -t ~
 # firefox
 cp -r firefox/. "$APPDATA"/*/*/Profiles/*
 # notepad2
 cp -r notepad2/. "$APPDATA"/Notepad2
-
-# Hide
-cd
-attrib +h
 
 # Apply
 popd
