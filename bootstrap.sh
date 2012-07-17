@@ -3,13 +3,14 @@
 [ $SHLVL = 2 ] && echo "Usage:  . $0" && exit
 
 # cp prevents programs from writing to the repo
-pushd /opt/dotfiles
-git ls-files -ix ".*" | xargs cp -t ~
-# firefox
-cp -r firefox/. "$APPDATA"/*/*/Profiles/*
-# notepad2
-cp -r notepad2/. "$APPDATA"/Notepad2
+cd /opt/dotfiles
+find -name .\* -type f -exec cp {} ~ \;
+find $APPDATA -name chrome -exec cp -r firefox/. {} \;
+find $APPDATA -name Notepad2 -exec cp -r notepad2/. {} \;
+cd -
+
+# .ssh
+cp -r /c/Dropbox/Documents/.ssh ~
 
 # Apply
-popd
 . ~/.bash_profile
