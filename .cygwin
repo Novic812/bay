@@ -21,8 +21,8 @@ c /root/Directory/shell/VLC "$PROGRAMFILES\VideoLAN\VLC\vlc \"%v\""
 
 # QuickEdit Mode
 regtool set /user/Console/QuickEdit 1
-# 1000 x 80 = 0x3e8 x 0x50 = 0x3e80050
-regtool set /user/Console/ScreenBufferSize 0x3e80050
+# 2000 x 80 = 0x7d0 x 0x50 = 0x7d00050
+regtool set /user/Console/ScreenBufferSize 0x7d00050
 # 400 x 900 = 0x190 x 0x384 = 0x1900384
 regtool set /user/Console/WindowPosition 0x1900384
 # 25 x 80 = 0x19 x 0x50 = 0x190050
