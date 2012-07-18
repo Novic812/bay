@@ -4,7 +4,7 @@
 # "git add -u", modified and deleted files
 # "git add -A", modified, new and deleted files
 [alias]
-  c = "!git add -A; git status -s | git commit -F-"
+  c = !"git status -s >/tmp/s; git add -A; git commit -F- </tmp/s"
 [color]
   ui = true
 [core]
