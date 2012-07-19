@@ -1,2 +1,9 @@
 #!/bin/sh
 # This file will install Cygwin packages, similar to .brew
+l=C:/cygwin/usr/local/bin
+m=ftp://lug.mtu.edu/cygwin
+pm=ftp://mirrors.kernel.org/sources.redhat.com/cygwinports
+pk=http://cygwinports.org/ports.gpg
+
+setup -nq -l $l -s $m -P git
+setup -nq -l $l -s $pm -K $pk -P php
