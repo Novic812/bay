@@ -8,9 +8,8 @@ paths=(
   /usr/local/bin
   ${COMSPEC%\\*} # notepad.exe
 )
-IFS=:
-PATH="${paths[*]}"
-IFS=$' \t\n'
+: "${paths[*]}"
+PATH=${_// /:}
 
 # Ignore incorrect file modes
 git config core.filemode false 2>/dev/null
