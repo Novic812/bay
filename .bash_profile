@@ -8,7 +8,9 @@ paths=(
   /usr/local/bin
   ${COMSPEC%\\*} # notepad.exe
 )
-read -r PATH < <(printf ":%s" "${paths[@]}" | cut -c2-)
+IFS=:
+PATH="${paths[*]}"
+IFS=$' \t\n'
 
 # Ignore incorrect file modes
 git config core.filemode false 2>/dev/null
