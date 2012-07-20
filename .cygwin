@@ -5,7 +5,7 @@ r(){
 }
 
 # Assoicate no extension and unknown files with Notepad2
-: "$ProgramW6432\Notepad2\Notepad2 %1"
+: 'notepad %1'
 r 'HKCR\*\shell\Notepad2\command' "$_"
 r 'HKCR\Unknown\shell\Notepad2\command' "$_"
 r 'HKCR\Unknown\shell' Notepad2
