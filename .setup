@@ -7,3 +7,11 @@ pk=http://cygwinports.org/ports.gpg
 
 setup -nq -l $l -s $m -P git
 setup -nq -l $l -s $pm -K $pk -P php
+
+# Print Cygwin mirrors
+wget -qO- sources.redhat.com/cygwin/mirrors.lst \
+  | grep "United States" \
+  | grep "ftp" \
+  | cut -d\; -f1 \
+  | while read r; do echo "${#r} $r"; done \
+  | sort

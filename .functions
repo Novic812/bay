@@ -2,7 +2,7 @@
 # Functions; need to export so that scripts can use them
 
 clear(){
-    printf '\ec'
+    echo -e '\ec'
 }
 
 notepad(){

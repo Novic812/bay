@@ -1,32 +1,31 @@
 #!/bin/sh
 
-c(){
-  regtool add "$1"
-  regtool add "$1/command"
-  regtool set "$1/command/" "$2"
+r(){
+  reg add "$1" -d "$2" -f ${3+-v $3 -t REG_DWORD}
 }
 
 # Assoicate no extension and unknown files with Notepad2
-c /root/*/shell/Notepad2 'notepad "%1"'
-c /root/Unknown/shell/Notepad2 'notepad "%1"'
-regtool set /root/Unknown/shell/ Notepad2
+: "$ProgramW6432\Notepad2\Notepad2 %1"
+r 'HKCR\*\shell\Notepad2\command' "$_"
+r 'HKCR\Unknown\shell\Notepad2\command' "$_"
+r 'HKCR\Unknown\shell' Notepad2
 
 # Add Cygwin to right click menus
-d='cmd /c cd %v & start C:\cygwin\bin\bash -l'
-c /root/Directory/Background/shell/Cygwin "$d"
-c /root/Directory/shell/Cygwin "$d"
+: 'cmd /c cd %v & start C:\cygwin\bin\bash -l'
+r 'HKCR\Directory\Background\shell\Cygwin\command' "$_"
+r 'HKCR\Directory\shell\Cygwin\command' "$_"
 
 # VLC option for folders
-c /root/Directory/shell/VLC "$PROGRAMFILES\VideoLAN\VLC\vlc \"%v\""
+r 'HKCR\Directory\shell\VLC\command' "$PROGRAMFILES\VideoLAN\VLC\vlc %1"
 
 # QuickEdit Mode
-regtool set /user/Console/QuickEdit 1
+r 'HKCU\Console' 1 QuickEdit
 # 2000 x 80 = 0x7d0 x 0x50 = 0x7d00050
-regtool set /user/Console/ScreenBufferSize 0x7d00050
+r 'HKCU\Console' 0x7d00050 ScreenBufferSize
 # 400 x 900 = 0x190 x 0x384 = 0x1900384
-regtool set /user/Console/WindowPosition 0x1900384
+r 'HKCU\Console' 0x1900384 WindowPosition
 # 25 x 80 = 0x19 x 0x50 = 0x190050
-regtool set /user/Console/WindowSize 0x190050
+r 'HKCU\Console' 0x190050 WindowSize
 
 # Mount C:
 mount -c /
@@ -36,11 +35,3 @@ mount -m > /etc/fstab
 # Bash is invoked, and defined permanently.
 setx -m CYGWIN nodosfilewarning
 setx -m CHERE_INVOKING 1
-
-# Print Cygwin mirrors
-wget -qO- sources.redhat.com/cygwin/mirrors.lst \
-  | grep "United States" \
-  | grep "ftp" \
-  | cut -d\; -f1 \
-  | while read r; do echo "${#r} $r"; done \
-  | sort
