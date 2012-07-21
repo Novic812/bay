@@ -1,12 +1,21 @@
 #!/bin/sh
 # This file will install Cygwin packages, similar to .brew
-l=C:/cygwin/usr/local/bin
-m=ftp://lug.mtu.edu/cygwin
-pm=ftp://mirrors.kernel.org/sources.redhat.com/cygwinports
-pk=http://cygwinports.org/ports.gpg
 
-setup -nq -l $l -s $m -P git
-setup -nq -l $l -s $pm -K $pk -P php
+packages=(
+  git
+  php
+  php-bcmath
+  php-curl
+  php-simplexml
+)
+: "${packages[*]}"
+
+setup -nq \
+  -l $HOMEDRIVE/cygwin/usr/local/bin \
+  -P ${_// /,} \
+  -s ftp://lug.mtu.edu/cygwin \
+  -s ftp://mirrors.kernel.org/sources.redhat.com/cygwinports \
+  -K http://cygwinports.org/ports.gpg
 
 # Print Cygwin mirrors
 wget -qO- sources.redhat.com/cygwin/mirrors.lst \
