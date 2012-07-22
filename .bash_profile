@@ -2,14 +2,14 @@
 LANG=
 
 # PATH
-paths=(
+p=(
   /opt/etc
   /usr/bin
   /usr/local/bin
   \\progra~1/7-zip
   \\windows/system32
 )
-IFS=: read -r PATH <<< "${paths[*]}"
+IFS=: read -r PATH <<< "${p[*]}"
 
 # Ignore incorrect file modes
 git config core.filemode false 2>/dev/null
