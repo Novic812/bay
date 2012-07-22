@@ -9,7 +9,7 @@ paths=(
   \\progra~1/7-zip
   \\windows/system32
 )
-IFS=: PATH="${paths[*]}" IFS=$' \t\n'
+IFS=: read -r PATH <<< "${paths[*]}"
 
 # Ignore incorrect file modes
 git config core.filemode false 2>/dev/null
