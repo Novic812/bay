@@ -8,11 +8,11 @@ packages=(
   php-curl
   php-simplexml
 )
-: "${packages[*]}"
+IFS=, read <<< "${packages[*]}"
 
 setup -nq \
-  -l $HOMEDRIVE/cygwin/usr/local/bin \
-  -P ${_// /,} \
+  -P $REPLY \
+  -l \\cygwin/usr/local/bin \
   -s ftp://lug.mtu.edu/cygwin \
   -s ftp://mirrors.kernel.org/sources.redhat.com/cygwinports \
   -K http://cygwinports.org/ports.gpg

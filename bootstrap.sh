@@ -10,7 +10,7 @@ find $APPDATA -name Notepad2 -exec cp -r notepad2/. {} \;
 cd -
 
 # .ssh
-cp -r $HOMEDRIVE/Dropbox/Documents/.ssh ~
+cp -r \\dropbox/documents/.ssh ~
 
 # Apply
 . ~/.bash_profile
