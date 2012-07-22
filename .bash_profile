@@ -6,10 +6,10 @@ paths=(
   /opt/etc
   /usr/bin
   /usr/local/bin
-  ${COMSPEC%\\*} # notepad.exe
+  \\progra~1/7-zip
+  \\windows/system32
 )
-: "${paths[*]}"
-PATH=${_// /:}
+IFS=: PATH="${paths[*]}" IFS=$' \t\n'
 
 # Ignore incorrect file modes
 git config core.filemode false 2>/dev/null
