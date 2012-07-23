@@ -1,2 +1,2 @@
-HISTCONTROL='ignoredups'
+HISTCONTROL=ignoredups
 PROMPT_COMMAND='history -a'
