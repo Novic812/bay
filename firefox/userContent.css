@@ -1,5 +1,6 @@
 #plusone,         /* Publicly recommend on Google */
 .fb-like,         /* Facebook Like button         */
+.navbar-list,     /* Lorem ipsum dolor sit amet   */
 [class*=addthis], /* addthis.com                  */
 [href*=addthis]   /* addthis.com                  */
     { display: none !important; }
