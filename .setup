@@ -10,9 +10,11 @@ packages=(
 )
 IFS=, read <<< "${packages[*]}"
 
-setup -nq \
+# Run non-quiet so we can customize if necessary.
+# Installer does not recognize \cygwin.
+setup -n \
   -P $REPLY \
-  -l \\cygwin/usr/local/bin \
+  -l $HOMEDRIVE/cygwin/usr/local/bin \
   -s ftp://lug.mtu.edu/cygwin \
   -s ftp://mirrors.kernel.org/sources.redhat.com/cygwinports \
   -K http://cygwinports.org/ports.gpg
