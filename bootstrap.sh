@@ -11,6 +11,7 @@ cd -
 
 # .ssh
 cp -r \\dropbox/documents/.ssh ~
+chmod 700 ~/.ssh/id_rsa
 
 # Apply
 . ~/.bash_profile
