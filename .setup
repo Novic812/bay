@@ -1,29 +1,24 @@
 #!/bin/sh
 # This file will install Cygwin packages, similar to .brew
 
-packages=(
-  git
-  openssh
-  php
-  php-bcmath
-  php-curl
-  php-simplexml
-)
-IFS=, read <<< "${packages[*]}"
+packages='
+git
+make
+mingw64-i686-gcc-core
+openssh
+openssl
+php
+php-bcmath
+php-curl
+php-simplexml
+'
 
 # Run non-quiet so we can customize if necessary.
 # Installer does not recognize \cygwin.
+
 setup -n \
-  -P $REPLY \
   -l $HOMEDRIVE/cygwin/usr/local/bin \
+  -P ${packages//$'\n'/,} \
   -s ftp://lug.mtu.edu/cygwin \
   -s ftp://mirrors.kernel.org/sources.redhat.com/cygwinports \
   -K http://cygwinports.org/ports.gpg
-
-# Print Cygwin mirrors
-wget -qO- sources.redhat.com/cygwin/mirrors.lst \
-  | grep "United States" \
-  | grep "ftp" \
-  | cut -d\; -f1 \
-  | while read r; do echo "${#r} $r"; done \
-  | sort
