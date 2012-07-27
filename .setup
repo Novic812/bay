@@ -2,15 +2,17 @@
 # This file will install Cygwin packages, similar to .brew
 
 packages='
+gcc4-core
 git
 make
 mingw64-i686-gcc-core
 openssh
-openssl
 php
 php-bcmath
 php-curl
 php-simplexml
+ruby
+rubygems
 wget
 '
 
