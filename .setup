@@ -7,11 +7,9 @@ git
 make
 mingw64-i686-gcc-core
 openssh
-php
 php-bcmath
 php-curl
 php-simplexml
-ruby
 rubygems
 wget
 '
@@ -21,7 +19,7 @@ wget
 
 setup -n \
   -l $HOMEDRIVE/cygwin/usr/local/bin \
-  -P ${packages//$'\n'/,} \
   -s ftp://lug.mtu.edu/cygwin \
   -s ftp://mirrors.kernel.org/sources.redhat.com/cygwinports \
-  -K http://cygwinports.org/ports.gpg
+  -K http://cygwinports.org/ports.gpg \
+  -P ${packages//$'\n'/,}
