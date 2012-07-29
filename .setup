@@ -1,7 +1,7 @@
 #!/bin/sh
 # This file will install Cygwin packages, similar to .brew
 
-packages='
+: '
 gcc4-core
 git
 make
@@ -22,4 +22,4 @@ setup -n \
   -s ftp://lug.mtu.edu/cygwin \
   -s ftp://mirrors.kernel.org/sources.redhat.com/cygwinports \
   -K http://cygwinports.org/ports.gpg \
-  -P ${packages//$'\n'/,}
+  -P ${_//$'\n'/,}
