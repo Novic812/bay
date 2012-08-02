@@ -15,4 +15,4 @@ IFS=: read -r PATH <<< "${p[*]}"
 git config core.filemode false 2>/dev/null
 
 # Load dotfiles
-for file in ~/.{bash_prompt,exports,functions}; do . $file; done
+for file in ~/.{aliases,bash_prompt,exports,functions}; do . $file; done

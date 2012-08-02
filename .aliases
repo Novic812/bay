@@ -1,0 +1,1 @@
+alias grepc='grep --color -e$ -e'
