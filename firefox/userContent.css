@@ -3,19 +3,19 @@
 .navbar-list,     /* Lorem ipsum dolor sit amet   */
 [class*=addthis], /* addthis.com                  */
 [href*=addthis]   /* addthis.com                  */
-    { display: none !important; }
+  { display: none !important; }
 
 @-moz-document domain(facebook.com) {
 #rightCol /* Games You May Like, etc. */
-    { display: none !important; }
+  { display: none !important; }
 }
 
 @-moz-document url-prefix(http://superuser.com) {
 /* Need http to filter out meta.superuser.com */
 .question-hyperlink         /* Colors were reversed */
-    { color: #13b3bd !important; }
+  { color: #13b3bd !important; }
 .question-hyperlink:visited /* Colors were reversed */
-    { color: #1086a4 !important; }
+  { color: #1086a4 !important; }
 }
 
 @-moz-document
@@ -28,7 +28,7 @@ domain(superuser.com) {
 .community-bulletin, /* Community Bulletin            */
 .profile-popup,      /* Profile popup                 */
 .profile-triangle    /* Profile triangle              */
-    { display: none !important; }
+  { display: none !important; }
 }
 
 @-moz-document domain(google.com) {
@@ -42,25 +42,25 @@ domain(superuser.com) {
 .lnsep,     /* Line separator         */
 .pmoabs,    /* Install Google Chrome  */
 .vspib      /* Instant Previews       */
-    { display: none !important; }
+  { display: none !important; }
 .vshid /* Cached links */
-    { display: block !important; }
+  { display: block !important; }
 }
 
 @-moz-document domain(youtube.com) {
 #alerts /* Alerts */
-    { display: none !important; }
+  { display: none !important; }
 }
 
 @-moz-document domain(wikipedia.org) {
 #siteNotice,       /* Wikipedia ad      */
 #watchlist-message /* Watchlist message */
-    { display: none !important; }
+  { display: none !important; }
 }
 
 @-moz-document domain(github.com) {
 .github-jobs-promotion, /* Jobs ad */
 .native-clones, /* Windows clone */
 .octofication /* Broadcasts */
-    { display: none !important; }
+  { display: none !important; }
 }
