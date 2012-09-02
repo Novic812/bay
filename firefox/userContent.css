@@ -6,6 +6,7 @@
   { display: none !important; }
 
 @-moz-document domain(facebook.com) {
+[data-gt*=appid], /* All "app" posts */
 #rightCol /* Games You May Like, etc. */
   { display: none !important; }
 }
