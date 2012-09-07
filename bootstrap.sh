@@ -1,6 +1,11 @@
 #!/bin/bash
-# Script need to be sourced
-[ $SHLVL = 2 ] && echo "Usage:  . $0" && exit
+
+die(){
+  echo -e "\e[1;31m$1\e[m"
+  exit
+}
+
+[ $SHLVL = 1 ] || die "Usage:  . $0"
 
 # cp prevents programs from writing to the repo
 cd /opt/dotfiles
