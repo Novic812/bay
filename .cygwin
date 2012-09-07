@@ -34,4 +34,3 @@ mount -m > /etc/fstab
 # These variables need to be defined before
 # Bash is invoked, and defined permanently.
 setx -m CHERE_INVOKING 1
-setx -m CYGWIN nodosfilewarning
