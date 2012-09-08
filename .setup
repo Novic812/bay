@@ -1,25 +1,27 @@
 #!/bin/sh
 # This file will install Cygwin packages, similar to .brew
 
-: '
-gcc4-core
-git
-make
-mingw64-i686-gcc-core
-openssh
-php-bcmath
-php-curl
-php-simplexml
-rubygems
-wget
-'
+packages=(
+  git
+  gcc4 # g++ is needed for git-send-email
+  openssh # needed for git push
+  openssl-devel # needed for git-send-email
+  make
+  mingw64-i686-gcc-core
+  php-bcmath
+  php-curl
+  php-simplexml
+  rubygems
+  wget
+)
+IFS=, read <<< "${packages[*]}"
 
 # Run non-quiet so we can customize if necessary.
 # Installer does not recognize \cygwin.
 
 setup -n \
   -l $HOMEDRIVE/cygwin/usr/local/bin \
+  -P $REPLY \
   -s ftp://lug.mtu.edu/cygwin \
   -s ftp://mirrors.kernel.org/sources.redhat.com/cygwinports \
-  -K http://cygwinports.org/ports.gpg \
-  -P ${_//$'\n'/,}
+  -K http://cygwinports.org/ports.gpg
