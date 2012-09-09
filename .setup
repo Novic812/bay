@@ -11,7 +11,7 @@ packages=(
   php-bcmath
   php-curl
   php-simplexml
-  rubygems
+  ruby
   wget
 )
 IFS=, read <<< "${packages[*]}"
