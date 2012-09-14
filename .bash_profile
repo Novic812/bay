@@ -3,14 +3,15 @@
 # So it is best to just leave it alone
 
 # PATH
+read c < <(cd \\;pwd)
 p=(
   /opt/etc
   /usr/bin
   /usr/local/bin
-  $HOMEDRIVE/progra~1/7-zip
-  $HOMEDRIVE/windows/system32
+  $c/progra~1/7-zip
+  $c/windows/system32
 )
-IFS=: read -r PATH <<< "${p[*]}"
+IFS=: read PATH <<< "${p[*]}"
 
 # Ignore incorrect file modes
 git config core.filemode false 2>/dev/null

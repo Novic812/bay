@@ -15,7 +15,8 @@ find $APPDATA -name Notepad2 -exec cp -r notepad2/. {} \;
 cd -
 
 # .ssh
-cp -r $HOMEDRIVE/dropbox/documents/.ssh ~
+read c < <(cd \\;pwd)
+cp -r $c/dropbox/documents/.ssh ~
 chmod 700 ~/.ssh/id_rsa
 
 # Apply
