@@ -1,7 +1,3 @@
-# grep needs LANG=
-# jekyll needs LANG=en_US.UTF-8
-# So it is best to just leave it alone
-
 # PATH
 read c < <(cd \\;pwd)
 p=(
