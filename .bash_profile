@@ -7,8 +7,8 @@ p=(
   /opt/etc
   /usr/bin
   /usr/local/bin
-  \\progra~1/7-zip
-  \\windows/system32
+  $HOMEDRIVE/progra~1/7-zip
+  $HOMEDRIVE/windows/system32
 )
 IFS=: read -r PATH <<< "${p[*]}"
 
