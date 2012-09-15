@@ -10,8 +10,8 @@ die(){
 # cp prevents programs from writing to the repo
 cd /opt/dotfiles
 find -name '.*' -type f -exec cp {} ~ \;
-find $APPDATA -name chrome -exec cp -r firefox/. {} \;
-find $APPDATA -name Notepad2 -exec cp -r notepad2/. {} \;
+cp -r moonch~1 $APPDATA
+cp -r notepad2 $APPDATA
 cd -
 
 # .ssh
