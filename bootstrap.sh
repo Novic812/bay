@@ -9,8 +9,12 @@ die(){
 
 # cp prevents programs from writing to the repo
 cd /opt/dotfiles
-find -name '.*' -type f -exec cp {} ~ \;
-cp -r moonch~1 notepad2 $APPDATA
+ls -A | while read r; do
+  if [[ -d "$r" ]]
+    then [[ "$r" > / ]] && cp -r "$r" "$APPDATA"
+    else [[ "$r" < / ]] && cp "$r" ~
+  fi
+done
 cd -
 
 # .ssh
