@@ -10,10 +10,8 @@ die(){
 # cp prevents programs from writing to the repo
 cd /opt/dotfiles
 ls -A | while read r; do
-  if [[ -d $r ]]
-    then [[ $r > / ]] && cp -r $r $APPDATA
-    else [[ $r < / ]] && cp $r ~
-  fi
+  [ -d $r ] && [[ $r > / ]] && cp -r $r $APPDATA
+  [ -f $r ] && [[ $r < / ]] && cp $r ~
 done
 cd -
 
