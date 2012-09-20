@@ -18,8 +18,7 @@ done
 cd -
 
 # .ssh
-read c < <(cd \\;pwd)
-cp -r $c/dropbox/documents/.ssh ~
+cp -r $HOMEDRIVE/dropbox/documents/.ssh ~
 chmod 700 ~/.ssh/id_rsa
 
 # Apply
