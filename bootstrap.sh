@@ -9,8 +9,11 @@ die(){
 
 # cp prevents programs from writing to the repo
 cd /opt/dotfiles
-ls -A | grep '^\.' | xargs cp -t ~
-cp -r moonch~1 notepad2 $APPDATA
+ls -A | while read r; do
+  [[ $r < / ]] && cp $r ~ || {
+    [ -d $r ] && cp -r $r $APPDATA
+  }
+done
 cd -
 
 # .ssh
