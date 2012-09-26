@@ -1,4 +1,5 @@
 #!/bin/bash
+/\\ 2>/dev/null
 
 die(){
   echo -e "\e[1;31m$1\e[m"
