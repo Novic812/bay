@@ -1,11 +1,16 @@
 # PATH
-read c < <(cd \\;pwd)
+
+realpath(){
+  read $1 < <(cd ${!1}; pwd)
+}
+
+realpath HOMEDRIVE
 p=(
   /opt/etc
   /usr/bin
   /usr/local/bin
-  $c/progra~1/7-zip
-  $c/windows/system32
+  $HOMEDRIVE/progra~1/7-zip
+  $HOMEDRIVE/windows/system32
 )
 IFS=: read PATH <<< "${p[*]}"
 
