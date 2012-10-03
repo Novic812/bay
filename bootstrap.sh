@@ -5,19 +5,12 @@ die(){
   exit
 }
 
-realpath(){
-  read $1 < <(cd ${!1}; pwd)
-}
-
 [ $SHLVL = 1 ] || die "Usage:  . $0"
-realpath APPDATA
-realpath HOMEDRIVE
-
 # cp prevents programs from writing to the repo
 cd /opt/dotfiles
 ls -A | while read r; do
   if [[ $r < / ]]; then cp $r ~
-    elif [ -d $r ]; then cp -r $r $APPDATA
+    elif [ -d $r ]; then cp -r $r $APPDATA 2>/dev/null
   fi
 done
 cd -
