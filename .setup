@@ -1,7 +1,7 @@
 #!/bin/sh
 # This file will install Cygwin packages, similar to .brew
 
-packages=(
+pc=(
   git
   gcc4 # g++ is needed for git-send-email
   openssh # needed for git push
@@ -14,7 +14,7 @@ packages=(
   ruby
   wget
 )
-IFS=, read <<< "${packages[*]}"
+IFS=, read <<< "${pc[*]}"
 
 # Run non-quiet so we can customize if necessary.
 # Installer does not recognize \cygwin.
