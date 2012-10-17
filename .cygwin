@@ -1,31 +1,30 @@
 #!/bin/sh
 
-r(){
+rg(){
   reg add "$1" -d "$2" -f ${3+-v $3 -t REG_DWORD}
 }
 
 # Assoicate no extension and unknown files with Notepad2
-: 'notepad %1'
-r 'HKCR\*\shell\Notepad2\command' "$_"
-r 'HKCR\Unknown\shell\Notepad2\command' "$_"
-r 'HKCR\Unknown\shell' Notepad2
+rg 'HKCR\*\shell\Notepad2\command' 'notepad %1'
+rg 'HKCR\Unknown\shell\Notepad2\command' 'notepad %1'
+rg 'HKCR\Unknown\shell' Notepad2
 
 # Add Cygwin to right click menus
-: 'cmd /c cd %v & start C:\cygwin\bin\bash -l'
-r 'HKCR\Directory\Background\shell\Cygwin\command' "$_"
-r 'HKCR\Directory\shell\Cygwin\command' "$_"
+dt='cmd /c cd %v & start C:\cygwin\bin\bash -l'
+rg 'HKCR\Directory\Background\shell\Cygwin\command' "$dt"
+rg 'HKCR\Directory\shell\Cygwin\command' "$dt"
 
 # VLC option for folders
-r 'HKCR\Directory\shell\VLC\command' "$PROGRAMFILES\VideoLAN\VLC\vlc %1"
+rg 'HKCR\Directory\shell\VLC\command' "$PROGRAMFILES\VideoLAN\VLC\vlc %1"
 
 # QuickEdit Mode
-r 'HKCU\Console' 1 QuickEdit
+rg 'HKCU\Console' 1 QuickEdit
 # 2000 x 80 = 0x7d0 x 0x50 = 0x7d00050
-r 'HKCU\Console' 0x7d00050 ScreenBufferSize
+rg 'HKCU\Console' 0x7d00050 ScreenBufferSize
 # 400 x 900 = 0x190 x 0x384 = 0x1900384
-r 'HKCU\Console' 0x1900384 WindowPosition
+rg 'HKCU\Console' 0x1900384 WindowPosition
 # 25 x 80 = 0x19 x 0x50 = 0x190050
-r 'HKCU\Console' 0x190050 WindowSize
+rg 'HKCU\Console' 0x190050 WindowSize
 
 # Mount C:
 mount -c /
