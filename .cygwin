@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 rg(){
   reg add "$1" -d "$2" -f ${3+-v $3 -t REG_DWORD}
