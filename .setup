@@ -2,17 +2,16 @@
 # This file will install Cygwin packages, similar to .brew
 
 pc=(
-  git
-  gcc4 # g++ is needed for git-send-email
-  openssh # needed for git push
-  openssl-devel # needed for git-send-email
-  make
-  mingw64-i686-gcc-core
-  php-bcmath
-  php-curl
-  php-simplexml
-  ruby
-  wget
+  php-bcmath            # AdobeHDS.php
+  php-curl              # AdobeHDS.php
+  php-simplexml         # AdobeHDS.php
+  ruby                  # Jekyll
+  wget                  # PolarSSL
+  git                   # RtmpDump
+  make                  # RtmpDump
+  mingw64-i686-gcc-core # RtmpDump
+  openssh               # git push
+  msmtp                 # git send-email
 )
 IFS=, read <<< "${pc[*]}"
 
