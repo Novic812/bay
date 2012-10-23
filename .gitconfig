@@ -4,7 +4,7 @@
 # "git add -u", modified and deleted files
 # "git add -A", modified, new and deleted files
 [alias]
-  c = !"git status -s >/tmp/s; git add -A; git commit -F- </tmp/s"
+  c = ! "git status -s >/tmp/s; git add -A; git commit -F- </tmp/s"
 [branch "master"]
   remote = origin
   merge = refs/heads/master
@@ -13,9 +13,7 @@
 [core]
   editor = notepad
 [sendemail]
-  smtpencryption = tls
-  smtpserver = smtp.gmail.com
-  smtpuser = svnpenn@gmail.com
+  smtpserver = /usr/sbin/msmtp
 [user]
   email = svnpenn@gmail.com
   name = Steven Penny
