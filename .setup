@@ -2,9 +2,6 @@
 # This file will install Cygwin packages, similar to .brew
 
 pc=(
-  php-bcmath            # AdobeHDS.php
-  php-curl              # AdobeHDS.php
-  php-simplexml         # AdobeHDS.php
   ruby                  # Jekyll
   wget                  # PolarSSL
   git                   # RtmpDump
@@ -19,8 +16,6 @@ IFS=, read <<< "${pc[*]}"
 # Installer does not recognize \cygwin.
 
 setup -n \
-  -l $HOMEDRIVE/cygwin/usr/local/bin \
   -P $REPLY \
-  -s ftp://lug.mtu.edu/cygwin \
-  -s ftp://mirrors.kernel.org/sources.redhat.com/cygwinports \
-  -K http://cygwinports.org/ports.gpg
+  -l $HOMEDRIVE/cygwin/usr/local/bin \
+  -s ftp://lug.mtu.edu/cygwin
