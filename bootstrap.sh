@@ -15,7 +15,7 @@ ls -A | while read r; do
 done
 cd -
 
-# .ssh
+# git is very picky about the permissions
 cp -r $HOMEDRIVE/dropbox/documents/.ssh ~
 chmod 700 ~/.ssh/id_rsa
 
