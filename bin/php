@@ -1,0 +1,3 @@
+#!/bin/sh
+# Cygwin wrapper for Windows native php
+cygpath -m "$1" | xargs -I% php.exe % ${@:2}

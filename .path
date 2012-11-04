@@ -1,13 +1,12 @@
-# Make sure to use variable without spaces
-ln -s $HOMEDRIVE/progra~1/7-zip $WINDIR/system32 /usr/local/bin 2>/dev/null
+read < <(cd $HOMEDRIVE; pwd)
 
 pth=(
   /opt/etc
   /usr/bin
   /usr/local/bin
-  /usr/local/bin/7-zip
-  /usr/local/bin/php
-  /usr/local/bin/system32
+  $REPLY/php
+  $REPLY/progra~1/7-zip
+  $REPLY/windows/system32
 )
 
 IFS=: read PATH <<< "${pth[*]}"

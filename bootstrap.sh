@@ -8,11 +8,9 @@ die(){
 [ $SHLVL = 1 ] || die "Usage:  . $0"
 # cp prevents programs from writing to the repo
 cd /opt/dotfiles
-ls -A | while read r; do
-  if [[ $r < / ]]; then cp $r ~
-    elif [ -d $r ]; then cp -r $r $APPDATA 2>/dev/null
-  fi
-done
+cp .* ~
+cp -r bin /usr/local
+cp -r moonch~1 notepad2 $APPDATA 2>/dev/null
 cd -
 
 # git is very picky about the permissions
