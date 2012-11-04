@@ -1,15 +1,3 @@
 #!/bin/sh
 # Cygwin wrapper for Windows native notepad
-
-
-
-echo "$0"
-
-echo "$1"
-
-
-
-
-
-
-
+cygpath -m "$1" | xargs notepad.exe
