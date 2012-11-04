@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 rg(){
   reg add "$1" -d "$2" -f ${3+-v $3 -t REG_DWORD}
@@ -10,7 +10,8 @@ rg 'HKCR\Unknown\shell\Notepad2\command' 'notepad %1'
 rg 'HKCR\Unknown\shell' Notepad2
 
 # Add Cygwin to right click menus
-dt='cmd /c cd %v & start C:\cygwin\bin\bash -l'
+# CHERE_INVOKING does not need to be set permanently
+dt='cmd /c cd %v & set CHERE_INVOKING=1 & start C:\cygwin\bin\bash -l'
 rg 'HKCR\Directory\Background\shell\Cygwin\command' "$dt"
 rg 'HKCR\Directory\shell\Cygwin\command' "$dt"
 
@@ -29,7 +30,3 @@ rg 'HKCU\Console' 0x190050 WindowSize
 # Mount C:
 mount -c /
 mount -m > /etc/fstab
-
-# These variables need to be defined before
-# Bash is invoked, and defined permanently.
-setx -m CHERE_INVOKING 1
