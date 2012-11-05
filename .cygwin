@@ -10,8 +10,7 @@ rg 'HKCR\Unknown\shell\Notepad2\command' 'notepad %1'
 rg 'HKCR\Unknown\shell' Notepad2
 
 # Add Cygwin to right click menus
-# CHERE_INVOKING does not need to be set permanently
-dt='cmd /c cd %v & set CHERE_INVOKING=1 & start C:\cygwin\bin\bash -l'
+dt='cmd /c cd %v & start C:\cygwin\bin\bash --noprofile'
 rg 'HKCR\Directory\Background\shell\Cygwin\command' "$dt"
 rg 'HKCR\Directory\shell\Cygwin\command' "$dt"
 

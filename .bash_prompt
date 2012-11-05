@@ -1,5 +1,3 @@
-#!/bin/sh
-
 git_ps1(){
   test -e .git/HEAD && read g <$_ || exit
   [ ${g::1} = r ] && g=${g##*/} || g=${g::7}
