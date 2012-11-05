@@ -1,19 +1,24 @@
-# stackoverflow.com/questions/572549
 # "git commit -a", modified and deleted files
 # "git add .", modified and new files
 # "git add -u", modified and deleted files
 # "git add -A", modified, new and deleted files
+
 [alias]
   c = ! "git status -s >/tmp/s; git add -A; git commit -F- </tmp/s"
+
 [branch "master"]
   remote = origin
   merge = refs/heads/master
+
 [color]
   ui = true
+
 [core]
   editor = notepad
+
 [sendemail]
   smtpserver = /usr/sbin/msmtp
+
 [user]
   email = svnpenn@gmail.com
   name = Steven Penny
