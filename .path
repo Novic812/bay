@@ -1,4 +1,5 @@
 pth=(
+  /opt/dotfiles/bin
   /opt/etc
   /usr/bin
   /usr/local/bin
