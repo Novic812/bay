@@ -5,7 +5,6 @@
 cd ${0%/*}
 cp .* ~
 cp -r moonch~1 notepad2 $APPDATA 2>/dev/null
-echo ! > ~/.bash_history
 
 # git is very picky about the permissions
 cp -r $HOMEDRIVE/dropbox/documents/.ssh ~
