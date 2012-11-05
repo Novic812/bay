@@ -1,2 +1,5 @@
 # Ignore incorrect file modes
-git config core.filemode false 2>/dev/null
+
+[ -d .git ] &&
+  git config core.filemode false &&
+  git config core.ignorecase false
