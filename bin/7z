@@ -1,0 +1,3 @@
+#!/bin/sh
+# Cygwin wrapper for Windows native 7z
+cygpath -im -- "$@" | xargs $HOMEDRIVE/progra~1/7-zip/7z
