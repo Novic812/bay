@@ -1,66 +1,96 @@
-#plusone,         /* Publicly recommend on Google */
-.fb-like,         /* Facebook Like button         */
-.navbar-list,     /* Lorem ipsum dolor sit amet   */
-[class*=addthis], /* addthis.com                  */
-[href*=addthis]   /* addthis.com                  */
-  { display: none !important; }
-
-@-moz-document domain(facebook.com) {
-[data-gt*=appid], /* All "app" posts */
-#rightCol /* Games You May Like, etc. */
-  { display: none !important; }
+@-moz-document url-prefix(http)
+{
+  #plusone,          /* Publicly recommend on Google */
+  .fb-like,          /* Facebook Like button         */
+  .navbar-list,      /* Lorem ipsum dolor sit amet   */
+  [class*=addthis],  /* addthis.com                  */
+  [href*=addthis]    /* addthis.com                  */
+    {
+      display: none !important;
+    }
 }
 
-@-moz-document url-prefix(http://superuser.com) {
-/* Need http to filter out meta.superuser.com */
-.question-hyperlink         /* Colors were reversed */
-  { color: #13b3bd !important; }
-.question-hyperlink:visited /* Colors were reversed */
-  { color: #1086a4 !important; }
+@-moz-document domain(facebook.com)
+{
+  [data-gt*=appid],  /* All "app" posts          */
+  #rightCol          /* Games You May Like, etc. */
+    {
+      display: none !important;
+    }
+}
+
+@-moz-document url-prefix(http://superuser.com)
+{
+  /* Need http to filter out meta.superuser.com */
+  .question-hyperlink  /* Colors were reversed */
+    {
+      color: #13b3bd !important;
+    }
+  .question-hyperlink:visited  /* Colors were reversed */
+    {
+      color: #1086a4 !important;
+    }
 }
 
 @-moz-document
 domain(serverfault.com),
 domain(stackexchange.com),
 domain(stackoverflow.com),
-domain(superuser.com) {
-#tag-menu,           /* Shows when you hover on a tag */
-#hlinks-custom,      /* Blog                          */
-.community-bulletin, /* Community Bulletin            */
-.profile-popup,      /* Profile popup                 */
-.profile-triangle    /* Profile triangle              */
-  { display: none !important; }
+domain(superuser.com)
+{
+  #tag-menu,            /* Shows when you hover on a tag */
+  #hlinks-custom,       /* Blog                          */
+  .community-bulletin,  /* Community Bulletin            */
+  .profile-popup,       /* Profile popup                 */
+  .profile-triangle     /* Profile triangle              */
+    {
+      display: none !important;
+    }
 }
 
-@-moz-document domain(google.com) {
-#hplogo,    /* Landing page, doodle                */
-#pushdown,  /* Landing page, install google chrome */
-#prm,       /* Landing page, promo                 */
-#gbq1,      /* Results page, doodle                */
-#lc,        /* Results page, change location       */
-#ms,        /* Results page, search type           */
-#rhs_block, /* Results page, map for               */
-.lnsep,     /* Results page, line separator        */
-.vspib      /* Results page, instant previews      */
-  { display: none !important; }
-.vshid /* Cached links */
-  { display: block !important; }
+@-moz-document domain(google.com)
+{
+  #hplogo,     /* Landing page, doodle           */
+  #gbq1,       /* Results page, doodle           */
+  #rhs_block,  /* Results page, map for          */
+  .vspib       /* Results page, instant previews */
+    {
+      display: none !important;
+    }
+  .vshid  /* Cached links */
+    {
+      display: block !important;
+    }
+  #hdtbMenus  /* Search tools */
+    {
+      display: block !important;
+      position: static !important;
+    }
 }
 
-@-moz-document domain(youtube.com) {
-#alerts /* Alerts */
-  { display: none !important; }
+@-moz-document domain(youtube.com)
+{
+  #alerts  /* Alerts */
+    {
+      display: none !important;
+    }
 }
 
-@-moz-document domain(wikipedia.org) {
-#siteNotice,       /* Wikipedia ad      */
-#watchlist-message /* Watchlist message */
-  { display: none !important; }
+@-moz-document domain(wikipedia.org)
+{
+  #siteNotice,        /* Wikipedia ad      */
+  #watchlist-message  /* Watchlist message */
+    {
+      display: none !important;
+    }
 }
 
-@-moz-document domain(github.com) {
-.github-jobs-promotion, /* Jobs ad */
-.native-clones, /* Windows clone */
-.octofication /* Broadcasts */
-  { display: none !important; }
+@-moz-document domain(github.com)
+{
+  .github-jobs-promotion,  /* Jobs ad       */
+  .native-clones,          /* Windows clone */
+  .octofication            /* Broadcasts    */
+    {
+      display: none !important;
+    }
 }
