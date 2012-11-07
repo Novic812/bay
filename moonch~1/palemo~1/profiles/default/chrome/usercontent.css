@@ -1,4 +1,5 @@
-@-moz-document url-prefix(http)
+@-moz-document
+url-prefix(http)
 {
   #plusone,          /* Publicly recommend on Google */
   .fb-like,          /* Facebook Like button         */
@@ -10,7 +11,8 @@
     }
 }
 
-@-moz-document domain(facebook.com)
+@-moz-document
+domain(facebook.com)
 {
   [data-gt*=appid],  /* All "app" posts          */
   #rightCol          /* Games You May Like, etc. */
@@ -19,7 +21,8 @@
     }
 }
 
-@-moz-document url-prefix(http://superuser.com)
+@-moz-document
+url-prefix(http://superuser.com)
 {
   /* Need http to filter out meta.superuser.com */
   .question-hyperlink  /* Colors were reversed */
@@ -48,7 +51,8 @@ domain(superuser.com)
     }
 }
 
-@-moz-document domain(google.com)
+@-moz-document
+domain(google.com)
 {
   #hplogo,     /* Landing page, doodle           */
   #gbq1,       /* Results page, doodle           */
@@ -68,7 +72,8 @@ domain(superuser.com)
     }
 }
 
-@-moz-document domain(youtube.com)
+@-moz-document
+domain(youtube.com)
 {
   #alerts  /* Alerts */
     {
@@ -76,7 +81,8 @@ domain(superuser.com)
     }
 }
 
-@-moz-document domain(wikipedia.org)
+@-moz-document
+domain(wikipedia.org)
 {
   #siteNotice,        /* Wikipedia ad      */
   #watchlist-message  /* Watchlist message */
@@ -85,7 +91,8 @@ domain(superuser.com)
     }
 }
 
-@-moz-document domain(github.com)
+@-moz-document
+domain(github.com)
 {
   .github-jobs-promotion,  /* Jobs ad       */
   .native-clones,          /* Windows clone */
