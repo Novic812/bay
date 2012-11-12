@@ -1,0 +1,3 @@
+#!/bin/sh
+# Wrapper for Pale Moon
+$HOMEDRIVE/progra~2/palemo~1/palemoon "$@"
