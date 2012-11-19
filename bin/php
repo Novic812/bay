@@ -1,3 +1,8 @@
-#!/bin/sh
+#!/bin/bash
 # Cygwin wrapper for Windows native php
-cygpath -im -- "${@#*//}" | xargs /usr/local/bin/php/php
+for j
+  do
+    [[ "$j" =~ :// ]] || read j < <(cygpath -im -- "$j")
+    k+=("$j")
+  done
+/usr/local/bin/php/php "${k[@]}"
