@@ -54,6 +54,7 @@ domain(superuser.com)
 @-moz-document
 domain(google.com)
 {
+  #prt,        /* Landing page, Google Chrome    */
   #hplogo,     /* Landing page, doodle           */
   #gbq1,       /* Results page, doodle           */
   #rhs_block,  /* Results page, map for          */
