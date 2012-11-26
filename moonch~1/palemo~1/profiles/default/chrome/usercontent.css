@@ -85,7 +85,7 @@ domain(youtube.com)
 @-moz-document
 domain(wikipedia.org)
 {
-  #siteNotice,        /* Wikipedia ad      */
+  #centralNotice,     /* Wikipedia ad      */
   #watchlist-message  /* Watchlist message */
     {
       display: none !important;
