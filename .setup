@@ -2,7 +2,6 @@
 # This file will install Cygwin packages, similar to .brew
 
 pc=(
-  ruby                  # Jekyll
   wget                  # PolarSSL
   git                   # RtmpDump
   make                  # RtmpDump
