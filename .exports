@@ -1,2 +1,3 @@
 HISTCONTROL=ignoredups
+HISTSIZE=1000
 PROMPT_COMMAND='history -a'

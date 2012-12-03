@@ -1,0 +1,3 @@
+#!/bin/sh
+# Cygwin wrapper for Windows native tclsh
+cygpath -im -- "$@" | xargs tclsh85s
