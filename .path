@@ -1,7 +1,7 @@
 pth=(
-  /opt/scripts
-  /opt/scripts/scripts
-  /opt/scripts/wrapper
+  /opt/a
+  /opt/a/scripts
+  /opt/a/wrapper
   /usr/bin
   /usr/local/bin
   /usr/local/sbin
