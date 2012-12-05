@@ -1,10 +1,10 @@
 pth=(
-  /opt/dotfiles/bin
-  /opt/etc
-  /opt/etc/sbin
+  /opt/scripts
+  /opt/scripts/scripts
+  /opt/scripts/wrapper
   /usr/bin
   /usr/local/bin
+  /usr/local/sbin
 )
-
 IFS=: read PATH <<< "${pth[*]}"
 unset pth
