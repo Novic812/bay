@@ -1,8 +1,9 @@
 @-moz-document
 url-prefix(http)
 {
-  #likebox,     /* http://isitdownrightnow.com/sourceforge.net.html */
-  .navbar-list  /* Lorem ipsum dolor sit amet                       */
+  #likebox,     /* isitdownrightnow.com/sourceforge.net.html */
+  #sharebar,    /* techinasia.com/tencents-wechat-threat     */
+  .navbar-list  /* Lorem ipsum dolor sit amet                */
     {
       display: none !important;
     }
