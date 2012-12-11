@@ -1,11 +1,8 @@
 @-moz-document
 url-prefix(http)
 {
-  #plusone,          /* Publicly recommend on Google */
-  .fb-like,          /* Facebook Like button         */
-  .navbar-list,      /* Lorem ipsum dolor sit amet   */
-  [class*=addthis],  /* addthis.com                  */
-  [href*=addthis]    /* addthis.com                  */
+  #likebox,     /* http://isitdownrightnow.com/sourceforge.net.html */
+  .navbar-list  /* Lorem ipsum dolor sit amet                       */
     {
       display: none !important;
     }
