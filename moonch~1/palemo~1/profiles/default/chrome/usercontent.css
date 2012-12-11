@@ -1,12 +1,13 @@
+/*
+To get rid of social media buttons
+Antisocial subscription
+adblockplus.org/en/subscriptions
+*/
+
 @-moz-document
 url-prefix(http)
 {
-  #likebox,         /* isitdownrightnow.com/sourceforge.net.html */
-  #sharebar,        /* techinasia.com/tencents-wechat-threat     */
-  #social,          /* websitedown.info                          */
-  .navbar-list,     /* Lorem ipsum dolor sit amet                */
-  .share,           /* jezebel.com                               */
-  [class*=addthis]  /* sitedown.co                               */
+  .navbar-list  /* Lorem ipsum dolor sit amet */
     {
       display: none !important;
     }
