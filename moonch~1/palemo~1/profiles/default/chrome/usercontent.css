@@ -1,10 +1,11 @@
 @-moz-document
 url-prefix(http)
 {
-  #likebox,     /* isitdownrightnow.com/sourceforge.net.html */
-  #sharebar,    /* techinasia.com/tencents-wechat-threat     */
-  #social,      /* websitedown.info                          */
-  .navbar-list  /* Lorem ipsum dolor sit amet                */
+  #likebox,         /* isitdownrightnow.com/sourceforge.net.html */
+  #sharebar,        /* techinasia.com/tencents-wechat-threat     */
+  #social,          /* websitedown.info                          */
+  .navbar-list,     /* Lorem ipsum dolor sit amet                */
+  [class*=addthis]  /* sitedown.co                               */
     {
       display: none !important;
     }
