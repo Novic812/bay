@@ -1,6 +1,7 @@
 #!/bin/sh
 # FIXME open documents library
 # FIXME use regtool
+# FIXME GitHub highlighting
 
 rg ()
 {
