@@ -55,11 +55,13 @@ domain(superuser.com)
 @-moz-document
 domain(google.com)
 {
-  #prt,        /* Landing page, Google Chrome    */
-  #hplogo,     /* Landing page, doodle           */
-  #gbq1,       /* Results page, doodle           */
-  #rhs_block,  /* Results page, map for          */
-  .vspib       /* Results page, instant previews */
+  #hplogo,     /* landing page, doodle              */
+  #prt,        /* landing page, google chrome       */
+  #prm-pt,     /* landing page, promo               */
+  #gbq1,       /* results page, doodle              */
+  #rhs_block,  /* results page, map for             */
+  #hdtb_tls,   /* results page, search tools button */
+  .vspib       /* results page, instant previews    */
     {
       display: none !important;
     }
@@ -70,6 +72,7 @@ domain(google.com)
   #hdtbMenus  /* Search tools */
     {
       display: block !important;
+      height: 22px !important;
       position: static !important;
     }
 }
