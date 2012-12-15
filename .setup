@@ -1,5 +1,6 @@
 #!/bin/sh
 # This file will install Cygwin packages, similar to .brew
+# FIXME separate these out like .brew
 
 pc=(
   wget                  # PolarSSL
