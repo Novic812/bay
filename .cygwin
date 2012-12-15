@@ -1,34 +1,41 @@
 #!/bin/sh
-# FIXME open documents library
-# FIXME use regtool
-# FIXME GitHub highlighting
-
-rg ()
-{
-  reg add "$1" -d "$2" -f ${3+-v $3 -t REG_DWORD}
-}
 
 # Assoicate no extension and unknown files with Notepad2
-rg 'HKCR\*\shell\Notepad2\command' 'notepad %1'
-rg 'HKCR\Unknown\shell\Notepad2\command' 'notepad %1'
-rg 'HKCR\Unknown\shell' Notepad2
+regtool add '/root/*/shell/Notepad2'
+regtool add '/root/*/shell/Notepad2/command'
+regtool set '/root/*/shell/Notepad2/command/' 'notepad %1'
+
+regtool add /root/Unknown/shell/Notepad2
+regtool add /root/Unknown/shell/Notepad2/command
+regtool set /root/Unknown/shell/Notepad2/command/ 'notepad %1'
+
+regtool set /root/Unknown/shell/ Notepad2
 
 # Add Cygwin to right click menus
-dt='cmd /c cd %v & start C:\cygwin\bin\bash --noprofile'
-rg 'HKCR\Directory\Background\shell\Cygwin\command' "$dt"
-rg 'HKCR\Directory\shell\Cygwin\command' "$dt"
+read <<< "cmd /c cd %v & start $HOMEDRIVE/cygwin/bin/bash --noprofile"
+
+regtool add /root/Directory/Background/shell/Cygwin
+regtool add /root/Directory/Background/shell/Cygwin/command
+regtool set /root/Directory/Background/shell/Cygwin/command/ "$REPLY"
+
+regtool add /root/Directory/shell/Cygwin
+regtool add /root/Directory/shell/Cygwin/command
+regtool set /root/Directory/shell/Cygwin/command/ "$REPLY"
 
 # VLC option for folders
-rg 'HKCR\Directory\shell\VLC\command' "$PROGRAMFILES\VideoLAN\VLC\vlc %1"
+regtool add /root/Directory/shell/VLC
+regtool add /root/Directory/shell/VLC/command
+regtool set /root/Directory/shell/VLC/command/ \
+  "$PROGRAMFILES/videolan/vlc/vlc %1"
 
 # QuickEdit Mode
-rg 'HKCU\Console' 1 QuickEdit
-# 2000 x 80 = 0x7d0 x 0x50 = 0x7d00050
-rg 'HKCU\Console' 0x7d00050 ScreenBufferSize
-# 400 x 900 = 0x190 x 0x384 = 0x1900384
-rg 'HKCU\Console' 0x1900384 WindowPosition
-# 25 x 80 = 0x19 x 0x50 = 0x190050
-rg 'HKCU\Console' 0x190050 WindowSize
+regtool set /user/Console/QuickEdit 1
+# 2000 x 80 = 0x7d0 x 0x50
+regtool set /user/Console/ScreenBufferSize 0x7d00050
+# 400 x 900 = 0x190 x 0x384
+regtool set /user/Console/WindowPosition 0x1900384
+# 25 x 80 = 0x19 x 0x50
+regtool set /user/Console/WindowSize 0x190050
 
 # Mount C:
 mount -c /
