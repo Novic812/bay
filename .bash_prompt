@@ -1,9 +1,10 @@
-git_ps1(){
-  test -e .git/HEAD && read g <$_ || exit
-  [ ${g::1} = r ] && g=${g##*/} || g=${g::7}
-  echo "($g)"
-}
+if read f 2>/dev/null <.git/HEAD
+then
+  [[ $f =~ r ]] && f=${f##*/} || f=${f::7}
+fi
 
-PS1='\e];Cygwin\a
-\e[32m\u@\h \e[33m\w $(git_ps1)\e[m
-$ '
+PS1="\e];Cygwin\a
+\e[32m\u@\h \e[33m\w ${f+($f)}\e[m
+$ "
+
+unset f
