@@ -1,5 +1,6 @@
 #!/bin/sh
 # Some repetition here, but its still way less lines than mathiasbynens .osx
+## ## ## ## ## ## GitHub highlight hack
 
 # Assoicate no extension and unknown files with Notepad2
 regtool add '/root/*/shell/Notepad2'
