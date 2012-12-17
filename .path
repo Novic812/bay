@@ -1,9 +1,9 @@
-read -d, PATH <<a
+read -d, PATH <<f
 /opt/a
 /opt/a/scripts
 /opt/a/wrapper
 /usr/bin
 /usr/local/bin
 /usr/local/sbin
-a
+f
 PATH=${PATH//$'\n'/:}
