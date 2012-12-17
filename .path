@@ -1,9 +1,9 @@
-read -d, PATH <<f
-/opt/a
-/opt/a/scripts
-/opt/a/wrapper
-/usr/bin
-/usr/local/bin
-/usr/local/sbin
+read -d, <<f
+  /opt/a
+  /opt/a/scripts
+  /opt/a/wrapper
+  /usr/bin
+  /usr/local/bin
+  /usr/local/sbin
 f
-PATH=${PATH//$'\n'/:}
+PATH=${REPLY//?  /:}
