@@ -1,21 +1,19 @@
 #!/bin/sh
 # This file will install Cygwin packages, similar to .brew
-# FIXME separate these out like .brew
 
-pc=(
-  wget                  # PolarSSL
-  git                   # RtmpDump
-  make                  # RtmpDump
-  mingw64-i686-gcc-core # RtmpDump
-  openssh               # git push
-  msmtp                 # git send-email
-)
-IFS=, read <<< "${pc[*]}"
+# Initialize
+setup -nq -l $HOMEDRIVE/cygwin/usr/local/bin -s ftp://lug.mtu.edu/cygwin
 
-# Run non-quiet so we can customize if necessary.
-# Installer does not recognize \cygwin.
+# PolarSSL
+setup -nqP wget
 
-setup -n \
-  -P $REPLY \
-  -l $HOMEDRIVE/cygwin/usr/local/bin \
-  -s ftp://lug.mtu.edu/cygwin
+# RtmpDump
+setup -nqP git
+setup -nqP make
+setup -nqP mingw64-i686-gcc-core
+
+# git push
+setup -nqP openssh
+
+# git send-email
+setup -nqP msmtp
