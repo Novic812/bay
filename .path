@@ -1,10 +1,9 @@
-pth=(
-  /opt/a
-  /opt/a/scripts
-  /opt/a/wrapper
-  /usr/bin
-  /usr/local/bin
-  /usr/local/sbin
-)
-IFS=: read PATH <<< "${pth[*]}"
-unset pth
+read -d, PATH <<a
+/opt/a
+/opt/a/scripts
+/opt/a/wrapper
+/usr/bin
+/usr/local/bin
+/usr/local/sbin
+a
+PATH=${PATH//$'\n'/:}
