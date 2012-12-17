@@ -1,9 +1,10 @@
-read -d, <<f
+g=(
   /opt/a
   /opt/a/scripts
   /opt/a/wrapper
   /usr/bin
   /usr/local/bin
   /usr/local/sbin
-f
-PATH=${REPLY//?  /:}
+)
+IFS=: read PATH <<< "${g[*]}"
+unset g
