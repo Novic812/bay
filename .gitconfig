@@ -6,10 +6,6 @@
 [alias]
   c = ! "git status -s >/tmp/s; git add -A; git commit -F- </tmp/s"
 
-[branch "master"]
-  remote = origin
-  merge = refs/heads/master
-
 [color]
   ui = true
 
