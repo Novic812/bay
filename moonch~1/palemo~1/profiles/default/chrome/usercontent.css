@@ -1,13 +1,13 @@
 /*
-To get rid of social media buttons
-Antisocial subscription
+to get rid of social media buttons
+antisocial subscription
 adblockplus.org/en/subscriptions
 */
 
 @-moz-document
 url-prefix(http)
 {
-  .navbar-list  /* Lorem ipsum dolor sit amet */
+  .navbar-list  /* lorem ipsum dolor sit amet */
     {
       display: none !important;
     }
@@ -16,8 +16,8 @@ url-prefix(http)
 @-moz-document
 domain(facebook.com)
 {
-  [data-gt*=appid],  /* All "app" posts          */
-  #rightCol          /* Games You May Like, etc. */
+  [data-gt*=appid],  /* all "app" posts          */
+  #rightCol          /* games you may like, etc. */
     {
       display: none !important;
     }
@@ -26,12 +26,12 @@ domain(facebook.com)
 @-moz-document
 url-prefix(http://superuser.com)
 {
-  /* Need http to filter out meta.superuser.com */
-  .question-hyperlink  /* Colors were reversed */
+  /* need http to filter out meta.superuser.com */
+  .question-hyperlink  /* colors were reversed */
     {
       color: #13b3bd !important;
     }
-  .question-hyperlink:visited  /* Colors were reversed */
+  .question-hyperlink:visited  /* colors were reversed */
     {
       color: #1086a4 !important;
     }
@@ -43,10 +43,11 @@ domain(stackexchange.com),
 domain(stackoverflow.com),
 domain(superuser.com)
 {
-  #tag-menu,            /* Shows when you hover on a tag */
-  #hlinks-custom,       /* Blog                          */
-  .community-bulletin,  /* Community Bulletin            */
-  .profile-triangle     /* Profile triangle              */
+  #tag-menu,            /* shows when you hover on a tag */
+  #hlinks-custom,       /* blog                          */
+  .community-bulletin,  /* community Bulletin            */
+  .profile-stats,       /* shows when trying to log out  */
+  .profile-triangle     /* profile triangle              */
     {
       display: none !important;
     }
@@ -65,11 +66,11 @@ domain(google.com)
     {
       display: none !important;
     }
-  .vshid  /* Cached links */
+  .vshid  /* cached links */
     {
       display: block !important;
     }
-  #hdtbMenus  /* Search tools */
+  #hdtbMenus  /* search tools */
     {
       display: block !important;
       height: 22px !important;
@@ -80,7 +81,7 @@ domain(google.com)
 @-moz-document
 domain(youtube.com)
 {
-  #alerts  /* Alerts */
+  #alerts  /* alerts */
     {
       display: none !important;
     }
@@ -89,8 +90,8 @@ domain(youtube.com)
 @-moz-document
 domain(wikipedia.org)
 {
-  #centralNotice,     /* Wikipedia ad      */
-  #watchlist-message  /* Watchlist message */
+  #centralNotice,     /* wikipedia ad      */
+  #watchlist-message  /* watchlist message */
     {
       display: none !important;
     }
@@ -99,9 +100,9 @@ domain(wikipedia.org)
 @-moz-document
 domain(github.com)
 {
-  .github-jobs-promotion,  /* Jobs ad       */
-  .native-clones,          /* Windows clone */
-  .octofication            /* Broadcasts    */
+  .github-jobs-promotion,  /* jobs ad       */
+  .native-clones,          /* windows clone */
+  .octofication            /* broadcasts    */
     {
       display: none !important;
     }
