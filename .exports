@@ -1,3 +1,3 @@
 HISTCONTROL=ignoredups
 HISTSIZE=1000
-PROMPT_COMMAND='history -a; . ~/.bash_prompt'
+PROMPT_COMMAND='history -a; . ~/.bash_prompt; . ~/.extra'

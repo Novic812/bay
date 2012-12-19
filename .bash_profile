@@ -1,9 +1,6 @@
 # Load dotfiles
-for b in ~/.{exports,path,extra}
-do
-  . $b
-done
-unset b
+. ~/.exports
+. ~/.path
 
 # Turn off history expansion (!)
 set +H

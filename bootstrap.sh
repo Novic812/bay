@@ -1,5 +1,6 @@
 #!/bin/bash
 . /etc/profile
+cd -
 
 # cp prevents programs from writing to the repo
 read < <(dirname $0)
