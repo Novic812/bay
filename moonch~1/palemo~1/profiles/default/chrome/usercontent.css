@@ -45,6 +45,7 @@ domain(superuser.com)
 {
   #tag-menu,            /* shows when you hover on a tag */
   #hlinks-custom,       /* blog                          */
+  .ad-container,        /* ad                            */
   .community-bulletin,  /* community Bulletin            */
   .profile-popup,       /* profile popup                 */
   .profile-triangle     /* profile triangle              */
