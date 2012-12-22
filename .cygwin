@@ -24,11 +24,12 @@ regtool add /root/Directory/shell/Cygwin
 regtool add /root/Directory/shell/Cygwin/command
 regtool set /root/Directory/shell/Cygwin/command/ "$REPLY"
 
-# VLC option for folders
+# VLC option for folders. First slash must be backslash, which forces us to use
+# the PROGRAMFILES variable.
 regtool add /root/Directory/shell/VLC
 regtool add /root/Directory/shell/VLC/command
 regtool set /root/Directory/shell/VLC/command/ \
-  "$PROGRAMFILES/videolan/vlc/vlc %1"
+  "\"$PROGRAMFILES/videolan/vlc/vlc\" \"%1\""
 
 # QuickEdit Mode
 regtool set /user/Console/QuickEdit 1
