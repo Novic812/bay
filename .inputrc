@@ -10,14 +10,14 @@
 # This is already set if TERM=msys or TERM=cygwin
 #
 # Paste contents of clipboard at cursor
-# "sh.exe" Properties, Enable "QuickEdit Mode"
+# regtool set /user/Console/QuickEdit 1
 # On bash this is "Shift + Ins" or "Right click"
 #
 # Scrolling
-# "sh.exe" Properties, Enable "QuickEdit Mode"
+# regtool set /user/Console/QuickEdit 1
 #
 # Select text
-# "sh.exe" Properties, Enable "QuickEdit Mode"
+# regtool set /user/Console/QuickEdit 1
 
 # Turn off the stupid bell
 set bell-style none
