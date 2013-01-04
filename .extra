@@ -1,7 +1,7 @@
-# Ignore incorrect file modes
-
+# must not use REPLY
 read -d, b 2>/dev/null <.git/config
 
+# ignore incorrect file modes
 [[ $b =~ filemode.=.true ]] && git config core.filemode false
 
 unset b
