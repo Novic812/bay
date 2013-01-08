@@ -57,6 +57,7 @@ domain(superuser.com)
 @-moz-document
 domain(google.com)
 {
+  .mq,         /* gmail ad                          */
   #hplogo,     /* landing page, doodle              */
   #prt,        /* landing page, google chrome       */
   #prm-pt,     /* landing page, promo               */
