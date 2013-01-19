@@ -39,7 +39,6 @@ url-prefix(http://superuser.com)
 
 @-moz-document
 domain(serverfault.com),
-domain(stackexchange.com),
 domain(stackoverflow.com),
 domain(superuser.com)
 {
