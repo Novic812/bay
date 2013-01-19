@@ -1,0 +1,11 @@
+<bindings xmlns="http://www.mozilla.org/xbl"
+  xmlns:html="http://www.w3.org/1999/xhtml">
+  <binding id="hlinks">
+    <content>
+      <children/>
+      <html:a href="/privileges">privileges</html:a>
+      <html:span class="lsep"> | </html:span>
+      <html:a href="/users/logout">log out</html:a>
+    </content>
+  </binding>
+</bindings>

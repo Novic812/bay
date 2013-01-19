@@ -44,13 +44,17 @@ domain(stackoverflow.com),
 domain(superuser.com)
 {
   #tag-menu,            /* shows when you hover on a tag */
-  #hlinks-custom,       /* blog                          */
+  #hlinks-custom,       /* blog, chat, etc               */
   .ad-container,        /* ad                            */
   .community-bulletin,  /* community Bulletin            */
   .profile-popup,       /* profile popup                 */
   .profile-triangle     /* profile triangle              */
     {
       display: none !important;
+    }
+  #hlinks
+    {
+      -moz-binding: url(stackexchange.xml#hlinks);
     }
 }
 
