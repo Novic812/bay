@@ -1,7 +1,11 @@
-# must not use REPLY
-read -d, b 2>/dev/null <.git/config
+# dont touch REPLY or BASH_REMATCH
 
-# ignore incorrect file modes
-[[ $b =~ filemode.=.true ]] && git config core.filemode false
+while read k
+do
+  if [ "$k" = 'filemode = true' ]
+  then
+    git config core.filemode false
+  fi
+done 2>/dev/null <.git/config
 
-unset b
+unset k
