@@ -51,9 +51,13 @@ domain(superuser.com)
     {
       display: none !important;
     }
-  #hlinks
+  #hlinks  /* move "priviledges" and "log out" back */
     {
       -moz-binding: url(stackexchange.xml#hlinks);
+    }
+  [name=comment]  /* fix damn comment boxes */
+    {
+      width: 500px;
     }
 }
 
