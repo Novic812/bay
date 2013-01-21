@@ -1,12 +1,12 @@
 ## ## ## ## ## GitHub highlight hack
 
-if read b 2>/dev/null <.git/HEAD
+if read o 2>/dev/null <.git/HEAD
 then
-  [[ $b < g ]] && b=${b::7} || b=${b##*/}
+  [[ $o < g ]] && o=${o::7} || o=${o/*\/}
 fi
 
 PS1="\e];$TERM\a
-\e[32m\u@\h \e[33m\w ${b+($b)}\e[m
+\e[32m\u@\h \e[33m\w ${o+($o)}\e[m
 $ "
 
-unset b
+unset o
