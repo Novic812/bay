@@ -1,8 +1,13 @@
-## ## ## ## ## GitHub highlight hack
+# dont touch REPLY or BASH_REMATCH
 
 if read o 2>/dev/null <.git/HEAD
 then
-  [[ $o < g ]] && o=${o::7} || o=${o/*\/}
+  if [[ $o < g ]]
+  then
+    o=${o::7}
+  else
+    o=${o/*\/}
+  fi
 fi
 
 PS1="\e];$TERM\a
