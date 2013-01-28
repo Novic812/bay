@@ -10,7 +10,7 @@
   ui = true
 
 [core]
-  editor = notepad
+  editor = notepad2
 
 [sendemail]
   smtpserver = /usr/sbin/msmtp
