@@ -1,0 +1,6 @@
+
+a ()
+{
+  printf abcdefghijklmnopqrstuvwxyz > /dev/clipboard
+  echo alphabet saved to clipboard
+}
