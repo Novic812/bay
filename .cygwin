@@ -1,35 +1,39 @@
 #!/bin/sh
-# Some repetition here, but its still way less lines than mathiasbynens .osx
-## ## ## ## ## ## GitHub highlight hack
+# with the registry, the first slash must be a backslash
 
-# Assoicate no extension and unknown files with Notepad2
-regtool add '/root/*/shell/Notepad2'
-regtool add '/root/*/shell/Notepad2/command'
-regtool set '/root/*/shell/Notepad2/command/' 'notepad %1'
+# add Notepad2 option for known and unknown filetypes
+set '"%programfiles%/notepad2/notepad2" %1'
 
-regtool add /root/Unknown/shell/Notepad2
-regtool add /root/Unknown/shell/Notepad2/command
-regtool set /root/Unknown/shell/Notepad2/command/ 'notepad %1'
+set "$1" /root/*/shell/Notepad2
+regtool add $2
+regtool add $2/command
+regtool -e set $2/command/ "$1"
 
-regtool set /root/Unknown/shell/ Notepad2
+set "$1" /root/unknown/shell/Notepad2
+regtool add $2
+regtool add $2/command
+regtool -e set $2/command/ "$1"
 
-# Add Cygwin to right click menus
-read <<< "cmd /c cd %v & start $HOMEDRIVE/cygwin/bin/bash --noprofile"
+# add Cygwin to right click menus
+set 'cmd /c cd %v & start %homedrive%/cygwin/bin/bash --noprofile'
 
-regtool add /root/Directory/Background/shell/Cygwin
-regtool add /root/Directory/Background/shell/Cygwin/command
-regtool set /root/Directory/Background/shell/Cygwin/command/ "$REPLY"
+set "$1" /root/directory/background/shell/cygwin
+regtool add $2
+regtool add $2/command
+regtool -e set $2/command/ "$1"
 
-regtool add /root/Directory/shell/Cygwin
-regtool add /root/Directory/shell/Cygwin/command
-regtool set /root/Directory/shell/Cygwin/command/ "$REPLY"
+set "$1" /root/directory/shell/cygwin
+regtool add $2
+regtool add $2/command
+regtool -e set $2/command/ "$1"
 
-# VLC option for folders. First slash must be backslash, which forces us to use
-# the PROGRAMFILES variable.
-regtool add /root/Directory/shell/VLC
-regtool add /root/Directory/shell/VLC/command
-regtool set /root/Directory/shell/VLC/command/ \
-  "\"$PROGRAMFILES/videolan/vlc/vlc\" \"%1\""
+# VLC option for folders
+set '"%programfiles(x86)%/videolan/vlc/vlc" "%1"'
+
+set "$1" /root/directory/shell/VLC
+regtool add $2
+regtool add $2/command
+regtool -e set $2/command/ "$1"
 
 # QuickEdit Mode
 regtool set /user/Console/QuickEdit 1
