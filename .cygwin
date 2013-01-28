@@ -1,4 +1,5 @@
 #!/bin/sh
+## ## ## ## ## ## GitHub highlight hack
 # with the registry, the first slash must be a backslash
 
 # add Notepad2 option for known and unknown filetypes
