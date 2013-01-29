@@ -2,7 +2,7 @@
 # This file will install Cygwin packages, similar to .brew
 
 # Initialize
-setup -nq -l $HOMEDRIVE/cygwin/usr/local/bin -s ftp://lug.mtu.edu/cygwin
+setup -nq -l $HOMEDRIVE/cygwin/usr/local/bin -s http://lug.mtu.edu/cygwin
 
 # PolarSSL
 setup -nqP wget
