@@ -9,6 +9,7 @@ then
   then
     shift
   fi
+  unset o
   set "($1)"
 else
   shift
@@ -17,5 +18,3 @@ fi
 PS1="\e];$TERM\a
 \e[32m\u@\h \e[33m\w $1\e[m
 $ "
-
-unset o
