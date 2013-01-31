@@ -5,15 +5,6 @@ adblockplus.org/en/subscriptions
 */
 
 @-moz-document
-url-prefix(http)
-{
-  .navbar-list  /* lorem ipsum dolor sit amet */
-    {
-      display: none !important;
-    }
-}
-
-@-moz-document
 domain(facebook.com)
 {
   [data-gt*=appid],  /* all "app" posts          */

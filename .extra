@@ -1,11 +1,13 @@
 # dont touch REPLY or BASH_REMATCH
-
-while read k
-do
-  if [ "$k" = 'filemode = true' ]
-  then
-    git config core.filemode false
-  fi
-done 2>/dev/null <.git/config
-
-unset k
+set .git/config
+if [ -a $1 ]
+then
+  while read k
+  do
+    if [ "$k" = 'filemode = true' ]
+    then
+      git config core.filemode false
+    fi
+  done < $1
+  unset k
+fi
