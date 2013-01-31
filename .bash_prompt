@@ -1,20 +1,18 @@
-# dont touch REPLY or BASH_REMATCH
-
-set .git/HEAD
-if [ -a $1 ]
+# dont touch $1 or $BASH_REMATCH or $REPLY
+if [ -d .git ]
 then
-  read o < $1
-  set ${o/*\/} ${o::7}
-  if [[ $o < g ]]
+  read k <.git/HEAD
+  if [[ $k < g ]]
   then
-    shift
+    k=${k::7}
+  else
+    k=${k/*\/}
   fi
-  unset o
-  set "($1)"
-else
-  shift
+  k="($k)"
 fi
 
 PS1="\e];$TERM\a
-\e[32m\u@\h \e[33m\w $1\e[m
+\e[32m\u@\h \e[33m\w $k\e[m
 $ "
+
+unset k

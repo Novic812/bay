@@ -1,6 +1,5 @@
-# dont touch REPLY or BASH_REMATCH
-set .git/config
-if [ -a $1 ]
+# dont touch $1 or $BASH_REMATCH or $REPLY
+if [ -d .git ]
 then
   while read k
   do
@@ -8,6 +7,6 @@ then
     then
       git config core.filemode false
     fi
-  done < $1
+  done <.git/config
   unset k
 fi
