@@ -31,8 +31,10 @@ url-prefix(http://superuser.com)
 @-moz-document
 domain(serverfault.com),
 domain(stackoverflow.com),
-domain(superuser.com)
+domain(superuser.com),
+domain(unix.stackexchange.com)
 {
+  /* need to filter out data.stackexchange.com */
   #tag-menu,            /* shows when you hover on a tag */
   #hlinks-custom,       /* blog, chat, etc               */
   .ad-container,        /* ad                            */
