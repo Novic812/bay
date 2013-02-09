@@ -3,6 +3,7 @@ read PATH < <(
 /opt/a
 /opt/a/scripts
 /opt/a/wrapper
+/sbin
 /usr/bin
 /usr/local/bin
 /usr/local/sbin
