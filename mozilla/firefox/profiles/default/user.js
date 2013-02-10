@@ -10,6 +10,9 @@ user_pref("browser.tabs.warnOnClose", false);
 // trim URLs
 user_pref("browser.urlbar.trimURLs", false);
 
+// adblock plus
+user_pref("extensions.adblockplus.hideContributeButton", true);
+
 // FireSizer
 user_pref("extensions.firesizer.dimensionlist.outer", "1200x850");
 
