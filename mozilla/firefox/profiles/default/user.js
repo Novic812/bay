@@ -10,6 +10,9 @@ user_pref("browser.tabs.warnOnClose", false);
 // trim URLs
 user_pref("browser.urlbar.trimURLs", false);
 
+// FireSizer
+user_pref("extensions.firesizer.dimensionlist.outer", "1200x850");
+
 // minimum font size
 user_pref("font.minimum-size.x-western", 14);
 
