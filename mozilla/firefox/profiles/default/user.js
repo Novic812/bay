@@ -19,5 +19,8 @@ user_pref("general.smoothScroll", false);
 // about:config warning
 user_pref("general.warnOnAboutConfig", false);
 
+// remember passwords
+user_pref("signon.rememberSignons", false);
+
 // help mozilla by sending information
 user_pref("toolkit.telemetry.prompted", 2);
