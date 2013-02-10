@@ -22,5 +22,8 @@ user_pref("general.warnOnAboutConfig", false);
 // remember passwords
 user_pref("signon.rememberSignons", false);
 
+// status bar delay
+user_pref("status4evar.status.linkOver.delay.show", 0);
+
 // help mozilla by sending information
 user_pref("toolkit.telemetry.prompted", 2);
