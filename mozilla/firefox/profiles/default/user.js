@@ -13,6 +13,9 @@ user_pref("browser.urlbar.trimURLs", false);
 // minimum font size
 user_pref("font.minimum-size.x-western", 14);
 
+// disable smooth scrolling
+user_pref("general.smoothScroll", false);
+
 // about:config warning
 user_pref("general.warnOnAboutConfig", false);
 
