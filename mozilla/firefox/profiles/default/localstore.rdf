@@ -1,16 +1,21 @@
 <RDF:RDF xmlns:NC="http://home.netscape.com/NC-rdf#"
     xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 
+  <!-- status bar -->
+  <RDF:Description RDF:about="chrome://browser/content/browser.xul#addon-bar"
+    currentset="status4evar-status-widget" collapsed="false"/>
+
   <!-- menu bar -->
   <RDF:Description RDF:about="chrome://browser/content/browser.xul#toolbar-menubar"
     autohide="false" currentset="menubar-items,urlbar-container"/>
-  
+
   <!-- nav bar -->
   <RDF:Description RDF:about="chrome://browser/content/browser.xul#nav-bar"
-    currentset="unified-back-forward-button,history-button,feed-button"/>
-  
+    currentset="unified-back-forward-button,history-button,feed-button,abp-toolbarbutton,firebug-button"/>
+
   <!-- browser -->
   <RDF:Description RDF:about="chrome://browser/content/browser.xul">
+    <NC:persist RDF:resource="chrome://browser/content/browser.xul#addon-bar"/>
     <NC:persist RDF:resource="chrome://browser/content/browser.xul#nav-bar"/>
     <NC:persist RDF:resource="chrome://browser/content/browser.xul#toolbar-menubar"/>
   </RDF:Description>
