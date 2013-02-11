@@ -31,6 +31,9 @@ user_pref("general.smoothScroll", false);
 // about:config warning
 user_pref("general.warnOnAboutConfig", false);
 
+// security warning nag
+user_pref("security.warn_viewing_mixed", false);
+
 // remember passwords
 user_pref("signon.rememberSignons", false);
 
