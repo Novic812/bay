@@ -13,6 +13,9 @@ user_pref("browser.tabs.warnOnClose", false);
 // trim URLs
 user_pref("browser.urlbar.trimURLs", false);
 
+// do not show tabs on flash
+user_pref("extensions.adblockplus.frameobjects", false);
+
 // adblock plus
 user_pref("extensions.adblockplus.hideContributeButton", true);
 
