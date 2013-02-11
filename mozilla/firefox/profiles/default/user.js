@@ -1,3 +1,6 @@
+// disable new tab page
+user_pref("browser.newtab.url", "about:blank");
+
 // know your rights
 user_pref("browser.rights.3.shown", true);
 
