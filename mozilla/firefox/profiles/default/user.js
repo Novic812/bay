@@ -1,6 +1,9 @@
 // know your rights
 user_pref("browser.rights.3.shown", true);
 
+// show windows and tabs from last time
+user_pref("browser.startup.page", 3);
+
 // tabs on top
 user_pref("browser.tabs.onTop", false);
 
