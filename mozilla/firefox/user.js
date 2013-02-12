@@ -13,6 +13,9 @@ user_pref("browser.tabs.onTop", false);
 // warn before closing multiple tabs
 user_pref("browser.tabs.warnOnClose", false);
 
+// disable URL autocomplete
+user_pref("browser.urlbar.autoFill", false);
+
 // trim URLs
 user_pref("browser.urlbar.trimURLs", false);
 
