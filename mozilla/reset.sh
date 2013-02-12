@@ -18,8 +18,3 @@ set $APPDATA mozilla/firefox
 rm -r $1/$2
 cp -r /opt/dotfiles/mozilla $1
 cd $1/$2
-warn 'About to create git repo. Open and close Firefox, then press enter.'
-read
-git init
-git add prefs.js
-git commit -m 'first commit'

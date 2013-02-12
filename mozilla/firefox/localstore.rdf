@@ -1,23 +1,20 @@
 <RDF:RDF xmlns:NC="http://home.netscape.com/NC-rdf#"
     xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 
-  <!-- status bar -->
-  <RDF:Description RDF:about="chrome://browser/content/browser.xul#addon-bar"
-    currentset="status4evar-status-widget" collapsed="false"/>
-
-  <!-- menu bar -->
-  <RDF:Description RDF:about="chrome://browser/content/browser.xul#toolbar-menubar"
-    autohide="false" currentset="menubar-items,urlbar-container"/>
-
-  <!-- nav bar -->
-  <RDF:Description RDF:about="chrome://browser/content/browser.xul#nav-bar"
-    currentset="unified-back-forward-button,history-button,feed-button,abp-toolbarbutton,firebug-button"/>
-
-  <!-- browser -->
+  <!-- status bar, nav bar, menu bar -->
   <RDF:Description RDF:about="chrome://browser/content/browser.xul">
-    <NC:persist RDF:resource="chrome://browser/content/browser.xul#addon-bar"/>
-    <NC:persist RDF:resource="chrome://browser/content/browser.xul#nav-bar"/>
-    <NC:persist RDF:resource="chrome://browser/content/browser.xul#toolbar-menubar"/>
+    <NC:persist RDF:resource="chrome://browser/content/browser.xul#addon-bar"
+      currentset="status4evar-status-widget" collapsed="false"/>
+    <NC:persist RDF:resource="chrome://browser/content/browser.xul#nav-bar"
+      currentset="unified-back-forward-button,history-button,feed-button,abp-toolbarbutton,firebug-button"/>
+    <NC:persist RDF:resource="chrome://browser/content/browser.xul#toolbar-menubar"
+      currentset="menubar-items,urlbar-container" autohide="false"/>
+  </RDF:Description>
+
+  <!-- history panel -->
+  <RDF:Description RDF:about="chrome://browser/content/history/history-panel.xul">
+    <NC:persist RDF:resource="chrome://browser/content/history/history-panel.xul#viewButton"
+      selectedsort="lastvisited"/>
   </RDF:Description>
 
 </RDF:RDF>

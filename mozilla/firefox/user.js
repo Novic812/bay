@@ -4,6 +4,9 @@ user_pref("browser.newtab.url", "about:blank");
 // know your rights
 user_pref("browser.rights.3.shown", true);
 
+// disable first run page
+user_pref("browser.startup.homepage_override.mstone", "ignore");
+
 // show windows and tabs from last time
 user_pref("browser.startup.page", 3);
 
