@@ -37,6 +37,9 @@ user_pref("general.smoothScroll", false);
 // about:config warning
 user_pref("general.warnOnAboutConfig", false);
 
+// disable spell check
+user_pref("layout.spellcheckDefault", 0);
+
 // security warning nag
 user_pref("security.warn_viewing_mixed", false);
 
