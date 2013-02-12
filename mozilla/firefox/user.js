@@ -1,6 +1,3 @@
-// remove stark white from new tab page
-user_pref("browser.display.background_color", "#eef0ec");
-
 // disable new tab page
 user_pref("browser.newtab.url", "about:blank");
 
