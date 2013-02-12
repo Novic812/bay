@@ -14,7 +14,7 @@ upath ()
 }
 
 upath APPDATA
-set $APPDATA mozilla/firefox/a
+set $APPDATA mozilla/firefox
 rm -r $1/$2
 cp -r /opt/dotfiles/mozilla $1
 cd $1/$2
