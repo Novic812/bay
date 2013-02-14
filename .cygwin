@@ -45,6 +45,5 @@ regtool set /user/Console/WindowPosition 0x1900384
 # 25 x 80 = 0x19 x 0x50
 regtool set /user/Console/WindowSize 0x190050
 
-# Mount C:
-mount -c /
-mount -m > /etc/fstab
+# Mount HOMEDRIVE
+echo - / cygdrive acl >/etc/fstab
