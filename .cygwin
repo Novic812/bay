@@ -16,7 +16,7 @@ regtool add $2/command
 regtool -e set $2/command/ "$1"
 
 # add Cygwin to right click menus
-set 'cmd /c cd %v & start %homedrive%/cygwin/bin/bash --noprofile'
+set 'cmd /c cd %v & set CHERE_INVOKING=1 & start %homedrive%/cygwin/bin/bash -l'
 
 set "$1" /root/directory/background/shell/cygwin
 regtool add $2
