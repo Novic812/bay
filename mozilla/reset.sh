@@ -2,7 +2,9 @@
 # reset Firefox
 
 cd $APPDATA
-set mozilla/firefox
-rm -r $1
-cp -r /opt/dotfiles/mozilla .
-cd $1
+rm -r mozilla
+
+cd /opt/dotfiles
+cp -r mozilla $OLDPWD
+
+cd $APPDATA/mozilla/firefox
