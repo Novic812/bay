@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# assume PATH is set and HOME exists. cp prevents programs from writing to the
-# repo. dirname is needed if you call the script without leading path elements.
+# cp prevents programs from writing to the repo. dirname is needed if you call
+# the script without leading path elements.
 read q < <(dirname $0)
 cd $q
 find -maxdepth 1 -name '.*' -type f -exec cp -t ~ {} +
