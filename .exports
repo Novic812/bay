@@ -1,4 +1,4 @@
 HISTCONTROL=ignoredups
-HISTIGNORE=clear
+HISTIGNORE=c
 PROMPT_COMMAND='history -a; . ~/.bash_prompt; . ~/.extra'
 export LANG=en_US.UTF-8

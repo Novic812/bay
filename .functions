@@ -5,7 +5,7 @@ a ()
   echo alphabet saved to clipboard
 }
 
-clear ()
+c ()
 {
   printf '\ec'
 }
