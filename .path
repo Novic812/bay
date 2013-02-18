@@ -1,11 +1,12 @@
-read PATH < <(
-/bin/paste -sd: <<k
-/opt/a
-/opt/a/scripts
-/opt/a/wrapper
-/sbin
-/usr/bin
-/usr/local/bin
-/usr/local/sbin
-k
+# pure bash
+g=(
+  /opt/a
+  /opt/a/scripts
+  /opt/a/wrapper
+  /sbin
+  /usr/bin
+  /usr/local/bin
+  /usr/local/sbin
 )
+IFS=: read PATH <<< "${g[*]}"
+unset g
