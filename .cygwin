@@ -1,19 +1,15 @@
 #!/bin/sh
 ## ## ## ## ## ## GitHub highlight hack
-# with the registry, the first slash must be a backslash
 
-# add Notepad2 option for known and unknown filetypes
-set '"%programfiles%/notepad2/notepad2" %1'
+# .txt
+set /root/txtfile/shell/open '"%programfiles%/notepad2/notepad2" %1'
+regtool -e set $1/command/ "$2"
 
-set "$1" /root/*/shell/Notepad2
-regtool add $2
-regtool add $2/command
-regtool -e set $2/command/ "$1"
-
-set "$1" /root/unknown/shell/Notepad2
-regtool add $2
-regtool add $2/command
-regtool -e set $2/command/ "$1"
+# add notepad2 option for unknown filetypes
+set /root/unknown/shell/Notepad2 '"%programfiles%/notepad2/notepad2" %1'
+regtool add $1
+regtool add $1/command
+regtool -e set $1/command/ "$2"
 
 # add Cygwin to right click menus
 # /etc/profile slows bash startup
