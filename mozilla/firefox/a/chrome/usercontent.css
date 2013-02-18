@@ -40,7 +40,7 @@ domain(webapps.stackexchange.com)
   #hlinks-custom,       /* blog, chat, etc               */
   .ad-container,        /* ad                            */
   .community-bulletin,  /* community Bulletin            */
-  .error-message,       /* downvote popup                */
+  .error-popup,         /* downvote popup                */
   .profile-popup,       /* profile popup                 */
   .profile-triangle     /* profile triangle              */
     {
