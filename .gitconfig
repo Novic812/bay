@@ -1,20 +1,20 @@
-# "git commit -a", modified and deleted files
-# "git add .", modified and new files
-# "git add -u", modified and deleted files
-# "git add -A", modified, new and deleted files
+; "git commit -a", modified and deleted files
+; "git add .", modified and new files
+; "git add -u", modified and deleted files
+; "git add -A", modified, new and deleted files
 
 [alias]
-  c = ! git status -s >/tmp/s && git add -A && git commit -F /tmp/s
+c = ! git status -s >/tmp/s && git add -A && git commit -F /tmp/s
 
 [color]
-  ui = true
+ui = true
 
 [core]
-  editor = notepad2
+editor = notepad2
 
 [sendemail]
-  smtpserver = /usr/sbin/msmtp
+smtpserver = /usr/sbin/msmtp
 
 [user]
-  email = svnpenn@gmail.com
-  name = Steven Penny
+email = svnpenn@gmail.com
+name = Steven Penny
