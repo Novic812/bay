@@ -7,11 +7,12 @@ set '"%programfiles%/notepad2/notepad2" %1'
 set "$1" /root/unknown/shell/Notepad2
 regtool add $2
 regtool add $2/command
-regtool -e set $2/command/ "$1"
+regtool set -e $2/command/ "$1"
 
-regtool -e set /root/SystemFileAssociations/text/shell/open/command/ "$1"
-regtool -e set /root/regfile/shell/edit/command/ "$1"
-regtool -e set /root/txtfile/shell/open/command/ "$1"
+regtool set -e /root/SystemFileAssociations/text/shell/open/command/ "$1"
+regtool set -e /root/inifile/shell/open/command/ "$1"
+regtool set -e /root/regfile/shell/edit/command/ "$1"
+regtool set -e /root/txtfile/shell/open/command/ "$1"
 
 # add Cygwin to right click menus
 # /etc/profile slows bash startup
@@ -20,12 +21,12 @@ set 'cmd /c cd %v & start %homedrive%/cygwin/bin/bash --noprofile'
 set "$1" /root/directory/background/shell/cygwin
 regtool add $2
 regtool add $2/command
-regtool -e set $2/command/ "$1"
+regtool set -e $2/command/ "$1"
 
 set "$1" /root/directory/shell/cygwin
 regtool add $2
 regtool add $2/command
-regtool -e set $2/command/ "$1"
+regtool set -e $2/command/ "$1"
 
 # VLC option for folders
 set '"%programfiles(x86)%/videolan/vlc/vlc" "%1"'
@@ -33,7 +34,7 @@ set '"%programfiles(x86)%/videolan/vlc/vlc" "%1"'
 set "$1" /root/directory/shell/VLC
 regtool add $2
 regtool add $2/command
-regtool -e set $2/command/ "$1"
+regtool set -e $2/command/ "$1"
 
 # QuickEdit Mode
 regtool set /user/Console/QuickEdit 1
