@@ -11,7 +11,7 @@ user_pref("browser.startup.homepage_override.mstone", "ignore");
 user_pref("browser.startup.page", 3);
 
 // disable sync promo
-user_pref("browser.syncPromoViewsLeft", 0);
+user_pref("browser.syncPromoViewsLeftMap", 0);
 
 // tabs on top
 user_pref("browser.tabs.onTop", false);
