@@ -14,7 +14,8 @@ regtool set -e /root/inifile/shell/open/command/ "$1"
 regtool set -e /root/jsfile/shell/edit/command/ "$1"
 regtool set -e /root/regfile/shell/edit/command/ "$1"
 regtool set -e /root/txtfile/shell/open/command/ "$1"
-regtool set -e /root/xmlfile/shell/edit/command/ "$1"
+regtool set -e /root/xmlfile/shell/open/command/ "$1"
+regtool unset /root/xmlfile/shell/open/ddeexec/
 
 # add Cygwin to right click menus
 # /etc/profile slows bash startup
