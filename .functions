@@ -1,7 +1,7 @@
 
 a ()
 {
-  printf abcdefghijklmnopqrstuvwxyz > /dev/clipboard
+  printf %s {a..z} >/dev/clipboard
   echo alphabet saved to clipboard
 }
 
