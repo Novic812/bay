@@ -10,12 +10,13 @@ regtool add $2/command
 regtool set -e $2/command/ "$1"
 
 regtool set -e /root/SystemFileAssociations/text/shell/open/command/ "$1"
+regtool set -e /root/batfile/shell/edit/command/ "$1"
 regtool set -e /root/inifile/shell/open/command/ "$1"
 regtool set -e /root/jsfile/shell/edit/command/ "$1"
 regtool set -e /root/regfile/shell/edit/command/ "$1"
 regtool set -e /root/txtfile/shell/open/command/ "$1"
 regtool set -e /root/xmlfile/shell/open/command/ "$1"
-regtool unset /root/xmlfile/shell/open/ddeexec/
+regtool set /root/xmlfile/shell/open/ddeexec/ ''
 
 # add Cygwin to right click menus
 # /etc/profile slows bash startup
