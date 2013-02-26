@@ -13,7 +13,7 @@ c ()
 reg ()
 {
   # regtool fucking sucks
-  $WINDIR/system32/reg $*
+  $WINDIR/system32/reg "$@"
 }
 
 export -f reg
