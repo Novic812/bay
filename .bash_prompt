@@ -2,13 +2,11 @@
 if [ -d .git ]
 then
   # config
-  while read q
-  do
-    if [ "$q" = 'filemode = true' ]
-    then
-      git config core.filemode false
-    fi
-  done <.git/config
+  read -d, q <.git/config
+  if [[ $q =~ filemode.=.true ]]
+  then
+    git config core.filemode false
+  fi
   # HEAD
   read q <.git/HEAD
   if [[ $q < g ]]
