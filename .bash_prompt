@@ -1,6 +1,15 @@
-# dont touch $1 or $BASH_REMATCH or $REPLY
+# dont touch $1 or $BASH_REMATCH or $REPLY or $k
 if [ -d .git ]
 then
+  # config
+  while read q
+  do
+    if [ "$q" = 'filemode = true' ]
+    then
+      git config core.filemode false
+    fi
+  done <.git/config
+  # HEAD
   read q <.git/HEAD
   if [[ $q < g ]]
   then
