@@ -2,52 +2,40 @@
 ## ## ## ## ## ## GitHub highlight hack
 
 # set up Notepad2
-set '"%programfiles%/notepad2/notepad2" %1'
+set -- -t reg_expand_sz -d '"%programfiles%/notepad2/notepad2" %1' -f
 
-set "$1" /root/unknown/shell/Notepad2
-regtool add $2
-regtool add $2/command
-regtool set -e $2/command/ "$1"
+reg add 'hkcr\batfile\shell\edit\command' "$@"
+reg add 'hkcr\inifile\shell\open\command' "$@"
+reg add 'hkcr\jsfile\shell\edit\command' "$@"
+reg add 'hkcr\regfile\shell\edit\command' "$@"
+reg add 'hkcr\txtfile\shell\open\command' "$@"
+reg add 'hkcr\unknown\shell\edit\command' "$@"
+reg add 'hkcr\xmlfile\shell\open\command' "$@"
+reg add 'hkcr\SystemFileAssociations\text\shell\open\command' "$@"
 
-regtool set -e /root/SystemFileAssociations/text/shell/open/command/ "$1"
-regtool set -e /root/batfile/shell/edit/command/ "$1"
-regtool set -e /root/inifile/shell/open/command/ "$1"
-regtool set -e /root/jsfile/shell/edit/command/ "$1"
-regtool set -e /root/regfile/shell/edit/command/ "$1"
-regtool set -e /root/txtfile/shell/open/command/ "$1"
-regtool set -e /root/xmlfile/shell/open/command/ "$1"
-regtool set /root/xmlfile/shell/open/ddeexec/ ''
+reg add 'hkcr\unknown\shell' -d edit -f
+reg add 'hkcr\xmlfile\shell\open\ddeexec' -f
+
+# VLC option for folders
+set -- -t reg_expand_sz -d '"%programfiles(x86)%/videolan/vlc/vlc" "%1"' -f
+
+reg add 'hkcr\directory\shell\VLC\command' "$@"
 
 # add Cygwin to right click menus
 # /etc/profile slows bash startup
-set 'cmd /c cd %v & start %homedrive%/cygwin/bin/bash --noprofile'
+set -- -d 'cmd /c cd %v & start %homedrive%/cygwin/bin/bash --noprofile' -f
 
-set "$1" /root/directory/background/shell/cygwin
-regtool add $2
-regtool add $2/command
-regtool set -e $2/command/ "$1"
+reg add 'hkcr\directory\background\shell\cygwin\command' -t reg_expand_sz "$@"
+reg add 'hkcr\directory\shell\cygwin\command' -t reg_expand_sz "$@"
 
-set "$1" /root/directory/shell/cygwin
-regtool add $2
-regtool add $2/command
-regtool set -e $2/command/ "$1"
+# console
+# hex values are HHHHWWWW or XXXXYYYY
+set -- -t reg_dword -f
 
-# VLC option for folders
-set '"%programfiles(x86)%/videolan/vlc/vlc" "%1"'
-
-set "$1" /root/directory/shell/VLC
-regtool add $2
-regtool add $2/command
-regtool set -e $2/command/ "$1"
-
-# QuickEdit Mode
-regtool set /user/Console/QuickEdit 1
-# 2000 x 80 = 0x7d0 x 0x50
-regtool set /user/Console/ScreenBufferSize 0x7d00050
-# 400 x 900 = 0x190 x 0x384
-regtool set /user/Console/WindowPosition 0x1900384
-# 25 x 80 = 0x19 x 0x50
-regtool set /user/Console/WindowSize 0x190050
+reg add 'hkcu\console' -v QuickEdit -d 1 "$@"
+reg add 'hkcu\console' -v ScreenBufferSize -d 0x07d00050 "$@"
+reg add 'hkcu\console' -v WindowPosition -d 0x01900384 "$@"
+reg add 'hkcu\console' -v WindowSize -d 0x00190050 "$@"
 
 # Mount HOMEDRIVE
 echo - / cygdrive acl >/etc/fstab
