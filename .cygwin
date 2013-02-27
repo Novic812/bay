@@ -13,8 +13,8 @@ reg add 'hkcr\txtfile\shell\open\command' "$@"
 reg add 'hkcr\unknown\shell\edit\command' "$@"
 reg add 'hkcr\xmlfile\shell\edit\command' "$@"
 
-reg add 'hkcr\unknown\shell' -d edit -f
-reg add 'hkcr\xmlfile\shell' -d edit -f
+reg add 'hkcr\unknown\shell' -f -d edit
+reg add 'hkcr\xmlfile\shell' -f -d edit
 
 # VLC option for folders
 set -- -f -t reg_expand_sz -d '"%programfiles(x86)%/videolan/vlc/vlc" "%1"'
