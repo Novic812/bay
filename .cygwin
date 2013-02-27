@@ -2,7 +2,7 @@
 ## ## ## ## ## ## GitHub highlight hack
 
 # set up Notepad2
-set -- -t reg_expand_sz -d '"%programfiles%/notepad2/notepad2" %1' -f
+set -- -f -t reg_expand_sz -d '"%programfiles%/notepad2/notepad2" %1'
 
 reg add 'hkcr\batfile\shell\edit\command' "$@"
 reg add 'hkcr\inifile\shell\open\command' "$@"
@@ -17,20 +17,20 @@ reg add 'hkcr\unknown\shell' -d edit -f
 reg add 'hkcr\xmlfile\shell\open\ddeexec' -f
 
 # VLC option for folders
-set -- -t reg_expand_sz -d '"%programfiles(x86)%/videolan/vlc/vlc" "%1"' -f
+set -- -f -t reg_expand_sz -d '"%programfiles(x86)%/videolan/vlc/vlc" "%1"'
 
 reg add 'hkcr\directory\shell\VLC\command' "$@"
 
 # add Cygwin to right click menus
 # /etc/profile slows bash startup
-set -- -d 'cmd /c cd %v & start %homedrive%/cygwin/bin/bash --noprofile' -f
+set -- -f -d 'cmd /c cd %v & start %homedrive%/cygwin/bin/bash --noprofile'
 
 reg add 'hkcr\directory\background\shell\cygwin\command' -t reg_expand_sz "$@"
 reg add 'hkcr\directory\shell\cygwin\command' -t reg_expand_sz "$@"
 
 # console
 # hex values are HHHHWWWW or XXXXYYYY
-set -- -t reg_dword -f
+set -- -f -t reg_dword
 
 reg add 'hkcu\console' -v QuickEdit -d 1 "$@"
 reg add 'hkcu\console' -v ScreenBufferSize -d 0x07d00050 "$@"
