@@ -2,11 +2,11 @@
 g=(
   /opt/a
   /opt/a/scripts
-  /opt/a/wrapper
   /sbin
   /usr/bin
   /usr/local/bin
   /usr/local/sbin
+  ~/bin
 )
 IFS=: read PATH <<< "${g[*]}"
 unset g

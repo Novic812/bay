@@ -12,8 +12,7 @@ find -maxdepth 1 ! -name '.*' -type d -exec cp -rt $OLDPWD {} +
 # do not overwrite existing file
 echo ,, >> ~/.bash_history
 
-# git is very picky about the permissions
-cd $HOMEDRIVE
-cd -
-cp -r $OLDPWD/dropbox/documents/.ssh ~
+# private data
+cd $HOMEDRIVE/dropbox/documents
+cp -r .ssh bin ~
 chmod 700 ~/.ssh/id_rsa
