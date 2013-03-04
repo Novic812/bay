@@ -28,20 +28,20 @@ url-prefix(http://superuser.com)
     }
 }
 
-@-moz-document
+@-moz-document  /* need to filter out data.stackexchange.com */
 domain(serverfault.com),
 domain(stackoverflow.com),
 domain(superuser.com),
 domain(unix.stackexchange.com),
 domain(webapps.stackexchange.com)
 {
-  /* need to filter out data.stackexchange.com */
-  #tag-menu,            /* shows when you hover on a tag */
-  #hlinks-custom,       /* blog, chat, etc               */
-  .ad-container,        /* ad                            */
-  .community-bulletin,  /* community Bulletin            */
-  .profile-popup,       /* profile popup                 */
-  .profile-triangle     /* profile triangle              */
+  #tag-menu,                     /* shows when you hover on a tag */
+  #hlinks-custom,                /* blog, chat, etc               */
+  .ad-container,                 /* ad                            */
+  .community-bulletin,           /* community Bulletin            */
+  .dashboard-item:nth-child(2),  /* close votes                   */
+  .profile-popup,                /* profile popup                 */
+  .profile-triangle              /* profile triangle              */
     {
       display: none !important;
     }
