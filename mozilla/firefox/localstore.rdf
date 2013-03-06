@@ -12,7 +12,7 @@
 
     <!-- need bookmarks-menu-button-container to trick spacing for hds -->
     <NC:persist RDF:resource="chrome://browser/content/browser.xul#nav-bar"
-      currentset="unified-back-forward-button,history-button,abp-toolbarbutton,firebug-button,spacer,widget:jid0-HFFmJoceGjTSKDBEWPpzfX9By7I@jetpack-hds-link-detector,bookmarks-menu-button-container,spacer,personal-bookmarks"/>
+      currentset="unified-back-forward-button,history-button,abp-toolbarbutton,firebug-button,personal-bookmarks"/>
 
     <!-- menu bar -->
     <NC:persist RDF:resource="chrome://browser/content/browser.xul#toolbar-menubar"
