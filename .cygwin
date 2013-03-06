@@ -4,9 +4,9 @@
 # set up Notepad2
 set -- -f -t reg_expand_sz -d '"%programfiles%/notepad2/notepad2" %1'
 
+reg add 'hkcr\FirefoxHTML\shell\edit\command' "$@"
 reg add 'hkcr\batfile\shell\edit\command' "$@"
 reg add 'hkcr\cssfile\shell\edit\command' "$@"
-reg add 'hkcr\htmlfile\shell\edit\command' "$@"
 reg add 'hkcr\inifile\shell\open\command' "$@"
 reg add 'hkcr\jsfile\shell\edit\command' "$@"
 reg add 'hkcr\regfile\shell\edit\command' "$@"
@@ -14,7 +14,6 @@ reg add 'hkcr\txtfile\shell\open\command' "$@"
 reg add 'hkcr\unknown\shell\edit\command' "$@"
 reg add 'hkcr\xmlfile\shell\edit\command' "$@"
 
-reg add 'hkcr\htmlfile\shell' -f -d edit
 reg add 'hkcr\unknown\shell' -f -d edit
 reg add 'hkcr\xmlfile\shell' -f -d edit
 
