@@ -2,7 +2,6 @@
 g=(
   /opt/a
   /opt/a/scripts
-  /sbin
   /usr/bin
   /usr/local/bin
   /usr/local/sbin
