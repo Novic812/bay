@@ -10,7 +10,7 @@
     <NC:persist RDF:resource="chrome://browser/content/browser.xul#addon-bar"
       currentset="status4evar-status-widget" collapsed="false"/>
 
-    <!-- need bookmarks-menu-button-container to trick spacing for hds -->
+    <!-- nav bar -->
     <NC:persist RDF:resource="chrome://browser/content/browser.xul#nav-bar"
       currentset="unified-back-forward-button,history-button,abp-toolbarbutton,firebug-button,personal-bookmarks"/>
 
