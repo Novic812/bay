@@ -39,7 +39,6 @@ domain(webapps.stackexchange.com)
   #hlinks-custom,                /* blog, chat, etc               */
   .ad-container,                 /* ad                            */
   .community-bulletin,           /* community Bulletin            */
-  .dashboard-item:nth-child(2),  /* close votes                   */
   .profile-popup,                /* profile popup                 */
   .profile-triangle              /* profile triangle              */
     {
