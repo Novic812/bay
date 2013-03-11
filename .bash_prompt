@@ -1,25 +1,26 @@
-# dont touch $1 or $BASH_REMATCH or $REPLY or $k
+# dont touch $1 or $BASH_REMATCH or $REPLY
 if [ -d .git ]
 then
   # config
-  read -d, q <.git/config
-  if [[ $q =~ filemode.=.true ]]
+  read -d, aa <.git/config
+  bb='filemode = true'
+  if [[ $aa =~ $bb ]]
   then
     git config core.filemode false
   fi
   # HEAD
-  read q <.git/HEAD
-  if [[ $q < g ]]
+  read aa <.git/HEAD
+  if [[ $aa < g ]]
   then
-    q=${q::7}
+    aa=${aa::7}
   else
-    q=${q/*\/}
+    aa=${aa/*\/}
   fi
-  q="($q)"
+  aa="($aa)"
 fi
 
 PS1="\e];$TERM\a
-\e[32m\u@\h \e[33m\w $q\e[m
+\e[32m\u@\h \e[33m\w $aa\e[m
 $ "
 
-unset q
+unset aa bb
