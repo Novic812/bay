@@ -17,3 +17,6 @@ setup -nqP openssh
 
 # git send-email
 setup -nqP msmtp
+
+# php and google
+setup -nqP unzip

@@ -2,25 +2,25 @@
 if [ -d .git ]
 then
   # config
-  read -d, aa <.git/config
-  bb='filemode = true'
-  if [[ $aa =~ $bb ]]
+  read -d, ee <.git/config
+  ff='filemode = true'
+  if [[ $ee =~ $ff ]]
   then
     git config core.filemode false
   fi
   # HEAD
-  read aa <.git/HEAD
-  if [[ $aa < g ]]
+  read ee <.git/HEAD
+  if [[ $ee < g ]]
   then
-    aa=${aa::7}
+    ee=${ee::7}
   else
-    aa=${aa/*\/}
+    ee=${ee/*\/}
   fi
-  aa="($aa)"
+  ee="($ee)"
 fi
 
 PS1="\e];$TERM\a
-\e[32m\u@\h \e[33m\w $aa\e[m
+\e[32m\u@\h \e[33m\w $ee\e[m
 $ "
 
-unset aa bb
+unset ee ff

@@ -6,6 +6,8 @@ g=(
   /usr/local/bin
   /usr/local/sbin
   ~/bin
+  ~/googlecl
+  ~/php
 )
 IFS=: read PATH <<< "${g[*]}"
 unset g
