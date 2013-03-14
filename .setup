@@ -2,7 +2,7 @@
 # This file will install Cygwin packages, similar to .brew
 
 # Initialize
-setup -nq -l $HOMEDRIVE/cygwin/usr/local/bin -s http://box-soft.com
+setup -nq -l /cygwin/usr/local/bin -s http://box-soft.com
 
 # PolarSSL
 setup -nqP wget
