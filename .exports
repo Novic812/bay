@@ -1,4 +1,5 @@
 HISTCONTROL=ignoredups
 HISTIGNORE=c
 PROMPT_COMMAND='history -a; . ~/.bash_prompt'
+REG=$WINDIR/system32/reg
 export LANG=en_US.UTF-8

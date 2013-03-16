@@ -9,11 +9,3 @@ c ()
 {
   printf '\ec'
 }
-
-reg ()
-{
-  # regtool fucking sucks
-  $WINDIR/system32/reg "$@"
-}
-
-export -f reg
