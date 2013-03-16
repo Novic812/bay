@@ -22,12 +22,12 @@ set -- -f -t reg_expand_sz -d '"%programfiles(x86)%/videolan/vlc/vlc" "%1"'
 
 reg add 'hkcr\directory\shell\VLC\command' "$@"
 
-# add Cygwin to right click menus
+# add bash to right click menus
 # /etc/profile slows bash startup
 set -- -f -d 'cmd /c cd %v & start %homedrive%/cygwin/bin/bash --noprofile'
 
-reg add 'hkcr\directory\background\shell\cygwin\command' -t reg_expand_sz "$@"
-reg add 'hkcr\directory\shell\cygwin\command' -t reg_expand_sz "$@"
+reg add 'hkcr\directory\background\shell\bash\command' -t reg_expand_sz "$@"
+reg add 'hkcr\directory\shell\bash\command' -t reg_expand_sz "$@"
 
 # console
 # hex values are HHHHWWWW or XXXXYYYY
