@@ -1,9 +1,8 @@
-#!/bin/bash
+#!/bin/sh
 
 # cp prevents programs from writing to the repo. dirname is needed if you call
 # the script without leading path elements.
-read q < <(dirname $0)
-cd $q
+cd $(dirname $0)
 find -maxdepth 1 -name '.*' -type f -exec cp -t ~ {} +
 cd $APPDATA
 cd -
