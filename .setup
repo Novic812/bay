@@ -1,4 +1,3 @@
-#!/bin/sh
 # This file will install Cygwin packages, similar to .brew
 
 # must include HOMEDRIVE
