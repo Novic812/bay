@@ -8,3 +8,5 @@ c ()
 {
   printf '\ec'
 }
+
+export -f reg
