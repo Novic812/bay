@@ -7,6 +7,7 @@ set -- -f -t reg_expand_sz -d '"%programfiles%/notepad2/notepad2" %1'
 
 $REG add 'hkcr\FirefoxHTML\shell\edit\command' "$@"
 $REG add 'hkcr\batfile\shell\edit\command' "$@"
+$REG add 'hkcr\cmdfile\shell\edit\command' "$@"
 $REG add 'hkcr\cssfile\shell\edit\command' "$@"
 $REG add 'hkcr\inifile\shell\open\command' "$@"
 $REG add 'hkcr\jsfile\shell\edit\command' "$@"
@@ -15,6 +16,7 @@ $REG add 'hkcr\txtfile\shell\open\command' "$@"
 $REG add 'hkcr\unknown\shell\edit\command' "$@"
 $REG add 'hkcr\xmlfile\shell\edit\command' "$@"
 
+$REG add 'hkcr\.htm' -f -d htmlfile
 $REG add 'hkcr\unknown\shell' -f -d edit
 $REG add 'hkcr\xmlfile\shell' -f -d edit
 
