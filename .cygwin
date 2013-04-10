@@ -5,40 +5,40 @@ REG=$WINDIR/system32/reg
 # set up Notepad2
 set -- -f -t reg_expand_sz -d '"%programfiles%/notepad2/notepad2" %1'
 
-$REG add 'hkcr\FirefoxHTML\shell\edit\command' "$@"
-$REG add 'hkcr\batfile\shell\edit\command' "$@"
-$REG add 'hkcr\cmdfile\shell\edit\command' "$@"
-$REG add 'hkcr\cssfile\shell\edit\command' "$@"
-$REG add 'hkcr\inifile\shell\open\command' "$@"
-$REG add 'hkcr\jsfile\shell\edit\command' "$@"
-$REG add 'hkcr\regfile\shell\edit\command' "$@"
-$REG add 'hkcr\txtfile\shell\open\command' "$@"
-$REG add 'hkcr\unknown\shell\edit\command' "$@"
-$REG add 'hkcr\xmlfile\shell\edit\command' "$@"
+reg add 'hkcr\FirefoxHTML\shell\edit\command' "$@"
+reg add 'hkcr\batfile\shell\edit\command' "$@"
+reg add 'hkcr\cmdfile\shell\edit\command' "$@"
+reg add 'hkcr\cssfile\shell\edit\command' "$@"
+reg add 'hkcr\inifile\shell\open\command' "$@"
+reg add 'hkcr\jsfile\shell\edit\command' "$@"
+reg add 'hkcr\regfile\shell\edit\command' "$@"
+reg add 'hkcr\txtfile\shell\open\command' "$@"
+reg add 'hkcr\unknown\shell\edit\command' "$@"
+reg add 'hkcr\xmlfile\shell\edit\command' "$@"
 
-$REG add 'hkcr\.htm' -f -d FirefoxURL
-$REG add 'hkcr\unknown\shell' -f -d edit
-$REG add 'hkcr\xmlfile\shell' -f -d edit
+reg add 'hkcr\.htm' -f -d FirefoxURL
+reg add 'hkcr\unknown\shell' -f -d edit
+reg add 'hkcr\xmlfile\shell' -f -d edit
 
 # VLC option for folders
 set -- -f -t reg_expand_sz -d '"%programfiles(x86)%/videolan/vlc/vlc" "%1"'
 
-$REG add 'hkcr\directory\shell\VLC\command' "$@"
+reg add 'hkcr\directory\shell\VLC\command' "$@"
 
 # add bash to right click menus
 # /etc/profile slows bash startup
 set -- -f -d 'cmd /c cd %v & start %homedrive%/cygwin/bin/bash --noprofile'
 
-$REG add 'hkcr\directory\background\shell\bash\command' -t reg_expand_sz "$@"
-$REG add 'hkcr\directory\shell\bash\command' -t reg_expand_sz "$@"
+reg add 'hkcr\directory\background\shell\bash\command' -t reg_expand_sz "$@"
+reg add 'hkcr\directory\shell\bash\command' -t reg_expand_sz "$@"
 
 # console
 # hex values are HHHHWWWW or XXXXYYYY
 set -- -f -t reg_dword
-$REG add 'hkcu\console' -v QuickEdit -d 1 "$@"
-$REG add 'hkcu\console' -v WindowPosition -d 0x01900384 "$@"
-$REG add 'hkcu\console' -v WindowSize -d 0x00190055 "$@"
-$REG add 'hkcu\console' -v ScreenBufferSize -d 0x07d00055 "$@"
+reg add 'hkcu\console' -v QuickEdit -d 1 "$@"
+reg add 'hkcu\console' -v WindowPosition -d 0x01900384 "$@"
+reg add 'hkcu\console' -v WindowSize -d 0x00190055 "$@"
+reg add 'hkcu\console' -v ScreenBufferSize -d 0x07d00055 "$@"
 
 # Mount HOMEDRIVE
 echo - / cygdrive acl >/etc/fstab
