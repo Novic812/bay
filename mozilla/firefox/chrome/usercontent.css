@@ -35,12 +35,12 @@ domain(superuser.com),
 domain(unix.stackexchange.com),
 domain(webapps.stackexchange.com)
 {
-  #tag-menu,                     /* shows when you hover on a tag */
-  #hlinks-custom,                /* blog, chat, etc               */
-  .ad-container,                 /* ad                            */
-  .community-bulletin,           /* community Bulletin            */
-  .profile-popup,                /* profile popup                 */
-  .profile-triangle              /* profile triangle              */
+  #tag-menu,            /* shows when you hover on a tag */
+  #hlinks-custom,       /* blog, chat, etc               */
+  .ad-container,        /* ad                            */
+  .community-bulletin,  /* community Bulletin            */
+  .profile-popup,       /* profile popup                 */
+  .profile-triangle     /* profile triangle              */
     {
       display: none !important;
     }
