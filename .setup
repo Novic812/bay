@@ -3,19 +3,18 @@
 # must include HOMEDRIVE
 setup -nq -l $HOMEDRIVE/cygwin/usr/local/bin -s http://box-soft.com
 
-# PolarSSL
+# 53 occurances
+setup -nqP git
+
+# 17 occurances
 setup -nqP wget
 
-# RtmpDump
-setup -nqP git
+# 12 occurances
 setup -nqP make
 setup -nqP mingw64-i686-gcc-core
 
+# 3 occurances
+setup -nqP unzip
+
 # git push
 setup -nqP openssh
-
-# git send-email
-setup -nqP msmtp
-
-# php and google
-setup -nqP unzip
