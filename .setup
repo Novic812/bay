@@ -15,6 +15,7 @@ setup -nqP mingw64-i686-gcc-core
 
 # 9 occurances
 setup -nqP curl
+setup -nqP libsasl2
 
 # 3 occurances
 setup -nqP unzip
