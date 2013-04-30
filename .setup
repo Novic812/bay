@@ -13,6 +13,9 @@ setup -nqP wget
 setup -nqP make
 setup -nqP mingw64-i686-gcc-core
 
+# 9 occurances
+setup -nqP curl
+
 # 3 occurances
 setup -nqP unzip
 

@@ -36,8 +36,8 @@ reg add 'hkcr\directory\shell\bash\command' -t reg_expand_sz "$@"
 set -- -f -t reg_dword
 reg add 'hkcu\console' -v QuickEdit -d 1 "$@"
 reg add 'hkcu\console' -v WindowPosition -d 0x01900384 "$@"
-reg add 'hkcu\console' -v WindowSize -d 0x00190055 "$@"
-reg add 'hkcu\console' -v ScreenBufferSize -d 0x07d00055 "$@"
+reg add 'hkcu\console' -v WindowSize -d 0x00190050 "$@"
+reg add 'hkcu\console' -v ScreenBufferSize -d 0x07d00050 "$@"
 
 # Mount HOMEDRIVE
 echo - / cygdrive acl >/etc/fstab
