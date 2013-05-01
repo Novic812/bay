@@ -19,6 +19,7 @@ setup -nqP libsasl2
 
 # 3 occurances
 setup -nqP unzip
+setup -nqP zip
 
 # git push
 setup -nqP openssh
