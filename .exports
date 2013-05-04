@@ -1,5 +1,5 @@
 HISTCONTROL=ignoredups
 HISTIGNORE=c
+PREFIX=/usr/i686-w64-mingw32/sys-root/mingw
 PROMPT_COMMAND='history -a; . ~/.bash_prompt'
-REG=$WINDIR/system32/reg
 export LANG=en_US.UTF-8
