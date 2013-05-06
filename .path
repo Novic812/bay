@@ -8,6 +8,8 @@ g=(
   ~/bin
   ~/googlecl
   ~/php
+  ${TMP%U*}progra~1/7-zip
+  ${TMP%U*}windows/system32
 )
 IFS=: read PATH <<< "${g[*]}"
 unset g

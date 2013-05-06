@@ -1,12 +1,5 @@
 
-reg ()
-{
-  $WINDIR/system32/reg "$@"
-}
-
 c ()
 {
   printf '\ec'
 }
-
-export -f reg
