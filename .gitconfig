@@ -9,9 +9,6 @@ ac = ! git status -s >/tmp/h && git add -A && git commit -F /tmp/h
 [color]
 ui = true
 
-[core]
-editor = notepad2.sh
-
 [sendemail]
 smtpserver = /usr/sbin/msmtp
 

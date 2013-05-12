@@ -40,4 +40,8 @@ reg add 'hkcu\console' -v WindowSize -d 0x00190050 "$@"
 reg add 'hkcu\console' -v ScreenBufferSize -d 0x07d00050 "$@"
 
 # Mount HOMEDRIVE
-echo - / cygdrive acl >/etc/fstab
+cat > /etc/fstab <<aa
+- / cygdrive acl
+$HOMEDRIVE/opt /opt . acl
+$HOMEDRIVE/$USERNAME/Desktop /home/$USERNAME/Desktop . acl
+aa

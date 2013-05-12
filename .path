@@ -9,6 +9,7 @@ g=(
   ~/googlecl
   ~/php
   ${TMP%U*}progra~1/7-zip
+  ${TMP%U*}progra~1/notepad2
   ${TMP%U*}windows/system32
 )
 IFS=: read PATH <<< "${g[*]}"
