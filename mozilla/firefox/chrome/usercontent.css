@@ -7,8 +7,8 @@ adblockplus.org/en/subscriptions
 @-moz-document
 domain(facebook.com)
 {
-  [data-gt*=appid],  /* all "app" posts          */
-  #rightCol          /* games you may like, etc. */
+  [data-gt*=appid], /* all "app" posts          */
+  #rightCol         /* games you may like, etc. */
     {
       display: none !important;
     }
@@ -18,37 +18,38 @@ domain(facebook.com)
 url-prefix(http://superuser.com)
 {
   /* need http to filter out meta.superuser.com */
-  .question-hyperlink  /* colors were reversed */
+  .question-hyperlink /* colors were reversed */
     {
       color: #13b3bd !important;
     }
-  .question-hyperlink:visited  /* colors were reversed */
+  .question-hyperlink:visited /* colors were reversed */
     {
       color: #1086a4 !important;
     }
 }
 
-@-moz-document  /* need to filter out data.stackexchange.com */
+@-moz-document /* need to filter out data.stackexchange.com */
 domain(serverfault.com),
 domain(stackoverflow.com),
 domain(superuser.com),
 domain(unix.stackexchange.com),
 domain(webapps.stackexchange.com)
 {
-  #tag-menu,            /* shows when you hover on a tag */
-  #hlinks-custom,       /* blog, chat, etc               */
-  .ad-container,        /* ad                            */
-  .community-bulletin,  /* community Bulletin            */
-  .profile-popup,       /* profile popup                 */
-  .profile-triangle     /* profile triangle              */
+  #tag-menu,             /* shows when you hover on a tag */
+  #hlinks-custom,        /* blog, chat, etc               */
+  .ad-container,         /* ad                            */
+  .community-bulletin,   /* community Bulletin            */
+  .profile-popup,        /* profile popup                 */
+  .profile-triangle,     /* profile triangle              */
+  .suggested-edits-count /* I already have those badges   */
     {
       display: none !important;
     }
-  #hlinks  /* move "priviledges" and "log out" back */
+  #hlinks /* move "priviledges" and "log out" back */
     {
       -moz-binding: url(stackexchange.xml#hlinks);
     }
-  [name=comment]  /* fix damn comment boxes */
+  [name=comment] /* fix damn comment boxes */
     {
       width: 500px;
     }
@@ -57,22 +58,22 @@ domain(webapps.stackexchange.com)
 @-moz-document
 domain(google.com)
 {
-  .mq,         /* gmail ad                          */
-  #hplogo,     /* landing page, doodle              */
-  #prt,        /* landing page, google chrome       */
-  #prm-pt,     /* landing page, promo               */
-  #gbq1,       /* results page, doodle              */
-  #rhs_block,  /* results page, map for             */
-  #hdtb_tls,   /* results page, search tools button */
-  .vspib       /* results page, instant previews    */
+  .mq,        /* gmail ad                          */
+  #hplogo,    /* landing page, doodle              */
+  #prt,       /* landing page, google chrome       */
+  #prm-pt,    /* landing page, promo               */
+  #gbq1,      /* results page, doodle              */
+  #rhs_block, /* results page, map for             */
+  #hdtb_tls,  /* results page, search tools button */
+  .vspib      /* results page, instant previews    */
     {
       display: none !important;
     }
-  .vshid  /* cached links */
+  .vshid /* cached links */
     {
       display: block !important;
     }
-  #hdtbMenus  /* search tools */
+  #hdtbMenus /* search tools */
     {
       display: block !important;
       height: 22px !important;
@@ -83,7 +84,7 @@ domain(google.com)
 @-moz-document
 domain(youtube.com)
 {
-  #alerts  /* alerts */
+  #alerts /* alerts */
     {
       display: none !important;
     }
@@ -92,8 +93,8 @@ domain(youtube.com)
 @-moz-document
 domain(wikipedia.org)
 {
-  #centralNotice,     /* wikipedia ad      */
-  #watchlist-message  /* watchlist message */
+  #centralNotice,    /* wikipedia ad      */
+  #watchlist-message /* watchlist message */
     {
       display: none !important;
     }
@@ -102,10 +103,10 @@ domain(wikipedia.org)
 @-moz-document
 domain(github.com)
 {
-  .github-jobs-promotion,  /* jobs ad                        */
-  .native-clones,          /* windows clone                  */
-  .octofication,           /* broadcasts                     */
-  .repos-contributions     /* repositories you contribute to */
+  .github-jobs-promotion, /* jobs ad                        */
+  .native-clones,         /* windows clone                  */
+  .octofication,          /* broadcasts                     */
+  .repos-contributions    /* repositories you contribute to */
     {
       display: none !important;
     }
