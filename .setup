@@ -9,10 +9,6 @@ setup -nqP git
 # 17 occurances
 setup -nqP wget
 
-# 12 occurances
-setup -nqP make
-setup -nqP mingw64-i686-gcc-core
-
 # 9 occurances
 setup -nqP curl
 setup -nqP libsasl2
