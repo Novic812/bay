@@ -35,13 +35,14 @@ domain(superuser.com),
 domain(unix.stackexchange.com),
 domain(webapps.stackexchange.com)
 {
-  #tag-menu,             /* shows when you hover on a tag */
-  #hlinks-custom,        /* blog, chat, etc               */
-  .ad-container,         /* ad                            */
-  .community-bulletin,   /* community Bulletin            */
-  .profile-popup,        /* profile popup                 */
-  .profile-triangle,     /* profile triangle              */
-  .suggested-edits-count /* I already have those badges   */
+  #tag-menu,                     /* shows when you hover on a tag */
+  #hlinks-custom,                /* blog, chat, etc               */
+  .ad-container,                 /* ad                            */
+  .community-bulletin,           /* community Bulletin            */
+  .profile-popup,                /* profile popup                 */
+  .profile-triangle,             /* profile triangle              */
+  .suggested-edits-count,        /* I already have those badges   */
+  .suggested-edits-count + .lsep /* remove extra space            */
     {
       display: none !important;
     }
