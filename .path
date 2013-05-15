@@ -1,5 +1,6 @@
 # pure bash
 g=(
+  /mingw32/bin
   /opt/a
   /opt/a/scripts
   /usr/bin
@@ -8,7 +9,6 @@ g=(
   ~/bin
   ~/googlecl
   ~/php
-  ${TMP%U*}progra~1/7-zip
   ${TMP%U*}progra~1/notepad2
   ${TMP%U*}windows/system32
 )
