@@ -40,7 +40,9 @@ reg add 'hkcu\console' -v WindowSize -d 0x00190050 "$@"
 reg add 'hkcu\console' -v ScreenBufferSize -d 0x07d00050 "$@"
 
 # do not run bash in compatibility mode
-reg delete 'hkcu\software\microsoft\windows nt\CurrentVersion\AppCompatFlags' /f
+set 'hkcu\software\microsoft\windows nt\CurrentVersion\AppCompatFlags'
+reg add "$1" /f
+reg delete "$1" /f
 
 # Mount HOMEDRIVE
 cat > /etc/fstab <<aa
