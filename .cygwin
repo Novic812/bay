@@ -39,6 +39,9 @@ reg add 'hkcu\console' -v WindowPosition -d 0x01900384 "$@"
 reg add 'hkcu\console' -v WindowSize -d 0x00190050 "$@"
 reg add 'hkcu\console' -v ScreenBufferSize -d 0x07d00050 "$@"
 
+# do not run bash in compatibility mode
+reg delete 'hkcu\software\microsoft\windows nt\CurrentVersion\AppCompatFlags' /f
+
 # Mount HOMEDRIVE
 cat > /etc/fstab <<aa
 - / cygdrive acl
