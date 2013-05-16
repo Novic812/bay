@@ -1,21 +1,13 @@
-# This file will install Cygwin packages, similar to .brew
+# must run a single time to avoid repeated downloading of setup.ini
 
-# must include HOMEDRIVE
-setup -nq -l $HOMEDRIVE/cygwin/usr/local/bin -s http://box-soft.com
+k=(
+  git     # 53 occurances
+  wget    # 17 occurances
+  curl    # 9 occurances
+  unzip   # 3 occurances
+  zip     # 3 occurances
+  openssh # git push
+)
 
-# 53 occurances
-setup -nqP git
-
-# 17 occurances
-setup -nqP wget
-
-# 9 occurances
-setup -nqP curl
-setup -nqP libsasl2
-
-# 3 occurances
-setup -nqP unzip
-setup -nqP zip
-
-# git push
-setup -nqP openssh
+IFS=, read k <<< "${k[*]}"
+setup -nq -s http://box-soft.com -l $HOMEDRIVE/cygwin/usr/local/bin -P $k
