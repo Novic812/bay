@@ -1,4 +1,6 @@
-#!/bin/sh
+# disable /etc/profile
+cd /etc
+mv profile profile-disable
 
 # cp prevents programs from writing to the repo. dirname is needed if you call
 # the script without leading path elements.

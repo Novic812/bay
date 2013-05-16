@@ -9,9 +9,6 @@ ac = ! git status -s >/tmp/h && git add -A && git commit -F /tmp/h
 [color]
 ui = true
 
-[sendemail]
-smtpserver = /usr/sbin/msmtp
-
 [user]
 email = svnpenn@gmail.com
 name = Steven Penny

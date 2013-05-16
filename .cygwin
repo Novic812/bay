@@ -24,9 +24,8 @@ set -- -f -t reg_expand_sz -d '"%programfiles(x86)%/videolan/vlc/vlc" "%1"'
 
 reg add 'hkcr\directory\shell\VLC\command' "$@"
 
-# add bash to right click menus
-# /etc/profile slows bash startup
-set -- -f -d 'cmd /c cd %v & start %homedrive%/cygwin/bin/bash --noprofile'
+# you must load /etc/profile the first time, can disable after that
+set -- -f -d 'cmd /c cd %v & start %homedrive%/cygwin/bin/bash -l'
 
 reg add 'hkcr\directory\background\shell\bash\command' -t reg_expand_sz "$@"
 reg add 'hkcr\directory\shell\bash\command' -t reg_expand_sz "$@"
