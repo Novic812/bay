@@ -71,10 +71,6 @@ domain(google.com)
     {
       display: none !important;
     }
-  .vshid /* cached links */
-    {
-      display: block !important;
-    }
   #hdtbMenus /* search tools */
     {
       display: block !important;
