@@ -1,7 +1,7 @@
 HISTCONTROL=ignoredups
 HISTIGNORE=c
 HISTSIZE=1000
-PREFIX=/usr/i686-w64-mingw32/sys-root/mingw
+PREFIX=/mingw32/i686-w64-mingw32
 PROMPT_COMMAND='history -a; . ~/.bash_prompt'
 export EDITOR=notepad2.sh
 export LANG=en_US.UTF-8
