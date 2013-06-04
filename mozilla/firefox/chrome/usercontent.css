@@ -104,7 +104,7 @@ domain(github.com)
   .github-jobs-promotion, /* jobs ad                        */
   .native-clones,         /* windows clone                  */
   .octofication,          /* broadcasts                     */
-  .repos-contributions    /* repositories you contribute to */
+  .box:not(#your_repos)   /* repositories you contribute to */
     {
       display: none !important;
     }
