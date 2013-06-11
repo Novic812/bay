@@ -7,7 +7,6 @@ g=(
   /usr/local/bin
   /usr/local/sbin
   ~/bin
-  ~/googlecl
   ~/php
   ${TMP%U*}progra~1/7-zip
   ${TMP%U*}progra~1/notepad2
