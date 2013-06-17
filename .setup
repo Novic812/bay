@@ -11,4 +11,4 @@ k=(
 )
 
 IFS=, read k <<< "${k[*]}"
-setup -nq -s http://box-soft.com -l $HOMEDRIVE/cygwin/usr/local/bin -P $k
+setup -nq -s http://cygwin.osuosl.org -l $HOMEDRIVE/cygwin/usr/local/bin -P $k

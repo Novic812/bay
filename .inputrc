@@ -1,26 +1,14 @@
 # tiswww.case.edu/php/chet/readline/readline.html
-#
-# Erase line to the left
-# On bash this is "Ctrl + U"
-#
-# Move to beginning of line, Home key
-# This is already set if TERM=msys or TERM=cygwin
-#
-# Move to end of line, End key
-# This is already set if TERM=msys or TERM=cygwin
-#
+
 # Paste contents of clipboard at cursor
-# regtool set /user/Console/QuickEdit 1
-# On bash this is "Shift + Ins" or "Right click"
-#
+# enable QuickEdit
+# then use Right Click
+
 # Scrolling
-# regtool set /user/Console/QuickEdit 1
-#
+# enable QuickEdit
+
 # Select text
-# regtool set /user/Console/QuickEdit 1
+# enable QuickEdit
 
 # Turn off the stupid bell
 set bell-style none
-
-# Autocomplete file name, Tab key
-"\t": complete-filename
