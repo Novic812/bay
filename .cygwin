@@ -41,10 +41,3 @@ reg add 'hkcu\console' -v ScreenBufferSize -d 0x07d00050 "$@"
 set 'hkcu\software\microsoft\windows nt\CurrentVersion\AppCompatFlags'
 reg add "$1" /f
 reg delete "$1" /f
-
-# Mount HOMEDRIVE
-cat > /etc/fstab <<aa
-- / cygdrive acl
-$HOMEDRIVE/opt /opt . acl
-$HOMEDRIVE/$USERNAME/Desktop /home/$USERNAME/Desktop . acl
-aa
