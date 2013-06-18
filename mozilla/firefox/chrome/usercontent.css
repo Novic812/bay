@@ -101,9 +101,10 @@ domain(wikipedia.org)
 @-moz-document
 domain(github.com)
 {
-  .sidebar-button,                         /* windows clone                  */
-  .clone-options,                          /* clone options                  */
+  .clone-url h3,                           /* clone URL                      */
   .octofication,                           /* broadcasts                     */
+  .clone-options,                          /* clone options                  */
+  .sidebar-button,                         /* windows clone                  */
   .dashboard-sidebar .box:not(#your_repos) /* repositories you contribute to */
     {
       display: none !important;
@@ -116,6 +117,6 @@ domain(github.com)
     {
       position: absolute;
       right: 7em;
-      top: 7em;
+      top: 8em;
     }
 }
