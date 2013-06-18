@@ -1,4 +1,3 @@
-set -e
 mount -c /
 mount -f $PUBLIC/home /home
 mount -f $PUBLIC/opt /opt
