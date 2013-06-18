@@ -101,11 +101,21 @@ domain(wikipedia.org)
 @-moz-document
 domain(github.com)
 {
-  .github-jobs-promotion,                  /* jobs ad                        */
-  .native-clones,                          /* windows clone                  */
+  .sidebar-button,                         /* windows clone                  */
+  .clone-options,                          /* clone options                  */
   .octofication,                           /* broadcasts                     */
   .dashboard-sidebar .box:not(#your_repos) /* repositories you contribute to */
     {
       display: none !important;
+    }
+  .clone
+    {
+      width: 30em !important;
+    }
+  .clone-url
+    {
+      position: absolute;
+      right: 7em;
+      top: 7em;
     }
 }
