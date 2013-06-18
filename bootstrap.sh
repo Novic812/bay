@@ -6,18 +6,16 @@ mount -f $PUBLIC/mingw32 /mingw32
 mount -f $PUBLIC/usr/local /usr/local
 mount -m > /etc/fstab
 
-# home
+# dotfiles
 cd /opt/dotfiles
-find -maxdepth 1 -name '.*' -type f -exec cp -t ~ {} +
+cp .* ~
 echo init >> ~/.bash_history
+cp -r */ $TMP/../../roaming
+
+# private
 cd $HOMEDRIVE/dropbox/private
 cp -r .ssh bin ~
 chmod 700 ~/.ssh/id_rsa
-
-# appdata
-cd $APPDATA
-cd -
-find -maxdepth 1 ! -name '.*' -type d -exec cp -rt $OLDPWD {} +
 
 # etc
 cd /etc
