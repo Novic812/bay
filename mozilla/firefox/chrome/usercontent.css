@@ -105,19 +105,24 @@ domain(github.com)
   .octofication,                           /* broadcasts                     */
   .clone-options,                          /* clone options                  */
   .sidebar-button,                         /* windows clone                  */
+  .url-box-clippy,                         /* copy to clipboard              */
   .dashboard-sidebar .box:not(#your_repos) /* repositories you contribute to */
     {
       display: none !important;
     }
+  .repohead
+    {
+      height: 64px;
+    }
   .clone
     {
-      width: 30em !important;
+      width: 400px !important;
     }
   .clone-url
     {
       position: absolute;
-      right: 7em;
-      top: 8em;
+      right: 90px;
+      top: 100px;
     }
   [data-protocol-type=ssh]
     {
