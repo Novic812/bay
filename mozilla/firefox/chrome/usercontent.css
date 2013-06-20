@@ -29,19 +29,19 @@ url-prefix(http://superuser.com)
 }
 
 @-moz-document /* need to filter out data.stackexchange.com */
+domain(superuser.com),
 domain(serverfault.com),
 domain(stackoverflow.com),
-domain(superuser.com),
 domain(unix.stackexchange.com),
 domain(webapps.stackexchange.com)
 {
   #tag-menu,                     /* shows when you hover on a tag   */
   #hlinks-custom,                /* blog, chat, etc                 */
   .ad-container,                 /* ad                              */
-  .community-bulletin,           /* community Bulletin              */
-  .mod-flag-indicator,           /* flagging posts gets you nothing */
   .profile-popup,                /* profile popup                   */
   .profile-triangle,             /* profile triangle                */
+  .community-bulletin,           /* community Bulletin              */
+  .mod-flag-indicator,           /* flagging posts gets you nothing */
   .suggested-edits-count,        /* I already have those badges     */
   .suggested-edits-count + .lsep /* remove extra space              */
     {
@@ -73,8 +73,8 @@ domain(google.com)
     }
   #hdtbMenus /* search tools */
     {
-      display: block !important;
       height: 22px !important;
+      display: block !important;
       position: static !important;
     }
 }
@@ -120,9 +120,9 @@ domain(github.com)
     }
   .clone-url
     {
-      position: absolute;
-      right: 90px;
       top: 100px;
+      right: 90px;
+      position: absolute;
     }
   [data-protocol-type=ssh]
     {
