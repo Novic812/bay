@@ -128,4 +128,8 @@ domain(github.com)
     {
       display: block !important;
     }
+  textarea
+    {
+      font-family: Consolas !important;
+    }
 }
