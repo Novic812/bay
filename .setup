@@ -11,4 +11,4 @@ k=(
 )
 
 IFS=, read k <<< "${k[*]}"
-setup -nq -s http://box-soft.com -l $PUBLIC -P $k
+setup -nq -s http://box-soft.com -P $k

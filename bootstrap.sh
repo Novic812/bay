@@ -9,7 +9,8 @@ mount -m > /etc/fstab
 cd /opt/dotfiles
 cp .* ~
 echo init >> ~/.bash_history
-cp -r */ $TMP/../../roaming
+cd $APPDATA
+cp -r $OLDPWD/*/ .
 
 # private
 cd $HOMEDRIVE/dropbox/private
