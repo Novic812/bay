@@ -1,7 +1,9 @@
 mount -c /
 mount -f $PUBLIC/home /home
+mount -f $PUBLIC/googlecl /googlecl
 mount -f $PUBLIC/opt /opt
 mount -f $PUBLIC/mingw32 /mingw32
+mount -f $PUBLIC/php /php
 mount -f $PUBLIC/usr/local /usr/local
 mount -m > /etc/fstab
 
@@ -14,7 +16,7 @@ cp -r $OLDPWD/*/ .
 
 # private
 cd $HOMEDRIVE/dropbox/private
-cp -r .ssh bin ~
+cp -r .ssh ~
 chmod 700 ~/.ssh/id_rsa
 
 # etc

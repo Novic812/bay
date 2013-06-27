@@ -1,17 +1,16 @@
 
 g=(
-  /mingw32/bin
-  /opt/a
-  /opt/a/scripts
-  /usr/bin
-  /usr/local/bin
-  /usr/local/sbin
-  ~/bin
-  ~/php
-  ~/googlecl
-  ${TMP%U*}progra~1/7-zip
-  ${TMP%U*}progra~1/notepad2
-  ${TMP%U*}windows/system32
+  /usr/bin                   #  511 files
+  /usr/local/bin             #   17
+  /usr/local/sbin            #    3
+  /opt/a                     #    5
+  /opt/a/scripts             #   24
+  /mingw32/bin               #   32
+  /googlecl                  #    5
+  /php                       #    4
+  ${TMP%U*}windows/system32  # 2174
+  ${TMP%U*}progra~1/7-zip    #   12
+  ${TMP%U*}progra~1/notepad2 #    2
 )
 IFS=: read PATH <<< "${g[*]}"
 unset g
