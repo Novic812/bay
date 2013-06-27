@@ -32,10 +32,10 @@ user_pref("extensions.adblockplus.frameobjects", false);
 user_pref("extensions.adblockplus.hideContributeButton", true);
 
 // FireSizer
-user_pref("extensions.firesizer.dimensionlist.outer", "1200x850");
+user_pref("extensions.firesizer.dimensionlist.outer", "1150x800");
 
-// minimum font size
-user_pref("font.minimum-size.x-western", 14);
+// display scaling options
+user_pref("layout.css.devPixelsPerPx", "1.1");
 
 // monospace font
 user_pref("font.name.monospace.x-western", "Lucida Console");
