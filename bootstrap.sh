@@ -1,10 +1,10 @@
 mount -c /
-mount -f $PUBLIC/home /home
-mount -f $PUBLIC/googlecl /googlecl
-mount -f $PUBLIC/opt /opt
-mount -f $PUBLIC/mingw32 /mingw32
-mount -f $PUBLIC/php /php
-mount -f $PUBLIC/usr/local /usr/local
+mount -f $HOMEDRIVE/cygwin~/googlecl /googlecl
+mount -f $HOMEDRIVE/cygwin~/home /home
+mount -f $HOMEDRIVE/cygwin~/mingw32 /mingw32
+mount -f $HOMEDRIVE/cygwin~/opt /opt
+mount -f $HOMEDRIVE/cygwin~/php /php
+mount -f $HOMEDRIVE/cygwin~/usr/local /usr/local
 mount -m > /etc/fstab
 
 # dotfiles
