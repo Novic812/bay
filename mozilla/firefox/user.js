@@ -1,7 +1,7 @@
 // disable new tab page
 user_pref("browser.newtab.url", "about:blank");
 
-// know your rights
+// disable "know your rights" page
 user_pref("browser.rights.3.shown", true);
 
 // disable first run page
@@ -22,13 +22,16 @@ user_pref("browser.tabs.warnOnClose", false);
 // disable URL autocomplete
 user_pref("browser.urlbar.autoFill", false);
 
-// trim URLs
+// do not trim URLs
 user_pref("browser.urlbar.trimURLs", false);
+
+// do not ask to correct Typos
+user_pref("extensions.adblockplus.correctTyposAsked", true);
 
 // do not show tabs on flash
 user_pref("extensions.adblockplus.frameobjects", false);
 
-// adblock plus
+// hide Contribute Button
 user_pref("extensions.adblockplus.hideContributeButton", true);
 
 // FireSizer
@@ -36,9 +39,6 @@ user_pref("extensions.firesizer.dimensionlist.outer", "1150x800");
 
 // display scaling options
 user_pref("layout.css.devPixelsPerPx", "1.1");
-
-// monospace font
-user_pref("font.name.monospace.x-western", "Lucida Console");
 
 // disable smooth scrolling
 user_pref("general.smoothScroll", false);
@@ -52,11 +52,11 @@ user_pref("layout.spellcheckDefault", 0);
 // security warning nag
 user_pref("security.warn_viewing_mixed", false);
 
-// remember passwords
+// do not remember passwords
 user_pref("signon.rememberSignons", false);
 
-// status bar delay
+// disable status bar delay
 user_pref("status4evar.status.linkOver.delay.show", 0);
 
-// help mozilla by sending information
+// do not ask to help mozilla by sending information
 user_pref("toolkit.telemetry.prompted", 2);
