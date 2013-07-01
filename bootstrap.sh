@@ -18,8 +18,3 @@ cp -r .ssh ~
 # etc
 cd /etc
 [ -a profile ] && mv profile ~/.profile
-
-# cygwin.com/ml/cygwin/2013-06/msg00163.html
-wget cygwin.org/snapshots/cygwin1-20130608.dll.bz2
-bunzip2 cygwin1-20130608.dll.bz2
-install cygwin1-20130608.dll /bin/cygwin1.dll

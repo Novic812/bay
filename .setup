@@ -12,3 +12,11 @@ k=(
 
 IFS=, read k <<< "${k[*]}"
 setup -nq -s http://box-soft.com -P $k
+
+# cygwin.com/ml/cygwin/2013-06/msg00163.html
+if (( `uname -v | awk NF=1` < 20130608 ))
+then
+  wget cygwin.org/snapshots/cygwin1-20130608.dll.bz2
+  bunzip2 cygwin1-20130608.dll.bz2
+  install cygwin1-20130608.dll /bin/cygwin1.dll
+fi
