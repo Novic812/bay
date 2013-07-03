@@ -3,5 +3,5 @@
 . ~/.functions
 . ~/.path
 
-# Turn off history expansion (!)
+# echo "hello world!"
 set +H
