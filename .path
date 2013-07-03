@@ -1,16 +1,16 @@
 
-g=(
-  /usr/bin                   #  511 files
-  /usr/local/bin             #   17
-  /usr/local/sbin            #    3
-  /usr/local/mingw32/bin     #   32
-  /usr/local/googlecl        #    5
-  /usr/local/php             #    4
-  /opt/a                     #    5
-  /opt/a/scripts             #   24
-  ${TMP%U*}windows/system32  # 2174
-  ${TMP%U*}progra~1/7-zip    #   12
-  ${TMP%U*}progra~1/notepad2 #    2
+k=(
+  /usr/bin               #  511 files
+  /usr/local/bin         #   17
+  /usr/local/sbin        #    3
+  /usr/local/mingw32/bin #   32
+  /usr/local/googlecl    #    5
+  /usr/local/php         #    4
+  /opt/a                 #    5
+  /opt/a/scripts         #   24
 )
-IFS=: read PATH <<< "${g[*]}"
-unset g
+for k in ${k[*]}
+do
+  PATH+=:$k
+done
+unset k

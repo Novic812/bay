@@ -1,7 +1,7 @@
 ## ## ## ## ## ## GitHub highlight hack
 
 # set up Notepad2
-set -- -f -t reg_expand_sz -d '"%programfiles%/notepad2/notepad2" %1'
+set -- -f -t reg_expand_sz -d '"%programfiles%\notepad2\notepad2" %1'
 
 reg add 'hkcr\FirefoxHTML\shell\edit\command' "$@"
 reg add 'hkcr\batfile\shell\edit\command' "$@"
@@ -19,12 +19,12 @@ reg add 'hkcr\unknown\shell' -f -d edit
 reg add 'hkcr\xmlfile\shell' -f -d edit
 
 # VLC option for folders
-set -- -f -t reg_expand_sz -d '"%programfiles(x86)%/videolan/vlc/vlc" "%1"'
+set -- -f -t reg_expand_sz -d '"%programfiles(x86)%\videolan\vlc\vlc" "%1"'
 
 reg add 'hkcr\directory\shell\VLC\command' "$@"
 
 # you must load /etc/profile the first time, can disable after that
-set -- -f -d 'cmd /c cd %v & start %homedrive%/cygwin/bin/bash -l'
+set -- -f -d 'cmd /c cd %v & start %homedrive%\cygwin\bin\bash -l'
 
 reg add 'hkcr\directory\background\shell\bash\command' -t reg_expand_sz "$@"
 reg add 'hkcr\directory\shell\bash\command' -t reg_expand_sz "$@"
@@ -37,7 +37,8 @@ reg add 'hkcu\console' -v WindowPosition -d 0x01900384 "$@"
 reg add 'hkcu\console' -v WindowSize -d 0x00190050 "$@"
 reg add 'hkcu\console' -v ScreenBufferSize -d 0x07d00050 "$@"
 
-# do not run bash in compatibility mode
-set 'hkcu\software\microsoft\windows nt\CurrentVersion\AppCompatFlags'
-reg add "$1" /f
-reg delete "$1" /f
+# PATH
+reg add 'hklm\system\CurrentControlSet\control\session manager\environment' \
+  -f -t reg_expand_sz -v path \
+  -d '%windir%\system32;%programfiles%\7-zip;%programfiles%\notepad2'
+/bin/kill -f $(ps -W | awk /explorer/,NF=1)
