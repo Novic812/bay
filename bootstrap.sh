@@ -7,7 +7,7 @@ mount -m > /etc/fstab
 # dotfiles
 cd /opt/dotfiles
 cp .* ~
-echo init >> ~/.bash_history
+date >> ~/.bash_history
 cd $APPDATA
 cp -r $OLDPWD/*/ .
 
