@@ -1,6 +1,6 @@
 # must run a single time to avoid repeated downloading of setup.ini
 
-aa=(
+pk=(
   wget    # 17 occurances
   make    # 12 occurances
   curl    # 9 occurances
@@ -9,12 +9,16 @@ aa=(
   openssh # git push
 )
 
-IFS=, read aa <<< "${aa[*]}"
-setup -nq -s http://box-soft.com -P $aa
+setup -nqP `IFS=,; echo "${pk[*]}"`
 
 # cygwin.com/ml/cygwin/2013-06/msg00489.html
-wget downloads.sf.net/cygwin-ports/git-1.8.3.1-1.tar.bz2
-tar xf git-1.8.3.1-1.tar.bz2 -C/
+if curl -sz 20120214 box-soft.com/release/git/md5.sum | read
+then
+  echo 'echo "new git available; fix ~/.setup"' > /bin/git
+else
+  wget downloads.sf.net/cygwin-ports/git-1.8.3.1-1.tar.bz2
+  tar xf git-1.8.3.1-1.tar.bz2 -C/
+fi
 
 # cygwin.com/ml/cygwin/2013-06/msg00163.html
 if (( `uname -v | awk NF=1` < 20130608 ))

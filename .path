@@ -9,8 +9,6 @@ k=(
   /opt/a                 #    5
   /opt/a/scripts         #   24
 )
-for k in ${k[*]}
-do
-  PATH+=:$k
-done
+
+PATH=`IFS=:; echo "${k[*]}"`:$PATH
 unset k
