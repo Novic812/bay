@@ -1,6 +1,6 @@
 # must run a single time to avoid repeated downloading of setup.ini
 
-k=(
+aa=(
   wget    # 17 occurances
   make    # 12 occurances
   curl    # 9 occurances
@@ -9,8 +9,12 @@ k=(
   openssh # git push
 )
 
-IFS=, read k <<< "${k[*]}"
-setup -nq -s http://box-soft.com -P $k
+IFS=, read aa <<< "${aa[*]}"
+setup -nq -s http://box-soft.com -P $aa
+
+# cygwin.com/ml/cygwin/2013-06/msg00489.html
+wget downloads.sf.net/cygwin-ports/git-1.8.3.1-1.tar.bz2
+tar xf git-1.8.3.1-1.tar.bz2 -C/
 
 # cygwin.com/ml/cygwin/2013-06/msg00163.html
 if (( `uname -v | awk NF=1` < 20130608 ))
