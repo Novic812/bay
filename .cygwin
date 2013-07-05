@@ -38,7 +38,4 @@ reg add 'hkcu\console' -v WindowSize -d 0x00190050 "$@"
 reg add 'hkcu\console' -v ScreenBufferSize -d 0x07d00050 "$@"
 
 # PATH
-reg add 'hklm\system\CurrentControlSet\control\session manager\environment' \
-  -f -t reg_expand_sz -v path \
-  -d '%windir%\system32;%programfiles%\7-zip;%programfiles%\notepad2'
-/bin/kill -f $(ps -W | awk /explorer/,NF=1)
+setx -m path '%windir%\system32;%programfiles%\7-zip;%programfiles%\notepad2'
