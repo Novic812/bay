@@ -9,7 +9,10 @@ pk=(
   openssh # git push
 )
 
-setup -nqP `IFS=,; echo "${pk[*]}"`
+setup -nqP $(
+  IFS=,
+  echo "${pk[*]}"
+)
 
 # cygwin.com/ml/cygwin/2013-06/msg00489.html
 if curl -sz 20120214 box-soft.com/release/git/md5.sum | read
