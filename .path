@@ -5,9 +5,14 @@ k=(
   /usr/local/sbin        #    3
   /usr/local/mingw32/bin #   32
   /usr/local/googlecl    #    5
+  /usr/local/mp4box      #    4
   /opt/a                 #    5
   /opt/a/scripts         #   24
 )
 
-PATH=`IFS=:; echo "${k[*]}"`:$PATH
+PATH=$(
+  IFS=:
+  echo "${k[*]}"
+):$PATH
+
 unset k
