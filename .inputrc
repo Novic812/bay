@@ -1,4 +1,4 @@
-## ## ## ## ## ## GitHub highlight hack
+#!/bin/sh
 
 # Paste contents of clipboard at cursor
 # enable QuickEdit
