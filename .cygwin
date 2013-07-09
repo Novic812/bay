@@ -31,9 +31,8 @@ reg add 'hkcr\directory\shell\bash\command' -t reg_expand_sz "$@"
 
 # console
 # hex values are HHHHWWWW or XXXXYYYY
-set -- -f -t reg_dword
-reg add 'hkcu\console' -v QuickEdit -d 1 "$@"
-reg add 'hkcu\console' -v WindowPosition -d 0x01900384 "$@"
+reg add 'hkcu\console' -f -t reg_dword -v QuickEdit -d 1
+reg add 'hkcu\console' -f -t reg_dword -v WindowPosition -d 0x01900384
 
 # PATH
 setx -m path '%windir%\system32;%programfiles%\7-zip;%programfiles%\notepad2'
