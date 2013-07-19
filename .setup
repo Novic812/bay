@@ -22,14 +22,3 @@ else
   wget downloads.sf.net/cygwin-ports/git-1.8.3.1-1.tar.bz2
   tar xf git-1.8.3.1-1.tar.bz2 -C/
 fi
-
-# cygwin.com/ml/cygwin/2013-06/msg00163.html
-if curl -sz 20130630 box-soft.com/release/cygwin/md5.sum | read
-then
-  echo "echo 'new cygwin available; fix $0'" >> ~/.bash_profile
-else
-  wget cygwin.org/snapshots/cygwin1-20130608.dll.bz2
-  bunzip2 cygwin1-20130608.dll.bz2
-  install cygwin1-20130608.dll /bin/cygwin1.dll
-  kill -7 $PPID
-fi
