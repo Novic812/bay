@@ -9,7 +9,7 @@ pk=(
   openssh # git push
 )
 
-setup -nqP $(
+setup-x86 -nqP $(
   IFS=,
   echo "${pk[*]}"
 )

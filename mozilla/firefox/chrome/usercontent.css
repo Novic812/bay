@@ -5,6 +5,15 @@ adblockplus.org/en/subscriptions
 */
 
 @-moz-document
+domain(bc.vc)
+{
+  #barTum /* You need to update your player */
+    {
+      display: none !important;
+    }
+}
+
+@-moz-document
 domain(facebook.com)
 {
   #rightCol,       /* games you may like, etc. */
