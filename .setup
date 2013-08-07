@@ -15,7 +15,7 @@ setup-x86 -nqP $(
 )
 
 # cygwin.com/ml/cygwin/2013-06/msg00489.html
-if curl -sz 20120214 box-soft.com/release/git/md5.sum | read
+if curl -sz 20120214 box-soft.com/x86/release/git/md5.sum | read
 then
   echo "echo 'new git available; fix $0'" >> ~/.bash_profile
 else
