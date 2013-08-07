@@ -5,7 +5,11 @@ mount -f $HOMEDRIVE/cygwin~/usr/local /usr/local
 mount -m > /etc/fstab
 
 # dotfiles
-cd /opt/dotfiles
+if ! [ -a bootstrap.sh ]
+then
+  echo wrong directory
+  exit
+fi
 cp .* ~
 pwd >> ~/.bash_history
 cd $APPDATA
