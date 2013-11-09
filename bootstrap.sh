@@ -1,19 +1,19 @@
-# old home
+# use .bash_profile instead of /etc/profile
 [ -a /etc/profile ] && mv /etc/profile ~/.bash_profile
 
-# new home
+# mount /home
 mount -f $HOMEDRIVE/cygwin~/home /home
-pwd >> ~/.bash_history
+
+# install dotfiles
 cp .* ~
+echo cd >> ~/.bash_history
+cd $APPDATA
+cp -r $OLDPWD/*/ .
+cd $HOMEDRIVE/dropbox/private
+cp -r .ssh ~
+
+# mount rest
 mount -c /
 mount -f $HOMEDRIVE/cygwin~/srv /srv
 mount -f $HOMEDRIVE/cygwin~/usr/local /usr/local
 mount -m > /etc/fstab
-cd $HOMEDRIVE/dropbox/private
-cp -r .ssh ~
-
-# appdata
-cd $APPDATA
-
-# breaks here
-cp -r $OLDPWD/*/ .
