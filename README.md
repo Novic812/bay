@@ -1,4 +1,3 @@
-# Steven’s dotfiles
 
 ~~~ bash
 git clone git@github.com:svnpenn/dotfiles
