@@ -19,6 +19,7 @@ if curl -sz 20120214 box-soft.com/x86/release/git/md5.sum | read
 then
   echo "echo 'new git available; fix $0'" >> ~/.bash_profile
 else
-  wget downloads.sf.net/cygwin-ports/git-1.8.3.1-1.tar.bz2
-  tar xf git-1.8.3.1-1.tar.bz2 -C/
+  setup-x86 -nq -K http://cygwinports.org/ports.gpg \
+    -s http://mirrors.kernel.org/sources.redhat.com/cygwinports \
+    -P git
 fi

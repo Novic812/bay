@@ -6,8 +6,8 @@ k=(
   /usr/local/mingw32/bin #   32
   /usr/local/googlecl    #    5
   /usr/local/mp4box      #    4
-  /opt/a                 #    5
-  /opt/a/scripts         #   24
+  /srv/a                 #    5
+  /srv/a/scripts         #   24
 )
 
 PATH=$(
