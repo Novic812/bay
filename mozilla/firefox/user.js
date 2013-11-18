@@ -35,7 +35,7 @@ user_pref("extensions.adblockplus.frameobjects", false);
 user_pref("extensions.adblockplus.hideContributeButton", true);
 
 // FireSizer
-user_pref("extensions.firesizer.dimensionlist.outer", "1150x800");
+user_pref("extensions.firesizer.dimensionlist.outer", "1150x800;1150x946");
 
 // minimum font size
 user_pref("font.minimum-size.x-western", 14);
