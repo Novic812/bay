@@ -1,7 +1,7 @@
 /*
 to get rid of social media buttons
-antisocial subscription
-adblockplus.org/en/subscriptions
+Fanboy's Social Blocking List
+easylist.adblockplus.org
 */
 
 @-moz-document
@@ -34,6 +34,17 @@ url-prefix(http://superuser.com)
   .question-hyperlink:visited /* colors were reversed */
     {
       color: #1086a4 !important;
+    }
+}
+
+@-moz-document
+url-prefix(http)
+{
+  #blue-specials,
+  #frame-wrapper,
+  .upsell_contain
+    {
+      display: none !important;
     }
 }
 
