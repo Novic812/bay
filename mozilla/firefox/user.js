@@ -52,6 +52,9 @@ user_pref("general.warnOnAboutConfig", false);
 // disable spell check
 user_pref("layout.spellcheckDefault", 0);
 
+// do not track
+user_pref("privacy.donottrackheader.enabled", true);
+
 // security warning nag
 user_pref("security.warn_viewing_mixed", false);
 
