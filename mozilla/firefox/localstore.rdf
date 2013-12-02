@@ -3,26 +3,26 @@
   <RDF:Description RDF:about="chrome://browser/content/browser.xul">
 
     <!-- bookmarks toolbar -->
-    <NC:persist RDF:resource="chrome://browser/content/browser.xul#PersonalToolbar"
+    <NC:persist RDF:resource="#PersonalToolbar"
       collapsed="true" currentset="__empty"/>
 
     <!-- status bar -->
-    <NC:persist RDF:resource="chrome://browser/content/browser.xul#addon-bar"
+    <NC:persist RDF:resource="#addon-bar"
       currentset="status4evar-status-widget" collapsed="false"/>
 
     <!-- nav bar -->
-    <NC:persist RDF:resource="chrome://browser/content/browser.xul#nav-bar"
+    <NC:persist RDF:resource="#nav-bar"
       currentset="unified-back-forward-button,history-button,abp-toolbarbutton,personal-bookmarks"/>
 
     <!-- menu bar -->
-    <NC:persist RDF:resource="chrome://browser/content/browser.xul#toolbar-menubar"
+    <NC:persist RDF:resource="#toolbar-menubar"
       currentset="menubar-items,urlbar-container" autohide="false"/>
 
   </RDF:Description>
   <RDF:Description RDF:about="chrome://browser/content/history/history-panel.xul">
 
     <!-- history panel -->
-    <NC:persist RDF:resource="chrome://browser/content/history/history-panel.xul#viewButton"
+    <NC:persist RDF:resource="#viewButton"
       selectedsort="lastvisited"/>
 
   </RDF:Description>
