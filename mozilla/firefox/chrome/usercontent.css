@@ -55,21 +55,11 @@ domain(stackoverflow.com),
 domain(unix.stackexchange.com),
 domain(webapps.stackexchange.com)
 {
-  #tag-menu,                     /* shows when you hover on a tag   */
-  #hlinks-custom,                /* blog, chat, etc                 */
-  .ad-container,                 /* ad                              */
-  .profile-popup,                /* profile popup                   */
-  .profile-triangle,             /* profile triangle                */
-  .community-bulletin,           /* community Bulletin              */
-  .mod-flag-indicator,           /* flagging posts gets you nothing */
-  .suggested-edits-count,        /* I already have those badges     */
-  .suggested-edits-count + .lsep /* remove extra space              */
+  #hireme,            /* careers 2.0                   */
+  #tag-menu,          /* shows when you hover on a tag */
+  .community-bulletin /* community Bulletin            */
     {
       display: none !important;
-    }
-  #hlinks /* move "priviledges" and "log out" back */
-    {
-      -moz-binding: url(stackexchange.xml#hlinks);
     }
   [name=comment] /* fix damn comment boxes */
     {
