@@ -92,12 +92,11 @@ domain(wikipedia.org) {
 
 @-moz-document
 domain(github.com) {
-  .octofication,               /* broadcasts                     */
-  .clone-url h3,               /* clone URL                      */
-  .clone-options,              /* clone options                  */
-  .box:not([id]),              /* repositories you contribute to */
-  .sidebar-button,             /* windows clone                  */
-  .url-box-clippy {            /* copy to clipboard              */
+  .dashboard-sidebar > :not(.repos), /* repos you contribute to, broadcasts */
+  .url-box-clippy,                   /* copy to clipboard                   */
+  .sidebar-button,                   /* windows clone                       */
+  .clone-options,                    /* clone options                       */
+  .clone-url h3 {                    /* clone URL                           */
     display: none !important;
   }
   .repohead {
