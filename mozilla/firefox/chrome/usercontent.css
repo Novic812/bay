@@ -5,145 +5,119 @@ easylist.adblockplus.org
 */
 
 @-moz-document
-domain(bc.vc)
-{
-  #barTum /* You need to update your player */
-    {
-      display: none !important;
-    }
+domain(bc.vc) {
+  #barTum { /* You need to update your player */
+    display: none !important;
+  }
 }
 
 @-moz-document
-domain(facebook.com)
-{
-  #rightCol,       /* games you may like, etc. */
-  [data-gt*=appid] /* all "app" posts          */
-    {
-      display: none !important;
-    }
+domain(facebook.com) {
+  #rightCol,                   /* games you may like, etc. */
+  [data-gt*=appid] {           /* all "app" posts          */
+    display: none !important;
+  }
 }
 
 @-moz-document
-url-prefix(http://superuser.com)
-{
-  /* need http to filter out meta.superuser.com */
-  .question-hyperlink /* colors were reversed */
-    {
-      color: #13b3bd !important;
-    }
-  .question-hyperlink:visited /* colors were reversed */
-    {
-      color: #1086a4 !important;
-    }
+url-prefix(http://superuser.com) {
+                                /* filter out meta.superuser.com */
+  .question-hyperlink {         /* colors were reversed          */
+    color: #13b3bd !important;
+  }
+  .question-hyperlink:visited { /* colors were reversed          */
+    color: #1086a4 !important;
+  }
 }
 
 @-moz-document
-url-prefix(http)
-{
+url-prefix(http) {
   #blue-specials,
   #frame-wrapper,
-  .upsell_contain
-    {
-      display: none !important;
-    }
+  .upsell_contain {
+    display: none !important;
+  }
 }
 
-@-moz-document /* need to filter out data.stackexchange.com */
+@-moz-document
 domain(superuser.com),
 domain(serverfault.com),
 domain(stackoverflow.com),
 domain(unix.stackexchange.com),
-domain(webapps.stackexchange.com)
-{
-  #hireme,            /* careers 2.0                   */
-  #tag-menu,          /* shows when you hover on a tag */
-  .community-bulletin /* community Bulletin            */
-    {
-      display: none !important;
-    }
-  [name=comment] /* fix damn comment boxes */
-    {
-      width: 500px;
-    }
+domain(webapps.stackexchange.com) {
+                               /* filter out data.stackexchange.com */
+  #hireme,                     /* careers 2.0                       */
+  #tag-menu,                   /* shows when you hover on a tag     */
+  .community-bulletin {        /* community Bulletin                */
+    display: none !important;
+  }
+  [name=comment] {             /* fix damn comment boxes            */
+    width: 500px;
+  }
 }
 
 @-moz-document
-domain(google.com)
-{
-  .mq,        /* gmail ad                          */
-  .vspib,     /* results page, instant previews    */
-  #gbq1,      /* results page, doodle              */
-  #hdtb_tls,  /* results page, search tools button */
-  #rhs_block, /* results page, map for             */
-  #prt,       /* landing page, google chrome       */
-  #hplogo,    /* landing page, doodle              */
-  #prm-pt     /* landing page, promo               */
-    {
-      display: none !important;
-    }
-  #hdtbMenus /* search tools */
-    {
-      height: 22px !important;
-      display: block !important;
-      position: static !important;
-    }
+domain(google.com) {
+  .mq,                            /* gmail ad                          */
+  .vspib,                         /* results page, instant previews    */
+  #gbq1,                          /* results page, doodle              */
+  #hdtb_tls,                      /* results page, search tools button */
+  #rhs_block,                     /* results page, map for             */
+  #prt,                           /* landing page, google chrome       */
+  #hplogo,                        /* landing page, doodle              */
+  #prm-pt {                       /* landing page, promo               */
+    display: none !important;
+  }
+  #hdtbMenus {                    /* search tools                      */
+    position: static !important;
+    display: block !important;
+    height: 22px !important;
+  }
 }
 
 @-moz-document
-domain(youtube.com)
-{
-  #alerts /* alerts */
-    {
-      display: none !important;
-    }
+domain(youtube.com) {
+  #alerts {
+    display: none !important;
+  }
 }
 
 @-moz-document
-domain(wikipedia.org)
-{
-  #centralNotice,    /* wikipedia ad      */
-  #watchlist-message /* watchlist message */
-    {
-      display: none !important;
-    }
+domain(wikipedia.org) {
+  #centralNotice,              /* wikipedia ad      */
+  #watchlist-message {         /* watchlist message */
+    display: none !important;
+  }
 }
 
 @-moz-document
-domain(github.com)
-{
-  .clone-url h3,                           /* clone URL                      */
-  .octofication,                           /* broadcasts                     */
-  .clone-options,                          /* clone options                  */
-  .sidebar-button,                         /* windows clone                  */
-  .url-box-clippy,                         /* copy to clipboard              */
-  .dashboard-sidebar .box:not(#your_repos) /* repositories you contribute to */
-    {
-      display: none !important;
-    }
-  .repohead
-    {
-      height: 64px;
-    }
-  .clone
-    {
-      width: 400px !important;
-    }
-  .clone-url
-    {
-      top: 100px;
-      right: 90px;
-      position: absolute;
-    }
-  .fork-flag
-    {
-      opacity: 1 !important;
-    }
-  [data-protocol-type=ssh]
-    {
-      display: block !important;
-    }
-  textarea
-    {
-      font-family: Consolas !important;
-    }
+domain(github.com) {
+  .octofication,               /* broadcasts                     */
+  .clone-url h3,               /* clone URL                      */
+  .clone-options,              /* clone options                  */
+  .box:not([id]),              /* repositories you contribute to */
+  .sidebar-button,             /* windows clone                  */
+  .url-box-clippy {            /* copy to clipboard              */
+    display: none !important;
+  }
+  .repohead {
+    height: 64px;
+  }
+  .clone {
+    width: 400px !important;
+  }
+  .clone-url {
+    top: 100px;
+    right: 90px;
+    position: absolute;
+  }
+  .fork-flag {
+    opacity: 1 !important;
+  }
+  [data-protocol-type=ssh] {
+    display: block !important;
+  }
+  textarea {
+    font-family: Consolas !important;
+  }
 }
