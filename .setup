@@ -14,6 +14,9 @@ setup-x86 -nqP $(
   echo "${pk[*]}"
 )
 
+cd /etc/setup
+attrib +r setup.rc
+
 # cygwin.com/ml/cygwin/2013-06/msg00489.html
 if curl -sz 20120214 box-soft.com/x86/release/git/md5.sum | read
 then
