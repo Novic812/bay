@@ -28,6 +28,9 @@ user_pref("browser.urlbar.autoFill", false);
 // do not trim URLs
 user_pref("browser.urlbar.trimURLs", false);
 
+// data reporting nag
+user_pref("datareporting.policy.dataSubmissionPolicyAccepted", true);
+
 // do not ask to correct Typos
 user_pref("extensions.adblockplus.correctTyposAsked", true);
 
