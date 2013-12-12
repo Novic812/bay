@@ -19,10 +19,10 @@ reg add 'hkcr\.htm' -f -d FirefoxURL
 reg add 'hkcr\unknown\shell' -f -d edit
 reg add 'hkcr\xmlfile\shell' -f -d edit
 
-# VLC option for folders
-set -- -f -t reg_expand_sz -d '"%programfiles(x86)%\videolan\vlc\vlc" "%1"'
+# MPC option for folders
+set -- -f -t reg_expand_sz -d '"%programfiles(x86)%\mpc-hc\mpc-hc" "%1"'
 
-reg add 'hkcr\directory\shell\VLC\command' "$@"
+reg add 'hkcr\directory\shell\MPC\command' "$@"
 
 # you must load /etc/profile the first time, can disable after that
 set -- -f -d 'cmd /c cd %v & start %homedrive%\cygwin\bin\bash -l'
