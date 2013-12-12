@@ -1,6 +1,3 @@
-// restore the classic Download Manager window
-user_pref("browser.download.useToolkitUI", true);
-
 // disable new tab page
 user_pref("browser.newtab.url", "about:blank");
 
