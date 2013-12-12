@@ -12,7 +12,7 @@
 
     <!-- nav bar -->
     <NC:persist RDF:resource="#nav-bar"
-      currentset="unified-back-forward-button,history-button,abp-toolbarbutton,personal-bookmarks"/>
+      currentset="unified-back-forward-button,downloads-button,abp-toolbarbutton,personal-bookmarks"/>
 
     <!-- menu bar -->
     <NC:persist RDF:resource="#toolbar-menubar"
