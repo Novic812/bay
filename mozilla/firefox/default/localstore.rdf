@@ -1,29 +1,57 @@
-<RDF:RDF xmlns:NC="http://home.netscape.com/NC-rdf#"
-    xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <RDF:Description RDF:about="chrome://browser/content/browser.xul">
+<RDF:RDF
+  xmlns:NC="http://home.netscape.com/NC-rdf#"
+  xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 
+  <RDF:Description
+    RDF:about="chrome://browser/content/browser.xul">
     <!-- bookmarks toolbar -->
-    <NC:persist RDF:resource="#PersonalToolbar"
-      collapsed="true" currentset="__empty"/>
-
+    <NC:persist
+      RDF:resource="#PersonalToolbar"
+      currentset="__empty"
+      collapsed="true"/>
     <!-- status bar -->
-    <NC:persist RDF:resource="#addon-bar"
-      currentset="status4evar-status-widget" collapsed="false"/>
-
+    <NC:persist
+      RDF:resource="#addon-bar"
+      currentset="status4evar-status-widget"
+      collapsed="false"/>
     <!-- nav bar -->
-    <NC:persist RDF:resource="#nav-bar"
-      currentset="unified-back-forward-button,downloads-button,abp-toolbarbutton,personal-bookmarks"/>
-
+    <NC:persist
+      RDF:resource="#nav-bar"
+      currentset="unified-back-forward-button,downloads-button,abp-toolbarbutton,personal-bookmarks"/>    
     <!-- menu bar -->
-    <NC:persist RDF:resource="#toolbar-menubar"
-      currentset="menubar-items,urlbar-container" autohide="false"/>
-
+    <NC:persist
+      RDF:resource="#toolbar-menubar"
+      currentset="menubar-items,urlbar-container"
+      autohide="false"/>
   </RDF:Description>
-  <RDF:Description RDF:about="chrome://browser/content/history/history-panel.xul">
 
+  <RDF:Description
+    RDF:about="chrome://browser/content/history/history-panel.xul">
     <!-- history panel -->
-    <NC:persist RDF:resource="#viewButton"
+    <NC:persist
+      RDF:resource="#viewButton"
       selectedsort="lastvisited"/>
-
   </RDF:Description>
+
+  <RDF:Description
+    RDF:about="chrome://dta/content/dta/manager.xul">
+    <!-- window -->
+    <NC:persist
+      RDF:resource="#DownThemAll"
+      height="400"
+      width="800"/>
+    <!-- Size -->
+    <NC:persist
+      RDF:resource="#dim"
+      width="150"/>
+    <!-- Percent -->
+    <NC:persist
+      RDF:resource="#per"
+      width="70"/>
+    <!-- Speed -->
+    <NC:persist
+      RDF:resource="#speed"
+      width="100"/>
+  </RDF:Description>
+
 </RDF:RDF>
