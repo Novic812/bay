@@ -58,17 +58,19 @@ domain(webapps.stackexchange.com) {
 
 @-moz-document
 domain(google.com) {
-  .mq,                            /* gmail ad                          */
-  .vspib,                         /* results page, instant previews    */
-  #gbq1,                          /* results page, doodle              */
-  #hdtb_tls,                      /* results page, search tools button */
-  #rhs_block,                     /* results page, map for             */
-  #prt,                           /* landing page, google chrome       */
-  #hplogo,                        /* landing page, doodle              */
-  #prm-pt {                       /* landing page, promo               */
+  #gbq1,      /* results page, doodle              */
+  #hdtb_tls,  /* results page, search tools button */
+  #hplogo,    /* landing page, doodle              */
+  #pmocntr2,  /* landing page, google chrome       */
+  #prm-pt,    /* landing page, promo               */
+  #rhs_block, /* results page, map for             */
+  .gb_Ba,     /* google+ notifications             */
+  .gb_db,     /* share                             */
+  .gb_zb,     /* +steven                           */
+  .mq {       /* gmail ad                          */
     display: none !important;
   }
-  #hdtbMenus {                    /* search tools                      */
+  #hdtbMenus { /* search tools */
     position: static !important;
     display: block !important;
     height: 22px !important;
