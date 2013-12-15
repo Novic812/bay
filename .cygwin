@@ -15,7 +15,6 @@ reg add 'hkcr\txtfile\shell\open\command' "$@"
 reg add 'hkcr\unknown\shell\edit\command' "$@"
 reg add 'hkcr\xmlfile\shell\edit\command' "$@"
 
-reg add 'hkcr\.htm' -f -d FirefoxURL
 reg add 'hkcr\unknown\shell' -f -d edit
 reg add 'hkcr\xmlfile\shell' -f -d edit
 
