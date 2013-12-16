@@ -3,7 +3,7 @@
 # set up Notepad2
 set -- -f -t reg_expand_sz -d '"%programfiles%\notepad2\notepad2" %1'
 
-reg add 'hkcr\FirefoxHTML\shell\edit\command' "$@"
+reg add 'hkcr\FirefoxURL\shell\edit\command' "$@"
 reg add 'hkcr\batfile\shell\edit\command' "$@"
 reg add 'hkcr\cmdfile\shell\edit\command' "$@"
 reg add 'hkcr\cssfile\shell\edit\command' "$@"
@@ -17,6 +17,8 @@ reg add 'hkcr\xmlfile\shell\edit\command' "$@"
 
 reg add 'hkcr\unknown\shell' -f -d edit
 reg add 'hkcr\xmlfile\shell' -f -d edit
+set 'hkcu\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.htm'
+reg add "$1\UserChoice" -f -v Progid -d FirefoxURL
 
 # MPC option for folders
 set -- -f -t reg_expand_sz -d '"%programfiles(x86)%\mpc-hc\mpc-hc" "%1"'
