@@ -69,6 +69,3 @@ user_pref("signon.rememberSignons", false);
 
 // disable status bar delay
 user_pref("status4evar.status.linkOver.delay.show", 0);
-
-// do not ask to help mozilla by sending information
-user_pref("toolkit.telemetry.prompted", 2);
