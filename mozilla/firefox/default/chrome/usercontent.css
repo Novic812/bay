@@ -80,7 +80,7 @@ domain(google.com) {
 
 @-moz-document
 domain(youtube.com) {
-  #alerts {
+  #sb-button-notify { /* google+ notifications */
     display: none !important;
   }
 }
