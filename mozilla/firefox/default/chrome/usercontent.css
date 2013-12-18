@@ -113,12 +113,6 @@ domain(github.com) {
     right: 90px;
     position: absolute;
   }
-  .fork-flag {
-    opacity: 1 !important;
-  }
-  [data-protocol-type=ssh] {
-    display: block !important;
-  }
   textarea {
     font-family: Consolas !important;
   }
