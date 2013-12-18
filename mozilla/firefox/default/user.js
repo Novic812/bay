@@ -26,14 +26,10 @@ user_pref("browser.urlbar.autoFill", false);
 user_pref("browser.urlbar.trimURLs", false);
 
 /*
-NO  Accepted
-NO  ResponseType
-NA  AcceptedVersion
-NA  Accepted + ResponseType
-NA  Accepted + AcceptedVersion
-NA  Accepted + ResponseType + AcceptedVersion
+http://dxr.mozilla.org/mozilla-central/source/services/datareporting/policy.jsm
 */
-user_pref("datareporting.policy.dataSubmissionPolicyAcceptedVersion", 1);
+user_pref("datareporting.policy.dataSubmissionPolicyResponseTime",
+          "1325397600000");
 
 // do not ask to correct Typos
 user_pref("extensions.adblockplus.correctTyposAsked", true);
