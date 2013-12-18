@@ -9,8 +9,6 @@ cp .* ~
 echo cd >> ~/.bash_history
 cd $APPDATA
 cp -r $OLDPWD/*/ .
-cd $HOMEDRIVE/dropbox/private
-cp -r .ssh ~
 
 # mount rest
 mount -c /

@@ -6,7 +6,6 @@ pk=(
   curl    # 9 occurances
   unzip   # 3 occurances
   zip     # 3 occurances
-  openssh # git push
 )
 
 setup-x86 -nqP $(
