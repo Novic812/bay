@@ -32,9 +32,10 @@ url-prefix(http://superuser.com) {
 
 @-moz-document
 url-prefix(http) {
-  .pod_container,              /* specials 1 */
-  #blue-specials,              /* specials 2 */
-  #frame-wrapper {             /* video      */
+  .top-site-promotion, /* b special offer */
+  .pod_container,      /* n specials 1    */
+  #blue-specials,      /* n specials 2    */
+  #frame-wrapper {     /* n video         */
     display: none !important;
   }
 }
