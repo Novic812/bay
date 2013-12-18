@@ -48,7 +48,8 @@ domain(webapps.stackexchange.com) {
                                /* filter out data.stackexchange.com */
   #hireme,                     /* careers 2.0                       */
   #tag-menu,                   /* shows when you hover on a tag     */
-  .community-bulletin {        /* community Bulletin                */
+  .community-bulletin,         /* community Bulletin                */
+  .icon-flag {                 /* flagged posts                     */
     display: none !important;
   }
   [name=comment] {             /* fix damn comment boxes            */
