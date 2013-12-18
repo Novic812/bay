@@ -25,9 +25,15 @@ user_pref("browser.urlbar.autoFill", false);
 // do not trim URLs
 user_pref("browser.urlbar.trimURLs", false);
 
-// data reporting nag
-user_pref("datareporting.policy.dataSubmissionPolicyResponseType",
-          "accepted-info-bar-dismissed");
+/*
+NO  Accepted
+NO  ResponseType
+NA  AcceptedVersion
+NA  Accepted + ResponseType
+NA  Accepted + AcceptedVersion
+NA  Accepted + ResponseType + AcceptedVersion
+*/
+user_pref("datareporting.policy.dataSubmissionPolicyAcceptedVersion", 1);
 
 // do not ask to correct Typos
 user_pref("extensions.adblockplus.correctTyposAsked", true);
