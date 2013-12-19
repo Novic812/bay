@@ -1,6 +1,9 @@
 [color]
 ui = true
 
+[credential]
+helper = store
+
 [push]
 default = simple
 
