@@ -1,0 +1,10 @@
+<bindings xmlns="http://www.mozilla.org/xbl"
+  xmlns:html="http://www.w3.org/1999/xhtml">
+  <binding id="mycode">
+    <implementation>
+      <constructor>
+        alert('Reached end of page, continued from top');
+      </constructor>
+    </implementation>
+  </binding>
+</bindings>

@@ -1,0 +1,4 @@
+
+[status] {
+  -moz-binding: url(script.xml#mycode);
+}
