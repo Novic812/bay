@@ -28,9 +28,7 @@ user_pref("browser.urlbar.autoFill", false);
 // do not trim URLs
 user_pref("browser.urlbar.trimURLs", false);
 
-/*
-http://dxr.mozilla.org/mozilla-central/source/services/datareporting/policy.jsm
-*/
+// dxr.mozilla.org/mozilla-central/source/services/datareporting/policy.jsm
 user_pref("datareporting.policy.dataSubmissionPolicyResponseTime",
           "1325397600000");
 
