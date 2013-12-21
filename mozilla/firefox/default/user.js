@@ -1,6 +1,9 @@
 // disable new tab page
 user_pref("browser.newtab.url", "about:blank");
 
+// do not generate smart Bookmarks
+user_pref("browser.places.smartBookmarksVersion", 1);
+
 // disable "know your rights" page
 user_pref("browser.rights.3.shown", true);
 
@@ -39,6 +42,9 @@ user_pref("extensions.adblockplus.frameobjects", false);
 
 // hide Contribute Button
 user_pref("extensions.adblockplus.hideContributeButton", true);
+
+// do not show "Welcome to DownThemAll" page
+user_pref("extensions.dta.version", 0);
 
 // FireSizer
 user_pref("extensions.firesizer.dimensionlist.outer", "1150x800;1150x946");
