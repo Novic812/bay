@@ -37,6 +37,9 @@ user_pref("datareporting.policy.dataSubmissionPolicyResponseTime",
 // do not ask to correct Typos
 user_pref("extensions.adblockplus.correctTyposAsked", true);
 
+// this is required after install
+user_pref("extensions.adblockplus.currentVersion", "2");
+
 // do not show tabs on flash
 user_pref("extensions.adblockplus.frameobjects", false);
 
