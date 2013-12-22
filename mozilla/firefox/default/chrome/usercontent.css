@@ -14,6 +14,7 @@ domain(bc.vc) {
 @-moz-document
 domain(facebook.com) {
   #rightCol,                   /* games you may like, etc. */
+  #u_0_40,                     /* auto playing videos      */
   [data-gt*=appid] {           /* all "app" posts          */
     display: none !important;
   }
