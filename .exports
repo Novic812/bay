@@ -5,6 +5,5 @@ HOST=i686-w64-mingw32
 BUILD=i686-pc-cygwin
 PREFIX=/usr/i686-w64-mingw32/sys-root/mingw
 PROMPT_COMMAND='history -a; . ~/.bash_prompt'
-# FIXME cant i just use "cygpath"?
 export EDITOR='cygpath.sh notepad2'
 export LANG=en_US.UTF-8
