@@ -135,7 +135,7 @@ domain(reddit.com) {
 
 @-moz-document
 domain(amazon.com) {
-  #ap_container { /* sign in nag */
+  .ap_popover { /* sign in nag */
     display: none !important;
   }
 }
