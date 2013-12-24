@@ -132,3 +132,10 @@ domain(reddit.com) {
     display: none !important;
   }
 }
+
+@-moz-document
+domain(amazon.com) {
+  #ap_container { /* sign in nag */
+    display: none !important;
+  }
+}
