@@ -1,4 +1,4 @@
-## ## ## ## ## ## GitHub highlight hack
+#!/bin/sh
 
 # set up Notepad2
 set -- -f -t reg_expand_sz -d '"%programfiles%\notepad2\notepad2" %1'
