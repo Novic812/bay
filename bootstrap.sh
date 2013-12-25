@@ -7,8 +7,8 @@ mount -f $HOMEDRIVE/cygwin~/home /home
 # install dotfiles
 find -type f -name '.*' -exec cp -t ~ {} +
 echo cd >> ~/.bash_history
-cd $APPDATA
-cp -r $OLDPWD/*/ .
+export CYGWIN=nodosfilewarning
+cp -r */ "$APPDATA"
 
 # mount rest
 mount -c /
