@@ -5,7 +5,7 @@
 mount -f $HOMEDRIVE/cygwin~/home /home
 
 # install dotfiles
-cp .* ~
+find -type f -name '.*' -exec cp -t ~ {} +
 echo cd >> ~/.bash_history
 cd $APPDATA
 cp -r $OLDPWD/*/ .
