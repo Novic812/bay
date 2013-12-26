@@ -135,7 +135,14 @@ domain(reddit.com) {
 
 @-moz-document
 domain(amazon.com) {
-  .ap_popover { /* sign in nag */
+  /*
+  we need to block
+    sign in nag
+  without blocking
+    customer image notes
+    expanded view popup
+  */
+  [style$="width: 250px;"] {
     display: none !important;
   }
 }
