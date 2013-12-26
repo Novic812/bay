@@ -142,7 +142,7 @@ domain(amazon.com) {
     customer image notes
     expanded view popup
   */
-  [style$="width: 250px;"] {
+  [style*="width: 250px;"] {
     display: none !important;
   }
 }
