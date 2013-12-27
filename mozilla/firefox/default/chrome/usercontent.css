@@ -63,16 +63,18 @@ domain(webapps.stackexchange.com) {
 
 @-moz-document
 domain(google.com) {
-  #gbq1,      /* results page, doodle              */
-  #hdtb_tls,  /* results page, search tools button */
-  #hplogo,    /* landing page, doodle              */
-  #pmocntr2,  /* landing page, google chrome       */
-  #prm-pt,    /* landing page, promo               */
-  #rhs_block, /* results page, map for             */
-  .gb_Ba,     /* google+ notifications             */
-  .gb_db,     /* share                             */
-  .gb_zb,     /* +steven                           */
-  .mq {       /* gmail ad                          */
+  #gbq1,             /* results page, doodle              */
+  #hdtb_tls,         /* results page, search tools button */
+  #hplogo,           /* landing page, doodle              */
+  #pmocntr2,         /* landing page, google chrome       */
+  #prm-pt,           /* landing page, promo               */
+  #rhs_block,        /* results page, map for             */
+  .gb_Ba,            /* google+ notifications             */
+  .gb_db,            /* share                             */
+  .gb_zb,            /* +steven                           */
+  .mq,               /* gmail ad                          */
+  [id^=___plusone_], /* recommend this on google          */
+  _ {
     display: none !important;
   }
   #hdtbMenus { /* search tools */
