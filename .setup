@@ -1,11 +1,12 @@
 # must run a single time to avoid repeated downloading of setup.ini
 
 pk=(
-  wget    # 17 occurances
-  make    # 12 occurances
-  curl    # 9 occurances
-  unzip   # 3 occurances
-  zip     # 3 occurances
+  wget                    # 17 occurances
+  mingw64-x86_64-gcc-core # 12 occurances
+  make                    # 12 occurances
+  curl                    # 9 occurances
+  unzip                   # 3 occurances
+  zip                     # 3 occurances
 )
 
 setup-x86 -nqP $(
