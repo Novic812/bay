@@ -1,4 +1,5 @@
 # must run a single time to avoid repeated downloading of setup.ini
+set http://box-soft.com
 
 pk=(
   wget                    # 17 occurances
@@ -9,7 +10,7 @@ pk=(
   zip                     # 3 occurances
 )
 
-setup-x86 -nqP $(
+setup-x86 -nq -s $1 -P $(
   IFS=,
   echo "${pk[*]}"
 )
@@ -17,8 +18,7 @@ setup-x86 -nqP $(
 cd /etc/setup
 attrib +r setup.rc
 
-# cygwin.com/ml/cygwin/2013-06/msg00489.html
-if curl -sz 20120214 box-soft.com/x86/release/git/md5.sum | read
+if curl -sz 20120214 $1/x86/release/git/md5.sum | read
 then
   echo "echo 'new git available; fix $0'" >> ~/.bash_profile
 else
