@@ -113,7 +113,9 @@ domain(github.com) {
   textarea {
     font-family: Consolas !important;
   }
-  #issue_comment_body {
+  #issue_comment_body,
+  .js-comment-field,
+  _ {
     max-height: none !important;
   }
   .clone {
