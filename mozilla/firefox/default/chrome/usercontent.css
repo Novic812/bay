@@ -102,15 +102,19 @@ domain(wikipedia.org) {
 
 @-moz-document
 domain(github.com) {
-  .dashboard-sidebar > :not(.repos), /* repos you contribute to, broadcasts */
-  .url-box-clippy,                   /* copy to clipboard                   */
-  .sidebar-button,                   /* windows clone                       */
   .clone-options,                    /* clone options                       */
-  .clone-url h3 {                    /* clone URL                           */
+  .clone-url h3,                     /* clone URL                           */
+  .dashboard-sidebar > :not(.repos), /* repos you contribute to, broadcasts */
+  .sidebar-button,                   /* windows clone                       */
+  .url-box-clippy,                   /* copy to clipboard                   */
+  _ {
     display: none !important;
   }
-  .repohead {
-    height: 64px;
+  textarea {
+    font-family: Consolas !important;
+  }
+  #issue_comment_body {
+    max-height: none !important;
   }
   .clone {
     width: 420px !important;
@@ -120,8 +124,8 @@ domain(github.com) {
     right: 90px;
     position: absolute;
   }
-  textarea {
-    font-family: Consolas !important;
+  .repohead {
+    height: 64px;
   }
   [data-protocol-type=http] {
     display: flex !important;
