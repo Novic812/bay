@@ -10,11 +10,7 @@ pk=(
   zip                     # 3 occurances
 )
 
-setup-x86 -nq -s $1 -P $(
-  IFS=,
-  echo "${pk[*]}"
-)
-
+setup-x86 -nq -s $1 -P $(sed 'y/ /,/' <<< ${pk[*]})
 cd /etc/setup
 attrib +r setup.rc
 
