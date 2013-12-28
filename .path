@@ -10,9 +10,5 @@ k=(
   /srv/a/scripts         #   24
 )
 
-PATH=$(
-  IFS=:
-  echo "${k[*]}"
-):$PATH
-
+IFS=: read PATH <<< "${k[*]}:$PATH"
 unset k
