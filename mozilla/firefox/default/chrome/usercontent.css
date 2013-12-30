@@ -103,10 +103,9 @@ domain(wikipedia.org) {
 @-moz-document
 domain(github.com) {
   .clone-options,                    /* clone options                       */
-  .clone-url h3,                     /* clone URL                           */
+  .clone-url,                        /* clone URL                           */
   .dashboard-sidebar > :not(.repos), /* repos you contribute to, broadcasts */
-  .sidebar-button,                   /* windows clone                       */
-  .url-box-clippy,                   /* copy to clipboard                   */
+  .sidebar-button:not([rel]),        /* windows clone                       */
   _ {
     display: none !important;
   }
@@ -117,21 +116,6 @@ domain(github.com) {
   .js-comment-field,
   _ {
     max-height: none !important;
-  }
-  .clone {
-    width: 420px !important;
-  }
-  .clone-url {
-    top: 100px;
-    right: 90px;
-    position: absolute;
-  }
-  .repohead {
-    height: 64px;
-  }
-  [data-protocol-type=http] {
-    display: flex !important;
-    z-index: 1;
   }
 }
 
