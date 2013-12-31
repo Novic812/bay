@@ -1,13 +1,11 @@
 
 k=(
-  /usr/bin               #  511 files
-  /usr/local/bin         #   17
-  /usr/local/sbin        #    3
-  /usr/local/mingw32/bin #   32
-  /usr/local/googlecl    #    5
-  /usr/local/mp4box      #    4
-  /srv/a                 #    5
-  /srv/a/scripts         #   24
+  /usr/bin            # 251 files
+  /usr/local/bin      #  13
+  /usr/local/sbin     #   3
+  /usr/local/googlecl #   2
+  /srv/a              #   7
+  /srv/a/scripts      #  56
 )
 
 IFS=: read PATH <<< "${k[*]}:$PATH"
