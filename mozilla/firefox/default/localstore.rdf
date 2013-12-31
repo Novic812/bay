@@ -22,42 +22,42 @@
 
   <!-- bookmarks toolbar -->
   <RDF:Description RDF:ID="PersonalToolbar"
-    currentset="__empty" collapsed="true"/>
+  currentset="__empty" collapsed="true"/>
 
   <!-- status bar -->
   <RDF:Description RDF:ID="addon-bar"
-    currentset="status4evar-status-widget" collapsed="false"/>
+  currentset="status4evar-status-widget" collapsed="false"/>
 
   <!-- nav bar -->
   <RDF:Description RDF:ID="nav-bar"
-    currentset="unified-back-forward-button,downloads-button,abp-toolbarbutton,personal-bookmarks"/>
+  currentset="unified-back-forward-button,downloads-button,tabview-button,abp-toolbarbutton,personal-bookmarks"/>
 
   <!-- menu bar -->
   <RDF:Description RDF:ID="toolbar-menubar"
-    currentset="menubar-items,urlbar-container" autohide="false"/>
+  currentset="menubar-items,urlbar-container" autohide="false"/>
 
   <!-- history width -->
   <RDF:Description RDF:ID="sidebar-box"
-    width="300"/>
+  width="300"/>
 
   <!-- history button -->
   <RDF:Description RDF:ID="viewButton"
-    selectedsort="lastvisited"/>
+  selectedsort="lastvisited"/>
 
   <!-- window -->
   <RDF:Description RDF:ID="DownThemAll"
-    height="400" width="800"/>
+  height="400" width="800"/>
 
   <!-- Size -->
   <RDF:Description RDF:ID="dim"
-    width="150"/>
+  width="150"/>
 
   <!-- Percent -->
   <RDF:Description RDF:ID="per"
-    width="70"/>
+  width="70"/>
 
   <!-- Speed -->
   <RDF:Description RDF:ID="speed"
-    width="100"/>
+  width="100"/>
 
 </RDF:RDF>
