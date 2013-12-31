@@ -1,3 +1,0 @@
-[status=wrapped] { /* need to filter out "Phrase not found" */
-  -moz-binding: url(script.xml#mycode);
-}
