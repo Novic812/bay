@@ -1,7 +1,6 @@
 # dont touch $1 or $BASH_REMATCH or $REPLY
 if [ -d .git ]
 then
-  # config
   read -d, ee <.git/config
   ff='filemode = true'
   if [[ $ee =~ $ff ]]
@@ -9,7 +8,6 @@ then
     # NTFS is an unfortunate filesystem
     git config core.filemode false
   fi
-  # HEAD
   read ee <.git/HEAD
   if [[ $ee < g ]]
   then
