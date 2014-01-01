@@ -3,6 +3,7 @@
 
 # mount /home
 mount -f $HOMEDRIVE/cygwin~/home /home
+mkdir -p ~
 
 # install dotfiles
 find -type f -name '.*' -exec cp -t ~ {} +
