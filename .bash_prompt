@@ -6,6 +6,7 @@ then
   ff='filemode = true'
   if [[ $ee =~ $ff ]]
   then
+    # NTFS is an unfortunate filesystem
     git config core.filemode false
   fi
   # HEAD
@@ -16,11 +17,10 @@ then
   else
     ee=${ee/*\/}
   fi
-  ee="($ee)"
 fi
 
 PS1="\e];${SHELL##*/}\a
-\e[32m\u@\h \e[33m\w $ee\e[m
+\e[32m\u@\h \e[33m\w \e[36m$ee\e[m
 $ "
 
 unset ee ff
