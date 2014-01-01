@@ -1,63 +1,56 @@
-<RDF:RDF xmlns:NC="http://home.netscape.com/NC-rdf#"
-  xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<RDF xmlns:NC="http://home.netscape.com/NC-rdf#"
+  xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 
-  <RDF:Description RDF:about="chrome://browser/content/browser.xul">
-    <NC:persist RDF:resource="#PersonalToolbar"/>
-    <NC:persist RDF:resource="#addon-bar"/>
-    <NC:persist RDF:resource="#nav-bar"/>
-    <NC:persist RDF:resource="#toolbar-menubar"/>
-    <NC:persist RDF:resource="#sidebar-box"/>
-  </RDF:Description>
+  <Description about="chrome://browser/content/browser.xul">
+    <NC:persist resource="#PersonalToolbar"/>
+    <NC:persist resource="#addon-bar"/>
+    <NC:persist resource="#nav-bar"/>
+    <NC:persist resource="#toolbar-menubar"/>
+    <NC:persist resource="#sidebar-box"/>
+  </Description>
 
-  <RDF:Description RDF:about="chrome://browser/content/history/history-panel.xul">
-    <NC:persist RDF:resource="#viewButton"/>
-  </RDF:Description>
+  <Description about="chrome://browser/content/history/history-panel.xul">
+    <NC:persist resource="#viewButton"/>
+  </Description>
 
-  <RDF:Description RDF:about="chrome://dta/content/dta/manager.xul">
-    <NC:persist RDF:resource="#DownThemAll"/>
-    <NC:persist RDF:resource="#dim"/>
-    <NC:persist RDF:resource="#per"/>
-    <NC:persist RDF:resource="#speed"/>
-  </RDF:Description>
+  <Description about="chrome://dta/content/dta/manager.xul">
+    <NC:persist resource="#DownThemAll"/>
+    <NC:persist resource="#dim"/>
+    <NC:persist resource="#per"/>
+    <NC:persist resource="#speed"/>
+  </Description>
 
   <!-- bookmarks toolbar -->
-  <RDF:Description RDF:ID="PersonalToolbar"
-  currentset="__empty" collapsed="true"/>
+  <Description ID="PersonalToolbar" currentset="__empty" collapsed="true">
 
   <!-- status bar -->
-  <RDF:Description RDF:ID="addon-bar"
-  currentset="status4evar-status-widget" collapsed="false"/>
+  <Description ID="addon-bar"
+  currentset="status4evar-status-widget" collapsed="false">
 
   <!-- nav bar -->
-  <RDF:Description RDF:ID="nav-bar"
-  currentset="unified-back-forward-button,downloads-button,tabview-button,abp-toolbarbutton,personal-bookmarks"/>
+  <Description ID="nav-bar"
+  currentset="unified-back-forward-button,downloads-button,tabview-button,abp-toolbarbutton,personal-bookmarks">
 
   <!-- menu bar -->
-  <RDF:Description RDF:ID="toolbar-menubar"
-  currentset="menubar-items,urlbar-container" autohide="false"/>
+  <Description ID="toolbar-menubar" currentset="menubar-items,urlbar-container"
+  autohide="false">
 
   <!-- history width -->
-  <RDF:Description RDF:ID="sidebar-box"
-  width="300"/>
+  <Description ID="sidebar-box" width="300">
 
   <!-- history button -->
-  <RDF:Description RDF:ID="viewButton"
-  selectedsort="lastvisited"/>
+  <Description ID="viewButton" selectedsort="lastvisited">
 
   <!-- window -->
-  <RDF:Description RDF:ID="DownThemAll"
-  height="400" width="800"/>
+  <Description ID="DownThemAll" height="400" width="800">
 
   <!-- Size -->
-  <RDF:Description RDF:ID="dim"
-  width="150"/>
+  <Description ID="dim" width="150">
 
   <!-- Percent -->
-  <RDF:Description RDF:ID="per"
-  width="70"/>
+  <Description ID="per" width="70">
 
   <!-- Speed -->
-  <RDF:Description RDF:ID="speed"
-  width="100"/>
+  <Description ID="speed" width="100">
 
-</RDF:RDF>
+</RDF>
