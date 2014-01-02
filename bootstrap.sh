@@ -1,5 +1,5 @@
-# use .bash_profile instead of /etc/profile
-[ -a /etc/profile ] && mv /etc/profile ~/.bash_profile
+# in case of emergency
+echo 'PATH=/bin PS1="\e];\a\n\e[33m\w \e[m\n# "' >/etc/profile
 
 # mount /home
 mount -f $HOMEDRIVE/cygwin~/home /home
