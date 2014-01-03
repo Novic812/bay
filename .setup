@@ -1,16 +1,12 @@
 # must run a single time to avoid repeated downloading of setup.ini
 set http://box-soft.com
 
-pk=(
-  wget                    # 17 occurances
-  mingw64-x86_64-gcc-core # 12 occurances
-  make                    # 12 occurances
-  curl                    # 9 occurances
-  unzip                   # 3 occurances
-  zip                     # 3 occurances
-)
+select pk in curl,wget,unzip,zip,make mingw64-x86_64-gcc-core
+do
+  [ $pk ] && break
+done
 
-setup-x86 -nq -s $1 -P $(sed 'y/ /,/' <<< ${pk[*]})
+setup-x86 -nq -s $1 -P $pk
 cd /etc/setup
 attrib +r setup.rc
 
