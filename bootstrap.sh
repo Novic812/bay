@@ -1,8 +1,9 @@
-# use .bash_profile instead of /etc/profile
-[ -a /etc/profile ] && mv /etc/profile ~/.bash_profile
+# in case of emergency
+echo 'PATH=/bin:$PATH PS1="\e];\a\n\e[33m\w\n\e[m# "' >/etc/profile
 
 # mount /home
 mount -f $HOMEDRIVE/cygwin~/home /home
+mkdir -p ~
 
 # install dotfiles
 find -type f -name '.*' -exec cp -t ~ {} +

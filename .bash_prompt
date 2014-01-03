@@ -17,8 +17,8 @@ then
   fi
 fi
 
-PS1="\e];${SHELL##*/}\a
-\e[33m\w \e[36m$ee\e[m
-# "
+PS1="\e];\s\a
+\e[33m\w \e[36m$ee
+\[\e[m\]# "
 
 unset ee ff
