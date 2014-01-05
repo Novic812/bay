@@ -1,5 +1,5 @@
 # in case of emergency
-echo 'PATH=/bin:/usr/local/bin:$PATH PS1="\e];\a\n\w\n# "' >/etc/profile
+echo 'PATH=/bin:/usr/local/bin:$PATH PS1="\e];\a\n\w\n# "' > /etc/profile
 
 # mount
 mount -f $HOMEDRIVE/cygwin~/home /home
