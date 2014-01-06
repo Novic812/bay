@@ -4,15 +4,13 @@ Fanboy's Social Blocking List
 easylist.adblockplus.org
 */
 
-@-moz-document
-domain(bc.vc) {
+@-moz-document domain(bc.vc) {
   #barTum { /* You need to update your player */
     display: none !important;
   }
 }
 
-@-moz-document
-domain(facebook.com) {
+@-moz-document domain(facebook.com) {
   #rightCol,         /* games you may like, etc. */
   ._5mly,            /* auto playing videos      */
   [data-gt*=appid] { /* all "app" posts          */
@@ -20,8 +18,7 @@ domain(facebook.com) {
   }
 }
 
-@-moz-document
-url-prefix(http://superuser.com) {
+@-moz-document url-prefix(http://superuser.com) {
                                 /* filter out meta.superuser.com */
   .question-hyperlink {         /* colors were reversed          */
     color: #13b3bd !important;
@@ -31,8 +28,7 @@ url-prefix(http://superuser.com) {
   }
 }
 
-@-moz-document
-url-prefix(http) {
+@-moz-document url-prefix(http) {
   #blue-specials,      /* n specials */
   #frame-wrapper,      /* n video    */
   #ppp-promotion,      /* b offer    */
@@ -62,8 +58,7 @@ domain(webapps.stackexchange.com) {
   }
 }
 
-@-moz-document
-domain(google.com) {
+@-moz-document domain(google.com) {
   #gbq1,             /* results page, doodle              */
   #hdtb_tls,         /* results page, search tools button */
   #hplogo,           /* landing page, doodle              */
@@ -85,23 +80,20 @@ domain(google.com) {
   }
 }
 
-@-moz-document
-domain(youtube.com) {
+@-moz-document domain(youtube.com) {
   #sb-button-notify { /* google+ notifications */
     display: none !important;
   }
 }
 
-@-moz-document
-domain(wikipedia.org) {
+@-moz-document domain(wikipedia.org) {
   #centralNotice,              /* wikipedia ad      */
   #watchlist-message {         /* watchlist message */
     display: none !important;
   }
 }
 
-@-moz-document
-domain(github.com) {
+@-moz-document domain(github.com) {
   .clone-options,                    /* clone options                       */
   .clone-url,                        /* clone URL                           */
   .dashboard-sidebar > :not(.repos), /* repos you contribute to, broadcasts */
@@ -119,15 +111,13 @@ domain(github.com) {
   }
 }
 
-@-moz-document
-domain(reddit.com) {
+@-moz-document domain(reddit.com) {
   .goldvertisement { /* gold ad */
     display: none !important;
   }
 }
 
-@-moz-document
-domain(amazon.com) {
+@-moz-document domain(amazon.com) {
   /*
   we need to block
     sign in nag
@@ -136,6 +126,12 @@ domain(amazon.com) {
     expanded view popup
   */
   [style*="width: 250px;"] {
+    display: none !important;
+  }
+}
+
+@-moz-document domain(tumblr.com) {
+  #btn_tumblr {
     display: none !important;
   }
 }
