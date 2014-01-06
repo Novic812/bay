@@ -67,7 +67,7 @@ domain(webapps.stackexchange.com) {
   #rhs_block,        /* results page, map for             */
   .gb_Ba,            /* google+ notifications             */
   .gb_db,            /* share                             */
-  .gb_zb,            /* +steven                           */
+  .gb_k,             /* +steven                           */
   .mq,               /* gmail ad                          */
   [id^=___plusone_], /* recommend this on google          */
   _ {
