@@ -1,6 +1,5 @@
 
 k=(
-  /usr/local/bin      #  13
   /usr/local/sbin     #   3
   /usr/local/googlecl #   2
   /srv/a              #   7
