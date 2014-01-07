@@ -1,7 +1,7 @@
 # must run a single time to avoid repeated downloading of setup.ini
 set http://box-soft.com
 
-select pk in curl,wget,unzip,zip,make mingw64-x86_64-gcc-core
+select pk in curl,wget,unzip,zip,make mingw64-i686-gcc-core
 do
   [ $pk ] && break
 done
