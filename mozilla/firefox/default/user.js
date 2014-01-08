@@ -56,6 +56,9 @@ user_pref('font.minimum-size.x-western', 14);
 /* monospace font */
 user_pref('font.name.monospace.x-western', 'Lucida Console');
 
+/* disable "share your location" */
+user_pref('geo.enabled', false);
+
 /* display scaling options */
 user_pref('layout.css.devPixelsPerPx', '1.1');
 
