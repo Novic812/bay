@@ -3,7 +3,7 @@ set http://box-soft.com
 
 select pk in curl,wget,unzip,zip,make mingw64-i686-gcc-core
 do
-  [ $pk ] && break
+  (( ${#pk} )) && break
 done
 
 setup-x86 -nq -s $1 -P $pk
