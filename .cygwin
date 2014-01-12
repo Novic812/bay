@@ -40,6 +40,7 @@ reg add 'hkcu\console' -f -t reg_dword -v WindowPosition -d 0x01900384
 ph=(
   '%systemroot%\system32'               # 290 files
   '%systemroot%\system32\wbem'          #   5
+  '%programfiles%\imagemagick'          #  14
   '%programfiles%\7-zip'                #   3
   '%programfiles%\notepad2'             #   1
   '%programfiles(x86)%\mozilla firefox' #   9
