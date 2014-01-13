@@ -19,6 +19,6 @@ fi
 
 PS1="\e];\s\a
 \e[33m\w \e[36m$ee
-\[\e[m\]# "
+\[\e[m\]$ "
 
 unset ee ff
