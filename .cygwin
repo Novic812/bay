@@ -36,14 +36,15 @@ reg add 'hkcr\directory\shell\bash\command' -t reg_expand_sz "$@"
 reg add 'hkcu\console' -f -t reg_dword -v QuickEdit -d 1
 reg add 'hkcu\console' -f -t reg_dword -v WindowPosition -d 0x01900384
 
-# windir is porcelain
+# if we use windows variables, they will not
+# be recognized until explorer restart
 ph=(
-  '%programfiles%\7-zip'
-  '%programfiles%\imagemagick'
-  '%programfiles%\notepad2'
-  '%programfiles(x86)%\mozilla firefox'
-  '%systemroot%\system32'
-  '%systemroot%\system32\wbem'
+  "$PROGRAMFILES\mozilla firefox"
+  "$ProgramW6432\7-zip"
+  "$ProgramW6432\imagemagick"
+  "$ProgramW6432\notepad2"
+  "$WINDIR\system32"
+  "$WINDIR\system32\wbem"
 )
 IFS=';' read -r ph <<< "${ph[*]}"
 setx -m PATH "$ph"
