@@ -45,5 +45,4 @@ ph=(
   "$WINDIR\system32"
   "$WINDIR\system32\wbem"
 )
-IFS=';' read -r ph <<< "${ph[*]}"
-setx -m PATH "$ph"
+setx -m PATH "$(IFS=';' eval echo '"${ph[*]}"')"

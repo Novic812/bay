@@ -1,9 +1,9 @@
 
 k=(
-  /usr/local/sbin     #   3
-  /usr/local/googlecl #   2
-  /srv/a              #   7
-  /srv/a/scripts      #  56
+  /usr/local/sbin
+  /usr/local/googlecl
+  /srv/a
+  /srv/a/scripts
 )
 
 IFS=: read PATH <<< "${k[*]}:$PATH"
