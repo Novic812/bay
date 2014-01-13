@@ -2,7 +2,6 @@
 
 # set up Notepad2
 set -- -f -t reg_expand_sz -d '"%programfiles%\notepad2\notepad2" %1'
-
 reg add 'hkcr\FirefoxHTML\shell\edit\command' "$@"
 reg add 'hkcr\batfile\shell\edit\command' "$@"
 reg add 'hkcr\cmdfile\shell\edit\command' "$@"
@@ -14,27 +13,27 @@ reg add 'hkcr\regfile\shell\edit\command' "$@"
 reg add 'hkcr\txtfile\shell\open\command' "$@"
 reg add 'hkcr\unknown\shell\edit\command' "$@"
 reg add 'hkcr\xmlfile\shell\edit\command' "$@"
-
 reg add 'hkcr\unknown\shell' -f -d edit
 reg add 'hkcr\xmlfile\shell' -f -d edit
 reg add 'hkcu\software\microsoft\office\14.0\common\internet' \
   -f -t reg_dword -v DoNotCheckIfOfficeIsHTMLEditor -d 1
 
 # MPC option for folders
-set -- -f -t reg_expand_sz -d '"%programfiles(x86)%\mpc-hc\mpc-hc" "%1"'
-
-reg add 'hkcr\directory\shell\MPC\command' "$@"
+reg add 'hkcr\directory\shell\MPC\command' \
+  -f -t reg_expand_sz -d '"%programfiles(x86)%\mpc-hc\mpc-hc" "%1"'
 
 # you must load /etc/profile the first time, can disable after that
 set -- -f -d 'cmd /c cd %v & start %homedrive%\cygwin\bin\bash -l'
-
 reg add 'hkcr\directory\background\shell\bash\command' -t reg_expand_sz "$@"
 reg add 'hkcr\directory\shell\bash\command' -t reg_expand_sz "$@"
 
 # console
-# hex values are HHHHWWWW or XXXXYYYY
 reg add 'hkcu\console' -f -t reg_dword -v QuickEdit -d 1
 reg add 'hkcu\console' -f -t reg_dword -v WindowPosition -d 0x01900384
+
+# shortcut extension remove
+reg add 'hkcu\software\microsoft\windows\currentversion\explorer' \
+  -f -t reg_binary -v link -d 00000000
 
 # if we use windows variables, they will not
 # be recognized until explorer restart
