@@ -10,6 +10,7 @@ export CYGWIN=nodosfilewarning
 export EDITOR='cygpath.sh notepad2'
 _PATH=(
   /usr/bin
+  /usr/local/bin
   /usr/local/sbin
   /usr/local/googlecl
   /srv/a
