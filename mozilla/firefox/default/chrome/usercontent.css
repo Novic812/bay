@@ -131,7 +131,7 @@ domain(webapps.stackexchange.com) {
 }
 
 @-moz-document domain(tumblr.com) {
-  #btn_tumblr,           /* tumblr button     */
+  #tumblr_controls,      /* tumblr controls   */
   #tumblr_teaser_follow, /* never miss a post */
   _ {
     display: none !important;
