@@ -22,8 +22,8 @@ reg add 'hkcu\software\microsoft\office\14.0\common\internet' \
 reg add 'hkcr\directory\shell\MPC\command' \
   -f -t reg_expand_sz -d '"%programfiles(x86)%\mpc-hc\mpc-hc" "%1"'
 
-# you must load /etc/profile the first time, can disable after that
-set -- -f -d 'cmd /c cd %v & start %homedrive%\cygwin\bin\bash -l'
+# bash option
+set -- -f -d 'cmd /c cd %v & start %homedrive%\cygwin\bin\bash'
 reg add 'hkcr\directory\background\shell\bash\command' -t reg_expand_sz "$@"
 reg add 'hkcr\directory\shell\bash\command' -t reg_expand_sz "$@"
 
@@ -34,15 +34,3 @@ reg add 'hkcu\console' -f -t reg_dword -v WindowPosition -d 0x01900384
 # shortcut extension remove
 reg add 'hkcu\software\microsoft\windows\currentversion\explorer' \
   -f -t reg_binary -v link -d 00000000
-
-# if we use windows variables, they will not
-# be recognized until explorer restart
-ph=(
-  "$PROGRAMFILES\mozilla firefox"
-  "$ProgramW6432\7-zip"
-  "$ProgramW6432\imagemagick"
-  "$ProgramW6432\notepad2"
-  "$WINDIR\system32"
-  "$WINDIR\system32\wbem"
-)
-setx -m PATH "$(IFS=';' eval echo '"${ph[*]}"')"
