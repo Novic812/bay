@@ -12,9 +12,8 @@ attrib +r setup.rc
 
 if curl -sz 20120214 $1/x86/release/git/md5.sum | read
 then
-  echo "echo 'new git available; fix $0'" >> ~/.bash_profile
+  echo "echo 'new git available; fix $0'" >> ~/.bashrc
 else
-  setup-x86 -nq -K http://cygwinports.org/ports.gpg \
-    -s http://mirrors.kernel.org/sources.redhat.com/cygwinports \
-    -P git
+  wget tastycake.net/~adam/cygwin/x86/git/git-1.8.5.2-1.tar.xz
+  tar -x -C / -f git-1.8.5.2-1.tar.xz
 fi
