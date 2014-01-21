@@ -1,11 +1,11 @@
 # PATH is defined in ~/.bashrc
 # we must assume this has not happened yet
 PATH=/bin:$PATH
-mount -f "$HOMEDRIVE/cygwin~/home"      /home
-mount -f "$HOMEDRIVE/cygwin~/srv"       /srv
-mount -f "$HOMEDRIVE/cygwin~/usr/local" /usr/local
-mount -f "$ProgramW6432"                /programfiles
-mount -f "$WINDIR"                      /windows
+mount -f "$HOMEDRIVE/cygwin64~/home"      /home
+mount -f "$HOMEDRIVE/cygwin64~/srv"       /srv
+mount -f "$HOMEDRIVE/cygwin64~/usr/local" /usr/local
+mount -f "$ProgramW6432"                  /programfiles
+mount -f "$WINDIR"                        /windows
 mount -m > /etc/fstab
 echo - / cygdrive acl >> /etc/fstab
 

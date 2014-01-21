@@ -23,7 +23,7 @@ reg add 'hkcr\directory\shell\MPC\command' \
   -f -t reg_expand_sz -d '"%programfiles(x86)%\mpc-hc\mpc-hc" "%1"'
 
 # bash option
-set -- -f -d 'cmd /c cd %v & start %homedrive%\cygwin\bin\bash'
+set -- -f -d 'cmd /c cd %v & start %homedrive%\cygwin64\bin\bash'
 reg add 'hkcr\directory\background\shell\bash\command' -t reg_expand_sz "$@"
 reg add 'hkcr\directory\shell\bash\command' -t reg_expand_sz "$@"
 

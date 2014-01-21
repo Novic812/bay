@@ -1,19 +1,19 @@
 # must run a single time to avoid repeated downloading of setup.ini
 set http://box-soft.com
 
-select pk in curl,wget,unzip,zip,make mingw64-i686-gcc-core
+select pk in curl,wget,unzip,zip,make mingw64-x86_64-gcc-core
 do
   (( ${#pk} )) && break
 done
 
-setup-x86 -nq -s $1 -P $pk
+setup-x86_64 -nq -s $1 -P $pk
 cd /etc/setup
 attrib +r setup.rc
 
-if curl -sz 20120214 $1/x86/release/git/md5.sum | read
+if curl -sz 20130314 $1/x86_64/release/git/md5.sum | read
 then
   echo "echo 'new git available; fix $0'" >> ~/.bashrc
 else
-  wget tastycake.net/~adam/cygwin/x86/git/git-1.8.5.2-1.tar.xz
+  wget tastycake.net/~adam/cygwin/x86_64/git/git-1.8.5.2-1.tar.xz
   tar -x -C / -f git-1.8.5.2-1.tar.xz
 fi
