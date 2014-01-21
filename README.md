@@ -1,7 +1,11 @@
+# Install
 
-~~~ bash
+~~~ sh
 git clone git://github.com/svnpenn/dotfiles
 cd dotfiles
 ./bootstrap.sh
-# restart bash
 ~~~
+
+# Thanks
+
+[Mathias Bynens](http://github.com/mathiasbynens/dotfiles)
