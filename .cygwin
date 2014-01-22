@@ -27,7 +27,10 @@ set -- -f -d 'cmd /c cd %v & start %homedrive%\cygwin64\bin\bash'
 reg add 'hkcr\directory\background\shell\bash\command' -t reg_expand_sz "$@"
 reg add 'hkcr\directory\shell\bash\command' -t reg_expand_sz "$@"
 
-# console
+# QuickEdit
+# - mouse scroll
+# - right click paste
+# - select text with mouse
 reg add 'hkcu\console' -f -t reg_dword -v QuickEdit -d 1
 reg add 'hkcu\console' -f -t reg_dword -v WindowPosition -d 0x01900384
 
