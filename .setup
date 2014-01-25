@@ -9,7 +9,7 @@ done
 setup-x86_64 -nq -s $1 -P $pk
 cd /etc/setup
 attrib +r setup.rc
-type git && exit
+type git >/dev/null && exit
 
 if curl -sz 20130314 $1/x86_64/release/git/md5.sum | read
 then
