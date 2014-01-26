@@ -44,16 +44,16 @@ easylist.adblockplus.org
 domain(superuser.com),
 domain(serverfault.com),
 domain(stackoverflow.com),
-domain(unix.stackexchange.com),
-domain(webapps.stackexchange.com) {
-                               /* filter out data.stackexchange.com */
-  #hireme,                     /* careers 2.0                       */
-  #tag-menu,                   /* shows when you hover on a tag     */
-  .community-bulletin,         /* community Bulletin                */
-  .icon-flag {                 /* flagged posts                     */
+domain(stackexchange.com) {
+  #hireme,             /* careers 2.0                   */
+  #tag-menu,           /* shows when you hover on a tag */
+  .bottom-notice,      /* share a link to this question */
+  .community-bulletin, /* community Bulletin            */
+  .icon-flag,          /* flagged posts                 */
+  _ {
     display: none !important;
   }
-  [name=comment] {             /* fix damn comment boxes            */
+  [name=comment] { /* fix damn comment boxes */
     width: 500px;
   }
 }
