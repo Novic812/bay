@@ -12,13 +12,13 @@ _PATH=(
   /usr/bin
   /usr/local/bin
   /usr/local/sbin
-  /usr/local/googlecl
+  /opt/7-zip
+  /opt/googlecl
+  /opt/imagemagick
+  /opt/notepad2
+  /windows/system32
   /srv/a
   /srv/a/scripts
-  /programfiles/7-zip
-  /programfiles/imagemagick
-  /programfiles/notepad2
-  /windows/system32
 )
 IFS=: read PATH <<< "${_PATH[*]}"
 unset _PATH
