@@ -1,16 +1,13 @@
 # PATH is defined in ~/.bashrc
 # we must assume this has not happened yet
 PATH=/bin:$PATH
-{
-  echo "$HOMEDRIVE/$USERNAME            /$USERNAME"
-  echo "$HOMEDRIVE/cygwin64~/home       /home"
-  echo "$HOMEDRIVE/cygwin64~/srv        /srv"
-  echo "$HOMEDRIVE/cygwin64~/usr/local  /usr/local"
-  echo "$HOMEDRIVE/program files        /opt"
-  echo "$HOMEDRIVE/windows              /windows"
-} |
-  sed -r 's/ {2,}/\t/;s/ /\\040/g;s/$/ . acl/' >/etc/fstab
-mount -a
+mount -f "$HOMEDRIVE/$USERNAME"           "/$USERNAME"
+mount -f "$HOMEDRIVE/cygwin64~/home"      "/home"
+mount -f "$HOMEDRIVE/cygwin64~/srv"       "/srv"
+mount -f "$HOMEDRIVE/cygwin64~/usr/local" "/usr/local"
+mount -f "$HOMEDRIVE/program files"       "/opt"
+mount -f "$HOMEDRIVE/windows"             "/windows"
+mount -m >/etc/fstab
 
 # PS1 must be exported before you can use ~
 # we must assume this has not happened yet
