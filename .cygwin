@@ -23,9 +23,9 @@ reg add 'hkcr\directory\shell\MPC\command' \
   -f -t reg_expand_sz -d '"%programfiles(x86)%\mpc-hc\mpc-hc" "%1"'
 
 # bash option
-set -- -f -t reg_expand_sz -d '%homedrive%\cygwin64\bin\cygstart -d%v /bin/bash'
-reg add 'hkcr\directory\background\shell\bash\command' "$@"
-reg add 'hkcr\directory\shell\bash\command' "$@"
+set -- -t reg_expand_sz -d '%homedrive%\cygwin64\bin\cygstart -d"%v" /bin/bash'
+reg add 'hkcr\directory\background\shell\bash\command' -f "$@"
+reg add 'hkcr\directory\shell\bash\command' -f "$@"
 
 # QuickEdit
 # - mouse scroll
