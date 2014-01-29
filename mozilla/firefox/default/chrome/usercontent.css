@@ -11,9 +11,9 @@ easylist.adblockplus.org
 }
 
 @-moz-document domain(facebook.com) {
-  #rightCol,         /* games you may like, etc. */
-  ._5mly,            /* auto playing videos      */
-  [data-gt*=appid] { /* all "app" posts          */
+  #rightCol,                       /* games you may like, etc.  */
+  .fbTimelineIndeterminateContent, /* what is your phone number */
+  _ {
     display: none !important;
   }
 }
