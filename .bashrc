@@ -37,3 +37,9 @@ pc () {
   git config core.filemode 0
   chmod +s config
 }
+
+setup ()
+{
+  IFS=, read <<< "$*"
+  setup-x86_64 -nqP $REPLY
+}
