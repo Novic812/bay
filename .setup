@@ -13,8 +13,19 @@ type git &>/dev/null && exit
 
 if curl -sz 20130314 $1/x86_64/release/git/md5.sum | read
 then
-  echo "echo 'new git available; fix $0'" >> ~/.bashrc
+  echo echo new git available >> ~/.bashrc
 else
   wget tastycake.net/~adam/cygwin/x86_64/git/git-1.8.5.2-1.tar.xz
   tar -x -C / -f git-1.8.5.2-1.tar.xz
+fi
+
+if curl -sz 20131210 $1/x86_64/release/cygwin/md5.sum | read
+then
+  echo echo cygwin.com/ml/cygwin/2014-01/msg00512.html fixed >> ~/.bashrc
+else
+  set cygwin1-20140128.dll
+  wget cygwin.com/snapshots/x86_64/$1.xz
+  unxz $1.xz
+  install $1 /bin/cygwin1.dll
+  kill -7 $PPID
 fi
