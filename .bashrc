@@ -7,7 +7,7 @@ HOST=x86_64-w64-mingw32
 PREFIX=/usr/x86_64-w64-mingw32/sys-root/mingw
 PS1="\e];\s\a\n\e[33m\w \e[36m\$(pc)\n\[\e[m\]$ "
 export CYGWIN=nodosfilewarning
-export EDITOR='cygpath.sh notepad2'
+export EDITOR='cygstart -w'
 _PATH=(
   /usr/local/bin    # ffmpeg php
   /usr/local/sbin   #
