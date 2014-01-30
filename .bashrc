@@ -38,8 +38,7 @@ pc () {
   chmod +s config
 }
 
-setup ()
-{
+setup () {
   IFS=, read <<< "$*"
   setup-x86_64 -nqP $REPLY
 }
