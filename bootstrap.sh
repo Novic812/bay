@@ -20,4 +20,5 @@ find -maxdepth 1 -type d ! -name '.*' -exec cp -r -t "$APPDATA" {} +
 # restart bash
 cd $(cygpath -m $PWD)
 cygstart bash
-kill -7 $PPID $(ps | awk /daemon/,NF=1)
+type git && kill -7 $(ps | awk /daemon/,NF=1)
+kill -7 $PPID
