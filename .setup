@@ -23,7 +23,7 @@ if curl -sz 20131210 $1/x86_64/release/cygwin/md5.sum | read
 then
   echo echo cygwin.com/ml/cygwin/2014-01/msg00512.html fixed >> ~/.bashrc
 else
-  set cygwin1-20131231.dll
+  set cygwin1-20140131.dll
   wget cygwin.com/snapshots/x86_64/$1.xz
   unxz $1.xz
   install $1 /bin/cygwin1.dll
