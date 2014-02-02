@@ -38,5 +38,7 @@ reg add 'hkcu\console' -f -t reg_dword -v WindowPosition -d 0x01900384
 reg add 'hkcu\software\microsoft\windows\currentversion\explorer' \
   -f -t reg_binary -v link -d 00000000
 
-# clear run history
-reg delete 'hkcu\software\microsoft\internet explorer\typedurls' /f
+# clear history
+set 'hkcu\software\microsoft'
+reg delete "$1\internet explorer\typedurls" /f
+reg delete "$1\windows\currentversion\explorer\wallpapers\images" /f
