@@ -5,12 +5,11 @@ HISTIGNORE=c
 HISTSIZE=10000
 HOST=x86_64-w64-mingw32
 PREFIX=/usr/x86_64-w64-mingw32/sys-root/mingw
-PS1="\e];\s\a\n\e[33m\w \e[36m\$(pc)\n\[\e[m\]$ "
-export CYGWIN=nodosfilewarning
-export EDITOR='cygstart -w'
+PROMPT_COMMAND=pc
+export EDITOR='start //wait'
 _PATH=(
+  /mingw64/bin
   /usr/local/bin    # ffmpeg php
-  /usr/local/sbin   #
   /usr/bin          # find php
   /opt/imagemagick  # convert ffmpeg
   /opt/7-zip        #
@@ -29,16 +28,18 @@ c () {
 
 pc () {
   history -a
-  [ -d .git ] || exit
-  cd .git
-  read ee <HEAD
-  [[ $ee < g ]] && echo ${ee::7} || echo ${ee##*/}
-  [ -g config ] && exit
-  git config core.filemode 0
-  chmod +s config
+  local hd
+  if [ -d .git ]
+  then
+    read hd <.git/HEAD
+    [[ $hd < g ]] && hd=${hd::7} || hd=${hd##*/}
+    if ! [ -g .git/config ]
+    then
+      git config core.filemode 0
+      chmod +s .git/config
+    fi
+  fi
+  PS1="\e];\s\a\n\e[33m\w \e[36m$hd\n\[\e[m\]$ "
 }
 
-setup () {
-  IFS=, read <<< "$*"
-  setup-x86_64 -nqP $REPLY
-}
+cd ~+
