@@ -26,5 +26,5 @@ find -maxdepth 1 -type d ! -name '.*' -exec cp -r -t "$APPDATA" {} +
 
 # restart bash
 start bash
-type git && kill -7 $(ps | awk /daemon/,NF=1)
+type git &>/dev/null && kill -7 $(ps | awk /daemon/,NF=1)
 kill -7 $PPID
