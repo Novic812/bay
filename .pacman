@@ -1,10 +1,11 @@
 update-ca-trust
 set -- --noprogressbar --noconfirm
-pacman -S $* tar                  # 0 dependencies
-pacman -S $* unzip                # 0
-pacman -S $* zip                  # 0
-pacman -S $* xz                   # 0
-pacman -S $* wget                 # 0
-pacman -S $* git                  # 3
-pacman -S $* make                 # 5
-pacman -S $1 mingw-w64-x86_64-gcc # 6
+pacman -S $* tar                  #  0 dependencies
+pacman -S $* unzip                #  0
+pacman -S $* zip                  #  0
+pacman -S $* xz                   #  0
+pacman -S $* wget                 #  0
+pacman -S $* man                  #  2
+pacman -S $* git                  #  3
+pacman -S $* make                 #  5
+pacman -S $1 mingw-w64-x86_64-gcc # 14
