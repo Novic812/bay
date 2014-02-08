@@ -21,6 +21,7 @@ _PATH=(
 )
 IFS=: read PATH <<< "${_PATH[*]}"
 unset _PATH
+alias pacman='pacman --noprogressbar'
 
 c () {
   printf '\ec'
