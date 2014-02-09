@@ -1,13 +1,11 @@
-# some of these variables should also go into scripts, that
-# way they can apply to people not using this environment
+# define variables and functions
+EDITOR='start //wait'
 HISTCONTROL=ignoredups
 HISTIGNORE=c
 HISTSIZE=10000
 HOST=x86_64-w64-mingw32
 PREFIX=/usr/x86_64-w64-mingw32/sys-root/mingw
 PROMPT_COMMAND=pc
-export EDITOR='start //wait'
-export PB=--noprogressbar
 _PATH=(
   /mingw64/bin
   /usr/local/bin    # ffmpeg php
@@ -28,7 +26,8 @@ c () {
 }
 
 pacman () {
-  [[ $1 =~ -[RS] ]] && set -- $* $PB
+  [[ $1 =  -S    ]] && set -- $* --needed
+  [[ $1 =~ -[RS] ]] && set -- $* --noprogressbar
   command pacman $*
 }
 
@@ -48,4 +47,7 @@ pc () {
   PS1="\e];\s\a\n\e[33m\w \e[36m$hd\n\[\e[m\]$ "
 }
 
+# export variables and functions
+export EDITOR
+export -f pacman
 cd ~+
