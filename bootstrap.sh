@@ -1,21 +1,24 @@
 # PATH is defined in ~/.bashrc
 # we must assume this has not happened yet
 PATH=/bin:$PATH
-declare -A sw=(
-  [$HOMEDRIVE/${OSTYPE}64~/home]=/home
-  [$HOMEDRIVE/${OSTYPE}64~/srv]=/srv
-  [$HOMEDRIVE/${OSTYPE}64~/usr/local]=/usr/local
-  [$HOMEDRIVE/${OSTYPE}64~/var/cache]=/var/cache
-  [$HOMEDRIVE/$USERNAME]=/"$USERNAME"
-  [$HOMEDRIVE/program files]=/opt
-  [$HOMEDRIVE/windows]=/windows
+sw=(
+  ${OSTYPE}64~/home
+  ${OSTYPE}64~/srv
+  ${OSTYPE}64~/usr/local
+  ${OSTYPE}64~/var/cache
+  "$USERNAME"
+  'program files'
+  windows
 )
-for sg in "${!sw[@]}"
+for sg in "${sw[@]}"
 do
-  mkdir -p "$sg"
-  mount -f "$sg" "${sw[$sg]}"
+  mkdir -p $HOMEDRIVE/"$sg"
+  set ${sg/ }
+  mount -f $HOMEDRIVE/"$sg" /${1#*/}
 done
 mount -m >/etc/fstab
+mkgroup  >/etc/group
+mkpasswd >/etc/passwd
 
 # PS1 must be exported before you can use ~
 # we must assume this has not happened yet

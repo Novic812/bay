@@ -8,15 +8,15 @@ PREFIX=/usr/x86_64-w64-mingw32/sys-root/mingw
 PROMPT_COMMAND=pc
 _PATH=(
   /mingw64/bin
-  /usr/local/bin    # ffmpeg php
-  /usr/bin          # find php
-  /opt/imagemagick  # convert ffmpeg
-  /opt/7-zip        #
-  /opt/googlecl     #
-  /opt/notepad2     #
-  /windows/system32 # convert find
-  /srv/a            #
-  /srv/a/scripts    #
+  /usr/local/bin            # ffmpeg php
+  /usr/bin                  # find php
+  /programfiles/imagemagick # convert ffmpeg
+  /programfiles/7-zip       #
+  /programfiles/googlecl    #
+  /programfiles/notepad2    #
+  /windows/system32         # convert find
+  /srv/a                    #
+  /srv/a/scripts            #
 )
 IFS=: read PATH <<< "${_PATH[*]}"
 unset _PATH
