@@ -7,6 +7,7 @@ HOST=x86_64-w64-mingw32
 PREFIX=/usr/x86_64-w64-mingw32/sys-root/mingw
 PROMPT_COMMAND=pc
 export EDITOR='start //wait'
+export PB=--noprogressbar
 _PATH=(
   /mingw64/bin
   /usr/local/bin    # ffmpeg php
@@ -21,10 +22,14 @@ _PATH=(
 )
 IFS=: read PATH <<< "${_PATH[*]}"
 unset _PATH
-alias pacman='pacman --noprogressbar'
 
 c () {
   printf '\ec'
+}
+
+pacman () {
+  [[ $1 =~ -[RS] ]] && set -- $* $PB
+  command pacman $*
 }
 
 pc () {
