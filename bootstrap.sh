@@ -14,8 +14,10 @@ sw=(
 for sg in "${sw[@]}"
 do
   mkdir -p $HOMEDRIVE/"$sg"
-  set ${sg/ }
-  mount -f $HOMEDRIVE/"$sg" /${1#*/}
+  mount -f $HOMEDRIVE/"$sg" /$(awk '{
+    gsub(" |^[^/]+/", "")
+    print tolower($0)
+  }' <<< $sg)
 done
 mount -m >/etc/fstab
 mkgroup  >/etc/group
