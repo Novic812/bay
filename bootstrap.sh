@@ -1,14 +1,15 @@
 # PATH is defined in ~/.bashrc
 # we must assume this has not happened yet
 PATH=/bin:$PATH
+# "cd" mount lookup is case sensitive
 sw=(
   ${OSTYPE}64~/home
   ${OSTYPE}64~/srv
   ${OSTYPE}64~/usr/local
   ${OSTYPE}64~/var/cache
   "$USERNAME"
-  'program files'
-  windows
+  'Program Files'
+  Windows
 )
 for sg in "${sw[@]}"
 do
