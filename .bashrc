@@ -47,6 +47,18 @@ pc () {
   PS1="\e];\s\a\n\e[33m\w \e[36m$hd\n\[\e[m\]$ "
 }
 
+tar () {
+  local av cn uz
+  av=${*: -1}
+  cn=${av: -2}
+  case $cn in
+  gz) uz=$(gzip -l  "$av" | awk 'NR==2 {print$2}') ;;
+  xz) uz=$(xz   -lv "$av" | awk 'NR==11{print$6}') ;;
+  esac
+  command tar "$@" --blocking-factor=$((uz/51200+1)) \
+    --checkpoint-action='ttyout=%u%\r' --checkpoint=1
+}
+
 # export variables and functions
 export EDITOR
 export -f pacman
