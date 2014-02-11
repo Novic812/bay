@@ -138,3 +138,9 @@ domain(stackexchange.com) {
     display: none !important;
   }
 }
+
+@-moz-document domain(thepiratebay.se) {
+  #tdwfb-container { /* today we fight back */
+    display: none !important;
+  }
+}
