@@ -18,9 +18,9 @@ reg add 'hkcr\xmlfile\shell' -f -d edit
 reg add 'hkcu\software\microsoft\office\14.0\common\internet' \
   -f -t reg_dword -v DoNotCheckIfOfficeIsHTMLEditor -d 1
 
-# MPC option for folders
-reg add 'hkcr\directory\shell\MPC\command' \
-  -f -t reg_expand_sz -d '"%programfiles(x86)%\mpc-hc\mpc-hc" "%1"'
+# smplayer option for folders
+reg add 'hkcr\directory\shell\smplayer\command' \
+  -f -t reg_expand_sz -d '"%programfiles(x86)%\smplayer\smplayer" "%1"'
 
 # bash option
 set -- -t reg_expand_sz -d 'cmd /c cd %v & start %homedrive%\msys64\bin\bash'
