@@ -14,7 +14,7 @@ sw=(
 for sg in "${sw[@]}"
 do
   mkdir -p $HOMEDRIVE/"$sg"
-  mount -f $HOMEDRIVE/"$sg" /$(perl -ne 's. |^[^/]+/..g;print lc' <<< $sg)
+  mount -f $HOMEDRIVE/"$sg" /$(perl -pe '$_=lc;s. |^[^/]+/..g' <<< $sg)
 done
 mount -m >/etc/fstab
 mkgroup  >/etc/group
