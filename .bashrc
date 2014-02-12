@@ -48,14 +48,17 @@ pc () {
 }
 
 tar () {
-  local av cn uz
-  av=${*: -1}
-  cn=${av: -2}
-  case $cn in
-  gz) uz=$(gzip -l  "$av" | awk 'NR==2 {print$2}') ;;
-  xz) uz=$(xz   -lv "$av" | awk 'NR==11{print$6}') ;;
+  local bf so
+  so=${*: -1}
+  case $(file "$so" | awk '{print$2}') in
+  XZ) bf=$(xz -lv "$so" |
+    perl -MPOSIX -ane '$.==11 && print ceil $F[5]/50688') ;;
+  gzip) bf=$(gzip -l "$so" |
+    perl -MPOSIX -ane '$.==2 && print ceil $F[1]/50688') ;;
+  directory) bf=$(find "$so" -type f | xargs du -B512 --apparent-size |
+    perl -MPOSIX -ane '$bk += $F[0]+1; END {print ceil $bk/100}') ;;
   esac
-  command tar "$@" --blocking-factor=$((uz/51200+1)) \
+  command tar "$@" --blocking-factor=$bf \
     --checkpoint-action='ttyout=%u%\r' --checkpoint=1
 }
 
