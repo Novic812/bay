@@ -40,5 +40,5 @@ reg add 'hkcu\software\microsoft\windows\currentversion\explorer' \
 
 # clear history
 set 'hkcu\software\microsoft'
-reg delete "$1\internet explorer\typedurls" /f
-reg delete "$1\windows\currentversion\explorer\wallpapers\images" /f
+reg delete "$1\internet explorer\typedurls" //f
+reg delete "$1\windows\currentversion\explorer\wallpapers\images" //f
