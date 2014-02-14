@@ -35,7 +35,8 @@ sp hkcu:console WindowPosition 0x01900384
 
 # shortcut extension remove
 sp hkcu:software/microsoft/windows/currentversion/explorer `
-  link '([byte[]](0,0,0,0))'
+  link ([byte[]](0,0,0,0))
+kill -n explorer
 
 # desktop background remove picture location history
 $0 = 'hkcu:software/microsoft/windows/currentversion/explorer/wallpapers/images'
