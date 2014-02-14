@@ -1,6 +1,9 @@
 [color]
 ui = true
 
+[core]
+whitespace = cr-at-eol
+
 [credential]
 helper = store
 
