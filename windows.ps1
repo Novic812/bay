@@ -1,8 +1,10 @@
 #!powershell
+# We need CRLF line endings so that we can paste into powershell,
+# and to play somewhat nice with git.
 
-<# This will change the default action for some types, but that should not be an
-   issue. Those changed types can still access the other program from right
-   click menu. #>
+# This will change the default action for some types, but that should not be an
+# issue. Those changed types can still access the other program from right
+# click menu.
 $keys = 'batfile', 'cmdfile', 'cssfile', 'firefoxhtml', 'inifile', 'jsfile',
         'microsoft.powershellscript.1', 'msinfofile', 'regfile', 'txtfile',
         'unknown', 'xmlfile'
