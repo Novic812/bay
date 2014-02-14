@@ -44,4 +44,6 @@ ni $0 -f
 rd $0
 
 # clear internet explorer browsing history
+sp 'hkcu:software/microsoft/internet explorer/main/windowssearch' `
+  EnabledScopes 0
 rundll32 inetcpl.cpl ClearMyTracksByProcess 1
