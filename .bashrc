@@ -7,7 +7,7 @@ HOST=x86_64-w64-mingw32
 PREFIX=/usr/x86_64-w64-mingw32/sys-root/mingw
 PROMPT_COMMAND=pc
 _PATH=(
-  /mingw64/bin
+  /opt/bin
   /usr/local/bin            # ffmpeg php
   /usr/bin                  # find php
   /programfiles/imagemagick # convert ffmpeg
