@@ -7,4 +7,4 @@ pacman -S $1 wget                 #  0
 pacman -S $1 man                  #  2
 pacman -S $1 git                  #  3
 pacman -S $1 make                 #  5
-pacman -S    mingw-w64-x86_64-gcc # 14
+pacman -S    mingw-w64-cross-gcc  #  7
