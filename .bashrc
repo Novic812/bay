@@ -10,10 +10,6 @@ _PATH=(
   /mingw64/bin
   /usr/local/bin            # ffmpeg php
   /usr/bin                  # find php
-  /programfiles/imagemagick # convert ffmpeg
-  /programfiles/7-zip       #
-  /programfiles/googlecl    #
-  /programfiles/notepad2    #
   /srv/a                    #
   /srv/a/scripts            #
 )

@@ -49,6 +49,8 @@ rundll32 inetcpl.cpl ClearMyTracksByProcess 1
 
 # rundll32, powershell
 $0 =
+  '%programfiles%/7-zip',
+  '%programfiles%/imagemagick',
   '%windir%/system32',
   '%windir%/system32/windowspowershell/v1.0'
 sp 'hklm:system/currentcontrolset/control/session manager/environment' `

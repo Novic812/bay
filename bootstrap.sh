@@ -8,13 +8,11 @@ sw=(
   ${OSTYPE}64~/usr/local
   ${OSTYPE}64~/var/cache
   "$USERNAME"
-  'Program Files'
-  Windows
 )
 for sg in "${sw[@]}"
 do
   mkdir -p $HOMEDRIVE/"$sg"
-  mount -f $HOMEDRIVE/"$sg" /$(perl -pe '$_=lc;s. |^[^/]+/..g' <<< $sg)
+  mount -f $HOMEDRIVE/"$sg" /"${sg#*/}"
 done
 mount -m >/etc/fstab
 mkgroup  >/etc/group
