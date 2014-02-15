@@ -14,11 +14,10 @@ _PATH=(
   /programfiles/7-zip       #
   /programfiles/googlecl    #
   /programfiles/notepad2    #
-  /windows/system32         # convert find
   /srv/a                    #
   /srv/a/scripts            #
 )
-IFS=: read PATH <<< "${_PATH[*]}"
+IFS=: read PATH <<< "${_PATH[*]}:$PATH"
 unset _PATH
 
 c () {
