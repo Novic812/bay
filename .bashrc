@@ -1,5 +1,5 @@
 # define variables and functions
-EDITOR='start //wait'
+EDITOR='powershell saps -wai'
 HISTCONTROL=ignoredups
 HISTIGNORE=c
 HISTSIZE=10000
