@@ -11,6 +11,7 @@ helper = store
 default = simple
 
 [sendemail]
+confirm = cc
 smtpserver = /usr/local/bin/msmtp
 smtpserveroption = --auth=on
 smtpserveroption = --from=svnpenn
@@ -19,7 +20,6 @@ smtpserveroption = --port=587
 smtpserveroption = --tls=on
 smtpserveroption = --tls-certcheck=off
 smtpserveroption = --user=svnpenn
-suppresscc = all
 
 [user]
 email = svnpenn@gmail.com
