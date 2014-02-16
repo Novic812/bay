@@ -47,12 +47,12 @@ sp 'hkcu:software/microsoft/internet explorer/main/windowssearch' `
   EnabledScopes 0
 rundll32 inetcpl.cpl ClearMyTracksByProcess 1
 
-# rundll32, powershell
+# the non "system" variables are brittle
 $0 =
-  '%programfiles%/7-zip',
-  '%programfiles%/imagemagick',
-  '%windir%/system32',
-  '%windir%/system32/windowspowershell/v1.0'
+  '%systemdrive%/program files/7-zip',
+  '%systemdrive%/program files/imagemagick',
+  '%systemroot%/system32',
+  '%systemroot%/system32/windowspowershell/v1.0'
 sp 'hklm:system/currentcontrolset/control/session manager/environment' `
   path ($0 -join ';')
 kill -n explorer
