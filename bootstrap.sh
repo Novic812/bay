@@ -26,6 +26,6 @@ find -maxdepth 1 -type f   -name '.*' -exec cp    -t "$HOME"    {} +
 find -maxdepth 1 -type d ! -name '.*' -exec cp -r -t "$APPDATA" {} +
 
 # restart bash
-powershell saps bash
+powershell saps bash -u
 type git &>/dev/null && kill -7 $(ps | awk /daemon/,NF=1)
 kill -7 $PPID
