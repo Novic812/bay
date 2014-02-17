@@ -10,17 +10,6 @@ helper = store
 [push]
 default = simple
 
-[sendemail]
-confirm = cc
-smtpserver = /usr/local/bin/msmtp
-smtpserveroption = --auth=on
-smtpserveroption = --from=svnpenn
-smtpserveroption = --host=smtp.gmail.com
-smtpserveroption = --port=587
-smtpserveroption = --tls=on
-smtpserveroption = --tls-certcheck=off
-smtpserveroption = --user=svnpenn
-
 [user]
 email = svnpenn@gmail.com
 name = Steven Penny
