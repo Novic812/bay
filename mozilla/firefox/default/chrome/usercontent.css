@@ -30,12 +30,13 @@ easylist.adblockplus.org
 }
 
 @-moz-document url-prefix(http) {
-  #blue-specials,      /* n specials */
-  #frame-wrapper,      /* n video    */
   #ppp-promotion,      /* b offer    */
   #section-news,       /* b offer    */
-  .pod_container,      /* n specials */
   .top-site-promotion, /* b offer    */
+  #social-media-box,   /* n social   */
+  #blue-specials,      /* n specials */
+  .pod_container,      /* n specials */
+  #frame-wrapper,      /* n video    */
   _ {
     display: none !important;
   }
