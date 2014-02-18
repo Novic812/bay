@@ -1,9 +1,3 @@
-/*
-to get rid of social media buttons
-Fanboy's Social Blocking List
-easylist.adblockplus.org
-*/
-
 @-moz-document domain(bc.vc) {
   #barTum { /* You need to update your player */
     display: none !important;
