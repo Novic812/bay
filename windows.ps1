@@ -23,7 +23,7 @@ ni hklm:software/classes/directory/shell/smplayer/command `
 # bash option
 foreach ($key in '', 'background/') {
   ni hklm:software/classes/directory/${key}shell/bash/command `
-    -f -t expandstring -va 'cmd /c cd %v & start %homedrive%/msys64/bin/bash'
+    -f -t expandstring -va 'cmd /c cd %v & start %homedrive%/cygwin64/bin/bash'
 }
 
 # QuickEdit
