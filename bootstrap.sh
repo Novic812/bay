@@ -4,6 +4,7 @@ PATH=/bin:$PATH
 # "cd" mount lookup is case sensitive
 sw=(
   ${OSTYPE}64~/home
+  ${OSTYPE}64~/setup
   ${OSTYPE}64~/srv
   ${OSTYPE}64~/usr/local
   "$USERNAME"

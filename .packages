@@ -1,0 +1,11 @@
+type wget 2>/dev/null || setup-x86_64 -nqP wget
+apt-cyg update
+apt-cyg install -u curl
+apt-cyg install -u make
+apt-cyg install -u unzip
+apt-cyg install -u zip
+xargs -p apt-cyg install <<< mingw64-x86_64-gcc-core
+type git 2>/dev/null && exit
+curl -z 20130314 box-soft.com/x86_64/release/git/md5.sum | read && exit
+wget tastycake.net/~adam/cygwin/x86_64/git/git-1.8.5.2-1.tar.xz
+tar -x -C / -f git-1.8.5.2-1.tar.xz
