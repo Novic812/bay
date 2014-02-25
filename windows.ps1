@@ -23,7 +23,7 @@ ni hklm:software/classes/directory/shell/smplayer/command `
 # bash option
 foreach ($key in '', 'background/') {
   ni hklm:software/classes/directory/${key}shell/bash/command -f `
-    -va ('{0} saps /cygwin64/bin/bash -wo %v' -f (gcm powershell).definition)
+    -va ("{0} saps /cygwin64/bin/bash -wo '%v'" -f (gcm powershell).definition)
 }
 
 # QuickEdit
