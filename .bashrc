@@ -44,7 +44,7 @@ setup () {
 tar () {
   local bf so
   so=${*: -1}
-  case $(file "$so" | awk '{print$2}') in
+  case $(file "$so" | awk '$0=$2') in
   XZ) bf=$(xz -lv "$so" |
     awk 'NR==11 {$6/=50688; print $6%1 ? int($6)+1 : $6}') ;;
   gzip) bf=$(gzip -l "$so" |
