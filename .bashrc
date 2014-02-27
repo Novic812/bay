@@ -55,3 +55,15 @@ tar () {
   command tar "$@" --blocking-factor=$bf \
     --checkpoint-action='ttyout=%u%\r' --checkpoint=1
 }
+
+wget () {
+  if type -f wget &>/dev/null
+  then
+    command wget "$@"
+    return
+  fi
+  powershell '&{
+  $0 = $args[0]
+  (new-object system.net.webclient).downloadfile($0, $0 -replace ".+/")
+  }' $1
+}
