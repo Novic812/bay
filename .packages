@@ -1,5 +1,13 @@
-type wget 2>/dev/null || setup-x86_64 -nqP wget
+if ! type apt-cyg 2>/dev/null
+then
+  cd /usr/local/bin
+  # wget function in ~/.bashrc
+  wget raw.github.com/transcode-open/apt-cyg/master/apt-cyg
+  sed -i '/^WGET/cWGET=`type -t wget`' apt-cyg
+  chmod +x apt-cyg
+fi
 apt-cyg update
+apt-cyg install -u wget
 apt-cyg install -u curl
 apt-cyg install -u make
 apt-cyg install -u unzip
