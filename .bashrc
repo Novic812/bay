@@ -52,7 +52,7 @@ tar () {
 }
 
 wget () {
-  if type -f wget &>/dev/null
+  if command wget -h &>/dev/null
   then
     command wget "$@"
     return
