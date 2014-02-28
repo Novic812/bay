@@ -1,12 +1,12 @@
 # define variables and functions
+CYGWIN=nodosfilewarning
+EDITOR='cygstart -w'
 HISTCONTROL=ignoredups
 HISTIGNORE=c
 HISTSIZE=10000
 HOST=x86_64-w64-mingw32
 PREFIX=/usr/x86_64-w64-mingw32/sys-root/mingw
 PROMPT_COMMAND=pc
-export CYGWIN=nodosfilewarning
-export EDITOR='cygstart -w'
 _PATH=(
   /usr/local/bin            # ffmpeg php
   /usr/bin                  # find php
@@ -58,8 +58,14 @@ wget () {
     return
   fi
   powershell '&{
-  $0 = [uri]$args[0]
+  $0 = [uri]$args[-1]
   if (!$0.host) {$0 = [uri]"http://$0"}
-  (new-object net.webclient).downloadfile($0, $0.segments[-1])
+  $1 = $0.segments[-1]
+  if (test-path $1) {$1 = "$1~"}
+  (new-object net.webclient).downloadfile($0, $1)
   }' $1
 }
+
+# export variables and functions
+export CYGWIN EDITOR
+export -f wget
