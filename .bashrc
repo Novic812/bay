@@ -63,7 +63,8 @@ wget () {
     return
   fi
   powershell '&{
-  $0 = $args[0]
-  (new-object system.net.webclient).downloadfile($0, $0 -replace ".+/")
+  $0 = [uri]$args[0]
+  if (!$0.host) {$0 = [uri]"http://$0"}
+  (new-object net.webclient).downloadfile($0, $0.segments[-1])
   }' $1
 }
