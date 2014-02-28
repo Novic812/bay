@@ -58,12 +58,12 @@ wget () {
     return
   fi
   powershell '&{
-  $0 = [uri]$args[-1]
+  $0 = [uri]$args[0]
   if (!$0.host) {$0 = [uri]"http://$0"}
   $1 = $0.segments[-1]
   if (test-path $1) {$1 = "$1~"}
   (new-object net.webclient).downloadfile($0, $1)
-  }' $1
+  }' ${*: -1}
 }
 
 # export variables and functions
