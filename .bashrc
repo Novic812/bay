@@ -36,11 +36,6 @@ pc () {
   PS1="\e];\s\a\n\e[33m\w \e[36m$hd\n\[\e[m\]$ "
 }
 
-setup () {
-  IFS=, read <<< "$*"
-  setup-x86_64 -nqP $REPLY
-}
-
 tar () {
   local bf so
   so=${*: -1}
