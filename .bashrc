@@ -21,12 +21,14 @@ c () {
 }
 
 command_not_found_handle () {
+  cd /tmp
   lk='cygwin.com/cgi-bin2/package-grep.cgi?text=1&arch=x86_64&grep='
-  curl -s "$lk$1(\.exe)?$" | awk '
+  wget -O mc "$lk$1(\.exe)?$"
+  awk '
   $2 && !pk[$2]++ {
-    print "apt-cyg install", $2
+    printf "\033[1;36mapt-cyg install %s\033[m\n", $2
   }
-  ' FS=/
+  ' FS=/ mc
 }
 
 pc () {
