@@ -3,7 +3,6 @@ then
   cd /usr/local/bin
   # wget function in ~/.bashrc
   wget raw.github.com/transcode-open/apt-cyg/master/apt-cyg
-  sed -i '/^WGET/cWGET=`type -t wget`' apt-cyg
   chmod +x apt-cyg
 fi
 apt-cyg update
