@@ -25,6 +25,6 @@ find -maxdepth 1 -type d ! -name '.*' -exec cp -r -t "$APPDATA" {} +
 
 # restart bash
 cd $(cygpath -m ~+)
-powershell saps bash
+cygstart bash
 type git &>/dev/null && kill -7 $(ps | awk /daemon/,NF=1)
 kill -7 $PPID
