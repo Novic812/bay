@@ -20,6 +20,15 @@ c () {
   printf '\ec'
 }
 
+command_not_found_handle () {
+  lk='cygwin.com/cgi-bin2/package-grep.cgi?text=1&arch=x86_64&grep='
+  curl -s "$lk$1(\.exe)?$" | awk '
+  $2 && !pk[$2]++ {
+    print "apt-cyg install", $2
+  }
+  ' FS=/
+}
+
 pc () {
   history -a
   local hd
