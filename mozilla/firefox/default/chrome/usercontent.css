@@ -53,14 +53,10 @@ domain(stackexchange.com) {
   #gbq1,             /* results page, doodle              */
   #hdtb_tls,         /* results page, search tools button */
   #hplogo,           /* landing page, doodle              */
-  #pmocntr2,         /* landing page, google chrome       */
-  #prm-pt,           /* landing page, promo               */
   #rhs_block,        /* results page, map for             */
   .gb_Ca,            /* google+ notifications             */
-  .gb_eb,            /* share                             */
-  .gb_k,             /* +steven                           */
-  .mq,               /* gmail ad                          */
-  [id^=___plusone_], /* recommend this on google          */
+  .gb_vb,            /* share                             */
+  .gb_Tb,            /* +steven                           */
   _ {
     display: none !important;
   }
