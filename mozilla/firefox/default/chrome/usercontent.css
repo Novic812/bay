@@ -111,15 +111,16 @@ domain(stackexchange.com) {
     display: none !important;
   }
 }
+@-moz-document domain(subscene.com) {
+  div {
+    white-space: normal !important;
+    word-wrap: break-word !important;
+  }
+}
 @-moz-document domain(tumblr.com) {
   #tumblr_controls,      /* tumblr controls   */
   #tumblr_teaser_follow, /* never miss a post */
   _ {
-    display: none !important;
-  }
-}
-@-moz-document domain(thepiratebay.se) {
-  #tdwfb-container { /* today we fight back */
     display: none !important;
   }
 }
