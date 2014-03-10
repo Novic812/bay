@@ -1,24 +1,15 @@
-@-moz-document domain(bc.vc) {
-  #barTum { /* You need to update your player */
-    display: none !important;
-  }
-}
 @-moz-document domain(facebook.com) {
   #rightCol,                       /* games you may like, etc.  */
   ._5mly,                          /* auto playing videos       */
   .fbTimelineIndeterminateContent, /* what is your phone number */
-  _ {
-    display: none !important;
-  }
+  _ {display: none !important}
 }
-@-moz-document url-prefix(http://superuser.com) {
-                                /* filter out meta.superuser.com */
-  .question-hyperlink {         /* colors were reversed          */
-    color: #13b3bd !important;
-  }
-  .question-hyperlink:visited { /* colors were reversed          */
-    color: #1086a4 !important;
-  }
+@-moz-document
+url-prefix(http://superuser.com) { /* filter out meta.superuser.com */
+  .question-hyperlink           /* colors were reversed */
+    {color: #13b3bd !important}
+  .question-hyperlink:visited   /* colors were reversed */
+    {color: #1086a4 !important}
 }
 @-moz-document url-prefix(http) {
   #ppp-promotion,      /* b offer    */
@@ -28,9 +19,7 @@
   #blue-specials,      /* n specials */
   .pod_container,      /* n specials */
   #frame-wrapper,      /* n video    */
-  _ {
-    display: none !important;
-  }
+  _ {display: none !important}
 }
 @-moz-document
 domain(superuser.com),
@@ -42,12 +31,9 @@ domain(stackexchange.com) {
   .bottom-notice,      /* share a link to this question */
   .community-bulletin, /* community Bulletin            */
   .icon-flag,          /* flagged posts                 */
-  _ {
-    display: none !important;
-  }
-  [name=comment] { /* fix damn comment boxes */
-    width: 500px;
-  }
+  _ {display: none !important}
+  [name=comment] /* fix damn comment boxes */
+    {width: 500px}
 }
 @-moz-document domain(google.com) {
   #gbq1,             /* results page, doodle              */
@@ -57,9 +43,7 @@ domain(stackexchange.com) {
   .gb_Ca,            /* google+ notifications             */
   .gb_vb,            /* share                             */
   .gb_Tb,            /* +steven                           */
-  _ {
-    display: none !important;
-  }
+  _ {display: none !important}
   #hdtbMenus { /* search tools */
     position: static !important;
     display: flex !important;
@@ -67,37 +51,30 @@ domain(stackexchange.com) {
   }
 }
 @-moz-document domain(youtube.com) {
-  #sb-button-notify { /* google+ notifications */
-    display: none !important;
-  }
+  #sb-button-notify,             /* google+ notifications */
+  #yt-masthead-user-displayname, /* display name          */
+  _ {display: none !important}
 }
 @-moz-document domain(wikipedia.org) {
-  #centralNotice,              /* wikipedia ad      */
-  #watchlist-message {         /* watchlist message */
-    display: none !important;
-  }
+  #centralNotice,     /* wikipedia ad      */
+  #watchlist-message, /* watchlist message */
+  _ {display: none !important}
 }
 @-moz-document domain(github.com) {
   .clone-options,                    /* clone options                       */
   .clone-url,                        /* clone URL                           */
   .dashboard-sidebar > :not(.repos), /* repos you contribute to, broadcasts */
   .sidebar-button:not([rel]),        /* windows clone                       */
-  _ {
-    display: none !important;
-  }
-  textarea {
-    font-family: Consolas !important;
-  }
+  _ {display: none !important}
+  textarea
+    {font-family: Consolas !important}
   #issue_comment_body,
   .js-comment-field,
-  _ {
-    max-height: none !important;
-  }
+  _ {max-height: none !important}
 }
 @-moz-document domain(reddit.com) {
-  .goldvertisement { /* gold ad */
-    display: none !important;
-  }
+  .goldvertisement /* gold ad */
+    {display: none !important}
 }
 @-moz-document domain(amazon.com) {
   /*
@@ -107,9 +84,8 @@ domain(stackexchange.com) {
     customer image notes
     expanded view popup
   */
-  [style*="width: 250px;"] {
-    display: none !important;
-  }
+  [style*="width: 250px;"]
+    {display: none !important}
 }
 @-moz-document domain(subscene.com) {
   div {
@@ -120,7 +96,5 @@ domain(stackexchange.com) {
 @-moz-document domain(tumblr.com) {
   #tumblr_controls,      /* tumblr controls   */
   #tumblr_teaser_follow, /* never miss a post */
-  _ {
-    display: none !important;
-  }
+  _ {display: none !important}
 }
