@@ -15,17 +15,11 @@ url-prefix(http://superuser.com) {
   - filter out meta.superuser.com
   - colors were reversed
   */
-  .question-hyperlink
-    {color: #13b3bd !important}
-  .question-hyperlink:visited
-    {color: #1086a4 !important}
+  .question-hyperlink         {color: #13b3bd !important}
+  .question-hyperlink:visited {color: #1086a4 !important}
 }
 @-moz-document regexp('.+b.+') {
-  /*
-  .home-banner         offer
-  */
-  .home-banner,
-  _ {display: none !important}
+  .home-banner {display: none !important}
 }
 @-moz-document regexp('.+n.+') {
   /*
@@ -59,8 +53,7 @@ domain(stackexchange.com) {
   .community-bulletin,
   .icon-flag,
   _ {display: none !important}
-  [name=comment]
-    {width: 500px}
+  [name=comment] {width: 500px}
 }
 @-moz-document domain(google.com) {
   /*
@@ -119,18 +112,13 @@ domain(stackexchange.com) {
   .dashboard-sidebar > :not(.repos),
   .sidebar-button:not([rel]),
   _ {display: none !important}
-  textarea
-    {font-family: Consolas !important}
+  textarea {font-family: Consolas !important}
   #issue_comment_body,
   .js-comment-field,
   _ {max-height: none !important}
 }
 @-moz-document domain(reddit.com) {
-  /*
-  .goldvertisement  gold ad
-  */
-  .goldvertisement
-    {display: none !important}
+  .goldvertisement {display: none !important}
 }
 @-moz-document domain(amazon.com) {
   /*
@@ -140,8 +128,7 @@ domain(stackexchange.com) {
     customer image notes
     expanded view popup
   */
-  [style*="width: 250px;"]
-    {display: none !important}
+  [style*="width: 250px;"] {display: none !important}
 }
 @-moz-document domain(subscene.com) {
   div {
