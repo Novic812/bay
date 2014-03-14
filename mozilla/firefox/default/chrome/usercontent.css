@@ -19,7 +19,10 @@ url-prefix(http://superuser.com) {
   .question-hyperlink:visited {color: #1086a4 !important}
 }
 @-moz-document regexp('.+b.+') {
-  .home-banner {display: none !important}
+  /* rotating banners */
+  .home-banner,
+  .ppp-container,
+  _ {display: none !important}
 }
 @-moz-document regexp('.+n.+') {
   /*
