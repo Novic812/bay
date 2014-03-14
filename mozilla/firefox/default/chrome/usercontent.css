@@ -24,10 +24,12 @@ url-prefix(http://superuser.com) {
   /*
   #ppp-promotion       offer
   #section-news        offer
+  .home-banner         offer
   .top-site-promotion  offer
   */
   #ppp-promotion,
   #section-news,
+  .home-banner,
   .top-site-promotion,
   _ {display: none !important}
 }
