@@ -1,24 +1,47 @@
 @-moz-document domain(facebook.com) {
-  #rightCol,                       /* games you may like, etc.  */
-  ._5mly,                          /* auto playing videos       */
-  .fbTimelineIndeterminateContent, /* what is your phone number */
+  /*
+  #rightCol                        games you may like, etc.
+  ._5mly                           auto playing videos
+  .fbTimelineIndeterminateContent  what is your phone number
+  */
+  #rightCol,
+  ._5mly,
+  .fbTimelineIndeterminateContent,
   _ {display: none !important}
 }
 @-moz-document
-url-prefix(http://superuser.com) { /* filter out meta.superuser.com */
-  .question-hyperlink           /* colors were reversed */
+url-prefix(http://superuser.com) {
+  /*
+  - filter out meta.superuser.com
+  - colors were reversed
+  */
+  .question-hyperlink
     {color: #13b3bd !important}
-  .question-hyperlink:visited   /* colors were reversed */
+  .question-hyperlink:visited
     {color: #1086a4 !important}
 }
-@-moz-document url-prefix(http) {
-  #ppp-promotion,      /* b offer    */
-  #section-news,       /* b offer    */
-  .top-site-promotion, /* b offer    */
-  #social-media-box,   /* n social   */
-  #blue-specials,      /* n specials */
-  .pod_container,      /* n specials */
-  #frame-wrapper,      /* n video    */
+@-moz-document regexp('.+b.+') {
+  /*
+  #ppp-promotion       offer
+  #section-news        offer
+  .top-site-promotion  offer
+  */
+  #ppp-promotion,
+  #section-news,
+  .top-site-promotion,
+  _ {display: none !important}
+}
+@-moz-document regexp('.+n.+') {
+  /*
+  #blue-specials     specials
+  #frame-wrapper     video
+  #social-media-box  social
+  .pod_container     specials
+  */
+  #blue-specials,
+  #frame-wrapper,
+  #social-media-box,
+  .pod_container,
   _ {display: none !important}
 }
 @-moz-document
@@ -26,45 +49,79 @@ domain(superuser.com),
 domain(serverfault.com),
 domain(stackoverflow.com),
 domain(stackexchange.com) {
-  #hireme,             /* careers 2.0                   */
-  #tag-menu,           /* shows when you hover on a tag */
-  .bottom-notice,      /* share a link to this question */
-  .community-bulletin, /* community Bulletin            */
-  .icon-flag,          /* flagged posts                 */
+  /*
+  #hireme              careers 2.0
+  #tag-menu            shows when you hover on a tag
+  .bottom-notice       share a link to this question
+  .community-bulletin  community Bulletin
+  .icon-flag           flagged posts
+  [name=comment]       fix damn comment boxes
+  */
+  #hireme,
+  #tag-menu,
+  .bottom-notice,
+  .community-bulletin,
+  .icon-flag,
   _ {display: none !important}
-  [name=comment] /* fix damn comment boxes */
+  [name=comment]
     {width: 500px}
 }
 @-moz-document domain(google.com) {
-  #gbq1,             /* results page, doodle              */
-  #hdtb_tls,         /* results page, search tools button */
-  #hplogo,           /* landing page, doodle              */
-  #rhs_block,        /* results page, map for             */
-  .gb_Ca,            /* google+ notifications             */
-  .gb_vb,            /* share                             */
-  .gb_Tb,            /* +steven                           */
+  /*
+  #gbq1       results page, doodle
+  #hdtb_tls   results page, search tools button
+  #hplogo     landing page, doodle
+  #prm-pt     landing page, stupid crap below search buttons
+  #rhs_block  results page, map for
+  .gb_Ca      google+ notifications
+  .gb_Tb      +steven
+  .gb_vb      share
+  #hdtbMenus  search tools
+  */
+  #gbq1,
+  #hdtb_tls,
+  #hplogo,
+  #prm-pt,
+  #rhs_block,
+  .gb_Ca,
+  .gb_Tb,
+  .gb_vb,
   _ {display: none !important}
-  #hdtbMenus { /* search tools */
+  #hdtbMenus {
     position: static !important;
     display: flex !important;
     height: 22px !important;
   }
 }
 @-moz-document domain(youtube.com) {
-  #sb-button-notify,             /* google+ notifications */
-  #yt-masthead-user-displayname, /* display name          */
+  /*
+  #sb-button-notify              google+ notifications
+  #yt-masthead-user-displayname  display name
+  */
+  #sb-button-notify,
+  #yt-masthead-user-displayname,
   _ {display: none !important}
 }
 @-moz-document domain(wikipedia.org) {
-  #centralNotice,     /* wikipedia ad      */
-  #watchlist-message, /* watchlist message */
+  /*
+  #centralNotice      wikipedia ad
+  #watchlist-message  watchlist message
+  */
+  #centralNotice,
+  #watchlist-message,
   _ {display: none !important}
 }
 @-moz-document domain(github.com) {
-  .clone-options,                    /* clone options                       */
-  .clone-url,                        /* clone URL                           */
-  .dashboard-sidebar > :not(.repos), /* repos you contribute to, broadcasts */
-  .sidebar-button:not([rel]),        /* windows clone                       */
+  /*
+  .clone-options                     clone options
+  .clone-url                         clone URL
+  .dashboard-sidebar > :not(.repos)  repos you contribute to, broadcasts
+  .sidebar-button:not([rel])         windows clone
+  */
+  .clone-options,
+  .clone-url,
+  .dashboard-sidebar > :not(.repos),
+  .sidebar-button:not([rel]),
   _ {display: none !important}
   textarea
     {font-family: Consolas !important}
@@ -73,7 +130,10 @@ domain(stackexchange.com) {
   _ {max-height: none !important}
 }
 @-moz-document domain(reddit.com) {
-  .goldvertisement /* gold ad */
+  /*
+  .goldvertisement  gold ad
+  */
+  .goldvertisement
     {display: none !important}
 }
 @-moz-document domain(amazon.com) {
@@ -94,7 +154,11 @@ domain(stackexchange.com) {
   }
 }
 @-moz-document domain(tumblr.com) {
-  #tumblr_controls,      /* tumblr controls   */
-  #tumblr_teaser_follow, /* never miss a post */
+  /*
+  #tumblr_controls       tumblr controls
+  #tumblr_teaser_follow  never miss a post
+  */
+  #tumblr_controls,
+  #tumblr_teaser_follow,
   _ {display: none !important}
 }
