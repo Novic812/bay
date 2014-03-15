@@ -109,11 +109,13 @@ domain(stackexchange.com) {
   .clone-url                         clone URL
   .dashboard-sidebar > :not(.repos)  repos you contribute to, broadcasts
   .sidebar-button:not([rel])         windows clone
+  [aria-label~=Open]                 Open this file in GitHub for Windows
   */
   .clone-options,
   .clone-url,
   .dashboard-sidebar > :not(.repos),
   .sidebar-button:not([rel]),
+  [aria-label~=Open],
   _ {display: none !important}
   textarea {font-family: Consolas !important}
   #issue_comment_body,
