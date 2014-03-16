@@ -60,14 +60,15 @@ domain(stackexchange.com) {
 }
 @-moz-document domain(google.com) {
   /*
-  #gbq1       results page, doodle
-  #hdtb_tls   results page, search tools button
-  #hplogo     landing page, doodle
-  #prm-pt     landing page, stupid crap below search buttons
-  #rhs_block  results page, map for
-  .gb_Ca      google+ notifications
-  .gb_Tb      +steven
-  .gb_vb      share
+  #gbq1              results page, doodle
+  #hdtb_tls          results page, search tools button
+  #hplogo            landing page, doodle
+  #prm-pt            landing page, stupid crap below search buttons
+  #rhs_block         results page, map for
+  .gb_Ca             google+ notifications
+  .gb_Tb             +steven
+  .gb_vb             share
+  [id^=___plusone_]  movies, recommend this on google
   #hdtbMenus  search tools
   */
   #gbq1,
@@ -78,6 +79,7 @@ domain(stackexchange.com) {
   .gb_Ca,
   .gb_Tb,
   .gb_vb,
+  [id^=___plusone_],
   _ {display: none !important}
   #hdtbMenus {
     position: static !important;
