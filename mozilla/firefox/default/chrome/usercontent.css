@@ -61,6 +61,7 @@ domain(stackexchange.com) {
 @-moz-document domain(google.com) {
   /*
   [href*='plus.google.com/u/0/?']  +steven
+      [href*='plus.google.com/?']  +you
            [title*=Notifications]  google+ notifications
                     [id*=plusone]  movies, recommend this on google
                     [title=Share]  share
@@ -71,6 +72,7 @@ domain(stackexchange.com) {
                             #gbq1  results page, doodle
   */
   [href*='plus.google.com/u/0/?'],
+  [href*='plus.google.com/?'],
   [title*=Notifications],
   [id*=plusone],
   [title=Share],
