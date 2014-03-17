@@ -12,23 +12,13 @@ _PATH=(
   /usr/bin                  # find php
   /srv/a                    #
   /srv/a/scripts            #
+  /srv/apt-cyg
 )
 IFS=: read PATH <<< "${_PATH[*]}:$PATH"
 unset _PATH
 
 c () {
   printf '\ec'
-}
-
-command_not_found_handle () {
-  cd /tmp
-  lk='cygwin.com/cgi-bin2/package-grep.cgi?text=1&arch=x86_64&grep='
-  wget -O mc "$lk$1(\.exe)?$"
-  awk '
-  $2 && !pk[$2]++ {
-    printf "\033[1;36mapt-cyg install %s\033[m\n", $2
-  }
-  ' FS=/ mc
 }
 
 pc () {
