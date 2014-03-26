@@ -26,15 +26,15 @@ url-prefix(http://superuser.com) {
 }
 @-moz-document regexp('.+n.+') {
   /*
-  #blue-specials     specials
-  #frame-wrapper     video
+  #blue-homepage     specials
+  iframe             video
   #social-media-box  social
-  .pod_container     specials
+  .center_upsell     specials
   */
-  #blue-specials,
-  #frame-wrapper,
+  #blue-homepage,
+  iframe,
   #social-media-box,
-  .pod_container,
+  .center_upsell,
   _ {display: none !important}
 }
 @-moz-document
