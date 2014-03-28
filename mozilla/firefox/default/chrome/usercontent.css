@@ -27,12 +27,12 @@ url-prefix(http://superuser.com) {
 @-moz-document regexp('.+n.+') {
   /*
   #blue-homepage     specials
-  iframe             video
+  .yui3-js-enabled   video
   #social-media-box  social
   .center_upsell     specials
   */
   #blue-homepage,
-  iframe,
+  .yui3-js-enabled,
   #social-media-box,
   .center_upsell,
   _ {display: none !important}
