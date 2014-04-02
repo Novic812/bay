@@ -127,7 +127,13 @@ domain(stackexchange.com) {
   _ {max-height: none !important}
 }
 @-moz-document domain(reddit.com) {
-  .goldvertisement {display: none !important}
+  /*
+  #headdit-box      april fools
+  .goldvertisement  ad
+  */
+  #headdit-box,
+  .goldvertisement,
+  _ {display: none !important}
 }
 @-moz-document domain(amazon.com) {
   /*
