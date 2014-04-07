@@ -18,7 +18,7 @@ sp hkcu:software/microsoft/office/14.0/common/internet `
 
 # smplayer option for folders
 ni hklm:software/classes/directory/shell/smplayer/command `
-  -f -va ('"{0}" "%1"' -f "${env:programfiles(x86)}/smplayer/smplayer")
+  -f -va ('"{0}" "%1"' -f "$env:programfiles/smplayer/smplayer")
 
 # bash option
 foreach ($key in '', 'background/') {
