@@ -23,10 +23,8 @@ url-prefix(http://superuser.com) {
   .home-banner,
   .ppp-container,
   _ {display: none !important}
-  #JumpTo {
-    position: fixed !important;
-    top: 0;
-    right: 0;
+  #menuBackground {
+    position: static !important;
   }
 }
 @-moz-document regexp('.+n.+') {
