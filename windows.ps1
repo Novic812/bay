@@ -50,10 +50,11 @@ rundll32 inetcpl.cpl ClearMyTracksByProcess 1
 
 # path
 $0 =
-  "$env:programfiles/7-zip",
-  "$env:programfiles/imagemagick",
-  "$env:windir/system32",
-  "$pshome"
+  "${env:programfiles}/7-zip",
+  "${env:programfiles}/imagemagick",
+  "${env:programfiles(x86)}/winamp",
+  "${env:windir}/system32",
+  "${pshome}"
 sp 'hklm:system/currentcontrolset/control/session manager/environment' `
   path ($0 -join ';')
 kill -n explorer
