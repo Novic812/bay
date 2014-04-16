@@ -129,11 +129,11 @@ domain(stackexchange.com) {
 }
 @-moz-document domain(reddit.com) {
   /*
-  #headdit-box      april fools
   .goldvertisement  ad
+  .side-message     recommends that you change your password
   */
-  #headdit-box,
   .goldvertisement,
+  .side-message,
   _ {display: none !important}
 }
 @-moz-document domain(amazon.com) {
