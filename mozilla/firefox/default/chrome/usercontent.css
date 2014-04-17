@@ -1,9 +1,11 @@
 @-moz-document domain(facebook.com) {
   /*
+  #pagelet_megaphone               where did you go to school?
   #rightCol                        games you may like, etc.
   ._5mly                           auto playing videos
   .fbTimelineIndeterminateContent  what is your phone number
   */
+  #pagelet_megaphone,
   #rightCol,
   ._5mly,
   .fbTimelineIndeterminateContent,
