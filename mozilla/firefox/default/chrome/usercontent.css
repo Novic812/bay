@@ -69,6 +69,7 @@ domain(stackexchange.com) {
                [title=Share]  share
                   #rhs_block  results page, map for
                    #hdtb_tls  results page, search tools button
+                   #pmocntr2  landing page, google chrome
                      #prm-pt  landing page, crap below search buttons
                      #hplogo  landing page, doodle
                        #gbq1  results page, doodle
@@ -79,6 +80,7 @@ domain(stackexchange.com) {
   [title=Share],
   #rhs_block,
   #hdtb_tls,
+  #pmocntr2,
   #prm-pt,
   #hplogo,
   #gbq1,
