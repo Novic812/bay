@@ -21,9 +21,14 @@ url-prefix(http://superuser.com) {
   .question-hyperlink:visited {color: #1086a4 !important}
 }
 @-moz-document regexp('.+b.+') {
-  /* rotating banners */
+  /*
+  .home-banner         banner
+  .ppp-container       banner
+  .new-ntfcts-balloon  notifications
+  */
   .home-banner,
   .ppp-container,
+  .new-ntfcts-balloon,
   _ {display: none !important}
   #menuBackground {
     position: static !important;
