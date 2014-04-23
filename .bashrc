@@ -63,7 +63,7 @@ wget () {
   if (!$0.host) {$0 = [uri]"http://$0"}
   $1 = $0.segments[-1]
   if (test-path $1 -patht c) {$1 = "$1~"}
-  (new-object net.webclient).downloadfile($0, $1)
+  wget $0 -outf $1
   }' ${*: -1}
 }
 
