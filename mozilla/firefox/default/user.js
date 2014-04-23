@@ -80,5 +80,8 @@ user_pref('security.warn_viewing_mixed', false);
 /* do not remember passwords */
 user_pref('signon.rememberSignons', false);
 
+/* do not show status in toolbar */
+user_pref("status4evar.status", 0);
+
 /* disable status bar delay */
 user_pref('status4evar.status.linkOver.delay.show', 0);
