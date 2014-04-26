@@ -7,6 +7,9 @@ whitespace = cr-at-eol
 [credential]
 helper = store
 
+[hub]
+protocol = https
+
 [push]
 default = simple
 
