@@ -21,9 +21,9 @@ ni hklm:software/classes/directory/shell/smplayer/command `
   -f -va ('"{0}" "%1"' -f "$env:programfiles/smplayer/smplayer")
 
 # bash option
-foreach ($key in '', 'background/') {
-  $0 = ([uri]"$env:homedrive/cygwin64/bin/cygstart").localpath
-  ni hklm:software/classes/directory/${key}shell/bash/command `
+foreach ($key in 'shell', 'background/shell') {
+  $0 = (gi $env:homedrive/cygwin64/bin/cygstart.exe).fullname
+  ni hklm:software/classes/directory/$key/bash/command `
     -f -va "$0 -d '%v' /bin/bash"
 }
 
