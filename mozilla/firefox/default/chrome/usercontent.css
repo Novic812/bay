@@ -54,14 +54,12 @@ domain(stackexchange.com) {
   #hireme              careers 2.0
   #tag-menu            shows when you hover on a tag
   .bottom-notice       share a link to this question
-  .community-bulletin  community Bulletin
   .icon-flag           flagged posts
   [name=comment]       fix damn comment boxes
   */
   #hireme,
   #tag-menu,
   .bottom-notice,
-  .community-bulletin,
   .icon-flag,
   _ {display: none !important}
   [name=comment] {width: 500px}
