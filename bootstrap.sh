@@ -1,7 +1,6 @@
 # PATH is defined in ~/.bashrc
 # we must assume this has not happened yet
 PATH=/bin:$PATH
-# "cd" mount lookup is case sensitive
 sw=(
   ${OSTYPE}64~/home
   ${OSTYPE}64~/setup
@@ -21,6 +20,13 @@ mkdir -p   "$HOME"
 echo cd >> "$HOME/.bash_history"
 export CYGWIN=nodosfilewarning
 find -maxdepth 1 -type f   -name '.*' -exec cp    -t "$HOME"    {} +
+while ps -W | grep -q firefox
+do
+  (( $# )) || printf 'Please close Firefox'
+  set 0
+  printf .
+  sleep .5
+done
 find -maxdepth 1 -type d ! -name '.*' -exec cp -r -t "$APPDATA" {} +
 
 # restart bash
