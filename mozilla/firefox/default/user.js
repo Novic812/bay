@@ -18,6 +18,12 @@ user_pref('browser.urlbar.autoFill', false);
 user_pref('browser.urlbar.trimURLs', false);
 
 /*
+dxr.mozilla.org/mozilla-central/source/services/datareporting/policy.jsm
+*/
+user_pref('datareporting.policy.dataSubmissionPolicyResponseTime',
+  '1325397600000');
+
+/*
 currentVersion        this is required after install
 frameobjects          do not show tabs on flash
 hideContributeButton  hide contribute button
