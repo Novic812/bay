@@ -6,11 +6,11 @@ then
   chmod +x apt-cyg
 fi
 apt-cyg update
-apt-cyg install -u wget
-apt-cyg install -u curl
-apt-cyg install -u make
-apt-cyg install -u unzip
-apt-cyg install -u zip
+apt-cyg install wget
+apt-cyg install curl
+apt-cyg install make
+apt-cyg install unzip
+apt-cyg install zip
 xargs -p apt-cyg install <<< mingw64-x86_64-gcc-core
 type git 2>/dev/null && exit
 curl -z 20130314 box-soft.com/x86_64/release/git/md5.sum | read && exit
