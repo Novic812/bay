@@ -50,8 +50,9 @@ rundll32 inetcpl.cpl ClearMyTracksByProcess 1
 
 # path
 $0 =
+  "${env:programfiles}/${env:username}/bin", # ffmpeg
+  "${env:programfiles}/imagemagick",         # ffmpeg
   "${env:programfiles}/7-zip",
-  "${env:programfiles}/imagemagick",
   "${env:programfiles(x86)}/winamp",
   "${env:windir}/system32",
   "${pshome}"
