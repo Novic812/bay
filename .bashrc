@@ -8,10 +8,9 @@ HOST=x86_64-w64-mingw32
 PREFIX=/usr/x86_64-w64-mingw32/sys-root/mingw
 PROMPT_COMMAND=pc
 _PATH=(
-  /usr/local/bin            # ffmpeg php
-  /usr/bin                  # find php
-  /srv/a                    #
-  /srv/a/scripts            #
+  /usr/bin
+  /srv/a
+  /srv/a/scripts
   /srv/apt-cyg
 )
 IFS=: read PATH <<< "${_PATH[*]}:$PATH"
