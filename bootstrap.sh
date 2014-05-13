@@ -2,15 +2,14 @@
 # we must assume this has not happened yet
 PATH=/bin:$PATH
 sw=(
-  ${OSTYPE}64~/home
-  ${OSTYPE}64~/setup
-  ${OSTYPE}64~/srv
-  ${OSTYPE}64~/usr/local
-  "$USERNAME"
+  "$PROGRAMFILES/$USERNAME"/home
+  "$PROGRAMFILES/$USERNAME"/setup
+  "$PROGRAMFILES/$USERNAME"/srv
+  "$HOMEDRIVE/$USERNAME"
 )
 for sg in "${sw[@]}"
 do
-  mount -f $HOMEDRIVE/"$sg" /"${sg#*/}"
+  mount -f "$sg" /"${sg##*/}"
 done
 mount -m >/etc/fstab
 
@@ -19,7 +18,7 @@ mount -m >/etc/fstab
 mkdir -p   "$HOME"
 echo cd >> "$HOME/.bash_history"
 export CYGWIN=nodosfilewarning
-find -maxdepth 1 -type f   -name '.*' -exec cp    -t "$HOME"    {} +
+find -maxdepth 1 -type f -name '.*' -exec cp -t "$HOME" {} +
 while ps -W | grep -q firefox
 do
   (( $# )) || printf 'Please close Firefox'
@@ -30,7 +29,7 @@ done
 find -maxdepth 1 -type d ! -name '.*' -exec cp -r -t "$APPDATA" {} +
 
 # restart bash
-cd $(cygpath -m ~+)
+pw=$(cygpath -m ~+)
+cd "$pw"
 cygstart bash
-type git &>/dev/null && kill -7 $(ps | awk /daemon/,NF=1)
-kill -7 $PPID
+kill -7 $PPID $(ps | awk /daemon/,NF=1)
