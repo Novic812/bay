@@ -5,7 +5,7 @@ then
   wget raw.github.com/transcode-open/apt-cyg/master/apt-cyg
   chmod +x apt-cyg
 fi
-apt-cyg update
+
 apt-cyg install wget
 apt-cyg install curl
 apt-cyg install make
