@@ -61,8 +61,7 @@ wget () {
   $0 = [uri]$args[0]
   if (!$0.host) {$0 = [uri]"http://$0"}
   $1 = $0.segments[-1]
-  if (test-path $1 -patht c) {$1 = "$1~"}
-  wget $0 -outf $1
+  if (test-path $1) {"$1 already there."} else {wget $0 -outf $1}
   }' ${*: -1}
 }
 
