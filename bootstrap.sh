@@ -2,10 +2,10 @@
 # we must assume this has not happened yet
 PATH=/bin:$PATH
 sw=(
-  "$PROGRAMFILES/$USERNAME"/home
-  "$PROGRAMFILES/$USERNAME"/setup
-  "$PROGRAMFILES/$USERNAME"/srv
-  "$HOMEDRIVE/$USERNAME"
+  $HOMEDRIVE/Shell/home
+  $HOMEDRIVE/Shell/setup
+  $HOMEDRIVE/Shell/srv
+  $HOMEDRIVE/"$USERNAME"
 )
 for sg in "${sw[@]}"
 do
