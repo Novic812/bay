@@ -17,9 +17,8 @@ mount -m >/etc/fstab
 # we must assume this has not happened yet
 mkdir -p   "$HOME"
 echo cd >> "$HOME/.bash_history"
-export CYGWIN=nodosfilewarning
 find -maxdepth 1 -type f -name '.*' -exec cp -t "$HOME" {} +
-while ps -W | grep -q firefox
+while [ -a $APPDATA/mozilla/firefox/default/places.sqlite-shm ]
 do
   (( $# )) || printf 'Please close Firefox'
   set 0
