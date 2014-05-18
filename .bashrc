@@ -1,6 +1,5 @@
 # define variables and functions
-CYGWIN=nodosfilewarning
-EDITOR='cygstart -w'
+export EDITOR='cygstart -w'
 HISTCONTROL=ignoredups
 HISTIGNORE=c
 HISTSIZE=10000
@@ -64,7 +63,4 @@ wget () {
   if (test-path $1) {"$1 already there."} else {wget $0 -outf $1}
   }' ${*: -1}
 }
-
-# export variables and functions
-export CYGWIN EDITOR
 export -f wget
