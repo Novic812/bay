@@ -25,7 +25,7 @@ pc () {
   if [ -d .git ]
   then
     read hd <.git/HEAD
-    [[ $hd < g ]] && hd=${hd::7} || hd=${hd##*/}
+    [[ $hd =~ / ]] && hd=${hd##*/} || hd=${hd::7}
     if ! [ -g .git/config ]
     then
       git config core.filemode 0
