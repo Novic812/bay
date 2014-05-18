@@ -54,6 +54,7 @@ rundll32 inetcpl.cpl ClearMyTracksByProcess 1
 
 # environment
 $0 =
+  "${env:homedrive}/repos/a/misc",
   "${env:homedrive}/shell/bin",      # ffmpeg
   "${env:programfiles}/imagemagick", # ffmpeg
   "${env:programfiles}/7-zip",
