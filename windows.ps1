@@ -18,14 +18,13 @@ cd hkcu:/software/microsoft/office/14.0/common/internet
 sp . DoNotCheckIfOfficeIsHTMLEditor 1 -t dword
 
 # shell options
+cd hklm:/software/classes
 foreach ($key in 'directory', 'directory/background', 'drive') {
   $0 = (gi $pshome/powershell.exe).fullname
-  cd hklm:/software/classes/$key/shell/powershell/command
-  ni . -f -va "$0 -noe cd '%v'"
+  ni $key/shell/powershell/command -f -va "$0 -noe cd '%v'"
 
   $0 = (gi $env:homedrive/cygwin64/bin/cygstart.exe).fullname
-  cd hklm:/software/classes/$key/shell/bash/command
-  ni . -f -va "$0 -d '%v' /bin/bash"
+  ni $key/shell/bash/command -f -va "$0 -d '%v' /bin/bash"
 }
 
 # QuickEdit
