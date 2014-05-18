@@ -17,10 +17,6 @@ foreach ($key in $keys) {
 cd hkcu:/software/microsoft/office/14.0/common/internet
 sp . DoNotCheckIfOfficeIsHTMLEditor 1 -t dword
 
-# smplayer option for folders
-cd hklm:/software/classes/directory/shell/smplayer/command
-ni . -f -va ('"{0}" "%1"' -f "$env:programfiles/smplayer/smplayer")
-
 # shell options
 foreach ($key in 'directory', 'directory/background', 'drive') {
   $0 = (gi $pshome/powershell.exe).fullname
