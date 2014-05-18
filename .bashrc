@@ -8,9 +8,9 @@ PREFIX=/usr/x86_64-w64-mingw32/sys-root/mingw
 PROMPT_COMMAND=pc
 _PATH=(
   /usr/bin
-  /srv/a
-  /srv/a/scripts
-  /srv/apt-cyg
+  /Repos/a
+  /Repos/a/misc
+  /Repos/apt-cyg
 )
 IFS=: read PATH <<< "${_PATH[*]}:$PATH"
 unset _PATH

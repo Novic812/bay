@@ -2,9 +2,9 @@
 # we must assume this has not happened yet
 PATH=/bin:$PATH
 sw=(
+  $HOMEDRIVE/Repos
   $HOMEDRIVE/Shell/home
   $HOMEDRIVE/Shell/setup
-  $HOMEDRIVE/Shell/srv
   $HOMEDRIVE/"$USERNAME"
 )
 for sg in "${sw[@]}"
