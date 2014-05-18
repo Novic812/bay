@@ -1,8 +1,3 @@
-${0+: \} <#}
-rp=$(realpath "$0")
-cg=$(cygpath -w "$rp")
-exec powershell "&'$cg'" $*
-#>
 # This will change the default action for some types, but that should not be an
 # issue. Those changed types can still access the other program from right
 # click menu.
