@@ -1,5 +1,5 @@
-function prompt {
-  "`n{0}`nPS > " -f (gl).path
+function Prompt {
+  "`n{0}`nPS > " -f (Get-Location).path
 }
 
 function c {
