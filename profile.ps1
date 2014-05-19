@@ -1,7 +1,7 @@
 $0 = $profile.AllUsersAllHosts
 $1 = Test-Path $0
 if (! $1) {
-  ". $env:homedrive/repos/dotfiles/profile.ps1" > $0
+  ". $PSCommandPath" > $0
 }
 
 function prompt {
