@@ -62,4 +62,4 @@ sp . CYGWIN nodosfilewarning
 kill -n explorer
 
 # source
-". $PSCommandPath" > $profile.AllUsersAllHosts
+". $PSScriptRoot/profile.ps1" > $profile.AllUsersAllHosts
