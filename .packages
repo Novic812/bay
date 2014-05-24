@@ -1,11 +1,7 @@
-if ! type apt-cyg 2>/dev/null
-then
-  cd /usr/local/bin
-  # wget function in ~/.bashrc
-  wget raw.github.com/transcode-open/apt-cyg/master/apt-cyg
-  chmod +x apt-cyg
-fi
-
+cd /bin
+# wget function in ~/.bashrc
+wget -nc github.com/transcode-open/apt-cyg/raw/master/apt-cyg
+chmod +x apt-cyg
 apt-cyg install wget
 apt-cyg install curl
 apt-cyg install make
@@ -14,6 +10,6 @@ apt-cyg install zip
 xargs -p apt-cyg install <<< mingw64-x86_64-gcc-core
 type git 2>/dev/null && exit
 curl -z 20130314 box-soft.com/x86_64/release/git/md5.sum | read && exit
-cd /setup
+cd /var/cache
 wget -nc tastycake.net/~adam/cygwin/x86_64/git/git-1.8.5.2-1.tar.xz
 tar -x -C / -f git-1.8.5.2-1.tar.xz

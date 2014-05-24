@@ -2,14 +2,16 @@
 # we must assume this has not happened yet
 PATH=/bin:$PATH
 sw=(
-  $HOMEDRIVE/Repos
-  $HOMEDRIVE/Shell/home
-  $HOMEDRIVE/Shell/setup
-  $HOMEDRIVE/"$USERNAME"
+  $HOMEDRIVE/Repos            /Repos
+  $HOMEDRIVE/Shell/home       /home
+  $HOMEDRIVE/Shell/var/cache  /var/cache
+  $HOMEDRIVE/"$USERNAME"      /"$USERNAME"
 )
-for sg in "${sw[@]}"
+set "${sw[@]}"
+while (( $# ))
 do
-  mount -f "$sg" /"${sg##*/}"
+  mount -f "$1" "$2"
+  shift 2
 done
 mount -m >/etc/fstab
 

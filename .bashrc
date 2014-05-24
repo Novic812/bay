@@ -7,9 +7,9 @@ HOST=x86_64-w64-mingw32
 PREFIX=/usr/x86_64-w64-mingw32/sys-root/mingw
 PROMPT_COMMAND=pc
 _PATH=(
-  /usr/bin
   /Repos/a
   /Repos/apt-cyg
+  /usr/bin
 )
 IFS=: read PATH <<< "${_PATH[*]}:$PATH"
 unset _PATH
