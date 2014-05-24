@@ -60,5 +60,5 @@ sp . PATH   ($0 -join ';')
 sp . CYGWIN nodosfilewarning
 kill -n explorer
 
-# source
-". $PSScriptRoot/profile.ps1" > $profile.AllUsersAllHosts
+# install
+cp profile.ps1 $pshome
