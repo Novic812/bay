@@ -9,6 +9,7 @@ PROMPT_COMMAND=pc
 _PATH=(
   /Repos/a
   /Repos/apt-cyg
+  /usr/local/bin
   /usr/bin
 )
 IFS=: read PATH <<< "${_PATH[*]}:$PATH"
