@@ -8,6 +8,7 @@ PREFIX=/usr/x86_64-w64-mingw32/sys-root/mingw
 PROMPT_COMMAND=pc
 _PATH=(
   /Repos/a
+  /Repos/a/misc
   /Repos/apt-cyg
   /usr/local/bin
   /usr/bin

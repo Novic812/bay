@@ -20,7 +20,7 @@ mount -m >/etc/fstab
 mkdir -p   "$HOME"
 echo cd >> "$HOME/.bash_history"
 find -maxdepth 1 -type f -name '.*' -exec cp -t "$HOME" {} +
-while [ -a $APPDATA/mozilla/firefox/default/places.sqlite-shm ]
+while [ -e $APPDATA/mozilla/firefox/default/places.sqlite-shm ]
 do
   (( $# )) || printf 'Please close Firefox'
   set 0
