@@ -8,7 +8,7 @@ function c {
 
 function bootstrap {
   # install
-  cp profile.ps1 $pshome
+  if (test-path profile.ps1) {cp profile.ps1 $pshome}
 
   # This will change the default action for some types, but that should not be
   # an issue. Those changed types can still access the other program from right
