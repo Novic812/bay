@@ -11,7 +11,7 @@ helper = store
 protocol = https
 
 [push]
-default = simple
+default = current
 
 [sendemail]
 confirm = cc
