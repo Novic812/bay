@@ -61,7 +61,7 @@ function bootstrap {
 
   # environment
   $0 =
-    "${env:homedrive}/shell/bin",      # ffmpeg
+    "${env:homedrive}/Shell/bin",      # ffmpeg
     "${env:programfiles}/imagemagick", # ffmpeg
     "${env:programfiles}/7-zip",
     "${env:programfiles(x86)}/winamp",
