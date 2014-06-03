@@ -2,10 +2,14 @@
 # we must assume this has not happened yet
 PATH=/bin:$PATH
 sw=(
-  $HOMEDRIVE/Repos            /Repos
-  $HOMEDRIVE/Shell/home       /home
-  $HOMEDRIVE/Shell/var/cache  /var/cache
-  $HOMEDRIVE/"$USERNAME"      /"$USERNAME"
+  "$HOMEDRIVE/Program Files"       "/Program Files"
+  "$HOMEDRIVE/Program Files (x86)" "/Program Files (x86)"
+  "$HOMEDRIVE/Repos"               "/Repos"
+  "$HOMEDRIVE/Shell/bin"           "/Shell/bin"
+  "$HOMEDRIVE/Shell/home"          "/home"
+  "$HOMEDRIVE/Shell/var/cache"     "/var/cache"
+  "$HOMEDRIVE/Windows"             "/Windows"
+  "$HOMEDRIVE/$USERNAME"           "/$USERNAME"
 )
 set "${sw[@]}"
 while (( $# ))

@@ -61,12 +61,8 @@ function bootstrap {
 
   # environment
   $0 =
-    "${env:homedrive}/Shell/bin",      # ffmpeg
-    "${env:programfiles}/imagemagick", # ffmpeg
-    "${env:programfiles}/7-zip",
-    "${env:programfiles(x86)}/winamp",
-    "${env:windir}/system32",
-    "${pshome}"
+    '/Shell/bin',
+    '/Windows/system32/windowspowershell/v1.0'
   cd 'hklm:/system/currentcontrolset/control/session manager/environment'
   sp . PATH   ($0 -join ';')
   sp . CYGWIN nodosfilewarning

@@ -7,13 +7,18 @@ HOST=x86_64-w64-mingw32
 PREFIX=/usr/x86_64-w64-mingw32/sys-root/mingw
 PROMPT_COMMAND=pc
 _PATH=(
-  /Repos/a
-  /Repos/a/misc
-  /Repos/apt-cyg
-  /usr/local/bin
-  /usr/bin
+  '/Shell/bin'                               # ffmpeg 1
+  '/Program Files/7-zip'
+  '/Program Files/imagemagick'               # ffmpeg 2
+  '/Program Files (x86)/winamp'
+  '/Repos/a'
+  '/Repos/a/misc'
+  '/Repos/apt-cyg'
+  '/Windows/system32/windowspowershell/v1.0'
+  '/usr/local/bin'                           # wish 1
+  '/usr/bin'                                 # wish 2
 )
-IFS=: read PATH <<< "${_PATH[*]}:$PATH"
+IFS=: read PATH <<< "${_PATH[*]}"
 unset _PATH
 
 c () {
