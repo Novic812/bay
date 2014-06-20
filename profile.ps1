@@ -62,6 +62,7 @@ function bootstrap {
   # environment
   $0 =
     '/Shell/bin',
+    '/Windows/system32',
     '/Windows/system32/windowspowershell/v1.0'
   cd 'hklm:/system/currentcontrolset/control/session manager/environment'
   sp . PATH   ($0 -join ';')

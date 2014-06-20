@@ -2,11 +2,7 @@ cd /var/cache
 # wget function in ~/.bashrc
 wget -nc github.com/transcode-open/apt-cyg/raw/master/apt-cyg
 install apt-cyg /bin
-apt-cyg install wget
-apt-cyg install curl
-apt-cyg install make
-apt-cyg install unzip
-apt-cyg install zip
+apt-cyg install wget curl make unzip zip
 xargs -p apt-cyg install <<< mingw64-x86_64-gcc-core
 type git 2>/dev/null && exit
 curl -z 20130314 box-soft.com/x86_64/release/git/md5.sum | read && exit
