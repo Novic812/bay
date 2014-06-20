@@ -54,11 +54,6 @@ function bootstrap {
   cd hkcu:/software/microsoft/windows/currentversion/explorer/wallpapers
   if (test-path images) {rd images}
 
-  # clear internet explorer browsing history
-  cd 'hkcu:/software/microsoft/internet explorer/main/windowssearch'
-  sp . EnabledScopes 0
-  rundll32 inetcpl.cpl ClearMyTracksByProcess 1
-
   # environment
   $0 =
     '/Shell/bin',
@@ -68,4 +63,9 @@ function bootstrap {
   sp . PATH   ($0 -join ';')
   sp . CYGWIN nodosfilewarning
   kill -n explorer
+
+  # clear internet explorer browsing history
+  cd 'hkcu:/software/microsoft/internet explorer/main/windowssearch'
+  sp . EnabledScopes 0
+  rundll32 inetcpl.cpl ClearMyTracksByProcess 1
 }
