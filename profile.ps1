@@ -56,7 +56,6 @@ function bootstrap {
 
   # environment
   $0 =
-    '/Program Files/7-zip',
     '/Repos/apt-cyg',
     '/Shell/bin',
     '/Windows/system32',
