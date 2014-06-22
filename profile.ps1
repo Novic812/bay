@@ -6,6 +6,10 @@ function c {
   Clear-Host
 }
 
+function grep {
+  $input | Out-String -Stream | Select-String $args
+}
+
 function bootstrap {
   # install
   if (test-path profile.ps1) {cp profile.ps1 $pshome}
