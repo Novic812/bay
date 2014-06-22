@@ -7,7 +7,6 @@ sw=(
   "$HOMEDRIVE/Repos"               "/Repos"
   "$HOMEDRIVE/Shell/bin"           "/Shell/bin"
   "$HOMEDRIVE/Shell/home"          "/home"
-  "$HOMEDRIVE/Shell/var/cache"     "/var/cache"
   "$HOMEDRIVE/Windows"             "/Windows"
   "$HOMEDRIVE/$USERNAME"           "/$USERNAME"
 )
