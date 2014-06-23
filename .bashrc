@@ -63,10 +63,10 @@ wget () {
     return
   fi
   powershell '&{
-  $0 = [uri]$args[0]
-  if (!$0.host) {$0 = [uri]"http://$0"}
-  $1 = $0.segments[-1]
-  if (test-path $1) {"$1 already there."} else {wget $0 -outf $1}
+  param([uri]$rc)
+  if (!$rc.host) {$rc = "http://$rc"}
+  $of = $rc.segments[-1]
+  if (test-path $of) {"$of already there."} else {wget $rc -outf $of}
   }' ${*: -1} >&2
 }
 export -f wget
