@@ -51,10 +51,8 @@ $0 =
   "$env:homedrive/shell/bin",
   "$env:homedrive/windows/system32",
   "$env:homedrive/windows/system32/windowspowershell/v1.0"
-cd 'hklm:/system/currentcontrolset/control/session manager/environment'
-sp . PATH   ($0 -join ';')
-sp . CYGWIN nodosfilewarning
-kill -n explorer
+[environment]::setenvironmentvariable('PATH',   $0 -join ';',       'm')
+[environment]::setenvironmentvariable('CYGWIN', 'nodosfilewarning', 'm')
 
 # clear internet explorer browsing history
 cd 'hkcu:/software/microsoft/internet explorer/main/windowssearch'
