@@ -1,5 +1,5 @@
-# install profile
-cp profile.ps1 $pshome
+# need if you call from start menu
+cp $PSScriptRoot/profile.ps1 $pshome
 
 # This will change the default action for some types, but that should not be
 # an issue. Those changed types can still access the other program from right
@@ -45,12 +45,12 @@ sp . link ([byte[]](0,0,0,0))
 cd hkcu:/software/microsoft/windows/currentversion/explorer/wallpapers
 if (test-path images) {rd images}
 
-# environment
+# need homedrive for man
 $0 =
-  '/Repos/apt-cyg',
-  '/Shell/bin',
-  '/Windows/system32',
-  '/Windows/system32/windowspowershell/v1.0'
+  "$env:homedrive/repos/apt-cyg",
+  "$env:homedrive/shell/bin",
+  "$env:homedrive/windows/system32",
+  "$env:homedrive/windows/system32/windowspowershell/v1.0"
 cd 'hklm:/system/currentcontrolset/control/session manager/environment'
 sp . PATH   ($0 -join ';')
 sp . CYGWIN nodosfilewarning
