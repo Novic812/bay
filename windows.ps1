@@ -1,16 +1,41 @@
 # need if you call from start menu
 cp $PSScriptRoot/profile.ps1 $pshome
 
-# This will change the default action for some types, but that should not be
-# an issue. Those changed types can still access the other program from right
-# click menu.
-$keys = 'batfile', 'cmdfile', 'cssfile', 'firefoxhtml', 'inifile', 'jsfile',
-        'microsoft.powershellscript.1', 'msinfofile', 'regfile', 'txtfile',
-        'unknown', 'xmlfile'
-foreach ($key in $keys) {
-  sp hklm:/software/classes/$key/shell '(default)' edit
-  cd hklm:/software/classes/$key/shell/edit/command
-  ni . -f -va ('"{0}" %1' -f "$env:programfiles/notepad2/notepad2")
+# Notepad2
+cd 'hklm:software/microsoft/windows/currentversion/app paths'
+ni -f -va "$env:programfiles/notepad2/notepad2" notepad2.exe
+ni -f -va (gi $pshome/powershell.exe).fullname powershell.exe
+$run = @{
+  '.css'    = 'cssfile',                      $null
+  '.ini'    = 'inifile',                      $null
+  '.nfo'    = 'txtfile',                      $null
+  '.txt'    = 'txtfile',                      $null
+  'unknown' = 'unknown',                      $null
+  '.bat'    = 'batfile',                      '"%1"'
+  '.cmd'    = 'cmdfile',                      '"%1"'
+  '.htm'    = 'firefoxhtml',                  'firefox "%1"'
+  '.xml'    = 'firefoxhtml',                  'firefox "%1"'
+  '.ps1'    = 'microsoft.powershellscript.1', 'powershell "%1"'
+  '.reg'    = 'regfile',                      'regedit "%1"'
+  '.js'     = 'jsfile',                       'wscript "%1"'
+}
+$run.GetEnumerator() | % {
+  $k1 = $_.key
+  $k2 = $_.value[0]
+  $pm = $_.value[1]
+  cd hklm:/software/classes
+  sp $k1 'perceivedtype' $null
+  sp $k1 '(default)'     $k2
+  ni -f "$k2/shell"
+  cd "$k2/shell"
+  if ($pm) {
+    ni -va Run 0
+    ni -va $pm 0/command
+  }
+  ni -va Edit 1
+  ni -va 'notepad2 "%1"' 1/command
+  ni -va Open 2
+  ni -va 'notepad "%1"' 2/command
 }
 cd hkcu:/software/microsoft/office/14.0/common/internet
 sp . DoNotCheckIfOfficeIsHTMLEditor 1 -t dword
