@@ -52,7 +52,7 @@ foreach ($key in 'directory', 'directory/background', 'drive') {
 
 # Console
 $pw = '%systemroot%_system32_windowspowershell_v1.0_powershell.exe'
-cd hkcu:
+cd hkcu:/
 sp console QuickEdit      0x00000001
 sp console WindowPosition 0x01900384
 cd console
