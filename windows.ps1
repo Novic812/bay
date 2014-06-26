@@ -74,7 +74,7 @@ $ph =
   "$env:homedrive/shell/bin",
   "$env:homedrive/windows/system32",
   "$env:homedrive/windows/system32/windowspowershell/v1.0"
-[environment]::setenvironmentvariable('PATH',   $ph -join ';',      'm')
+[environment]::setenvironmentvariable('PATH', $ph -join ';', 'm')
 [environment]::setenvironmentvariable('CYGWIN', 'nodosfilewarning', 'm')
 
 # clear internet explorer browsing history
