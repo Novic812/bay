@@ -1,10 +1,13 @@
 # need if you call from start menu
 cp $PSScriptRoot/profile.ps1 $pshome
 
-# Notepad2
+# app paths
 cd 'hklm:software/microsoft/windows/currentversion/app paths'
-ni -f -va "$env:programfiles/notepad2/notepad2" notepad2.exe
-ni -f -va (gi $pshome/powershell.exe).fullname powershell.exe
+ni -f -va (join-path $env:homedrive cygwin64/bin/cygstart) cygstart.exe
+ni -f -va (join-path $env:programfiles notepad2/notepad2) notepad2.exe
+ni -f -va (join-path $pshome powershell) powershell.exe
+
+# Notepad2
 $run = @{
   '.css'    = 'cssfile',                      $null
   '.ini'    = 'inifile',                      $null
@@ -37,49 +40,44 @@ $run.GetEnumerator() | % {
   ni -va Open 2
   ni -va 'notepad "%1"' 2/command
 }
-cd hkcu:/software/microsoft/office/14.0/common/internet
-sp . DoNotCheckIfOfficeIsHTMLEditor 1 -t dword
+cd hkcu:/software/microsoft/office/14.0/common
+sp internet DoNotCheckIfOfficeIsHTMLEditor 1 -t d
 
 # shell options
 cd hklm:/software/classes
 foreach ($key in 'directory', 'directory/background', 'drive') {
-  $0 = (gi $pshome/powershell.exe).fullname
-  ni $key/shell/powershell/command -f -va "$0 -noe cd '%v'"
-
-  $0 = (gi $env:homedrive/cygwin64/bin/cygstart.exe).fullname
-  ni $key/shell/bash/command -f -va "$0 -d '%v' /bin/bash"
+  ni $key/shell/bash/command -f -va 'cygstart -d "%v" /bin/bash'
+  ni $key/shell/powershell/command -f -va 'powershell -noe cd "%v"'
 }
 
-# QuickEdit
-# - mouse scroll
-# - right click paste
-# - select text with mouse
-cd hkcu:/console
-$0 = '%systemroot%_system32_windowspowershell_v1.0_powershell.exe'
-ni $0 -f
-sp $0 ColorTable00   0x00562401
-sp $0 ColorTable07   0x00f0edee
-sp  . QuickEdit      0x00000001
-sp  . WindowPosition 0x01900384
+# Console
+$pw = '%systemroot%_system32_windowspowershell_v1.0_powershell.exe'
+cd hkcu:
+sp console QuickEdit      0x00000001
+sp console WindowPosition 0x01900384
+cd console
+ni -f $pw
+sp $pw ColorTable00 0x00562401
+sp $pw ColorTable07 0x00f0edee
 
 # shortcut extension remove
-cd hkcu:/software/microsoft/windows/currentversion/explorer
-sp . link ([byte[]](0,0,0,0))
+cd hkcu:/software/microsoft/windows/currentversion
+sp explorer link ([byte[]](0,0,0,0))
 
 # desktop background remove picture location history
 cd hkcu:/software/microsoft/windows/currentversion/explorer/wallpapers
 if (test-path images) {rd images}
 
 # need homedrive for man
-$0 =
+$ph =
   "$env:homedrive/repos/apt-cyg",
   "$env:homedrive/shell/bin",
   "$env:homedrive/windows/system32",
   "$env:homedrive/windows/system32/windowspowershell/v1.0"
-[environment]::setenvironmentvariable('PATH',   $0 -join ';',       'm')
+[environment]::setenvironmentvariable('PATH',   $ph -join ';',      'm')
 [environment]::setenvironmentvariable('CYGWIN', 'nodosfilewarning', 'm')
 
 # clear internet explorer browsing history
-cd 'hkcu:/software/microsoft/internet explorer/main/windowssearch'
-sp . EnabledScopes 0
+cd 'hkcu:/software/microsoft/internet explorer/main'
+sp windowssearch EnabledScopes 0
 rundll32 inetcpl.cpl ClearMyTracksByProcess 1
