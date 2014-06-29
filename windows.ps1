@@ -46,8 +46,9 @@ sp internet DoNotCheckIfOfficeIsHTMLEditor 1 -t d
 # shell options
 cd hklm:/software/classes
 foreach ($key in 'directory', 'directory/background', 'drive') {
-  ni $key/shell/bash/command -f -va 'cygstart -d "%v" /bin/bash'
-  ni $key/shell/powershell/command -f -va 'powershell -noe cd "%v"'
+  # must be single quote
+  ni $key/shell/bash/command -f -va "cygstart -d '%v' /bin/bash"
+  ni $key/shell/powershell/command -f -va "powershell -noe cd '%v'"
 }
 
 # Console
