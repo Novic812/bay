@@ -15,7 +15,8 @@ default = current
 
 [sendemail]
 confirm = cc
-smtpserver = /usr/local/bin/msmtp
+smtpserver = /bin/env
+smtpserveroption = msmtp
 smtpserveroption = --auth=on
 smtpserveroption = --from=svnpenn
 smtpserveroption = --host=smtp.gmail.com
