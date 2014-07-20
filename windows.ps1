@@ -45,10 +45,10 @@ sp internet DoNotCheckIfOfficeIsHTMLEditor 1 -t d
 
 # shell options
 cd hklm:/software/classes
-foreach ($key in 'directory', 'directory/background', 'drive') {
+'directory', 'directory/background', 'drive' | % {
   # must be single quote
-  ni $key/shell/bash/command -f -va "cygstart -d '%v' /bin/bash"
-  ni $key/shell/powershell/command -f -va "powershell -noe cd '%v'"
+  ni $_/shell/bash/command -f -va "cygstart -d '%v' /bin/bash"
+  ni $_/shell/powershell/command -f -va "powershell -noe cd '%v'"
 }
 
 # Console
@@ -71,7 +71,7 @@ if (test-path images) {rd images}
 
 # need homedrive for man
 $ph =
-  "$env:homedrive/repos/apt-cyg",
+  "$env:homedrive/repos/a/misc",
   "$env:homedrive/shell/bin",
   "$env:homedrive/windows/system32",
   "$env:homedrive/windows/system32/windowspowershell/v1.0"
