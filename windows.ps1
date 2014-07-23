@@ -49,7 +49,7 @@ sp internet DoNotCheckIfOfficeIsHTMLEditor 1 -t d
   cd hklm:/software/classes/$_/shell
   cvpa "$pshome/powershell.exe", "$env:homedrive/cygwin64/bin/bash.exe" | % {
     (get-item $_).basename |
-      & {ni -f -va "wmic process call create $_,'%v'" "$input/command"}
+      & {ni -f -va "wmic process call create $_,'%v'" $input/command}
   }
 }
 
