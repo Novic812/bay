@@ -28,7 +28,8 @@ do
   printf .
   sleep .5
 done
-find -maxdepth 1 -type d ! -name '.*' -exec cp -r -t "$APPDATA" {} +
+# FIXME mozilla folder
+# find -maxdepth 1 -type d ! -name '.*' -exec cp -r -t "$APPDATA" {} +
 
 # restart bash
 pw=$(cygpath -m ~+)
