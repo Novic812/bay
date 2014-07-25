@@ -9,8 +9,8 @@ function not {
 }
 
 $sz, $ph, $fd = switch ($env:processor_architecture) {
-  amd64 {'7z920-x64.msi', '/Base/x86_64', 'msys64'}
-  x86   {'7z920.msi',     '/Base/i686',   'msys32'}
+  amd64 {'7z920-x64.msi', 'x86_64', 'msys64'}
+  x86   {'7z920.msi',     'i686',   'msys32'}
 }
 
 md -f $env:appdata/msys2
@@ -24,9 +24,8 @@ if (not test-path $env:path) {
 }
 
 warn 'Checking latest version...'
-[xml] $xml = curl sourceforge.net/projects/msys2/rss?path=$ph
-if (! $?) {exit}
-$bu = ($xml.rss.channel.item.link | sls tar).line[0]
+$bu = curl sourceforge.net/projects/msys2/files/Base/$ph |
+  select -exp links | ? href -match tar | select -f 1 -exp href
 $bo = $bu.split('/')[-2]
 
 if (not test-path $bo) {
