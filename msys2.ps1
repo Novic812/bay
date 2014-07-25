@@ -25,7 +25,7 @@ if (not test-path $env:path) {
 
 warn 'Checking latest version...'
 [xml] $xml = curl sourceforge.net/projects/msys2/rss?path=$ph
-$?
+if (! $?) {exit}
 $bu = ($xml.rss.channel.item.link | sls tar).line[0]
 $bo = $bu.split('/')[-2]
 
