@@ -17,10 +17,12 @@ md -f $env:appdata/msys2
 cd $env:appdata/msys2
 
 # 7-zip
-$env:path = '/program files/7-zip'
-if (not test-path $env:path) {
-  curl -outfile $sz dl.7-zip.org/$sz
-  & ./$sz -q
+'/program files/7-zip' | % {
+  $env:path += ";$_"
+  if (not test-path $_) {
+    curl -outfile $sz dl.7-zip.org/$sz
+    & ./$sz -q
+  }
 }
 
 warn 'Checking latest version...'
@@ -29,10 +31,8 @@ $bu = curl sourceforge.net/projects/msys2/files/Base/$ph |
 $bo = $bu.split('/')[-2]
 
 if (not test-path $bo) {
-  "$fd", "/$fd" | % {
-    if (test-path $_) {
-      rm -r $_
-    }
+  if (test-path $fd) {
+    rm -r $fd
   }
   curl -useragent . -outfile $bo $bu
 }
@@ -42,8 +42,5 @@ if (not test-path $fd) {
   7z x (gi $bo).basename
 }
 
-warn 'Checking files...'
-if (not test-path /$fd) {
-  cp -r $fd /
-}
+robocopy -mir $fd $env:homedrive/$fd
 popd
