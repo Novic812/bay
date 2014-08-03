@@ -3,8 +3,7 @@ function warn {
   write-host -f yellow "`n$args"
 }
 
-function not {
-  param ($cm, $pm)
+function not ($cm, $pm) {
   if (& $cm $pm) {0} else {1}  
 }
 
