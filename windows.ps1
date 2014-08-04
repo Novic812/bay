@@ -73,8 +73,8 @@ if (test-path images) {rd images}
 
 # need homedrive for man
 $ph = & {
+  "$env:appdata/shell/bin"
   "$env:homedrive/repos/a/misc"
-  "$env:homedrive/shell/bin"
   "$env:windir/system32"
   "$pshome"
 }
