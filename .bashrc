@@ -7,7 +7,7 @@ HOST=x86_64-w64-mingw32
 PREFIX=/usr/x86_64-w64-mingw32/sys-root/mingw
 PROMPT_COMMAND=pc
 _PATH=(
-  '/Shell/bin'                               # ffmpeg 1
+  '/shell/bin'                               # ffmpeg 1
   '/Program Files/imagemagick'               # ffmpeg 2
   '/Program Files (x86)/winamp'
   '/Repos/a'

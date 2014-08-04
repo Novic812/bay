@@ -1,4 +1,4 @@
-cd /var/cache
+cd "$APPDATA/shell"
 # wget function in ~/.bashrc
 wget -nc github.com/transcode-open/apt-cyg/raw/master/apt-cyg
 install apt-cyg /bin

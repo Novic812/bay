@@ -12,8 +12,8 @@ $sz, $ph, $fd = switch ($env:processor_architecture) {
   x86   {'7z920.msi',     'i686',   'msys32'}
 }
 
-md -f $env:appdata/msys2
-cd $env:appdata/msys2
+md -f $env:appdata/shell
+cd $env:appdata/shell
 
 # 7-zip
 '/program files/7-zip' | % {
