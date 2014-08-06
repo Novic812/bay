@@ -77,7 +77,7 @@ $ph = & {
   "$env:homedrive/repos/a/misc"
   "$env:windir/system32"
   "$pshome"
-}
+} | cvpa
 [environment]::setenvironmentvariable('PATH', $ph -join ';', 'm')
 [environment]::setenvironmentvariable('CYGWIN', 'nodosfilewarning', 'm')
 
