@@ -6,5 +6,5 @@ apt-cyg install wget curl make unzip zip
 xargs -p apt-cyg install <<< mingw64-x86_64-gcc-core
 type git 2>/dev/null && exit
 curl -z 20130314 box-soft.com/x86_64/release/git/md5.sum | read && exit
-wget -nc tastycake.net/~adam/cygwin/x86_64/git/git-1.8.5.2-1.tar.xz
-tar -x -C / -f git-1.8.5.2-1.tar.xz
+wget -nc tastycake.net/~adam/cygwin/x86_64/git/git-2.0.4-1.tar.xz
+tar -x -C / -f git-2.0.4-1.tar.xz
