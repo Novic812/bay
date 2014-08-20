@@ -1,7 +1,7 @@
 $usr = read-host 'Enter user'
 $sid =
 ls 'hklm:/software/microsoft/windows nt/currentversion/profilelist' | ? {
-  $_.getvalue('profileimagepath') -match $usr
+  $_.getvalue('profileimagepath') -match "$usr$"
 } | select -exp pschildname
 cd registry::hku
 
