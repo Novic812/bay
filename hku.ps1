@@ -15,6 +15,8 @@ join-path hku $usr | % {
     ni -f $_
     sp -vb $_ DisableAnimations 1
   }
+  'Unloading hive...'
+  [gc]::collect()
   reg unload $_
 }
 
