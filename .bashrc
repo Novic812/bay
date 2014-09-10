@@ -20,11 +20,11 @@ _PATH=(
 IFS=: read PATH <<< "${_PATH[*]}"
 unset _PATH
 
-c () {
+function c {
   printf '\ec'
 }
 
-pc () {
+function pc {
   history -a
   local hd
   if [ -d .git ]
@@ -40,7 +40,7 @@ pc () {
   PS1="\e];\s\a\n\e[33m\w \e[36m$hd\n\[\e[m\]$ "
 }
 
-tar () {
+function tar {
   local bf so
   so=${*: -1}
   case $(file "$so" | awk '$0=$2') in
@@ -55,7 +55,7 @@ tar () {
     --checkpoint-action='ttyout=%u%\r' --checkpoint=1
 }
 
-wget () {
+function wget {
   if command wget -h &>/dev/null
   then
     command wget "$@"
