@@ -13,7 +13,7 @@ _PATH=(
   '/Repos/a'
   '/Repos/a/misc'
   '/Repos/apt-cyg'
-  '/Windows/system32/windowspowershell/v1.0'
+  '/Windows/system32'
   '/usr/local/bin'                           # wish 1
   '/usr/bin'                                 # wish 2
 )
