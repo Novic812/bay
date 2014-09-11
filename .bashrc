@@ -13,9 +13,9 @@ _PATH=(
   '/Repos/a'
   '/Repos/a/misc'
   '/Repos/apt-cyg'
-  '/Windows/system32'
   '/usr/local/bin'                           # wish 1
-  '/usr/bin'                                 # wish 2
+  '/usr/bin'                                 # wish 2 sort 1
+  '/Windows/system32'                        #        sort 2
 )
 IFS=: read PATH <<< "${_PATH[*]}"
 unset _PATH
