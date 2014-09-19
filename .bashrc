@@ -9,7 +9,7 @@ PROMPT_COMMAND=pc
 _PATH=(
   '/shell/bin'                               # ffmpeg 1
   '/Program Files/imagemagick'               # ffmpeg 2
-  '/Program Files (x86)/winamp'
+  '/Program Files/kid3'
   '/Repos/a'
   '/Repos/a/misc'
   '/Repos/apt-cyg'
