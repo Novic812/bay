@@ -29,7 +29,7 @@ do
   sleep .5
 done
 # FIXME mozilla folder
-# find -maxdepth 1 -type d ! -name '.*' -exec cp -r -t "$APPDATA" {} +
+cp -r notepad2 "$APPDATA"
 
 # restart bash
 pw=$(cygpath -m ~+)
