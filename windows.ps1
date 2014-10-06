@@ -56,12 +56,17 @@ sp internet DoNotCheckIfOfficeIsHTMLEditor 1 -t d
 # Console
 $pw = '%systemroot%_system32_windowspowershell_v1.0_powershell.exe'
 cd hkcu:/
-sp console QuickEdit      0x00000001
-sp console WindowPosition 0x01900384
+sp console QuickEdit 1
+'0x{0:x4}{1:x4}' | % {
+  sp console WindowPosition ($_ -f 400,900)
+  sp console WindowSize     ($_ -f  22, 80)
+}
 cd console
 ni -f $pw
-sp $pw ColorTable00 0x00562401
-sp $pw ColorTable07 0x00f0edee
+'0x00{2:x2}{1:x2}{0:x2}' | % {
+  sp $pw ColorTable00 ($_ -f   1, 36, 86)
+  sp $pw ColorTable07 ($_ -f 238,237,240)
+}
 
 # shortcut extension remove
 cd hkcu:/software/microsoft/windows/currentversion
