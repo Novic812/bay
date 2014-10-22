@@ -72,10 +72,6 @@ ni -f $pw
 cd hkcu:/software/microsoft/windows/currentversion
 sp explorer link ([byte[]](0,0,0,0))
 
-# desktop background remove picture location history
-cd hkcu:/software/microsoft/windows/currentversion/explorer/wallpapers
-if (test-path images) {rd images}
-
 # need homedrive for man
 $ph = & {
   "$env:appdata/shell/bin"
@@ -86,7 +82,13 @@ $ph = & {
 [environment]::setenvironmentvariable('PATH', $ph -join ';', 'm')
 [environment]::setenvironmentvariable('CYGWIN', 'nodosfilewarning', 'm')
 
-# clear internet explorer browsing history
+# clear explorer and wallpaper history
+cd hkcu:/software/microsoft/windows/currentversion/explorer
+if (test-path typedpaths) {rd typedpaths}
+cd wallpapers
+if (test-path images) {rd images}
+
+# clear run history
 cd 'hkcu:/software/microsoft/internet explorer/main'
 sp windowssearch EnabledScopes 0
 rundll32 inetcpl.cpl ClearMyTracksByProcess 1
