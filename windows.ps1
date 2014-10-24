@@ -73,12 +73,12 @@ cd hkcu:/software/microsoft/windows/currentversion
 sp explorer link ([byte[]](0,0,0,0))
 
 # need homedrive for man
-$ph = & {
+$ph = @(
   "$env:appdata/shell/bin"
   "$env:homedrive/repos/a/misc"
   "$env:windir/system32"
   "$pshome"
-} | cvpa
+) | cvpa
 [environment]::setenvironmentvariable('PATH', $ph -join ';', 'm')
 [environment]::setenvironmentvariable('CYGWIN', 'nodosfilewarning', 'm')
 
