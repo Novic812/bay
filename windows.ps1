@@ -64,8 +64,8 @@ sp console QuickEdit 1
 cd console
 ni -f $pw
 '0x00{2:x2}{1:x2}{0:x2}' | % {
-  sp $pw ColorTable00 ($_ -f   1, 36, 86)
-  sp $pw ColorTable07 ($_ -f 238,237,240)
+  sp -t d $pw ColorTable00 ($_ -f   1, 36, 86)
+  sp -t d $pw ColorTable07 ($_ -f 238,237,240)
 }
 
 # shortcut extension remove
@@ -75,6 +75,7 @@ sp explorer link ([byte[]](0,0,0,0))
 # need homedrive for man
 $ph = @(
   "$env:appdata/shell/bin"
+  "$env:chocolateyinstall/bin"
   "$env:homedrive/repos/a/misc"
   "$env:windir/system32"
   "$pshome"
