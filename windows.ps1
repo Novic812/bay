@@ -49,8 +49,8 @@ sp internet DoNotCheckIfOfficeIsHTMLEditor 1 -t d
 
 # shell options
 cd hklm:/software/classes
-echo -pv 1 directory directory/background drive |
-% {echo -pv 2 powershell bash} |
+% -pv 1 {'directory', 'directory/background', 'drive'} |
+% -pv 2 {'powershell', 'bash'} |
 % {'cmd /c start /d "%v" {0}' -f $2 | ni -f $1/shell/$2/command}
 
 # Console
