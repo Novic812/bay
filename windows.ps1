@@ -54,7 +54,6 @@ echo -pv 1 directory directory/background drive |
 % {'cmd /c start /d "%v" {0}' -f $2 | ni -f $1/shell/$2/command}
 
 # Console
-$pw = '%systemroot%_system32_windowspowershell_v1.0_powershell.exe'
 cd hkcu:/
 sp console QuickEdit 1
 '0x{0:x4}{1:x4}' | % {
@@ -62,10 +61,11 @@ sp console QuickEdit 1
   sp console WindowSize     ($_ -f  22, 80)
 }
 cd console
-ni -f $pw
-'0x00{2:x2}{1:x2}{0:x2}' | % {
-  sp -t d $pw ColorTable00 ($_ -f   1, 36, 86)
-  sp -t d $pw ColorTable07 ($_ -f 238,237,240)
+% -pv 1 {'%systemroot%_system32_windowspowershell_v1.0_powershell.exe'} |
+% -pv 2 {'0x00{2:x2}{1:x2}{0:x2}'} | % {
+  ni -f $1
+  sp -t d $1 ColorTable00 ($2 -f   1, 36, 86)
+  sp -t d $1 ColorTable07 ($2 -f 238,237,240)
 }
 
 # shortcut extension remove
