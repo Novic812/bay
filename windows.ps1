@@ -49,11 +49,9 @@ sp internet DoNotCheckIfOfficeIsHTMLEditor 1 -t d
 
 # shell options
 cd hklm:/software/classes
-echo -pv 1 directory directory/background drive | % {
-  echo -pv 2 powershell bash | % {
-    'cmd /c start /d "%v" {0}' -f $2 | ni -f $1/shell/$2/command
-  }
-}
+echo -pv 1 directory directory/background drive |
+% {echo -pv 2 powershell bash} |
+% {'cmd /c start /d "%v" {0}' -f $2 | ni -f $1/shell/$2/command}
 
 # Console
 $pw = '%systemroot%_system32_windowspowershell_v1.0_powershell.exe'
