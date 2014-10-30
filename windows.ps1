@@ -4,12 +4,16 @@ cp $PSScriptRoot/profile.ps1 $pshome
 
 # app paths
 cd 'hklm:/software/microsoft/windows/currentversion/app paths'
-ni -f -va (cvpa $pshome/powershell.exe) powershell.exe
-ni -f -va (cvpa $env:windir/system32/wbem/wmic.exe) wmic.exe
-ni -f -va (cvpa $env:programfiles/notepad2/notepad2.exe) notepad2.exe
+@{
+  "$env:homedrive/cygwin64/bin" = 'bash.exe'
+  "$env:programfiles/notepad2"  = 'notepad2.exe'
+  "$pshome"                     = 'powershell.exe'
+} | % getEnumerator | % {
+  join-path $_.key $_.value | ni -f $_.value
+}
 
 # Notepad2
-$run = @{
+@{
   '.css'    = 'cssfile',                      $null
   '.ini'    = 'inifile',                      $null
   '.nfo'    = 'txtfile',                      $null
@@ -22,8 +26,7 @@ $run = @{
   '.ps1'    = 'microsoft.powershellscript.1', 'powershell "%1"'
   '.reg'    = 'regfile',                      'regedit "%1"'
   '.js'     = 'jsfile',                       'wscript "%1"'
-}
-$run.GetEnumerator() | % {
+} | % getEnumerator | % {
   $k1 = $_.key
   $k2 = $_.value[0]
   $pm = $_.value[1]
@@ -45,11 +48,10 @@ cd hkcu:/software/microsoft/office/14.0/common
 sp internet DoNotCheckIfOfficeIsHTMLEditor 1 -t d
 
 # shell options
-'directory', 'directory/background', 'drive' | % {
-  cd hklm:/software/classes/$_/shell
-  cvpa $pshome/powershell.exe, $env:homedrive/cygwin64/bin/bash.exe | % {
-    (get-item $_).basename |
-      & {ni -f -va "wmic process call create $_,'%v'" $input/command}
+cd hklm:/software/classes
+echo -pv 1 directory directory/background drive | % {
+  echo -pv 2 powershell bash | % {
+    'cmd /c start /d "%v" {0}' -f $2 | ni -f $1/shell/$2/command
   }
 }
 
@@ -73,15 +75,18 @@ cd hkcu:/software/microsoft/windows/currentversion
 sp explorer link ([byte[]](0,0,0,0))
 
 # need homedrive for man
-$ph = @(
-  "$env:appdata/shell/bin"
-  "$env:chocolateyinstall/bin"
-  "$env:homedrive/repos/a/misc"
-  "$env:windir/system32"
-  "$pshome"
-) | cvpa
-[environment]::setenvironmentvariable('PATH', $ph -join ';', 'm')
-[environment]::setenvironmentvariable('CYGWIN', 'nodosfilewarning', 'm')
+@{
+  CYGWIN = 'noDosFileWarning'
+  PATH = @(
+    "$env:appdata/shell/bin"
+    "$env:chocolateyinstall/bin"
+    "$env:homedrive/repos/a/misc"
+    "$env:windir/system32"
+    "$pshome"
+  ) | % {[io.fileinfo]$_} | % fullname | & {@($input) -join ';'}
+} | % getEnumerator | % {
+  [environment]::setEnvironmentVariable($_.key, $_.value, 'm')
+}
 
 # clear explorer and wallpaper history
 cd hkcu:/software/microsoft/windows/currentversion/explorer
