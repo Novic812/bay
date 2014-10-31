@@ -81,7 +81,7 @@ sp explorer link ([byte[]](0,0,0,0))
     "$env:homedrive/repos/a/misc"
     "$env:windir/system32"
     "$pshome"
-  ) | % {[io.fileinfo]$_} | % fullname | & {@($input) -join ';'}
+  ) | cvpa -ea 0 | & {@($input) -join ';'}
 } | % getEnumerator | % {
   [environment]::setEnvironmentVariable($_.key, $_.value, 'm')
 }
