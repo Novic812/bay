@@ -88,9 +88,7 @@ sp explorer link ([byte[]](0,0,0,0))
 
 # clear explorer and wallpaper history
 cd hkcu:/software/microsoft/windows/currentversion/explorer
-if (test-path typedpaths) {rd typedpaths}
-cd wallpapers
-if (test-path images) {rd images}
+rd -ea 0 typedPaths, wallpapers/images
 
 # clear run history
 cd 'hkcu:/software/microsoft/internet explorer/main'
