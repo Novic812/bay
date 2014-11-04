@@ -1,5 +1,5 @@
 # define variables and functions
-export EDITOR='cygstart -w'
+EDITOR='cygstart -w'
 HISTCONTROL=ignoredups
 HISTIGNORE=c
 HISTSIZE=10000
@@ -69,4 +69,6 @@ function wget {
   if (test-path $of) {"$of already there."} else {wget $rc -outf $of}
   }' ${*: -1} >&2
 }
+
+export EDITOR LANG
 export -f wget
