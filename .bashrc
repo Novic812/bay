@@ -42,17 +42,22 @@ function pc {
 }
 
 function tar {
-  local bf so
+  local ce so
   so=${*: -1}
+  ce='ROUNDMODE=u OFMT=%.0f'
   case $(file "$so" | awk '$0=$2') in
-  XZ) bf=$(xz -lv "$so" |
-    awk 'NR==11 {$6/=50688; print $6%1 ? int($6)+1 : $6}') ;;
-  gzip) bf=$(gzip -l "$so" |
-    awk 'NR==2 {$2/=50688; print $2%1 ? int($2)+1 : $2}') ;;
-  directory) bf=$(find "$so" -type f | xargs du -B512 --apparent-size |
-    awk '{bk += $1+1} END {bk/=100; print bk%1 ? int(bk)+1 : bk}') ;;
-  esac
-  command tar "$@" --blocking-factor=$bf \
+  XZ)
+    xz -lv "$so" | awk -M 'NR==11 {print $6/50688}' $ce
+  ;;
+  gzip)
+    gzip -l "$so" | awk -M 'NR==2 {print $2/50688}' $ce
+  ;;
+  directory)
+    find "$so" -type f | xargs du -B512 --apparent-size |
+    awk -M '{bk += $1+1} END {print bk/100}' $ce
+  ;;
+  esac >/tmp/bf
+  command tar "$@" --blocking-factor=$(</tmp/bf) \
     --checkpoint-action='ttyout=%u%\r' --checkpoint=1
 }
 
