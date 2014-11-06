@@ -1,7 +1,6 @@
 http://easylist.adblockplus.org
 
-Get rid of viglink
+EasyList
 EasyPrivacy
-
-Get rid of social media buttons
-Fanboy's Social Blocking List
+Adblock Warning Removal List
+Fanboy’s Social Blocking List
