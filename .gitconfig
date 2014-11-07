@@ -10,20 +10,12 @@ helper = store
 [hub]
 protocol = https
 
+[imap]
+folder = [Gmail]/Drafts
+host = imaps://imap.gmail.com
+
 [push]
 default = current
-
-[sendemail]
-confirm = cc
-smtpserver = /bin/env
-smtpserveroption = msmtp
-smtpserveroption = --auth=on
-smtpserveroption = --from=svnpenn
-smtpserveroption = --host=smtp.gmail.com
-smtpserveroption = --port=587
-smtpserveroption = --tls=on
-smtpserveroption = --tls-certcheck=off
-smtpserveroption = --user=svnpenn
 
 [user]
 email = svnpenn@gmail.com
