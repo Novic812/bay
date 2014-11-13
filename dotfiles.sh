@@ -6,8 +6,6 @@ s,   *,\t,
 s, ,\\040,g
 s,$, . acl,
 ' >/etc/fstab <<+
-$HOMEDRIVE/Program Files        /Program Files
-$HOMEDRIVE/Program Files (x86)  /Program Files (x86)
 $HOMEDRIVE/Windows              /Windows
 $HOMEDRIVE/$USERNAME            /$USERNAME
 $ProgramData/chocolatey         /chocolatey
