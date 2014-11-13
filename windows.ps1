@@ -76,9 +76,9 @@ sp explorer link ([byte[]](0,0,0,0))
 @{
   CYGWIN = 'noDosFileWarning'
   PATH = @(
-    "$env:appdata/shell/bin"
     "$env:chocolateyinstall/bin"
     "$env:programdata/git/a/misc"
+    "$env:programdata/shell/bin"
     "$env:windir/system32"
     "$pshome"
   ) | cvpa -ea 0 | & {$ofs=';';"$input"}

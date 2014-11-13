@@ -8,8 +8,8 @@ $su, $fd = switch ($env:processor_architecture) {
   x86   {'setup-x86.exe',    'cygwin'}
 }
 
-md -f $env:appdata/shell
-cd $env:appdata/shell
+md -f $env:programdata/shell
+cd $env:programdata/shell
 
 if (not test-path $su) {
   if (test-path $fd) {

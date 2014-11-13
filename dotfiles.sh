@@ -6,14 +6,14 @@ s,   *,\t,
 s, ,\\040,g
 s,$, . acl,
 ' >/etc/fstab <<+
-$APPDATA/shell/bin              /shell/bin
-$APPDATA/shell/home             /home
 $HOMEDRIVE/Program Files        /Program Files
 $HOMEDRIVE/Program Files (x86)  /Program Files (x86)
 $HOMEDRIVE/Windows              /Windows
 $HOMEDRIVE/$USERNAME            /$USERNAME
 $ProgramData/chocolatey         /chocolatey
 $ProgramData/git                /git
+$ProgramData/shell/bin          /shell/bin
+$ProgramData/shell/home         /home
 +
 mount -a
 
