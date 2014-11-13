@@ -10,9 +10,10 @@ $APPDATA/shell/bin              /shell/bin
 $APPDATA/shell/home             /home
 $HOMEDRIVE/Program Files        /Program Files
 $HOMEDRIVE/Program Files (x86)  /Program Files (x86)
-$HOMEDRIVE/Repos                /Repos
 $HOMEDRIVE/Windows              /Windows
 $HOMEDRIVE/$USERNAME            /$USERNAME
+$ProgramData/chocolatey         /chocolatey
+$ProgramData/git                /git
 +
 mount -a
 

@@ -8,12 +8,13 @@ LANG=C.utf8
 PREFIX=/usr/x86_64-w64-mingw32/sys-root/mingw
 PROMPT_COMMAND=pc
 _PATH=(
+  '/chocolatey/bin'
+  '/git/a'
+  '/git/a/misc'
+  '/git/apt-cyg'
   '/shell/bin'                               # ffmpeg 1
   '/Program Files/imagemagick'               # ffmpeg 2
   '/Program Files/kid3'
-  '/Repos/a'
-  '/Repos/a/misc'
-  '/Repos/apt-cyg'
   '/usr/local/bin'                           # wish 1
   '/usr/bin'                                 # wish 2 sort 1
   '/Windows/system32'                        #        sort 2
@@ -39,26 +40,6 @@ function pc {
     fi
   fi
   PS1="\e];\s\a\n\e[33m\w \e[36m$hd\n\[\e[m\]$ "
-}
-
-function tar {
-  local ce so
-  so=${*: -1}
-  ce='ROUNDMODE=u OFMT=%.0f'
-  case $(file "$so" | awk '$0=$2') in
-  XZ)
-    xz -lv "$so" | awk -M 'NR==11 {print $6/50688}' $ce
-  ;;
-  gzip)
-    gzip -l "$so" | awk -M 'NR==2 {print $2/50688}' $ce
-  ;;
-  directory)
-    find "$so" -type f | xargs du -B512 --apparent-size |
-    awk -M '{bk += $1+1} END {print bk/100}' $ce
-  ;;
-  esac >/tmp/bf
-  command tar "$@" --blocking-factor=$(</tmp/bf) \
-    --checkpoint-action='ttyout=%u%\r' --checkpoint=1
 }
 
 function wget {

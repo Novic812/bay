@@ -78,7 +78,7 @@ sp explorer link ([byte[]](0,0,0,0))
   PATH = @(
     "$env:appdata/shell/bin"
     "$env:chocolateyinstall/bin"
-    "$env:homedrive/repos/a/misc"
+    "$env:programdata/git/a/misc"
     "$env:windir/system32"
     "$pshome"
   ) | cvpa -ea 0 | & {$ofs=';';"$input"}
