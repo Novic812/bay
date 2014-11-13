@@ -32,7 +32,7 @@ function pc {
   then
     read hd <.git/HEAD
     [[ $hd =~ / ]] && hd=${hd##*/} || hd=${hd::7}
-    if ! [ -g .git/config ]
+    if [ ! -g .git/config ]
     then
       git config core.filemode 0
       chmod +s .git/config
