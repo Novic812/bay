@@ -2,7 +2,7 @@ cd $ProgramData/shell
 # wget function in ~/.bashrc
 wget -nc rawgit.com/transcode-open/apt-cyg/master/apt-cyg
 install apt-cyg /bin
-apt-cyg install wget curl make unzip zip
+apt-cyg install wget curl make
 xargs -p apt-cyg install <<< mingw64-x86_64-gcc-core
 type git 2>/dev/null && exit
 curl -z 20130314 box-soft.com/x86_64/release/git/md5.sum | read && exit
