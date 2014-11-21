@@ -1,17 +1,10 @@
 # PATH is defined in ~/.bashrc
 # we must assume this has not happened yet
 PATH=/bin:$PATH
-sed '
-s,   *,\t,
-s, ,\\040,g
-s,$, . acl,
-' >/etc/fstab <<+
-$HOMEDRIVE/Windows              /Windows
-$HOMEDRIVE/$USERNAME            /$USERNAME
-$ProgramData/chocolatey         /chocolatey
-$ProgramData/git                /git
-$ProgramData/shell/bin          /shell/bin
-$ProgramData/shell/home         /home
+sed 's,$, . acl,' >/etc/fstab <<+
+$HOMEDRIVE/home         /home
+$HOMEDRIVE/windows      /windows
+$ProgramData/chocolatey /chocolatey
 +
 mount -a
 
@@ -20,13 +13,6 @@ mount -a
 mkdir -p   "$HOME"
 echo cd >> "$HOME/.bash_history"
 find -maxdepth 1 -type f -name '.*' -exec cp -t "$HOME" {} +
-while [ -e $APPDATA/mozilla/firefox/default/places.sqlite-shm ]
-do
-  (( $# )) || printf 'Please close Firefox'
-  set 0
-  printf .
-  sleep .5
-done
 # FIXME mozilla folder
 cp -r notepad2 "$APPDATA"
 

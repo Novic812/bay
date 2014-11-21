@@ -8,14 +8,15 @@ LANG=C.utf8
 PREFIX=/usr/x86_64-w64-mingw32/sys-root/mingw
 PROMPT_COMMAND=pc
 _PATH=(
-  /shell/bin        # ffmpeg 1
-  /chocolatey/bin   # ffmpeg 2
-  /usr/local/bin    # wish 1
-  /usr/bin          # wish 2 sort 1
-  /Windows/system32 #        sort 2
-  /git/a
-  /git/a/misc
-  /git/apt-cyg
+  /home/bin                                # ffmpeg 1
+  /chocolatey/bin                          # ffmpeg 2
+  /usr/local/bin                           # wish 1
+  /usr/bin                                 # wish 2 sort 1
+  /windows/system32                        #        sort 2
+  /windows/system32/windowspowershell/v1.0 # wget
+  /home/git/a
+  /home/git/a/misc
+  /home/git/apt-cyg
 )
 IFS=: read PATH <<< "${_PATH[*]}"
 unset _PATH
