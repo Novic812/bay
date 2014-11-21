@@ -9,7 +9,7 @@ PREFIX=/usr/x86_64-w64-mingw32/sys-root/mingw
 PROMPT_COMMAND=pc
 _PATH=(
   /home/bin                                # ffmpeg 1
-  /chocolatey/bin                          # ffmpeg 2
+  /programdata/chocolatey/bin              # ffmpeg 2
   /usr/local/bin                           # wish 1
   /usr/bin                                 # wish 2 sort 1
   /windows/system32                        #        sort 2
