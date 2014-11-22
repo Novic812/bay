@@ -10,8 +10,8 @@ mount -a
 
 # PS1 must be exported before you can use ~
 # we must assume this has not happened yet
-mkdir -p   "$HOME"
-echo cd >> "$HOME/.bash_history"
+mkdir -p "$HOME"
+history -w
 find -maxdepth 1 -type f -name '.*' -exec cp -t "$HOME" {} +
 # FIXME mozilla folder
 cp -r notepad2 "$APPDATA"
