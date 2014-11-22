@@ -2,9 +2,9 @@
 # we must assume this has not happened yet
 PATH=/bin:$PATH
 sed 's,$, . acl,' >/etc/fstab <<+
-$HOMEDRIVE/home    /home
-$HOMEDRIVE/windows /windows
-$ProgramData       /programdata
+$HOMEDRIVE/home        /home
+$HOMEDRIVE/windows     /windows
+$HOMEDRIVE/programdata /programdata
 +
 mount -a
 
