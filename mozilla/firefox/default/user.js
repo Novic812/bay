@@ -46,8 +46,11 @@ user_pref('noscript.version', '2.6.9.5');
 /*
 currentVersion
   remember "allow some non-intrusive advertising" setting
+hideContributeButton
+  hide contribute button
 */
 user_pref('extensions.adblockplus.currentVersion', '2');
+user_pref('extensions.adblockplus.hideContributeButton', true);
 
 /*
 rememberSignons
