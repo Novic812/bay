@@ -1,6 +1,8 @@
 /*
 newtab.url
   disable new tab page
+places.smartBookmarksVersion
+  do not generate smart bookmarks
 startup.homepage_override.mstone
   disable first run page
 startup.page
@@ -13,6 +15,7 @@ urlbar.trimURLs
   do not trim URLs
 */
 user_pref('browser.newtab.url', 'about:blank');
+user_pref('browser.places.smartBookmarksVersion', 1);
 user_pref('browser.startup.homepage_override.mstone', 'ignore');
 user_pref('browser.startup.page', 3);
 user_pref('browser.tabs.drawInTitlebar', false);
