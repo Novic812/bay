@@ -38,8 +38,9 @@ user_pref('capability.policy.maonoscript.sites',
   imgur.com http://imgur.com \
   jottit.com \
   reddit.com redditstatic.com \
-  http://stackoverflow.com http://superuser.com http://serverfault.com \
-    http://stackexchange.com stackexchange.com sstatic.net \
+  stackoverflow.com http://stackoverflow.com http://superuser.com \
+    http://serverfault.com http://stackexchange.com stackexchange.com \
+    sstatic.net \
   youtube.com ytimg.com \
   '
 );
