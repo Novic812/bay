@@ -39,7 +39,7 @@ user_pref('capability.policy.maonoscript.sites',
   jottit.com \
   reddit.com redditstatic.com \
   stackoverflow.com http://stackoverflow.com http://superuser.com \
-    http://serverfault.com http://stackexchange.com stackexchange.com \
+    http://serverfault.com stackexchange.com http://stackexchange.com \
     sstatic.net \
   youtube.com ytimg.com \
   '
