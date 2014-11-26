@@ -25,10 +25,10 @@ user_pref('browser.urlbar.trimURLs', false);
 /*
 capability.policy.maonoscript.sites
   whitelist
+noscript.firstRunRedirection
+  do not display the release notes on updates
 noscript.notify
   show message about blocked scripts
-noscript.version
-  this is required after install
 */
 user_pref('capability.policy.maonoscript.sites',
   ' \
@@ -44,8 +44,8 @@ user_pref('capability.policy.maonoscript.sites',
   youtube.com ytimg.com \
   '
 );
+user_pref('noscript.firstRunRedirection', false);
 user_pref('noscript.notify', false);
-user_pref('noscript.version', '2.6.9.5');
 
 /*
 currentVersion
