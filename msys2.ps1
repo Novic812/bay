@@ -7,22 +7,13 @@ function not ($cm, $pm) {
   if (& $cm $pm) {0} else {1}  
 }
 
-$sz, $ph, $fd = switch ($env:processor_architecture) {
-  amd64 {'7z920-x64.msi', 'x86_64', 'msys64'}
-  x86   {'7z920.msi',     'i686',   'msys32'}
+$ph, $fd = switch ($env:processor_architecture) {
+  amd64 {'x86_64', 'msys64'}
+  x86   {'i686',   'msys32'}
 }
 
-md -f $env:programdata/shell
-cd $env:programdata/shell
-
-# 7-zip
-'/program files/7-zip' | % {
-  $env:path += ";$_"
-  if (not test-path $_) {
-    curl -outfile $sz dl.7-zip.org/$sz
-    & ./$sz -q
-  }
-}
+md -f $env:homedrive/home/bin
+cd $env:homedrive/home/bin
 
 warn 'Checking latest version...'
 $bu = curl sourceforge.net/projects/msys2/files/Base/$ph |
@@ -36,10 +27,12 @@ if (not test-path $bo) {
   curl -useragent . -outfile $bo $bu
 }
 
+# FIXME choco 7-zip
 if (not test-path $fd) {
-  7z x $bo
-  7z x (gi $bo).basename
+  7za x $bo
+  7za x (gi $bo).basename
 }
 
+# FIXME hard links
 robocopy -mir $fd $env:homedrive/$fd
 popd

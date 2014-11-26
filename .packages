@@ -1,4 +1,4 @@
-cd $ProgramData/shell
+cd $HOMEDRIVE/home/bin
 if ! type apt-cyg >/dev/null
 then
   # wget function in ~/.bashrc

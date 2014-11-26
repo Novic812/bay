@@ -8,8 +8,8 @@ $su, $fd = switch ($env:processor_architecture) {
   x86   {'setup-x86.exe',    'cygwin'}
 }
 
-md -f $env:programdata/shell
-cd $env:programdata/shell
+md -f $env:homedrive/home/bin
+cd $env:homedrive/home/bin
 
 if (not test-path $su) {
   if (test-path $fd) {
@@ -19,5 +19,6 @@ if (not test-path $su) {
 }
 
 & ./$su -n -q -s http://box-soft.com -R $pwd/$fd | oh
+# FIXME hard links
 robocopy -mir $fd $env:homedrive/$fd
 popd
