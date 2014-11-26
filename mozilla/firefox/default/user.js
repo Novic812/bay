@@ -29,28 +29,25 @@ noscript.version
 */
 user_pref('capability.policy.maonoscript.sites',
   ' \
-  facebook.com \
-    akamaihd.net \
-  github.com \
-    https://github.com \
-  google.com \
-  gstatic.com \
-  imgur.com \
-    http://imgur.com \
+  facebook.com akamaihd.net \
+  github.com https://github.com \
+  google.com gstatic.com googleapis.com \
+  imgur.com http://imgur.com \
   jottit.com \
-  reddit.com \
-    redditstatic.com \
-  http://stackoverflow.com \
-    superuser.com \
-    stackexchange.com \
-    sstatic.net \
-    ajax.googleapis.com \
-  youtube.com \
-    ytimg.com \
+  reddit.com redditstatic.com \
+  http://stackoverflow.com http://superuser.com http://serverfault.com \
+    http://stackexchange.com sstatic.net \
+  youtube.com ytimg.com \
   '
 );
 user_pref('noscript.notify', false);
-user_pref('noscript.version', '2.6.9.4');
+user_pref('noscript.version', '2.6.9.5');
+
+/*
+currentVersion
+  remember "allow some non-intrusive advertising" setting
+*/
+user_pref('extensions.adblockplus.currentVersion', '2');
 
 /*
 rememberSignons
