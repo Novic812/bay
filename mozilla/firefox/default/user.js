@@ -30,8 +30,7 @@ noscript.firstRunRedirection
 noscript.notify
   show message about blocked scripts
 */
-user_pref('capability.policy.maonoscript.sites',
-  ' \
+user_pref('capability.policy.maonoscript.sites', ' \
   facebook.com akamaihd.net \
   github.com https://github.com \
   google.com gstatic.com googleapis.com \
@@ -40,10 +39,9 @@ user_pref('capability.policy.maonoscript.sites',
   reddit.com redditstatic.com \
   stackoverflow.com http://stackoverflow.com http://superuser.com \
     http://serverfault.com stackexchange.com http://stackexchange.com \
-    sstatic.net \
+    sstatic.net mathjax.org \
   youtube.com ytimg.com \
-  '
-);
+');
 user_pref('noscript.firstRunRedirection', false);
 user_pref('noscript.notify', false);
 
