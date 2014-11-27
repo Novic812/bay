@@ -1,6 +1,8 @@
 /*
 download.dir
   save files to
+download.folderList
+  always ask me where to save files
 newtab.url
   disable new tab page
 places.smartBookmarksVersion
@@ -17,6 +19,7 @@ urlbar.trimURLs
   do not trim URLs
 */
 user_pref('browser.download.dir', 'c:\\home\\local\\desktop');
+user_pref('browser.download.folderList', 0);
 user_pref('browser.newtab.url', 'about:blank');
 user_pref('browser.places.smartBookmarksVersion', 1);
 user_pref('browser.startup.homepage_override.mstone', 'ignore');
