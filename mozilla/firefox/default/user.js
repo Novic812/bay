@@ -43,6 +43,7 @@ user_pref('capability.policy.maonoscript.sites', ' \
   imgur.com http://imgur.com \
   jottit.com \
   liveleak.com \
+  microsoft.com s-microsoft.com aspnetcdn.com \
   reddit.com redditstatic.com \
   stackoverflow.com http://stackoverflow.com http://superuser.com \
     http://serverfault.com stackexchange.com http://stackexchange.com \
