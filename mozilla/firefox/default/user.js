@@ -55,10 +55,13 @@ user_pref('noscript.notify', false);
 /*
 currentVersion
   remember "allow some non-intrusive advertising" setting
+frameobjects
+  do not show tabs on flash
 hideContributeButton
   hide contribute button
 */
 user_pref('extensions.adblockplus.currentVersion', '2');
+user_pref('extensions.adblockplus.frameobjects', false);
 user_pref('extensions.adblockplus.hideContributeButton', true);
 
 /*
