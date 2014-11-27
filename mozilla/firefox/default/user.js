@@ -53,6 +53,12 @@ user_pref('noscript.firstRunRedirection', false);
 user_pref('noscript.notify', false);
 
 /*
+dxr.mozilla.org/mozilla-central/source/services/datareporting/policy.jsm
+*/
+user_pref('datareporting.policy.dataSubmissionPolicyResponseTime',
+  '1325397600000');
+
+/*
 currentVersion
   remember "allow some non-intrusive advertising" setting
 frameobjects
