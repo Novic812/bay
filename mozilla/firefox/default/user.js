@@ -42,6 +42,7 @@ user_pref('capability.policy.maonoscript.sites', ' \
   google.com gstatic.com googleapis.com \
   imgur.com http://imgur.com \
   jottit.com \
+  liveleak.com \
   reddit.com redditstatic.com \
   stackoverflow.com http://stackoverflow.com http://superuser.com \
     http://serverfault.com stackexchange.com http://stackexchange.com \
