@@ -47,7 +47,7 @@ user_pref('capability.policy.maonoscript.sites', ' \
   reddit.com redditstatic.com \
   stackoverflow.com http://stackoverflow.com http://superuser.com \
     http://serverfault.com stackexchange.com http://stackexchange.com \
-    sstatic.net mathjax.org \
+    http://askubuntu.com sstatic.net mathjax.org \
   youtube.com ytimg.com \
 ');
 user_pref('noscript.firstRunRedirection', false);
