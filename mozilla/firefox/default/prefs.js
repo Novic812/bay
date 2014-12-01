@@ -39,6 +39,7 @@ policy.maonoscript.sites
 user_pref('capability.policy.maonoscript.sites', ' \
   facebook.com akamaihd.net \
   github.com https://github.com \
+  gmane.org \
   google.com gstatic.com googleapis.com \
   imgur.com http://imgur.com \
   jottit.com \
