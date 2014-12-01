@@ -41,6 +41,7 @@ user_pref('capability.policy.maonoscript.sites', ' \
   github.com https://github.com \
   gmane.org \
   google.com gstatic.com googleapis.com \
+  hulu.com huluim.com \
   imgur.com http://imgur.com \
   jottit.com \
   liveleak.com \
