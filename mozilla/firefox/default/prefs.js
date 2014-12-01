@@ -33,12 +33,8 @@ user_pref('browser.urlbar.autoFill', false);
 user_pref('browser.urlbar.trimURLs', false);
 
 /*
-capability.policy.maonoscript.sites
+policy.maonoscript.sites
   whitelist
-noscript.firstRunRedirection
-  do not display the release notes on updates
-noscript.notify
-  show message about blocked scripts
 */
 user_pref('capability.policy.maonoscript.sites', ' \
   facebook.com akamaihd.net \
@@ -54,11 +50,10 @@ user_pref('capability.policy.maonoscript.sites', ' \
     http://askubuntu.com sstatic.net mathjax.org \
   youtube.com ytimg.com \
 ');
-user_pref('noscript.firstRunRedirection', false);
-user_pref('noscript.notify', false);
 
 /*
-dxr.mozilla.org/mozilla-central/source/services/datareporting/policy.jsm
+policy.dataSubmissionPolicyResponseTime
+  dxr.mozilla.org/mozilla-central/source/services/datareporting/policy.jsm
 */
 user_pref('datareporting.policy.dataSubmissionPolicyResponseTime',
   '1325397600000');
@@ -74,6 +69,21 @@ hideContributeButton
 user_pref('extensions.adblockplus.currentVersion', '2');
 user_pref('extensions.adblockplus.frameobjects', false);
 user_pref('extensions.adblockplus.hideContributeButton', true);
+
+/*
+warnOnAboutConfig
+  about:config warning
+*/
+user_pref('general.warnOnAboutConfig', false);
+
+/*
+firstRunRedirection
+  do not display the release notes on updates
+notify
+  show message about blocked scripts
+*/
+user_pref('noscript.firstRunRedirection', false);
+user_pref('noscript.notify', false);
 
 /*
 rememberSignons
