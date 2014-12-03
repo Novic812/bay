@@ -46,6 +46,7 @@ user_pref('capability.policy.maonoscript.sites', ' \
   jottit.com \
   liveleak.com \
   microsoft.com s-microsoft.com aspnetcdn.com asp.net \
+  mozilla.org mozilla.net \
   reddit.com redditstatic.com \
   stackoverflow.com http://stackoverflow.com http://superuser.com \
     http://serverfault.com stackexchange.com http://stackexchange.com \
