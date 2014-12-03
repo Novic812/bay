@@ -38,6 +38,7 @@ policy.maonoscript.sites
 */
 user_pref('capability.policy.maonoscript.sites', ' \
   facebook.com akamaihd.net \
+  followshows.com jquery.com \
   github.com https://github.com \
   gmane.org \
   google.com gstatic.com googleapis.com \
