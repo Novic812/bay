@@ -80,11 +80,14 @@ warnOnAboutConfig
 user_pref('general.warnOnAboutConfig', false);
 
 /*
+allowURLBarJS
+  javascript: URIs typed or pasted in the address bar
 firstRunRedirection
   do not display the release notes on updates
 notify
   show message about blocked scripts
 */
+user_pref('noscript.allowURLBarJS', true);
 user_pref('noscript.firstRunRedirection', false);
 user_pref('noscript.notify', false);
 
