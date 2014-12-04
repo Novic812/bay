@@ -33,13 +33,16 @@ user_pref('browser.urlbar.autoFill', false);
 user_pref('browser.urlbar.trimURLs', false);
 
 /*
-policy.maonoscript.sites
-  whitelist
+cloudflare.com
+  alternativeto.net explainshell.com
 */
 user_pref('capability.policy.maonoscript.sites', ' \
+  alternativeto.net http://alternativeto.net msecnd.net jsdelivr.net \
+    algolia.net \
+  cloudflare.com \
   facebook.com akamaihd.net \
   followshows.com http://followshows.com jquery.com bootstrapcdn.com \
-  explainshell.com http://explainshell.com cloudflare.com \
+  explainshell.com http://explainshell.com \
   github.com https://github.com \
   gmane.org \
   google.com gstatic.com googleapis.com \
