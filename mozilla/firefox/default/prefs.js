@@ -47,7 +47,7 @@ user_pref('capability.policy.maonoscript.sites', ' \
   gmane.org \
   google.com gstatic.com googleapis.com \
   hulu.com huluim.com \
-  imgur.com http://imgur.com \
+  imgur.com http://imgur.com https://imgur.com \
   jottit.com \
   liveleak.com \
   microsoft.com s-microsoft.com aspnetcdn.com asp.net \
