@@ -17,7 +17,7 @@ _PATH=(
   /home/git/a
   /home/git/a/misc
   /home/git/apt-cyg
-  /home/owncloud/private
+  /home/private/documents
 )
 IFS=: read PATH <<< "${_PATH[*]}"
 unset _PATH
