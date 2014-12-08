@@ -56,6 +56,7 @@ user_pref('capability.policy.maonoscript.sites', ' \
   mozilla.org mozilla.net \
   owncloud.org http://owncloud.org \
   reddit.com redditstatic.com \
+  sourceforge.net https://sourceforge.net fsdn.com \
   stackoverflow.com http://stackoverflow.com http://superuser.com \
     http://serverfault.com stackexchange.com http://stackexchange.com \
     http://askubuntu.com sstatic.net mathjax.org \
