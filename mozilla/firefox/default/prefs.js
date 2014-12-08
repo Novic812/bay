@@ -41,6 +41,7 @@ user_pref('capability.policy.maonoscript.sites', ' \
     algolia.net \
   chocolatey.org https://chocolatey.org \
   cloudflare.com \
+  disqus.com https://disqus.com disquscdn.com \
   facebook.com akamaihd.net \
   followshows.com http://followshows.com jquery.com bootstrapcdn.com \
   explainshell.com http://explainshell.com \
