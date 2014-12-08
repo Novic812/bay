@@ -39,6 +39,7 @@ cloudflare.com
 user_pref('capability.policy.maonoscript.sites', ' \
   alternativeto.net http://alternativeto.net msecnd.net jsdelivr.net \
     algolia.net \
+  chocolatey.org https://chocolatey.org \
   cloudflare.com \
   facebook.com akamaihd.net \
   followshows.com http://followshows.com jquery.com bootstrapcdn.com \
