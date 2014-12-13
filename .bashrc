@@ -32,6 +32,7 @@ function pc {
   if [ -d .git ]
   then
     read hd <.git/HEAD
+    # FIXME http://stackoverflow.com/a/11975827
     [[ $hd =~ / ]] && hd=${hd##*/} || hd=${hd::7}
     if [ ! -g .git/config ]
     then
@@ -52,7 +53,7 @@ function wget {
   param([uri]$rc)
   if (!$rc.host) {$rc = "http://$rc"}
   $of = $rc.segments[-1]
-  if (test-path $of) {"$of already there."} else {wget $rc -outf $of}
+  if (test-path $of) {"$of already there."} else {wget -outf $of $rc}
   }' ${*: -1} >&2
 }
 
