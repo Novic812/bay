@@ -65,6 +65,7 @@ user_pref('capability.policy.maonoscript.sites', ' \
 ');
 
 /*
+policy.dataSubmissionPolicyAcceptedVersion
 policy.dataSubmissionPolicyNotifiedTime
   dxr.mozilla.org/mozilla-central/source/services/datareporting/policy.jsm
 */
