@@ -65,10 +65,11 @@ user_pref('capability.policy.maonoscript.sites', ' \
 ');
 
 /*
-policy.dataSubmissionPolicyResponseTime
+policy.dataSubmissionPolicyNotifiedTime
   dxr.mozilla.org/mozilla-central/source/services/datareporting/policy.jsm
 */
-user_pref('datareporting.policy.dataSubmissionPolicyResponseTime',
+user_pref('datareporting.policy.dataSubmissionPolicyAcceptedVersion', 2);
+user_pref('datareporting.policy.dataSubmissionPolicyNotifiedTime',
   '1325397600000');
 
 /*
