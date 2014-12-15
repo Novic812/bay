@@ -7,6 +7,8 @@ download.dir
   save files to
 download.folderList
   always ask me where to save files
+migration.version
+  disable sync promo
 newtab.url
   disable new tab page
 places.smartBookmarksVersion
@@ -15,6 +17,8 @@ startup.homepage_override.mstone
   disable first run page
 startup.page
   show windows and tabs from last time
+syncPromoViewsLeftMap
+  disable sync promo
 tabs.drawInTitlebar
   title bar
 urlbar.autoFill
@@ -24,10 +28,12 @@ urlbar.trimURLs
 */
 user_pref('browser.download.dir', 'c:\\home\\local\\desktop');
 user_pref('browser.download.folderList', 0);
+user_pref("browser.migration.version", 22);
 user_pref('browser.newtab.url', 'about:blank');
 user_pref('browser.places.smartBookmarksVersion', 1);
 user_pref('browser.startup.homepage_override.mstone', 'ignore');
 user_pref('browser.startup.page', 3);
+user_pref('browser.syncPromoViewsLeftMap', '{"addons":0}');
 user_pref('browser.tabs.drawInTitlebar', false);
 user_pref('browser.urlbar.autoFill', false);
 user_pref('browser.urlbar.trimURLs', false);
