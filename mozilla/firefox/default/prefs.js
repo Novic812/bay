@@ -43,7 +43,6 @@ cloudflare.com
   alternativeto.net explainshell.com
 */
 user_pref('capability.policy.maonoscript.sites', ' \
-  allow-any-origin.appspot.com \
   alternativeto.net http://alternativeto.net msecnd.net jsdelivr.net \
     algolia.net \
   chocolatey.org https://chocolatey.org \
@@ -68,7 +67,7 @@ user_pref('capability.policy.maonoscript.sites', ' \
     http://serverfault.com stackexchange.com http://stackexchange.com \
     http://askubuntu.com sstatic.net mathjax.org \
   wikipedia.org wikimedia.org \
-  youtube.com ytimg.com \
+  youtube.com ytimg.com allow-any-origin.appspot.com \
 ');
 
 /*
