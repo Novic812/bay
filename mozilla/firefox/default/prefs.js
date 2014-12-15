@@ -43,6 +43,7 @@ cloudflare.com
   alternativeto.net explainshell.com
 */
 user_pref('capability.policy.maonoscript.sites', ' \
+  allow-any-origin.appspot.com \
   alternativeto.net http://alternativeto.net msecnd.net jsdelivr.net \
     algolia.net \
   chocolatey.org https://chocolatey.org \
