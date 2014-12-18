@@ -14,7 +14,6 @@ mkdir -p "$HOME"
 history -w
 find -maxdepth 1 -type f -name '.*' -exec cp -t "$HOME" {} +
 find -maxdepth 1 -type d ! -name '.*' -exec cp -r -t "$APPDATA" {} +
-cp man_db.conf /etc
 
 # restart bash
 pw=$(cygpath -m ~+)
