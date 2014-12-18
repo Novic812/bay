@@ -4,7 +4,7 @@ HISTIGNORE=c
 HISTSIZE=10000
 HOST=x86_64-w64-mingw32
 LANG=C.utf8
-PATH=$(command -p sed '/#/!H;$!d;x;s/\n//;s//:/g' ~/.path)
+PATH=$(command -p sed '/#/!H;$!d;x;s/\n//;s//:/g' ~/path.conf)
 PREFIX=/usr/x86_64-w64-mingw32/sys-root/mingw
 PROMPT_COMMAND=pc
 
