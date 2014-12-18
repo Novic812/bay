@@ -94,4 +94,12 @@ rd -ea 0 typedPaths, wallpapers\images
 cd 'hkcu:\software\microsoft\internet explorer\main'
 sp windowssearch EnabledScopes 0
 rundll32 inetcpl.cpl ClearMyTracksByProcess 1
+
+# hide file extensions
+cd hkcu:\software\microsoft\windows\currentversion\explorer
+sp advanced hideFileExt 0
+
+# disable office animations
+cd hkcu:\software\microsoft\office\15.0\common
+sp graphics disableAnimations 1
 popd
