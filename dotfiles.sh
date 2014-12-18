@@ -1,11 +1,7 @@
 # PATH is defined in ~/.bashrc
 # we must assume this has not happened yet
-PATH=/bin:$PATH
-sed 's,$, . acl,' >/etc/fstab <<+
-$HOMEDRIVE/home        /home
-$HOMEDRIVE/windows     /windows
-$HOMEDRIVE/programdata /programdata
-+
+PATH=/bin
+cp fstab /etc
 mount -a
 
 # PS1 must be exported before you can use ~
