@@ -64,6 +64,7 @@ user_pref('capability.policy.maonoscript.sites', ' \
   owncloud.org http://owncloud.org \
   reddit.com redditstatic.com \
   sleepyti.me http://sleepyti.me \
+  soundcloud.com https://soundcloud.com sndcdn.com \
   sourceforge.net https://sourceforge.net fsdn.com \
   stackoverflow.com http://stackoverflow.com http://superuser.com \
     http://serverfault.com stackexchange.com http://stackexchange.com \
