@@ -45,6 +45,7 @@ cloudflare.com
 user_pref('capability.policy.maonoscript.sites', ' \
   alternativeto.net http://alternativeto.net msecnd.net jsdelivr.net \
     algolia.net \
+  blogspot.com blogger.com \
   chocolatey.org https://chocolatey.org \
   cloudflare.com \
   disqus.com https://disqus.com disquscdn.com \
