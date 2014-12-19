@@ -68,6 +68,7 @@ user_pref('capability.policy.maonoscript.sites', ' \
   stackoverflow.com http://stackoverflow.com http://superuser.com \
     http://serverfault.com stackexchange.com http://stackexchange.com \
     http://askubuntu.com sstatic.net mathjax.org \
+  vimeo.com http://vimeo.com vimeocdn.com \
   wikipedia.org wikimedia.org \
   youtube.com ytimg.com allow-any-origin.appspot.com \
 ');
