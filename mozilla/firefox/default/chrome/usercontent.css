@@ -1,0 +1,9 @@
+@-moz-document
+url-prefix(http://superuser.com) {
+  /*
+  - filter out meta.superuser.com
+  - colors were reversed
+  */
+  .question-hyperlink         {color: #13b3bd !important}
+  .question-hyperlink:visited {color: #1086a4 !important}
+}
