@@ -29,19 +29,4 @@ function pc {
   PS1="\e];\s\a\n\e[33m\w \e[36m$hd\n\[\e[m\]$ "
 }
 
-function wget {
-  if command wget -h &>/dev/null
-  then
-    command wget "$@"
-    return
-  fi
-  powershell '&{
-  param([uri]$rc)
-  if (!$rc.host) {$rc = "http://$rc"}
-  $of = $rc.segments[-1]
-  if (test-path $of) {"$of already there."} else {wget -outf $of $rc}
-  }' ${*: -1} >&2
-}
-
 export EDITOR LANG
-export -f wget

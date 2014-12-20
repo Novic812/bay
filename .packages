@@ -1,8 +1,7 @@
 cd $HOMEDRIVE/home/bin
 if ! type apt-cyg >/dev/null
 then
-  # wget function in ~/.bashrc
-  wget -nc rawgit.com/transcode-open/apt-cyg/master/apt-cyg
+  lynx -source rawgit.com/transcode-open/apt-cyg/master/apt-cyg > apt-cyg
   install apt-cyg /bin
 fi
 apt-cyg install wget curl
