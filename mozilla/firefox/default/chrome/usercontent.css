@@ -1,10 +1,16 @@
-@-moz-document
-domain(stackoverflow.com) {
+@-moz-document domain(stackoverflow.com) {
   [href="/review/suggested-edits"] {
     color: #000 !important;
     opacity: .3;
     pointer-events: none;
   }
+}
+@-moz-document domain(wikipedia.org) {
+  /*
+  #centralNotice
+    wikipedia ad
+  */
+  #centralNotice {display: none}
 }
 @-moz-document
 url-prefix(http://superuser.com) {
