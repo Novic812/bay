@@ -1,4 +1,12 @@
 @-moz-document
+domain(stackoverflow.com) {
+  [href="/review/suggested-edits"] {
+    color: #000 !important;
+    opacity: .3;
+    pointer-events: none;
+  }
+}
+@-moz-document
 url-prefix(http://superuser.com) {
   /*
   - filter out meta.superuser.com
