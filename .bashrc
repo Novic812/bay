@@ -11,6 +11,16 @@ function c {
   printf '\ec'
 }
 
+function ish {
+  if let ${#hn[*]}
+  then
+    unset hn
+    . ~/.bashrc
+  else
+    PS1='${hn[*]+${hn[\#]-=> $?\n\n}}${hn[\#]=}$ '
+  fi
+}
+
 function pc {
   history -a
   if [ -d .git ]
