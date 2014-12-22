@@ -12,12 +12,12 @@ function c {
 }
 
 function ish {
-  if let ${#hn[*]}
+  if let ${#cn[*]}
   then
-    unset hn
+    unset cn
     . ~/.bashrc
   else
-    PS1='${hn[*]+${hn[\#]-=> $?\n\n}}${hn[\#]=}$ '
+    PS1='${cn[*]+${cn[\#]-=> $?\n\n}}${cn[\#]=}$ '
   fi
 }
 
