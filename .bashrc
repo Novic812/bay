@@ -25,7 +25,7 @@ function ish {
 function nr {
   if [ -d .git ]
   then
-    git name-rev --name-only @
+    git symbolic-ref -q --short HEAD || git name-rev --name-only HEAD
     if [ ! -g .git/config ]
     then
       git config core.filemode 0
