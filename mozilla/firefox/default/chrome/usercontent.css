@@ -1,4 +1,5 @@
 @-moz-document domain(stackoverflow.com) {
+  [href="/review/close"],
   [href="/review/suggested-edits"] {
     color: #000 !important;
     opacity: .3;
@@ -12,12 +13,13 @@
   */
   #centralNotice {display: none}
 }
-@-moz-document
-url-prefix(http://superuser.com) {
+@-moz-document url-prefix(http://superuser.com) {
   /*
   - filter out meta.superuser.com
   - colors were reversed
   */
-  .question-hyperlink         {color: #13b3bd !important}
-  .question-hyperlink:visited {color: #1086a4 !important}
+  .question-hyperlink
+    {color: #13b3bd !important}
+  .question-hyperlink:visited
+    {color: #1086a4 !important}
 }
