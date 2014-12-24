@@ -52,7 +52,7 @@ user_pref('capability.policy.maonoscript.sites', ' \
   facebook.com akamaihd.net \
   followshows.com http://followshows.com jquery.com bootstrapcdn.com \
   explainshell.com http://explainshell.com \
-  github.com https://github.com \
+  github.com https://github.com githubusercontent.com \
   gmane.org \
   google.com gstatic.com googleapis.com \
   hulu.com huluim.com \
