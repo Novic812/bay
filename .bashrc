@@ -25,11 +25,14 @@ function ish {
 function nr {
   if [ -d .git ]
   then
-    git symbolic-ref -q --short HEAD || git name-rev --name-only HEAD
-    if [ ! -g .git/config ]
+    if type git &>/dev/null
     then
-      git config core.filemode 0
-      chmod +s .git/config
+      git symbolic-ref -q --short HEAD || git name-rev --name-only HEAD
+      if [ ! -g .git/config ]
+      then
+        git config core.filemode 0
+        chmod +s .git/config
+      fi
     fi
   fi
 }
