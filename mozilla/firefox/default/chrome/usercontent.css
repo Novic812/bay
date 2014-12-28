@@ -1,4 +1,7 @@
 @-moz-document domain(stackoverflow.com) {
+  .answer {
+    background-color: transparent !important;
+  }
   [href="/review/close"],
   [href="/review/suggested-edits"] {
     color: #000 !important;
