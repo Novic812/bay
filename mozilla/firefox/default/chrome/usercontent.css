@@ -19,6 +19,9 @@
   */
   #centralNotice {display: none}
 }
+@-moz-document regexp('.+p.+') {
+  #hd-rightColVideoPage {display: none}
+}
 @-moz-document url-prefix(http://superuser.com) {
   /*
   - filter out meta.superuser.com
