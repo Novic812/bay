@@ -1,6 +1,6 @@
 HISTCONTROL=ignoredups
 HISTIGNORE=c
-HISTSIZE=10000
+HISTSIZE=
 HOST=x86_64-w64-mingw32
 PATH=$(command -p awk '!$2{printf b++?":"$0:$0}' ~/path.conf)
 PREFIX=/usr/x86_64-w64-mingw32/sys-root/mingw
