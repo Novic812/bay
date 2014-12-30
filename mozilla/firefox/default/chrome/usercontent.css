@@ -1,3 +1,6 @@
+@-moz-document domain(alternativeto.net) {
+  .cuuummmonnnn, .list-header {display: none}
+}
 @-moz-document domain(stackoverflow.com) {
   .answer {
     background-color: transparent !important;
