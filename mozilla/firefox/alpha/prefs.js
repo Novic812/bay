@@ -21,11 +21,14 @@ syncPromoViewsLeftMap
   disable sync promo
 tabs.drawInTitlebar
   title bar
+taskbar.lists.enabled
+  jumplist setting
 urlbar.autoFill
   disable URL autocomplete
 urlbar.trimURLs
   do not trim URLs
 */
+
 user_pref('browser.download.dir', 'c:\\home\\local\\desktop');
 user_pref('browser.download.folderList', 0);
 user_pref("browser.migration.version", 22);
@@ -35,6 +38,7 @@ user_pref('browser.startup.homepage_override.mstone', 'ignore');
 user_pref('browser.startup.page', 3);
 user_pref('browser.syncPromoViewsLeftMap', '{"addons":0}');
 user_pref('browser.tabs.drawInTitlebar', false);
+user_pref('browser.taskbar.lists.enabled', false);
 user_pref('browser.urlbar.autoFill', false);
 user_pref('browser.urlbar.trimURLs', false);
 
