@@ -20,7 +20,9 @@
   #centralNotice
     wikipedia ad
   */
-  #centralNotice {display: none}
+  #centralNotice {
+    display: none !important;
+  }
 }
 @-moz-document regexp('.+p.+') {
   #hd-rightColVideoPage {display: none}
