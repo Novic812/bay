@@ -107,6 +107,12 @@ warnOnAboutConfig
 user_pref('general.warnOnAboutConfig', false);
 
 /*
+animation_mode
+  fuck gifs once and for all
+*/
+user_pref('image.animation_mode', 'none');
+
+/*
 allowURLBarJS
   javascript: URIs typed or pasted in the address bar
 firstRunRedirection
