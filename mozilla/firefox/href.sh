@@ -5,6 +5,6 @@ then
   echo href.sh USER URL
   exit
 fi
-foo=$(awk '$0=$NF' FPAT=[[:digit:]]+ <<< "$2")
+foo=$(awk '$0=$--NF' FS='[/#]' <<< "$2")
 bar=$(date -u +%F)
 printf '[href*="%s"], /* %s %s */\n' $foo $bar $1

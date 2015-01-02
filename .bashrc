@@ -22,6 +22,18 @@ function ish {
   fi
 }
 
+function length {
+  awk '
+  {
+    foo[$0] = length
+  }
+  END {
+    PROCINFO["sorted_in"] = "@val_num_asc"
+    for (bar in foo) print bar
+  }
+  '
+}
+
 function nr {
   if [ -d .git ]
   then
