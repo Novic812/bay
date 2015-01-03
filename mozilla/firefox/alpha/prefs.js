@@ -51,6 +51,8 @@ user_pref('capability.policy.maonoscript.sites', ' \
     msecnd.net http://msecnd.net https://msecnd.net \
     jsdelivr.net http://jsdelivr.net https://jsdelivr.net \
     algolia.net http://algolia.net https://algolia.net \
+  amazon.com http://amazon.com https://amazon.com \
+    images-amazon.com http://images-amazon.com https://images-amazon.com \
   blogspot.com http://blogspot.com https://blogspot.com \
     blogger.com http://blogger.com https://blogger.com \
   chocolatey.org http://chocolatey.org https://chocolatey.org \
