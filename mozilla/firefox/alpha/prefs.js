@@ -62,6 +62,7 @@ user_pref('capability.policy.maonoscript.sites', ' \
   hulu.com huluim.com \
   imgur.com http://imgur.com https://imgur.com \
   jottit.com \
+  kickass.so kastatic.com \
   liveleak.com \
   microsoft.com s-microsoft.com aspnetcdn.com asp.net \
   mozilla.org mozilla.net \
