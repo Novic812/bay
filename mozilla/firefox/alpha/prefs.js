@@ -47,37 +47,65 @@ cloudflare.com
   alternativeto.net explainshell.com
 */
 user_pref('capability.policy.maonoscript.sites', ' \
-  alternativeto.net http://alternativeto.net msecnd.net jsdelivr.net \
-    algolia.net \
-  blogspot.com blogger.com \
-  chocolatey.org https://chocolatey.org \
-  cloudflare.com \
-  disqus.com https://disqus.com disquscdn.com \
-  facebook.com akamaihd.net \
-  followshows.com http://followshows.com jquery.com bootstrapcdn.com \
-  explainshell.com http://explainshell.com \
-  github.com https://github.com githubusercontent.com \
-  gmane.org \
-  google.com gstatic.com googleapis.com \
-  hulu.com huluim.com \
+  alternativeto.net http://alternativeto.net https://alternativeto.net \
+    msecnd.net http://msecnd.net https://msecnd.net \
+    jsdelivr.net http://jsdelivr.net https://jsdelivr.net \
+    algolia.net http://algolia.net https://algolia.net \
+  blogspot.com http://blogspot.com https://blogspot.com \
+    blogger.com http://blogger.com https://blogger.com \
+  chocolatey.org http://chocolatey.org https://chocolatey.org \
+  cloudflare.com http://cloudflare.com https://cloudflare.com \
+  disqus.com http://disqus.com https://disqus.com \
+    disquscdn.com http://disquscdn.com https://disquscdn.com \
+  facebook.com http://facebook.com https://facebook.com \
+    akamaihd.net http://akamaihd.net https://akamaihd.net \
+  followshows.com http://followshows.com https://followshows.com \
+    jquery.com http://jquery.com https://jquery.com \
+    bootstrapcdn.com http://bootstrapcdn.com https://bootstrapcdn.com \
+  explainshell.com http://explainshell.com https://explainshell.com \
+  github.com http://github.com https://github.com \
+    githubusercontent.com http://githubusercontent.com \
+    https://githubusercontent.com \
+  gmane.org http://gmane.org https://gmane.org \
+  google.com http://google.com https://google.com \
+    gstatic.com http://gstatic.com https://gstatic.com \
+    googleapis.com http://googleapis.com https://googleapis.com \
+  hulu.com http://hulu.com https://hulu.com \
+    huluim.com http://huluim.com https://huluim.com \
   imgur.com http://imgur.com https://imgur.com \
-  jottit.com \
-  kickass.so kastatic.com \
-  liveleak.com \
-  microsoft.com s-microsoft.com aspnetcdn.com asp.net \
-  mozilla.org mozilla.net \
-  owncloud.org http://owncloud.org \
-  reddit.com redditstatic.com \
-  sleepyti.me http://sleepyti.me \
-  soundcloud.com https://soundcloud.com sndcdn.com \
-  sourceforge.net https://sourceforge.net fsdn.com \
+  jottit.com http://jottit.com https://jottit.com \
+  kickass.so http://kickass.so https://kickass.so \
+    kastatic.com http://kastatic.com https://kastatic.com \
+  liveleak.com http://liveleak.com https://liveleak.com \
+  microsoft.com http://microsoft.com https://microsoft.com \
+    s-microsoft.com http://s-microsoft.com https://s-microsoft.com \
+    aspnetcdn.com http://aspnetcdn.com https://aspnetcdn.com \
+    asp.net http://asp.net https://asp.net \
+  mozilla.org http://mozilla.org https://mozilla.org \
+    mozilla.net http://mozilla.net https://mozilla.net \
+  owncloud.org http://owncloud.org https://owncloud.org \
+  reddit.com http://reddit.com https://reddit.com \
+    redditstatic.com http://redditstatic.com https://redditstatic.com \
+  sleepyti.me http://sleepyti.me https://sleepyti.me \
+  soundcloud.com http://soundcloud.com https://soundcloud.com \
+    sndcdn.com http://sndcdn.com https://sndcdn.com \
+  sourceforge.net http://sourceforge.net https://sourceforge.net \
+    fsdn.com http://fsdn.com https://fsdn.com \
   stackoverflow.com http://stackoverflow.com https://stackoverflow.com \
-    http://superuser.com https://superuser.com http://serverfault.com \
-    stackexchange.com http://stackexchange.com askubuntu.com \
-    http://askubuntu.com sstatic.net mathjax.org \
-  vimeo.com http://vimeo.com vimeocdn.com \
-  wikipedia.org wikimedia.org \
-  youtube.com ytimg.com allow-any-origin.appspot.com \
+    superuser.com http://superuser.com https://superuser.com \
+    serverfault.com http://serverfault.com https://serverfault.com \
+    stackexchange.com http://stackexchange.com https://stackexchange.com \
+    askubuntu.com http://askubuntu.com https://askubuntu.com \
+    sstatic.net http://sstatic.net https://sstatic.net \
+    mathjax.org http://mathjax.org https://mathjax.org \
+  vimeo.com http://vimeo.com https://vimeo.com \
+    vimeocdn.com http://vimeocdn.com https://vimeocdn.com \
+  wikipedia.org http://wikipedia.org https://wikipedia.org \
+    wikimedia.org http://wikimedia.org https://wikimedia.org \
+  youtube.com http://youtube.com https://youtube.com \
+    ytimg.com http://ytimg.com https://ytimg.com \
+    allow-any-origin.appspot.com \
+    http://allow-any-origin.appspot.com https://allow-any-origin.appspot.com \
 ');
 
 /*
