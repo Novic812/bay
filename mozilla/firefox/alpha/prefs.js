@@ -85,6 +85,7 @@ user_pref('capability.policy.maonoscript.sites', ' \
     asp.net http://asp.net https://asp.net \
   mozilla.org http://mozilla.org https://mozilla.org \
     mozilla.net http://mozilla.net https://mozilla.net \
+  musicbrainz.org http://musicbrainz.org https://musicbrainz.org \
   owncloud.org http://owncloud.org https://owncloud.org \
   reddit.com http://reddit.com https://reddit.com \
     redditstatic.com http://redditstatic.com https://redditstatic.com \
@@ -144,6 +145,8 @@ animation_mode
 user_pref('image.animation_mode', 'none');
 
 /*
+ABE.enabled
+  need for musicbrainz picard
 allowURLBarJS
   javascript: URIs typed or pasted in the address bar
 firstRunRedirection
@@ -151,6 +154,7 @@ firstRunRedirection
 notify
   show message about blocked scripts
 */
+user_pref('noscript.ABE.enabled', false);
 user_pref('noscript.allowURLBarJS', true);
 user_pref('noscript.firstRunRedirection', false);
 user_pref('noscript.notify', false);
