@@ -5,9 +5,10 @@ cp $PSScriptRoot\profile.ps1 $pshome
 # app paths
 cd 'hklm:\software\microsoft\windows\currentversion\app paths'
 @{
-  "$env:homedrive\cygwin64\bin" = 'bash.exe'
-  "$env:programfiles\notepad2"  = 'notepad2.exe'
-  "$pshome"                     = 'powershell.exe'
+  "${env:homedrive}\cygwin64\bin"   = 'bash.exe'
+  "${env:programfiles}\notepad2"    = 'notepad2.exe'
+  "${env:programfiles(x86)}\mpc-hc" = 'mpc-hc.exe'
+  "${pshome}"                       = 'powershell.exe'
 } | % getEnumerator | % {
   join-path $_.key $_.value | ni -f $_.value
 }
@@ -23,6 +24,7 @@ cd 'hklm:\software\microsoft\windows\currentversion\app paths'
   '.cmd'    = 'cmdfile',                      '"%1" %*'
   '.htm'    = 'firefoxhtml',                  'firefox "%1"'
   '.xml'    = 'firefoxhtml',                  'firefox "%1"'
+  '.avs'    = 'avsfile',                      'mpc-hc "%1"'
   '.ps1'    = 'microsoft.powershellscript.1', 'powershell "%1"'
   '.reg'    = 'regfile',                      'regedit "%1"'
   '.js'     = 'jsfile',                       'wscript "%1"'
