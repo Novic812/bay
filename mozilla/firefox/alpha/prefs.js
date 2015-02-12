@@ -76,7 +76,7 @@ user_pref('capability.policy.maonoscript.sites', ' \
     huluim.com http://huluim.com https://huluim.com \
   imgur.com http://imgur.com https://imgur.com \
   jottit.com http://jottit.com https://jottit.com \
-  kickass.so http://kickass.so https://kickass.so \
+  kickass.to http://kickass.to https://kickass.to \
     kastatic.com http://kastatic.com https://kastatic.com \
   liveleak.com http://liveleak.com https://liveleak.com \
   microsoft.com http://microsoft.com https://microsoft.com \
