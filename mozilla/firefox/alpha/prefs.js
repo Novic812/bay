@@ -89,6 +89,8 @@ user_pref('capability.policy.maonoscript.sites', ' \
   owncloud.org http://owncloud.org https://owncloud.org \
   reddit.com http://reddit.com https://reddit.com \
     redditstatic.com http://redditstatic.com https://redditstatic.com \
+  rottentomatoes.com http://rottentomatoes.com https://rottentomatoes.com \
+    cloudfront.net http://cloudfront.net https://cloudfront.net \
   sleepyti.me http://sleepyti.me https://sleepyti.me \
   soundcloud.com http://soundcloud.com https://soundcloud.com \
     sndcdn.com http://sndcdn.com https://sndcdn.com \
