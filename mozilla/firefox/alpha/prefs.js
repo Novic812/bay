@@ -55,6 +55,8 @@ user_pref('capability.policy.maonoscript.sites', ' \
     images-amazon.com http://images-amazon.com https://images-amazon.com \
   avclub.com http://avclub.com https://avclub.com \
     onionstatic.com http://onionstatic.com https://onionstatic.com \
+  bandcamp.com http://bandcamp.com https://bandcamp.com \
+    bcbits.com http://bcbits.com https://bcbits.com \
   blogspot.com http://blogspot.com https://blogspot.com \
     blogger.com http://blogger.com https://blogger.com \
   chocolatey.org http://chocolatey.org https://chocolatey.org \
