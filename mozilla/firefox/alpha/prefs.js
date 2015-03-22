@@ -87,6 +87,8 @@ user_pref('capability.policy.maonoscript.sites', ' \
     mathjax.org http://mathjax.org https://mathjax.org \
   vimeo.com http://vimeo.com https://vimeo.com \
     vimeocdn.com http://vimeocdn.com https://vimeocdn.com \
+  wikipedia.org http://wikipedia.org https://wikipedia.org \
+    wikimedia.org http://wikimedia.org https://wikimedia.org \
   youtube.com http://youtube.com https://youtube.com \
     ytimg.com http://ytimg.com https://ytimg.com \
     allow-any-origin.appspot.com \
