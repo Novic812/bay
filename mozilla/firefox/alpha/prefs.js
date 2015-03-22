@@ -45,6 +45,9 @@ user_pref('browser.urlbar.trimURLs', false);
 cloudflare.com
 jsdelivr.net
   alternativeto.net rottentomatoes.com
+googleapis.com
+  google.com
+  musicvideomachine.com
 */
 user_pref('capability.policy.maonoscript.sites', ' \
   alternativeto.net http://alternativeto.net https://alternativeto.net \
@@ -63,14 +66,17 @@ user_pref('capability.policy.maonoscript.sites', ' \
     jquery.com http://jquery.com https://jquery.com \
   github.com http://github.com https://github.com \
   google.com http://google.com https://google.com \
-    googleapis.com http://googleapis.com https://googleapis.com \
     gstatic.com http://gstatic.com https://gstatic.com \
+  googleapis.com http://googleapis.com https://googleapis.com \
   imgur.com http://imgur.com https://imgur.com \
   jottit.com http://jottit.com https://jottit.com \
   jsdelivr.net http://jsdelivr.net https://jsdelivr.net \
   kickass.to http://kickass.to https://kickass.to \
     kastatic.com http://kastatic.com https://kastatic.com \
   liveleak.com http://liveleak.com https://liveleak.com \
+  musicvideomachine.com http://musicvideomachine.com \
+    https://musicvideomachine.com \
+    audioscrobbler.com http://audio scrobbler.com https://audioscrobbler.com \
   reddit.com http://reddit.com https://reddit.com \
     redditstatic.com http://redditstatic.com https://redditstatic.com \
   rottentomatoes.com http://rottentomatoes.com https://rottentomatoes.com \
