@@ -150,6 +150,7 @@ user_pref('noscript.firstRunRedirection', false);
 user_pref('noscript.forbidFlash', false);
 user_pref('noscript.forbidFonts', false);
 user_pref('noscript.forbidMedia', false);
+user_pref('noscript.forbidPlugins', false);
 user_pref('noscript.notify', false);
 user_pref('noscript.showAbout', false);
 user_pref('noscript.showDistrust', false);
