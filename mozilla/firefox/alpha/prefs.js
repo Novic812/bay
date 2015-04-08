@@ -65,6 +65,7 @@ user_pref('capability.policy.maonoscript.sites', ' \
   followshows.com http://followshows.com https://followshows.com \
     jquery.com http://jquery.com https://jquery.com \
   github.com http://github.com https://github.com \
+    amazonaws.com http://amazonaws.com https://amazonaws.com \
   google.com http://google.com https://google.com \
     gstatic.com http://gstatic.com https://gstatic.com \
   googleapis.com http://googleapis.com https://googleapis.com \
