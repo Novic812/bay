@@ -1,4 +1,4 @@
-cd $HOMEDRIVE/home/bin
+cd
 if ! type apt-cyg >/dev/null
 then
   lynx -source rawgit.com/transcode-open/apt-cyg/master/apt-cyg > apt-cyg

@@ -16,3 +16,7 @@ host = imaps://imap.gmail.com
 
 [push]
 default = current
+
+[user]
+email = svnpenn@gmail.com
+name = Steven Penny

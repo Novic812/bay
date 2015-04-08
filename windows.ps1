@@ -46,8 +46,6 @@ cd 'hklm:\software\microsoft\windows\currentversion\app paths'
   ni -va Open 2
   ni -va 'notepad "%1"' 2\command
 }
-cd hkcu:\software\microsoft\office\14.0\common
-sp internet DoNotCheckIfOfficeIsHTMLEditor 1 -t d
 
 # shell options
 cd hklm:\software\classes
@@ -59,7 +57,7 @@ cd hklm:\software\classes
 cd hkcu:\
 sp console QuickEdit 1
 '0x{0:x4}{1:x4}' | % {
-  sp console WindowPosition ($_ -f 400,900)
+  sp -t d console WindowPosition ($_ -f 400,900)
   sp console WindowSize     ($_ -f  22, 80)
 }
 cd console
@@ -78,10 +76,8 @@ sp explorer link ([byte[]](0,0,0,0))
 @{
   CYGWIN = 'noDosFileWarning'
   PATH = @(
-    "$env:chocolateyinstall\bin"
-    "$env:homedrive\home\bin"
-    "$env:homedrive\home\git\a\misc"
-    "$env:windir\system32"
+    "$env:homedrive\home\documents"
+    "$env:homedrive\git\a\misc"
     "$pshome"
   ) -join ';'
 } | % getEnumerator | % {
@@ -93,15 +89,9 @@ cd hkcu:\software\microsoft\windows\currentversion\explorer
 rd -ea 0 typedPaths, wallpapers\images
 
 # clear run history
-cd 'hkcu:\software\microsoft\internet explorer\main'
-sp windowssearch EnabledScopes 0
 rundll32 inetcpl.cpl ClearMyTracksByProcess 1
 
 # hide file extensions
 cd hkcu:\software\microsoft\windows\currentversion\explorer
 sp advanced hideFileExt 0
-
-# disable office animations
-cd hkcu:\software\microsoft\office\15.0\common
-sp graphics disableAnimations 1
 popd

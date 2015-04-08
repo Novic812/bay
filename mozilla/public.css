@@ -2,6 +2,9 @@
   .cuuummmonnnn, .list-header {display: none}
 }
 @-moz-document domain(stackoverflow.com) {
+  .question-hyperlink:visited {
+    color: #551a8b;
+  }
   .answer {
     background-color: transparent !important;
   }

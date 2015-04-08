@@ -82,6 +82,7 @@ user_pref('capability.policy.maonoscript.sites', ' \
   rottentomatoes.com http://rottentomatoes.com https://rottentomatoes.com \
     cloudfront.net http://cloudfront.net https://cloudfront.net \
     jwpsrv.com http://jwpsrv.com https://jwpsrv.com \
+  shuffler.fm http://shuffler.fm https://shuffler.fm \
   soundcloud.com http://soundcloud.com https://soundcloud.com \
     sndcdn.com http://sndcdn.com https://sndcdn.com \
   stackoverflow.com http://stackoverflow.com https://stackoverflow.com \
