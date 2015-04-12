@@ -43,11 +43,14 @@ user_pref('browser.urlbar.trimURLs', false);
 
 /*
 cloudflare.com
+googleapis.com
+  google.com musicvideomachine.com
+jquery.com
+  followshows.com radd.it
 jsdelivr.net
   alternativeto.net rottentomatoes.com
-googleapis.com
-  google.com
-  musicvideomachine.com
+ytimg.com
+  radd.it youtube.com
 */
 user_pref('capability.policy.maonoscript.sites', ' \
   alternativeto.net http://alternativeto.net https://alternativeto.net \
@@ -63,7 +66,6 @@ user_pref('capability.policy.maonoscript.sites', ' \
   facebook.com http://facebook.com https://facebook.com \
     akamaihd.net http://akamaihd.net https://akamaihd.net \
   followshows.com http://followshows.com https://followshows.com \
-    jquery.com http://jquery.com https://jquery.com \
   github.com http://github.com https://github.com \
     amazonaws.com http://amazonaws.com https://amazonaws.com \
   google.com http://google.com https://google.com \
@@ -71,6 +73,7 @@ user_pref('capability.policy.maonoscript.sites', ' \
   googleapis.com http://googleapis.com https://googleapis.com \
   imgur.com http://imgur.com https://imgur.com \
   jottit.com http://jottit.com https://jottit.com \
+  jquery.com http://jquery.com https://jquery.com \
   jsdelivr.net http://jsdelivr.net https://jsdelivr.net \
   kickass.to http://kickass.to https://kickass.to \
     kastatic.com http://kastatic.com https://kastatic.com \
@@ -78,6 +81,9 @@ user_pref('capability.policy.maonoscript.sites', ' \
   musicvideomachine.com http://musicvideomachine.com \
     https://musicvideomachine.com \
     audioscrobbler.com http://audio scrobbler.com https://audioscrobbler.com \
+  radd.it http://radd.it https://radd.it \
+    datatables.net http://datatables.net https://datatables.net \
+    googlevideo.com http://googlevideo.com https://googlevideo.com \
   reddit.com http://reddit.com https://reddit.com \
     redditstatic.com http://redditstatic.com https://redditstatic.com \
   rottentomatoes.com http://rottentomatoes.com https://rottentomatoes.com \
@@ -98,9 +104,9 @@ user_pref('capability.policy.maonoscript.sites', ' \
   wikipedia.org http://wikipedia.org https://wikipedia.org \
     wikimedia.org http://wikimedia.org https://wikimedia.org \
   youtube.com http://youtube.com https://youtube.com \
-    ytimg.com http://ytimg.com https://ytimg.com \
     allow-any-origin.appspot.com \
     http://allow-any-origin.appspot.com https://allow-any-origin.appspot.com \
+  ytimg.com http://ytimg.com https://ytimg.com \
 ');
 
 /*
