@@ -131,6 +131,12 @@ warnOnAboutConfig
 user_pref('general.warnOnAboutConfig', false);
 
 /*
+enabled
+  share your location
+*/
+user_pref('geo.enabled', false);
+
+/*
 animation_mode
   fuck gifs once and for all
 */
