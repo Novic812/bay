@@ -42,15 +42,11 @@ user_pref('browser.urlbar.autoFill', false);
 user_pref('browser.urlbar.trimURLs', false);
 
 /*
-cloudflare.com
-googleapis.com
-  google.com musicvideomachine.com
-jquery.com
-  followshows.com radd.it
-jsdelivr.net
-  alternativeto.net rottentomatoes.com
-ytimg.com
-  radd.it youtube.com
+cloudflare.com <- google.com musicvideomachine.com
+googleapis.com <- google.com musicvideomachine.com
+jquery.com     <- followshows.com radd.it
+jsdelivr.net   <- alternativeto.net rottentomatoes.com
+ytimg.com      <- radd.it youtube.com
 */
 user_pref('capability.policy.maonoscript.sites', ' \
   alternativeto.net http://alternativeto.net https://alternativeto.net \
