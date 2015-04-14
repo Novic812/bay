@@ -163,6 +163,7 @@ user_pref('noscript.forbidMedia', false);
 user_pref('noscript.forbidPlugins', false);
 user_pref('noscript.notify', false);
 user_pref('noscript.showAbout', false);
+user_pref('noscript.showAllowPage', false);
 user_pref('noscript.showDistrust', false);
 user_pref('noscript.showTemp', false);
 user_pref('noscript.showTempAllowPage', false);
