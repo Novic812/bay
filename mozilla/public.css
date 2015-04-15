@@ -2,14 +2,14 @@
   .cuuummmonnnn, .list-header {display: none}
 }
 @-moz-document domain(stackoverflow.com) {
-  .question-hyperlink:visited {
-    color: #551a8b;
-  }
   .answer {
     background-color: transparent !important;
   }
   .deleted-answer {
     background-color: #e3d9d9 !important;
+  }
+  [href^="/questions"]:visited {
+    color: #551a8b;
   }
   [href="/review/close"],
   [href="/review/helper"],
