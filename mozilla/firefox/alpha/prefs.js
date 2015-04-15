@@ -165,6 +165,7 @@ user_pref('noscript.notify', false);
 user_pref('noscript.showAbout', false);
 user_pref('noscript.showAllowPage', false);
 user_pref('noscript.showDistrust', false);
+user_pref('noscript.showGlobal', false);
 user_pref('noscript.showRecentlyBlocked', false);
 user_pref('noscript.showTemp', false);
 user_pref('noscript.showUntrusted', false);
