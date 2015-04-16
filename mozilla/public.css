@@ -8,7 +8,10 @@
   .deleted-answer {
     background-color: #e3d9d9 !important;
   }
-  [href^="/questions"]:visited {
+  .answer-hyperlink:visited,
+  .question-hyperlink:visited,
+  [data-searchsession]:visited,
+  _ {
     color: #551a8b;
   }
   [href="/review/close"],
