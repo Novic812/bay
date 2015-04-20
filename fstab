@@ -1,3 +1,4 @@
-C:/git     /git     . acl
-C:/home    /home    . acl
-C:/windows /windows . acl
+c:/git      /git      . acl
+c:/go       /go       . acl
+c:/home     /home     . acl
+c:/windows  /windows  . acl

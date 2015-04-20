@@ -86,6 +86,7 @@ user_pref('capability.policy.maonoscript.sites', ' \
     cloudfront.net http://cloudfront.net https://cloudfront.net \
     jwpsrv.com http://jwpsrv.com https://jwpsrv.com \
   shuffler.fm http://shuffler.fm https://shuffler.fm \
+  sleepyti.me http://sleepyti.me https://sleepyti.me \
   soundcloud.com http://soundcloud.com https://soundcloud.com \
     sndcdn.com http://sndcdn.com https://sndcdn.com \
   stackoverflow.com http://stackoverflow.com https://stackoverflow.com \
