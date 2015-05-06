@@ -2,7 +2,12 @@
   .cuuummmonnnn, .list-header {display: none}
 }
 @-moz-document domain(google.com) {
-  .gb_4a {display: none}
+  .gb_9a,
+  .gb_db,
+  .gb_gb,
+  _ {
+    display: none;
+  }
 }
 @-moz-document domain(stackoverflow.com) {
   .answer {
