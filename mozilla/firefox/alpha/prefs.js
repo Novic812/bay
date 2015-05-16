@@ -71,7 +71,7 @@ user_pref('capability.policy.maonoscript.sites', ' \
   jottit.com http://jottit.com https://jottit.com \
   jquery.com http://jquery.com https://jquery.com \
   jsdelivr.net http://jsdelivr.net https://jsdelivr.net \
-  kickass.to http://kickass.to https://kickass.to \
+  kat.cr http://kat.cr https://kat.cr \
     kastatic.com http://kastatic.com https://kastatic.com \
   liveleak.com http://liveleak.com https://liveleak.com \
   musicvideomachine.com http://musicvideomachine.com \
