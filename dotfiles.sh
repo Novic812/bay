@@ -1,3 +1,4 @@
+#!/bin/sh
 # PATH is defined in ~/.bashrc
 # we must assume this has not happened yet
 PATH=/bin
