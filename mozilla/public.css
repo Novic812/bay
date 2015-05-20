@@ -2,10 +2,15 @@
   .cuuummmonnnn, .list-header {display: none}
 }
 @-moz-document domain(google.com) {
-  .gb_9a,
-  .gb_db,
-  .gb_gb,
-  _ {
+  /*
+  I want to kill ‘Unread notifications’ in Gmail. However they keep changing
+  the class name, because they are fucktards. I need to keep track here of what
+  I have tried so that I can find a pattern of their fuckery and use something
+  like [class^="gb_8"]. Here is list of what I have tried, including current
+  try:
+  - .gb_8a
+  */
+  .gb_8a {
     display: none;
   }
 }
