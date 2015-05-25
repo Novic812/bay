@@ -4,7 +4,8 @@ HISTSIZE=
 PATH=$(command -p awk '!$2{printf b++?":"$0:$0}' ~/path.conf)
 PROMPT_COMMAND='history -a'
 PS1='\e];\s\a\n\e[33m\w \e[36m$(nr)\e[m\n$ '
-export EDITOR='cygstart -w' LANG=C.utf8
+export EDITOR='cygstart -w'
+export LANG=en_US # case insensitive sort
 
 function c {
   printf '\ec'
