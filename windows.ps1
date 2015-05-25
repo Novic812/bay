@@ -78,6 +78,7 @@ sp explorer link ([byte[]](0,0,0,0))
   PATH = @(
     "$env:homedrive\home\documents"
     "$env:homedrive\git\a\misc"
+    "$env:windir\system32"
     "$pshome"
   ) -join ';'
 } | % getEnumerator | % {
