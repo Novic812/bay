@@ -1,0 +1,110 @@
+{
+  "guid": "root________",
+  "title": "",
+  "index": 0,
+  "dateAdded": 1406182158963000,
+  "lastModified": 1406195559994000,
+  "id": 1,
+  "type": "text/x-moz-place-container",
+  "root": "placesRoot",
+  "children": [
+    {
+      "guid": "menu________",
+      "title": "Bookmarks Menu",
+      "index": 0,
+      "dateAdded": 1406182158963000,
+      "lastModified": 1432591016890000,
+      "id": 2,
+      "type": "text/x-moz-place-container",
+      "root": "bookmarksMenuFolder",
+      "children": [
+        {
+          "guid": "u0Jx_pElDIzE",
+          "index": 0,
+          "dateAdded": 1406182160096000,
+          "lastModified": 1406182160096000,
+          "id": 15,
+          "type": "text/x-moz-place-separator"
+        }
+      ]
+    },
+    {
+      "guid": "toolbar_____",
+      "title": "Bookmarks Toolbar",
+      "index": 1,
+      "dateAdded": 1406182158963000,
+      "lastModified": 1432081829145000,
+      "id": 3,
+      "annos": [
+        {
+          "name": "bookmarkProperties/description",
+          "flags": 0,
+          "expires": 4,
+          "value": "Add bookmarks to this folder to see them displayed on the Bookmarks Toolbar"
+        }
+      ],
+      "type": "text/x-moz-place-container",
+      "root": "toolbarFolder",
+      "children": [
+        {
+          "guid": "o2HIz61KHNuH",
+          "title": "YouTube download",
+          "index": 0,
+          "dateAdded": 1426742398492000,
+          "lastModified": 1426742398492000,
+          "id": 845,
+          "type": "text/x-moz-place",
+          "uri": "javascript:%20%20%20%20var%20q%20=%20document.createElement('script');%20%20%20%20q.src%20=%20'https://svnpenn.github.io/bm/yt.js';%20%20%20%20document.body.appendChild(q);%20%20%20%20void%200;"
+        },
+        {
+          "guid": "Zq9HvlZpP2fF",
+          "title": "Cover Art",
+          "index": 1,
+          "dateAdded": 1409635187963000,
+          "lastModified": 1409635258534000,
+          "id": 34,
+          "annos": [
+            {
+              "name": "bookmarkProperties/description",
+              "flags": 0,
+              "expires": 4,
+              "value": ""
+            }
+          ],
+          "type": "text/x-moz-place",
+          "uri": "javascript:location+='/cover-art'"
+        },
+        {
+          "guid": "0abxEpI6kNLf",
+          "title": "RT Show More",
+          "index": 2,
+          "dateAdded": 1427408126037000,
+          "lastModified": 1427408209116000,
+          "id": 961,
+          "type": "text/x-moz-place",
+          "uri": "javascript:document.getElementsByClassName('mb-load-btn')[0].click()"
+        },
+        {
+          "guid": "n78bysT69yYj",
+          "title": "YT Content Warning",
+          "index": 3,
+          "dateAdded": 1428032925727000,
+          "lastModified": 1428032962545000,
+          "id": 973,
+          "type": "text/x-moz-place",
+          "uri": "javascript:window.location%20=%20window.location.toString().replace(/http(s?)(.+)watch\\?v=(.+)/,%20'https$2/v/$3');"
+        }
+      ]
+    },
+    {
+      "guid": "unfiled_____",
+      "title": "Unsorted Bookmarks",
+      "index": 3,
+      "dateAdded": 1406182158963000,
+      "lastModified": 1431042938879000,
+      "id": 5,
+      "type": "text/x-moz-place-container",
+      "root": "unfiledBookmarksFolder"
+    }
+  ]
+}

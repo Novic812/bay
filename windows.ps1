@@ -1,3 +1,5 @@
+# FIXME rewrite this as batch file or bash if possible
+# FIXME register .sh and stuff so it is not unknown
 pushd
 # need if you call from start menu
 cp $PSScriptRoot\profile.ps1 $pshome
@@ -76,10 +78,10 @@ sp explorer link ([byte[]](0,0,0,0))
 @{
   CYGWIN = 'noDosFileWarning'
   PATH = @(
-    "$env:homedrive\home\documents"
-    "$env:homedrive\git\a\misc"
-    "$env:windir\system32"
-    "$pshome"
+    'c:\windows\system32'
+    'c:\windows\system32\windowspowershell\v1.0'
+    'd:\documents'
+    'd:\git\a\misc'
   ) -join ';'
 } | % getEnumerator | % {
   [environment]::setEnvironmentVariable($_.key, $_.value, 'm')

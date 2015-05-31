@@ -12,7 +12,7 @@ function c {
 }
 
 function ish {
-  if let ${#cn[*]}
+  if [ -v cn[*] ]
   then
     unset cn
     . ~/.bashrc
