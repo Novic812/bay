@@ -1,4 +1,5 @@
 c:/windows   /windows   . noacl
 c:/home      /home      . noacl
+d:/desktop   /desktop   . noacl
 d:/documents /documents . noacl
 d:/git       /git       . noacl
