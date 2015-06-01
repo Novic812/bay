@@ -9,8 +9,7 @@ mount -a
 # we must assume this has not happened yet
 mkdir -p "$HOME"
 history -w
-cp .* path.conf "$HOME"
-cp -r */ "$APPDATA"
+cp .* "$HOME"
 
 # restart bash
 pw=$(cygpath -m ~+)

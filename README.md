@@ -1,10 +1,6 @@
 ### Install
 
-~~~ sh
-git clone git://github.com/svnpenn/dotfiles
-cd dotfiles
-./dotfiles.sh
-~~~
+Check each folder for install script
 
 ### Thanks
 
