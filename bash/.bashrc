@@ -1,7 +1,7 @@
 HISTCONTROL=ignoredups
 HISTIGNORE=c
 HISTSIZE=
-PATH=$(command -p awk '!$2{printf b++?":"$0:$0}' ~/path.conf)
+PATH=$(command -p awk '!$2{printf b++?":"$0:$0}' ~/.path)
 PROMPT_COMMAND='history -a'
 PS1='\e];\s\a\n\e[33m\w \e[36m$(nr)\e[m\n$ '
 export EDITOR='cygstart -w'
