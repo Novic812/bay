@@ -2,6 +2,12 @@
 set "$APPDATA"/mozilla/firefox
 mkdir -p "$1"/{0,1}
 
+# mms.cfg
+for each in "$WINDIR"/sys{tem32,wow64}/macromed/flash
+do
+  cp mms.cfg "$each"
+done
+
 # profiles.ini
 cp profiles.ini "$1"
 
