@@ -174,6 +174,12 @@ user_pref('noscript.showTempToPerm', false);
 user_pref('noscript.showUntrusted', false);
 
 /*
+parse-on-load.enabled
+  reader view
+*/
+user_pref('reader.parse-on-load.enabled', false);
+
+/*
 rememberSignons
   do not remember passwords
 */
