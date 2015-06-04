@@ -21,12 +21,6 @@
   #pushdown {
     display: none !important;
   }
-  /*
-  google gives you the tools to control your privacy and security
-  */
-  .gb_ba[aria-hidden="false"] {
-    display: none !important;
-  }
 }
 @-moz-document domain(stackoverflow.com) {
   .answer {
