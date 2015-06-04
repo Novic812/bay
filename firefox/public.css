@@ -1,5 +1,7 @@
 @-moz-document domain(alternativeto.net) {
-  .cuuummmonnnn, .list-header {display: none}
+  .cuuummmonnnn, .list-header {
+    display: none !important;
+  }
 }
 @-moz-document domain(google.com) {
   /*
@@ -8,10 +10,22 @@
   I have tried so that I can find a pattern of their fuckery and use something
   like [class^="gb_8"]. Here is list of what I have tried, including current
   try:
-  - .gb_8a
+  .gb_8a
   */
   .gb_8a {
-    display: none;
+    display: none !important;
+  }
+  /*
+  switch your default search engine to google
+  */
+  #pushdown {
+    display: none !important;
+  }
+  /*
+  google gives you the tools to control your privacy and security
+  */
+  .gb_ba[aria-hidden="false"] {
+    display: none !important;
   }
 }
 @-moz-document domain(stackoverflow.com) {
