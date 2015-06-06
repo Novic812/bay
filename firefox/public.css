@@ -48,6 +48,16 @@
     opacity: .3;
     pointer-events: none;
   }
+  /*
+  sticky vote controls
+  never thought i’d say this, but fuck you, Stack Overflow
+  */
+  .vote {
+    position: unset !important;
+  }
+  [style*="float: none"] {
+    display: none !important;
+  }
 }
 @-moz-document domain(wikipedia.org) {
   /*
