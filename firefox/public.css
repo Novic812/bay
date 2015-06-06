@@ -51,7 +51,7 @@
   sticky vote controls
   */
   .vote {
-    position: unset !important;
+    position: static !important;
   }
   [style*="float: none"] {
     display: none !important;
