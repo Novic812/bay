@@ -54,7 +54,7 @@
   .vote {
     position: static !important;
   }
-  [style*="float: none"] {
+  [style*="position: static"] {
     display: none !important;
   }
 }
