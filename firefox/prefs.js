@@ -3,8 +3,6 @@ user.js is bad because it will trash any changes you have made on restart
 */
 
 /*
-download.dir
-  save files to
 download.folderList
   always ask me where to save files
 migration.version
@@ -28,7 +26,6 @@ urlbar.autoFill
 urlbar.trimURLs
   do not trim URLs
 */
-user_pref('browser.download.dir', 'c:\\home\\local\\desktop');
 user_pref('browser.download.folderList', 0);
 user_pref('browser.migration.version', 22);
 user_pref('browser.newtab.url', 'about:blank');
