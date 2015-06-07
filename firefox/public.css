@@ -21,7 +21,7 @@
     display: none !important;
   }
 }
-@-moz-document domain(stackoverflow.com) {
+@-moz-document domain(stackoverflow.com), domain(superuser.com) {
   #hot-network-questions a:visited, /* hot network questions */
   .community-bulletin a:visited, /* community bulletin */
   .sidebar-linked a:visited, /* linked */
