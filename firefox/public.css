@@ -54,7 +54,7 @@
   .vote {
     position: static !important;
   }
-  [style*="position: static"] {
+  [style*="vertical-align: baseline"] {
     display: none !important;
   }
 }
