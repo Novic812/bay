@@ -22,16 +22,12 @@
   }
 }
 @-moz-document domain(stackoverflow.com) {
-  .answer {
-    background-color: transparent !important;
-  }
-  .deleted-answer {
-    background-color: #e3d9d9 !important;
-  }
-  .js-gps-track:visited,
-  .answer-hyperlink:visited,
-  [data-searchsession]:visited,
-  [href*="://"]:visited,
+  #hot-network-questions a:visited, /* hot network questions */
+  .community-bulletin a:visited, /* community bulletin */
+  .sidebar-linked a:visited, /* linked */
+  .sidebar-related a:visited, /* related */
+  .result-link a:visited, /* search results */
+  .summary h3 a:visited, /* unanswered questions */
   _ {
     color: #551a8b !important;
   }
@@ -51,10 +47,10 @@
   /*
   sticky vote controls
   */
-  .vote {
+  .js-vote-sticky {
     position: static !important;
   }
-  .vote + div {
+  .js-vote-sticky + div {
     display: none !important;
   }
 }
