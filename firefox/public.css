@@ -31,7 +31,7 @@
   .js-gps-track:visited,
   .answer-hyperlink:visited,
   [data-searchsession]:visited,
-  [href*="://stackoverflow.com/questions"]:visited,
+  [href*="://"]:visited,
   _ {
     color: #551a8b !important;
   }
