@@ -28,11 +28,12 @@
   .deleted-answer {
     background-color: #e3d9d9 !important;
   }
+  .js-gps-track:visited,
   .answer-hyperlink:visited,
   .question-hyperlink:visited,
   [data-searchsession]:visited,
   _ {
-    color: #551a8b;
+    color: #551a8b !important;
   }
   [href="/review/close"],
   [href="/review/first-posts"],
