@@ -30,8 +30,8 @@
   }
   .js-gps-track:visited,
   .answer-hyperlink:visited,
-  .question-hyperlink:visited,
   [data-searchsession]:visited,
+  [href*="://stackoverflow.com/questions"]:visited,
   _ {
     color: #551a8b !important;
   }
