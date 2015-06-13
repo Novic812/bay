@@ -57,7 +57,8 @@ cd hklm:\software\classes
 
 # Console
 cd hkcu:\
-sp console QuickEdit 1
+sp -t d Console CodePage 0xfde9
+sp -t d Console QuickEdit 1
 '0x{0:x4}{1:x4}' | % {
   sp -t d console WindowPosition ($_ -f 400,900)
   sp console WindowSize     ($_ -f  22, 80)
