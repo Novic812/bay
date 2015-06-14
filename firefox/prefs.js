@@ -1,41 +1,36 @@
-/*
-user.js is bad because it will trash any changes you have made on restart
-*/
+// user.js is bad because it will trash any changes you have made on restart
 
-/*
-download.folderList
-  always ask me where to save files
-migration.version
-  disable sync promo
-newtab.url
-  disable new tab page
-places.smartBookmarksVersion
-  do not generate smart bookmarks
-startup.homepage_override.mstone
-  disable first run page
-startup.page
-  show windows and tabs from last time
-syncPromoViewsLeftMap
-  disable sync promo
-tabs.drawInTitlebar
-  title bar
-taskbar.lists.enabled
-  jumplist setting
-urlbar.autoFill
-  disable URL autocomplete
-urlbar.trimURLs
-  do not trim URLs
-*/
+// always ask me where to save files
 user_pref('browser.download.folderList', 0);
+
+// disable sync promo
 user_pref('browser.migration.version', 22);
+
+// disable new tab page
 user_pref('browser.newtab.url', 'about:blank');
+
+// do not generate smart bookmarks
 user_pref('browser.places.smartBookmarksVersion', 1);
+
+// disable first run page
 user_pref('browser.startup.homepage_override.mstone', 'ignore');
+
+// show windows and tabs from last time
 user_pref('browser.startup.page', 3);
+
+// disable sync promo
 user_pref('browser.syncPromoViewsLeftMap', '{"addons":0}');
+
+// title bar
 user_pref('browser.tabs.drawInTitlebar', false);
+
+// jumplist setting
 user_pref('browser.taskbar.lists.enabled', false);
+
+// disable URL autocomplete
 user_pref('browser.urlbar.autoFill', false);
+
+// do not trim URLs
 user_pref('browser.urlbar.trimURLs', false);
 
 /*
@@ -93,6 +88,7 @@ user_pref('capability.policy.maonoscript.sites', ' \
     askubuntu.com http://askubuntu.com https://askubuntu.com \
     sstatic.net http://sstatic.net https://sstatic.net \
     mathjax.org http://mathjax.org https://mathjax.org \
+    stacksnippets.net http://stacksnippets.net https://stacksnippets.net \
   vimeo.com http://vimeo.com https://vimeo.com \
     vimeocdn.com http://vimeocdn.com https://vimeocdn.com \
   wikipedia.org http://wikipedia.org https://wikipedia.org \
@@ -103,81 +99,76 @@ user_pref('capability.policy.maonoscript.sites', ' \
   ytimg.com http://ytimg.com https://ytimg.com \
 ');
 
-/*
-dataSubmissionPolicyAcceptedVersion
-dataSubmissionPolicyNotifiedTime
-  dxr.mozilla.org/mozilla-central/source/services/datareporting/policy.jsm
-*/
+// dxr.mozilla.org/mozilla-central/source/services/datareporting/policy.jsm
 user_pref('datareporting.policy.dataSubmissionPolicyAcceptedVersion', 2);
 user_pref('datareporting.policy.dataSubmissionPolicyNotifiedTime',
   '1325397600000');
 
-/*
-currentVersion
-  remember "allow some non-intrusive advertising" setting
-frameobjects
-  do not show tabs on flash
-hideContributeButton
-  hide contribute button
-*/
-user_pref('extensions.adblockplus.currentVersion', '2');
-user_pref('extensions.adblockplus.frameobjects', false);
-user_pref('extensions.adblockplus.hideContributeButton', true);
-
-/*
-warnOnAboutConfig
-  about:config warning
-*/
+// about:config warning
 user_pref('general.warnOnAboutConfig', false);
 
-/*
-enabled
-  share your location
-*/
+// share your location
 user_pref('geo.enabled', false);
 
-/*
-animation_mode
-  fuck gifs once and for all
-*/
+// fuck gifs once and for all
 user_pref('image.animation_mode', 'none');
 
-/*
-ABE.enabled
-  need for musicbrainz picard
-allowURLBarJS
-  javascript: URIs typed or pasted in the address bar
-firstRunRedirection
-  do not display the release notes on updates
-notify
-  show message about blocked scripts
-*/
+// need for musicbrainz picard
 user_pref('noscript.ABE.enabled', false);
+
+// javascript: URIs typed or pasted in the address bar
 user_pref('noscript.allowURLBarJS', true);
+
+// noscript
+user_pref('noscript.filterXPost', false);
+
+// do not display the release notes on updates
 user_pref('noscript.firstRunRedirection', false);
+
+// noscript
 user_pref('noscript.forbidFlash', false);
+
+// noscript
 user_pref('noscript.forbidFonts', false);
+
+// noscript
 user_pref('noscript.forbidMedia', false);
+
+// noscript
 user_pref('noscript.forbidPlugins', false);
+
+// show message about blocked scripts
 user_pref('noscript.notify', false);
+
+// noscript
 user_pref('noscript.showAbout', false);
+
+// noscript
 user_pref('noscript.showAllowPage', false);
+
+// noscript
 user_pref('noscript.showDistrust', false);
+
+// noscript
 user_pref('noscript.showGlobal', false);
+
+// noscript
 user_pref('noscript.showRecentlyBlocked', false);
+
+// noscript
 user_pref('noscript.showRevokeTemp', false);
+
+// noscript
 user_pref('noscript.showTemp', false);
+
+// noscript
 user_pref('noscript.showTempToPerm', false);
+
+// noscript
 user_pref('noscript.showUntrusted', false);
 
-/*
-parse-on-load.enabled
-  reader view
-*/
+// reader view
 user_pref('reader.parse-on-load.enabled', false);
 
-/*
-rememberSignons
-  do not remember passwords
-*/
+// do not remember passwords
 user_pref('signon.rememberSignons', false);
