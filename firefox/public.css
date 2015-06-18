@@ -24,9 +24,10 @@
 @-moz-document domain(stackoverflow.com), domain(superuser.com) {
   #hot-network-questions a:visited, /* hot network questions */
   .community-bulletin a:visited, /* community bulletin */
+  .post-text a:visited, /* in answer links */
+  .result-link a:visited, /* search results */
   .sidebar-linked a:visited, /* linked */
   .sidebar-related a:visited, /* related */
-  .result-link a:visited, /* search results */
   .summary h3 a:visited, /* unanswered questions */
   _ {
     color: #551a8b !important;
