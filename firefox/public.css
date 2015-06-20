@@ -10,8 +10,9 @@
   find a pattern and use something like [class^="gb_8"]. Here is list of what I
   have tried, including current try:
   .gb_8a
+  #gbwa + div
   */
-  .gb_8a {
+  #gbwa + div {
     display: none !important;
   }
   /*
