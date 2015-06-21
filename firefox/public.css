@@ -25,6 +25,7 @@
 @-moz-document domain(stackoverflow.com), domain(superuser.com) {
   #hot-network-questions a:visited, /* hot network questions */
   .community-bulletin a:visited, /* community bulletin */
+  .post-container a:visited, /* newest posts */
   .post-text a:visited, /* in answer links */
   .result-link a:visited, /* search results */
   .sidebar-linked a:visited, /* linked */
