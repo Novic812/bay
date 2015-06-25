@@ -3,6 +3,30 @@
     display: none !important;
   }
 }
+@-moz-document domain(github.com) {
+  .comment-body pre, .highlight td {
+    font-size: 14px !important;
+  }
+  /* keyword 1 */
+  .pl-k {
+    color: #804000 !important;
+    font-weight: bold !important;
+  }
+  /* keyword 2 */
+  .pl-c1 {
+    color: #0A246A !important;
+    font-weight: bold !important;
+  }
+  /* function name */
+  .pl-en {
+    color: #333333 !important;
+  }
+  /* string */
+  .pl-s, .pl-s * {
+    color: #008000 !important;
+    font-weight: normal !important;
+  }
+}
 @-moz-document domain(google.com) {
   /*
   I want to kill ‘Unread notifications’ in Gmail. However they keep changing
