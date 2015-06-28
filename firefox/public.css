@@ -90,6 +90,11 @@
     display: none !important;
   }
 }
+@-moz-document domain(youtube.com) {
+  .html5-video-content {
+    display: none !important;
+  }
+}
 @-moz-document url-prefix(http://superuser.com) {
   /*
   - filter out meta.superuser.com
