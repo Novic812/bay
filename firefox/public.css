@@ -91,7 +91,7 @@
   }
 }
 @-moz-document domain(youtube.com) {
-  .html5-video-content {
+  .html5-video-content, .ytp-player-content {
     display: none !important;
   }
 }
