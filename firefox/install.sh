@@ -17,6 +17,16 @@ do
   cp prefs.js "$each"
 done
 
+# SiteSecurityServiceState.txt
+for each in "$1"/{0,1}/SiteSecurityServiceState.txt
+do
+  if [ -w "$each" ]
+  then
+    > "$each"
+    chmod -w "$each"
+  fi
+done
+
 # search-metadata.json
 if ! type jq >/dev/null
 then
