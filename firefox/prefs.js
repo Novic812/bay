@@ -104,6 +104,9 @@ user_pref('datareporting.policy.dataSubmissionPolicyAcceptedVersion', 2);
 user_pref('datareporting.policy.dataSubmissionPolicyNotifiedTime',
   '1325397600000');
 
+// blocklist.xml
+user_pref('extensions.blocklist.enabled', false);
+
 // about:config warning
 user_pref('general.warnOnAboutConfig', false);
 
