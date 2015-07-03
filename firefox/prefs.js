@@ -122,6 +122,9 @@ user_pref('noscript.ABE.enabled', false);
 // javascript: URIs typed or pasted in the address bar
 user_pref('noscript.allowURLBarJS', true);
 
+// reload the current tab only
+user_pref('noscript.autoReload.allTabs', false);
+
 // noscript
 user_pref('noscript.filterXPost', false);
 
