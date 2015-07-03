@@ -48,6 +48,7 @@
 }
 @-moz-document domain(stackoverflow.com), domain(superuser.com) {
   #hot-network-questions a:visited, /* hot network questions */
+  .answer-link a:visited, /* user > activity > answers */
   .community-bulletin a:visited, /* community bulletin */
   .post-container a:visited, /* newest posts */
   .post-text a:visited, /* in answer links */
