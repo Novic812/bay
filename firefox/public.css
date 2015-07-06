@@ -47,7 +47,7 @@
   }
 }
 @-moz-document domain(stackoverflow.com), domain(superuser.com) {
-  #hot-network-questions a:visited, /* hot network questions */
+  #hot-network-questions li a:visited, /* hot network questions */
   .answer-link a:visited, /* user > activity > answers */
   .community-bulletin a:visited, /* hot meta posts */
   .post-container a:visited, /* user > profile > newest posts */
