@@ -3,6 +3,11 @@
     display: none !important;
   }
 }
+@-moz-document domain(di.fm) {
+  #modal-region, .modal-backdrop {
+    display: none !important;
+  }
+}
 @-moz-document domain(github.com) {
   .comment-body pre, .highlight td {
     font-size: 14px !important;
