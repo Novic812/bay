@@ -62,11 +62,11 @@
   .community-bulletin a:visited, /* hot meta posts */
   .post-container a:visited, /* user > profile > newest posts */
   .post-text a:visited, /* question > answers */
+  .rep-link a:visited, /* user > activity > reputation */
   .result-link a:visited, /* search results */
   .sidebar-linked a:visited, /* question > linked */
   .sidebar-related a:visited, /* question > related */
   .summary h3 a:visited, /* unanswered questions */
-  .user-rep a:visited, /* user > activity > reputation */
   _ {
     color: #551a8b !important;
   }
