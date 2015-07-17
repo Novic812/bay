@@ -67,6 +67,7 @@
   .sidebar-linked a:visited, /* question > linked */
   .sidebar-related a:visited, /* question > related */
   .summary h3 a:visited, /* unanswered questions */
+  .user-rep a:visited, /* user > activity > summary */
   _ {
     color: #551a8b !important;
   }
