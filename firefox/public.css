@@ -55,6 +55,9 @@
   p {
     font-family: verdana !important;
   }
+  .goldvertisement {
+    display: none !important;
+  }
 }
 @-moz-document domain(stackoverflow.com), domain(superuser.com) {
   #hot-network-questions li a:visited, /* hot network questions */
