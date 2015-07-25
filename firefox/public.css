@@ -9,6 +9,9 @@
   }
 }
 @-moz-document domain(github.com) {
+  #fullscreen-contents {
+    font-family: Consolas;
+  }
   .comment-body pre, .highlight td {
     font-size: 14px !important;
   }
