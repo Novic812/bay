@@ -36,6 +36,9 @@
   }
 }
 @-moz-document domain(reddit.com) {
+  body:lang(np):not(.subscriber) .arrow {
+    visibility: visible !important;
+  }
   p {
     font-family: verdana !important;
   }
