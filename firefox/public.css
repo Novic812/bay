@@ -36,6 +36,9 @@
   }
 }
 @-moz-document domain(reddit.com) {
+  .down {
+    display: block !important;
+  }
   .entry::before {
     content: none !important;
   }
