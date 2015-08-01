@@ -36,6 +36,9 @@
   }
 }
 @-moz-document domain(reddit.com) {
+  body:lang(np) .arrow {
+    visibility: visible !important;
+  }
   .down {
     display: block !important;
   }
