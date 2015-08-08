@@ -102,7 +102,7 @@
   }
 }
 @-moz-document domain(youtube.com) {
-  .html5-video-content, .ytp-player-content {
+  .annotation {
     display: none !important;
   }
 }
