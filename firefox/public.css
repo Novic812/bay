@@ -102,7 +102,7 @@
   }
 }
 @-moz-document domain(youtube.com) {
-  .annotation {
+  .annotation, .ytp-cards-button {
     display: none !important;
   }
 }
