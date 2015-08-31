@@ -89,6 +89,7 @@ user_pref('capability.policy.maonoscript.sites', ' \
     sstatic.net http://sstatic.net https://sstatic.net \
     mathjax.org http://mathjax.org https://mathjax.org \
     stacksnippets.net http://stacksnippets.net https://stacksnippets.net \
+  trakt.tv http://trakt.tv https://trakt.tv \
   vimeo.com http://vimeo.com https://vimeo.com \
     vimeocdn.com http://vimeocdn.com https://vimeocdn.com \
   wikipedia.org http://wikipedia.org https://wikipedia.org \
