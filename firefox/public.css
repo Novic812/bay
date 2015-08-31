@@ -93,6 +93,11 @@
     display: none !important;
   }
 }
+@-moz-document domain(trakt.tv) {
+  #huckster-desktop-wrapper {
+    display: none;
+  }
+}
 @-moz-document domain(wikipedia.org) {
   /*
   #centralNotice
