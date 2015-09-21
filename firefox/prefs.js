@@ -52,7 +52,7 @@ user_pref('capability.policy.maonoscript.sites', ' \
     bcbits.com http://bcbits.com https://bcbits.com \
   cloudflare.com http://cloudflare.com https://cloudflare.com \
   facebook.com http://facebook.com https://facebook.com \
-    akamaihd.net http://akamaihd.net https://akamaihd.net \
+    fbcdn.net http://fbcdn.net https://fbcdn.net \
   followshows.com http://followshows.com https://followshows.com \
   github.com http://github.com https://github.com \
     amazonaws.com http://amazonaws.com https://amazonaws.com \
