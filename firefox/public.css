@@ -70,28 +70,6 @@
   _ {
     color: #551a8b !important;
   }
-  [href="/review/close"],
-  [href="/review/first-posts"],
-  [href="/review/late-answers"],
-  [href="/review/low-quality-posts"],
-  [href="/review/reopen"],
-  [href="/review/suggested-edits"],
-  [href="/review/triage"],
-  [href="http://meta.stackoverflow.com/review"],
-  _ {
-    color: #000 !important;
-    opacity: .3;
-    pointer-events: none;
-  }
-  /*
-  sticky vote controls
-  */
-  .js-vote-sticky {
-    position: static !important;
-  }
-  .js-vote-sticky + div {
-    display: none !important;
-  }
 }
 @-moz-document domain(trakt.tv) {
   #huckster-desktop-wrapper {
