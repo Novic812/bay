@@ -55,6 +55,11 @@
     display: none !important;
   }
 }
+@-moz-document domain(soundcloud.com) {
+  .announcements {
+    display: none !important;
+  }
+}
 @-moz-document domain(stackoverflow.com), domain(superuser.com) {
   #hot-network-questions li a:visited, /* hot network questions */
   .answer-link a:visited, /* user > activity > answers */
