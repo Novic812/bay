@@ -7,7 +7,8 @@ user_pref('browser.download.folderList', 0);
 user_pref('browser.migration.version', 22);
 
 // disable new tab page
-user_pref('browser.newtab.url', 'about:blank');
+user_pref('browser.newtabpage.enabled', false);
+user_pref('browser.newtabpage.introShown', true);
 
 // do not generate smart bookmarks
 user_pref('browser.places.smartBookmarksVersion', 1);
