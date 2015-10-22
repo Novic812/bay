@@ -1,0 +1,31 @@
+* * 3p-script block
+
+! alternativeto.net
+* cloudflare.com * noop
+* jsdelivr.net * noop
+* msecnd.net * noop
+
+! facebook.com
+* fbcdn.net * noop
+
+! radd.it
+* datatables.net * noop
+* jquery.com * noop
+
+! radd.it shuffler.fm
+* googleapis.com * noop
+* soundcloud.com * noop
+* youtube.com * noop
+* ytimg.com * noop
+
+! reddit.com
+* redditstatic.com * noop
+
+! shuffler.fm
+* cloudfront.net * noop
+
+! soundcloud.com
+* sndcdn.com * noop
+
+! stackoverflow.com
+* sstatic.net * noop
