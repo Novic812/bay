@@ -35,6 +35,14 @@
     display: none !important;
   }
 }
+@-moz-document domain(imgur.com) {
+  [src$="gif"] {
+    border: 1px solid red !important;
+  }
+  [src$="mp4"] {
+    border: 1px solid green !important;
+  }
+}
 @-moz-document domain(reddit.com) {
   body:lang(np) .arrow {
     visibility: visible !important;
