@@ -35,11 +35,6 @@
     display: none !important;
   }
 }
-@-moz-document domain(imgur.com) {
-  video, img[src$="gif"] {
-    border: 1px solid red;
-  }
-}
 @-moz-document domain(reddit.com) {
   body:lang(np) .arrow {
     visibility: visible !important;
@@ -98,6 +93,14 @@
 @-moz-document domain(youtube.com) {
   .annotation, .ytp-cards-button, .ytp-cards-teaser, .video-annotations {
     display: none !important;
+  }
+}
+@-moz-document url-prefix(http) {
+  video {
+    border-left: 1em solid violet !important;
+  }
+  img[src$="gif"] {
+    border-left: 1em solid green !important;
   }
 }
 @-moz-document url-prefix(http://superuser.com) {
