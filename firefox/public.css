@@ -103,7 +103,7 @@
     outline: 1em solid green;
   }
   .after:hover {
-    outline: 1em solid aqua;
+    outline: 1em solid aqua !important;
   }
 }
 @-moz-document url-prefix(http://superuser.com) {
