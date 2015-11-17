@@ -102,8 +102,8 @@
   img[src$="gif"]:hover {
     outline: 1em solid green;
   }
-  .after:hover {
-    outline: 1em solid aqua !important;
+  .after {
+    outline: 1em solid aqua;
   }
 }
 @-moz-document url-prefix(http://superuser.com) {
