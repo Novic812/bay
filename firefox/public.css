@@ -96,11 +96,14 @@
   }
 }
 @-moz-document url-prefix(http) {
-  video {
-    border-left: 10px solid violet !important;
+  video:hover {
+    outline: 1em solid violet;
   }
-  img[src$="gif"] {
-    border-left: 10px solid green !important;
+  img[src$="gif"]:hover {
+    outline: 1em solid green;
+  }
+  .after:hover {
+    outline: 1em solid aqua;
   }
 }
 @-moz-document url-prefix(http://superuser.com) {
