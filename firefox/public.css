@@ -102,7 +102,7 @@
   img[src$="gif"]:hover {
     outline: 1em solid green;
   }
-  .after {
+  .aftr {
     outline: 1em solid aqua;
   }
 }
