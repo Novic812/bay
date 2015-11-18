@@ -48,7 +48,7 @@ user_pref('general.warnOnAboutConfig', false);
 // share your location
 user_pref('geo.enabled', false);
 
-// fuck gifs once and for all
+// play gifs once
 user_pref('image.animation_mode', 'once');
 
 // reader view
