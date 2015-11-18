@@ -49,7 +49,7 @@ user_pref('general.warnOnAboutConfig', false);
 user_pref('geo.enabled', false);
 
 // fuck gifs once and for all
-user_pref('image.animation_mode', 'none');
+user_pref('image.animation_mode', 'once');
 
 // reader view
 user_pref('reader.parse-on-load.enabled', false);
