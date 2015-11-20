@@ -36,8 +36,14 @@
   }
 }
 @-moz-document domain(reddit.com) {
-  body:lang(np) .arrow {
-    visibility: visible !important;
+  p {
+    font-family: verdana !important;
+  }
+  #eu-cookie-policy {
+    display: none !important;
+  }
+  .goldvertisement {
+    display: none !important;
   }
   .down {
     display: block !important;
@@ -45,14 +51,11 @@
   .entry::before {
     content: none !important;
   }
-  body:lang(np):not(.subscriber) .arrow {
+  body:lang(np) .arrow {
     visibility: visible !important;
   }
-  p {
-    font-family: verdana !important;
-  }
-  .goldvertisement {
-    display: none !important;
+  body:lang(np):not(.subscriber) .arrow {
+    visibility: visible !important;
   }
 }
 @-moz-document domain(soundcloud.com) {
