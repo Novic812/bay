@@ -46,6 +46,7 @@
     content: none !important;
   }
   #eu-cookie-policy,
+  .side-message,
   .goldvertisement {
     display: none !important;
   }
