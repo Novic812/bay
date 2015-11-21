@@ -35,6 +35,22 @@
     display: none !important;
   }
 }
+@-moz-document domain(radd.it) {
+  .navBtns, /* donate */
+  .opts, /* search */
+  #naviDown, /* previous next down */
+  .grid, /* loaded */
+  .feeds, /* r/radd_it */
+  footer, /* radd.it/music */
+  _ {
+    display: none !important;
+  }
+  .select-dropdown {
+    display: block !important;
+    left: auto !important;
+    width: 320px !important;
+  }
+}
 @-moz-document domain(reddit.com) {
   p {
     font-family: verdana !important;
