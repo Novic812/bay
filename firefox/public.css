@@ -36,6 +36,7 @@
   }
 }
 @-moz-document domain(radd.it) {
+  .hide-on-embed, /* title */
   .navBtns, /* donate */
   .opts, /* search */
   #naviDown, /* previous next down */
@@ -45,9 +46,15 @@
   _ {
     display: none !important;
   }
-  .quickLoad {
+  nav {
+    position: static !important;
+  }
+  ul.quickLoad {
     display: block !important;
+    top: 0 !important;
+    height: 100% !important;
     left: auto !important;
+    max-height: none !important;
     width: 320px !important;
   }
 }
