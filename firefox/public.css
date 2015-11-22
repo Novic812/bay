@@ -49,6 +49,13 @@
   nav {
     position: static !important;
   }
+  .media {
+    background: #263238 !important;
+    padding: 0 !important;
+  }
+  .content {
+    padding: 0 !important;
+  }
   ul.quickLoad {
     display: block !important;
     height: 100% !important;
