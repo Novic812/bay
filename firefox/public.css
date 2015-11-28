@@ -36,7 +36,7 @@
   }
 }
 @-moz-document domain(imgur.com) {
-  .red, .down {
+  .post.red, .grid.down {
     display: none !important;
   }
 }
