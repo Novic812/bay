@@ -35,7 +35,16 @@
     display: none !important;
   }
 }
+@-moz-document domain(imgur.com) {
+  .red {
+    display: none !important;
+  }
+}
 @-moz-document domain(radd.it) {
+  /*
+  FIXME - stop playlist from overlapping video on small window
+  stackoverflow.com/q/17217766
+  */
   .hide-on-embed, /* title */
   .navBtns, /* donate */
   .opts, /* search */
