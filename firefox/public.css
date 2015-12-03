@@ -82,6 +82,9 @@
   .down {
     display: block !important;
   }
+  .dislikes {
+    opacity: .3 !important;
+  }
   .entry::before {
     content: none !important;
   }
