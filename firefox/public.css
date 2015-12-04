@@ -144,13 +144,13 @@
     transition: none;
   }
   video:hover {
-    border: 1em solid violet;
+    border: 1em solid violet !important;
   }
   img[src$="gif"]:hover {
-    border: 1em solid green;
+    border: 1em solid green !important;
   }
   .aftr {
-    border: 1em solid aqua;
+    border: 1em solid aqua !important;
   }
 }
 @-moz-document url-prefix(http://superuser.com) {
