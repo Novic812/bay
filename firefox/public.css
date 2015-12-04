@@ -139,14 +139,18 @@
   }
 }
 @-moz-document url-prefix(http) {
+  img, video {
+    box-sizing: border-box;
+    transition: none;
+  }
   video:hover {
-    outline: 1em solid violet;
+    border: 1em solid violet;
   }
   img[src$="gif"]:hover {
-    outline: 1em solid green;
+    border: 1em solid green;
   }
   .aftr {
-    outline: 1em solid aqua;
+    border: 1em solid aqua;
   }
 }
 @-moz-document url-prefix(http://superuser.com) {
