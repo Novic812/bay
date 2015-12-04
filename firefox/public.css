@@ -35,9 +35,13 @@
     display: none !important;
   }
 }
-@-moz-document domain(imgur.com) {
+@-moz-document domain(imgur.com), domain(gfycat.com) {
   .post.red, .grid.down {
     display: none !important;
+  }
+  div, video {
+    max-height: 90vh;
+    max-width: 90vw;
   }
 }
 @-moz-document domain(radd.it) {
@@ -139,16 +143,14 @@
   }
 }
 @-moz-document url-prefix(http) {
-  img, video {
+  video, img[src$=gif] {
     box-sizing: border-box;
-    max-height: 90vh;
-    max-width: 90vw;
     transition: none;
   }
   video:hover {
     border: 1em solid violet !important;
   }
-  img[src$="gif"]:hover {
+  img[src$=gif]:hover {
     border: 1em solid green !important;
   }
   .aftr {
