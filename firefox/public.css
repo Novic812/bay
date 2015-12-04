@@ -141,6 +141,8 @@
 @-moz-document url-prefix(http) {
   img, video {
     box-sizing: border-box;
+    max-height: 90vh;
+    max-width: 90vw;
     transition: none;
   }
   video:hover {
