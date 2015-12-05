@@ -142,20 +142,20 @@
   }
 }
 @-moz-document url-prefix(http) {
-  video, img[src$=gif] {
-    box-sizing: border-box;
-    max-height: 90vh;
-    max-width: 90vw;
-    transition: none;
-  }
-  video:hover {
-    border: 1em solid violet !important;
+  .aftr {
+    border: 1em solid aqua !important;
   }
   img[src$=gif]:hover {
     border: 1em solid green !important;
   }
-  .aftr {
-    border: 1em solid aqua !important;
+  video[loop]:hover, video.aftr:hover {
+    border: 1em solid violet !important;
+  }
+  img[src$=gif], video[loop], video.aftr {
+    box-sizing: border-box;
+    max-height: 90vh;
+    max-width: 90vw;
+    transition: none;
   }
 }
 @-moz-document url-prefix(http://superuser.com) {
