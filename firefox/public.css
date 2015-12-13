@@ -143,13 +143,13 @@
 }
 @-moz-document url-prefix(http) {
   .aftr {
-    border: 1em solid aqua !important;
+    border: thick solid aqua !important;
   }
   img[src$=gif]:hover {
-    border: 1em solid green !important;
+    border: thick solid green !important;
   }
   video[loop]:hover, video.aftr:hover {
-    border: 1em solid violet !important;
+    border: thick solid violet !important;
   }
   img[src$=gif], video[loop], video.aftr {
     box-sizing: border-box;
