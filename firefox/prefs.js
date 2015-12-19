@@ -1,6 +1,7 @@
 /*
-- user.js is bad because it will trash any changes you have made on restart
 - must use ‘false’ where appropriate; ‘0’ will not work
+- user.js is bad. GUI changes get saved to prefs.js, which gets overwritten by
+  user.js on restart
 */
 
 /* always ask me where to save files */
@@ -36,6 +37,9 @@ user_pref('browser.urlbar.autoFill', false);
 
 /* do not trim URLs */
 user_pref('browser.urlbar.trimURLs', false);
+
+/* search with Google */
+user_pref('browser.urlbar.unifiedcomplete', false);
 
 /* dxr.mozilla.org/mozilla-central/source/services/datareporting/policy.jsm */
 user_pref('datareporting.policy.dataSubmissionPolicyAcceptedVersion', 2);
