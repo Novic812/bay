@@ -141,25 +141,6 @@
     display: none !important;
   }
 }
-@-moz-document url-prefix(http) {
-  .aftr {
-    border: thick solid aqua !important;
-  }
-  img[src$=gif]:hover {
-    border: thick solid green !important;
-  }
-  video[loop]:hover, video.aftr:hover {
-    border: thick solid violet !important;
-  }
-  img[src$=gif], video[loop], video.aftr {
-    box-sizing: border-box;
-    max-height: 90vh;
-    max-width: 90vw;
-    position: relative;
-    transition: none;
-    z-index: 10;
-  }
-}
 @-moz-document url-prefix(http://superuser.com) {
   /*
   - filter out meta.superuser.com
