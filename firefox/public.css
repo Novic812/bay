@@ -53,11 +53,12 @@
     flex: 1 0 426px !important;
     padding: 0 !important;
   }
-  .quickLoad {
+  .select-dropdown.quickLoad {
     display: block !important;
-    height: 100vh !important;
     flex: 0 0 320px !important;
+    height: 100vh !important;
     max-height: none !important;
+    opacity: 1 !important;
     position: static !important;
   }
   footer, nav, .container.buckets, .container.feeds,
