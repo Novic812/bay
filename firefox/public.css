@@ -44,38 +44,31 @@
   }
 }
 @-moz-document domain(radd.it) {
-  /*
-  FIXME - stop playlist from overlapping video on small window
-  stackoverflow.com/q/17217766
-  */
-  .hide-on-embed, /* title */
-  .navBtns, /* donate */
-  .opts, /* search */
-  #naviDown, /* previous next down */
-  .grid, /* loaded */
-  .feeds, /* r/radd_it */
-  footer, /* radd.it/music */
-  _ {
+  footer, nav, .container.buckets, .container.feeds,
+  .container.grid, .section.opts {
     display: none !important;
   }
-  nav {
-    position: static !important;
+  body {
+    display: flex !important;
+    overflow: visible !important;
   }
-  .media {
-    background: #263238 !important;
+  .container.media {
+    background: 0 !important;
+    flex: 1 0 426px !important;
     padding: 0 !important;
   }
-  .content {
+  .section.content {
     padding: 0 !important;
   }
-  ul.quickLoad {
+  iframe {
+    width: 100% !important;
+  }
+  .quickLoad {
     display: block !important;
-    height: 100% !important;
+    height: 100vh !important;
+    flex: 0 0 320px !important;
     max-height: none !important;
-    width: 320px !important;
-    left: auto !important;
-    right: 0 !important;
-    top: 0 !important;
+    position: static !important;
   }
 }
 @-moz-document domain(reddit.com) {
