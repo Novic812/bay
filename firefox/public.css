@@ -44,10 +44,6 @@
   }
 }
 @-moz-document domain(radd.it) {
-  footer, nav, .container.buckets, .container.feeds,
-  .container.grid, .section.opts {
-    display: none !important;
-  }
   body {
     display: flex !important;
     overflow: visible !important;
@@ -57,18 +53,22 @@
     flex: 1 0 426px !important;
     padding: 0 !important;
   }
-  .section.content {
-    padding: 0 !important;
-  }
-  iframe {
-    width: 100% !important;
-  }
   .quickLoad {
     display: block !important;
     height: 100vh !important;
     flex: 0 0 320px !important;
     max-height: none !important;
     position: static !important;
+  }
+  footer, nav, .container.buckets, .container.feeds,
+  .container.grid, .section.opts {
+    display: none !important;
+  }
+  iframe {
+    width: 100% !important;
+  }
+  .section.content {
+    padding: 0 !important;
   }
 }
 @-moz-document domain(reddit.com) {
