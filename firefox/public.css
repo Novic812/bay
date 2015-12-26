@@ -65,6 +65,7 @@
     display: none !important;
   }
   iframe {
+    height: 480px !important;
     width: 100% !important;
   }
   .section.content {
