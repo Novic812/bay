@@ -60,14 +60,16 @@
     height: 100vh !important;
     max-height: none !important;
     opacity: 1 !important;
+    overflow-y: visible !important;
     position: static !important;
   }
   footer, nav, .container.buckets, .container.feeds,
   .container.grid, .section.opts {
     display: none !important;
   }
-  iframe {
+  .media-dsp {
     height: 480px !important;
+    max-width: none !important;
     width: 100% !important;
   }
   .section.content {
