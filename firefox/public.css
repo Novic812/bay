@@ -46,7 +46,8 @@
 @-moz-document domain(radd.it) {
   body {
     display: flex !important;
-    overflow: visible !important;
+    overflow-x: visible !important;
+    overflow-y: hidden !important;
   }
   .container.media {
     background: 0 !important;
