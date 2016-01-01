@@ -5,8 +5,7 @@ Browser console command line:
 
 Expire all favicons:
 
-    Components.classes['@mozilla.org/browser/favicon-service;1']
-    .getService(Components.interfaces.nsIFaviconService).expireAllFavicons()
+    PlacesUtils.favicons.expireAllFavicons()
 -->
 <h2>Alpha</h2>
 <a href='https://cygwin.com/ml/cygwin'>Cygwin mailing list</a>
