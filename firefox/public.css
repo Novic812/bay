@@ -44,6 +44,7 @@
   }
 }
 @-moz-document domain(radd.it) {
+  /* FIXME - bookmarklet instead - load ALL songs - shuffle them */
   body {
     display: flex !important;
     overflow-x: visible !important;
@@ -105,6 +106,9 @@
   }
 }
 @-moz-document domain(stackoverflow.com), domain(superuser.com) {
+  [href*="scifi.stackexchange.com"] {
+    display: none !important;
+  }
   #hot-network-questions li a:visited, /* hot network questions */
   .answer-link a:visited, /* user > activity > answers */
   .community-bulletin a:visited, /* hot meta posts */
