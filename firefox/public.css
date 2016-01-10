@@ -105,7 +105,8 @@
     display: none !important;
   }
 }
-@-moz-document domain(stackoverflow.com), domain(superuser.com) {
+@-moz-document domain(stackoverflow.com), domain(superuser.com),
+domain(stackexchange.com) {
   [href*="scifi.stackexchange.com"] {
     display: none !important;
   }
