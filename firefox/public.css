@@ -107,6 +107,12 @@
 }
 @-moz-document domain(stackoverflow.com), domain(superuser.com),
 domain(stackexchange.com) {
+  #sidebar {
+    width: 250px !important;
+  }
+  .post-text {
+    width: 710px !important;
+  }
   [href*="scifi.stackexchange.com"] {
     display: none !important;
   }
