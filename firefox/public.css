@@ -113,9 +113,6 @@ domain(stackexchange.com) {
   .post-text {
     width: 710px !important;
   }
-  [href*="scifi.stackexchange.com"] {
-    display: none !important;
-  }
   #hot-network-questions li a:visited, /* hot network questions */
   .answer-link a:visited, /* user > activity > answers */
   .community-bulletin a:visited, /* hot meta posts */
