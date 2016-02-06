@@ -65,7 +65,7 @@
     position: static !important;
   }
   footer, nav, .container.buckets, .container.feeds,
-  .container.grid, .section.opts {
+  .container.links, .section.opts {
     display: none !important;
   }
   .media-dsp {
