@@ -74,17 +74,14 @@ cd console
 cd hkcu:\software\microsoft\windows\currentversion
 sp explorer link ([byte[]](0,0,0,0))
 
-# need homedrive for man
-@{
-  CYGWIN = 'noDosFileWarning'
-  PATH = @(
-    'c:\windows\system32'
-    'c:\windows\system32\windowspowershell\v1.0'
-    'd:\documents'
-    'd:\git\a\misc'
-  ) -join ';'
-} | % getEnumerator | % {
-  [environment]::setEnvironmentVariable($_.key, $_.value, 'm')
+# path
+@(
+  'c:\windows\system32'
+  'c:\windows\system32\windowspowershell\v1.0'
+  'd:\documents'
+  'd:\git\a\misc'
+) -join ';' | % {
+  [environment]::setEnvironmentVariable('path', $_, 'm')
 }
 
 # clear explorer and wallpaper history
