@@ -79,7 +79,7 @@
 }
 @-moz-document domain(reddit.com) {
   body {
-    background: 0 !important;
+    background-image: none !important;
   }
   p {
     font-family: verdana !important;
