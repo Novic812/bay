@@ -78,6 +78,9 @@
   }
 }
 @-moz-document domain(reddit.com) {
+  body {
+    background: 0 !important;
+  }
   p {
     font-family: verdana !important;
   }
