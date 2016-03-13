@@ -81,8 +81,9 @@
   body {
     background-image: none !important;
   }
-  p {
+  .md p {
     font-family: verdana !important;
+    line-height: 20px !important;
   }
   .down {
     display: block !important;
