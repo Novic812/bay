@@ -1,17 +1,17 @@
 HISTCONTROL=ignoredups
 HISTIGNORE=c
 HISTSIZE=
-PATH=$(command -p awk '!$2{printf b++?":"$0:$0}' ~/.path)
+PATH=$(command -p awk '!/#/{printf b++?":"$0:$0}' ~/.path)
 PROMPT_COMMAND='history -a'
 PS1='\e];\s\a\n\e[33m\w \e[36m$(nr)\e[m\n$ '
 export EDITOR='cygstart -w'
 export LANG=en_US.utf8 # case insensitive sort
 
-function c {
+c() {
   printf '\ec'
 }
 
-function ish {
+ish() {
   if [ -v cn[*] ]
   then
     unset cn
@@ -21,7 +21,7 @@ function ish {
   fi
 }
 
-function length {
+length() {
   awk '
   {
     foo[$0] = length
@@ -33,10 +33,10 @@ function length {
   '
 }
 
-function nr {
+nr() {
   if [ -d .git ]
   then
-    if type git &>/dev/null
+    if [ -e /bin/git ]
     then
       git symbolic-ref -q --short HEAD || git name-rev --name-only HEAD
       if [ ! -g .git/config ]
