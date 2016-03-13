@@ -1,5 +1,3 @@
-# FIXME rewrite this as batch file or bash if possible
-# FIXME register .sh and stuff so it is not unknown
 pushd
 # need if you call from start menu
 cp $PSScriptRoot\profile.ps1 $pshome
@@ -16,26 +14,28 @@ cd 'hklm:\software\microsoft\windows\currentversion\app paths'
 }
 
 # Notepad2
-@{
-  '.css'    = 'cssfile',                      $null
-  '.ini'    = 'inifile',                      $null
-  '.nfo'    = 'txtfile',                      $null
-  '.txt'    = 'txtfile',                      $null
-  'unknown' = 'unknown',                      $null
-  '.bat'    = 'batfile',                      '"%1" %*'
-  '.cmd'    = 'cmdfile',                      '"%1" %*'
-  '.htm'    = 'firefoxhtml',                  'firefox "%1"'
-  '.xml'    = 'firefoxhtml',                  'firefox "%1"'
-  '.ps1'    = 'microsoft.powershellscript.1', 'powershell "%1"'
-  '.reg'    = 'regfile',                      'regedit "%1"'
-  '.js'     = 'jsfile',                       'wscript "%1"'
-} | % getEnumerator | % {
-  $k1 = $_.key
-  $k2 = $_.value[0]
-  $pm = $_.value[1]
+@(
+  ($null, 'unknown', $null),
+  ('.css', 'cssfile', $null),
+  ('.ini', 'inifile', $null),
+  ('.nfo', 'txtfile', $null),
+  ('.txt', 'txtfile', $null),
+  ('.bat', 'batfile', '"%1" %*'),
+  ('.cmd', 'cmdfile', '"%1" %*'),
+  ('.htm', 'firefoxhtml', 'firefox "%1"'),
+  ('.xml', 'firefoxhtml', 'firefox "%1"'),
+  ('.ps1', 'microsoft.powershellscript.1', 'powershell "%1"'),
+  ('.reg', 'regfile', 'regedit "%1"'),
+  ('.js', 'jsfile', 'wscript "%1"')
+) | % {
+  $k1 = $_[0]
+  $k2 = $_[1]
+  $pm = $_[2]
   cd hklm:\software\classes
-  si $k1 $k2
-  sp $k1 perceivedtype $null
+  if ($k1) {
+    si $k1 $k2
+    sp $k1 perceivedtype $null
+  }
   ni -f $k2\shell
   cd $k2\shell
   if ($pm) {
