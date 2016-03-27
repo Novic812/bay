@@ -3,11 +3,6 @@
     display: none !important;
   }
 }
-@-moz-document domain(di.fm) {
-  #modal-region, .modal-backdrop {
-    display: none !important;
-  }
-}
 @-moz-document domain(github.com) {
   .comment-body pre, .highlight td {
     font-size: 14px !important;
@@ -17,15 +12,7 @@
   }
 }
 @-moz-document domain(google.com) {
-  /*
-  I want to kill ‘Unread notifications’ in Gmail. However they keep changing
-  the class name. I need to keep track here of what I have tried so that I can
-  find a pattern and use something like [class^="gb_8"]. Here is list of what I
-  have tried, including current try:
-  .gb_8a
-  #gbwa + div
-  */
-  #gbwa + div {
+  [aria-label="promo"] {
     display: none !important;
   }
   /*
