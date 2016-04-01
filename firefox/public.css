@@ -81,9 +81,7 @@
   .entry::before {
     content: none !important;
   }
-  #eu-cookie-policy,
-  .side-message,
-  .goldvertisement {
+  .spacer:nth-child(5) ~ .spacer {
     display: none !important;
   }
   body:lang(np) .arrow,
