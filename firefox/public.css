@@ -81,7 +81,7 @@
   .entry::before {
     content: none !important;
   }
-  .spacer:nth-child(n+6) {
+  .goldvertisement, .sidebox:not(.create):not(.submit) {
     display: none !important;
   }
   body:lang(np) .arrow,
