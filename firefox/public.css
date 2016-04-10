@@ -95,7 +95,7 @@
   }
 }
 @-moz-document domain(stackoverflow.com), domain(superuser.com),
-domain(stackexchange.com), domain(serverfault.com) {
+domain(stackexchange.com), domain(serverfault.com), domain(askubuntu.com) {
   #sidebar {
     width: 250px !important;
   }
