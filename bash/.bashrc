@@ -3,12 +3,12 @@ HISTIGNORE=c
 HISTSIZE=
 PATH=$(command -p awk '!/#/{printf b++?":"$0:$0}' ~/.path)
 PROMPT_COMMAND='history -a'
-PS1='\e];\s\a\n\e[33m\w \e[36m$(nr)\e[m\n$ '
+PS1='\033];\s\a\n\033[33m\w \033[36m$(nr)\033[m\n$ '
 export EDITOR='cygstart -w'
 export LANG=en_US.utf8 # case insensitive sort
 
 c() {
-  printf '\ec'
+  printf '\33c'
 }
 
 ish() {
