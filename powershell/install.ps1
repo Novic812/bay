@@ -59,8 +59,8 @@ cd hkcu:\
 sp -t d Console CodePage 0xfde9
 sp -t d Console QuickEdit 1
 '0x{0:x4}{1:x4}' | % {
-  sp -t d console WindowPosition ($_ -f 400,900)
-  sp console WindowSize     ($_ -f  22, 80)
+  sp -t d console WindowPosition ($_ -f 300, 900)
+  sp console WindowSize ($_ -f 24, 80)
 }
 cd console
 % -pv 1 {'%systemroot%_system32_windowspowershell_v1.0_powershell.exe'} |
