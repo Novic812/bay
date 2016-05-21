@@ -1,6 +1,9 @@
 [color]
 ui = true
 
+[color "diff"]
+meta = yellow bold
+
 [core]
 whitespace = cr-at-eol
 
