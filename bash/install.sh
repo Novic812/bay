@@ -13,8 +13,5 @@ else
 fi
 find "$PWD" -type f -name '.*' -exec ln -sft ~ {} +
 
-# restart bash
-j=`cygpath -am .`
-cd "$j"
-cygstart bash
-kill -7 "$PPID"
+# close
+echo 'you must close shell to apply changes'
