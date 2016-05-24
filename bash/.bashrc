@@ -4,6 +4,7 @@ HISTSIZE=
 PATH=$(command -p awk '!/#/{printf b++?":"$0:$0}' ~/.path)
 PROMPT_COMMAND='history -a'
 PS1='\033];\s\a\n\033[33m\w \033[36m$(nr)\033[m\n$ '
+export CYGWIN=winsymlinks:native
 export EDITOR='cygstart -w'
 export LANG=en_US.utf8 # case insensitive sort
 
