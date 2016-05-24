@@ -1,11 +1,9 @@
 #!/bin/dash
-# PATH is defined in ~/.bashrc
-# we must assume this has not happened yet
-PATH=/bin
-cp fstab /etc
+. ./.bashrc
+ln -sf "$PWD"/fstab /etc
 mount -a
 
-# copy dotfiles
+# symlink dotfiles
 mkdir -p ~
 if [ ! -e .bash_history -a -e ~/.bash_history ]
 then
@@ -13,7 +11,7 @@ then
 else
   >> .bash_history
 fi
-cp .* ~
+find "$PWD" -type f -name '.*' -exec ln -sft ~ {} +
 
 # restart bash
 j=`cygpath -am .`
