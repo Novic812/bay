@@ -12,7 +12,7 @@ history -w
 cp .* "$HOME"
 
 # restart bash
-pw=$(cygpath -m ~+)
-cd "$pw"
+j=`cygpath -am .`
+cd "$j"
 cygstart bash
-kill -7 $PPID
+kill -7 "$PPID"
