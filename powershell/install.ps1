@@ -79,7 +79,6 @@ sp explorer link ([byte[]](0,0,0,0))
   'c:\windows\system32'
   'c:\windows\system32\windowspowershell\v1.0'
   'd:\documents'
-  'd:\git\a\misc'
 ) -join ';' | % {
   [environment]::setEnvironmentVariable('path', $_, 'm')
 }
