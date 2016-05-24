@@ -1,7 +1,7 @@
 HISTCONTROL=ignoredups
 HISTIGNORE=c
 HISTSIZE=
-PATH=$(command -p awk '!/#/{printf b++?":"$0:$0}' ~/.path)
+PATH=/usr/local/bin:/usr/bin
 PROMPT_COMMAND='history -a'
 PS1='\033];\s\a\n\033[33m\w \033[36m$(nr)\033[m\n$ '
 export CYGWIN=winsymlinks:native
