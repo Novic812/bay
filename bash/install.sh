@@ -5,11 +5,10 @@ PATH=/bin
 cp fstab /etc
 mount -a
 
-# PS1 must be exported before you can use ~
-# we must assume this has not happened yet
-mkdir -p "$HOME"
+# copy dotfiles
+mkdir -p ~
 history -w
-cp .* "$HOME"
+cp .* ~
 
 # restart bash
 j=`cygpath -am .`
