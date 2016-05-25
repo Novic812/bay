@@ -1,7 +1,7 @@
 HISTCONTROL=ignoredups
 HISTIGNORE=c
 HISTSIZE=
-PATH=/usr/local/bin:/usr/bin
+PATH=/usr/local/bin:/usr/bin:$PATH # schtasks
 PROMPT_COMMAND='history -a'
 PS1='\033];\s\a\n\033[33m\w \033[36m$(nr)\033[m\n$ '
 export CYGWIN=winsymlinks:native
