@@ -8,7 +8,6 @@
 user_pref('browser.download.folderList', 0);
 
 /* disable sync promo */
-user_pref('browser.migration.version', 22);
 user_pref('browser.syncPromoViewsLeftMap', '{"bookmarks":0}');
 
 /* disable new tab page */
@@ -34,6 +33,7 @@ user_pref('browser.taskbar.lists.enabled', false);
 user_pref('browser.urlbar.autoFill', false);
 
 /* disable switch to tab */
+user_pref('browser.migration.version', 26);
 user_pref('browser.urlbar.suggest.openpage', false);
 
 /* do not trim URLs */
