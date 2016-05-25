@@ -5,6 +5,7 @@ ui = true
 meta = yellow bold
 
 [core]
+pager =
 whitespace = cr-at-eol
 
 [credential]
@@ -12,10 +13,6 @@ helper = store
 
 [hub]
 protocol = https
-
-[imap]
-folder = [Gmail]/Drafts
-host = imaps://imap.gmail.com
 
 [push]
 default = current
