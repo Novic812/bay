@@ -33,6 +33,9 @@ user_pref('browser.taskbar.lists.enabled', false);
 /* disable URL autocomplete */
 user_pref('browser.urlbar.autoFill', false);
 
+/* disable switch to tab */
+user_pref('browser.urlbar.suggest.openpage', false);
+
 /* do not trim URLs */
 user_pref('browser.urlbar.trimURLs', false);
 
