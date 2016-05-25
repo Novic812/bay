@@ -75,13 +75,7 @@ cd hkcu:\software\microsoft\windows\currentversion
 sp explorer link ([byte[]](0,0,0,0))
 
 # path
-@(
-  'c:\windows\system32'
-  'c:\windows\system32\windowspowershell\v1.0'
-  'd:\documents'
-) -join ';' | % {
-  [environment]::setEnvironmentVariable('path', $_, 'm')
-}
+[environment]::setEnvironmentVariable('path', 'c:\windows\system32', 'm')
 
 # clear explorer and wallpaper history
 cd hkcu:\software\microsoft\windows\currentversion\explorer
