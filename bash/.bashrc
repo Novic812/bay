@@ -13,12 +13,12 @@ c() {
 }
 
 ish() {
-  if [ -v cn[*] ]
+  if [ -v j[*] ]
   then
-    unset cn
+    unset j
     . ~/.bashrc
   else
-    PS1='${cn[*]+${cn[\#]-=> $?\n\n}}${cn[\#]=}$ '
+    PS1='${j[*]+${j[\#]-=> $?\n\n}}${j[\#]=}$ '
   fi
 }
 
