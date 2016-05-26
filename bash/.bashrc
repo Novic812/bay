@@ -42,16 +42,13 @@ length() {
 }
 
 nr() {
-  if [ -d .git ]
+  if [ -d .git ] && type git 2>&1 >/dev/null
   then
-    if [ -e /bin/git ]
+    git symbolic-ref -q --short HEAD || git name-rev --name-only HEAD
+    if [ ! -g .git/config ]
     then
-      git symbolic-ref -q --short HEAD || git name-rev --name-only HEAD
-      if [ ! -g .git/config ]
-      then
-        git config core.filemode 0
-        chmod +s .git/config
-      fi
+      git config core.filemode 0
+      chmod +s .git/config
     fi
   fi
 }
