@@ -25,11 +25,18 @@ ish() {
 length() {
   awk '
   {
-    foo[$0] = length
+    a = 1
+    while (b[a][length]) a++
+    b[a][length] = $0
   }
   END {
-    PROCINFO["sorted_in"] = "@val_num_asc"
-    for (bar in foo) print bar
+    for (c in b[1]) {
+      a = 1
+      while (b[a][c]) {
+        print b[a][c]
+        a++
+      }
+    }
   }
   '
 }
