@@ -50,6 +50,9 @@ user_pref('datareporting.policy.dataSubmissionPolicyNotifiedTime',
 /* blocklist.xml */
 user_pref('extensions.blocklist.enabled', false);
 
+/* disable pocket */
+user_pref('extensions.pocket.enabled', false);
+
 /* about:config warning */
 user_pref('general.warnOnAboutConfig', false);
 
