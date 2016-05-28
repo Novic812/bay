@@ -2,8 +2,7 @@ HISTCONTROL=ignoredups
 HISTIGNORE=c
 HISTSIZE=
 PATH=/usr/local/bin:/usr/bin:$PATH # schtasks
-PROMPT_COMMAND='history -a'
-PS1='\033];\s\a\n\033[33m\w \033[36m$(nr)\033[m\n$ '
+PROMPT_COMMAND=nr
 export CYGWIN=winsymlinks:native
 export EDITOR='cygstart -w'
 export LANG=en_US.utf8 # case insensitive sort
@@ -42,13 +41,26 @@ length() {
 }
 
 nr() {
-  if [ -d .git ] && type git 2>&1 >/dev/null
+  history -a
+  if [ "$OLDPWD" ]
   then
-    git symbolic-ref -q --short HEAD || git name-rev --name-only HEAD
+    if [ . -ot "$OLDPWD" ]
+    then touch .
+    elif [ / -ot .git/HEAD ]
+    then touch /
+    else return
+    fi
+  else OLDPWD=/
+  fi
+  if [ -e .git ]
+  then
     if [ ! -g .git/config ]
     then
       git config core.filemode 0
       chmod +s .git/config
     fi
+    local ec=`git name-rev --name-only @`
+    PS1="\033];\s\a\n\033[33m\w \033[36m$ec\033[m\n$ "
+  else PS1='\033];\s\a\n\033[33m\w\033[m\n$ '
   fi
 }
