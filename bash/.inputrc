@@ -4,10 +4,10 @@
 set bell-style none
 
 # Ctrl →
-"\e[1;5C": forward-word
+"\33[1;5C": forward-word
 
 # Ctrl ←
-"\e[1;5D": backward-word
+"\33[1;5D": backward-word
 
 # Alt F4
-"\e\e[[D": "\4"
+"\33\33[[D": "\4"
