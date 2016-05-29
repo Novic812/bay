@@ -2,7 +2,7 @@ HISTCONTROL=ignoredups
 HISTIGNORE=c
 HISTSIZE=
 PATH=/usr/local/bin:/usr/bin:$PATH # schtasks
-PROMPT_COMMAND=nr
+PROMPT_COMMAND=gsh
 export CYGWIN=winsymlinks:native
 export EDITOR='cygstart -w'
 export LANG=en_US.utf8 # case insensitive sort
@@ -12,35 +12,36 @@ c() {
 }
 
 ish() {
-  if [ -v j[*] ]
+  if [ -v ISH[*] ]
   then
-    unset j
+    unset ISH
     . ~/.bashrc
   else
-    PS1='${j[*]+${j[\#]-=> $?\n\n}}${j[\#]=}$ '
+    unset PROMPT_COMMAND
+    PS1='${ISH[*]+${ISH[\#]-=> $?\n\n}}${ISH[\#]=}$ '
   fi
 }
 
 length() {
   awk '
   {
-    a = 1
-    while (b[a][length]) a++
-    b[a][length] = $0
+    alf = 1
+    while (bra[alf][length]) alf++
+    bra[alf][length] = $0
   }
   END {
-    for (c in b[1]) {
-      a = 1
-      while (b[a][c]) {
-        print b[a][c]
-        a++
+    for (cha in bra[1]) {
+      alf = 1
+      while (bra[alf][cha]) {
+        print bra[alf][cha]
+        alf++
       }
     }
   }
   '
 }
 
-nr() {
+gsh() {
   history -a
   if [ "$OLDPWD" ]
   then
@@ -59,8 +60,8 @@ nr() {
       git config core.filemode 0
       chmod +s .git/config
     fi
-    local ec=`git name-rev --name-only @`
-    PS1="\033];\s\a\n\033[33m\w \033[36m$ec\033[m\n$ "
+    local gnr=`git name-rev --name-only @`
+    PS1="\033];\s\a\n\033[33m\w \033[36m$gnr\033[m\n$ "
   else PS1='\033];\s\a\n\033[33m\w\033[m\n$ '
   fi
 }
