@@ -14,9 +14,9 @@ c() {
 ish() {
   if [ "${ISH[*]+1}" ]
   then
-    . ~/.bashrc
+    PROMPT_COMMAND=gsh
   else
-    unset PROMPT_COMMAND
+    PROMPT_COMMAND='history -a'
     PS1='${ISH[*]+${ISH[\#]-=> $?\n\n}}${ISH[\#]=}$ '
   fi
 }
@@ -42,25 +42,16 @@ length() {
 
 gsh() {
   history -a
-  if [ "$OLDPWD" ]
-  then
-    if [ . -ot "$OLDPWD" ]
-    then touch .
-    elif [ / -ot .git/HEAD ]
-    then touch /
-    elif [ "${ISH[*]+1}" ]
-    then unset ISH
-    else return
-    fi
-  else OLDPWD=/
+  if [ "$OLDPWD" != "$PWD" ]
+  then OLDPWD=$PWD
+  elif [ / -ot .git/HEAD ]
+  then touch /
+  elif [ "${ISH[*]+1}" ]
+  then unset ISH
+  else return
   fi
-  if [ -e .git ]
+  if [ -d .git/logs ]
   then
-    if [ ! -g .git/config ]
-    then
-      git config core.filemode 0
-      chmod +s .git/config
-    fi
     local gnr=`git name-rev --name-only @`
     PS1="\033];\s\a\n\033[33m\w \033[36m$gnr\033[m\n$ "
   else PS1='\033];\s\a\n\033[33m\w\033[m\n$ '
