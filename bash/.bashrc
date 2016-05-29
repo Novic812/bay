@@ -12,9 +12,8 @@ c() {
 }
 
 ish() {
-  if [ -v ISH[*] ]
+  if [ "${ISH[*]+1}" ]
   then
-    unset ISH
     . ~/.bashrc
   else
     unset PROMPT_COMMAND
@@ -49,6 +48,8 @@ gsh() {
     then touch .
     elif [ / -ot .git/HEAD ]
     then touch /
+    elif [ "${ISH[*]+1}" ]
+    then unset ISH
     else return
     fi
   else OLDPWD=/
