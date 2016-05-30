@@ -77,4 +77,4 @@ rundll32 inetcpl.cpl ClearMyTracksByProcess 1
 
 # hide file extensions
 reg add 'hkcu\software\microsoft\windows\currentVersion\explorer\advanced' /f \
-  /v hideFileExt /d 0
+  /v hideFileExt /t reg_dword /d 0
