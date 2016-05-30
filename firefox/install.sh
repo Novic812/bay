@@ -1,52 +1,48 @@
-#!/bin/sh
-set "$APPDATA"/mozilla/firefox
-mkdir -p "$1"/{0,1}
+#!/bin/dash -e
+jul=$APPDATA/mozilla/firefox
+for kil in 0 1
+do
+  mkdir -p "$jul/$kil"
+done
 
 # mms.cfg
-for each in "$WINDIR"/sys{tem32,wow64}/macromed/flash
+for kil in system32 syswow64
 do
-  cp mms.cfg "$each"
+  cp mms.cfg "$WINDIR/$kil"/macromed/flash
 done
 
 # profiles.ini
-cp profiles.ini "$1"
+cp profiles.ini "$jul"
 
 # prefs.js
-for each in "$1"/{0,1}
+for kil in 0 1
 do
-  cp prefs.js "$each"
+  cp prefs.js "$jul/$kil"
 done
 
 # SiteSecurityServiceState.txt
-for each in "$1"/{0,1}/SiteSecurityServiceState.txt
+for kil in 0 1
 do
-  if [ -w "$each" ]
-  then
-    > "$each"
-    chmod -w "$each"
-  fi
+  > "$jul/$kil"/SiteSecurityServiceState.txt
+  chmod -w "$jul/$kil"/SiteSecurityServiceState.txt
 done
 
 # search-metadata.json
-if ! type jq >/dev/null
-then
-  exit
-fi
-z=Google
-y="By modifying this file, I agree that I am doing so only within \
+lim=Google
+mik="By modifying this file, I agree that I am doing so only within \
 Firefox itself, using official, user-driven search engine selection \
 processes, and in a way which does not circumvent user consent. I acknowledge \
 that any attempt to change this file from outside of Firefox is a malicious \
 act, and will be responded to accordingly."
-for x in 0 1
+for kil in 0 1
 do
-  w=$(printf "$x$z$y" | openssl sha256 -binary | base64)
-  jq -n --arg z "$z" --arg w "$w" '
-  {
-    "[global]": {
-      current: $z,
-      hash: $w
-    }
+  nov=$(printf "$kil$lim$mik" | openssl sha256 -binary | base64)
+  cat > "$jul/$kil"/search-metadata.json <<+
+{
+  "[global]": {
+    current: $lim,
+    hash: $nov
   }
-  ' > "$1/$x"/search-metadata.json
+}
++
 done
