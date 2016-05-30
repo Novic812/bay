@@ -4,4 +4,4 @@ Check each folder for install script
 
 ### Thanks
 
-[Mathias Bynens](http://github.com/mathiasbynens/dotfiles)
+[Mathias Bynens](//github.com/mathiasbynens/dotfiles)
