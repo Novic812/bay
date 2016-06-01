@@ -4,7 +4,7 @@
   }
 }
 @-moz-document domain(github.com) {
-  .boxed-group:not(#your_repos) {
+  .boxed-group[role]:not(.repos) {
     display: none !important;
   }
   .comment-body pre, .highlight td {
