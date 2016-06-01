@@ -1,10 +1,11 @@
+EDITOR=wed
 HISTCONTROL=ignoredups
 HISTIGNORE=c
 HISTSIZE=
 PATH=/usr/local/bin:/usr/bin:$PATH # schtasks
 PROMPT_COMMAND=gsh
 export CYGWIN=winsymlinks:native
-export EDITOR='cygstart -w'
+export GIT_EDITOR='notepad2 "$(cygpath -w "$1")" #'
 export LANG=en_US.utf8 # case insensitive sort
 
 c() {
@@ -56,4 +57,8 @@ gsh() {
     PS1="\033];\s\a\n\033[33m\w \033[36m$gnr\033[m\n$ "
   else PS1='\033];\s\a\n\033[33m\w\033[m\n$ '
   fi
+}
+
+wed() {
+  notepad2 "$(cygpath -w "$1")"
 }

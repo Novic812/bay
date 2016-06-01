@@ -61,7 +61,7 @@ reg add 'hkcu\software\microsoft\windows\currentVersion\explorer' /f /v link \
   /t reg_binary /d 00000000
 
 # path
-setx /m path 'c:\windows\system32'
+setx /m path 'c:\windows\system32;c:\program files\notepad2'
 
 # clear explorer and wallpaper history
 zu='hkcu\software\microsoft\windows\currentVersion\explorer\'
