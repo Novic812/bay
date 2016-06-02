@@ -4,6 +4,7 @@ HISTIGNORE=c
 HISTSIZE=
 PATH=/usr/local/bin:/usr/bin:$PATH # schtasks
 PROMPT_COMMAND=gsh
+export BROWSER=firefox
 export CYGWIN=winsymlinks:native
 export GIT_EDITOR='notepad2 "$(cygpath -w "$1")" #'
 export LANG=en_US.utf8 # case insensitive sort
