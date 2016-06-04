@@ -10,6 +10,7 @@ do
   /f /d "$dn$bn"
 done <<+
 c:\cygwin64\bin\,bash.exe
+c:\cygwin64\bin\,cygstart.exe
 c:\program files\notepad2\,notepad2.exe
 +
 
@@ -47,7 +48,7 @@ null,unknown,null
 # shell options
 for xr in drive directory 'directory\background'
 do
-  reg add 'hkcr\'"$xr"'\shell\Bash\command' /f /d 'cmd /c start /d "%v" bash'
+  reg add 'hkcr\'"$xr"'\shell\Bash\command' /f /d "cygstart -d '%v' bash"
 done
 
 # Console
@@ -73,7 +74,7 @@ c:\program files\mozilla firefox
 zu='hkcu\software\microsoft\windows\currentVersion\explorer\'
 for xr in typedPaths 'wallpapers\images'
 do
-  if reg query "$zu$xr" 2>/dev/null
+  if reg query "$zu$xr" >/dev/null 2>&1
   then reg delete "$zu$xr" /f
   fi
 done
