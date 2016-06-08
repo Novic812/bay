@@ -54,7 +54,7 @@ gsh() {
   fi
   if [ -f .git/index -o -f .git ]
   then
-    local gnr=`git name-rev --name-only @`
+    local gnr=$(git name-rev --name-only @)
     PS1="\033];\s\a\n\033[33m\w \033[36m$gnr\033[m\n$ "
   else PS1='\033];\s\a\n\033[33m\w\033[m\n$ '
   fi
