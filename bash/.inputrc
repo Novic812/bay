@@ -1,4 +1,4 @@
-#-*-sh-*-
+# -*- sh -*-
 
 # Turn off the stupid bell
 set bell-style none
