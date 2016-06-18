@@ -4,7 +4,7 @@
   }
 }
 @-moz-document domain(github.com) {
-  .column:last-child > .boxed-group:not(.repos) {
+  .dashboard-sidebar .boxed-group:not(.repos) {
     display: none !important;
   }
   .comment-body pre, .highlight td {
