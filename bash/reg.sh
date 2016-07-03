@@ -1,4 +1,4 @@
-#!/bin/dash
+#!/bin/dash -e
 ya() {
   printf 0x%04x%04x "$@"
 }
