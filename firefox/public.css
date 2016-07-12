@@ -4,7 +4,7 @@
   }
 }
 @-moz-document domain(github.com) {
-  body {
+  body, .markdown-body {
     font-family: Arial !important;
   }
   .dashboard-sidebar .boxed-group:not(.repos) {
