@@ -10,7 +10,7 @@
   .dashboard-sidebar .boxed-group:not(.repos) {
     display: none !important;
   }
-  .comment-body pre, .highlight td {
+  .comment-body pre, .comment-body code, .highlight td {
     font-size: 14px !important;
   }
   .is-stuck {
