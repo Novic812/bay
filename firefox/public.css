@@ -36,40 +36,6 @@
     text-align: left;
   }
 }
-@-moz-document domain(radd.it) {
-  /* FIXME - bookmarklet instead - load ALL songs - shuffle them */
-  body {
-    display: flex !important;
-    overflow-x: visible !important;
-    overflow-y: hidden !important;
-  }
-  .container.media {
-    background: 0 !important;
-    flex: 1 0 426px !important;
-    padding: 0 !important;
-  }
-  .select-dropdown.quickLoad {
-    display: block !important;
-    flex: 0 0 320px !important;
-    height: 100vh !important;
-    max-height: none !important;
-    opacity: 1 !important;
-    overflow-y: visible !important;
-    position: static !important;
-  }
-  footer, nav, .container.buckets, .container.feeds,
-  .container.links, .section.opts {
-    display: none !important;
-  }
-  .media-dsp {
-    height: 480px !important;
-    max-width: none !important;
-    width: 100% !important;
-  }
-  .section.content {
-    padding: 0 !important;
-  }
-}
 @-moz-document domain(reddit.com) {
   body {
     background-image: none !important;
