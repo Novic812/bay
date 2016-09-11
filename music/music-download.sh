@@ -47,6 +47,7 @@ do
 
   # download
   rm -f *.info.json
+  # FIXME -id3v2_version 3
   youtube-dl --add-metadata --format m4a/mp3 --output '%(title)s.%(ext)s' \
     --write-info-json --youtube-skip-dash-manifest "$wu"
   jq -r '
