@@ -47,15 +47,11 @@
   .dislikes {
     opacity: .3 !important;
   }
-  .entry::before {
-    content: none !important;
-  }
   .goldvertisement, .sidebox:not(.create):not(.submit) {
     display: none !important;
   }
-  body:lang(np) .arrow,
-  body:lang(np):not(.subscriber) .arrow {
-    visibility: visible !important;
+  .usertext-edit, textarea {
+    width: 90% !important;
   }
 }
 @-moz-document domain(soundcloud.com) {
