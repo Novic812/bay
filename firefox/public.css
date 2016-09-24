@@ -51,7 +51,7 @@
     display: none !important;
   }
   .usertext-edit, textarea {
-    width: 90% !important;
+    min-width: 90% !important;
   }
 }
 @-moz-document domain(soundcloud.com) {
