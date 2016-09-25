@@ -29,7 +29,7 @@
   .post.red, .grid.down, #cta-container-placeholder {
     display: none !important;
   }
-  img {
+  img, video {
     max-height: 100vh !important;
   }
 }
