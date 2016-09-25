@@ -26,6 +26,9 @@
   }
 }
 @-moz-document domain(imgur.com) {
+  #content {
+    position: static !important;
+  }
   .post.red, .grid.down, #cta-container-placeholder {
     display: none !important;
   }
