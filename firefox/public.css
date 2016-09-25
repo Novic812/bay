@@ -29,8 +29,8 @@
   .post.red, .grid.down, #cta-container-placeholder {
     display: none !important;
   }
-  .video-container {
-    text-align: left;
+  img {
+    max-height: 100vh !important;
   }
 }
 @-moz-document domain(reddit.com) {
