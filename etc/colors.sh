@@ -22,9 +22,9 @@
 # bold foreground: 1
 # bold background: 5
 
-while read c
+while read j
 do
-  printf '%9s fg [\33[%bm██\33[m] bg [\33[%bm  \33[m]\n' "$c" "$c" "$c"
+  printf '%9s fg [\33[%bm██\33[m] bg [\33[%bm  \33[m]\n' "$j" "$j" "$j"
 done <<+
 30
 30;41
