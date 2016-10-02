@@ -1,4 +1,6 @@
-#!/bin/dash
+#!/bin/sh
+# Dash printf sucks
+
 # foreground black:  30
 # foreground red:    31
 # foreground green:  32
