@@ -8,6 +8,7 @@ export BROWSER=firefox
 export CYGWIN=winsymlinks:native
 export GIT_EDITOR='notepad2 "$(cygpath -w "$1")" #'
 export LANG=en_US.utf8 # case insensitive sort
+shopt -s completion_strip_exe
 
 c() {
   printf '\33c'
