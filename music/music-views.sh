@@ -13,11 +13,12 @@ case $fox in
     RS = "\"?,\""
     FS = "\":\"?"
   }
-  /playback_count/ {
-    hot = $2
-  }
   /created_at/ {
     ind = gensub(/[[:alpha:][:punct:]]/, " ", "g", $2)
+  }
+  /playback_count/ {
+    hot = $2
+    exit
   }
   '
 ;;
