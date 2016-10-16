@@ -91,6 +91,11 @@ domain(stackexchange.com), domain(serverfault.com), domain(askubuntu.com) {
     display: none;
   }
 }
+@-moz-document domain(vice.com) {
+  .gutter {
+    display: none;
+  }
+}
 @-moz-document domain(wikipedia.org) {
   /*
   #centralNotice
