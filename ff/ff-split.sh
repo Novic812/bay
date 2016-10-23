@@ -1,4 +1,4 @@
-#!/bin/dash
+#!/bin/dash -e
 # split album flac file
 
 xc() {
