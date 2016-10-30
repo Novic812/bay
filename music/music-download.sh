@@ -24,6 +24,7 @@ bra=$(date -d '-1 year' +%Y%m%d)
 mkdir -p % %-new %-old
 touch %/h.txt %/f.txt %/c.txt
 
+# FIXME cygwin.com/ml/cygwin/2016-10/msg00298.html
 {
   pa "$@" |
     grep -v reddit
