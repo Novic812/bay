@@ -1,4 +1,19 @@
 
+Read tags
+=====================================
+http://askubuntu.com/questions/364415
+
+faststart
+=====================================
+http://superuser.com/questions/616484
+
+Fast MP4 thumbnails
+=======================================================
+- http://softwarerecs.stackexchange.com/questions/13865
+- http://stackoverflow.com/questions/17798709
+- http://superuser.com/questions/524100
+- http://superuser.com/questions/597945
+
 MP4v2
 ==========================================
 http://github.com/svnpenn/mp4v2/issues/166
