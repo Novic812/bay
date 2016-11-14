@@ -15,27 +15,27 @@ Fast MP4 thumbnails
 - http://superuser.com/questions/524100
 - http://superuser.com/questions/597945
 
-MP4v2
-==========================================
-http://github.com/svnpenn/mp4v2/issues/166
-
 Tag Editor
 ==============================================
 - http://github.com/Martchus/tageditor/issues/10
 - http://github.com/Martchus/tageditor/issues/11
 
-Bento4
-=====================================================
-- http://github.com/axiomatic-systems/Bento4/issues/104
-- http://github.com/axiomatic-systems/Bento4/issues/105
+FFmpeg
+==================================
+http://trac.ffmpeg.org/ticket/2798
 
 MP4Box
 ======================================
 http://github.com/gpac/gpac/issues/693
 
-FFmpeg
-==================================
-http://trac.ffmpeg.org/ticket/2798
+MP4v2
+==========================================
+http://github.com/svnpenn/mp4v2/issues/166
+
+Bento4
+=====================================================
+- http://github.com/axiomatic-systems/Bento4/issues/104
+- http://github.com/axiomatic-systems/Bento4/issues/105
 
 ExifTool
 ========================================
