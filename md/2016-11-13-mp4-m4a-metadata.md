@@ -5,7 +5,8 @@ http://askubuntu.com/questions/364415
 
 faststart
 =====================================
-http://superuser.com/questions/616484
+- http://superuser.com/questions/559372
+- http://superuser.com/questions/616484
 
 Fast MP4 thumbnails
 =======================================================
