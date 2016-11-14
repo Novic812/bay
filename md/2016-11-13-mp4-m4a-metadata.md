@@ -25,7 +25,8 @@ http://github.com/Martchus/tageditor/issues/10
 
 Bento4
 =====================================================
-http://github.com/axiomatic-systems/Bento4/issues/104
+- http://github.com/axiomatic-systems/Bento4/issues/104
+- http://github.com/axiomatic-systems/Bento4/issues/105
 
 MP4Box
 ======================================
