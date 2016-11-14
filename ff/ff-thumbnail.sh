@@ -17,7 +17,7 @@ fi
 unquote j
 cd "$(dirname "$j")"
 j=$(basename "$j")
-mp4art --remove "$j"
+tageditor -s cover= --max-padding 100000 -f "$j"
 . <(ffprobe -v 0 -show_streams -of flat=h=0:s=_ "$j")
 awk "BEGIN {
   w = $stream_0_width
@@ -45,5 +45,5 @@ then
 fi
 unquote pc
 # moov could be anywhere in the file, so we cannot use "dd"
-mp4art --add "$pc" "$j"
+tageditor -s cover="$pc" --max-padding 100000 -f "$j"
 rm *.jpg
