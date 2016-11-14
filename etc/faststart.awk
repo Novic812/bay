@@ -5,5 +5,5 @@
 }
 /mdat/ {
   print "not faststart (moov after mdat)"
-  exit
+  exit 1
 }
