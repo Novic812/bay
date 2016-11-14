@@ -21,7 +21,8 @@ http://github.com/svnpenn/mp4v2/issues/166
 
 Tag Editor
 ==============================================
-http://github.com/Martchus/tageditor/issues/10
+- http://github.com/Martchus/tageditor/issues/10
+- http://github.com/Martchus/tageditor/issues/11
 
 Bento4
 =====================================================
