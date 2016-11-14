@@ -1,7 +1,8 @@
 
 Read tags
 =====================================
-http://askubuntu.com/questions/364415
+- http://askubuntu.com/questions/364415
+- http://unix.stackexchange.com/questions/131186
 
 faststart
 =====================================
@@ -10,6 +11,7 @@ faststart
 
 Fast MP4 thumbnails
 =======================================================
+- http://askubuntu.com/questions/809175
 - http://softwarerecs.stackexchange.com/questions/13865
 - http://stackoverflow.com/questions/14729432
 - http://stackoverflow.com/questions/17798709
