@@ -11,9 +11,11 @@ faststart
 Fast MP4 thumbnails
 =======================================================
 - http://softwarerecs.stackexchange.com/questions/13865
+- http://stackoverflow.com/questions/14729432
 - http://stackoverflow.com/questions/17798709
 - http://superuser.com/questions/524100
 - http://superuser.com/questions/597945
+- http://unix.stackexchange.com/questions/53488
 
 Tag Editor
 ==============================================
