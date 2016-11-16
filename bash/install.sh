@@ -1,5 +1,5 @@
 #!/bin/dash
-. ./.bashrc
+PATH=/bin
 ln -sf "$PWD"/fstab /etc
 mount -a
 
