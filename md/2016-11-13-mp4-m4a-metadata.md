@@ -21,8 +21,7 @@ Fast MP4 thumbnails
 
 Tag Editor
 ==============================================
-- http://github.com/Martchus/tageditor/issues/10
-- http://github.com/Martchus/tageditor/issues/11
+http://github.com/Martchus/tageditor/issues/11
 
 FFmpeg
 ==================================
