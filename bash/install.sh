@@ -1,6 +1,5 @@
-#!/bin/dash
-PATH=/bin
-export CYGWIN=winsymlinks:native
+#!/bin/sh
+. ./.bashrc
 ln -sf "$PWD"/fstab /etc
 mount -a
 
