@@ -9,7 +9,7 @@ export CYGWIN=winsymlinks:native
 export GIT_EDITOR='notepad2 "$(cygpath -w "$1")" #'
 export LANG=en_US.utf8 # case insensitive sort
 alias affmpeg='ffmpeg -hide_banner'
-alias agrep='grep --exclude .bash_history --exclude-dir .git'
+alias agrep='grep --color --exclude .bash_history --exclude-dir .git'
 shopt -s completion_strip_exe
 
 c() {
