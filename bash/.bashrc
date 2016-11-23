@@ -28,19 +28,14 @@ ish() {
 
 length() {
   awk '
-  {
-    alf = 1
-    while (bra[alf][length]) alf++
-    bra[alf][length] = $0
-  }
+  {jul[NR] = $0; kil[NR] = length; lim[NR] = NR}
   END {
-    for (cha in bra[1]) {
-      alf = 1
-      while (bra[alf][cha]) {
-        print bra[alf][cha]
-        alf++
-      }
+    for (mik in jul) {
+      nov = lim[mik]; osc = mik - 1
+      while (osc && kil[lim[osc]] > kil[nov]) {lim[osc+1] = lim[osc]; osc--}
+      lim[osc+1] = nov
     }
+    for (mik in lim) print jul[lim[mik]]
   }
   '
 }
