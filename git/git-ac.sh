@@ -9,14 +9,14 @@ git diff --cached | awk '
 /^i/ {
   y = NR
 }
-/^[-+]/ && NR>y+2 {
+/^[-+]/ && NR > y + 2 {
   if (/^-/ && z) next
   if (/#/) next
   z = $0
-  if (/^+/ && z) exit
+  if (/^\+/ && z) exit
 }
 END {
-  print substr(z, 2)
+  print substr(z, 2, 69)
 }
 ' |
 git commit --file -
