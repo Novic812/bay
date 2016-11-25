@@ -19,6 +19,18 @@ Fast MP4 thumbnails
 - http://superuser.com/questions/597945
 - http://unix.stackexchange.com/questions/53488
 
+Subtitles
+=====================================
+- http://stackoverflow.com/q/17812725
+- http://stackoverflow.com/q/26956762
+- http://stackoverflow.com/q/30039969
+- http://stackoverflow.com/q/30500815
+- http://stackoverflow.com/q/33905522
+- http://stackoverflow.com/q/8672809
+- http://superuser.com/q/700082
+- http://unix.stackexchange.com/q/232302
+- http://video.stackexchange.com/q/10423
+
 Tag Editor
 ==============================================
 http://github.com/Martchus/tageditor/issues/11
