@@ -67,6 +67,7 @@ reg add 'hkcu\software\microsoft\windows\currentVersion\explorer' /f /v link \
 } <<+
 c:\windows\system32
 c:\program files\7-zip
+c:\program files\gpac
 c:\program files\mozilla firefox
 c:\program files\notepad2
 +
