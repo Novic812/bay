@@ -21,7 +21,6 @@ Fast MP4 thumbnails
 
 Subtitles
 =====================================
-- http://stackoverflow.com/q/17812725
 - http://stackoverflow.com/q/26956762
 - http://stackoverflow.com/q/30039969
 - http://stackoverflow.com/q/30500815
