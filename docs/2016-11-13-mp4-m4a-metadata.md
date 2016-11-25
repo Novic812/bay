@@ -20,8 +20,7 @@ Fast MP4 thumbnails
 - http://unix.stackexchange.com/questions/53488
 
 Subtitles
-=====================================
-- http://stackoverflow.com/q/8672809
+===============================
 - http://superuser.com/q/700082
 - http://unix.stackexchange.com/q/232302
 - http://video.stackexchange.com/q/10423
