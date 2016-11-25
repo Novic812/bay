@@ -8,8 +8,6 @@ export BROWSER=firefox
 export CYGWIN=winsymlinks:native
 export GIT_EDITOR='notepad2 "$(cygpath -w "$1")" #'
 export LANG=en_US.utf8 # case insensitive sort
-alias affmpeg='ffmpeg -hide_banner'
-alias affprobe='ffprobe -hide_banner'
 alias agrep='grep -I --color --exclude .bash_history --exclude-dir .git'
 shopt -s completion_strip_exe
 
@@ -57,6 +55,15 @@ gsh() {
     PS1="\033];\s\a\n\033[33m\w \033[36m$gnr\033[m\n$ "
   else PS1='\033];\s\a\n\033[33m\w\033[m\n$ '
   fi
+}
+
+nffmpeg() {
+  ffmpeg -hide_banner "$@"
+}
+
+nffprobe() {
+  ffprobe -hide_banner "$@" 2>&1 |
+  awk '$1 == "Stream" {$0 = "\33[1;33m" $0 "\33[m"} 1'
 }
 
 wed() {
