@@ -64,8 +64,8 @@ do
   if [ $ext = m4a ]
   then
     echo '[ffmpeg] moving the moov atom to the beginning of the file'
-    ffmpeg -nostdin -v warning -i "$_filename" -c copy -movflags faststart \
-      -flags global_header temp.m4a
+    ffmpeg -nostdin -v warning -i "$_filename" -c copy \
+      -movflags faststart temp.m4a
     mv temp.m4a "$_filename"
   fi
 
