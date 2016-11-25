@@ -58,7 +58,8 @@ gsh() {
 }
 
 nffmpeg() {
-  ffmpeg -hide_banner "$@"
+  ffmpeg -hide_banner "$@" 2>&1 |
+  awk '$1 == "Stream" {$0 = "\33[1;33m" $0 "\33[m"} 1'
 }
 
 nffprobe() {

@@ -66,8 +66,9 @@ reg add 'hkcu\software\microsoft\windows\currentVersion\explorer' /f /v link \
   awk '{printf xr++ ? ";" $0 : $0}' | xargs -0 setx /m path
 } <<+
 c:\windows\system32
-c:\program files\notepad2
+c:\program files\7-zip
 c:\program files\mozilla firefox
+c:\program files\notepad2
 +
 
 # clear explorer and wallpaper history
