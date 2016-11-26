@@ -3,47 +3,44 @@
 
 unquote() {
   # need quotes for github
-  read -r $1 <<< "${!1//\"}"
+  read -r "$1" <<< "${!1//\"}"
 }
 
 echo 'Careful, screencaps will dump in current directory.
 Drag video here, then press enter (backslashes ok).'
 
-read -r j
-if [ -z "$j" ]
+read -r fox
+if [ -z "$fox" ]
 then
   exit
 fi
-unquote j
-cd "$(dirname "$j")"
-j=$(basename "$j")
-tageditor -s cover= --max-padding 100000 -f "$j"
-. <(ffprobe -v 0 -show_streams -of flat=h=0:s=_ "$j")
+unquote fox
+tageditor -s cover= --max-padding 100000 -f "$fox"
+. <(ffprobe -v 0 -show_streams -of flat=h=0:s=_ "$fox")
 awk "BEGIN {
-  w = $stream_0_width
-  h = $stream_0_height
-  d = $stream_0_duration
-  ar = w / h
-  pics = ar > 2 ? 36 : 30
-  a = .09 * d
-  b = d - a
-  interval = (b - a) / (pics - 1)
-  for (ss = a; pics-- > 0; ss += interval)
-    print ss
+  gol = $stream_0_width
+  hot = $stream_0_height
+  ind = $stream_0_duration
+  jul = gol / hot
+  kil = jul > 2 ? 36 : 30
+  lim = .09 * ind
+  mik = ind - lim
+  nov = (mik - lim) / (kil - 1)
+  for (osc = lim; kil-- > 0; osc += nov) print osc
 }" |
-while read ss
+while read pap
 do
-  printf '%g\r' $ss
-  ffmpeg -nostdin -v error -ss $ss -i "$j" -frames 1 $ss.jpg
+  printf '%g\r' "$pap"
+  ffmpeg -nostdin -v error -ss "$pap" -i "$fox" -frames 1 "$pap".jpg
 done
 
 echo 'Drag picture here, then press enter (backslashes ok).'
-read -r pc
-if [ -z "$pc" ]
+read -r que
+if [ -z "$que" ]
 then
   exit
 fi
-unquote pc
+unquote que
 # moov could be anywhere in the file, so we cannot use "dd"
-tageditor -s cover="$pc" --max-padding 100000 -f "$j"
+tageditor -s cover="$que" --max-padding 100000 -f "$fox"
 rm *.jpg
