@@ -14,7 +14,6 @@ then
   exit
 fi
 fox=$(unquote "$fox")
-tageditor -s cover= --max-padding 100000 -f "$fox"
 gol=$(mktemp)
 ffprobe -v 0 -show_streams -of flat=h=0:s=_ "$fox" > "$gol"
 . "$gol"
