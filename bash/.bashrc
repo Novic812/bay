@@ -67,6 +67,10 @@ nffprobe() {
   awk '$1 == "Stream" {$0 = "\33[1;33m" $0 "\33[m"} 1'
 }
 
+nwget() {
+  wget "$@" 2>&1 | awk '$1 == "Location:" {$0 = "\33[1;33m" $0 "\33[m"} 1'
+}
+
 wed() {
   notepad2 "$(cygpath -w "$1")"
 }
