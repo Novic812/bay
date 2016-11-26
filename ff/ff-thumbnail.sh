@@ -1,9 +1,8 @@
-#!/bin/bash -e
+#!/bin/dash -e
 # Set thumbnail for MP4 video
 
 unquote() {
-  # need quotes for github
-  read -r "$1" <<< "${!1//\"}"
+  awk 'BEGIN {$0 = ARGV[1]; gsub(/"/, _); print}' "$1"
 }
 
 echo 'Careful, screencaps will dump in current directory.
@@ -14,19 +13,21 @@ if [ -z "$fox" ]
 then
   exit
 fi
-unquote fox
+fox=$(unquote "$fox")
 tageditor -s cover= --max-padding 100000 -f "$fox"
-. <(ffprobe -v 0 -show_streams -of flat=h=0:s=_ "$fox")
+gol=$(mktemp)
+ffprobe -v 0 -show_streams -of flat=h=0:s=_ "$fox" > "$gol"
+. "$gol"
 awk "BEGIN {
-  gol = $stream_0_width
-  hot = $stream_0_height
-  ind = $stream_0_duration
-  jul = gol / hot
-  kil = jul > 2 ? 36 : 30
-  lim = .09 * ind
-  mik = ind - lim
-  nov = (mik - lim) / (kil - 1)
-  for (osc = lim; kil-- > 0; osc += nov) print osc
+  hot = $stream_0_width
+  ind = $stream_0_height
+  jul = $stream_0_duration
+  kil = hot / ind
+  lim = kil > 2 ? 36 : 30
+  mik = .09 * jul
+  nov = jul - mik
+  osc = (nov - mik) / (lim - 1)
+  for (pap = mik; lim-- > 0; pap += osc) print pap
 }" |
 while read pap
 do
@@ -40,7 +41,7 @@ if [ -z "$que" ]
 then
   exit
 fi
-unquote que
+que=$(unquote "$que")
 # moov could be anywhere in the file, so we cannot use "dd"
 tageditor -s cover="$que" --max-padding 100000 -f "$fox"
 rm *.jpg
