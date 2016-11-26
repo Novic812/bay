@@ -10,13 +10,12 @@ qu=$(dirname "$2")
 ro=$(basename "$2")
 
 pdflatex -halt-on-error -output-directory "$qu" -jobname "$ro" "$pa" |
-sed '
+awk '
 /Output/ {
-  s/^/\x1b[1;32m/
-  s/$/\x1b[m/
+  $0 = "\33[1;32m" $0 "\33[m"
 }
-/Fatal\|Warning\|Overfull\|Underfull/ {
-  s/^/\x1b[1;31m/
-  s/$/\x1b[m/
+/Fatal|Overfull|Underfull|Warning/ {
+  $0 = "\33[1;31m" $0 "\33[m"
 }
+1
 '
