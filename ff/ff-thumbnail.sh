@@ -16,12 +16,8 @@ fi
 fox=$(unquote "$fox")
 ffprobe -v 0 -show_streams -of flat=h=0 "$fox" |
 awk '
-BEGIN {
-  FS = "[=\"]+"
-}
-{
-  gol[$1] = $2
-}
+BEGIN {FS = "[=\"]+"}
+{gol[$1] = $2}
 END {
   hot = gol["stream.0.width"] / gol["stream.0.height"]
   ind = hot > 2 ? 36 : 30
