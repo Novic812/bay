@@ -14,33 +14,35 @@ then
   exit
 fi
 fox=$(unquote "$fox")
-gol=$(mktemp)
-ffprobe -v 0 -show_streams -of flat=h=0:s=_ "$fox" > "$gol"
-. "$gol"
-awk "BEGIN {
-  hot = $stream_0_width
-  ind = $stream_0_height
-  jul = $stream_0_duration
-  kil = hot / ind
-  lim = kil > 2 ? 36 : 30
-  mik = .09 * jul
-  nov = jul - mik
-  osc = (nov - mik) / (lim - 1)
-  for (pap = mik; lim-- > 0; pap += osc) print pap
-}" |
-while read pap
+ffprobe -v 0 -show_streams -of flat=h=0 "$fox" |
+awk '
+BEGIN {
+  FS = "[=\"]+"
+}
+{
+  gol[$1] = $2
+}
+END {
+  hot = gol["stream.0.width"] / gol["stream.0.height"]
+  ind = hot > 2 ? 36 : 30
+  jul = .09 * gol["stream.0.duration"]
+  kil = (gol["stream.0.duration"] - 2 * jul) / (ind - 1)
+  for (lim = jul; ind-- > 0; lim += kil) print lim
+}
+' |
+while read lim
 do
-  printf '%g\r' "$pap"
-  ffmpeg -nostdin -v error -ss "$pap" -i "$fox" -frames 1 "$pap".jpg
+  printf '%g\r' "$lim"
+  ffmpeg -nostdin -v error -ss "$lim" -i "$fox" -frames 1 "$lim".jpg
 done
 
 echo 'Drag picture here, then press enter (backslashes ok).'
-read -r que
-if [ -z "$que" ]
+read -r mik
+if [ -z "$mik" ]
 then
   exit
 fi
-que=$(unquote "$que")
+mik=$(unquote "$mik")
 # moov could be anywhere in the file, so we cannot use "dd"
-tageditor -s cover="$que" --max-padding 100000 -f "$fox"
+tageditor -s cover="$mik" --max-padding 100000 -f "$fox"
 rm *.jpg
