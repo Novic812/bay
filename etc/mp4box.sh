@@ -19,5 +19,5 @@ xr=$1
 ya=$(mktemp "XXX $xr")
 zu=$(mktemp XXX.srt)
 xc ffmpeg -y -v warning -i "$xr" "$zu"
-xc mp4box -add "$xr"#video -add "$xr"#audio -add "$zu":txtflags=0xC0000000 \
+xc mp4box -add "$xr"'#video' -add "$xr"'#audio' -add "$zu":txtflags=0xC0000000 \
 -new "$ya"
