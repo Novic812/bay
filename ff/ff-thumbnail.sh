@@ -5,6 +5,18 @@ unquote() {
   awk 'BEGIN {$0 = ARGV[1]; gsub(/"/, _); print}' "$1"
 }
 
+xc() {
+  awk 'BEGIN {
+    x = "\47"; printf "\33[36m"; while (++i < ARGC) {
+      y = split(ARGV[i], z, x); for (j in z) {
+        printf z[j] ~ /[^[:alnum:]%+,./:=@_-]/ ? x z[j] x : z[j]
+        if (j < y) printf "\\" x
+      } printf i == ARGC - 1 ? "\33[m\n" : FS
+    }
+  }' "$@"
+  "$@"
+}
+
 echo 'Careful, screencaps will dump in current directory.
 Drag video here, then press enter (backslashes ok).'
 
@@ -40,5 +52,5 @@ then
 fi
 mik=$(unquote "$mik")
 # moov could be anywhere in the file, so we cannot use "dd"
-tageditor -s cover="$mik" --max-padding 100000 -f "$fox"
+xc tageditor -s cover="$mik" --max-padding 100000 -f "$fox"
 rm *.jpg
