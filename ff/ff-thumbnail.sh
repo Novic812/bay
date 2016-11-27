@@ -13,7 +13,7 @@ xc() {
         if (j < y) printf "\\" x
       } printf i == ARGC - 1 ? "\33[m\n" : FS
     }
-  }' "$@"
+  }' "$@" | fmt -80
   "$@"
 }
 
