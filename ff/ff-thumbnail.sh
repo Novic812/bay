@@ -18,7 +18,7 @@ xc() {
 }
 
 echo 'Careful, screencaps will dump in current directory.
-Drag video here, then press enter (backslashes ok).'
+Drag video here, then press enter (backslashes ok):'
 
 read -r fox
 if [ -z "$fox" ]
@@ -44,7 +44,8 @@ do
   ffmpeg -nostdin -v error -ss "$lim" -i "$fox" -frames 1 "$lim".jpg
 done
 
-echo 'Drag picture here, then press enter (backslashes ok).'
+printf '\33[1;32m%s\33[m\n' \
+'Drag picture here, then press enter (backslashes ok):'
 read -r mik
 if [ -z "$mik" ]
 then
