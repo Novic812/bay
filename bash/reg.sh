@@ -62,15 +62,7 @@ reg add 'hkcu\software\microsoft\windows\currentVersion\explorer' /f /v link \
   /t reg_binary /d 00000000
 
 # path
-{
-  awk '{printf xr++ ? ";" $0 : $0}' | xargs -0 setx /m path
-} <<+
-c:\windows\system32
-c:\program files\7-zip
-c:\program files\gpac
-c:\program files\mozilla firefox
-c:\program files\notepad2
-+
+setx /m path 'c:\windows\system32'
 
 # clear explorer and wallpaper history
 zu='hkcu\software\microsoft\windows\currentVersion\explorer\'
