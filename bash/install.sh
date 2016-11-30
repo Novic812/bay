@@ -16,7 +16,8 @@ find "$PWD" -type f -name '.*' -exec ln -sft ~ {} +
 
 # /usr
 ln -sf "$PROGRAMFILES"/notepad2/notepad2 "$SYSTEMROOT"/system32/reg \
-/usr/local/bin
+  /usr/local/bin
+find /usr/local/bin -type l -! -exec test -e {} ';' -print
 
 # close
 echo 'you must close shell to apply changes'
