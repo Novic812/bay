@@ -1,12 +1,13 @@
 #!/usr/bin/awk -f
 func z() {
-  getline < y
-  close(y)
+  getline < "/proc/uptime"
+  close("/proc/uptime")
   return $0
 }
 BEGIN {
-  y = "/proc/uptime"
   x = z()
-  while (1)
-    printf "%s\r", z() - x
+  while (1) {
+    y = z()
+    printf "%02d:%05.2f\r", (y - x) / 60, (y - x) % 60
+  }
 }
