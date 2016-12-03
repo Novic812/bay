@@ -9,15 +9,15 @@
   - Folder Path ‘D:\VirtualBox Shared’
   - Make Permanent ‘True’
   - Access ‘\\Vboxsvr\VirtualBox Shared’
-8. **Snapshot**
-9. File extensions
-10. Navigation pane
-11. QuickEdit
-12. Firefox
-13. GridMove
-14. Notepad2
-15. Cygwin
-16. Git
-17. **Snapshot**
-18. Install Visual Studio Express 2013 for Windows Desktop
-19. **Snapshot**
+7. **Snapshot**
+8. File extensions
+9. Navigation pane
+10. QuickEdit
+11. Firefox
+12. GridMove
+13. Notepad2
+14. Cygwin
+15. Git
+16. **Snapshot**
+17. Install Visual Studio Express 2013 for Windows Desktop
+18. **Snapshot**
