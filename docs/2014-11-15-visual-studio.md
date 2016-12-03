@@ -6,9 +6,9 @@
 5. Devices -> Optical Drives -> Remove disk from virtual drive
 6. Devices -> Shared Folders -> Shared Folders Settings
   - Add new shared folder
-  - Folder Path: D:\VirtualBox
-  - Make Permanent: True
-  - Access `\\Vboxsvr\VirtualBox`
+  - Folder Path ‘D:\VirtualBox Shared’
+  - Make Permanent ‘True’
+  - Access ‘\\Vboxsvr\VirtualBox Shared’
 8. **Snapshot**
 9. File extensions
 10. Navigation pane
