@@ -16,7 +16,7 @@ git diff --cached | awk '
   if (/^\+/ && z) exit
 }
 END {
-  print substr(z, 2, 69)
+  print substr(z, 2, 63)
 }
 ' |
 git commit --file -
