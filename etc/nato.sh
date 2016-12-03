@@ -1,4 +1,4 @@
-#!/bin/dash
+#!/bin/dash -e
 if [ "$#" != 2 ]
 then
   echo 'nato.sh [# of variables] [file]'
