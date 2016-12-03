@@ -4,10 +4,11 @@
 3. UAC
 4. Install Guest Additions
 5. Devices -> Optical Drives -> Remove disk from virtual drive
-6. Add shared folder
+6. Devices -> Shared Folders -> Shared Folders Settings
+  - Add new shared folder
   - Folder Path: D:\VirtualBox
   - Make Permanent: True
-7. Access `\\Vboxsvr\VirtualBox`
+  - Access `\\Vboxsvr\VirtualBox`
 8. **Snapshot**
 9. File extensions
 10. Navigation pane
