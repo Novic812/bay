@@ -1,14 +1,10 @@
-#!/bin/dash
-if [ $# != 1 ]
+#!/bin/dash -e
+if [ "$#" != 1 ]
 then
   echo 'indent.sh [file]'
   exit
 fi
-if ! type indent >/dev/null
-then
-  echo 'indent: not found'
-  exit
-fi
+type indent
 ex -s "$1" <<':'
 " 1. decorate comments preceded by code
 v,^\s*//,s,//,\r#&,
