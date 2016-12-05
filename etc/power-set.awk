@@ -2,7 +2,7 @@
 function al(br, ch, de) {
   while (br) {
     ch--
-    if (br % 2 != 0)
+    if (br % 2)
       de = de sprintf("%c ", 49 + ch)
     br = int(br / 2)
   }
