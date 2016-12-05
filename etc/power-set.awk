@@ -3,7 +3,7 @@ function al(br, ch, de) {
   while (br) {
     ch--
     if (br % 2)
-      de = de sprintf("%c ", 49 + ch)
+      de = de $(sprintf("%c", 49 + ch)) FS
     br = int(br / 2)
   }
   return de
