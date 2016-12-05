@@ -10,6 +10,6 @@ function al(br, ch, de) {
 }
 {
   for (ec = 0; ec <= 2 ^ NF - 1; ec++) {
-    print ec == 0 ? "empty" : al(ec, NF)
+    print ec ? al(ec, NF) : "empty"
   }
 }
