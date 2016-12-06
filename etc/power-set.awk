@@ -1,15 +1,10 @@
 #!/usr/bin/awk -f
-function al(br, ch, de) {
-  while (br) {
-    ch--
-    if (br % 2)
-      de = de $(sprintf("%c", 49 + ch)) FS
-    br = int(br / 2)
-  }
-  return de
-}
 {
-  for (ec = 0; ec <= 2 ^ NF - 1; ec++) {
-    print al(ec, NF)
+  for (c = 0; c < 2 ^ NF; c++) {
+    for (d = 0; d < NF; d++)
+      if (int(c / (2 ^ d)) % 2) {
+        printf "%s ", $(d + 1)
+      }
+    print ""
   }
 }
