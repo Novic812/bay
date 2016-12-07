@@ -1,7 +1,7 @@
-#!/bin/dash
+#!/bin/dash -e
 if [ "$#" != 1 ]
 then
-  cat <<+
+  cat <<'br'
 NAME
   date.sh
 
@@ -10,20 +10,21 @@ SYNOPSIS
 
 EXAMPLE
   date.sh 2015-5-15
-+
+br
   exit
 fi
 
-al=$1
+ch=$1
 
-while read br
+while read de
 do
-  printf '%-11s' "$br"
-  date -d "$al" +"$br"
-done <<+
+  printf '%-11s' "$de"
+  date -d "$ch" +"$de"
+done <<'br'
 %a
 %b
 %c
+%c %z
 %d
 %e
 %g
@@ -66,4 +67,4 @@ done <<+
 %Y%m%d
 %H%M%S
 %b %-d %Y
-+
+br
