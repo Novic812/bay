@@ -12,9 +12,9 @@ fi
 
 {
   sed 's/ /+/g' | xargs -l "$BROWSER"
-} <<+
+} <<'z'
 http://allmusic.com/search/all/$1
 http://metacritic.com/search/all/$1/results
 http://pitchfork.com/search/?query=$1
 http://albumoftheyear.org/search.php?q=$1
-+
+z
