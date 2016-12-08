@@ -18,13 +18,12 @@ ch=$1
 
 while read de
 do
-  printf '%-11s' "$de"
+  printf '%19s  ' "$de"
   date -d "$ch" +"$de"
 done <<'br'
 %a
 %b
 %c
-%c %z
 %d
 %e
 %g
@@ -64,7 +63,9 @@ done <<'br'
 %:z
 %::z
 %:::z
-%Y%m%d
 %H%M%S
+%Y%m%d
+%c %z
 %b %-d %Y
+%a, %-d %b %Y %T %z
 br
