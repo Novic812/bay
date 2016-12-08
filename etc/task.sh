@@ -1,7 +1,7 @@
 #!/bin/dash
 if [ "$#" = 0 ]
 then
-  cat <<+
+  cat <<'wh'
 task.sh query
 
 task.sh create minute 45 'hello world'
@@ -9,31 +9,25 @@ task.sh create once 23:59 'hello world'
 task.sh create sun,tue,thu 23:59 'hello world'
 
 task.sh delete 'hello world'
-+
+wh
   exit
 fi
 case $1 in
 query)
   schtasks /query /v /fo list |
   awk '
-  BEGIN {
-    FS = ":  "
-  }
-  $1 == "HostName" {
-    wh++
-  }
-  {
-    xr[$1][wh] = $0
-  }
+  BEGIN {FS = ":  "}
+  $1 == "HostName" {xr++}
+  {ya[$1][xr] = $0}
   END {
-    for (wh in xr["TaskName"]) {
-      if (xr["TaskName"][wh] !~ "Microsoft|WPD") {
-        if (ya++) print ""
-        print xr["TaskName"][wh]
-        print xr["Start Time"][wh]
-        print xr["Start Date"][wh]
-        print xr["Days"][wh]
-        print xr["Repeat: Every"][wh]
+    for (xr in ya["TaskName"]) {
+      if (ya["TaskName"][xr] !~ "Microsoft|WPD") {
+        if (zu++) print ""
+        print ya["TaskName"][xr]
+        print ya["Start Time"][xr]
+        print ya["Start Date"][xr]
+        print ya["Days"][xr]
+        print ya["Repeat: Every"][xr]
       }
     }
   }
