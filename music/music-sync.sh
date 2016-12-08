@@ -10,7 +10,7 @@ mr() {
 
 if [ "$#" != 1 ]
 then
-  cat <<+
+  cat <<'+'
 SYNOPSIS
   music-sync.sh [target]
 
