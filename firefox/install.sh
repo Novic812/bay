@@ -37,12 +37,12 @@ act, and will be responded to accordingly."
 for kil in 0 1
 do
   nov=$(printf "$kil$lim$mik" | openssl sha256 -binary | base64)
-  cat > "$jul/$kil"/search-metadata.json <<+
+  cat > "$jul/$kil"/search-metadata.json <<eof
 {
   "[global]": {
     current: $lim,
     hash: $nov
   }
 }
-+
+eof
 done
