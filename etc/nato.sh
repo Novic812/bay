@@ -37,12 +37,12 @@ yankee
 zulu
 eof
 # length of variable name - november is longest
-var_leng=1
-while [ "$var_leng" -le 8 ]
+var_leng=
+while [ $((var_leng += 1)) -le 8 ]
 do
   # starting letter
-  sta_lett=1
-  while [ "$sta_lett" -le 26 ]
+  sta_lett=
+  while [ $((sta_lett += 1)) -le 26 ]
   do
     end_lett=$((sta_lett + num_vars - 1))
     if [ "$end_lett" -gt 26 ]
@@ -68,7 +68,5 @@ do
       echo GOOD
       exit
     fi
-    : $((sta_lett += 1))
   done
-  : $((var_leng += 1))
 done
