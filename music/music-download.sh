@@ -6,9 +6,9 @@ pa() {
   done
 }
 
-if [ $# = 0 ]
+if [ "$#" = 0 ]
 then
-  cat <<+
+  cat <<'eof'
 SYNOPSIS
   music-download.sh [targets]
 
@@ -16,7 +16,7 @@ TARGETS
   http://youtube.com/watch?v=qjgnOP8f5NU
   http://soundcloud.com/greco-roman/roosevelt-night-moves
   http://reddit.com/r/stationalpha/new
-+
+eof
   exit
 fi
 
