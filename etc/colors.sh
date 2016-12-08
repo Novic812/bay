@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/sh -e
 # Dash printf sucks
 
 # foreground black:  30
@@ -22,10 +22,10 @@
 # bold foreground: 1
 # bold background: 5
 
-while read j
+while read br
 do
-  printf '%9s fg [\33[%bm██\33[m] bg [\33[%bm  \33[m]\n' "$j" "$j" "$j"
-done <<+
+  printf '%9s fg [\33[%bm██\33[m] bg [\33[%bm  \33[m]\n' "$br" "$br" "$br"
+done <<'ch'
 30
 30;41
 30;42
@@ -282,4 +282,4 @@ done <<+
 1;5;45
 1;5;46
 1;5;47
-+
+ch
