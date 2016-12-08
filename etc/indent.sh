@@ -5,7 +5,7 @@ then
   exit
 fi
 type indent
-ex -s "$1" <<':'
+ex -s "$1" <<'eof'
 " 1. decorate comments preceded by code
 v,^\s*//,s,//,\r#&,
 " 2. decorate printf format strings
@@ -22,4 +22,4 @@ g,\\n.$,s,$,//,
 " 7. undecorate comments preceded by code
 %s,\n#\s\+, ,
 x
-:
+eof
