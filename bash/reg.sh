@@ -1,5 +1,5 @@
 #!/bin/dash -e
-ya() {
+xr() {
   printf 0x%04x%04x "$@"
 }
 
@@ -8,11 +8,11 @@ while IFS=, read -r dn bn
 do
   reg add 'hklm\software\microsoft\windows\currentVersion\app paths\'"$bn" \
   /f /d "$dn$bn"
-done <<+
+done <<'eof'
 c:\cygwin64\bin\,bash.exe
 c:\cygwin64\bin\,cygstart.exe
 c:\program files\notepad2\,notepad2.exe
-+
+eof
 
 # Notepad2
 while IFS=, read key default command
@@ -31,7 +31,7 @@ do
   reg add 'hkcr\'"$default"'\shell\1\command' /f /d 'notepad2 "%1"'
   reg add 'hkcr\'"$default"'\shell\2' /f /d Open
   reg add 'hkcr\'"$default"'\shell\2\command' /f /d 'notepad "%1"'
-done <<+
+done <<'eof'
 null,unknown,null
 .css,cssfile,null
 .ini,inifile,null
@@ -43,19 +43,19 @@ null,unknown,null
 .xml,firefoxhtml,firefox "%1"
 .reg,regfile,regedit "%1"
 .js,jsfile,wscript "%1"
-+
+eof
 
 # shell options
-for xr in drive directory 'directory\background'
+for ya in drive directory 'directory\background'
 do
-  reg add 'hkcr\'"$xr"'\shell\Bash\command' /f /d "cygstart -d '%v' bash"
+  reg add 'hkcr\'"$ya"'\shell\Bash\command' /f /d "cygstart -d '%v' bash"
 done
 
 # Console
 reg add 'hkcu\console' /f /v codePage /t reg_dword /d 65001
 reg add 'hkcu\console' /f /v quickEdit /t reg_dword /d 1
-reg add 'hkcu\console' /f /v windowPosition /t reg_dword /d "$(ya 300 900)"
-reg add 'hkcu\console' /f /v windowSize /t reg_dword /d "$(ya 24 80)"
+reg add 'hkcu\console' /f /v windowPosition /t reg_dword /d "$(xr 300 900)"
+reg add 'hkcu\console' /f /v windowSize /t reg_dword /d "$(xr 24 80)"
 
 # remove shortcut text - must restart explorer
 reg add 'hkcu\software\microsoft\windows\currentVersion\explorer' /f /v link \
@@ -66,10 +66,10 @@ setx /m path 'c:\programdata\bin;c:\windows\system32'
 
 # clear explorer and wallpaper history
 zu='hkcu\software\microsoft\windows\currentVersion\explorer\'
-for xr in typedPaths 'wallpapers\images'
+for ya in typedPaths 'wallpapers\images'
 do
-  if reg query "$zu$xr" >/dev/null 2>&1
-  then reg delete "$zu$xr" /f
+  if reg query "$zu$ya" >/dev/null 2>&1
+  then reg delete "$zu$ya" /f
   fi
 done
 
