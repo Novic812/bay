@@ -1,7 +1,9 @@
 #!/bin/sh -e
 # A mosaic in digital imaging is a plurality of non-overlapping images, arranged
 # in some tessellation.
-usage="\
+if [ "$#" = 0 ]
+then
+  cat <<'xr'
 mosaic.sh [options] [files]
 
 -d             dry run, create pieces only
@@ -20,39 +22,25 @@ mosaic.sh [options] [files]
 
 -m dimensions  comma separated list of dimensions
                example  1920x1080,1280x1080,960x1080,640x1080
-"
+xr
+  exit
+fi
 
 mn() {
   awk '{for (;NF-1;NF--) if ($1>$NF) $1=$NF} 1' RS=
 }
 
-warn() {
-  printf '\e[36m%s\e[m\n' "$*"
-}
-
 xc() {
-  awk '
-  BEGIN {
-    x = "\47"
-    printf "\33[36m"
-    while (++i < ARGC) {
-      y = split(ARGV[i], z, x)
-      for (j in z) {
+  awk 'BEGIN {
+    x = "\47"; printf "\33[36m"; while (++i < ARGC) {
+      y = split(ARGV[i], z, x); for (j in z) {
         printf z[j] ~ /[^[:alnum:]%+,./:=@_-]/ ? x z[j] x : z[j]
         if (j < y) printf "\\" x
-      }
-      printf i == ARGC - 1 ? "\33[m\n" : FS
+      } printf i == ARGC - 1 ? "\33[m\n" : FS
     }
-  }
-  ' "$@" | fmt -80
+  }' "$@" | fmt -80
   "$@"
 }
-
-if [ "$#" = 0 ]
-then
-  printf "$usage"
-  exit
-fi
 
 while getopts ds:c:g:r:m: name
 do
