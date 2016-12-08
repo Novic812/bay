@@ -1,7 +1,7 @@
 #!/bin/dash -e
 if [ ! -d .git ]
 then
-  cat <<+
+  cat <<'eof'
 LOCAL
   1. commit program change
   2. commit version change
@@ -10,7 +10,7 @@ LOCAL
 REMOTE
   1. push commits
   2. push release
-+
+eof
   exit
 fi
 cd .git
