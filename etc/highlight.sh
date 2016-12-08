@@ -1,16 +1,16 @@
-#!/bin/dash
+#!/bin/dash -e
 if [ "$#" != 1 ]
 then
   echo 'highlight.sh [file]'
   exit
 fi
-ju=$1
-while read ki
+xr=$1
+while read ya
 do
-  printf '%s\n\n<!-- language: %s -->\n\n' "$ki" "$ki"
-  cat "$ju"
+  printf '%s\n\n<!-- language: %s -->\n\n' "$ya" "$ya"
+  cat "$xr"
   echo
-done <<+
+done <<'zu'
 lang-sh
 lang-c
 lang-cs
@@ -44,4 +44,4 @@ lang-sql
 lang-vhdl
 lang-vb
 lang-xml
-+
+zu
