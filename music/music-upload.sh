@@ -15,20 +15,14 @@ JQ() {
 }
 
 xc() {
-  awk '
-  BEGIN {
-    x = "\47"
-    printf "\33[36m"
-    while (++i < ARGC) {
-      y = split(ARGV[i], z, x)
-      for (j in z) {
+  awk 'BEGIN {
+    x = "\47"; printf "\33[36m"; while (++i < ARGC) {
+      y = split(ARGV[i], z, x); for (j in z) {
         printf z[j] ~ /[^[:alnum:]%+,./:=@_-]/ ? x z[j] x : z[j]
         if (j < y) printf "\\" x
-      }
-      printf i == ARGC - 1 ? "\33[m\n" : FS
+      } printf i == ARGC - 1 ? "\33[m\n" : FS
     }
-  }
-  ' "$@"
+  }' "$@"
   "$@"
 }
 
@@ -74,14 +68,14 @@ exten() {
 
 if [ "$#" -lt 2 ]
 then
-  cat <<+
+  cat <<'pa'
 SYNOPSIS
   music-upload.sh [picture] [songs]
 
 DESCRIPTION
   Script will use files to create high quality videos, then upload videos to
   YouTube.
-+
+pa
   exit
 fi
 
