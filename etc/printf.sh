@@ -1,21 +1,21 @@
-#!/bin/dash
+#!/bin/dash -e
 if [ "$#" = 0 ]
 then
-  cat <<+
+  cat <<'br'
 printf.sh [-e] [input]
 -e    treat input as expression instead of string
-+
+br
   exit
 fi
 
 if [ "$1" = -e ]
 then
-  al=$(printf '{br=%s}' "$2")
+  ch=$(printf '{de=%s}' "$2")
 else
-  al=$(printf '{br="%s"}' "$1")
+  ch=$(printf '{de="%s"}' "$1")
 fi
 
-awk "$al"'{printf "%" $0 "\t" $0 "\n", br}' <<+
+awk "$ch"'{printf "%" $0 "\t" $0 "\n", de}' <<'br'
 %a
 %b
 %d
@@ -42,4 +42,4 @@ awk "$al"'{printf "%" $0 "\t" $0 "\n", br}' <<+
 %x
 %y
 %z
-+
+br
