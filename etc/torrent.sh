@@ -13,7 +13,7 @@ fi
 
 if [ "$#" != 3 ]
 then
-  cat <<+
+  cat <<'fo'
 NAME
   torrent.sh
 
@@ -33,7 +33,7 @@ CATEGORY
   207  Video HD Movies
   208  Video HD TV shows
   301  Applications Windows
-+
+fo
   exit
 fi
 
