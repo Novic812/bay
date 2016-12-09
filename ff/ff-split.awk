@@ -1,31 +1,30 @@
 #!/usr/bin/awk -f
 BEGIN {
   if (ARGC != 2) {
-    print "ff-split.sh [cue file]"
+    print "ff-split.awk [cue file]"
     exit
   }
 }
 $1 == "FILE" {
-  split($0, i, /\42/)
-  file = i[2]
+  split($0, un, /\42/)
+  vi = un[2]
 }
 $1 == "TRACK" {
-  tracks[++j] = $2
+  wh[++xr] = $2
 }
-$1 == "TITLE" && j {
-  split($0, i, /\42/)
-  titles[j] = i[2]
+$1 == "TITLE" && xr {
+  split($0, un, /\42/)
+  ya[xr] = un[2]
 }
 $1 == "INDEX" && $2 {
-  split($3, i, ":")
-  indexes[j] = sprintf("%d:%02d:%06.3f", i[1]/60, i[1]%60, i[2]+i[3]/75)
+  split($3, un, ":")
+  zu[xr] = sprintf("%d:%02d:%06.3f", un[1] / 60, un[1] % 60, un[2] + un[3] / 75)
 }
 END {
-  for (each in tracks) {
-    system(sprintf("set -x; ffmpeg -v warning -stats -i '%s' -ss %s %s" \
-    "-b:a 256k -movflags faststart -metadata track=%s -metadata title='%s' " \
-    "'%s %s'.m4a", file, indexes[each],
-    indexes[each+1] ? "-to " indexes[each+1] " ": "", tracks[each],
-    titles[each], tracks[each], titles[each]))
+  for (xr in wh) {
+    system(sprintf("ffmpeg -v warning -stats -i '%s' -ss %s%s -b:a 256k " \
+    "-movflags faststart -metadata track=%s -metadata title='%s' '%s %s'.m4a",
+    vi, zu[xr], zu[xr+1] ? " -to " zu[xr+1]: "", wh[xr], ya[xr], wh[xr],
+    ya[xr]))
   }
 }
