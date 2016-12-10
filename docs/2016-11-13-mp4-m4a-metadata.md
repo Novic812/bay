@@ -30,8 +30,9 @@ Tag Editor
 http://github.com/Martchus/tageditor/issues/11
 
 FFmpeg
-==================================
-http://trac.ffmpeg.org/ticket/2798
+====================================
+- http://trac.ffmpeg.org/ticket/2798
+- http://ffmpeg.org/pipermail/ffmpeg-devel/2013-July/145365.html
 
 MP4Box
 ======================================
