@@ -6,14 +6,14 @@ BEGIN {
   }
 }
 $1 == "FILE" {
-  split($0, un, /\42/)
+  split($0, un, "\42")
   vi = un[2]
 }
 $1 == "TRACK" {
   wh[++xr] = $2
 }
 $1 == "TITLE" && xr {
-  split($0, un, /\42/)
+  split($0, un, "\42")
   ya[xr] = un[2]
 }
 $1 == "INDEX" && $2 {
