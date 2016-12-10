@@ -25,6 +25,18 @@ Subtitles
 - http://unix.stackexchange.com/q/232302
 - http://video.stackexchange.com/q/10423
 
+Cue
+===============================
+- http://askubuntu.com/q/183599
+- http://askubuntu.com/q/521388
+- http://musicfans.stackexchange.com/q/2451
+- http://superuser.com/q/1036165
+- http://superuser.com/q/368950
+- http://superuser.com/q/577476
+- http://superuser.com/q/675491
+- http://superuser.com/q/806247
+- http://unix.stackexchange.com/q/10251
+
 Tag Editor
 ==============================================
 http://github.com/Martchus/tageditor/issues/11
