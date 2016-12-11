@@ -149,7 +149,7 @@ done
 
 if [ "${#album}" -lt 30 ]
 then
-  tags+=,$album
+  tags=$tags,$album
 fi
 
 for song in "${songs[@]}"
