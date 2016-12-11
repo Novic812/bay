@@ -1,5 +1,6 @@
-#!/bin/sh -e
-. ./.bashrc
+#!/bin/dash -e
+PATH=/bin
+export CYGWIN=winsymlinks:native
 
 # /etc
 ln -sf "$PWD"/fstab /etc
@@ -15,7 +16,8 @@ fi
 find "$PWD" -type f -name '.*' -exec ln -sft ~ {} +
 
 # /usr
-ln -sf "$PROGRAMFILES"'/mozilla firefox/firefox.exe' \
+ln -sf "$PROGRAMFILES"/gpac/mp4box.exe \
+"$PROGRAMFILES"'/mozilla firefox/firefox.exe' \
 "$PROGRAMFILES"/notepad2/notepad2.exe "$SYSTEMROOT"/system32/reg.exe \
 "$SYSTEMROOT"/system32/rundll32.exe "$SYSTEMROOT"/system32/setx.exe \
 /usr/local/bin
