@@ -10,15 +10,16 @@ qu=$1
 touch /tmp/ro.c
 
 echo 'INCLUDE'
-"$qu" -v /tmp/ro.c 2>&1 | egrep '^ [^ ]+$' |
+"$qu" -v /tmp/ro.c 2>&1 | grep -E '^ [^ ]+$' |
 while read -r si
 do
   if [ -d "$si" ]
   then
     cd "$si"
-    while echo "$PWD" | grep -q include
-    do
-      cd ..
+    while grep -q include <<eof
+$PWD
+eof
+    do cd ..
     done
     pwd
   fi
@@ -38,9 +39,10 @@ do
   if [ -d "$ta" ]
   then
     cd "$ta"
-    while echo "$PWD" | grep -q lib
-    do
-      cd ..
+    while grep -q lib <<eof
+$PWD
+eof
+    do cd ..
     done
     pwd
   fi
