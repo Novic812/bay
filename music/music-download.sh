@@ -40,7 +40,7 @@ do
   then
     echo starting link $char
   fi
-  if fgrep -q "$wu" %/h.txt
+  if grep -Fq "$wu" %/h.txt
   then
     printf '%s\nhas already been recorded in archive\n' "$wu"
     continue
