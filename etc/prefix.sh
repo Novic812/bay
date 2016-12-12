@@ -1,4 +1,4 @@
-#!/bin/dash
+#!/bin/dash -e
 # get compiler prefix
 if [ "$#" != 1 ]
 then
