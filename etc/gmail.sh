@@ -16,5 +16,4 @@ subject: $sub
 references: $ref
 
 eof
-curl --mail-rcpt "$to" --upload-file "$q" --user "$use":"$pas" \
-smtps://smtp.gmail.com
+curl --mail-rcpt "$to" --upload-file "$q" smtps://"$use":"$pas"@smtp.gmail.com
