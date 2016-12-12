@@ -1,33 +1,33 @@
-#!/bin/sh -e
+#!/bin/dash -e
 # A mosaic in digital imaging is a plurality of non-overlapping images, arranged
 # in some tessellation.
 if [ "$#" = 0 ]
 then
   cat <<'xr'
-mosaic.sh [options] [files]
+img-mosaic.sh [options] [files]
 
--d             dry run, create pieces only
+-d     dry run, create pieces only
 
--s shave       how much to shave
-               example  6x6
+-s <s>     how much to shave
+           example 6x6
 
--c crop        comma separated list of crops
-               example  -300,0,+300,0
+-c <c>     comma separated list of crops
+           example -300,0,+300,0
 
--g gravity     comma separated list of gravities
-               example  north,south,east,southeast
+-g <g>     comma separated list of gravities
+           example north,south,east,southeast
 
--r resize      comma separated list of resize markers
-               example  y,y,y,n
+-m <m>     comma separated list of dimensions
+           example 1920x1080,1280x1080,960x1080,640x1080
 
--m dimensions  comma separated list of dimensions
-               example  1920x1080,1280x1080,960x1080,640x1080
+-r <r>     comma separated list of resize markers
+           example y,y,y,n
 xr
   exit
 fi
 
 mn() {
-  awk '{for (;NF-1;NF--) if ($1>$NF) $1=$NF} 1' RS=
+  awk '{for (; NF-1; NF--) if ($1 > $NF) $1 = $NF} 1'
 }
 
 xc() {
@@ -38,96 +38,123 @@ xc() {
         if (j < y) printf "\\" x
       } printf i == ARGC - 1 ? "\33[m\n" : FS
     }
-  }' "$@" | fmt -80
+  }' "$@"
   "$@"
 }
 
+ya() {
+  tr , '\n' <<eof
+$1
+eof
+}
+
+zu() {
+  printf '%s\n' "$@"
+}
+
+eg=$(mktemp /tmp/crop-XXX)
+gv=$(mktemp /tmp/gravity-XXX)
+dm=$(mktemp /tmp/extent-XXX)
+rz=$(mktemp /tmp/resize-XXX)
 while getopts ds:c:g:r:m: name
 do
   case $name in
-  d) dry=yes ;;
+  d) dry=y ;;
   s) sv=$OPTARG ;;
-  c) IFS=, read -a eg <<< "$OPTARG" ;;
-  g) IFS=, read -a gv <<< "$OPTARG" ;;
-  r) IFS=, read -a rz <<< "$OPTARG" ;;
-  m) IFS=, read -a dm <<< "$OPTARG" ;;
+  c) ya "$OPTARG" > "$eg" ;;
+  g) ya "$OPTARG" > "$gv" ;;
+  m) ya "$OPTARG" > "$dm" ;;
+  r) ya "$OPTARG" > "$rz" ;;
   esac
 done
 shift $((OPTIND-1))
 
-sc=("$@")
+sc=$(mktemp /tmp/file-XXX)
+zu "$@" > "$sc"
 
-if [ ${#rz[*]} = 0 ]
+if [ -s "$rz" ]
 then
-  rz=("$@")
+  ex -sc '%s/n//|x' "$rz"
 else
-  rz=("${rz[@]/n}")
+  yes | head -"$#" > "$rz"
 fi
 
-if [ ${#dm} = 0 ]
+if [ ! -s "$gv" ]
+then
+  yes center | head -"$#" > "$gv"
+fi
+
+if [ ! -s "$eg" ]
+then
+  yes '' | head -"$#" > "$eg"
+fi
+
+if [ ! -s "$dm" ]
 then
   ao=$(identify -format '%[fx:w/h>1]' "$@")
   case $ao in
-    11) dm=(1920x1080 1920x1080) ;;
-    001) dm=(960x1080 960x1080 1920x1080) ;;
-    110) dm=(1920x1080 1280x1080 640x1080) ;;
-    0000) dm=(960x1080 960x1080 960x1080 960x1080) ;;
-    0001) dm=(640x1080 640x1080 640x1080 1920x1080) ;;
-    0101) dm=(640x1080 1280x1080 640x1080 1280x1080) ;;
-    0110) dm=(640x1080 1280x1080 1280x1080 640x1080) ;;
-    1000) dm=(1920x1080 640x1080 640x1080 640x1080) ;;
-    1001) dm=(1280x1080 640x1080 640x1080 1280x1080) ;;
-    1010) dm=(1280x1080 640x1080 1280x1080 640x1080) ;;
-    1111) dm=(960x1080 960x1080 960x1080 960x1080) ;;
-    0111) dm=(640x1080 1280x1080 960x1080 960x1080) ;;
-    1011) dm=(1280x1080 640x1080 960x1080 960x1080) ;;
-    1101) dm=(960x1080 960x1080 640x1080 1280x1080) ;;
-    1110) dm=(960x1080 960x1080 1280x1080 640x1080) ;;
-    00001) dm=(640x1080 640x1080 640x1080 640x1080 1280x1080) ;;
-    00010) dm=(640x1080 640x1080 640x1080 1280x1080 640x1080) ;;
-    01000) dm=(640x1080 1280x1080 640x1080 640x1080 640x1080) ;;
-    10000) dm=(1280x1080 640x1080 640x1080 640x1080 640x1080) ;;
-    00011) dm=(640x1080 640x1080 640x1080 960x1080 960x1080) ;;
-    11000) dm=(960x1080 960x1080 640x1080 640x1080 640x1080) ;;
-    000000) dm=(640x1080 640x1080 640x1080 640x1080 640x1080 640x1080) ;;
-    000011) dm=(640x1080 640x1080 640x1080 960x1080 960x540 960x540) ;;
-    000110) dm=(640x1080 640x1080 640x1080 960x540 960x540 960x1080) ;;
-    011011) dm=(960x1080 960x540 960x540 960x1080 960x540 960x540) ;;
-    110000) dm=(960x540 960x540 960x1080 640x1080 640x1080 640x1080) ;;
-    110011) dm=(960x540 960x540 960x1080 960x1080 960x540 960x540) ;;
-    110110) dm=(960x540 960x540 960x1080 960x540 960x540 960x1080) ;;
-    0000110)
-      dm=(640x1080 640x1080 640x1080 640x1080 640x540 640x540 640x1080)
-    ;;
+    11) zu 1920x1080 1920x1080 ;;
+    001) zu 960x1080 960x1080 1920x1080 ;;
+    110) zu 1920x1080 1280x1080 640x1080 ;;
+    0000) zu 960x1080 960x1080 960x1080 960x1080 ;;
+    0001) zu 640x1080 640x1080 640x1080 1920x1080 ;;
+    0101) zu 640x1080 1280x1080 640x1080 1280x1080 ;;
+    0110) zu 640x1080 1280x1080 1280x1080 640x1080 ;;
+    1000) zu 1920x1080 640x1080 640x1080 640x1080 ;;
+    1001) zu 1280x1080 640x1080 640x1080 1280x1080 ;;
+    1010) zu 1280x1080 640x1080 1280x1080 640x1080 ;;
+    1111) zu 960x1080 960x1080 960x1080 960x1080 ;;
+    0111) zu 640x1080 1280x1080 960x1080 960x1080 ;;
+    1011) zu 1280x1080 640x1080 960x1080 960x1080 ;;
+    1101) zu 960x1080 960x1080 640x1080 1280x1080 ;;
+    1110) zu 960x1080 960x1080 1280x1080 640x1080 ;;
+    00001) zu 640x1080 640x1080 640x1080 640x1080 1280x1080 ;;
+    00010) zu 640x1080 640x1080 640x1080 1280x1080 640x1080 ;;
+    01000) zu 640x1080 1280x1080 640x1080 640x1080 640x1080 ;;
+    10000) zu 1280x1080 640x1080 640x1080 640x1080 640x1080 ;;
+    00011) zu 640x1080 640x1080 640x1080 960x1080 960x1080 ;;
+    11000) zu 960x1080 960x1080 640x1080 640x1080 640x1080 ;;
+    000000) zu 640x1080 640x1080 640x1080 640x1080 640x1080 640x1080 ;;
+    000011) zu 640x1080 640x1080 640x1080 960x1080 960x540 960x540 ;;
+    000110) zu 640x1080 640x1080 640x1080 960x540 960x540 960x1080 ;;
+    011011) zu 960x1080 960x540 960x540 960x1080 960x540 960x540 ;;
+    110000) zu 960x540 960x540 960x1080 640x1080 640x1080 640x1080 ;;
+    110011) zu 960x540 960x540 960x1080 960x1080 960x540 960x540 ;;
+    110110) zu 960x540 960x540 960x1080 960x540 960x540 960x1080 ;;
+    0000110) zu 640x1080 640x1080 640x1080 640x1080 640x540 640x540 640x1080 ;;
     11111111)
-      dm=(960x540 960x540 960x540 960x540 960x540 960x540 960x540 960x540)
+      zu 960x540 960x540 960x540 960x540 960x540 960x540 960x540 960x540
     ;;
     *)
-      echo cannot automatically set dimensions
+      echo 'cannot automatically set dimensions' >&2
       exit
     ;;
-  esac
+  esac > "$dm"
 fi
 
-# extent must come after resize
-go=0
-while [ "$go" -lt "$#" ]
+paste -d '\n' "$dm" "$eg" "$gv" "$rz" "$sc" |
+while
+  read dme
+  read ege
+  read gve
+  read rze
+  read sce
 do
+  # extent must come after resize
   xc convert -quality 100 \
-  ${sv+-shave $sv} \
-  ${eg[go]:+-crop ${eg[go]}} \
-  ${rz[go]:+-resize ${dm[go]}^} \
-  -extent ${dm[go]} \
-  -gravity ${gv[go]:-center} \
-  {,=}"${sc[go]}"
-  go=$((go+1))
+  ${sv+-shave "$sv"} \
+  ${ege:+-crop "$ege"} \
+  ${rze:+-resize "$dme"^} \
+  -extent "$dme" \
+  -gravity "$gve" \
+  "$sce" ="$sce"
 done
 
 # combine
 ${dry+exit}
 # this needs to be here otherwise you are measuring the wrong height
-ju=$(identify -format '%h\n' "$@" | mn)
-br=$(mktemp -p .)
+ju=$(identify -format '%h ' "$@" | mn)
+br=$(mktemp XXX)
 set =*
 
 case $ao in
