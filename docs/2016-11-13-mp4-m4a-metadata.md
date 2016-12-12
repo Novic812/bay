@@ -31,7 +31,7 @@ Cue
 - http://askubuntu.com/q/521388
 - http://musicfans.stackexchange.com/q/2451
 - http://superuser.com/q/1036165
-- http://superuser.com/q/368950 - dec 12
+- http://superuser.com/q/368950
 - http://superuser.com/q/577476
 - http://superuser.com/q/675491 - dec 13
 - http://superuser.com/q/806247 - dec 14
