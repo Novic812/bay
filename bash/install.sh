@@ -21,7 +21,13 @@ ln -sf "$PROGRAMFILES"/gpac/mp4box.exe \
 "$PROGRAMFILES"/notepad2/notepad2.exe "$SYSTEMROOT"/system32/reg.exe \
 "$SYSTEMROOT"/system32/rundll32.exe "$SYSTEMROOT"/system32/setx.exe \
 /usr/local/bin
-find /usr/local/bin -type l -! -exec test -e {} ';' -print
+
+for q in /usr/local/bin/*
+do
+  if [ ! -f "$q" ]
+  then rm -v "$q"
+  fi
+done
 
 # close
 echo 'you must close shell to apply changes'
