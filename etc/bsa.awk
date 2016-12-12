@@ -15,17 +15,15 @@ BEGIN {
     while (1) {
       printf "[g,b]? "
       getline v < "-"
-      switch (v) {
-      case "g":
+      if (v == "g")
         z = x
-        break
-      case "b":
+      else if (v == "b")
         y = x
-        break
-      default:
-        print
-        print "g - good"
-        print "b - bad"
+      else {
+        printf \
+        "\n" \
+        "g - good\n" \
+        "b - bad\n"
         continue
       }
       break
