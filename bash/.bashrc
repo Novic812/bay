@@ -8,6 +8,7 @@ export BROWSER=firefox
 export CYGWIN=winsymlinks:native
 export GIT_EDITOR='notepad2 "$(cygpath -w "$1")" #'
 export LANG=en_US.utf8 # case insensitive sort
+export POSIXLY_CORRECT=
 alias agrep='grep -I --color --exclude .bash_history --exclude-dir .git'
 shopt -s completion_strip_exe
 
