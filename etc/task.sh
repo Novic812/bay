@@ -18,16 +18,20 @@ query)
   awk '
   BEGIN {FS = ":  "}
   $1 == "HostName" {xr++}
-  {ya[$1][xr] = $0}
+  $1 == "Days" {dy[xr] = $0}
+  $1 == "Repeat: Every" {ra[xr] = $0}
+  $1 == "Start Date" {sa[xr] = $0}
+  $1 == "Start Time" {sm[xr] = $0}
+  $1 == "TaskName" {ts[xr] = $0}
   END {
-    for (xr in ya["TaskName"]) {
-      if (ya["TaskName"][xr] !~ "Microsoft|WPD") {
+    for (xr in ts) {
+      if (ts[xr] !~ "Microsoft|WPD") {
         if (zu++) print ""
-        print ya["TaskName"][xr]
-        print ya["Start Time"][xr]
-        print ya["Start Date"][xr]
-        print ya["Days"][xr]
-        print ya["Repeat: Every"][xr]
+        print ts[xr]
+        print sm[xr]
+        print sa[xr]
+        print dy[xr]
+        print ra[xr]
       }
     }
   }
