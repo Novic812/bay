@@ -8,7 +8,8 @@ NAME
 SYNOPSIS
   date.sh [date]
 
-EXAMPLE
+EXAMPLES
+  date.sh now
   date.sh 2015-5-15
 br
   exit
