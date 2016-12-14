@@ -34,7 +34,7 @@ Cue
 - http://superuser.com/q/368950
 - http://superuser.com/q/577476
 - http://superuser.com/q/675491
-- http://superuser.com/q/806247 - dec 14
+- http://superuser.com/q/806247
 - http://unix.stackexchange.com/q/10251
 
 Tag Editor
