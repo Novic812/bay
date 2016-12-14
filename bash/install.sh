@@ -16,11 +16,16 @@ fi
 find "$PWD" -type f -name '.*' -exec ln -sft ~ {} +
 
 # /usr
-ln -sf "$PROGRAMFILES"/gpac/mp4box.exe \
-"$PROGRAMFILES"'/mozilla firefox/firefox.exe' \
-"$PROGRAMFILES"/notepad2/notepad2.exe "$SYSTEMROOT"/system32/ping.exe \
-"$SYSTEMROOT"/system32/reg.exe "$SYSTEMROOT"/system32/rundll32.exe \
-"$SYSTEMROOT"/system32/setx.exe /usr/local/bin
+xargs ln -fsvt /usr/local/bin <<eof
+"$PROGRAMFILES/gpac/mp4box.exe"
+"$PROGRAMFILES/mozilla firefox/firefox.exe"
+"$PROGRAMFILES/notepad2/notepad2.exe"
+"$SYSTEMROOT/system32/ping.exe"
+"$SYSTEMROOT/system32/reg.exe"
+"$SYSTEMROOT/system32/rundll32.exe"
+"$SYSTEMROOT/system32/schtasks.exe"
+"$SYSTEMROOT/system32/setx.exe"
+eof
 
 for q in /usr/local/bin/*
 do
