@@ -15,7 +15,9 @@ BEGIN {
   ARGC = 0
   FS = OFS = ": "
 }
-$1 == "Date" {split($2, wh, / [-+]/)}
+$1 == "Date" {
+  split($2, wh, / [-+]/)
+}
 $1 == "From" {
   split($2, xr, " <")
   $2 = ARGV[1]
@@ -35,9 +37,15 @@ $1 == "Message-Id" {
   $1 = "References"
   print
 }
-!ya && !$0 {ya = NR}
-ya && NR == ya + 1 {printf "On %s, %s wrote:\n", wh[1], xr[1]}
-ya && $0 {$0 = "> " $0}
+!ya && !$0 {
+  ya = NR
+}
+ya && NR == ya + 1 {
+  printf "On %s, %s wrote:\n", wh[1], xr[1]
+}
+ya && $0 {
+  $0 = "> " $0
+}
 ya
 ' "$fro" "$mr" > "$uf"
 "$EDITOR" "$uf"
