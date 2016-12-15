@@ -3,7 +3,7 @@
 # https://www.google.com/settings/security/lesssecureapps
 if [ "$#" != 4 ]
 then
-  echo 'gmail.sh [from name] [user] [password] [URL]'
+  echo 'mailing-list.sh [from name] [user] [password] [URL]'
   exit
 fi
 fro=$1 use=$2 pas=$3 url=$4
