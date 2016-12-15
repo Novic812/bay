@@ -9,6 +9,7 @@ fi
 fro=$1 use=$2 pas=$3 url=$4
 uf=$(mktemp /tmp/upload-file-XXX.txt)
 mr=$(mktemp /tmp/mail-rcpt-XXX.txt)
+
 curl "$url" |
 awk '
 BEGIN {
@@ -48,6 +49,7 @@ ya && $0 {
 }
 ya
 ' "$fro" "$mr" > "$uf"
+
 "$EDITOR" "$uf"
 read mr < "$mr"
 curl --mail-rcpt "$mr" --upload-file "$uf" smtps://"$use":"$pas"@smtp.gmail.com
