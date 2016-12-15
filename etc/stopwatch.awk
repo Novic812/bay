@@ -1,5 +1,5 @@
 #!/usr/bin/awk -f
-func z() {
+function z() {
   getline < "/proc/uptime"
   close("/proc/uptime")
   return $0
