@@ -5,12 +5,14 @@ then
   exit
 fi
 xr=$1
-while read ya
+ya=$(mktemp /tmp/highlight-XXX.txt)
+
+while read zu
 do
-  printf '%s\n\n<!-- language: %s -->\n\n' "$ya" "$ya"
+  printf '%s\n\n<!-- language: %s -->\n\n' "$zu" "$zu"
   cat "$xr"
   echo
-done <<'zu'
+done > "$ya" <<'eof'
 lang-sh
 lang-c
 lang-cs
@@ -18,7 +20,6 @@ lang-clj
 lang-coffee
 lang-css
 lang-dart
-lang-pascal
 lang-erlang
 lang-go
 lang-hs
@@ -30,9 +31,9 @@ lang-tex
 lang-lisp
 lang-lua
 lang-fs
+lang-matlab
 lang-pascal
 lang-perl
-lang-php
 lang-proto
 lang-python
 lang-r
@@ -43,5 +44,6 @@ lang-scala
 lang-sql
 lang-vhdl
 lang-vb
-lang-xml
-zu
+eof
+
+"$EDITOR" "$ya"
