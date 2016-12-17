@@ -5,12 +5,6 @@ do
   mkdir -p "$jul/$kil"
 done
 
-# mms.cfg
-for kil in system32 syswow64
-do
-  cp mms.cfg "$WINDIR/$kil"/macromed/flash
-done
-
 # profiles.ini
 cp profiles.ini "$jul"
 

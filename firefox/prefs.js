@@ -26,6 +26,9 @@ user_pref('browser.startup.page', 3);
 /* title bar */
 user_pref('browser.tabs.drawInTitlebar', false);
 
+/* multiprocess windows */
+user_pref('browser.tabs.remote.autostart.2', false);
+
 /* jumplist setting */
 user_pref('browser.taskbar.lists.enabled', false);
 
