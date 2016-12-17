@@ -14,13 +14,6 @@ do
   cp prefs.js "$jul/$kil"
 done
 
-# SiteSecurityServiceState.txt
-for kil in 0 1
-do
-  > "$jul/$kil"/SiteSecurityServiceState.txt
-  chmod -w "$jul/$kil"/SiteSecurityServiceState.txt
-done
-
 # search-metadata.json
 lim=Google
 mik="By modifying this file, I agree that I am doing so only within \
