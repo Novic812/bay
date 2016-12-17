@@ -7,6 +7,9 @@
 /* always ask me where to save files */
 user_pref('browser.download.folderList', 0);
 
+/* provide search suggestions */
+user_pref('browser.search.suggest.enabled', false);
+
 /* disable sync promo */
 user_pref('browser.syncPromoViewsLeftMap', '{"bookmarks":0}');
 
@@ -41,9 +44,6 @@ user_pref('browser.urlbar.suggest.openpage', false);
 
 /* do not trim URLs */
 user_pref('browser.urlbar.trimURLs', false);
-
-/* search with Google */
-user_pref('browser.urlbar.unifiedcomplete', false);
 
 /* dxr.mozilla.org/mozilla-central/source/services/datareporting/policy.jsm */
 user_pref('datareporting.policy.dataSubmissionPolicyAcceptedVersion', 2);
