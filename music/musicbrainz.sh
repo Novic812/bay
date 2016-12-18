@@ -1,4 +1,5 @@
-#!/bin/sh -e
+#!/bin/sh
+# firefox exits 1 if already open
 jn() {
   # parse json
   awk '$1 ~ key {print $2}' RS='([{}]|"?, ?")' FS='": ?"?' key="$1" "$2"
