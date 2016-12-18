@@ -1,12 +1,11 @@
+. ~/.browser
+. ~/.editor
 HISTCONTROL=ignoredups
 HISTIGNORE=c
 HISTSIZE=
 PATH=/usr/local/bin:/usr/bin
 PROMPT_COMMAND=gsh
-export BROWSER=firefox
 export CYGWIN=winsymlinks:native
-export EDITOR=notepad2.sh
-export GIT_EDITOR='notepad2 "$(cygpath -w "$1")" #'
 export LANG=en_US.utf8 # case insensitive sort
 export POSIXLY_CORRECT=
 alias agrep='grep -I --color --exclude .bash_history --exclude-dir .git'
