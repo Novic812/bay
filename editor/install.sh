@@ -1,4 +1,4 @@
 #!/bin/dash -e
-set "$APPDATA"/notepad2
-mkdir -p "$1"
-cp notepad2.ini "$1"
+install -Dvt "$APPDATA"/notepad2 notepad2.ini
+ln -sfv "$PWD"/notepad2.sh /usr/local/bin
+ln -sfv "$PWD"/.editor ~
