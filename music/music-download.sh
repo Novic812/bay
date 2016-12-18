@@ -86,7 +86,7 @@ done
 
 while IFS=$(printf '\t') read wu upload_date source _filename
 do
-  if [ ! -e %-new/"$_filename" ]
+  if [ ! -f %-new/"$_filename" ]
   then
     continue
   fi
