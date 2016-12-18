@@ -1,3 +1,7 @@
+/*
+@import "file:d:/git/dotfiles/browser/stylish.css";
+@-moz-document url-prefix(http) {}
+*/
 @-moz-document domain(alternativeto.net) {
   .cc_banner-wrapper {
     display: none !important;
