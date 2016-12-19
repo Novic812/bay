@@ -5,6 +5,8 @@ ech = {
   'browser.newtabpage.enabled': false,
   // disable new tab page
   'browser.newtabpage.introShown': true,
+  // keep ‘most visited’ from reappearing
+  'browser.places.smartBookmarksVersion': 1,
   // do not provide search suggestions
   'browser.search.suggest.enabled': false,
   // firefox is not currently set as your default browser
