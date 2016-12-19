@@ -25,6 +25,8 @@ ech = {
   'browser.urlbar.suggest.openpage': false,
   // trim URLs
   'browser.urlbar.trimURLs': false,
+  // firefox automatically sends some data to mozilla
+  'datareporting.policy.dataSubmissionPolicyBypassNotification': true,
   // browser console
   'devtools.chrome.enabled': true,
   // disable pocket
