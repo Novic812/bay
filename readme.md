@@ -1,7 +1,18 @@
-### Install
+Dotfiles
+===================
+Configuration files
 
-Check each folder for install script
+Links
+-----------------
+[Repository][svn]
 
-### Thanks
+Author
+------------
+Steven Penny
 
-[Mathias Bynens](//github.com/mathiasbynens/dotfiles)
+Thanks
+---------------------
+[Mathias Bynens][mat]
+
+[mat]://github.com/mathiasbynens/dotfiles
+[svn]://github.com/svnpenn/dotfiles
