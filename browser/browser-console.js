@@ -1,75 +1,70 @@
-/*
-- must use ‘false’ where appropriate; ‘0’ will not work
-- user.js is bad. GUI changes get saved to prefs.js, which gets overwritten by
-  user.js on restart
-*/
+ech = {
+  // always ask me where to save files
+  'browser.download.folderList': 0,
+  // disable new tab page
+  'browser.newtabpage.enabled': false,
+  // disable new tab page
+  'browser.newtabpage.introShown': true,
+  // do not provide search suggestions
+  'browser.search.suggest.enabled': false,
+  // firefox is not currently set as your default browser
+  'browser.shell.checkDefaultBrowser': false,
+  // disable first run page
+  'browser.startup.homepage_override.mstone': 'ignore',
+  // show windows and tabs from last time
+  'browser.startup.page': 3,
+  // title bar
+  'browser.tabs.drawInTitlebar': false,
+  // multiprocess windows
+  'browser.tabs.remote.autostart.2': false,
+  // jumplist setting
+  'browser.taskbar.lists.enabled': false,
+  // disable URL autocomplete
+  'browser.urlbar.autoFill': false,
+  // switch to tab
+  'browser.urlbar.suggest.openpage': false,
+  // trim URLs
+  'browser.urlbar.trimURLs': false,
+  // browser console
+  'devtools.chrome.enabled': true,
+  // disable pocket
+  'extensions.pocket.enabled': false,
+  // congratulations, you've installed stylish
+  'extensions.stylish.firstRun': 1,
+  // about:config warning
+  'general.warnOnAboutConfig': false,
+  // share your location
+  'geo.enabled': false,
+  // play gifs
+  'image.animation_mode': 'once',
+  // reader view
+  'reader.parse-on-load.enabled': false,
+  // need this to use bookmarklets @ github.com
+  'security.csp.enable': false,
+  // remember passwords
+  'signon.rememberSignons': false
+};
 
-/* always ask me where to save files */
-user_pref('browser.download.folderList', 0);
+fox = Services.prefs;
+fox.resetUserPrefs();
 
-/* provide search suggestions */
-user_pref('browser.search.suggest.enabled', false);
-
-/* disable sync promo */
-user_pref('browser.syncPromoViewsLeftMap', '{"bookmarks":0}');
-
-/* disable new tab page */
-user_pref('browser.newtabpage.enabled', false);
-user_pref('browser.newtabpage.introShown', true);
-
-/* do not generate smart bookmarks */
-user_pref('browser.places.smartBookmarksVersion', 1);
-
-/* disable first run page */
-user_pref('browser.startup.homepage_override.mstone', 'ignore');
-
-/* show windows and tabs from last time */
-user_pref('browser.startup.page', 3);
-
-/* title bar */
-user_pref('browser.tabs.drawInTitlebar', false);
-
-/* multiprocess windows */
-user_pref('browser.tabs.remote.autostart.2', false);
-
-/* jumplist setting */
-user_pref('browser.taskbar.lists.enabled', false);
-
-/* disable URL autocomplete */
-user_pref('browser.urlbar.autoFill', false);
-
-/* disable switch to tab */
-user_pref('browser.migration.version', 26);
-user_pref('browser.urlbar.suggest.openpage', false);
-
-/* do not trim URLs */
-user_pref('browser.urlbar.trimURLs', false);
-
-/* dxr.mozilla.org/mozilla-central/source/services/datareporting/policy.jsm */
-user_pref('datareporting.policy.dataSubmissionPolicyAcceptedVersion', 2);
-user_pref('datareporting.policy.dataSubmissionPolicyNotifiedTime',
-  '1325397600000');
-
-/* blocklist.xml */
-user_pref('extensions.blocklist.enabled', false);
-
-/* disable pocket */
-user_pref('extensions.pocket.enabled', false);
-
-/* about:config warning */
-user_pref('general.warnOnAboutConfig', false);
-
-/* share your location */
-user_pref('geo.enabled', false);
-
-/* play gifs once */
-user_pref('image.animation_mode', 'once');
-
-/* reader view */
-user_pref('reader.parse-on-load.enabled', false);
-
-/* need this to use bookmarklets @ github.com */
-user_pref('security.csp.enable', false);
-
-/* do not remember passwords */
-user_pref('signon.rememberSignons', false);
+for (gol in ech) {
+  switch (typeof ech[gol]) {
+  case 'number':
+    hot = 'getIntPref';
+    ind = 'setIntPref';
+    break;
+  case 'boolean':
+    hot = 'getBoolPref';
+    ind = 'setBoolPref';
+    break;
+  case 'string':
+    hot = 'getCharPref';
+    ind = 'setCharPref';
+  }
+  if (!fox.getPrefType(gol))
+    console.log(gol + ': PREF_INVALID');
+  if (fox.getPrefType(gol) && ech[gol] == fox[hot](gol))
+    console.log(gol + ': PREF_DEFAULT');
+  fox[ind](gol, ech[gol]);
+}
