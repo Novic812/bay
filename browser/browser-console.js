@@ -53,20 +53,17 @@ fox.resetUserPrefs();
 for (gol in ech) {
   switch (typeof ech[gol]) {
   case 'number':
-    hot = 'getIntPref';
-    ind = 'setIntPref';
+    hot = 'Int';
     break;
   case 'boolean':
-    hot = 'getBoolPref';
-    ind = 'setBoolPref';
+    hot = 'Bool';
     break;
   case 'string':
-    hot = 'getCharPref';
-    ind = 'setCharPref';
+    hot = 'Char';
   }
   if (!fox.getPrefType(gol))
     console.log(gol + ': PREF_INVALID');
-  else if (ech[gol] == fox[hot](gol))
+  else if (ech[gol] == fox[`get${hot}Pref`](gol))
     console.log(gol + ': PREF_DEFAULT');
-  fox[ind](gol, ech[gol]);
+  fox[`set${hot}Pref`](gol, ech[gol]);
 }
