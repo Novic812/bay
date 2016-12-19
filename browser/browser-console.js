@@ -66,7 +66,7 @@ for (gol in ech) {
   }
   if (!fox.getPrefType(gol))
     console.log(gol + ': PREF_INVALID');
-  if (fox.getPrefType(gol) && ech[gol] == fox[hot](gol))
+  else if (ech[gol] == fox[hot](gol))
     console.log(gol + ': PREF_DEFAULT');
   fox[ind](gol, ech[gol]);
 }
