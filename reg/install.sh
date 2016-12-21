@@ -64,18 +64,6 @@ reg add 'hkcu\software\microsoft\windows\currentVersion\explorer' /f /v link \
 # path
 setx /m path 'c:\programdata\bin;c:\windows\system32'
 
-# clear explorer and wallpaper history
-zu='hkcu\software\microsoft\windows\currentVersion\explorer\'
-for ya in typedPaths 'wallpapers\images'
-do
-  if reg query "$zu$ya" >/dev/null 2>&1
-  then reg delete "$zu$ya" /f
-  fi
-done
-
-# clear run history
-rundll32 inetcpl.cpl ClearMyTracksByProcess 1
-
 # hide file extensions
 reg add 'hkcu\software\microsoft\windows\currentVersion\explorer\advanced' /f \
   /v hideFileExt /t reg_dword /d 0
