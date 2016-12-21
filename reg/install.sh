@@ -1,69 +1,61 @@
 #!/bin/dash -e
-xr() {
-  printf 0x%04x%04x "$@"
-}
 
-# app paths
-while IFS=, read -r dn bn
-do
-  reg add 'hklm\software\microsoft\windows\currentVersion\app paths\'"$bn" \
-  /f /d "$dn$bn"
-done <<'eof'
-c:\cygwin64\bin\,bash.exe
-c:\cygwin64\bin\,cygstart.exe
-c:\program files\notepad2\,notepad2.exe
-eof
+# App Paths
+REG ADD \
+  'HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\bash.exe' \
+  /d 'C:\cygwin64\bin\bash.exe' /f
+REG ADD \
+  'HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\cygstart.exe' \
+  /d 'C:\cygwin64\bin\cygstart.exe' /f
+REG ADD \
+  'HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\Notepad2.exe' \
+  /d 'C:\Program Files\Notepad2\Notepad2.exe' /f
 
 # Notepad2
-while IFS=, read key default command
-do
-  if [ "$key" != null ]
-  then
-    reg add 'hkcr\'"$key" /f /d "$default"
-    reg add 'hkcr\'"$key" /f /v perceivedType
-  fi
-  if [ "$command" != null ]
-  then
-    reg add 'hkcr\'"$default"'\shell\0' /f /d Run
-    reg add 'hkcr\'"$default"'\shell\0\command' /f /d "$command"
-  fi
-  reg add 'hkcr\'"$default"'\shell\1' /f /d Edit
-  reg add 'hkcr\'"$default"'\shell\1\command' /f /d 'notepad2 "%1"'
-  reg add 'hkcr\'"$default"'\shell\2' /f /d Open
-  reg add 'hkcr\'"$default"'\shell\2\command' /f /d 'notepad "%1"'
-done <<'eof'
-null,unknown,null
-.css,cssfile,null
-.ini,inifile,null
-.nfo,txtfile,null
-.txt,txtfile,null
-.bat,batfile,"%1" %*
-.cmd,cmdfile,"%1" %*
-.htm,firefoxhtml,firefox "%1"
-.xml,firefoxhtml,firefox "%1"
-.reg,regfile,regedit "%1"
-.js,jsfile,wscript "%1"
-eof
+REG ADD 'HKCR\.css' /v PerceivedType /f
+REG ADD 'HKCR\.htm' /v PerceivedType /f
+REG ADD 'HKCR\.ini' /v PerceivedType /f
+REG ADD 'HKCR\.txt' /v PerceivedType /f
+REG ADD 'HKCR\CSSfile\shell' /d Notepad2 /f
+REG ADD 'HKCR\CSSfile\shell\Notepad\command' /d 'notepad "%1"' /f
+REG ADD 'HKCR\CSSfile\shell\Notepad2\command' /d 'Notepad2 "%1"' /f
+REG ADD 'HKCR\FirefoxHTML\shell' /d Firefox /f
+REG ADD 'HKCR\FirefoxHTML\shell\Firefox\command' /d 'firefox "%1"' /f
+REG ADD 'HKCR\FirefoxHTML\shell\Notepad\command' /d 'notepad "%1"' /f
+REG ADD 'HKCR\FirefoxHTML\shell\Notepad2\command' /d 'Notepad2 "%1"' /f
+REG ADD 'HKCR\inifile\shell' /d Notepad2 /f
+REG ADD 'HKCR\inifile\shell\Notepad\command' /d 'notepad "%1"' /f
+REG ADD 'HKCR\inifile\shell\Notepad2\command' /d 'Notepad2 "%1"' /f
+REG ADD 'HKCR\JSFile\shell' /d Wscript /f
+REG ADD 'HKCR\JSFile\shell\Notepad\command' /d 'notepad "%1"' /f
+REG ADD 'HKCR\JSFile\shell\Notepad2\command' /d 'Notepad2 "%1"' /f
+REG ADD 'HKCR\JSFile\shell\Wscript\command' /d 'wscript "%1"' /f
+REG ADD 'HKCR\txtfile\shell' /d Notepad2 /f
+REG ADD 'HKCR\txtfile\shell\Notepad\command' /d 'notepad "%1"' /f
+REG ADD 'HKCR\txtfile\shell\Notepad2\command' /d 'Notepad2 "%1"' /f
+REG ADD 'HKCR\Unknown\shell' /d Notepad2 /f
+REG ADD 'HKCR\Unknown\shell\Notepad\command' /d 'notepad "%1"' /f
+REG ADD 'HKCR\Unknown\shell\Notepad2\command' /d 'Notepad2 "%1"' /f
 
 # shell options
-for ya in drive directory 'directory\background'
-do
-  reg add 'hkcr\'"$ya"'\shell\Bash\command' /f /d "cygstart -d '%v' bash"
-done
+REG ADD 'HKCR\Drive\shell\Bash\command' /d "cygstart -d '%v' bash" /f
+REG ADD 'HKCR\Directory\shell\Bash\command' /d "cygstart -d '%v' bash" /f
+REG ADD 'HKCR\Directory\Background\shell\Bash\command' \
+  /d "cygstart -d '%v' bash" /f
 
 # Console
-reg add 'hkcu\console' /f /v codePage /t reg_dword /d 65001
-reg add 'hkcu\console' /f /v quickEdit /t reg_dword /d 1
-reg add 'hkcu\console' /f /v windowPosition /t reg_dword /d "$(xr 300 900)"
-reg add 'hkcu\console' /f /v windowSize /t reg_dword /d "$(xr 24 80)"
+REG ADD 'HKCU\Console' /v CodePage /t REG_DWORD /d 65001 /f
+REG ADD 'HKCU\Console' /v QuickEdit /t REG_DWORD /d 1 /f
+REG ADD 'HKCU\Console' /v WindowPosition /t REG_DWORD /d 0x012C0384 /f
+REG ADD 'HKCU\Console' /v WindowSize /t REG_DWORD /d 0x00180050 /f
 
 # remove shortcut text - must restart explorer
-reg add 'hkcu\software\microsoft\windows\currentVersion\explorer' /f /v link \
-  /t reg_binary /d 00000000
+REG ADD 'HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer' \
+  /v Link /t REG_BINARY /d 00000000 /f
 
-# path
-setx /m path 'c:\programdata\bin;c:\windows\system32'
+# Path
+SETX Path 'C:\ProgramData\Bin;C:\Windows\System32' /M
 
 # hide file extensions
-reg add 'hkcu\software\microsoft\windows\currentVersion\explorer\advanced' /f \
-  /v hideFileExt /t reg_dword /d 0
+REG ADD 'HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced' \
+  /v HideFileExt /t REG_DWORD /d 0 /f
