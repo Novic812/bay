@@ -1,2 +1,2 @@
-export EDITOR=Notepad2.awk
-export GIT_EDITOR='gawk -f /usr/local/bin/Notepad2.awk'
+export EDITOR=notepad2.awk
+export GIT_EDITOR='gawk -f /usr/local/bin/notepad2.awk'
