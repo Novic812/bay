@@ -9,7 +9,7 @@ ech = {
   'browser.places.smartBookmarksVersion': 1,
   // do not provide search suggestions
   'browser.search.suggest.enabled': false,
-  // firefox is not currently set as your default browser
+  // Firefox is not currently set as your default browser
   'browser.shell.checkDefaultBrowser': false,
   // disable first run page
   'browser.startup.homepage_override.mstone': 'ignore',
@@ -27,7 +27,7 @@ ech = {
   'browser.urlbar.suggest.openpage': false,
   // trim URLs
   'browser.urlbar.trimURLs': false,
-  // firefox automatically sends some data to mozilla
+  // Firefox automatically sends some data to Mozilla
   'datareporting.policy.dataSubmissionPolicyBypassNotification': true,
   // browser console
   'devtools.chrome.enabled': true,

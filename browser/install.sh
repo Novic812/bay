@@ -1,3 +1,2 @@
-#!/bin/dash -e
-install -Dvt "$APPDATA"/mozilla/firefox profiles.ini
+#!/bin/dash
 ln -sfv "$PWD"/.browser ~
