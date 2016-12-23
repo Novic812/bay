@@ -1,7 +1,7 @@
 #!/bin/sh
-# firefox exits 1 if already open
+# Firefox exits 1 if already open
 jn() {
-  # parse json
+  # parse JSON
   awk '$1 ~ key {print $2}' RS='([{}]|"?, ?")' FS='": ?"?' key="$1" "$2"
 }
 

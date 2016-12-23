@@ -1,5 +1,5 @@
 #!/bin/dash
-# firefox exits 1 if already open
+# Firefox exits 1 if already open
 if [ ! "$BROWSER" ]
 then
   echo 'BROWSER not set or not exported'
