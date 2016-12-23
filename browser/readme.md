@@ -1,11 +1,15 @@
 
-Start with Profile Manager:
+Start with Profile Manager
+--------------------------
 
 ~~~
 firefox -P
 ~~~
 
-Bypass Profile Manager and launch application with a profile:
+http://developer.mozilla.org/docs/Mozilla/Command_Line_Options
+
+Bypass Profile Manager and launch application with a profile
+------------------------------------------------------------
 
 ~~~
 firefox -no-remote -P November
