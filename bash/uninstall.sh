@@ -4,7 +4,7 @@
 rm -fv /etc/fstab
 
 # /home
-rm -rfv ~
+rm -fv ~/.bash_history ~/.bashrc ~/.inputrc
 
 # /usr
 awk '
