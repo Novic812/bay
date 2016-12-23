@@ -13,4 +13,7 @@ fi
 ln -sfv "$PWD"/.bash_history "$PWD"/.bashrc "$PWD"/.inputrc ~
 
 # /usr
-xargs -d '\n' ln -sfvt /usr/local/bin < symlink.txt
+awk '
+{g = g " \47" $0 "\47"}
+END {system("ln -sfvt /usr/local/bin" g)}
+' symlink.txt
