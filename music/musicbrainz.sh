@@ -61,7 +61,6 @@ case $1 in
 '')
   cat <<'xr'
 musicbrainz.sh date-get <album>  <date>
-musicbrainz.sh  img-get <artist> <album>
 musicbrainz.sh  img-set <image>
 
 date must be this format: 1982-12
@@ -77,15 +76,6 @@ when adding release, make sure to include
 - track lengths
 xr
   exit
-;;
-img-get)
-  artist=$2
-  album=$3
-  "$BROWSER" 'http://google.com/search?tbm=isch&q='"$artist $album"
-  "$BROWSER" 'http://fanart.tv/api/getdata.php?type=2&s='"$artist"
-  "$BROWSER" 'http://discogs.com/search?q='"$artist $album"
-  "$BROWSER" 'http://wikipedia.org/w/index.php?search='"${artist// /+}+${album// /+}"
-  "$BROWSER" 'http://musicbrainz.org/search?type=release&query='"$artist $album"
 ;;
 img-set)
   convert "$2" -resize x1000 -compress lossless 1000-"$2"
