@@ -1,5 +1,4 @@
 #!/bin/dash
-# firefox exits 1 if already open
 if [ ! "$BROWSER" ]
 then
   echo 'BROWSER not set or not exported'
@@ -11,9 +10,7 @@ then
   exit
 fi
 
-xargs -d '\n' -n 1 "$BROWSER" -new-tab <<z
-http://allmusic.com/search/all/$1
-http://metacritic.com/search/all/$1/results
-http://pitchfork.com/search/?query=$1
-http://albumoftheyear.org/search.php?q=$1
-z
+"$BROWSER" -new-tab albumoftheyear.org/search.php?q="$1" \
+-new-tab allmusic.com/search/all/"$1" \
+-new-tab metacritic.com/search/all/"$1"/results \
+-new-tab pitchfork.com/search/?query="$1"
