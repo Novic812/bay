@@ -10,10 +10,14 @@ then
   exit
 fi
 
-while read pa
-do
-  "$BROWSER" "$pa"
-done <<qu
+awk '
+{
+  z = z " -new-tab \47" $0 "\47"
+}
+END {
+  system(ENVIRON["BROWSER"] z)
+}
+' <<qu
 youtube.com/results?q="$1 - Topic" intitle:"$2"
 youtube.com/results?q="Clapham Junction" intitle:"$1 $2"
 youtube.com/results?q=-intitle:"$1" "$1" intitle:"$2", hd
