@@ -26,10 +26,9 @@ REG ADD 'HKCR\FirefoxHTML\shell\Notepad2\command' /d 'Notepad2 "%1"' /f
 REG ADD 'HKCR\inifile\shell' /d Notepad2 /f
 REG ADD 'HKCR\inifile\shell\Notepad\command' /d 'notepad "%1"' /f
 REG ADD 'HKCR\inifile\shell\Notepad2\command' /d 'Notepad2 "%1"' /f
-REG ADD 'HKCR\JSFile\shell' /d Wscript /f
+REG ADD 'HKCR\JSFile\shell' /d Notepad2 /f
 REG ADD 'HKCR\JSFile\shell\Notepad\command' /d 'notepad "%1"' /f
 REG ADD 'HKCR\JSFile\shell\Notepad2\command' /d 'Notepad2 "%1"' /f
-REG ADD 'HKCR\JSFile\shell\Wscript\command' /d 'wscript "%1"' /f
 REG ADD 'HKCR\txtfile\shell' /d Notepad2 /f
 REG ADD 'HKCR\txtfile\shell\Notepad\command' /d 'notepad "%1"' /f
 REG ADD 'HKCR\txtfile\shell\Notepad2\command' /d 'Notepad2 "%1"' /f
