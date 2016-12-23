@@ -13,10 +13,7 @@ fi
 awk '
 {
   gsub(" ", "+")
-  j = j " -new-tab \47" $0 "\47"
-}
-END {
-  system(ENVIRON["BROWSER"] j)
+  system(ENVIRON["BROWSER"] " \47" $0 "\47")
 }
 ' <<eof
 discogs.com/search?q=$1 $2
