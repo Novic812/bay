@@ -63,8 +63,9 @@ for (ya in qu) {
   case 'string':
     zu = 'Char';
   }
-  if (!xr.getPrefType(ya))
+  if (!xr.getPrefType(ya)) {
     console.log(ya + ': PREF_INVALID');
+  }
   xr[`set${zu}Pref`](ya, qu[ya]);
   if (!xr.prefHasUserValue(ya)) {
     console.log(ya + ': PREF_DEFAULT');
