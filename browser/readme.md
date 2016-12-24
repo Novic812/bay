@@ -16,3 +16,7 @@ firefox -no-remote -P November
 ~~~
 
 http://bugzilla.mozilla.org/show_bug.cgi?id=855899
+
+resetUserPrefs
+--------------
+http://developer.mozilla.org/docs/Mozilla/Tech/XPCOM/Reference/Interface/nsIPrefService
