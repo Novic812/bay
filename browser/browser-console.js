@@ -49,25 +49,16 @@ qu = {
   'signon.rememberSignons': false
 };
 
-xr = Services.prefs;
-xr.resetUserPrefs();
+xr = {number: 'setIntPref', boolean: 'setBoolPref', string: 'setCharPref'};
+ya = Services.prefs;
+ya.resetUserPrefs();
 
-for (ya in qu) {
-  switch (typeof qu[ya]) {
-  case 'number':
-    zu = 'Int';
-    break;
-  case 'boolean':
-    zu = 'Bool';
-    break;
-  case 'string':
-    zu = 'Char';
+for (zu in qu) {
+  if (!ya.getPrefType(zu)) {
+    console.log(zu + ': PREF_INVALID');
   }
-  if (!xr.getPrefType(ya)) {
-    console.log(ya + ': PREF_INVALID');
-  }
-  xr[`set${zu}Pref`](ya, qu[ya]);
-  if (!xr.prefHasUserValue(ya)) {
-    console.log(ya + ': PREF_DEFAULT');
+  ya[xr[typeof qu[zu]]](zu, qu[zu]);
+  if (!ya.prefHasUserValue(zu)) {
+    console.log(zu + ': PREF_DEFAULT');
   }
 }
