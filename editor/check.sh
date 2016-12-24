@@ -10,9 +10,7 @@ xc "$EDITOR"
 xc "$EDITOR" ''
 xc "$EDITOR" /etc/wgetrc
 xc "$EDITOR" '' /etc/wgetrc
-xc read br
 xc "$EDITOR" 'C:\cygwin64\etc\shells'
-xc read br
 xc git clone --depth 1 git://github.com/svnpenn/a
 xc cd a
 echo EDITOR >> readme.txt
