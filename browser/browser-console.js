@@ -1,4 +1,4 @@
-ech = {
+qu = {
   // always ask me where to save files
   'browser.download.folderList': 0,
   // disable new tab page
@@ -49,24 +49,24 @@ ech = {
   'signon.rememberSignons': false
 };
 
-fox = Services.prefs;
-fox.resetUserPrefs();
+xr = Services.prefs;
+xr.resetUserPrefs();
 
-for (gol in ech) {
-  switch (typeof ech[gol]) {
+for (ya in qu) {
+  switch (typeof qu[ya]) {
   case 'number':
-    hot = 'Int';
+    zu = 'Int';
     break;
   case 'boolean':
-    hot = 'Bool';
+    zu = 'Bool';
     break;
   case 'string':
-    hot = 'Char';
+    zu = 'Char';
   }
-  if (!fox.getPrefType(gol))
-    console.log(gol + ': PREF_INVALID');
-  fox[`set${hot}Pref`](gol, ech[gol]);
-  if (!fox.prefHasUserValue(gol)) {
-    console.log(gol + ': PREF_DEFAULT');
+  if (!xr.getPrefType(ya))
+    console.log(ya + ': PREF_INVALID');
+  xr[`set${zu}Pref`](ya, qu[ya]);
+  if (!xr.prefHasUserValue(ya)) {
+    console.log(ya + ': PREF_DEFAULT');
   }
 }
