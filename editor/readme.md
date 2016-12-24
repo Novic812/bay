@@ -1,10 +1,16 @@
 
 Editor
-======
+===========================================================
 - Cannot use a function http://stackoverflow.com/q/38079864
 - Order of preference is the $GIT_EDITOR environment variable, then core.editor
   http://git-scm.com/docs/git-var
 
 Thanks
-------
-http://stackoverflow.com/q/10459049
+-------------------------------------
+- http://stackoverflow.com/a/41315379
+- http://stackoverflow.com/q/1634161 - dec 25
+- http://stackoverflow.com/q/10209660 - dec 26
+- http://stackoverflow.com/q/32081685 - dec 27
+- http://stackoverflow.com/q/10459049 - dec 28
+- http://superuser.com/q/335615 - dec 29
+- http://emacs.stackexchange.com/q/14331 - dec 30
