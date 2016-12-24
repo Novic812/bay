@@ -65,7 +65,8 @@ for (gol in ech) {
   }
   if (!fox.getPrefType(gol))
     console.log(gol + ': PREF_INVALID');
-  else if (ech[gol] == fox[`get${hot}Pref`](gol))
-    console.log(gol + ': PREF_DEFAULT');
   fox[`set${hot}Pref`](gol, ech[gol]);
+  if (!fox.prefHasUserValue(gol)) {
+    console.log(gol + ': PREF_DEFAULT');
+  }
 }
