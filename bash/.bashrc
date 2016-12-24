@@ -6,8 +6,8 @@ HISTSIZE=
 PATH=/usr/local/bin:/usr/bin
 PROMPT_COMMAND=gsh
 export CYGWIN=winsymlinks:native
-export LANG=en_US.utf8 # case insensitive sort
-export POSIXLY_CORRECT=
+export LANG=en_US.UTF-8 # case insensitive sort
+export POSIXLY_CORRECT=1
 alias agrep='grep -I --color --exclude .bash_history --exclude-dir .git'
 shopt -s completion_strip_exe
 
@@ -26,17 +26,9 @@ ish() {
 }
 
 length() {
-  awk '
-  {jul[NR] = $0; kil[NR] = length; lim[NR] = NR}
-  END {
-    for (mik in jul) {
-      nov = lim[mik]; osc = mik - 1
-      while (osc && kil[lim[osc]] > kil[nov]) {lim[osc+1] = lim[osc]; osc--}
-      lim[osc+1] = nov
-    }
-    for (mik in lim) print jul[lim[mik]]
-  }
-  '
+  awk '{a[NR] = $0; b[NR] = length; c[NR] = NR} END {for (k in a) {m = c[k]
+  q = k - 1; while (q && b[c[q]] > b[m]) {c[q+1] = c[q]; q--} c[q+1] = m}
+  for (k in c) {print a[c[k]]}}'
 }
 
 gsh() {
