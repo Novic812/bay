@@ -1,6 +1,6 @@
 
 Thanks
 -------------------------------------
-- http://stackoverflow.com/q/12417403
-- http://stackoverflow.com/q/5917576
-- http://stackoverflow.com/q/8296649
+- http://stackoverflow.com/a/41309876
+- http://stackoverflow.com/q/8296649 - dec 24
+- http://stackoverflow.com/q/12417403 - dec 25
