@@ -10,8 +10,8 @@ case $fox in
 *soundcloud*)
   gol='
   BEGIN {
-    RS = "\"?,\""
-    FS = "\":\"?"
+    RS = "\42?,\42"
+    FS = "\42:\42?"
   }
   /created_at/ {
     ind = gensub(/[[:alpha:][:punct:]]/, " ", "g", $2)
@@ -25,7 +25,7 @@ case $fox in
 *youtube*)
   gol='
   BEGIN {
-    FS = "\""
+    FS = "\42"
   }
   /interactionCount/ {
     hot = $4
