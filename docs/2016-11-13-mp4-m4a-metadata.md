@@ -1,43 +1,43 @@
 
 Read tags
-=====================================
-- http://askubuntu.com/questions/364415
-- http://unix.stackexchange.com/questions/131186
+===============================
+- http://askubuntu.com/a/525879
+- http://unix.stackexchange.com/a/323094
 
 faststart
-=====================================
-- http://superuser.com/questions/559372
-- http://superuser.com/questions/616484
+================================
+- http://superuser.com/a/1149396
+- http://superuser.com/a/616799
 
 Fast MP4 thumbnails
-=======================================================
-- http://askubuntu.com/questions/809175
-- http://softwarerecs.stackexchange.com/questions/13865
-- http://stackoverflow.com/questions/14729432
-- http://stackoverflow.com/questions/17798709
-- http://superuser.com/questions/524100
-- http://superuser.com/questions/597945
-- http://unix.stackexchange.com/questions/53488
+===============================
+- http://askubuntu.com/a/849220
+- http://softwarerecs.stackexchange.com/a/31043
+- http://stackoverflow.com/a/17799392
+- http://stackoverflow.com/a/40582446
+- http://superuser.com/a/1145221
+- http://superuser.com/a/621550
+- http://unix.stackexchange.com/a/323088
 
 Subtitles
-===============================
-- http://superuser.com/q/700082
-- http://unix.stackexchange.com/q/232302
-- http://video.stackexchange.com/q/10423
+================================
+- http://superuser.com/a/1149845
+- http://unix.stackexchange.com/a/326108
+- http://video.stackexchange.com/a/19966
 
 Cue
-========================================
-- http://askubuntu.com/q/521388
-- http://musicfans.stackexchange.com/q/2451
-- http://superuser.com/q/368950
-- http://unix.stackexchange.com/q/10251
+===============================
+- http://askubuntu.com/a/858965
+- http://musicfans.stackexchange.com/a/4439
+- http://superuser.com/a/1155860
+- http://unix.stackexchange.com/a/278970
 - http://askubuntu.com/q/183599 - dec 26
 - http://superuser.com/q/675491 - dec 26
 - http://superuser.com/q/577476 - dec 27
 
 Tag Editor
 ==============================================
-http://github.com/Martchus/tageditor/issues/11
+http://github.com/Martchus/tageditor/issues/15
 
 FFmpeg
 ====================================
@@ -50,8 +50,8 @@ http://github.com/gpac/gpac/issues/693
 
 Bento4
 =====================================================
-- http://github.com/axiomatic-systems/Bento4/issues/104
 - http://github.com/axiomatic-systems/Bento4/issues/105
+- http://github.com/axiomatic-systems/Bento4/issues/104
 
 ExifTool
 ========================================
