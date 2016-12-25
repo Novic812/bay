@@ -11,15 +11,15 @@ then
 fi
 
 awk '
-function d(h, j) {
-  k = "\47"; q = split(h, x, k); for (z in x) {
-    j = j (x[z] ~ /[^[:alnum:]%+,./:=@_-]/ ? k x[z] k : x[z])
-    if (z < q) j = j "\\" k
-  } return j
+function ch(ec, go) {
+  ju = "\47"; ki = split(ec, pa, ju); for (qu in pa) {
+    go = go (pa[qu] ~ /[^[:alnum:]%+,./:=@_-]/ ? ju pa[qu] ju : pa[qu])
+    if (qu < ki) go = go "\\" ju
+  } return go
 }
 {
   gsub(" ", "+")
-  system(d(ENVIRON["BROWSER"]) FS d($0))
+  system(ch(ENVIRON["BROWSER"]) FS ch($0))
 }
 ' <<eof
 discogs.com/search?q=$1 $2
