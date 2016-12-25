@@ -10,11 +10,18 @@ then
   exit
 fi
 
-while read xr
-do
-  ya=$(awk 'BEGIN {$0 = ARGV[1]; gsub(" ", "+"); print}' "$xr")
-  "$BROWSER" "$ya"
-done <<eof
+awk '
+function d(h, j) {
+  k = "\47"; q = split(h, x, k); for (z in x) {
+    j = j (x[z] ~ /[^[:alnum:]%+,./:=@_-]/ ? k x[z] k : x[z])
+    if (z < q) j = j "\\" k
+  } return j
+}
+{
+  gsub(" ", "+")
+  system(d(ENVIRON["BROWSER"]) FS d($0))
+}
+' <<eof
 discogs.com/search?q=$1 $2
 fanart.tv/api/getdata.php?type=2&s=$1
 google.com/search?tbm=isch&q=$1 $2
