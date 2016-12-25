@@ -10,12 +10,11 @@ then
   exit
 fi
 
-awk '
-{
-  gsub(" ", "+")
-  system(ENVIRON["BROWSER"] " \47" $0 "\47")
-}
-' <<eof
+while read xr
+do
+  ya=$(awk 'BEGIN {$0 = ARGV[1]; gsub(" ", "+"); print}' "$xr")
+  "$BROWSER" "$ya"
+done <<eof
 discogs.com/search?q=$1 $2
 fanart.tv/api/getdata.php?type=2&s=$1
 google.com/search?tbm=isch&q=$1 $2
