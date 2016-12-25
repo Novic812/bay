@@ -1,9 +1,8 @@
 #!/usr/bin/awk -f
 function ch(ec, go) {
-  ju = "\47"; ki = split(ec, pa, ju); for (qu in pa) {
-    go = go (pa[qu] ~ /[^[:alnum:]%+,./:=@_-]/ ? ju pa[qu] ju : pa[qu])
-    if (qu < ki) go = go "\\" ju
-  } return go
+  ju = "\47"; ki = split(ec, pa, ju)
+  for (qu in pa) go = go ju pa[qu] ju (qu < ki ? "\\" ju : "")
+  return go
 }
 BEGIN {
   if (ARGC != 2) {
