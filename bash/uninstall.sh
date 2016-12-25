@@ -9,10 +9,9 @@ rm -fv ~/.bash_history ~/.bashrc ~/.inputrc
 # /usr
 awk '
 function ch(ec, go) {
-  ju = "\47"; ki = split(ec, pa, ju); for (qu in pa) {
-    go = go (pa[qu] ~ /[^[:alnum:]%+,./:=@_-]/ ? ju pa[qu] ju : pa[qu])
-    if (qu < ki) go = go "\\" ju
-  } return go
+  ju = "\47"; ki = split(ec, pa, ju)
+  for (qu in pa) go = go ju pa[qu] ju (qu < ki ? "\\" ju : "")
+  return go
 }
 BEGIN {FS = "\\"}
 {p = p " /usr/local/bin/" ch($NF)}
