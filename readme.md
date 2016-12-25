@@ -1,18 +1,17 @@
 A
-=====
+============
 It doesn’t stand for anything. It does stand for anything.
 
 Links
------
-[Repository][gs]
+------------
+http://github.com/svnpenn/a
 
 Author
-------
+------------
 Steven Penny
 
 Thanks
-------
-[print only certain commands from a bash script as they are run][268018]
-
-[gs]://github.com/svnpenn/a
-[268018]://unix.stackexchange.com/a/268018
+------------
+- http://askubuntu.com/a/468003
+- http://stackoverflow.com/a/41321982
+- http://unix.stackexchange.com/a/268018
