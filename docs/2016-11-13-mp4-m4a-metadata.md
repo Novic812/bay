@@ -27,15 +27,13 @@ Subtitles
 
 Cue
 ========================================
-- http://askubuntu.com/q/183599
 - http://askubuntu.com/q/521388
 - http://musicfans.stackexchange.com/q/2451
-- http://superuser.com/q/1036165
 - http://superuser.com/q/368950
-- http://superuser.com/q/577476
-- http://superuser.com/q/675491
-- http://superuser.com/q/806247
 - http://unix.stackexchange.com/q/10251
+- http://askubuntu.com/q/183599 - dec 26
+- http://superuser.com/q/675491 - dec 26
+- http://superuser.com/q/577476 - dec 27
 
 Tag Editor
 ==============================================
