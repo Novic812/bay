@@ -61,7 +61,7 @@ do
       continue
     fi
     awk '{printf $0 FS}' "$pat_file"
-    if grep -qif "$pat_file" "$inp_file"
+    if grep -Fqif "$pat_file" "$inp_file"
     then
       echo BAD
     else
