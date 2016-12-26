@@ -14,24 +14,20 @@ wh
 fi
 case $1 in
 query)
-  schtasks /query /v /fo list |
+  SCHTASKS /Query /FO LIST /V |
   awk '
   BEGIN {FS = ":  "}
   $1 == "HostName" {xr++}
-  $1 == "Days" {dy[xr] = $0}
-  $1 == "Repeat: Every" {ra[xr] = $0}
-  $1 == "Start Date" {sa[xr] = $0}
-  $1 == "Start Time" {sm[xr] = $0}
-  $1 == "TaskName" {ts[xr] = $0}
+  {ya[xr, $1] = $0}
   END {
-    for (xr in ts) {
-      if (ts[xr] !~ "Microsoft|WPD") {
+    while (br++ < xr) {
+      if (ya[br, "TaskName"] !~ "Microsoft|WPD") {
         if (zu++) print ""
-        print ts[xr]
-        print sm[xr]
-        print sa[xr]
-        print dy[xr]
-        print ra[xr]
+        print ya[br, "TaskName"]
+        print ya[br, "Start Time"]
+        print ya[br, "Start Date"]
+        print ya[br, "Days"]
+        print ya[br, "Repeat: Every"]
       }
     }
   }
