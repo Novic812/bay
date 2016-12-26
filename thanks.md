@@ -10,8 +10,8 @@ http://unix.stackexchange.com/a/268018
 
 Unix time
 -------------------------------------
+- http://askubuntu.com/a/864617
 - http://stackoverflow.com/a/41324810
-- 2016-12-26 http://askubuntu.com/q/858160
 - 2016-12-26 http://serverfault.com/q/804302
 - 2016-12-26 http://superuser.com/q/165680
 - 2016-12-26 http://unix.stackexchange.com/q/24626
