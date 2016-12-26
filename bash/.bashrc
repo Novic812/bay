@@ -40,8 +40,8 @@ length() {
 
 gsh() {
   history -a
-  if [ "$OLDPWD" != "$PWD" ]
-  then OLDPWD=$PWD
+  if [ "$GSH" != "$PWD" ]
+  then GSH=$PWD
   elif [ / -ot .git/HEAD ]
   then touch /
   elif [ "${ISH[*]+1}" ]
