@@ -15,7 +15,7 @@ else
   ch=$(printf '{de="%s"}' "$1")
 fi
 
-awk "$ch"'{printf "%" $0 "\t" $0 "\n", de}' <<'br'
+awk "$ch"'{printf "%" $0 "\t" $0 "\n", de}' <<'eof'
 %a
 %b
 %d
@@ -23,11 +23,9 @@ awk "$ch"'{printf "%" $0 "\t" $0 "\n", de}' <<'br'
 %.0f
 %.7f
 %g
-%h
 %i
 %j
 %k
-%l
 %m
 %n
 %o
@@ -42,4 +40,4 @@ awk "$ch"'{printf "%" $0 "\t" $0 "\n", de}' <<'br'
 %x
 %y
 %z
-br
+eof
