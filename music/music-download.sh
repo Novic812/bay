@@ -84,7 +84,7 @@ do
   printf '%s\t%s\t%s\t%s\n' "$@" >> %/h.txt
 done
 
-while IFS=$(printf '\t') read wu upload_date source _filename
+while IFS="${IFS# }" read wu upload_date source _filename
 do
   if [ ! -f %-new/"$_filename" ]
   then
