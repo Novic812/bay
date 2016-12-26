@@ -9,13 +9,13 @@ xc() {
 
 if [ "$#" != 3 ]
 then
-  cat <<'br'
+  cat <<'eof'
 SYNOPSIS
   ff-sequence.sh [start] [duration] [file]
 
 DESCRIPTION
   Make an image sequence from a video
-br
+eof
   exit
 fi
 
