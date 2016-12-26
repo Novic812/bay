@@ -12,11 +12,11 @@ fi
 
 while read z
 do "$BROWSER" "$z"
-done <<qu
+done <<eof
 youtube.com/results?q="$1 - Topic" intitle:"$2"
 youtube.com/results?q="Clapham Junction" intitle:"$1 $2"
 youtube.com/results?q=-intitle:"$1" "$1" intitle:"$2", hd
 youtube.com/results?q=allintitle:$1 $2, hd
 youtube.com/results?q=allintitle:$1 $2
 google.com/search?q=allintitle:$1 $2
-qu
+eof
