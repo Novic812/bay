@@ -12,10 +12,9 @@ Unix time
 -------------------------------------
 - http://askubuntu.com/a/864617
 - http://stackoverflow.com/a/41324810
-- 2016-12-26 http://serverfault.com/q/804302
+- 2016-12-26 http://serverfault.com/q/790941
 - 2016-12-26 http://superuser.com/q/165680
 - 2016-12-26 http://unix.stackexchange.com/q/24626
-- 2016-12-27 http://serverfault.com/q/790941
 - 2016-12-27 http://stackoverflow.com/q/17066250
 - 2016-12-27 http://unix.stackexchange.com/q/1825
 - 2016-12-28 http://stackoverflow.com/q/4946785
