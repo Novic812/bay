@@ -1,10 +1,10 @@
 #!/bin/dash -e
 if [ "$#" = 0 ]
 then
-  cat <<'br'
+  cat <<'eof'
 printf.sh [-e] [input]
 -e    treat input as expression instead of string
-br
+eof
   exit
 fi
 

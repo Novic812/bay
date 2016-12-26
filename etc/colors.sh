@@ -25,7 +25,7 @@
 while read br
 do
   printf '%9s fg [\33[%bm██\33[m] bg [\33[%bm  \33[m]\n' "$br" "$br" "$br"
-done <<'ch'
+done <<'eof'
 30
 30;41
 30;42
@@ -282,4 +282,4 @@ done <<'ch'
 1;5;45
 1;5;46
 1;5;47
-ch
+eof

@@ -7,13 +7,13 @@ wh() {
 if [ "$#" != 2 ]
 then
   xr=$(reg query 'hkcu\console' /v screenBufferSize | awk '$0=$3')
-  cat <<ya
+  cat <<eof
 screen-buffer.sh [rows] [columns]
 max rows is 32767
 max columns is 170
 current buffer rows $((xr >> 0x0010))
 current buffer columns $((xr & 0xFFFF))
-ya
+eof
   exit
 fi
 reg add 'hkcu\console' /f /v screenBufferSize /t reg_dword /d "$(wh "$1" "$2")"

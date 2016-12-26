@@ -1,7 +1,7 @@
 #!/bin/dash
 if [ "$#" = 0 ]
 then
-  cat <<'wh'
+  cat <<'eof'
 task.sh query
 
 task.sh create minute 45 'hello world'
@@ -9,7 +9,7 @@ task.sh create once 23:59 'hello world'
 task.sh create sun,tue,thu 23:59 'hello world'
 
 task.sh delete 'hello world'
-wh
+eof
   exit
 fi
 case $1 in
