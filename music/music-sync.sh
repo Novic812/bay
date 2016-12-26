@@ -10,7 +10,7 @@ mr() {
 
 if [ "$#" != 1 ]
 then
-  cat <<'+'
+  cat <<'eof'
 SYNOPSIS
   music-sync.sh [target]
 
@@ -18,7 +18,7 @@ DESCRIPTION
   Sync files to target flash drive, and record all files transferred. If target
   is ‘list’, list available flash drives and changes since last sync; else
   target should be path to flash drive.
-+
+eof
   exit
 fi
 
