@@ -3,7 +3,7 @@
 # in some tessellation.
 if [ "$#" = 0 ]
 then
-  cat <<'xr'
+  cat <<'eof'
 img-mosaic.sh [options] [files]
 
 -d     dry run, create pieces only
@@ -22,7 +22,7 @@ img-mosaic.sh [options] [files]
 
 -r <r>     comma separated list of resize markers
            example y,y,y,n
-xr
+eof
   exit
 fi
 
