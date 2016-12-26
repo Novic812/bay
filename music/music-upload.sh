@@ -64,14 +64,14 @@ exten() {
 
 if [ "$#" -lt 2 ]
 then
-  cat <<'pa'
+  cat <<'eof'
 SYNOPSIS
   music-upload.sh [picture] [songs]
 
 DESCRIPTION
   Script will use files to create high quality videos, then upload videos to
   YouTube.
-pa
+eof
   exit
 fi
 
