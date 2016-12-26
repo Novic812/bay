@@ -21,30 +21,34 @@ BEGIN {
   # x["Gexa Choice Conserve 5"]
 }
 NR == 1 {
-  for (i=1; i<=NF; i++)
-    w[$i] = i
+  while (q++ < NF) {
+    w[$q] = q
+  }
 }
 $w["Rate Type"] == "Fixed" {
-  for (i in y)
-    if ($w["RepCompany"] == i)
+  for (q in y)
+    if ($w["RepCompany"] == q) {
       next
-  for (i in x)
-    if ($w["Plan Name"] == i)
+    }
+  for (q in x)
+    if ($w["Plan Name"] == q) {
       next
+    }
   tot = 0
-  for (i in z)
-    if (z[i] >= 1000)
-      tot += $w["Price/kWh 1000"] * z[i]
-    else
-      tot += $w["Price/kWh 500"] * z[i]
-  t[1][NR] = tot
-  t[2][NR] = $w["RepCompany"]
-  t[3][NR] = $w["Price/kWh 500"]
-  t[4][NR] = $w["Price/kWh 1000"]
+  for (q in z)
+    if (z[q] >= 1000)
+      tot += $w["Price/kWh 1000"] * z[q]
+    else {
+      tot += $w["Price/kWh 500"] * z[q]
+    }
+  v[NR, 1] = tot
+  v[NR, 2] = $w["RepCompany"]
+  v[NR, 3] = $w["Price/kWh 500"]
+  v[NR, 4] = $w["Price/kWh 1000"]
 }
 END {
-  PROCINFO["sorted_in"] = "@val_num_desc"
-  for (i in t[1])
+  for (q = 2; q <= NR; q++) {
     printf "$%.0f - %s - 500 kWh %s - 1000 kWh %s\n",
-    t[1][i], t[2][i], t[3][i], t[4][i]
+    v[q, 1], v[q, 2], v[q, 3], v[q, 4]
+  }
 }
