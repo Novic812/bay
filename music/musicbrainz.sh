@@ -59,7 +59,7 @@ fi
 
 case $1 in
 '')
-  cat <<'xr'
+  cat <<'eof'
 musicbrainz.sh date-get <album>  <date>
 musicbrainz.sh  img-set <image>
 
@@ -74,7 +74,7 @@ when adding release, make sure to include
 - format
 - track titles
 - track lengths
-xr
+eof
   exit
 ;;
 img-set)
