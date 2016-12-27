@@ -1,39 +1,39 @@
 
 Read tags
-===============================
-- http://askubuntu.com/a/525879
-- http://unix.stackexchange.com/a/323094
+======================================
+- http://askubuntu.com/q/364415#525879
+- http://unix.stackexchange.com/q/131186#323094
 
 faststart
-================================
-- http://superuser.com/a/1149396
-- http://superuser.com/a/616799
+=======================================
+- http://superuser.com/q/559372#1149396
+- http://superuser.com/q/616484#616799
 
 Fast MP4 thumbnails
 ===============================
-- http://askubuntu.com/a/849220
-- http://softwarerecs.stackexchange.com/a/31043
-- http://stackoverflow.com/a/17799392
-- http://stackoverflow.com/a/40582446
-- http://superuser.com/a/1145221
-- http://superuser.com/a/621550
-- http://unix.stackexchange.com/a/323088
+- http://askubuntu.com/q/809175#849220
+- http://softwarerecs.stackexchange.com/q/13865#31043
+- http://stackoverflow.com/q/14729432#40582446
+- http://stackoverflow.com/q/17798709#17799392
+- http://superuser.com/q/524100#1145221
+- http://superuser.com/q/597945#621550
+- http://unix.stackexchange.com/q/53488#323088
 
 Subtitles
-================================
-- http://superuser.com/a/1149845
-- http://unix.stackexchange.com/a/326108
-- http://video.stackexchange.com/a/19966
+=======================================
+- http://superuser.com/q/700082#1149845
+- http://unix.stackexchange.com/q/232302#326108
+- http://video.stackexchange.com/q/10423#19966
 
 Cue
-===============================
-- http://askubuntu.com/a/858965
-- http://musicfans.stackexchange.com/a/4439
-- http://superuser.com/a/1155860
-- http://unix.stackexchange.com/a/278970
-- http://askubuntu.com/q/183599 - dec 27
-- http://superuser.com/q/675491 - dec 27
-- http://superuser.com/q/577476 - dec 28
+======================================
+- http://askubuntu.com/q/521388#858965
+- http://musicfans.stackexchange.com/q/2451#4439
+- http://superuser.com/q/368950#1155860
+- http://unix.stackexchange.com/q/10251#278970
+- 2016-12-27 http://askubuntu.com/q/183599
+- 2016-12-27 http://superuser.com/q/675491
+- 2016-12-28 http://superuser.com/q/577476
 
 Tag Editor
 ==============================================
