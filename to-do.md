@@ -1,7 +1,8 @@
 
 Sort the lines in a file
-------------------------
-2016-12-27 http://stackoverflow.com/q/12417403
+-----------------------------------------------
+- 2016-12-28 http://stackoverflow.com/q/8296649
+- 2016-12-29 http://stackoverflow.com/q/12417403
 
 Using Notepad for Git inside Cygwin
 -----------------------------------
@@ -42,6 +43,11 @@ Unix time
 - 2017-01-13 http://stackoverflow.com/q/39016126
 - 2017-01-14 http://stackoverflow.com/q/5933204
 - 2017-01-15 http://stackoverflow.com/q/9060519
+
+tail now supports traditional usage like 'tail +10'
+---------------------------------------------------
+- http://cygwin.com/ml/cygwin/2016-12/msg00183.html
+- http://savannah.gnu.org/forum/forum.php?forum_id=8745
 
 Changing the size of the audio volume increment
 -----------------------------------------------
