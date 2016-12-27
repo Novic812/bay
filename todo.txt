@@ -19,7 +19,6 @@ grep -r --exclude-dir .git -I '((' /home/git
   - MSVC 2013 Update 3
   - awk script
   - github.com/XhmikosR/notepad2-mod/issues/97
-- awk function highlighting http://stackoverflow.com/a/26835821
 - torrent.sh print sorted table of torrent attributes
 - get 2 TB hard drive
 - reinstall Windows
