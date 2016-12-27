@@ -30,8 +30,7 @@ stl() {
   {
     c = length
     m[c] = m[c] ? m[c] RS $0 : $0
-  }
-  END {
+  } END {
     for (c in m) print m[c]
   }
   '
@@ -42,8 +41,7 @@ lts() {
   {
     c = length
     m[c] = m[c] ? m[c] RS $0 : $0
-  }
-  END {
+  } END {
     for (c in m) q[++x] = m[c]
     while (x) print q[x--]
   }
