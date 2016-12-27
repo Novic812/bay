@@ -36,11 +36,11 @@ REG ADD 'HKCR\Unknown\shell' /d Notepad2 /f
 REG ADD 'HKCR\Unknown\shell\Notepad\command' /d 'notepad "%1"' /f
 REG ADD 'HKCR\Unknown\shell\Notepad2\command' /d 'Notepad2 "%1"' /f
 
-# shell options
-REG ADD 'HKCR\Drive\shell\Bash\command' /d "cygstart -d '%v' bash" /f
-REG ADD 'HKCR\Directory\shell\Bash\command' /d "cygstart -d '%v' bash" /f
+# folder names cannot contain double quote characters
+REG ADD 'HKCR\Drive\shell\Bash\command' /d 'cygstart -d "%v" bash' /f
+REG ADD 'HKCR\Directory\shell\Bash\command' /d 'cygstart -d "%v" bash' /f
 REG ADD 'HKCR\Directory\Background\shell\Bash\command' \
-  /d "cygstart -d '%v' bash" /f
+  /d 'cygstart -d "%v" bash' /f
 
 # Console
 REG ADD 'HKCU\Console' /v CodePage /t REG_DWORD /d 65001 /f
