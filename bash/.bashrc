@@ -27,13 +27,12 @@ ish() {
 
 length() {
   awk '
-  {a[NR] = $0; b[NR] = length; c[NR] = NR}
+  {
+    x = length
+    y[x] = y[x] ? y[x] RS $0 : $0
+  }
   END {
-    for (k in a) {
-      m = c[k]; q = k - 1
-      while (q && b[c[q]] > b[m]) {c[q+1] = c[q]; q--} c[q+1] = m
-    }
-    for (k in c) {print a[c[k]]}
+    for (x in y) print y[x]
   }
   '
 }
