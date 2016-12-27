@@ -1,6 +1,4 @@
 
-# to do
-
 Sort the lines in a file
 ------------------------
 2016-12-27 http://stackoverflow.com/q/12417403
