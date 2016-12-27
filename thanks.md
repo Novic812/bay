@@ -1,17 +1,17 @@
 
 FFprobe
--------------------------------
-- http://askubuntu.com/a/468003
-- http://stackoverflow.com/a/41321982
+--------------------------------------
+- http://askubuntu.com/q/110264#468003
+- http://stackoverflow.com/q/37395576#41321982
 
 Print certain commands as they are run
---------------------------------------
-http://unix.stackexchange.com/a/268018
+---------------------------------------------
+http://unix.stackexchange.com/q/106776#268018
 
 Unix time
--------------------------------------
-- http://askubuntu.com/a/864617
-- http://stackoverflow.com/a/41324810
+--------------------------------------
+- http://askubuntu.com/q/858160#864617
+- http://stackoverflow.com/q/1092631#41324810
 - 2016-12-26 http://serverfault.com/q/790941
 - 2016-12-26 http://superuser.com/q/165680
 - 2016-12-26 http://unix.stackexchange.com/q/24626
