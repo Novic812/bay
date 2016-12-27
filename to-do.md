@@ -1,5 +1,5 @@
 
-# To do
+# to do
 
 Sort the lines in a file
 ------------------------
