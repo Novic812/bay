@@ -25,14 +25,27 @@ ish() {
   fi
 }
 
-length() {
+stl() {
   awk '
   {
-    x = length
-    y[x] = y[x] ? y[x] RS $0 : $0
+    c = length
+    m[c] = m[c] ? m[c] RS $0 : $0
   }
   END {
-    for (x in y) print y[x]
+    for (c in m) print m[c]
+  }
+  '
+}
+
+lts() {
+  awk '
+  {
+    c = length
+    m[c] = m[c] ? m[c] RS $0 : $0
+  }
+  END {
+    for (c in m) q[++x] = m[c]
+    while (x) print q[x--]
   }
   '
 }
