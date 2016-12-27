@@ -1,19 +1,19 @@
 
-Sort the lines in a file
------------------------------------------------
+dotfiles/bash/readme.md: Sort lines by length
+---------------------------------------------
 - 2016-12-28 http://stackoverflow.com/q/8296649
 - 2016-12-29 http://stackoverflow.com/q/12417403
 
-Using Notepad for Git inside Cygwin
------------------------------------
+dotfiles/editor/readme.md: Cygwin Git with Notepad2
+---------------------------------------------------
 - 2016-12-27 http://stackoverflow.com/q/10209660
 - 2016-12-28 http://stackoverflow.com/q/32081685
 - 2016-12-29 http://stackoverflow.com/q/10459049
 - 2016-12-30 http://superuser.com/q/335615
 - 2016-12-31 http://emacs.stackexchange.com/q/14331
 
-Unix time
---------------------------------------
+a/thanks.md: Unix time
+--------------------------------------------
 - 2016-12-26 http://serverfault.com/q/790941
 - 2016-12-26 http://superuser.com/q/165680
 - 2016-12-26 http://unix.stackexchange.com/q/24626
@@ -44,38 +44,32 @@ Unix time
 - 2017-01-14 http://stackoverflow.com/q/5933204
 - 2017-01-15 http://stackoverflow.com/q/9060519
 
-tail now supports traditional usage like 'tail +10'
----------------------------------------------------
+a/thanks.md: tail now supports 'tail +10'
+-----------------------------------------
 - http://cygwin.com/ml/cygwin/2016-12/msg00183.html
 - http://savannah.gnu.org/forum/forum.php?forum_id=8745
 
-Changing the size of the audio volume increment
------------------------------------------------
+dotfiles/volume/readme.md: Changing the volume increment
+--------------------------------------------------------
 http://superuser.com/q/359138
 
-Tesseract
+glade/tesseract/readme.md: Tesseract
 -----------------------------------
 http://stackoverflow.com/q/41103779
 
-Square thumbnails with ImageMagick
-----------------------------------
+a/img/readme.md: Square thumbnails with ImageMagick
+---------------------------------------------------
 http://superuser.com/q/275476
 
-PowerShell - Recursive hard link
------------------------------------
-http://stackoverflow.com/q/26470537
-
-Download just Visual Studio Command prompt
-------------------------------------------
-http://stackoverflow.com/q/4894858
-
-Visual Studio
------------------------------------
+glade/visual-studio/readme.md: Visual Studio
+--------------------------------------------
 - http://serverfault.com/q/627286
 - http://stackoverflow.com/q/10857856
 - http://stackoverflow.com/q/20852962
 - http://stackoverflow.com/q/22015916
 - http://stackoverflow.com/q/22963098
 - http://stackoverflow.com/q/25719290
+- http://stackoverflow.com/q/26470537
 - http://stackoverflow.com/q/2950628
+- http://stackoverflow.com/q/4894858
 - http://stackoverflow.com/q/7494008
