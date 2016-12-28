@@ -16,7 +16,6 @@ Cygwin Git with Notepad2
 Unix time
 ---------------------------------------------------
 - http://github.com/svnpenn/a/blob/master/thanks.md
-- 133 - http://stackoverflow.com/q/17066250
 - 38 - http://stackoverflow.com/q/4946785
 - 34 - http://stackoverflow.com/q/3817750
 - 30 - http://stackoverflow.com/q/1094291

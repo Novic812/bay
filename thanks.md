@@ -12,3 +12,4 @@ Unix time
 --------------------------------------
 - 2016-12-26 6AM http://askubuntu.com/q/858160#864617
 - 2016-12-26 9PM http://stackoverflow.com/q/1092631#41324810
+- 2016-12-28 2AM http://stackoverflow.com/q/17066250#41354497
