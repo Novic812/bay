@@ -1,0 +1,2 @@
+Skins/Windows Default/OSD/background.png
+Skins/Windows Default/OSD/bar.png
