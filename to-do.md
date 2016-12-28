@@ -1,8 +1,8 @@
 
 dotfiles/bash/readme.md: Sort lines by length
 ---------------------------------------------
-- 2016-12-28 http://stackoverflow.com/q/8296649
-- 2016-12-29 http://stackoverflow.com/q/12417403
+- 2016-12-29 http://stackoverflow.com/q/8296649
+- 2016-12-30 http://stackoverflow.com/q/12417403
 
 dotfiles/editor/readme.md: Cygwin Git with Notepad2
 ---------------------------------------------------
