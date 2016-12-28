@@ -7,5 +7,6 @@ Editor
 
 Cygwin Git with Notepad2
 ------------------------
+- http://stackoverflow.com/q/10209660#41353791
 - http://stackoverflow.com/q/10564#41315379
 - http://stackoverflow.com/q/1634161#10661529
