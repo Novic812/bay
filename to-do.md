@@ -6,11 +6,10 @@ dotfiles/bash/readme.md: Sort lines by length
 
 dotfiles/editor/readme.md: Cygwin Git with Notepad2
 ---------------------------------------------------
-- 2016-12-27 http://stackoverflow.com/q/10209660
-- 2016-12-28 http://stackoverflow.com/q/32081685
-- 2016-12-29 http://stackoverflow.com/q/10459049
-- 2016-12-30 http://superuser.com/q/335615
-- 2016-12-31 http://emacs.stackexchange.com/q/14331
+- 2016-12-29 http://stackoverflow.com/q/32081685
+- 2016-12-30 http://stackoverflow.com/q/10459049
+- 2016-12-31 http://superuser.com/q/335615
+- 2017-01-01 http://emacs.stackexchange.com/q/14331
 
 a/thanks.md: Unix time
 --------------------------------------------
