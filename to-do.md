@@ -41,7 +41,6 @@ Unix time
 - 2 - http://unix.stackexchange.com/q/262003
 - 1 - http://unix.stackexchange.com/q/265951
 - 0 - http://unix.stackexchange.com/q/290703
-- 0 - http://serverfault.com/q/790941
 
 tail now supports 'tail +10'
 ----------------------------
