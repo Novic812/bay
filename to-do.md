@@ -1,47 +1,47 @@
 
 dotfiles/bash/readme.md: Sort lines by length
 ---------------------------------------------
-- 2016-12-29 http://stackoverflow.com/q/8296649
-- 2016-12-30 http://stackoverflow.com/q/12417403
+- 2016-12-28 11PM http://stackoverflow.com/q/8296649
+- 2016-12-29 11PM http://stackoverflow.com/q/12417403
 
 dotfiles/editor/readme.md: Cygwin Git with Notepad2
 ---------------------------------------------------
-- 2016-12-29 http://stackoverflow.com/q/32081685
-- 2016-12-30 http://stackoverflow.com/q/10459049
-- 2016-12-31 http://superuser.com/q/335615
-- 2017-01-01 http://emacs.stackexchange.com/q/14331
+- 2016-12-29 12AM http://stackoverflow.com/q/32081685
+- 2016-12-30 12AM http://stackoverflow.com/q/10459049
+- 2016-12-31 12AM http://superuser.com/q/335615
+- 2017-01-01 12AM http://emacs.stackexchange.com/q/14331
 
 a/thanks.md: Unix time
 --------------------------------------------
-- 2016-12-26 http://serverfault.com/q/790941
-- 2016-12-26 http://superuser.com/q/165680
-- 2016-12-26 http://unix.stackexchange.com/q/24626
-- 2016-12-27 http://stackoverflow.com/q/17066250
-- 2016-12-27 http://unix.stackexchange.com/q/1825
-- 2016-12-28 http://stackoverflow.com/q/4946785
-- 2016-12-28 http://unix.stackexchange.com/q/215934
-- 2016-12-29 http://stackoverflow.com/q/3817750
-- 2016-12-29 http://unix.stackexchange.com/q/7289
-- 2016-12-30 http://stackoverflow.com/q/1094291
-- 2016-12-30 http://unix.stackexchange.com/q/262003
-- 2016-12-31 http://stackoverflow.com/q/10990949
-- 2016-12-31 http://unix.stackexchange.com/q/265951
-- 2017-01-01 http://stackoverflow.com/q/9008824
-- 2017-01-01 http://unix.stackexchange.com/q/290703
-- 2017-01-02 http://stackoverflow.com/q/3385003
-- 2017-01-03 http://stackoverflow.com/q/8267595
-- 2017-01-04 http://stackoverflow.com/q/20831765
-- 2017-01-05 http://stackoverflow.com/q/2592536
-- 2017-01-06 http://stackoverflow.com/q/12795094
-- 2017-01-07 http://stackoverflow.com/q/25619923
-- 2017-01-08 http://stackoverflow.com/q/32203050
-- 2017-01-09 http://stackoverflow.com/q/37457820
-- 2017-01-10 http://stackoverflow.com/q/38095169
-- 2017-01-11 http://stackoverflow.com/q/15065270
-- 2017-01-12 http://stackoverflow.com/q/35218310
-- 2017-01-13 http://stackoverflow.com/q/39016126
-- 2017-01-14 http://stackoverflow.com/q/5933204
-- 2017-01-15 http://stackoverflow.com/q/9060519
+- 2016-12-27 9PM http://serverfault.com/q/790941
+- 2016-12-27 9PM http://superuser.com/q/165680
+- 2016-12-27 9PM http://unix.stackexchange.com/q/24626
+- 2016-12-28 9PM http://stackoverflow.com/q/17066250
+- 2016-12-28 9PM http://unix.stackexchange.com/q/1825
+- 2016-12-29 9PM http://stackoverflow.com/q/4946785
+- 2016-12-29 9PM http://unix.stackexchange.com/q/215934
+- 2016-12-30 9PM http://stackoverflow.com/q/3817750
+- 2016-12-30 9PM http://unix.stackexchange.com/q/7289
+- 2016-12-31 9PM http://stackoverflow.com/q/1094291
+- 2016-12-31 9PM http://unix.stackexchange.com/q/262003
+- 2017-01-01 9PM http://stackoverflow.com/q/10990949
+- 2017-01-01 9PM http://unix.stackexchange.com/q/265951
+- 2017-01-02 9PM http://stackoverflow.com/q/9008824
+- 2017-01-02 9PM http://unix.stackexchange.com/q/290703
+- 2017-01-03 9PM http://stackoverflow.com/q/3385003
+- 2017-01-04 9PM http://stackoverflow.com/q/8267595
+- 2017-01-05 9PM http://stackoverflow.com/q/20831765
+- 2017-01-06 9PM http://stackoverflow.com/q/2592536
+- 2017-01-07 9PM http://stackoverflow.com/q/12795094
+- 2017-01-08 9PM http://stackoverflow.com/q/25619923
+- 2017-01-09 9PM http://stackoverflow.com/q/32203050
+- 2017-01-10 9PM http://stackoverflow.com/q/37457820
+- 2017-01-11 9PM http://stackoverflow.com/q/38095169
+- 2017-01-12 9PM http://stackoverflow.com/q/15065270
+- 2017-01-13 9PM http://stackoverflow.com/q/35218310
+- 2017-01-14 9PM http://stackoverflow.com/q/39016126
+- 2017-01-15 9PM http://stackoverflow.com/q/5933204
+- 2017-01-16 9PM http://stackoverflow.com/q/9060519
 
 a/thanks.md: tail now supports 'tail +10'
 -----------------------------------------
