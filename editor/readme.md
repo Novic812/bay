@@ -7,6 +7,6 @@ Editor
 
 Cygwin Git with Notepad2
 ------------------------
-- http://stackoverflow.com/q/10209660#41353791
-- http://stackoverflow.com/q/10564#41315379
-- http://stackoverflow.com/q/1634161#10661529
+- 2016-12-24 11PM http://stackoverflow.com/q/10564#41315379
+- 2016-12-26 12AM http://stackoverflow.com/q/1634161#10661529
+- 2016-12-28 12AM http://stackoverflow.com/q/10209660#41353791
