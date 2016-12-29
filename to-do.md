@@ -30,7 +30,6 @@ Unix time
 - 0 - http://stackoverflow.com/q/39016126
 - 0 - http://stackoverflow.com/q/35218310
 - 0 - http://stackoverflow.com/q/15065270
-- 18 - http://unix.stackexchange.com/q/1825
 - 10 - http://unix.stackexchange.com/q/215934
 - 5 - http://unix.stackexchange.com/q/7289
 - 2 - http://unix.stackexchange.com/q/262003
