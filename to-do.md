@@ -2,7 +2,6 @@
 Sort lines by length
 -----------------------------------------------------
 - http://github.com/svnpenn/dotfiles/tree/master/bash
-- 9 - http://stackoverflow.com/q/8296649
 - 0 - http://stackoverflow.com/q/12417403
 
 Cygwin Git with Notepad2
