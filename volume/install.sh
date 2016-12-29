@@ -6,3 +6,4 @@ mkdir -pv "$z"/OSD
 ln -sfv "$PWD"/skin.xml "$z"
 wget -nc -B https://raw.githubusercontent.com/malensek/3RVX/master/ \
   -i volume.txt -P "$z"/OSD
+ln -sfv "$PWD"/Settings.xml "$APPDATA"/3RVX
