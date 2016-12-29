@@ -7,7 +7,6 @@ Sort lines by length
 Cygwin Git with Notepad2
 -------------------------------------------------------
 - http://github.com/svnpenn/dotfiles/tree/master/editor
-- 3 - http://stackoverflow.com/q/32081685
 - 1 - http://stackoverflow.com/q/10459049
 - 1 - http://emacs.stackexchange.com/q/14331
 
