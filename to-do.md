@@ -1,9 +1,4 @@
 
-Cygwin Git with Notepad2
--------------------------------------------------------
-- http://github.com/svnpenn/dotfiles/tree/master/editor
-- 1 - http://stackoverflow.com/q/10459049
-
 Unix time
 ---------------------------------------------------
 - http://github.com/svnpenn/a/blob/master/thanks.md
