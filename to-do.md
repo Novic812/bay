@@ -1,9 +1,4 @@
 
-Sort lines by length
------------------------------------------------------
-- http://github.com/svnpenn/dotfiles/tree/master/bash
-- 0 - http://stackoverflow.com/q/12417403
-
 Cygwin Git with Notepad2
 -------------------------------------------------------
 - http://github.com/svnpenn/dotfiles/tree/master/editor
