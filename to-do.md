@@ -26,11 +26,6 @@ Unix time
 - 1 - http://unix.stackexchange.com/q/265951
 - 0 - http://unix.stackexchange.com/q/290703
 
-Changing the volume increment
------------------------------
-- http://github.com/svnpenn/dotfiles/tree/master/volume
-- http://superuser.com/q/359138
-
 tail now supports 'tail +10'
 ----------------------------
 - http://github.com/svnpenn/a/blob/master/thanks.md
