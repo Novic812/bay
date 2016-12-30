@@ -1,4 +1,9 @@
 
+Print package dependency tree
+-----------------------------
+- http://github.com/svnpenn/sage/blob/master/thanks.md
+- 4 - http://stackoverflow.com/q/16579397
+
 Power set
 ---------------------------------------------------
 - http://github.com/svnpenn/a/blob/master/thanks.md
