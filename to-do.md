@@ -1,4 +1,11 @@
 
+Cue
+---------------------------------------------------
+- http://github.com/svnpenn/a/blob/master/thanks.md
+- 5 - http://askubuntu.com/q/183599
+- 2 - http://superuser.com/q/675491
+- 1 - http://superuser.com/q/577476
+
 Unix time
 ---------------------------------------------------
 - http://github.com/svnpenn/a/blob/master/thanks.md
