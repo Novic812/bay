@@ -2,7 +2,6 @@
 Power set
 ---------------------------------------------------
 - http://github.com/svnpenn/a/blob/master/thanks.md
-- 4 - http://stackoverflow.com/q/24227036
 - 0 - http://stackoverflow.com/q/40966428
 
 Cue
