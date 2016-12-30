@@ -13,3 +13,4 @@ Cygwin Git with Notepad2
 - 2016-12-29 12AM http://superuser.com/q/335615#1161214
 - 2016-12-29 12AM http://stackoverflow.com/q/32081685#32086761
 - 2016-12-29 12AM http://emacs.stackexchange.com/q/14331#29658
+- 2016-12-30 2AM http://stackoverflow.com/q/10459049#10468239
