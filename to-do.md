@@ -1,8 +1,7 @@
 
 Percent-encoding
----------------------------------------------
-- http://github.com/svnpenn/sage/blob/master/thanks.md
-- 19 - http://askubuntu.com/q/53770
+--------------------------------
+- http://github.com/svnpenn/a/blob/master/thanks.md
 - 14 - http://stackoverflow.com/q/6250698
 - 7 - http://stackoverflow.com/q/3728049
 - 4 - http://stackoverflow.com/q/11876353
