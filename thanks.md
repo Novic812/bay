@@ -1,8 +1,8 @@
 
 Percent-encoding
 --------------------------------
-2016-12-31 5AM http://askubuntu.com/q/53770#740274
-2016-12-31 5AM http://stackoverflow.com/q/296536#41405682
+- 2016-12-31 5AM http://askubuntu.com/q/53770#740274
+- 2016-12-31 5AM http://stackoverflow.com/q/296536#41405682
 
 Power set
 --------------------------------
