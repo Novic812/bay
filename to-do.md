@@ -1,4 +1,24 @@
 
+Percent-encoding
+---------------------------------------------
+- http://github.com/svnpenn/sage/blob/master/thanks.md
+- 19 - http://askubuntu.com/q/53770
+- 163 - http://stackoverflow.com/q/296536
+- 14 - http://stackoverflow.com/q/6250698
+- 7 - http://stackoverflow.com/q/3728049
+- 4 - http://stackoverflow.com/q/11876353
+- 2 - http://stackoverflow.com/q/27212019
+- 1 - http://stackoverflow.com/q/29755942
+- 1 - http://stackoverflow.com/q/40171934
+- 1 - http://stackoverflow.com/q/6275407
+- 0 - http://stackoverflow.com/q/20983805
+- 0 - http://stackoverflow.com/q/23329810
+- 0 - http://stackoverflow.com/q/37309551
+- 0 - http://stackoverflow.com/q/38015239
+- 48 - http://unix.stackexchange.com/q/159253
+- 6 - http://unix.stackexchange.com/q/76500
+- 1 - http://unix.stackexchange.com/q/204932
+
 Print package dependency tree
 -----------------------------
 - http://github.com/svnpenn/sage/blob/master/thanks.md
