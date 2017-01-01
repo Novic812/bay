@@ -19,6 +19,7 @@ awk "$ch"'{printf "%" $0 "\t" $0 "\n", de}' <<'eof'
 %a
 %b
 %d
+%03d
 %e
 %.0f
 %.7f
