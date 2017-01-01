@@ -11,14 +11,14 @@ then
 fi
 
 awk '
-function ch(ec, go) {
-  ju = "\47"; ki = split(ec, pa, ju)
-  for (qu in pa) go = go ju pa[qu] ju (qu < ki ? "\\" ju : "")
-  return go
+function a(d, h) {
+  k = "\47"; q = split(d, x, k)
+  for (z in x) h = h k x[z] k (z < q ? "\\" k : "")
+  return h
 }
 {
   gsub(" ", "+")
-  system(ch(ENVIRON["BROWSER"]) FS ch($0))
+  system(a(ENVIRON["BROWSER"]) FS a($0))
 }
 ' <<eof
 discogs.com/search?q=$1 $2
