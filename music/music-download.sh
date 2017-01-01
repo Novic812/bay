@@ -1,5 +1,5 @@
 #!/bin/dash -e
-pa() {
+br() {
   for each
   do
     echo "$each"
@@ -20,29 +20,29 @@ eof
   exit
 fi
 
-bra=$(date -d '-1 year' +%Y%m%d)
+pa=$(date -d '-1 year' +%Y%m%d)
 mkdir -p % %-new %-old
 touch %/h.txt %/f.txt %/c.txt
 
 # FIXME cygwin.com/ml/cygwin/2016-10/msg00298.html
 {
-  pa "$@" |
+  br "$@" |
     grep -v reddit
-  pa "$@" |
+  br "$@" |
     grep reddit |
     lynx -dump -listonly -nonumbers - '' |
-    awk '/Hidden/ {z=1; next} ! $0 {z=0} z'
+    awk '/Hidden/ {qu=1; next} ! $0 {qu=0} qu'
 } |
-while read wu
+while read xr
 do
   char=$((char+1))
-  if [ $char -ge 2 ]
+  if [ "$char" -ge 2 ]
   then
-    echo starting link $char
+    echo starting link "$char"
   fi
-  if grep -Fq "$wu" %/h.txt
+  if grep -Fq "$xr" %/h.txt
   then
-    printf '%s\nhas already been recorded in archive\n' "$wu"
+    printf '%s\nhas already been recorded in archive\n' "$xr"
     continue
   fi
 
@@ -50,7 +50,7 @@ do
   rm -f *.info.json
   # FIXME -id3v2_version 3
   youtube-dl --add-metadata --format m4a/mp3 --output '%(title)s.%(ext)s' \
-    --write-info-json --youtube-skip-dash-manifest "$wu"
+    --write-info-json --youtube-skip-dash-manifest "$xr"
   jq -r '
   {upload_date, _filename, ext} |
   to_entries |
@@ -61,7 +61,7 @@ do
   rm *.info.json vars.sh
 
   # faststart
-  if [ $ext = m4a ]
+  if [ "$ext" = m4a ]
   then
     echo '[ffmpeg] moving the moov atom to the beginning of the file'
     ffmpeg -nostdin -v warning -i "$_filename" -c copy \
@@ -71,39 +71,39 @@ do
 
   # gain
   aacgain -k -r -s s -m 10 "$_filename"
-  if [ $upload_date -gt $bra ]
+  if [ "$upload_date" -gt "$pa" ]
   then
     dest=1
-    delta=%-new
+    ya=%-new
   else
     dest=0
-    delta=%-old
+    ya=%-old
   fi
-  mv "$_filename" "$delta"
-  set "$wu" "$upload_date" "$dest" "$_filename"
+  mv "$_filename" "$ya"
+  set "$xr" "$upload_date" "$dest" "$_filename"
   printf '%s\t%s\t%s\t%s\n' "$@" >> %/h.txt
 done
 
-while IFS="${IFS# }" read wu upload_date source _filename
+while IFS="${IFS# }" read xr upload_date source _filename
 do
   if [ ! -f %-new/"$_filename" ]
   then
     continue
   fi
-  if [ $upload_date -gt $bra ]
+  if [ "$upload_date" -gt "$pa" ]
   then
     dest=1
   else
     dest=0
   fi
-  if [ $source = $dest ]
+  if [ "$source" = "$dest" ]
   then
     continue
   fi
   echo "$_filename"
   echo '[mv] file is now old, moving'
   mv %-new/"$_filename" %-old
-  go=$(mktemp)
-  awk '$1 == wu {$3 = 0} 1' FS='\t' OFS='\t' wu="$wu" %/h.txt > "$go"
-  mv "$go" %/h.txt
+  zu=$(mktemp)
+  awk '$1 == xr {$3 = 0} 1' FS='\t' OFS='\t' xr="$xr" %/h.txt > "$zu"
+  mv "$zu" %/h.txt
 done < %/h.txt
