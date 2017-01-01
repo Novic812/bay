@@ -72,6 +72,7 @@ when adding release, make sure to include
 - status
 - date
 - country
+- release link
 - format
 - track titles
 - track lengths
