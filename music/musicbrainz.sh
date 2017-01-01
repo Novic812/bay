@@ -71,6 +71,7 @@ when adding release, make sure to include
 - type
 - status
 - date
+- country
 - format
 - track titles
 - track lengths
