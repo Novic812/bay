@@ -16,38 +16,42 @@ xc() {
 echo 'Careful, screencaps will dump in current directory.
 Drag video here, then press enter (backslashes ok):'
 
-read -r fox
-if [ -z "$fox" ]
+read -r br
+if [ -z "$br" ]
 then
   exit
 fi
-fox=$(unquote "$fox")
-ffprobe -v 0 -show_streams -of flat=h=0 "$fox" |
+br=$(unquote "$br")
+ffprobe -v 0 -show_streams -of flat=h=0 "$br" |
 awk '
-BEGIN {FS = "[=\"]+"}
-{gol[$1] = $2}
+BEGIN {
+  FS = "[=\"]+"
+}
+{
+  ju[$1] = $2
+}
 END {
-  hot = gol["stream.0.width"] / gol["stream.0.height"]
-  ind = hot > 2 ? 36 : 30
-  jul = .09 * gol["stream.0.duration"]
-  kil = (gol["stream.0.duration"] - 2 * jul) / (ind - 1)
-  for (lim = jul; ind-- > 0; lim += kil) print lim
+  ki = ju["stream.0.width"] / ju["stream.0.height"]
+  mi = ki > 2 ? 36 : 30
+  si = .09 * ju["stream.0.duration"]
+  xr = (ju["stream.0.duration"] - 2 * si) / (mi - 1)
+  for (ya = si; mi-- > 0; ya += xr) print ya
 }
 ' |
-while read lim
+while read ya
 do
-  printf '%g\r' "$lim"
-  ffmpeg -nostdin -v error -ss "$lim" -i "$fox" -frames 1 "$lim".jpg
+  printf '%g\r' "$ya"
+  ffmpeg -nostdin -v error -ss "$ya" -i "$br" -frames 1 "$ya".jpg
 done
 
 printf '\33[1;32m%s\33[m\n' \
 'Drag picture here, then press enter (backslashes ok):'
-read -r mik
-if [ -z "$mik" ]
+read -r zu
+if [ -z "$zu" ]
 then
   exit
 fi
-mik=$(unquote "$mik")
+zu=$(unquote "$zu")
 # moov could be anywhere in the file, so we cannot use "dd"
-xc tageditor -s cover="$mik" --max-padding 100000 -f "$fox"
+xc tageditor -s cover="$zu" --max-padding 100000 -f "$br"
 rm *.jpg
