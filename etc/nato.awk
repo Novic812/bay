@@ -11,20 +11,18 @@ BEGIN {
   "lima mike november oscar papa quebec romeo sierra tango uniform victor " \
   "whiskey xray yankee zulu", q)
   for (each in q) {
-    nfa[substr(q[each], 1, var_len)] = 1
+    nfa[substr(q[each], 1, var_len)] = 0
   }
 }
 {
   for (each in nfa) {
     if (tolower($0) ~ each) {
-      nfa[each] = 0
+      nfa[each]++
     }
   }
 }
 END {
   for (each in nfa) {
-    if (nfa[each]) {
-      print each
-    }
+    print nfa[each], each
   }
 }
