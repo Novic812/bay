@@ -20,10 +20,10 @@ git diff-tree --numstat fox gol > hot
 git diff-tree --numstat gol @ > ind
 
 awk '
-function jul(kil, lim) {
-  for (mik=100; mik>=1; mik/=10) {
-    $++lim = int(kil / mik)
-    kil %= mik
+function jul(kil,   lim, mik) {
+  for (lim = 100; lim >= 1; lim /= 10) {
+    $++mik = int(kil / lim)
+    kil %= lim
   }
   return $0
 }
