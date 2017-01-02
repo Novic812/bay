@@ -14,11 +14,11 @@ ln -sfv "$PWD"/.bash_history "$PWD"/.bashrc "$PWD"/.inputrc ~
 
 # /usr
 awk '
-function g(h, j) {
-  k = "\47"; q = split(h, w, k)
-  for (x in w) j = j k w[x] k (x < q ? "\\" k : "")
-  return j
+function g(j,   k, q, w, x, z) {
+  k = "\47"; q = split(j, w, k)
+  for (x in w) z = z k w[x] k (x < q ? "\\" k : "")
+  return z
 }
-{z = z FS g($0)}
-END {system("ln -sfvt /usr/local/bin" z)}
+{j = j FS g($0)}
+END {system("ln -sfvt /usr/local/bin" j)}
 ' symlink.txt
