@@ -1,8 +1,8 @@
 #!/usr/bin/awk -f
-function ch(ec, go) {
-  ju = "\47"; ki = split(ec, pa, ju)
-  for (qu in pa) go = go ju pa[qu] ju (qu < ki ? "\\" ju : "")
-  return go
+function br(ch,   ec, ki, pa, qu, ro) {
+  ec = "\47"; ki = split(ch, pa, ec)
+  for (qu in pa) ro = ro ec pa[qu] ec (qu < ki ? "\\" ec : "")
+  return ro
 }
 BEGIN {
   if (ARGC != 2) {
@@ -29,7 +29,7 @@ END {
   for (xr in wh) {
     system(sprintf("ffmpeg -v warning -stats -i %s -ss %s%s -b:a 256k " \
     "-movflags faststart -metadata track=%s -metadata title=%s %s.m4a",
-    ch(vi), zu[xr], zu[xr+1] ? " -to " zu[xr+1]: "", wh[xr], ch(ya[xr]),
-    ch(wh[xr] FS ya[xr])))
+    br(vi), zu[xr], zu[xr+1] ? " -to " zu[xr+1]: "", wh[xr], br(ya[xr]),
+    br(wh[xr] FS ya[xr])))
   }
 }
