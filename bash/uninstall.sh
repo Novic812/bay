@@ -8,12 +8,12 @@ rm -fv ~/.bash_history ~/.bashrc ~/.inputrc
 
 # /usr
 awk '
-function h(j, k) {
-  q = "\47"; v = split(j, w, q)
-  for (x in w) k = k q w[x] q (x < v ? "\\" q : "")
-  return k
+function g(j,   k, q, w, x, z) {
+  k = "\47"; q = split(j, w, k)
+  for (x in w) z = z k w[x] k (x < q ? "\\" k : "")
+  return z
 }
 BEGIN {FS = "\\"}
-{z = z " /usr/local/bin/" h($NF)}
-END {system("rm" z)}
+{j = j " /usr/local/bin/" g($NF)}
+END {system("rm" j)}
 ' symlink.txt
