@@ -1,4 +1,8 @@
 #!/usr/bin/awk -f
+function asrt(b,   x, y, z) {
+  for (x in b) {y = b[x]; z = x - 1
+  while (z && b[z] > y) {b[z + 1] = b[z]; z--} b[z + 1] = y}
+}
 BEGIN {
   if (ARGC != 3) {
     print "nato.awk [variable length] [file]"
@@ -23,6 +27,10 @@ BEGIN {
 }
 END {
   for (each in nfa) {
-    print nfa[each], each
+    m[++d] = sprintf("%2d", nfa[each]) FS each
+  }
+  asrt(m)
+  for (each in m) {
+    print m[each]
   }
 }
