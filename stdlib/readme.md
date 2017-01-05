@@ -3,6 +3,13 @@ Shell standard library
 ======================
 The shell standard library or stdlib is a library for POSIX shell scripts.
 
+Example
+-------
+
+~~~
+. stdlib.sh
+~~~
+
 Links
 -----
 - [Shell programming languages have no standard library][xr]
