@@ -1,6 +1,7 @@
 #!/bin/dash -e
 
 # /etc
+rm -fv /etc/profile
 ln -sfv "$PWD"/fstab /etc
 mount -a
 
@@ -10,7 +11,7 @@ if [ ! -f .bash_history -a -f ~/.bash_history ]
 then mv ~/.bash_history .
 else >> .bash_history
 fi
-ln -sfv "$PWD"/.bash_history "$PWD"/.bashrc "$PWD"/.inputrc ~
+ln -sfv "$PWD"/.bash_history "$PWD"/.inputrc "$PWD"/.profile ~
 
 # /usr
 awk '

@@ -1,5 +1,6 @@
-. ~/.browser
-. ~/.editor
+[ -f ~/.browser ] && . ~/.browser
+[ -f ~/.editor ] && . ~/.editor
+[ "$BASH" ] && shopt -s completion_strip_exe
 HISTCONTROL=ignoredups
 HISTIGNORE=c
 HISTSIZE=
@@ -9,7 +10,6 @@ export CYGWIN=winsymlinks:native
 export LANG=en_US.UTF-8 # case insensitive sort
 export POSIXLY_CORRECT=1
 alias agrep='grep -I --color --exclude .bash_history --exclude-dir .git'
-shopt -s completion_strip_exe
 
 c() {
   printf '\33c'
@@ -43,7 +43,7 @@ gsh() {
   if [ -f .git/index -o -f .git ]
   then
     local gnr=$(git name-rev --name-only @)
-    PS1="\033];\s\a\n\033[33m\w \033[36m$gnr\033[m\n$ "
+    PS1='\033];\s\a\n\033[33m\w \033[36m'"$gnr"'\033[m\n$ '
   else PS1='\033];\s\a\n\033[33m\w\033[m\n$ '
   fi
 }

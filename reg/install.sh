@@ -2,8 +2,8 @@
 
 # App Paths
 REG ADD \
-  'HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\bash.exe' \
-  /d 'C:\cygwin64\bin\bash.exe' /f
+  'HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\sh.exe' \
+  /d 'C:\cygwin64\bin\sh.exe' /f
 REG ADD \
   'HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\cygstart.exe' \
   /d 'C:\cygwin64\bin\cygstart.exe' /f
@@ -37,10 +37,10 @@ REG ADD 'HKCR\Unknown\shell\Notepad\command' /d 'notepad "%1"' /f
 REG ADD 'HKCR\Unknown\shell\Notepad2\command' /d 'Notepad2 "%1"' /f
 
 # folder names cannot contain double quote characters
-REG ADD 'HKCR\Drive\shell\Bash\command' /d 'cygstart -d "%v" bash' /f
-REG ADD 'HKCR\Directory\shell\Bash\command' /d 'cygstart -d "%v" bash' /f
-REG ADD 'HKCR\Directory\Background\shell\Bash\command' \
-  /d 'cygstart -d "%v" bash' /f
+REG ADD 'HKCR\Drive\shell\Shell\command' /d 'cygstart -d "%v" sh -l' /f
+REG ADD 'HKCR\Directory\shell\Shell\command' /d 'cygstart -d "%v" sh -l' /f
+REG ADD 'HKCR\Directory\Background\shell\Shell\command' \
+  /d 'cygstart -d "%v" sh -l' /f
 
 # Console
 REG ADD 'HKCU\Console' /v CodePage /t REG_DWORD /d 65001 /f

@@ -1,6 +1,6 @@
 #!/bin/dash -e
-PATH=/usr/local/bin:/usr/bin
-export CYGWIN=winsymlinks:native
+# we need to install shell first for /usr/local/bin
+. shell/.profile
 for q in shell browser editor git reg volume
 do
   cd "$q"
