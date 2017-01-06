@@ -1,15 +1,12 @@
----
-layout: post
-title: Windows 7 Ultimate
-tags: Windows
----
 
-# Create bootable USB drive
-- rufus
+Create bootable USB drive
+-------------------------
+- Rufus
 - Windows 7 Ultimate 64-bit
-- sort torrents by age
+- Sort torrents by age
 
-# Backup
+Backup
+------------------------
 1. Screenshot of Desktop
 2. Screenshot of installed programs
 3. Screenshot of Firefox Add-ons
@@ -17,7 +14,8 @@ tags: Windows
 5. Dropbox
 6. Run rsync
 
-# Restore
+Restore
+-------------------------
 1. Remove external drives
 
 2. Install Windows
