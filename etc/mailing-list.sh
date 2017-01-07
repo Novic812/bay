@@ -35,7 +35,7 @@ $1 == "Subject" {
   print
 }
 $1 == "Message-Id" {
-  $1 = "References"
+  $1 = "In-Reply-To"
   print
 }
 !ya && !$0 {
