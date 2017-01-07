@@ -31,10 +31,10 @@ $1 == "To" {
   print $2 > ARGV[2]
 }
 $1 == "Subject" {
-  $2 = "Re: " $2
+  if ($2 != "Re") $2 = "Re: " $2
   print
 }
-$1 == "Message-Id" {
+$1 == "Message-ID" {
   $1 = "In-Reply-To"
   print
 }
@@ -52,4 +52,5 @@ ya
 
 "$EDITOR" "$uf"
 read mr < "$mr"
-curl --mail-rcpt "$mr" --upload-file "$uf" smtps://"$use":"$pas"@smtp.gmail.com
+curl --mail-from "$use"@gmail.com --mail-rcpt "$mr" --upload-file "$uf" \
+smtps://"$use":"$pas"@smtp.gmail.com
