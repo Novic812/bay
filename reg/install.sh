@@ -37,11 +37,10 @@ REG ADD 'HKCR\Unknown\shell\Notepad\command' /d 'notepad "%1"' /f
 REG ADD 'HKCR\Unknown\shell\Notepad2\command' /d 'Notepad2 "%1"' /f
 
 # - working directory can contain single quotes; wrap with double quotes
-# - last character can be a backslash; add a space to counter
+# - drive will end with backslash; add a space to counter
 REG ADD 'HKCR\Drive\shell\Shell\command' /d 'cygstart -d "%v " sh -l' /f
-REG ADD 'HKCR\Directory\shell\Shell\command' /d 'cygstart -d "%v " sh -l' /f
-REG ADD 'HKCR\Directory\Background\shell\Shell\command' \
-  /d 'cygstart -d "%v " sh -l' /f
+REG ADD 'HKCR\Directory\shell\Shell\command' /d 'cygstart -d "%v" sh -l' /f
+REG ADD 'HKCR\Directory\Background\shell\Shell\command' /d 'sh -l' /f
 
 # Console
 REG ADD 'HKCU\Console' /v CodePage /t REG_DWORD /d 65001 /f
