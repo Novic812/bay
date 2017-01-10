@@ -152,13 +152,13 @@ domain(stackexchange.com), domain(serverfault.com), domain(askubuntu.com) {
   #PopupAutoCompleteRichResult
   .autocomplete-richlistitem:not([actiontype="searchengine"]) .ac-title {
     position: absolute !important;
-    top: 3px;
+    top: 4px;
     left: 64px;
   }
   #PopupAutoCompleteRichResult
   .autocomplete-richlistitem:not([actiontype="searchengine"]) .ac-url {
     position: absolute !important;
-    bottom: 9px;
+    bottom: 8px;
     left: 64px;
   }
 }
