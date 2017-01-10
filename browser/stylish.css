@@ -136,3 +136,29 @@ domain(stackexchange.com), domain(serverfault.com), domain(askubuntu.com) {
   .question-hyperlink:visited
     {color: #1086a4 !important}
 }
+@-moz-document url(chrome://browser/content/browser.xul) {
+  #PopupAutoCompleteRichResult
+  .autocomplete-richlistitem:not([actiontype="searchengine"]) {
+    position: relative !important;
+    height: 48px !important;
+  }
+  #PopupAutoCompleteRichResult
+  .autocomplete-richlistitem:not([actiontype="searchengine"]) .ac-separator {
+    display: none !important;
+  }
+  #PopupAutoCompleteRichResult .autocomplete-richlistitem {
+    border-bottom-color: #eee !important;
+  }
+  #PopupAutoCompleteRichResult
+  .autocomplete-richlistitem:not([actiontype="searchengine"]) .ac-title {
+    position: absolute !important;
+    top: 3px;
+    left: 64px;
+  }
+  #PopupAutoCompleteRichResult
+  .autocomplete-richlistitem:not([actiontype="searchengine"]) .ac-url {
+    position: absolute !important;
+    bottom: 9px;
+    left: 64px;
+  }
+}
