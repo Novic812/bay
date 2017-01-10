@@ -34,7 +34,7 @@ $1 == "Subject" {
   if ($2 != "Re") $2 = "Re: " $2
   print
 }
-$1 == "Message-ID" {
+tolower($1) == "message-id" {
   $1 = "In-Reply-To"
   print
 }
