@@ -41,7 +41,7 @@ BEGIN {
     NR++
     if (!zu && !$0) {
       zu = NR
-      print "User-Agent: mailing-list.awk" >> uf
+      print "User-Agent: mailing-list.awk 1.0.0" >> uf
     }
     if (zu && NR == zu + 1) {
       printf "On %s, %s wrote:\n", xr[1], ya[1] >> uf
