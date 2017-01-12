@@ -24,8 +24,7 @@ xc rundll32 inetcpl.cpl ClearMyTracksByProcess 1
 # remove dead symlinks
 for br in /usr/local/bin/*
 do
-  if [ -h "$br" -a ! -f "$br" ]
-  then
-    rm -v "$br"
+  if [ -h "$br" ] && [ ! -f "$br" ]
+  then rm -v "$br"
   fi
 done
