@@ -7,7 +7,7 @@ mount -a
 
 # /home
 mkdir -p ~
-if [ ! -f .bash_history -a -f ~/.bash_history ]
+if [ ! -f .bash_history ] && [ -f ~/.bash_history ]
 then mv ~/.bash_history .
 else >> .bash_history
 fi
