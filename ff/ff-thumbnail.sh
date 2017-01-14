@@ -18,8 +18,7 @@ Drag video here, then press enter (backslashes ok):'
 
 read -r br
 if [ -z "$br" ]
-then
-  exit
+then exit
 fi
 br=$(unquote "$br")
 ffprobe -v 0 -show_streams -of flat=h=0 "$br" |
@@ -48,8 +47,7 @@ printf '\33[1;32m%s\33[m\n' \
 'Drag picture here, then press enter (backslashes ok):'
 read -r zu
 if [ -z "$zu" ]
-then
-  exit
+then exit
 fi
 zu=$(unquote "$zu")
 # moov could be anywhere in the file, so we cannot use "dd"
