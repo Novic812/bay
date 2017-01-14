@@ -17,9 +17,7 @@ echo 'Careful, screencaps will dump in current directory.
 Drag video here, then press enter (backslashes ok):'
 
 read -r br
-if [ -z "$br" ]
-then exit
-fi
+[ "$br" ]
 br=$(unquote "$br")
 ffprobe -v 0 -show_streams -of flat=h=0 "$br" |
 awk '
@@ -46,9 +44,7 @@ done
 printf '\33[1;32m%s\33[m\n' \
 'Drag picture here, then press enter (backslashes ok):'
 read -r zu
-if [ -z "$zu" ]
-then exit
-fi
+[ "$zu" ]
 zu=$(unquote "$zu")
 # moov could be anywhere in the file, so we cannot use "dd"
 xc tageditor -s cover="$zu" --max-padding 100000 -f "$br"
