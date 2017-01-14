@@ -1,14 +1,14 @@
 #!/bin/sh -e
-# create high quality video from song and picture
-# site:musicbrainz.org acoustid -site:forums.musicbrainz.org
-# http://github.com/stedolan/jq/issues/105
-: '
+<<'eof'
+create high quality video from song and picture
+site:musicbrainz.org acoustid -site:forums.musicbrainz.org
+
 blog.musicbrainz.org/2013/03/21/
 puids-are-deprecated-and-will-be-removed-on-15-october-2013
 
 blog.musicbrainz.org/2013/09/03/
 changes-for-upcoming-schema-change-release-2013-10-14
-'
+eof
 
 JQ() {
   jq -r "$@" .json | sed 's/\r//'
