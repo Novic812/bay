@@ -25,7 +25,7 @@ br=$(unquote "$br")
 ffprobe -v 0 -show_streams -of flat=h=0 "$br" |
 awk '
 BEGIN {
-  FS = "[=\"]+"
+  FS = "[=\42]+"
 }
 {
   ju[$1] = $2
