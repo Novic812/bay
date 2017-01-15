@@ -8,8 +8,9 @@ function quote(str,   d, m, x, y, z) {
 }
 
 BEGIN {
-  printf "Careful, screencaps will dump in current directory.\n" \
-  "Drag video here, then press enter (backslashes ok):\n"
+  OFS = RS
+  print "Careful, screencaps will dump in current directory.",
+  "Drag video here, then press enter (backslashes ok):"
 
   getline br < "-"
   if (!br) exit
