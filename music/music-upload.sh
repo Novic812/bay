@@ -1,25 +1,8 @@
 #!/bin/sh -e
-<<'eof'
-create high quality video from song and picture
-site:musicbrainz.org acoustid -site:forums.musicbrainz.org
-
-blog.musicbrainz.org/2013/03/21/
-puids-are-deprecated-and-will-be-removed-on-15-october-2013
-
-blog.musicbrainz.org/2013/09/03/
-changes-for-upcoming-schema-change-release-2013-10-14
-eof
+# create high quality video from song and picture
 
 JQ() {
-  jq -r "$@" .json | sed 's/\r//'
-}
-
-xc() {
-  awk 'BEGIN {d = "\47"; printf "\33[36m"; while (++j < ARGC) {
-  k = split(ARGV[j], q, d); q[1]; for (x in q) printf "%s%s",
-  q[x] ~ /^[[:alnum:]%+,./:=@_-]+$/ ? q[x] : d q[x] d, x < k ? "\\" d : ""
-  printf j == ARGC - 1 ? "\33[m\n" : FS}}' "$@"
-  "$@"
+  jq -r "$@" .json | tr -d '\r'
 }
 
 querystring() {
@@ -138,9 +121,9 @@ do
   # Adding "-preset" would only make small difference in size or speed.
   # "-shortest" can mess up duration. Adding "-analyzeduration" would only
   # suppress warning, not change file.
-  xc ffmpeg -loop 1 -r 1 -i "$img" -i "$song" -t "$(JQ .format.duration)" \
-    -qp 0 -filter:v 'scale=trunc(oh*a/2)*2:720' -b:a 384k -v error \
-    -stats "$(exten song mp4)"
+  ffmpeg -loop 1 -r 1 -i "$img" -i "$song" -t "$(JQ .format.duration)" \
+  -qp 0 -filter:v 'scale=trunc(oh*a/2)*2:720' -b:a 384k -v error -stats \
+  "$(exten song mp4)"
 done
 
 if [ "${#album}" -lt 30 ]
@@ -151,7 +134,7 @@ fi
 for song in "${songs[@]}"
 do
   # category is case sensitive
-  xc google youtube post "$(exten song mp4)" Music \
-    -n "${artists[$song]}, ${titles[$song]}" -s "$(exten song txt)" \
-    -t "$tags" -u svnpenn
+  google youtube post "$(exten song mp4)" Music \
+  -n "${artists[$song]}, ${titles[$song]}" -s "$(exten song txt)" \
+  -t "$tags" -u svnpenn
 done
