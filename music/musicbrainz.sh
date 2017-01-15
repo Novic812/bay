@@ -47,10 +47,6 @@ proxy() {
   printf '%s\n' "$@" > "$dt"
 }
 
-jo() {
-  jq -r "$@" | sed 's.\r..'
-}
-
 if [ ! "$BROWSER" ]
 then
   echo 'BROWSER not set or not exported'
@@ -95,7 +91,7 @@ date-get)
     then "$BROWSER" 'http://google.com/search?q='"$qy"
     fi
     proxy "$fd" "ajax.googleapis.com/ajax/services/search/web?v=1.0&q=$qy"
-    count=$(jo .responseData.cursor.resultCount web.json)
+    count=$(jq -r .responseData.cursor.resultCount web.json | tr -d '\r')
     printf '%s\t%s\n' "$count" "$fd"
   done |
   sort -nr
