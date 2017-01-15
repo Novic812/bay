@@ -11,6 +11,7 @@ export LANG=en_US.UTF-8 # case insensitive sort
 export POSIXLY_CORRECT=1
 alias agrep='grep -I --color --exclude .bash_history --exclude-dir .git'
 alias aod='od -tcx1'
+stty -ixon
 
 c() {
   printf '\33c'
