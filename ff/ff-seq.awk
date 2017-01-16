@@ -27,7 +27,7 @@ BEGIN {
   if (ARGC != 4) {
     print \
     "SYNOPSIS",
-    "  ff-sequence.awk [start] [duration] [file]",
+    "  ff-seq.awk [start] [duration] [file]",
     "",
     "DESCRIPTION",
     "  Make an image sequence from a video"
