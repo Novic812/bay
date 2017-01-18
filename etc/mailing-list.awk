@@ -35,7 +35,7 @@ BEGIN {
       print >> uf
     }
     if (tolower($1) == "message-id") {
-      $1 = "In-Reply-To"
+      $1 = "References"
       print >> uf
     }
     NR++
@@ -54,6 +54,8 @@ BEGIN {
     }
   }
   system(ENVIRON["EDITOR"] " " uf)
+  print "Press Enter to continue..."
+  getline < "-"
   system(sprintf("curl --mail-from %s@gmail.com --mail-rcpt %s " \
   "--upload-file %s smtps://%s:%s@smtp.gmail.com",
   quote(use), mr, uf, quote(use), quote(pas)))
