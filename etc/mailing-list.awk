@@ -25,10 +25,11 @@ BEGIN {
       print >> uf
     }
     if ($1 == "To") {
-      sub(" at ", "@")
-      sub(" dot ", ".")
+      gsub(" at ", "@")
+      gsub(" dot ", ".")
+      split($2, mr, ", ")
+      $2 = mr[1]
       print >> uf
-      mr = $2
     }
     if ($1 == "Subject") {
       if ($2 != "Re") $2 = "Re: " $2
@@ -58,5 +59,5 @@ BEGIN {
   getline < "-"
   system(sprintf("curl --mail-from %s@gmail.com --mail-rcpt %s " \
   "--upload-file %s smtps://%s:%s@smtp.gmail.com",
-  quote(use), mr, uf, quote(use), quote(pas)))
+  quote(use), mr[1], uf, quote(use), quote(pas)))
 }
