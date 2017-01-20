@@ -30,9 +30,8 @@ function jul(kil,   lim, mik) {
 BEGIN {
   OFS = "."
 }
-FILENAME == ARGV[1] {
+FILENAME == ARGV[1] && FNR == 1 {
   nov = $NF
-  nextfile
 }
 FILENAME == ARGV[2] {
   osc += $1
