@@ -20,9 +20,7 @@ BEGIN {
     if (zu) {
       if (NR == zu + 1)
         printf "On %s, %s wrote:\n", xr[1], ya[1] >> uf
-      if ($0)
-        $0 = "> " $0
-      print >> uf
+      print $0 ? "> " $0 : "" >> uf
     }
     else if ($1 == "Date")
       split($2, xr, / [-+]/)
