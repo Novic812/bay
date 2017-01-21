@@ -1,4 +1,4 @@
-#!/usr/bin/awk -f 
+#!/usr/bin/awk -f
 function quote(str,   d, m, x, y, z) {
   d = "\47"; m = split(str, x, d)
   for (y in x) z = z d x[y] (y < m ? d "\\" d : d)
@@ -16,15 +16,22 @@ BEGIN {
   FS = OFS = ": "
   "mktemp" | getline uf
   while ("curl " quote(url) | getline) {
-    if ($1 == "Date") {
-      split($2, xr, / [-+]/)
+    NR++
+    if (zu) {
+      if (NR == zu + 1)
+        printf "On %s, %s wrote:\n", xr[1], ya[1] >> uf
+      if ($0)
+        $0 = "> " $0
+      print >> uf
     }
-    if ($1 == "From") {
+    else if ($1 == "Date")
+      split($2, xr, / [-+]/)
+    else if ($1 == "From") {
       split($2, ya, " <")
       $2 = fro
       print >> uf
     }
-    if ($1 == "To") {
+    else if ($1 == "To") {
       gsub(" at ", "@")
       gsub(" dot ", ".")
       split($2, mr, / <|>|, /)
@@ -32,27 +39,17 @@ BEGIN {
       $2 = mr[br]
       print >> uf
     }
-    if ($1 == "Subject") {
+    else if ($1 == "Subject") {
       if ($2 != "Re") $2 = "Re: " $2
       print >> uf
     }
-    if (tolower($1) == "message-id") {
+    else if (tolower($1) == "message-id") {
       $1 = "References"
       print >> uf
     }
-    NR++
-    if (!zu && !$0) {
+    else if (!$0) {
       zu = NR
-      print "User-Agent: mailing-list.awk 1.0.0" >> uf
-    }
-    if (zu && NR == zu + 1) {
-      printf "On %s, %s wrote:\n", xr[1], ya[1] >> uf
-    }
-    if (zu && $0) {
-      $0 = "> " $0
-    }
-    if (zu) {
-      print >> uf
+      printf "User-Agent: mailing-list.awk 1.0.0\n\n" >> uf
     }
   }
   system(ENVIRON["EDITOR"] " " uf)
