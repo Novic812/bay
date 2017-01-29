@@ -10,16 +10,19 @@ BEGIN {
   # fives
   while (z < y) {
     z *= 5
-    printf "%\47d\n", z
+    q[z]
   }
 
   # twos
   while (z % 5 == 0) {
     z *= 2 / 5
-    printf "%\47d\n", z
+    q[z]
   }
   while (z < y) {
     z *= 2
+    q[z]
+  }
+  for (z in q) {
     printf "%\47d\n", z
   }
 }
