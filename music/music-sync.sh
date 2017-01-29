@@ -1,6 +1,6 @@
 #!/bin/dash -e
 fd() {
-  find %-new %-old -type f -printf '%f\n'
+  find %-new %-old -type f | sed 's-.*/--'
 }
 
 mr() {
