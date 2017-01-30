@@ -1,15 +1,10 @@
 #!/usr/bin/awk -f
-function ceil(x,   y) {
-  y = int(x)
-  return y < x ? y + 1 : y
-}
-
 BEGIN {
   if (ARGC != 2) {
     print "not-for-threes.awk [threshold]"
     exit
   }
-  br = ceil(log(ARGV[1]) / log(5))
+  while (5 ^ ++br < ARGV[1]);
 
   while (br >= 0) {
     ch = br ? 0 : 1
