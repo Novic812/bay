@@ -1,28 +1,26 @@
 #!/usr/bin/awk -f
+function ceil(x,   y) {
+  y = int(x)
+  return y < x ? y + 1 : y
+}
+
 BEGIN {
   if (ARGC != 2) {
-    print "factor.awk [threshold]"
+    print "not-for-threes.awk [threshold]"
     exit
   }
-  y = ARGV[1]
-  z = 1
+  br = ceil(log(ARGV[1]) / log(5))
 
-  # fives
-  while (z < y) {
-    z *= 5
-    q[z]
+  while (br >= 0) {
+    ch = br ? 0 : 1
+    do {
+      de = 5 ^ br * 2 ^ ch++
+      ec[de]
+    } while (de < ARGV[1])
+    br--
   }
 
-  # twos
-  while (z % 5 == 0) {
-    z *= 2 / 5
-    q[z]
-  }
-  while (z < y) {
-    z *= 2
-    q[z]
-  }
-  for (z in q) {
-    printf "%\47d\n", z
+  for (br in ec) {
+    printf "%\47d\n", br
   }
 }
