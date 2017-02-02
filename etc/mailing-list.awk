@@ -42,6 +42,7 @@ BEGIN {
     }
     else if (!$0) {
       zu = NR
+      print "Content-Type: text; charset=UTF-8" >> uf
       printf "User-Agent: mailing-list.awk 1.0.0\n\n" >> uf
     }
   }
