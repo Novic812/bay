@@ -1,5 +1,5 @@
 #!/usr/bin/awk -f
-# www.google.com/settings/security/lesssecureapps
+# http://www.google.com/settings/security/lesssecureapps
 function quote(str,   d, m, x, y, z) {
   d = "\47"; m = split(str, x, d)
   for (y in x) z = z d x[y] (y < m ? d "\\" d : d)
