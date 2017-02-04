@@ -1,5 +1,5 @@
-#!/bin/dash -e
-. stdlib.sh
+#!/usr/local/bin/stdlib sh
+# github.com/svnpenn/stdlib
 xtrace "$EDITOR"
 xtrace "$EDITOR" ''
 xtrace "$EDITOR" /etc/wgetrc
