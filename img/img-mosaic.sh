@@ -1,6 +1,8 @@
 #!/bin/dash -e
 # A mosaic in digital imaging is a plurality of non-overlapping images, arranged
 # in some tessellation.
+. stdlib.sh
+
 if [ "$#" = 0 ]
 then
   cat <<'eof'
@@ -28,14 +30,6 @@ fi
 
 mn() {
   awk '{for (; NF-1; NF--) if ($1 > $NF) $1 = $NF} 1'
-}
-
-xc() {
-  awk 'BEGIN {d = "\47"; printf "\33[36m"; while (++j < ARGC) {
-  k = split(ARGV[j], q, d); q[1]; for (x in q) printf "%s%s",
-  q[x] ~ /^[[:alnum:]%+,./:=@_-]+$/ ? q[x] : d q[x] d, x < k ? "\\" d : ""
-  printf j == ARGC - 1 ? "\33[m\n" : FS}}' "$@"
-  "$@"
 }
 
 ya() {
@@ -137,7 +131,7 @@ while
   read sce
 do
   # extent must come after resize
-  xc convert -quality 100 \
+  xtrace convert -quality 100 \
   ${sv+-shave "$sv"} \
   ${ege:+-crop "$ege"} \
   ${rze:+-resize "$dme"^} \
@@ -154,26 +148,26 @@ br=$(mktemp XXX)
 set =*
 
 case $ao in
-000011) xc convert "$1" "$2" "$3" "$4" '(' "$5" "$6" -append ')' +append \
+000011) xtrace convert "$1" "$2" "$3" "$4" '(' "$5" "$6" -append ')' +append \
   -quality 100 "$br" ;;
-000110) xc convert "$1" "$2" "$3" '(' "$4" "$5" -append ')' "$6" +append \
+000110) xtrace convert "$1" "$2" "$3" '(' "$4" "$5" -append ')' "$6" +append \
   -quality 100 "$br" ;;
-011011) xc convert "$1" '(' "$2" "$3" -append ')' "$4" \
+011011) xtrace convert "$1" '(' "$2" "$3" -append ')' "$4" \
   '(' "$5" "$6" -append ')' +append -quality 100 "$br" ;;
-110000) xc convert '(' "$1" "$2" -append ')' "$3" "$4" "$5" "$6" +append \
+110000) xtrace convert '(' "$1" "$2" -append ')' "$3" "$4" "$5" "$6" +append \
   -quality 100 "$br" ;;
-110011) xc convert '(' "$1" "$2" -append ')' "$3" "$4" \
+110011) xtrace convert '(' "$1" "$2" -append ')' "$3" "$4" \
   '(' "$5" "$6" -append ')' +append -quality 100 "$br" ;;
-110110) xc convert '(' "$1" "$2" -append ')' "$3" \
+110110) xtrace convert '(' "$1" "$2" -append ')' "$3" \
   '(' "$4" "$5" -append ')' "$6" +append -quality 100 "$br" ;;
-0000110) xc convert "$1" "$2" "$3" "$4" \
+0000110) xtrace convert "$1" "$2" "$3" "$4" \
   '(' "$5" "$6" -append ')' "$7" +append -quality 100 "$br" ;;
-11111111) xc convert '(' "$1" "$2" -append ')' '(' "$3" "$4" -append ')' \
+11111111) xtrace convert '(' "$1" "$2" -append ')' '(' "$3" "$4" -append ')' \
   '(' "$5" "$6" -append ')' '(' "$7" "$8" -append ')' +append \
   -quality 100 "$br" ;;
-*) xc convert "$@" +append -quality 100 "$br" ;;
+*) xtrace convert "$@" +append -quality 100 "$br" ;;
 esac
 
 sn=$(basename "$PWD")
-xc mv "$br" "s $sn h $ju".jpg
-xc rm "$@"
+xtrace mv "$br" "s $sn h $ju".jpg
+xtrace rm "$@"
