@@ -1,7 +1,7 @@
-#!/bin/dash -e
+#!/usr/local/bin/stdlib sh
+# github.com/svnpenn/stdlib
 # A mosaic in digital imaging is a plurality of non-overlapping images, arranged
 # in some tessellation.
-. stdlib.sh
 
 if [ "$#" = 0 ]
 then
