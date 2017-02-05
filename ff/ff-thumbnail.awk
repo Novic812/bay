@@ -1,4 +1,5 @@
 #!/usr/local/bin/stdlib awk
+# github.com/svnpenn/stdlib
 # Set thumbnail for MP4 video
 
 BEGIN {

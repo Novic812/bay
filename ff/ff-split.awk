@@ -1,4 +1,5 @@
 #!/usr/local/bin/stdlib awk
+# github.com/svnpenn/stdlib
 BEGIN {
   if (ARGC != 2) {
     print "ff-split.awk [cue file]"
