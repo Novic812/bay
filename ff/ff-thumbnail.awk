@@ -1,11 +1,5 @@
-#!/usr/bin/awk -f
+#!/usr/local/bin/stdlib awk
 # Set thumbnail for MP4 video
-
-function quote(str,   d, m, x, y, z) {
-  d = "\47"; gsub("\42", "", str); m = split(str, x, d)
-  for (y in x) z = z d x[y] (y < m ? d "\\" d : d)
-  return z
-}
 
 BEGIN {
   OFS = RS

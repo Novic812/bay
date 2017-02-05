@@ -1,9 +1,4 @@
-#!/usr/bin/awk -f
-function quote(str,   d, m, x, y, z) {
-  d = "\47"; m = split(str, x, d)
-  for (y in x) z = z d x[y] (y < m ? d "\\" d : d)
-  return z
-}
+#!/usr/local/bin/stdlib awk
 BEGIN {
   if (ARGC != 2) {
     print "ff-split.awk [cue file]"

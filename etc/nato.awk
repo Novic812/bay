@@ -1,10 +1,5 @@
-#!/usr/bin/awk -f
-function insertion_sort(arr,   x, y, z) {
-  for (x in arr) {
-    y = arr[x]; z = x - 1
-    while (z && arr[z] > y) {arr[z + 1] = arr[z]; z--} arr[z + 1] = y
-  }
-}
+#!/usr/local/bin/stdlib awk
+# github.com/svnpenn/stdlib
 BEGIN {
   if (ARGC != 3) {
     print "nato.awk [variable length] [file]"
