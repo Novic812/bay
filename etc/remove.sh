@@ -1,5 +1,4 @@
 #!/usr/local/bin/stdlib sh
-# github.com/svnpenn/stdlib
 
 # clear explorer and wallpaper history
 while read br

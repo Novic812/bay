@@ -2,10 +2,17 @@ A
 ============
 It doesn’t stand for anything. It does stand for anything.
 
-Links
+Requirements
 ------------
-http://github.com/svnpenn/a
+[StdLib][x]
+
+Links
+----------------
+[Repository][z]
 
 Author
 ------------
 Steven Penny
+
+[x]://github.com/svnpenn/stdlib
+[z]://github.com/svnpenn/a

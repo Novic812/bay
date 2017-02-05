@@ -1,5 +1,4 @@
 #!/usr/local/bin/stdlib awk
-# github.com/svnpenn/stdlib
 
 BEGIN {
   _ = OFS = RS

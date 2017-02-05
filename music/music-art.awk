@@ -1,5 +1,4 @@
 #!/usr/local/bin/stdlib awk
-# github.com/svnpenn/stdlib
 BEGIN {
   if (!ENVIRON["BROWSER"]) {
     print "BROWSER not set or not exported"

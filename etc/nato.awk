@@ -1,5 +1,4 @@
 #!/usr/local/bin/stdlib awk
-# github.com/svnpenn/stdlib
 BEGIN {
   if (ARGC != 3) {
     print "nato.awk [variable length] [file]"

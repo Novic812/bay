@@ -1,5 +1,4 @@
 #!/usr/local/bin/stdlib sh
-# github.com/svnpenn/stdlib
 if [ "$#" = 0 ]
 then
   echo 'mp4box.sh [MP4] [SRT]'
