@@ -21,10 +21,13 @@ $1 == "INDEX" && $2 {
   zu[xr] = sprintf("%d:%02d:%06.3f", un[1] / 60, un[1] % 60, un[2] + un[3] / 75)
 }
 END {
+  _ = RS
   for (xr in wh) {
-    system(sprintf("ffmpeg -v warning -stats -i %s -ss %s%s -b:a 256k " \
-    "-movflags faststart -metadata track=%s -metadata title=%s %s.m4a",
-    quote(vi), zu[xr], zu[xr+1] ? " -to " zu[xr+1]: "", wh[xr], quote(ya[xr]),
-    quote(wh[xr] FS ya[xr])))
+    split("ffmpeg" _ "-v" _ "warning" _ "-stats" _ "-i" _ vi _ \
+    "-ss" _ zu[xr] _ (zu[xr + 1] ? "-to" _ zu[xr + 1] _ : "") \
+    "-b:a" _ "256k" _ "-movflags" _ "faststart" _ \
+    "-metadata" _ "track=" wh[xr] _ "-metadata" _ "title=" ya[xr] _ \
+    wh[xr] FS ya[xr] ".m4a", br, _)
+    xtrace(br)
   }
 }
