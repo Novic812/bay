@@ -2,17 +2,17 @@ Dotfiles
 ===================
 Configuration files
 
+Requirements
+------------
+[StdLib][x]
+
 Links
 -----------------
-[Repository][svn]
+[Repository][z]
 
 Author
 ------------
 Steven Penny
 
-Thanks
----------------------
-[Mathias Bynens][mat]
-
-[mat]://github.com/mathiasbynens/dotfiles
-[svn]://github.com/svnpenn/dotfiles
+[x]://github.com/svnpenn/stdlib
+[z]://github.com/svnpenn/dotfiles

@@ -8,7 +8,7 @@ cp -v /etc/defaults/etc/profile /etc
 # /home
 rm -fv ~/.bash_history ~/.inputrc ~/.profile
 
-# github.com/svnpenn/stdlib
+# /usr
 stdlib awk - symlink.txt <<'eof'
 BEGIN {
   FS = "\\"

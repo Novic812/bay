@@ -13,7 +13,7 @@ else >> .bash_history
 fi
 ln -sfv "$PWD"/.bash_history "$PWD"/.inputrc "$PWD"/.profile ~
 
-# github.com/svnpenn/stdlib
+# /usr
 stdlib awk - symlink.txt <<'eof'
 {
   z = z FS quote($0)
