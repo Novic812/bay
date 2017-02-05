@@ -8,14 +8,15 @@ cp -v /etc/defaults/etc/profile /etc
 # /home
 rm -fv ~/.bash_history ~/.inputrc ~/.profile
 
-# /usr
-awk '
-function quote(str,   d, m, x, y, z) {
-  d = "\47"; m = split(str, x, d)
-  for (y in x) z = z d x[y] (y < m ? d "\\" d : d)
-  return z
+# github.com/svnpenn/stdlib
+stdlib awk - symlink.txt <<'eof'
+BEGIN {
+  FS = "\\"
 }
-BEGIN {FS = "\\"}
-{j = j " /usr/local/bin/" quote($NF)}
-END {system("rm" j)}
-' symlink.txt
+{
+  z = z " /usr/local/bin/" quote($NF)
+}
+END {
+  system("rm" z)
+}
+eof

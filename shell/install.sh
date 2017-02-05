@@ -13,13 +13,12 @@ else >> .bash_history
 fi
 ln -sfv "$PWD"/.bash_history "$PWD"/.inputrc "$PWD"/.profile ~
 
-# /usr
-awk '
-function quote(str,   d, m, x, y, z) {
-  d = "\47"; m = split(str, x, d)
-  for (y in x) z = z d x[y] (y < m ? d "\\" d : d)
-  return z
+# github.com/svnpenn/stdlib
+stdlib awk - symlink.txt <<'eof'
+{
+  z = z FS quote($0)
 }
-{j = j FS quote($0)}
-END {system("ln -sfvt /usr/local/bin" j)}
-' symlink.txt
+END {
+  system("ln -sfvt /usr/local/bin" z)
+}
+eof
