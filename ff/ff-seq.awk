@@ -2,7 +2,7 @@
 # github.com/svnpenn/stdlib
 
 BEGIN {
-  OFS = RS
+  _ = OFS = RS
   if (ARGC != 4) {
     print \
     "SYNOPSIS",
@@ -12,7 +12,8 @@ BEGIN {
     "  Make an image sequence from a video"
     exit
   }
-  br["ffmpeg", "-hide_banner", "-ss", ARGV[1], "-i", ARGV[3], "-t", ARGV[2],
-  "-vf", "select='eq(pict_type, I)'", "-vsync", "vfr", "-q", 1, "%d.jpg"]
+  split("ffmpeg" _ "-hide_banner" _ "-ss" _ ARGV[1] _ "-i" _ ARGV[3] _ \
+  "-t" _ ARGV[2] _ "-vf" _ "select='eq(pict_type, I)'" _ "-vsync" _ "vfr" _ \
+  "-q" _ 1 _ "%d.jpg", br, _)
   xtrace(br)
 }
