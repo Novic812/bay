@@ -1,6 +1,6 @@
 C:/ProgramData/Bin /usr/local/bin . noacl
 C:/ProgramData/Awk /usr/share/awk . noacl
-C:/ProgramData/Doc /usr/share/doc . noacl
+C:/ProgramData/Doc/Sage /usr/share/doc/sage . noacl
 C:/ProgramData/Sh /usr/share/sh . noacl
 C:/ProgramData/Glade /var/cache/glade . noacl
 C:/ProgramData/Sage /var/cache/sage . noacl
