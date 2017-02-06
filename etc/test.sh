@@ -5,7 +5,7 @@ then
   exit
 fi
 
-for pa in b c d e f g h k n p r s u w x z G L O S
+for pa in b c d e f g h k n p r s u w x z G O S
 do
   printf '  -%s  ' "$pa"
   for qu
