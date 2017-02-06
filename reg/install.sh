@@ -46,7 +46,7 @@ REG ADD 'HKCR\Directory\Background\shell\Shell\command' /d 'sh -l' /f
 REG ADD 'HKCU\Console' /v CodePage /t REG_DWORD /d 65001 /f
 REG ADD 'HKCU\Console' /v QuickEdit /t REG_DWORD /d 1 /f
 REG ADD 'HKCU\Console' /v WindowPosition /t REG_DWORD /d 0x012C0384 /f
-REG ADD 'HKCU\Console' /v WindowSize /t REG_DWORD /d 0x00180050 /f
+REG ADD 'HKCU\Console' /v WindowSize /t REG_DWORD /d 0x00180051 /f
 
 # remove shortcut text - must restart explorer
 REG ADD 'HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer' \
