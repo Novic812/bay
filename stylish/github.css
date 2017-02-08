@@ -1,0 +1,23 @@
+@-moz-document domain(github.com) {
+  body, .markdown-body {
+    font-family: Arial !important;
+  }
+  .dashboard-sidebar .boxed-group:not(.repos) {
+    display: none !important;
+  }
+  .comment-body pre, .comment-body code, .highlight td {
+    font-size: 14px !important;
+  }
+  [fill="#1e6823"] { /* red */
+    fill: #e44b23;
+  }
+  [fill="#44a340"] { /* yellow */
+    fill: #f1e05a;
+  }
+  [fill="#8cc665"] { /* green */
+    fill: #89e051;
+  }
+  [fill="#d6e685"] { /* blue */
+    fill: #B9D9FF;
+  }
+}

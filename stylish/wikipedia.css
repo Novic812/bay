@@ -1,0 +1,9 @@
+@-moz-document domain(wikipedia.org) {
+  /*
+  #centralNotice
+    wikipedia ad
+  */
+  #centralNotice {
+    display: none !important;
+  }
+}

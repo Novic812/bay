@@ -1,0 +1,5 @@
+@-moz-document domain(soundcloud.com) {
+  .announcements {
+    display: none !important;
+  }
+}

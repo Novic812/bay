@@ -1,0 +1,11 @@
+@-moz-document domain(google.com) {
+  [aria-label="promo"] {
+    display: none !important;
+  }
+  /*
+  switch your default search engine to google
+  */
+  #pushdown {
+    display: none !important;
+  }
+}

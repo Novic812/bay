@@ -1,0 +1,21 @@
+@-moz-document domain(reddit.com) {
+  body {
+    background-image: none !important;
+  }
+  .md p {
+    font-family: verdana !important;
+    line-height: 20px !important;
+  }
+  .down {
+    display: block !important;
+  }
+  .dislikes {
+    opacity: .3 !important;
+  }
+  .goldvertisement, .sidebox:not(.create):not(.submit) {
+    display: none !important;
+  }
+  .usertext-edit, textarea {
+    min-width: 90% !important;
+  }
+}
