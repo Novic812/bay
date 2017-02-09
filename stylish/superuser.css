@@ -2,33 +2,9 @@
 @-moz-document url-prefix(http://superuser.com) {
   /* colors were reversed */
   .question-hyperlink {
-    color: #13b3bd !important
+    color: #13B3BD !important;
   }
   .question-hyperlink:visited {
-    color: #1086a4 !important
-  }
-  /* hot network questions */
-  #hot-network-questions li a:visited,
-  /* user > activity > answers */
-  .answer-link a:visited,
-  /* hot meta posts */
-  .community-bulletin a:visited,
-  /* user > profile > newest posts */
-  .post-container a:visited,
-  /* question > answers */
-  .post-text a:visited,
-  /* user > activity > reputation */
-  .rep-link a:visited,
-  /* search results */
-  .result-link a:visited,
-  /* question > linked */
-  .sidebar-linked a:visited,
-  /* question > related */
-  .sidebar-related a:visited,
-  /* unanswered questions */
-  .summary h3 a:visited,
-  /* user > activity > summary */
-  .user-rep a:visited {
-    color: #551a8b !important
+    color: #1086A4 !important;
   }
 }
