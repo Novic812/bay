@@ -1,23 +1,54 @@
 @-moz-document domain(github.com) {
+  /* light header */
+  .header {
+    background: #f5f5f5 !important;
+  }
+  .header-nav-link, .header-logo-invertocat {
+    color: #555 !important;
+  }
+  ::placeholder {
+    color: #999 !important;
+  }
+  .form-control  {
+    background: #fff !important;
+    border: 1px solid #ddd !important;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1) !important;
+  }
+  .header-search-scope {
+    border-right: 1px solid #eee !important;
+    color: #767676 !important;
+  }
+  .header-search-input {
+    border: 0 !important;
+  }
+  /* short header */
+  .header {
+    padding: 7px !important;
+  }
+  /* red */
+  [fill="#1e6823"] {
+    fill: #e44b23;
+  }
+  /* yellow */
+  [fill="#44a340"] {
+    fill: #f1e05a;
+  }
+  /* green */
+  [fill="#8cc665"] {
+    fill: #89e051;
+  }
+  /* blue */
+  [fill="#d6e685"] {
+    fill: #b9d9ff;
+  }
+  /* font */
   body, .markdown-body {
     font-family: Arial !important;
   }
-  .dashboard-sidebar .boxed-group:not(.repos) {
-    display: none !important;
+  .header-search-scope {
+    font-size: 13px !important;
   }
-  .comment-body pre, .comment-body code, .highlight td {
+  .header-search-input, .comment-body code, .comment-body pre, .highlight td {
     font-size: 14px !important;
-  }
-  [fill="#1e6823"] { /* red */
-    fill: #e44b23;
-  }
-  [fill="#44a340"] { /* yellow */
-    fill: #f1e05a;
-  }
-  [fill="#8cc665"] { /* green */
-    fill: #89e051;
-  }
-  [fill="#d6e685"] { /* blue */
-    fill: #B9D9FF;
   }
 }
