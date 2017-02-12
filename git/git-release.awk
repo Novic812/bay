@@ -1,4 +1,4 @@
-#!/usr/bin/awk -f
+#!/usr/local/bin/stdlib awk
 function tag(expr,   br, ec) {
   OFS = "."
   for (br = 100; br >= 1; br /= 10) {
@@ -6,10 +6,6 @@ function tag(expr,   br, ec) {
     expr %= br
   }
   return $0
-}
-
-function max(value1, value2) {
-  return value1 > value2 ? value1 : value2
 }
 
 BEGIN {
