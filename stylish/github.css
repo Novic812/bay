@@ -6,6 +6,12 @@
   .header-nav-link, .header-logo-invertocat {
     color: #555 !important;
   }
+  .header-logo-invertocat:hover, .header-nav-link:hover {
+    color: #4078c0 !important;
+  }
+  .dropdown-caret {
+    border-top-color: currentcolor !important;
+  }
   ::placeholder {
     color: #999 !important;
   }
