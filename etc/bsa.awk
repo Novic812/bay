@@ -1,14 +1,12 @@
-#!/usr/bin/awk -f
+#!/usr/local/bin/stdlib awk
 BEGIN {
   OFS = RS
   if (ARGC != 3) {
     print "bsa.awk [good] [bad]", "", "hex allowed - use 0x"
     exit
   }
-  z = ARGV[1]
-  y = ARGV[2]
   while (1) {
-    x = int((z + y) / 2)
+    x = int(mean(ARGV))
     if (w[x]++)
       break
     printf ARGV[1] ~ /[xX]/ ? "\n%X\n" : "\n%d\n", x
@@ -16,9 +14,9 @@ BEGIN {
       printf "[g,b]? "
       getline v < "-"
       if (v == "g")
-        z = x
+        ARGV[1] = x
       else if (v == "b")
-        y = x
+        ARGV[2] = x
       else {
         print "", "g - good", "b - bad"
         continue
