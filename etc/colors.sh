@@ -5,7 +5,7 @@
 # foreground green:  32
 # foreground yellow: 33
 # foreground blue:   34
-# foreground purple: 35
+# foreground magenta: 35
 # foreground cyan:   36
 # foreground white:  37
 
@@ -14,7 +14,7 @@
 # background green:  42
 # background yellow: 43
 # background blue:   44
-# background purple: 45
+# background magenta: 45
 # background cyan:   46
 # background white:  47
 
