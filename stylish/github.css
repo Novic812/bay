@@ -27,6 +27,9 @@
   ::placeholder {
     color: #999 !important;
   }
+  .mail-status {
+    border-color: #f3f3f3 !important;
+  }
   .dropdown-caret {
     border-top-color: currentcolor !important;
   }
