@@ -18,8 +18,8 @@
 # background cyan:   46
 # background white:  47
 
-# bold foreground: 1
-# bold background: 5
+# bright foreground: 1
+# bright background: 5
 
 while read br
 do
