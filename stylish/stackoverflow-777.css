@@ -1,0 +1,54 @@
+@-moz-document domain(stackoverflow.com) {
+  /* this is the lightest dark color, a compromise */
+  .so-header {
+    background-color: #777 !important;
+  }
+  /* distill(old #E4E6E8) -> #EEF */
+  .-link, .-rep {
+    color: #EEF !important;
+  }
+  /* brighten(#777, 2) -> #999 */
+  .-link:hover, .my-profile:hover {
+    background-color: #999 !important;
+  }
+  /* distill(old #FFCC00) -> #FC0 */
+  .my-profile .badge1 {
+    background-color: #FC0 !important;
+  }
+  /* distill(old #FFCC00) -> #FC0, brighten(#FC0, 1) -> #FD1 */
+  .my-profile .badge1 + .badgecount {
+    color: #FD1 !important;
+  }
+  /* distill(old #C5C5C5) -> #CCC */
+  .my-profile .badge2 {
+    background-color: #CCC !important;
+  }
+  /* distill(old #C5C5C5) -> #CCC, brighten(#CCC, 1) -> #DDD */
+  .my-profile .badge2 + .badgecount {
+    color: #DDD !important;
+  }
+  /* distill(old #CC9966) -> #C96, brighten(#C96, 1) -> #DA7 */
+  .my-profile .badge3 {
+    background-color: #DA7 !important;
+  }
+  /* distill(old #CC9966) -> #C96, brighten(#C96, 2) -> #EB8 */
+  .my-profile .badge3 + .badgecount {
+    color: #EB8 !important;
+  }
+  /* floor(mean(new 57px, old 34px)) */
+  .-logo, .-list, .my-profile, .-link {
+    height: 45px !important;
+  }
+  /* floor(mean(new 57px, old 34px)) */
+  .-link {
+    line-height: 45px !important;
+  }
+  /* old 0 */
+  .so-header {
+    border: 0 !important;
+  }
+  /* old none */
+  .beta-badge {
+    display: none !important;
+  }
+}
