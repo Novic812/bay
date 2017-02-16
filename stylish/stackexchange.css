@@ -20,6 +20,7 @@
   /* user > activity > summary */
   .answer-hyperlink a:visited,
   .question-hyperlink a:visited,
+  .user-rep a:visited,
   /* user > profile > newest posts */
   .post-container a:visited {
     color: #551a8b !important;
