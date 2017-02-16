@@ -13,9 +13,15 @@
   .sidebar-related a:visited,
   /* unanswered questions */
   .summary h3 a:visited,
+  /* user > activity > answers */
+  .answer-link a:visited,
+  /* user > activity > reputation */
+  .rep-link a:visited,
   /* user > activity > summary */
   .answer-hyperlink a:visited,
-  .question-hyperlink a:visited {
+  .question-hyperlink a:visited,
+  /* user > profile > newest posts */
+  .post-container a:visited {
     color: #551a8b !important;
   }
 }
