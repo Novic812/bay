@@ -1,28 +1,28 @@
 @-moz-document domain(stackoverflow.com), domain(superuser.com) {
   /* hot network questions */
-  #hot-network-questions li a:visited,
-  /* hot meta posts */
-  .community-bulletin a:visited,
+  #hot-network-questions :visited,
+  /* featured on meta */
+  .community-bulletin :visited,
   /* question > answers */
-  .post-text a:visited,
+  .post-text :visited,
   /* search results */
-  .result-link a:visited,
+  .result-link :visited,
   /* question > linked */
-  .sidebar-linked a:visited,
+  .sidebar-linked :visited,
   /* question > related */
-  .sidebar-related a:visited,
+  .sidebar-related :visited,
   /* unanswered questions */
-  .summary h3 a:visited,
+  .summary :visited,
   /* user > activity > answers */
-  .answer-link a:visited,
+  .answer-link :visited,
   /* user > activity > reputation */
-  .rep-link a:visited,
+  .rep-link :visited,
   /* user > activity > summary */
-  .answer-hyperlink a:visited,
-  .question-hyperlink a:visited,
-  .user-rep a:visited,
+  .answer-hyperlink :visited,
+  .question-hyperlink :visited,
+  .user-rep :visited,
   /* user > profile > newest posts */
-  .post-container a:visited {
+  .post-container :visited {
     color: #551a8b !important;
   }
 }
