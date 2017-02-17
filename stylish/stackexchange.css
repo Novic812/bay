@@ -11,8 +11,8 @@
   .sidebar-linked :visited,
   /* question > related */
   .sidebar-related :visited,
-  /* unanswered questions */
-  .summary :visited,
+  /* questions, exclude tag links */
+  .summary h3 :visited,
   /* user > activity > answers */
   .answer-link :visited,
   /* user > activity > reputation */
