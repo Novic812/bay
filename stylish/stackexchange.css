@@ -13,14 +13,11 @@
   .sidebar-related :visited,
   /* questions, exclude tag links */
   .summary h3 :visited,
-  /* user > activity > answers */
-  .answer-link :visited,
-  /* user > activity > reputation */
-  .rep-link :visited,
-  /* user > activity > summary */
-  .answer-hyperlink :visited,
+  /* user > activity > votes */
+  .timeline-answers:visited,
+  /* user > activity > summary, exclude question title links */
+  .answer-hyperlink:visited,
   .question-hyperlink :visited,
-  .user-rep :visited,
   /* user > profile > newest posts */
   .post-container :visited {
     color: #551a8b !important;
