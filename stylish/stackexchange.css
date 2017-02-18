@@ -3,8 +3,8 @@
   #hot-network-questions :visited,
   /* featured on meta */
   .community-bulletin :visited,
-  /* post links, exclude tag links */
-  .post-text [href^="http"]:visited,
+  /* non tag links will be absolute, but might not include protocol */
+  .post-text [href*="//"]:visited,
   /* search results */
   .result-link :visited,
   /* question > linked */
