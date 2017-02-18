@@ -3,8 +3,8 @@
   #hot-network-questions :visited,
   /* featured on meta */
   .community-bulletin :visited,
-  /* question > answers */
-  .post-text :visited,
+  /* post links, exclude tag links */
+  .post-text [href^="http"]:visited,
   /* search results */
   .result-link :visited,
   /* question > linked */
