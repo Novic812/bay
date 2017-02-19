@@ -1,5 +1,5 @@
-stackoverflow.com/questions/16779762
-stackoverflow.com/questions/916797/emacs-global-set-key-to-c-tab
-stackoverflow.com/q/916797
-stackoverflow.com/questions/916797/emacs-global-set-key-to-c-tab/916918#916918
-stackoverflow.com/a/916918
+unix.stackexchange.com/a/346069
+unix.stackexchange.com/q/346050
+unix.stackexchange.com/questions/346050
+unix.stackexchange.com/questions/346050/fix-config-in-vimrc-file
+unix.stackexchange.com/questions/346050/fix-config-in-vimrc-file/346069#346069
