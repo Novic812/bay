@@ -1,4 +1,4 @@
-@-moz-document domain(superuser.com) {
+@-moz-document domain(stackoverflow.com), domain(superuser.com) {
   /* hot network questions */
   #hot-network-questions :visited,
   /* featured on meta */
