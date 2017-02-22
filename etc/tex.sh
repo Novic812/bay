@@ -14,7 +14,7 @@ awk '
 /Output/ {
   $0 = "\33[1;32m" $0 "\33[m"
 }
-/Fatal|Overfull|Underfull|Warning/ {
+/!|Overfull|Underfull|Warning/ {
   $0 = "\33[1;31m" $0 "\33[m"
 }
 1
