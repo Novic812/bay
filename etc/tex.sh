@@ -1,7 +1,7 @@
 #!/bin/dash -e
 if [ "$#" != 2 ]
 then
-  echo 'tex.sh [in file] [out file]'
+  echo 'tex.sh <tex input> <pdf output>'
   exit
 fi
 
