@@ -1,4 +1,4 @@
-#!/usr/bin/awk -f
+#!/usr/local/bin/stdlib awk
 function mktm(datespec,   xr) {
   split(datespec, xr, /[-T]/)
   return \
@@ -9,15 +9,6 @@ function mktm(datespec,   xr) {
 function prtf(viewdate, timestr, prec) {
   printf "%\47.0f views / %\47.*f %ss = %\47.0f\n",
   viewdate[1], prec, viewdate[2], timestr, viewdate[1] / viewdate[2]
-}
-function json(rough, diamond,   xr, ya, zu) {
-  split(rough, xr, /\42?,\42/)
-  for (ya in xr) {
-    if (xr[ya] ~ diamond) {
-      split(xr[ya], zu, /\42:\42?/)
-      return zu[2]
-    }
-  }
 }
 BEGIN {
   if (ARGC != 2) {
