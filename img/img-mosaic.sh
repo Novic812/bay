@@ -1,4 +1,4 @@
-#!/usr/local/bin/stdlib sh
+#!/usr/local/bin/shlib -f
 # A mosaic in digital imaging is a plurality of non-overlapping images, arranged
 # in some tessellation.
 
