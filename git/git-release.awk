@@ -1,4 +1,4 @@
-#!/usr/local/bin/stdlib awk
+#!/usr/local/bin/awklib -f
 function tag(expr,   br, ec) {
   OFS = "."
   for (br = 100; br >= 1; br /= 10) {
