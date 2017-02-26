@@ -14,11 +14,11 @@ fi
 ln -sfv "$PWD"/.bash_history "$PWD"/.inputrc "$PWD"/.profile ~
 
 # /usr
-stdlib awk - symlink.txt <<'eof'
+awklib -c '
 {
   z = z FS quote($0)
 }
 END {
   system("ln -sfvt /usr/local/bin" z)
 }
-eof
+' symlink.txt
