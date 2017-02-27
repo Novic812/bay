@@ -1,4 +1,4 @@
-#!/usr/local/bin/stdlib awk
+#!/usr/local/bin/awklib -f
 BEGIN {
   OFS = RS
   if (ARGC != 3) {

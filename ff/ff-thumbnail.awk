@@ -1,4 +1,4 @@
-#!/usr/local/bin/stdlib awk
+#!/usr/local/bin/awklib -f
 # Set thumbnail for MP4 video
 
 BEGIN {

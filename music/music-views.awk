@@ -1,4 +1,4 @@
-#!/usr/local/bin/stdlib awk
+#!/usr/local/bin/awklib -f
 function mktm(datespec,   xr) {
   split(datespec, xr, /[-T]/)
   return \

@@ -1,4 +1,4 @@
-#!/usr/local/bin/stdlib awk
+#!/usr/local/bin/awklib -f
 BEGIN {
   if (!ENVIRON["BROWSER"]) {
     print "BROWSER not set or not exported"

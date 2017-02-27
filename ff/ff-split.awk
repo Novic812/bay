@@ -1,4 +1,4 @@
-#!/usr/local/bin/stdlib awk
+#!/usr/local/bin/awklib -f
 BEGIN {
   if (ARGC != 2) {
     print "ff-split.awk [cue file]"
