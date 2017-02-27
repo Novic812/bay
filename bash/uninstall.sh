@@ -9,7 +9,7 @@ cp -v /etc/defaults/etc/profile /etc
 rm -fv ~/.bash_history ~/.inputrc ~/.profile
 
 # /usr
-stdlib awk - symlink.txt <<'eof'
+awklib -c '
 BEGIN {
   FS = "\\"
 }
@@ -19,4 +19,4 @@ BEGIN {
 END {
   system("rm" z)
 }
-eof
+' symlink.txt
