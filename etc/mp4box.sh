@@ -1,4 +1,4 @@
-#!/usr/local/bin/shlib -f
+#!/usr/local/bin/shlib
 if [ "$#" = 0 ]
 then
   echo 'mp4box.sh [MP4] [SRT]'

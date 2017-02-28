@@ -1,4 +1,4 @@
-#!/usr/local/bin/shlib -f
+#!/usr/local/bin/shlib
 
 # clear explorer and wallpaper history
 while read br
