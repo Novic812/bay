@@ -14,7 +14,7 @@ fi
 ln -sfv "$PWD"/.bash_history "$PWD"/.inputrc "$PWD"/.profile ~
 
 # /usr
-awklib -c '
+awklib '
 {
   z = z FS quote($0)
 }

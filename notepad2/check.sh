@@ -1,4 +1,4 @@
-#!/usr/local/bin/shlib -f
+#!/usr/local/bin/shlib
 xtrace "$EDITOR"
 xtrace "$EDITOR" ''
 xtrace "$EDITOR" /etc/wgetrc

@@ -9,7 +9,7 @@ cp -v /etc/defaults/etc/profile /etc
 rm -fv ~/.bash_history ~/.inputrc ~/.profile
 
 # /usr
-awklib -c '
+awklib '
 BEGIN {
   FS = "\\"
 }
