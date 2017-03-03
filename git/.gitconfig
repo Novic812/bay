@@ -5,7 +5,6 @@ ui = true
 meta = yellow bold
 
 [core]
-pager =
 whitespace = cr-at-eol
 
 [credential]
