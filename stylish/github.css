@@ -1,4 +1,27 @@
 @-moz-document domain(github.com) {
+  /* font */
+  body, .markdown-body {
+    font-family: Arial !important;
+  }
+  .comment-body code, .comment-body pre, .highlight td {
+    font-size: 14px !important;
+  }
+  /* contribution red */
+  [fill="#1e6823"] {
+    fill: #e44b23;
+  }
+  /* contribution yellow */
+  [fill="#44a340"] {
+    fill: #f1e05a;
+  }
+  /* contribution green */
+  [fill="#8cc665"] {
+    fill: #89e051;
+  }
+  /* contribution blue */
+  [fill="#d6e685"] {
+    fill: #b9d9ff;
+  }
   /* light header */
   .header {
     background: #f5f5f5 !important;
@@ -36,28 +59,5 @@
   /* short header */
   .header {
     padding: 7px !important;
-  }
-  /* font */
-  body, .markdown-body {
-    font-family: Arial !important;
-  }
-  .comment-body code, .comment-body pre, .highlight td {
-    font-size: 14px !important;
-  }
-  /* red */
-  [fill="#1e6823"] {
-    fill: #e44b23;
-  }
-  /* yellow */
-  [fill="#44a340"] {
-    fill: #f1e05a;
-  }
-  /* green */
-  [fill="#8cc665"] {
-    fill: #89e051;
-  }
-  /* blue */
-  [fill="#d6e685"] {
-    fill: #b9d9ff;
   }
 }
