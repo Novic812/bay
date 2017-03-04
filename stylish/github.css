@@ -94,7 +94,7 @@
   .discussion-item-help:hover {
     color: #4078c0 !important;
   }
-  .btn-outline:hover, .ellipsis-expander:hover {
+  .btn-outline:hover, .dropdown-item:hover, .ellipsis-expander:hover {
     color: #fff !important;
     background-color: #4078c0 !important;
   }
