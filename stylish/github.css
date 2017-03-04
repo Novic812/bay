@@ -7,19 +7,19 @@
     font-size: 14px !important;
   }
   /* contribution red */
-  [fill="#1e6823"] {
+  [fill="#196127"] {
     fill: #e44b23;
   }
   /* contribution yellow */
-  [fill="#44a340"] {
+  [fill="#239a3b"] {
     fill: #f1e05a;
   }
   /* contribution green */
-  [fill="#8cc665"] {
+  [fill="#7bc96f"] {
     fill: #89e051;
   }
   /* contribution blue */
-  [fill="#d6e685"] {
+  [fill="#c6e48b"] {
     fill: #b9d9ff;
   }
   /* light header */
