@@ -10,17 +10,29 @@
   [fill="#196127"] {
     fill: #e44b23;
   }
+  [style$="#196127"] {
+    background: #e44b23 !important;
+  }
   /* contribution yellow */
   [fill="#239a3b"] {
     fill: #f1e05a;
+  }
+  [style$="#239a3b"] {
+    background: #f1e05a !important;
   }
   /* contribution green */
   [fill="#7bc96f"] {
     fill: #89e051;
   }
+  [style$="#7bc96f"] {
+    background: #89e051 !important;
+  }
   /* contribution blue */
   [fill="#c6e48b"] {
     fill: #b9d9ff;
+  }
+  [style$="#c6e48b"] {
+    background: #b9d9ff !important;
   }
   /* light header */
   .header {
@@ -101,11 +113,11 @@
   .timeline-comment-action:focus {
     color: #4078c0 !important;
   }
-  .filter-item.selected, .suggester .navigation-focus,
-  .select-menu-item.navigation-focus,
-  .select-menu-item.navigation-focus .description-inline, .btn-outline:hover,
-  .diff-expander:hover, .dropdown-item:hover, .reaction-sort-item:hover,
-  .timeline-commits .ellipsis-expander:hover {
+  .filter-item.selected, .bg-blue,
+  .select-menu-item.navigation-focus .description-inline,
+  .select-menu-item.navigation-focus, .suggester .navigation-focus,
+  .dropdown-item:hover, .diff-expander:hover, .btn-outline:hover,
+  .timeline-commits .ellipsis-expander:hover, .reaction-sort-item:hover {
     background-color: #4078c0 !important;
   }
   .select-menu-item-parent.select-menu-item.navigation-focus {
