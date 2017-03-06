@@ -6,7 +6,7 @@ HISTIGNORE=c
 HISTSIZE=
 PATH=/usr/local/bin:/usr/bin
 PROMPT_COMMAND=gsh
-TMP=/tmp
+unset TMP
 export CYGWIN=winsymlinks:native
 export LANG=en_US.UTF-8 # case insensitive sort
 export POSIXLY_CORRECT=1
