@@ -52,7 +52,10 @@ REG ADD 'HKCU\Console' /v WindowSize /t REG_DWORD /d 0x00180051 /f
 REG ADD 'HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer' \
   /v Link /t REG_BINARY /d 00000000 /f
 
-# Path
+# Environment
+REG DELETE \
+'HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Environment' /v TMP /f
+REG DELETE 'HKCU\Environment' /v TMP /f
 SETX Path 'C:\ProgramData\Bin;C:\Windows\System32' /M
 
 # hide file extensions
