@@ -1,8 +1,8 @@
 #!/bin/dash
 if [ "$#" = 0 ]
 then
-  echo 'strace.sh [dash script] [args]'
+  echo 'strace.sh <command> [arguments]'
   exit
 fi
 
-strace dash "$@" | wc --lines
+strace "$@" | wc -l
