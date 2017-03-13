@@ -1,4 +1,4 @@
-#!/bin/dash -e
+#!/usr/local/bin/shlib
 cm=$(mktemp)
 sz=$(mktemp)
 dt=$(mktemp)
@@ -6,11 +6,11 @@ ob=$(mktemp)
 for pa in *
 do
   printf . >&2
-  git log --follow --format=%% "$pa" | wc --lines >> $cm
-  stat --format %s "$pa" >> $sz
+  git log --follow --format=%% "$pa" | wc -l >> "$cm"
+  stat_size "$pa" >> "$sz"
   git log --follow --max-count=1 --diff-filter=AM --date=short \
-  --format='%at %ad' "$pa" >> $dt
-  echo "$pa" >> $ob
+  --format='%at %ad' "$pa" >> "$dt"
+  echo "$pa" >> "$ob"
 done
 echo
 awk '
@@ -34,4 +34,4 @@ END {
   while (++j <= FNR)
     print cm[j] * sz[j] * at[j], cm[j], sz[j], ad[j], ob[j]
 }
-' $cm $sz $dt $ob
+' "$cm" "$sz" "$dt" "$ob"
