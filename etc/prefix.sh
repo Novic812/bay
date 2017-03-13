@@ -7,10 +7,10 @@ then
 fi
 qu=$1
 
-touch /tmp/ro.c
+ro=$(mktemp /tmp/XXX.c)
 
 echo 'INCLUDE'
-"$qu" -v /tmp/ro.c 2>&1 | grep -E '^ [^ ]+$' |
+"$qu" -v "$ro" 2>&1 | grep -E '^ [^ ]+$' |
 while read -r si
 do
   if [ -d "$si" ]
@@ -29,7 +29,7 @@ s/^/--prefix /
 ' | sort -u
 
 echo 'LIB'
-"$qu" '-###' /tmp/ro.c 2>&1 | sed '
+"$qu" '-###' "$ro" 2>&1 | sed '
 /LIBRARY_PATH=/!d
 s///
 y/:/\n/
