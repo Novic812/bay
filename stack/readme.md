@@ -10,13 +10,12 @@ todo.md
 ----------------------------------------
 1. One todo.md to cover all repositories
 2. Include question score
-3. Include link to thanks.md
-4. Sort topics
+3. Sort topics
   - Relevance descending
   - Number of questions ascending
   - Question score descending
   - Question number descending
-5. Sort questions descending
+4. Sort questions descending
   - Questions per site
   - Question score
   - Question number
