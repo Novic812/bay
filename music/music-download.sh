@@ -1,8 +1,7 @@
-#!/bin/dash -e
+#!/usr/local/bin/shlib
 br() {
   for each
-  do
-    echo "$each"
+  do echo "$each"
   done
 }
 
@@ -26,19 +25,15 @@ touch %/h.txt %/f.txt %/c.txt
 
 # FIXME cygwin.com/ml/cygwin/2016-10/msg00298.html
 {
-  br "$@" |
-    grep -v reddit
-  br "$@" |
-    grep reddit |
-    lynx -dump -listonly -nonumbers - '' |
-    awk '/Hidden/ {qu=1; next} ! $0 {qu=0} qu'
+  br "$@" | grep -v reddit
+  br "$@" | grep reddit | lynx -dump -listonly -nonumbers - '' |
+  awk '/Hidden/ {qu=1; next} ! $0 {qu=0} qu'
 } |
 while read xr
 do
   char=$((char+1))
   if [ "$char" -ge 2 ]
-  then
-    echo starting link "$char"
+  then echo starting link "$char"
   fi
   if grep -Fq "$xr" %/h.txt
   then
@@ -64,9 +59,7 @@ do
   if [ "$ext" = m4a ]
   then
     echo '[ffmpeg] moving the moov atom to the beginning of the file'
-    ffmpeg -nostdin -v warning -i "$_filename" -c copy \
-      -movflags faststart temp.m4a
-    mv temp.m4a "$_filename"
+    tageditor set --index-pos front --force -f "$_filename"
   fi
 
   # gain
@@ -87,23 +80,26 @@ done
 while IFS="${IFS# }" read xr upload_date source _filename
 do
   if [ ! -f %-new/"$_filename" ]
-  then
-    continue
+  then continue
   fi
   if [ "$upload_date" -gt "$pa" ]
-  then
-    dest=1
-  else
-    dest=0
+  then dest=1
+  else dest=0
   fi
   if [ "$source" = "$dest" ]
-  then
-    continue
+  then continue
   fi
   echo "$_filename"
   echo '[mv] file is now old, moving'
   mv %-new/"$_filename" %-old
-  zu=$(mktemp)
-  awk '$1 == xr {$3 = 0} 1' FS='\t' OFS='\t' xr="$xr" %/h.txt > "$zu"
-  mv "$zu" %/h.txt
+  awk '
+  BEGIN {
+    ARGC--
+    FS = OFS = "\t"
+  }
+  $1 == ARGV[2] {
+    $3 = 0
+  }
+  1
+  ' %/h.txt "$xr" | slurp %/h.txt
 done < %/h.txt
