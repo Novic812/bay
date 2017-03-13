@@ -15,7 +15,6 @@ BEGIN {
     print "music-views.awk [URL]"
     exit
   }
-  srand()
   while ("curl -L " ARGV[1] | getline) {
     if (/interactionCount/) {
       split($0, xr, "\42")
@@ -23,13 +22,13 @@ BEGIN {
     }
     if (/datePublished/) {
       split($0, xr, "\42")
-      zu[2] = srand() - mktm(xr[4])
+      zu[2] = time() - mktm(xr[4])
     }
     if (/playback_count/) {
       zu[1] = json($0, "playback_count")
     }
     if (/created_at/) {
-      zu[2] = srand() - mktm(json($0, "created_at"))
+      zu[2] = time() - mktm(json($0, "created_at"))
     }
   }
   zu[2] /= 60 * 60 * 24 * 365.25
