@@ -12,9 +12,7 @@ then
 fi
 
 while read z
-do
-  "$BROWSER" "$z"
-  sleep 1
+do "$BROWSER" "$z"
 done <<eof
 youtube.com/results?q=intext:"$1 - Topic" intitle:"$2"
 youtube.com/results?q="Clapham Junction" intitle:"$1 $2"
