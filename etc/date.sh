@@ -17,7 +17,7 @@ fi
 
 ch=$1
 
-date --date="$ch" +'%%a = %a
+date -d "$ch" +'%%a = %a
 %%b = %b
 %%c = %c
 %%d = %d
