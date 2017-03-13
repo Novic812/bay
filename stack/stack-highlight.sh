@@ -1,11 +1,11 @@
 #!/bin/dash -e
 if [ "$#" != 1 ]
 then
-  echo 'highlight.sh [file]'
+  echo 'stack-highlight.sh <file>'
   exit
 fi
 xr=$1
-ya=$(mktemp /tmp/highlight-XXX.txt)
+ya=$(mktemp)
 
 while read zu
 do
