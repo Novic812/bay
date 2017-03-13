@@ -1,4 +1,4 @@
-#!/usr/bin/awk --file
+#!/usr/bin/awk -f
 BEGIN {
   FS = ","
   z["2015 05"] =  417
