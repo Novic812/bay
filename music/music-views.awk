@@ -15,13 +15,13 @@ BEGIN {
     }
     if (/datePublished/) {
       split($0, xr, "\42")
-      zu[2] = time() - str2time(xr[4])
+      zu[2] = time() - strtotime(xr[4])
     }
     if (/playback_count/) {
       zu[1] = json($0, "playback_count")
     }
     if (/created_at/) {
-      zu[2] = time() - str2time(json($0, "created_at"))
+      zu[2] = time() - strtotime(json($0, "created_at"))
     }
   }
   zu[2] /= 60 * 60 * 24 * 365.25
