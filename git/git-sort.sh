@@ -7,7 +7,7 @@ for pa in *
 do
   printf . >&2
   git log --follow --format=%% "$pa" | wc -l >> "$cm"
-  stat_size "$pa" >> "$sz"
+  std_size "$pa" >> "$sz"
   git log --follow --max-count=1 --diff-filter=AM --date=short \
   --format='%at %ad' "$pa" >> "$dt"
   echo "$pa" >> "$ob"
