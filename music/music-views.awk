@@ -16,14 +16,14 @@ BEGIN {
     if (/datePublished/) {
       split($0, xr, "\42")
       split(xr[4], ya, "-")
-      zu[2] = time() - timelocal(0, 0, 0, ya[3], ya[2], ya[1])
+      zu[2] = time() - timegm(0, 0, 0, ya[3], ya[2], ya[1])
     }
     if (/playback_count/) {
       zu[1] = json($0, "playback_count")
     }
     if (/created_at/) {
       split(json($0, "created_at"), ya, /[-T:]/)
-      zu[2] = time() - timelocal(ya[6], ya[5], ya[4], ya[3], ya[2], ya[1])
+      zu[2] = time() - timegm(ya[6], ya[5], ya[4], ya[3], ya[2], ya[1])
     }
   }
   zu[2] /= 60 * 60 * 24 * 365.25
