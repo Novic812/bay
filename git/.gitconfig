@@ -1,14 +1,11 @@
-[color]
-ui = true
-
 [color "diff"]
 meta = yellow bold
 
-[core]
-whitespace = cr-at-eol
-
 [credential]
 helper = store
+
+[diff]
+algorithm = histogram
 
 [hub]
 protocol = https
