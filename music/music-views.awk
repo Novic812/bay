@@ -9,17 +9,12 @@ BEGIN {
     exit
   }
   while ("curl -L " ARGV[1] | getline) {
-    if (/interactionCount/) {
-      split($0, xr, "\42")
-      zu[1] = xr[4]
-    }
-    if (/datePublished/) {
-      split($0, xr, "\42")
-      zu[2] = time() - strtotime(xr[4])
-    }
-    if (/playback_count/) {
+    if (/interactionCount/)
+      zu[1] = html_attr("content", $0)
+    if (/datePublished/)
+      zu[2] = time() - strtotime(html_attr("content", $0))
+    if (/playback_count/)
       zu[1] = json($0, "playback_count")
-    }
     if (/created_at/) {
       zu[2] = time() - strtotime(json($0, "created_at"))
     }
