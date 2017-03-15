@@ -1,7 +1,7 @@
 #!/bin/dash
 if [ "$#" = 0 ]
 then
-  echo 'strace.sh <command> [arguments]'
+  echo 'benchmark.sh <command> [arguments]'
   exit
 fi
 
