@@ -1,7 +1,7 @@
 #!/usr/local/bin/awklib -f
-function prtf(viewdate, timestr, prec) {
-  printf "%\47.0f views / %\47.*f %ss = %\47.0f\n",
-  viewdate[1], prec, viewdate[2], timestr, viewdate[1] / viewdate[2]
+function vpt(view, td, ts, prec) {
+  return sprintf("%\47.0f views / %\47.*f %ss = %\47.0f",
+  view, prec, td, ts, view / td)
 }
 BEGIN {
   if (ARGC != 2) {
@@ -10,21 +10,17 @@ BEGIN {
   }
   while ("curl -L " ARGV[1] | getline) {
     if (/interactionCount/)
-      zu[1] = html_attr("content", $0)
+      br = html_attr("content", $0)
     if (/datePublished/)
-      zu[2] = time() - strtotime(html_attr("content", $0))
+      ch = time() - strtotime(html_attr("content", $0))
     if (/playback_count/)
-      zu[1] = json($0, "playback_count")
+      br = json($0, "playback_count")
     if (/created_at/) {
-      zu[2] = time() - strtotime(json($0, "created_at"))
+      ch = time() - strtotime(json($0, "created_at"))
     }
   }
-  zu[2] /= 60 * 60 * 24 * 365.25
-  prtf(zu, "year", 3)
-  zu[2] *= 365.25
-  prtf(zu, "day")
-  zu[2] *= 24
-  prtf(zu, "hour")
-  zu[2] *= 60
-  prtf(zu, "minute")
+  print vpt(br, ch / time_year(1), "year", 3)
+  print vpt(br, ch / time_day(1), "day")
+  print vpt(br, ch / time_hour(1), "hour")
+  print vpt(br, ch / time_min(1), "minute")
 }
