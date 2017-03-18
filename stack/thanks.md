@@ -67,8 +67,7 @@ Subtitles
 - 2016-12-11 http://video.stackexchange.com/q/10423#19966
 
 Unix time
------------------------------------------------------
-- 2016-12-29 3AM http://unix.stackexchange.com/q/1825#333436
-- 2016-12-28 2AM http://unix.stackexchange.com/q/24626#333167
-- 2016-12-28 2AM http://superuser.com/q/165680#1160876
-- 2016-12-26 6AM http://askubuntu.com/q/858160#864617
+----------------------------------------------------
+- 2017-3-18 4PM http://askubuntu.com/q/858160#864617
+- 2017-3-18 5PM http://superuser.com/q/165680#1160876
+- 2017-3-18 5PM http://unix.stackexchange.com/q/24626#333167
