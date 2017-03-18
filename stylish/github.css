@@ -113,11 +113,11 @@
   .numbers-summary a:hover, .timeline-comment-action:focus, .menu-target:focus {
     color: #4078c0 !important;
   }
-  .filter-item.selected, .bg-blue,
-  .select-menu-item.navigation-focus .description-inline,
-  .select-menu-item.navigation-focus, .suggester .navigation-focus,
-  .dropdown-item:hover, .diff-expander:hover, .btn-outline:hover,
-  .timeline-commits .ellipsis-expander:hover, .reaction-sort-item:hover {
+  .bg-blue, .filter-item.selected, .select-menu-item.navigation-focus,
+  .subnav-item.selected, .select-menu-item.navigation-focus .description-inline,
+  .suggester .navigation-focus, .btn-outline:hover, .diff-expander:hover,
+  .dropdown-item:hover, .reaction-sort-item:hover,
+  .timeline-commits .ellipsis-expander:hover {
     background-color: #4078c0 !important;
   }
   .select-menu-item-parent.select-menu-item.navigation-focus {
