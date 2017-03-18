@@ -116,7 +116,7 @@ done
 
 for song in "${songs[@]}"
 do
-  mp3gain -s d "$song"
+  aacgain -s d "$song"
   ffprobe -v error -show_format -print_format json "$song" > .json
   # Adding "-preset" would only make small difference in size or speed.
   # "-shortest" can mess up duration. Adding "-analyzeduration" would only
