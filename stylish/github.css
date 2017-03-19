@@ -114,7 +114,8 @@
     color: #4078c0 !important;
   }
   .bg-blue, .filter-item.selected, .select-menu-item.navigation-focus,
-  .subnav-item.selected, .select-menu-item.navigation-focus .description-inline,
+  .subnav-item.selected, .pagination .current,
+  .select-menu-item.navigation-focus .description-inline,
   .suggester .navigation-focus, .btn-outline:hover, .diff-expander:hover,
   .dropdown-item:hover, .reaction-sort-item:hover,
   .timeline-commits .ellipsis-expander:hover {
