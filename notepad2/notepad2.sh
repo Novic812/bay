@@ -4,4 +4,4 @@ then k=$(cygpath -w "$1")
 elif [ "$#" != 0 ]
 then k=$1
 fi
-Notepad2 ${k+"$k"}
+exec Notepad2 ${k+"$k"}
