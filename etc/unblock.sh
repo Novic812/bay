@@ -4,9 +4,10 @@ then
   echo 'unblock.sh <video_id>'
   exit
 fi
+
 cat <<eof
-- [Check Restrictions][q]
-- [Video Proxy][z]
+- [$1 restrictions][q]
+- [$1 proxy][z]
 [q]://unblockvideos.com/youtube-video-restriction-checker#url=$1
 [z]://unblockvideos.com#url=$1
 eof
