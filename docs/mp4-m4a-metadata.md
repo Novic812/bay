@@ -3,6 +3,12 @@ Tag Editor
 ==============================================
 http://github.com/Martchus/tageditor/issues/15
 
+Operon
+===================================================
+- http://github.com/quodlibet/quodlibet/issues/2337
+- http://github.com/quodlibet/quodlibet/issues/2336
+- http://github.com/quodlibet/quodlibet/issues/2335
+
 FFmpeg
 ====================================
 - http://trac.ffmpeg.org/ticket/2798
