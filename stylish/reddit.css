@@ -3,7 +3,7 @@
     background-image: none !important;
   }
   .md a:hover {
-    filter: invert(100%)
+    color: #ff862c !important
   }
   .md p {
     font-family: verdana !important;
