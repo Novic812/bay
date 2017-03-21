@@ -2,6 +2,9 @@
   body {
     background-image: none !important;
   }
+  .md a:hover {
+    filter: invert(100%)
+  }
   .md p {
     font-family: verdana !important;
     line-height: 20px !important;
