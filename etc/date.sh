@@ -49,4 +49,5 @@ date -d "$ch" +'%%a = %a
 %%H%%M%%S = %H%M%S
 %%Y%%m%%d = %Y%m%d
 %%b %%-d %%Y = %b %-d %Y
+%%Y-%%m-%%d-%%T = %Y-%m-%d-%T
 %%a, %%d %%b %%Y %%T %%Z = %a, %d %b %Y %T %Z'
