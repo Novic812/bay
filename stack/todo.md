@@ -6,15 +6,20 @@ Awk sort array
 Base convert
 ==========================================
 - 57 - http://stackoverflow.com/q/13280131
+- 21 - http://stackoverflow.com/q/10278513
 - 13 - http://unix.stackexchange.com/q/65280
 - 7 - http://unix.stackexchange.com/q/113491
+- 6 - http://stackoverflow.com/q/11120324
 - 4 - http://unix.stackexchange.com/q/311904
+- 4 - http://unix.stackexchange.com/q/171154
+- 4 - http://stackoverflow.com/q/9551308
+- 4 - http://stackoverflow.com/q/18870209
 - 3 - http://unix.stackexchange.com/q/223338
+- 3 - http://stackoverflow.com/q/17063563
 - 2 - http://stackoverflow.com/q/14603140
 - 1 - http://unix.stackexchange.com/q/279505
 - 1 - http://unix.stackexchange.com/q/136534
-- done - http://stackoverflow.com/q/378829
-- done - http://unix.stackexchange.com/q/191205
+- 0 - http://unix.stackexchange.com/q/163524
 
 Ceil
 ==========================================
