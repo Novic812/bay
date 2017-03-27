@@ -1,3 +1,9 @@
+- askubuntu.com
+- serverfault.com
+- stackoverflow.com
+- superuser.com
+- unix.stackexchange.com
+
 Awk sort array
 =============================================
 - 12 - http://unix.stackexchange.com/q/333961
@@ -26,8 +32,8 @@ Ceil
 1 - http://unix.stackexchange.com/q/168476
 
 Convert line endings
-===========================================================================
-unix.stackexchange.com/questions/32001/what-is-m-and-how-do-i-get-rid-of-it
+=====================================
+http://unix.stackexchange.com/q/32001
 
 Cue
 ===================================
@@ -41,16 +47,15 @@ Directory size
 - http://unix.stackexchange.com/q/3019
 - http://unix.stackexchange.com/q/67806
 - http://superuser.com/q/171534
-- http://askubuntu.com/q/1224
 
 In place
-=====================================================================
-- askubuntu.com/questions/752174/reading-and-writing-a-file-tee-command
-- github.com/nicowilliams/inplace
-- github.com/stedolan/jq/issues/105
-- superuser.com/a/386118
-- unix.stackexchange.com/q/159513
-- unix.stackexchange.com/q/337055
+===============================
+- http://askubuntu.com/q/752174
+- http://github.com/nicowilliams/inplace
+- http://github.com/stedolan/jq/issues/105
+- http://superuser.com/a/386118
+- http://unix.stackexchange.com/q/159513
+- http://unix.stackexchange.com/q/337055
 
 Percent-encoding
 =============================================
