@@ -12,8 +12,8 @@ Base convert
 - 6 - http://stackoverflow.com/q/11120324
 - 4 - http://unix.stackexchange.com/q/311904
 - 4 - http://unix.stackexchange.com/q/171154
-- 4 - http://stackoverflow.com/q/9551308
 - 4 - http://stackoverflow.com/q/18870209
+- 4 - http://stackoverflow.com/q/9551308
 - 3 - http://unix.stackexchange.com/q/223338
 - 3 - http://stackoverflow.com/q/17063563
 - 2 - http://stackoverflow.com/q/14603140

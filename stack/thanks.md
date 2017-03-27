@@ -30,7 +30,7 @@ Cygwin Git with Notepad2
 - http://emacs.stackexchange.com/q/14331#29658
 
 Fast MP4 thumbnails
-=================================================
+======================================
 - http://askubuntu.com/q/809175#849220
 - http://softwarerecs.stackexchange.com/q/13865#31043
 - http://superuser.com/q/524100#1145221
