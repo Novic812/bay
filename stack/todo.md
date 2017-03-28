@@ -5,13 +5,11 @@
 - unix.stackexchange.com
 
 Awk sort array
-=============================================
-- 12 - http://unix.stackexchange.com/q/333961
-- 3 - http://unix.stackexchange.com/q/275420
+======================================
+http://unix.stackexchange.com/q/275420
 
 Base convert
 ==========================================
-- 57 - http://stackoverflow.com/q/13280131
 - 21 - http://stackoverflow.com/q/10278513
 - 13 - http://unix.stackexchange.com/q/65280
 - 7 - http://unix.stackexchange.com/q/113491
@@ -27,26 +25,18 @@ Base convert
 - 1 - http://unix.stackexchange.com/q/136534
 - 0 - http://unix.stackexchange.com/q/163524
 
-Ceil
-==========================================
-1 - http://unix.stackexchange.com/q/168476
-
 Convert line endings
 =====================================
 http://unix.stackexchange.com/q/32001
 
 Cue
-===================================
-- 2 - http://superuser.com/q/675491
-- 1 - http://superuser.com/q/577476
-- 5 - http://askubuntu.com/q/183599
+=============================
+http://superuser.com/q/577476
 
 Directory size
-========================================
-- http://unix.stackexchange.com/q/185764
-- http://unix.stackexchange.com/q/3019
-- http://unix.stackexchange.com/q/67806
-- http://superuser.com/q/171534
+============================================
+- 118 - http://unix.stackexchange.com/q/3019
+- 60 - http://unix.stackexchange.com/q/67806
 
 In place
 ===============================
@@ -68,13 +58,10 @@ Percent-encoding
 - 0 - http://stackoverflow.com/q/20983805
 
 Unix time
-=========================================
-- 17 - http://unix.stackexchange.com/q/1825
+=============================================
 - 10 - http://unix.stackexchange.com/q/215934
 - 5 - http://unix.stackexchange.com/q/7289
 - 2 - http://unix.stackexchange.com/q/262003
-- 2 - http://stackoverflow.com/q/32203050
-- 2 - http://stackoverflow.com/q/25619923
 - 2 - http://stackoverflow.com/q/12795094
 - 1 - http://stackoverflow.com/q/38095169
 - 1 - http://stackoverflow.com/q/37457820

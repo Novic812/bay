@@ -1,13 +1,22 @@
+Awk sort array
+=============================================
+http://unix.stackexchange.com/q/333961#334072
+
 Base convert
-===============================
-- http://askubuntu.com/q/601137
-- http://stackoverflow.com/q/378829
-- http://superuser.com/q/897756
-- http://unix.stackexchange.com/q/191205
+======================================
+- http://askubuntu.com/q/601137#897279
+- http://stackoverflow.com/q/13280131#43058076
+- http://stackoverflow.com/q/378829#43035611
+- http://superuser.com/q/897756#1192677
+- http://unix.stackexchange.com/q/191205#354019
 
 C source code formatter
 ===================================================
 http://softwarerecs.stackexchange.com/q/17505#33833
+
+Ceil
+=============================================
+http://unix.stackexchange.com/q/168476#354235
 
 Changing the volume increment
 ====================================
@@ -15,14 +24,18 @@ http://superuser.com/q/359138#900589
 
 Cue
 ======================================
+- http://askubuntu.com/q/183599#859039
 - http://askubuntu.com/q/521388#858965
 - http://musicfans.stackexchange.com/q/2451#4439
 - http://superuser.com/q/368950#1155860
+- http://superuser.com/q/675491#1156290
 - http://unix.stackexchange.com/q/10251#278970
 
 Directory size
-===========================
-http://askubuntu.com/q/1224
+====================================
+- http://askubuntu.com/q/1224#897383
+- http://superuser.com/q/171534#1192971
+- http://unix.stackexchange.com/q/185764#350436
 
 Disable GNU Indent backup files
 =============================================
@@ -80,5 +93,7 @@ Subtitles
 Unix time
 ======================================
 - http://askubuntu.com/q/858160#864617
+- http://stackoverflow.com/q/25619923#43058222
 - http://superuser.com/q/165680#1160876
+- http://unix.stackexchange.com/q/1825#333436
 - http://unix.stackexchange.com/q/24626#333167
