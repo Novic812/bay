@@ -1,14 +1,17 @@
 Awk sort array
-=============================================
-http://unix.stackexchange.com/q/333961#334072
+===============================================
+- http://unix.stackexchange.com/q/275420#275423
+- http://unix.stackexchange.com/q/333961#334072
 
 Base convert
 ======================================
 - http://askubuntu.com/q/601137#897279
+- http://stackoverflow.com/q/10278513#43068651
 - http://stackoverflow.com/q/13280131#43058076
 - http://stackoverflow.com/q/378829#43035611
 - http://superuser.com/q/897756#1192677
 - http://unix.stackexchange.com/q/191205#354019
+- http://unix.stackexchange.com/q/65280#354324
 
 C source code formatter
 ===================================================
@@ -93,6 +96,7 @@ Subtitles
 Unix time
 ======================================
 - http://askubuntu.com/q/858160#864617
+- http://stackoverflow.com/q/12795094#43068779
 - http://stackoverflow.com/q/25619923#43058222
 - http://superuser.com/q/165680#1160876
 - http://unix.stackexchange.com/q/1825#333436

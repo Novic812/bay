@@ -4,14 +4,8 @@
 - superuser.com
 - unix.stackexchange.com
 
-Awk sort array
-======================================
-http://unix.stackexchange.com/q/275420
-
 Base convert
-==========================================
-- 21 - http://stackoverflow.com/q/10278513
-- 13 - http://unix.stackexchange.com/q/65280
+============================================
 - 7 - http://unix.stackexchange.com/q/113491
 - 6 - http://stackoverflow.com/q/11120324
 - 4 - http://unix.stackexchange.com/q/311904
@@ -62,7 +56,6 @@ Unix time
 - 10 - http://unix.stackexchange.com/q/215934
 - 5 - http://unix.stackexchange.com/q/7289
 - 2 - http://unix.stackexchange.com/q/262003
-- 2 - http://stackoverflow.com/q/12795094
 - 1 - http://stackoverflow.com/q/38095169
 - 1 - http://stackoverflow.com/q/37457820
 - 1 - http://unix.stackexchange.com/q/265951
