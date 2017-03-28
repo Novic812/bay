@@ -1,9 +1,7 @@
-
 qBittorrent
-============================
-- No official 64-bit version
-- http://github.com/qbittorrent/qBittorrent/issues/3001
-- http://github.com/Gelmir/qBittorrent/releases
+===============================
+- 64-bit installer is available
+- http://fosshub.com/qBittorrent.html
 
 PicoTorrent
 =====================================
