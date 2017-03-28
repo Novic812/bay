@@ -26,8 +26,9 @@ Hadouken
 - http://github.com/hadouken/hadouken/issues/228
 
 Deluge
-=========
-No 64-bit
+===========
+- No 64-bit
+- http://download.deluge-torrent.org/windows
 
 Halite
 ==================
