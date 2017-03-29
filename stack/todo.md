@@ -1,17 +1,12 @@
 - askubuntu.com
 - serverfault.com
-- stackoverflow.com
 - superuser.com
 - unix.stackexchange.com
 
 Base convert
 ============================================
 - 4 - http://unix.stackexchange.com/q/171154
-- 4 - http://stackoverflow.com/q/18870209
-- 4 - http://stackoverflow.com/q/9551308
 - 3 - http://unix.stackexchange.com/q/223338
-- 3 - http://stackoverflow.com/q/17063563
-- 2 - http://stackoverflow.com/q/14603140
 - 1 - http://unix.stackexchange.com/q/279505
 - 1 - http://unix.stackexchange.com/q/136534
 - 0 - http://unix.stackexchange.com/q/163524
@@ -38,23 +33,12 @@ Percent-encoding
 - 48 - http://unix.stackexchange.com/q/159253
 - 6 - http://unix.stackexchange.com/q/76500
 - 1 - http://unix.stackexchange.com/q/204932
-- 0 - http://stackoverflow.com/q/38015239
-- 0 - http://stackoverflow.com/q/37309551
-- 0 - http://stackoverflow.com/q/23329810
-- 0 - http://stackoverflow.com/q/20983805
 
 Unix time
 ==========================================
 - 5 - http://unix.stackexchange.com/q/7289
 - 2 - http://unix.stackexchange.com/q/262003
-- 1 - http://stackoverflow.com/q/38095169
-- 1 - http://stackoverflow.com/q/37457820
 - 1 - http://unix.stackexchange.com/q/265951
-- 0 - http://stackoverflow.com/q/39016126
-- 0 - http://stackoverflow.com/q/35218310
-- 0 - http://stackoverflow.com/q/15065270
-- 0 - http://stackoverflow.com/q/9060519
-- 0 - http://stackoverflow.com/q/5933204
 - 0 - http://unix.stackexchange.com/q/290703
 
 Visual Studio

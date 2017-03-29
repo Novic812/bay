@@ -6,10 +6,6 @@ Awk sort array
 Base convert
 ======================================
 - http://askubuntu.com/q/601137#897279
-- http://stackoverflow.com/q/10278513#43068651
-- http://stackoverflow.com/q/11120324#43082082
-- http://stackoverflow.com/q/13280131#43058076
-- http://stackoverflow.com/q/378829#43035611
 - http://superuser.com/q/897756#1192677
 - http://unix.stackexchange.com/q/191205#354019
 - http://unix.stackexchange.com/q/311904#354461
@@ -100,8 +96,6 @@ Subtitles
 Unix time
 ======================================
 - http://askubuntu.com/q/858160#864617
-- http://stackoverflow.com/q/12795094#43068779
-- http://stackoverflow.com/q/25619923#43058222
 - http://superuser.com/q/165680#1160876
 - http://unix.stackexchange.com/q/1825#333436
 - http://unix.stackexchange.com/q/215934#354464
