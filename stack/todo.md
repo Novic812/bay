@@ -6,9 +6,6 @@
 
 Base convert
 ============================================
-- 7 - http://unix.stackexchange.com/q/113491
-- 6 - http://stackoverflow.com/q/11120324
-- 4 - http://unix.stackexchange.com/q/311904
 - 4 - http://unix.stackexchange.com/q/171154
 - 4 - http://stackoverflow.com/q/18870209
 - 4 - http://stackoverflow.com/q/9551308
@@ -23,14 +20,9 @@ Convert line endings
 =====================================
 http://unix.stackexchange.com/q/32001
 
-Cue
-=============================
-http://superuser.com/q/577476
-
 Directory size
-============================================
-- 118 - http://unix.stackexchange.com/q/3019
-- 60 - http://unix.stackexchange.com/q/67806
+=====================================
+http://unix.stackexchange.com/q/67806
 
 In place
 ===============================
@@ -52,8 +44,7 @@ Percent-encoding
 - 0 - http://stackoverflow.com/q/20983805
 
 Unix time
-=============================================
-- 10 - http://unix.stackexchange.com/q/215934
+==========================================
 - 5 - http://unix.stackexchange.com/q/7289
 - 2 - http://unix.stackexchange.com/q/262003
 - 1 - http://stackoverflow.com/q/38095169
