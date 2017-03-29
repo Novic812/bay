@@ -9,7 +9,7 @@ do
   git log --follow --format=%% "$pa" | wc -l >> "$cm"
   std_size "$pa" >> "$sz"
   git log --follow --max-count=1 --diff-filter=AM --date=short \
-  --format='%at %ad' "$pa" >> "$dt"
+    --format='%at %ad' "$pa" >> "$dt"
   echo "$pa" >> "$ob"
 done
 echo
@@ -31,7 +31,8 @@ FILENAME == ARGV[4] {
   ob[FNR] = $0
 }
 END {
-  while (++j <= FNR)
-    print cm[j] * sz[j] * at[j], cm[j], sz[j], ad[j], ob[j]
+  while (++q <= FNR) {
+    print cm[q] * sz[q] * at[q], cm[q], sz[q], ad[q], ob[q]
+  }
 }
 ' "$cm" "$sz" "$dt" "$ob"
