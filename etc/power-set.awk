@@ -1,10 +1,10 @@
-#!/usr/bin/awk -f
+#!/usr/local/bin/awklib -f
 {
-  for (c = 0; c < 2 ^ NF; c++) {
-    e = 0
-    for (d = 0; d < NF; d++)
-      if (int(c / 2 ^ d) % 2) {
-        printf "%s%s", e++ ? OFS : "", $(d + 1)
+  for (x = 0; x < 2 ^ NF; x++) {
+    y = 0
+    for (z = 0; z < NF; z++)
+      if (trunc(x / 2 ^ z) % 2) {
+        printf "%s%s", y++ ? OFS : "", $(z + 1)
       }
     print ""
   }

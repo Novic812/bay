@@ -6,7 +6,7 @@ BEGIN {
     exit
   }
   while (1) {
-    x = int(mean(ARGV))
+    x = trunc(mean(ARGV))
     if (w[x]++)
       break
     printf ARGV[1] ~ /[xX]/ ? "\n%X\n" : "\n%d\n", x

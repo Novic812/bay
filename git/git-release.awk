@@ -2,7 +2,7 @@
 function tag(expr,   br, ec) {
   OFS = "."
   for (br = 100; br >= 1; br /= 10) {
-    $++ec = int(expr / br)
+    $++ec = trunc(expr / br)
     expr %= br
   }
   return $0
@@ -42,5 +42,5 @@ BEGIN {
   printf "new tag insertions = %d\n", xr[1]
   printf "new tag deletions = %d\n", xr[2]
   printf "%d/%d = %d%\n", max(xr), pa, ya
-  printf "new tag = %s\n", tag(int((ki + zu) / zu) * zu)
+  printf "new tag = %s\n", tag(trunc((ki + zu) / zu) * zu)
 }
