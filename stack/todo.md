@@ -1,8 +1,3 @@
-- askubuntu.com
-- serverfault.com
-- superuser.com
-- unix.stackexchange.com
-
 Base convert
 ============================================
 - 3 - http://unix.stackexchange.com/q/223338
