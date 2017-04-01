@@ -25,7 +25,7 @@ END {
   for (each in nfa) {
     m[++d] = sprintf("%2d", nfa[each]) FS each
   }
-  insertion_sort(m)
+  arr_sort(m)
   for (each in m) {
     print m[each]
   }
