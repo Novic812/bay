@@ -2,11 +2,11 @@
 BEGIN {
   OFS = RS
   if (ARGC != 3) {
-    print "bsa.awk [good] [bad]", "", "hex allowed - use 0x"
+    print "bsa.awk <good> <bad>", "", "hex allowed - use 0x"
     exit
   }
   while (1) {
-    x = trunc(mean(ARGV))
+    x = trunc(sum(ARGV) / 2)
     if (w[x]++)
       break
     printf ARGV[1] ~ /[xX]/ ? "\n%X\n" : "\n%d\n", x
