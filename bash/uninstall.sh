@@ -14,7 +14,7 @@ BEGIN {
   FS = "\\"
 }
 {
-  z = z " /usr/local/bin/" quote($NF)
+  z = z " /usr/local/bin/" sh_escape($NF)
 }
 END {
   system("rm" z)

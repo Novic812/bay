@@ -16,7 +16,7 @@ ln -sfv "$PWD"/.bash_history "$PWD"/.inputrc "$PWD"/.profile ~
 # /usr
 awklib '
 {
-  z = z FS quote($0)
+  z = z FS sh_escape($0)
 }
 END {
   system("ln -sfvt /usr/local/bin" z)
