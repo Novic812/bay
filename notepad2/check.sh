@@ -1,11 +1,11 @@
 #!/usr/local/bin/shlib
-xtrace "$EDITOR"
-xtrace "$EDITOR" ''
-xtrace "$EDITOR" /etc/wgetrc
-xtrace "$EDITOR" 'C:\cygwin64\etc\shells'
-xtrace "$EDITOR" "$(mktemp /tmp/\'XXX.txt)"
-xtrace git clone --depth 1 git://github.com/svnpenn/a
-xtrace cd a
+sh_trace "$EDITOR"
+sh_trace "$EDITOR" ''
+sh_trace "$EDITOR" /etc/wgetrc
+sh_trace "$EDITOR" 'C:\cygwin64\etc\shells'
+sh_trace "$EDITOR" "$(mktemp /tmp/\'XXX.txt)"
+sh_trace git clone --depth 1 git://github.com/svnpenn/a
+sh_trace cd a
 echo EDITOR >> readme.md
-xtrace git commit -a
-xtrace hub pull-request
+sh_trace git commit -a
+sh_trace hub pull-request
