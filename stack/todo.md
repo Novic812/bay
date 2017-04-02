@@ -24,6 +24,10 @@ Percent-encoding
 - 6 - http://unix.stackexchange.com/q/76500
 - 1 - http://unix.stackexchange.com/q/204932
 
+POSIX shell local
+======================================
+http://unix.stackexchange.com/q/282557
+
 Visual Studio
 ===================================
 3 - http://serverfault.com/q/627286
