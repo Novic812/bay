@@ -6,11 +6,10 @@ HISTIGNORE=c
 HISTSIZE=
 PATH=/usr/local/bin:/usr/bin
 PROMPT_COMMAND=gsh
+TERM=term-yellow
 export CYGWIN=winsymlinks:native
 export LANG=en_US.UTF-8 # case insensitive sort
 export POSIXLY_CORRECT # linux.die.net/man/3/getopt
-export LESS_TERMCAP_so=$(printf '\33[5;30;43m')
-export LESS_TERMCAP_se=$(printf '\33[m')
 alias agit='git --no-pager'
 alias agrep='grep -I --color --exclude .bash_history --exclude-dir .git'
 alias aod='od -tcx1'
