@@ -101,5 +101,5 @@ do
     $3 = 0
   }
   1
-  ' %/h.txt "$xr" | slurp %/h.txt
+  ' %/h.txt "$xr" | file_get %/h.txt
 done < %/h.txt
