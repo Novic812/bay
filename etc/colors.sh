@@ -1,25 +1,25 @@
 #!/bin/dash -e
 
-# foreground black:  30
-# foreground red:    31
-# foreground green:  32
-# foreground yellow: 33
-# foreground blue:   34
+# foreground black:   30
+# foreground red:     31
+# foreground green:   32
+# foreground yellow:  33
+# foreground blue:    34
 # foreground magenta: 35
-# foreground cyan:   36
-# foreground white:  37
+# foreground cyan:    36
+# foreground white:   37
 
-# background black:  40
-# background red:    41
-# background green:  42
-# background yellow: 43
-# background blue:   44
+# background black:   40
+# background red:     41
+# background green:   42
+# background yellow:  43
+# background blue:    44
 # background magenta: 45
-# background cyan:   46
-# background white:  47
+# background cyan:    46
+# background white:   47
 
-# bright foreground: 1
-# bright background: 5
+# bright foreground:   1
+# bright background:   5
 
 while read br
 do
