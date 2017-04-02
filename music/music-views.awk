@@ -14,9 +14,9 @@ BEGIN {
     if (/datePublished/)
       ch = time() - strtotime(html_attr("content", $0))
     if (/playback_count/)
-      br = json($0, "playback_count")
+      br = json_parse($0, "playback_count")
     if (/created_at/) {
-      ch = time() - strtotime(json($0, "created_at"))
+      ch = time() - strtotime(json_parse($0, "created_at"))
     }
   }
   print vpt(br, ch / time_day(365.25), "year", 3)
