@@ -130,7 +130,7 @@ while
   read sce
 do
   # extent must come after resize
-  xtrace convert -quality 100 \
+  sh_trace convert -quality 100 \
   ${sv+-shave "$sv"} \
   ${ege:+-crop "$ege"} \
   ${rze:+-resize "$dme"^} \
@@ -147,26 +147,26 @@ br=$(mktemp XXX)
 set =*
 
 case $ao in
-000011) xtrace convert "$1" "$2" "$3" "$4" '(' "$5" "$6" -append ')' +append \
+000011) sh_trace convert "$1" "$2" "$3" "$4" '(' "$5" "$6" -append ')' +append \
   -quality 100 "$br" ;;
-000110) xtrace convert "$1" "$2" "$3" '(' "$4" "$5" -append ')' "$6" +append \
+000110) sh_trace convert "$1" "$2" "$3" '(' "$4" "$5" -append ')' "$6" +append \
   -quality 100 "$br" ;;
-011011) xtrace convert "$1" '(' "$2" "$3" -append ')' "$4" \
+011011) sh_trace convert "$1" '(' "$2" "$3" -append ')' "$4" \
   '(' "$5" "$6" -append ')' +append -quality 100 "$br" ;;
-110000) xtrace convert '(' "$1" "$2" -append ')' "$3" "$4" "$5" "$6" +append \
+110000) sh_trace convert '(' "$1" "$2" -append ')' "$3" "$4" "$5" "$6" +append \
   -quality 100 "$br" ;;
-110011) xtrace convert '(' "$1" "$2" -append ')' "$3" "$4" \
+110011) sh_trace convert '(' "$1" "$2" -append ')' "$3" "$4" \
   '(' "$5" "$6" -append ')' +append -quality 100 "$br" ;;
-110110) xtrace convert '(' "$1" "$2" -append ')' "$3" \
+110110) sh_trace convert '(' "$1" "$2" -append ')' "$3" \
   '(' "$4" "$5" -append ')' "$6" +append -quality 100 "$br" ;;
-0000110) xtrace convert "$1" "$2" "$3" "$4" \
+0000110) sh_trace convert "$1" "$2" "$3" "$4" \
   '(' "$5" "$6" -append ')' "$7" +append -quality 100 "$br" ;;
-11111111) xtrace convert '(' "$1" "$2" -append ')' '(' "$3" "$4" -append ')' \
+11111111) sh_trace convert '(' "$1" "$2" -append ')' '(' "$3" "$4" -append ')' \
   '(' "$5" "$6" -append ')' '(' "$7" "$8" -append ')' +append \
   -quality 100 "$br" ;;
-*) xtrace convert "$@" +append -quality 100 "$br" ;;
+*) sh_trace convert "$@" +append -quality 100 "$br" ;;
 esac
 
 sn=$(basename "$PWD")
-xtrace mv "$br" "s $sn h $ju".jpg
-xtrace rm "$@"
+sh_trace mv "$br" "s $sn h $ju".jpg
+sh_trace rm "$@"

@@ -28,6 +28,6 @@ END {
     "-b:a" _ "256k" _ "-movflags" _ "faststart" _ \
     "-metadata" _ "track=" wh[xr] _ "-metadata" _ "title=" ya[xr] _ \
     wh[xr] FS ya[xr] ".m4a", br, _)
-    xtrace(br)
+    sh_trace(br)
   }
 }
