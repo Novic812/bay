@@ -17,6 +17,6 @@ BEGIN {
   "wikipedia.org/w/index.php?search=" ARGV[1] "+" ARGV[2], xr, _)
   for (ya in xr) {
     gsub(" ", "+", xr[ya])
-    system(ENVIRON["BROWSER"] FS quote(xr[ya]))
+    system(ENVIRON["BROWSER"] FS sh_escape(xr[ya]))
   }
 }

@@ -10,7 +10,7 @@ BEGIN {
   if (!br) exit
   gsub("\42", "", br)
   FS = "[=\42]+"
-  while ("ffprobe -v 0 -show_streams -of flat=h=0 " quote(br) | getline) {
+  while ("ffprobe -v 0 -show_streams -of flat=h=0 " sh_escape(br) | getline) {
     ch[$1] = $2
   }
   ki = ch["stream.0.width"] / ch["stream.0.height"] > 2 ? 36 : 30
