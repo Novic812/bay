@@ -1,7 +1,7 @@
 # -*- sh -*-
 
 # Turn off the stupid bell
-set bell-style none
+set bell-style visible
 
 # Ctrl →
 "\33[1;5C": forward-word
