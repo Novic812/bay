@@ -1,5 +1,5 @@
 # -*- sh -*-
-term-yellow|Yellow terminal,
+yellow|Yellow terminal,
 # WARNING: terminal is not fully functional
   clear=\E[H\E[J,
   cup=\E[%i%p1%d;%p2%dH,

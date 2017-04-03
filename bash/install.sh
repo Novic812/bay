@@ -24,4 +24,4 @@ END {
 ' symlink.txt
 
 # /usr/share
-tic term-yellow.cfg
+tic yellow.terminfo
