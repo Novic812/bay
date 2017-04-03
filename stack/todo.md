@@ -32,6 +32,7 @@ Terminfo
 ========================================
 - http://unix.stackexchange.com/q/108699
 - http://unix.stackexchange.com/q/119
+- http://unix.stackexchange.com/q/351497
 
 Visual Studio
 ===================================
