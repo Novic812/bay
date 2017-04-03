@@ -6,7 +6,7 @@ yellow|Yellow terminal,
   el=\e[K,
   ri=\eM,
 # show full lines when scrolling through history
-  cuu1=\E[A,
+  cuu1=\e[A,
 # visible bell
   flash=\e[M\r\e[5;30;41mvisible bell\e[m\n,
 # down-arrow key
