@@ -28,6 +28,11 @@ POSIX shell local
 ======================================
 http://unix.stackexchange.com/q/282557
 
+Terminfo
+========================================
+- http://unix.stackexchange.com/q/108699
+- http://unix.stackexchange.com/q/119
+
 Visual Studio
 ===================================
 3 - http://serverfault.com/q/627286
