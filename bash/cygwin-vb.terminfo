@@ -1,5 +1,5 @@
 # -*- sh -*-
-cygwin-vb|Yellow standout mode and red visible bell,
+cygwin-vb|yellow standout mode and red visible bell,
 # visible bell
   flash=\e[M\r\e[5;30;41mvisible bell\e[m\n,
 # exit standout mode
