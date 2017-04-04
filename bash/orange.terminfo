@@ -1,5 +1,5 @@
 # -*- sh -*-
-yellow|Yellow terminal,
+orange|Yellow standout mode and red visible bell,
 # WARNING: terminal is not fully functional
   clear=\e[H\e[J,
   cup=\e[%i%p1%d;%p2%dH,
