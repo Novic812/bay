@@ -1,0 +1,10 @@
+# -*- sh -*-
+cygwin-vb|Yellow standout mode and red visible bell,
+# visible bell
+  flash=\e[M\r\e[5;30;41mvisible bell\e[m\n,
+# exit standout mode
+  rmso=\e[m,
+# begin standout mode
+  smso=\e[5;30;43m,
+# similar terminal
+  use=cygwin,

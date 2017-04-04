@@ -24,4 +24,4 @@ END {
 ' symlink.txt
 
 # /usr/share
-tic orange.terminfo
+tic cygwin-vb.terminfo
