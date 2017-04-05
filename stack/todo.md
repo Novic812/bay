@@ -1,9 +1,14 @@
 Base convert
 ============================================
+- 13 - http://unix.stackexchange.com/q/65280
+- 5 - http://unix.stackexchange.com/q/311904
+- 5 - http://unix.stackexchange.com/q/171154
 - 3 - http://unix.stackexchange.com/q/223338
 - 1 - http://unix.stackexchange.com/q/279505
 - 1 - http://unix.stackexchange.com/q/136534
+- 1 - http://askubuntu.com/q/601137
 - 0 - http://unix.stackexchange.com/q/163524
+- 0 - http://superuser.com/q/897756
 
 Convert line endings
 =====================================
@@ -23,10 +28,6 @@ Percent-encoding
 - 48 - http://unix.stackexchange.com/q/159253
 - 6 - http://unix.stackexchange.com/q/76500
 - 1 - http://unix.stackexchange.com/q/204932
-
-POSIX shell local
-======================================
-http://unix.stackexchange.com/q/282557
 
 Terminfo
 ========================================

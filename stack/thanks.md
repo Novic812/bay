@@ -4,13 +4,8 @@ Awk sort array
 - http://unix.stackexchange.com/q/333961#334072
 
 Base convert
-======================================
-- http://askubuntu.com/q/601137#897279
-- http://superuser.com/q/897756#1192677
-- http://unix.stackexchange.com/q/171154#354709
-- http://unix.stackexchange.com/q/191205#354019
-- http://unix.stackexchange.com/q/311904#354461
-- http://unix.stackexchange.com/q/65280#354324
+=============================================
+http://unix.stackexchange.com/q/191205#354019
 
 C source code formatter
 ===================================================
@@ -79,6 +74,10 @@ http://unix.stackexchange.com/q/154741#289360
 Percent-encoding
 ===================================
 http://askubuntu.com/q/53770#740274
+
+POSIX shell local
+=============================================
+http://unix.stackexchange.com/q/282557#356229
 
 Print certain commands as they are run
 =============================================
