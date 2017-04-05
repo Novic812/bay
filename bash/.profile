@@ -39,6 +39,8 @@ gsh() {
   then unset ISH
   else return
   fi
+  # we do not need "\[" and "\]" here, but if we had a oneline
+  # prompt with color text, it would break on Ctrl + R, Esc
   if [ -f .git/index ] || [ -f .git ]
   then
     local gnr=$(git name-rev --name-only @)
