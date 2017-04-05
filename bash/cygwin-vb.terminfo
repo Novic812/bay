@@ -1,7 +1,7 @@
 # -*- sh -*-
 cygwin-vb|yellow standout mode and red visible bell,
 # visible bell
-  flash=\e7\e[B\e[80D\e[5;30;41mERROR\e[m\e8,
+  flash=\e7\e[A\e[80C\e[4D\e[5;30;41mERROR\e[m\e8,
 # exit standout mode
   rmso=\e[m,
 # begin standout mode
