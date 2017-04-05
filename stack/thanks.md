@@ -95,6 +95,10 @@ Subtitles
 - http://unix.stackexchange.com/q/232302#326108
 - http://video.stackexchange.com/q/10423#19966
 
+Terminfo
+=============================================
+http://unix.stackexchange.com/q/351497#356223
+
 Unix time
 ======================================
 - http://askubuntu.com/q/858160#864617
