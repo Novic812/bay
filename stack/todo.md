@@ -1,6 +1,5 @@
 Base convert
 ============================================
-- 13 - http://unix.stackexchange.com/q/65280
 - 5 - http://unix.stackexchange.com/q/311904
 - 5 - http://unix.stackexchange.com/q/171154
 - 3 - http://unix.stackexchange.com/q/223338
@@ -30,9 +29,8 @@ Percent-encoding
 - 1 - http://unix.stackexchange.com/q/204932
 
 Terminfo
-========================================
-- http://unix.stackexchange.com/q/108699
-- http://unix.stackexchange.com/q/119
+======================================
+http://unix.stackexchange.com/q/108699
 
 Visual Studio
 ===================================

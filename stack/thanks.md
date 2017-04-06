@@ -4,8 +4,9 @@ Awk sort array
 - http://unix.stackexchange.com/q/333961#334072
 
 Base convert
-=============================================
-http://unix.stackexchange.com/q/191205#354019
+===============================================
+- http://unix.stackexchange.com/q/191205#354019
+- http://unix.stackexchange.com/q/65280#354324
 
 C source code formatter
 ===================================================
@@ -95,8 +96,9 @@ Subtitles
 - http://video.stackexchange.com/q/10423#19966
 
 Terminfo
-=============================================
-http://unix.stackexchange.com/q/351497#356223
+============================================
+- http://unix.stackexchange.com/q/119#356335
+- http://unix.stackexchange.com/q/351497#356223
 
 Unix time
 ======================================
