@@ -1,136 +1,181 @@
 
-1. alternativeto.net/software/notepad2-mod
+- http://alternativeto.net/software/notepad2-mod
+- http://alternativeto.net/software/notepad-plus-plus
 
-1. alternativeto.net/software/notepad-plus-plus
+Textadept
+==================
+- 11.4 MB
+- Awk lexer
 
-1. Notepad2-mod
- - bad highlighting
- - 670 KB
+Notepad2-mod
+============
+- 670 KB
+- No Awk
 
-1. Programmer's Notepad
- - bad highlighting
- - 2.7 MB
+Notepad++
+=========
+- 2.8 MB
+- No Awk
 
-1. SciTE
- - bad highlighting
- - 1.2 MB
+Atom
+======
+113 MB
 
-1. Geany
- - bad highlighting
- - 13.3 MB
+gedit
+==================
+77 MB
 
-1. Notepad++
- - bad highlighting
- - 2.8 MB
+Geany
+==================
+- 13.3 MB
+- No Awk
 
-1. Textadept
- - bad highlighting
- - 11.4 MB
+Komodo Edit
+==================
+74 MB
 
-1. Vim
- - CLI
+Kate
+===========
+44 MB
 
-1. gedit
- - > 16 MB
+SciTE
+==================
+- 1.2 MB
+- No Awk
 
-1. Atom
-  - > 16 MB
+AkelPad
+===========
+SourceForge
 
-1. Brackets
-  - > 16 MB
+jEdit
+===========
+SourceForge
 
-1. Emacs
-  - > 16 MB
+Programmer's Notepad
+====================
+- 2.7 MB
+- http://github.com/simonsteele/pn/issues/152
 
-1. Komodo Edit
-  - > 16 MB
+SynWrite
+===========
+No Awk
 
-1. nano
- - CLI
+wxMEdit
+===========
+SourceForge
 
-1. Kate
- - not Windows
+slap
+===========
+CLI
 
-1. Bluefish
- - SourceForge
+metapad
+========================================
+http://github.com/alexd/metapad/issues/3
 
-1. jEdit
- - SourceForge
+Editra
+============
+discontinued
 
-1. AkelPad
- - SourceForge
+medit
+===========
+SourceForge
 
-1. Visual Studio Code
- - > 16 MB
+Text Editor Pro
+========================
+Does not use Windows GUI
 
-1. metapad
- - no syntax highlighting
+JOE
+===========
+CLI
 
-1. NINJA-IDE
- - > 16 MB
+Thunderpad
+===========
+SourceForge
 
-1. SynWrite
- - SourceForge
+Notepas
+===========
+SourceForge
 
-1. JOE
- - CLI
+Ynote
+===========
+Discontinued
 
-1. Editra
- - discontinued
+Devpad
+============================
+Discontinued
 
-1. medit
- - SourceForge
+BowPad
+===========
+SourceForge
 
-1. Lime Text
- - not Windows
+Vim
+==================
+CLI
 
-1. wxMEdit
- - SourceForge
+Brackets
+==================
+51 MB
 
-1. slap
- - CLI
+Visual Studio Code
+==================
+greater than 16 MB
 
-1. EditBone
- - no shell script highlighting
+Emacs
+==================
+88 MB
 
-1. Thunderpad
- - SourceForge
+Bluefish
+===========
+SourceForge
 
-1. Notepas
- - SourceForge
+Lime Text
+===========
+not Windows
 
-1. Ynote
- - only exe
+Neovim
+===========
+CLI
 
-1. Aubrey's gVim
- - discontinued
+NINJA-IDE
+========================
+Does not use Windows GUI
 
-1. BowPad
- - SourceForge
+Aubrey's gVim
+=============
+discontinued
 
-1. gEcrit
- - SourceForge
+SuperbEdit
+=============
+does not work
 
-1. Zinjai
- - > 16 MB
+gEcrit
+===========
+SourceForge
 
-1. SuperbEdit
- - does not work
+LiteIDE
+=============================================
+http://github.com/visualfc/liteide/issues/769
 
-1. Devpad
- - no shell script highlighting
+TEA
+============================================
+http://github.com/psemiletov/tea-qt/issues/6
 
-1. Mystix
- - SourceForge
+DtPad
+============================
+no shell script highlighting
 
-1. Emerald Editor
- - SourceForge
+Mystix
+===========
+SourceForge
 
-1. Neovim
- - not Windows
+Emerald Editor
+==============
+SourceForge
 
-1. TEA
- - SourceForge
+nano
+==================
+CLI
 
-1. DtPad
- - no shell script highlighting
+Zinjai
+==================
+greater than 16 MB
