@@ -27,10 +27,6 @@ Percent-encoding
 - 6 - http://unix.stackexchange.com/q/76500
 - 1 - http://unix.stackexchange.com/q/204932
 
-Terminfo
-======================================
-http://unix.stackexchange.com/q/108699
-
 Visual Studio
 ===================================
 3 - http://serverfault.com/q/627286
