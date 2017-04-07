@@ -6,6 +6,7 @@ Awk sort array
 Base convert
 ===============================================
 - http://unix.stackexchange.com/q/191205#354019
+- http://unix.stackexchange.com/q/311904#354461
 - http://unix.stackexchange.com/q/65280#354324
 
 C source code formatter

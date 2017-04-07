@@ -1,6 +1,5 @@
 Base convert
 ============================================
-- 5 - http://unix.stackexchange.com/q/311904
 - 5 - http://unix.stackexchange.com/q/171154
 - 3 - http://unix.stackexchange.com/q/223338
 - 1 - http://unix.stackexchange.com/q/279505
