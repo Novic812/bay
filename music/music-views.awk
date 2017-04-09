@@ -21,6 +21,6 @@ BEGIN {
   }
   print vpt(br, ch / tm_day(365.25), "year", 3)
   print vpt(br, ch / tm_day(1), "day")
-  print vpt(br, ch / time_hour(1), "hour")
+  print vpt(br, ch / tm_hour(1), "hour")
   print vpt(br, ch / time_min(1), "minute")
 }
