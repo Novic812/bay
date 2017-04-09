@@ -1,9 +1,7 @@
 Base convert
 ============================================
 - 1 - http://unix.stackexchange.com/q/136534
-- 1 - http://askubuntu.com/q/601137
 - 0 - http://unix.stackexchange.com/q/163524
-- 0 - http://superuser.com/q/897756
 
 Convert line endings
 =====================================
