@@ -1,12 +1,12 @@
 Awk sort array
-===============================================
-- http://unix.stackexchange.com/q/275420#275423
-- http://unix.stackexchange.com/q/333961#334072
+=============================================
+http://unix.stackexchange.com/q/275420#275423
 
 Base convert
 ======================================
 - http://askubuntu.com/q/601137#897279
 - http://superuser.com/q/897756#1192677
+- http://unix.stackexchange.com/q/136534#358099
 - http://unix.stackexchange.com/q/171154#354709
 - http://unix.stackexchange.com/q/191205#354019
 - http://unix.stackexchange.com/q/223338#356768
@@ -17,10 +17,6 @@ Base convert
 C source code formatter
 ===================================================
 http://softwarerecs.stackexchange.com/q/17505#33833
-
-Ceil
-=============================================
-http://unix.stackexchange.com/q/168476#354235
 
 Changing the volume increment
 ====================================
@@ -35,14 +31,6 @@ Cue
 - http://superuser.com/q/577476#577477
 - http://superuser.com/q/675491#1156290
 - http://unix.stackexchange.com/q/10251#278970
-
-Directory size
-====================================
-- http://askubuntu.com/q/1224#897383
-- http://superuser.com/q/171534#1192971
-- http://unix.stackexchange.com/q/185764#350436
-- http://unix.stackexchange.com/q/3019#354463
-- http://unix.stackexchange.com/q/67806#354711
 
 Disable GNU Indent backup files
 =============================================
@@ -86,10 +74,6 @@ POSIX shell local
 =============================================
 http://unix.stackexchange.com/q/282557#356229
 
-Print certain commands as they are run
-=============================================
-http://unix.stackexchange.com/q/106776#268018
-
 Read tags
 ======================================
 - http://askubuntu.com/q/364415#525879
@@ -106,11 +90,3 @@ Terminfo
 - http://unix.stackexchange.com/q/108699#356565
 - http://unix.stackexchange.com/q/119#356335
 - http://unix.stackexchange.com/q/351497#356223
-
-Unix time
-======================================
-- http://askubuntu.com/q/858160#864617
-- http://superuser.com/q/165680#1160876
-- http://unix.stackexchange.com/q/1825#333436
-- http://unix.stackexchange.com/q/215934#354464
-- http://unix.stackexchange.com/q/24626#333167
