@@ -104,3 +104,9 @@ Terminfo
 - http://unix.stackexchange.com/q/108699#356565
 - http://unix.stackexchange.com/q/119#356335
 - http://unix.stackexchange.com/q/351497#356223
+
+Unix time
+======================================
+- http://askubuntu.com/q/858160#864617
+- http://superuser.com/q/165680#1160876
+- http://unix.stackexchange.com/q/1825#333436
