@@ -6,7 +6,7 @@ BEGIN {
     exit
   }
   while (1) {
-    x = math_trunc(arr_sum(ARGV) / 2)
+    x = math_div(arr_sum(ARGV), 2)
     if (w[x]++)
       break
     printf ARGV[1] ~ /[xX]/ ? "\n%X\n" : "\n%d\n", x
