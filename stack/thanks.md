@@ -18,6 +18,10 @@ C source code formatter
 ===================================================
 http://softwarerecs.stackexchange.com/q/17505#33833
 
+Ceil
+=============================================
+http://unix.stackexchange.com/q/168476#354235
+
 Changing the volume increment
 ====================================
 http://superuser.com/q/359138#900589
@@ -31,6 +35,12 @@ Cue
 - http://superuser.com/q/577476#577477
 - http://superuser.com/q/675491#1156290
 - http://unix.stackexchange.com/q/10251#278970
+
+Directory size
+====================================
+- http://askubuntu.com/q/1224#897383
+- http://superuser.com/q/171534#1192971
+- http://unix.stackexchange.com/q/185764#350436
 
 Disable GNU Indent backup files
 =============================================
@@ -73,6 +83,10 @@ http://askubuntu.com/q/53770#740274
 POSIX shell local
 =============================================
 http://unix.stackexchange.com/q/282557#356229
+
+Print certain commands as they are run
+=============================================
+http://unix.stackexchange.com/q/106776#268018
 
 Read tags
 ======================================
