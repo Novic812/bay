@@ -1,19 +1,10 @@
-Awk sort array
-======================================
-http://unix.stackexchange.com/q/333961
-
-Base convert
-======================================
-http://unix.stackexchange.com/q/163524
-
 Convert line endings
 =====================================
 http://unix.stackexchange.com/q/32001
 
 Directory size
-======================================
-- http://unix.stackexchange.com/q/3019
-- http://unix.stackexchange.com/q/67806
+=====================================
+http://unix.stackexchange.com/q/67806
 
 In place
 ===============================

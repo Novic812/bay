@@ -1,6 +1,7 @@
 Awk sort array
-=============================================
-http://unix.stackexchange.com/q/275420#275423
+===============================================
+- http://unix.stackexchange.com/q/275420#275423
+- http://unix.stackexchange.com/q/333961#334072
 
 Base convert
 ======================================
@@ -41,6 +42,7 @@ Directory size
 - http://askubuntu.com/q/1224#897383
 - http://superuser.com/q/171534#1192971
 - http://unix.stackexchange.com/q/185764#350436
+- http://unix.stackexchange.com/q/3019#354463
 
 Disable GNU Indent backup files
 =============================================
