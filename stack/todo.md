@@ -22,9 +22,8 @@ Percent-encoding
 - 1 - http://unix.stackexchange.com/q/204932
 
 Unix time
-========================================
-- http://unix.stackexchange.com/q/215934
-- http://unix.stackexchange.com/q/24626
+=====================================
+http://unix.stackexchange.com/q/24626
 
 Visual Studio
 ===================================
