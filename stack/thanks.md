@@ -30,12 +30,7 @@ http://superuser.com/q/359138#900589
 Cue
 ======================================
 - http://askubuntu.com/q/183599#859039
-- http://askubuntu.com/q/521388#858965
 - http://musicfans.stackexchange.com/q/2451#4439
-- http://superuser.com/q/368950#1155860
-- http://superuser.com/q/577476#577477
-- http://superuser.com/q/675491#1156290
-- http://unix.stackexchange.com/q/10251#278970
 
 Directory size
 ====================================
@@ -48,11 +43,6 @@ Directory size
 Disable GNU Indent backup files
 =============================================
 http://unix.stackexchange.com/q/105088#290638
-
-Cygwin Git with Notepad2
-=======================================
-- http://superuser.com/q/335615#1161214
-- http://emacs.stackexchange.com/q/14331#29658
 
 Fast MP4 thumbnails
 ======================================
