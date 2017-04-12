@@ -2,10 +2,6 @@ Convert line endings
 =====================================
 http://unix.stackexchange.com/q/32001
 
-Directory size
-=====================================
-http://unix.stackexchange.com/q/67806
-
 In place
 ===============================
 - http://askubuntu.com/q/752174
@@ -20,10 +16,6 @@ Percent-encoding
 - 48 - http://unix.stackexchange.com/q/159253
 - 6 - http://unix.stackexchange.com/q/76500
 - 1 - http://unix.stackexchange.com/q/204932
-
-Unix time
-=====================================
-http://unix.stackexchange.com/q/24626
 
 Visual Studio
 ===================================
