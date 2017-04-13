@@ -1,12 +1,10 @@
 #!/usr/local/bin/awklib -f
 BEGIN {
   if (ARGC != 3) {
-    print "nato.awk [variable length] [file]"
+    print "nato.awk <variable length> <file>"
     exit
   }
-  var_len = ARGV[1]
-  ARGV[1] = ARGV[2]
-  delete ARGV[2]
+  var_len = arr_shift(ARGV)
   split("alfa bravo charlie delta echo foxtrot golf hotel india juliet kilo " \
   "lima mike november oscar papa quebec romeo sierra tango uniform victor " \
   "whiskey xray yankee zulu", q)
@@ -22,11 +20,8 @@ BEGIN {
   }
 }
 END {
-  for (each in nfa) {
-    m[++d] = sprintf("%2d", nfa[each]) FS each
-  }
+  for (each in nfa)
+    arr_push(m, sprintf("%2d", nfa[each]) FS each)
   arr_sort(m)
-  for (each in m) {
-    print m[each]
-  }
+  print arr_join(m, RS)
 }
