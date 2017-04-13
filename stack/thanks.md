@@ -30,7 +30,10 @@ http://superuser.com/q/359138#900589
 Cue
 ======================================
 - http://askubuntu.com/q/183599#859039
+- http://askubuntu.com/q/521388#858965
 - http://musicfans.stackexchange.com/q/2451#4439
+- http://superuser.com/q/368950#1155860
+- http://unix.stackexchange.com/q/10251#278970
 
 Cygwin Git with Notepad2
 ==============================================

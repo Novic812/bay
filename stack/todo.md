@@ -4,11 +4,8 @@ http://unix.stackexchange.com/q/32001
 
 Cue
 ===============================
-- http://askubuntu.com/q/521388
-- http://superuser.com/q/368950
 - http://superuser.com/q/577476
 - http://superuser.com/q/675491
-- http://unix.stackexchange.com/q/10251
 
 In place
 ===============================
