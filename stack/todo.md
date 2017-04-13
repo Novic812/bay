@@ -3,17 +3,12 @@ Convert line endings
 http://unix.stackexchange.com/q/32001
 
 Cue
-======================================
-- http://askubuntu.com/q/521388#858965
-- http://superuser.com/q/368950#1155860
-- http://superuser.com/q/577476#577477
-- http://superuser.com/q/675491#1156290
-- http://unix.stackexchange.com/q/10251#278970
-
-Cygwin Git with Notepad2
-=======================================
-- http://superuser.com/q/335615#1161214
-- http://emacs.stackexchange.com/q/14331#29658
+===============================
+- http://askubuntu.com/q/521388
+- http://superuser.com/q/368950
+- http://superuser.com/q/577476
+- http://superuser.com/q/675491
+- http://unix.stackexchange.com/q/10251
 
 In place
 ===============================

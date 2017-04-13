@@ -32,6 +32,11 @@ Cue
 - http://askubuntu.com/q/183599#859039
 - http://musicfans.stackexchange.com/q/2451#4439
 
+Cygwin Git with Notepad2
+==============================================
+- http://emacs.stackexchange.com/q/14331#29658
+- http://superuser.com/q/335615#1161214
+
 Directory size
 ====================================
 - http://askubuntu.com/q/1224#897383
@@ -88,6 +93,7 @@ Read tags
 
 Subtitles
 =======================================
+- http://superuser.com/q/1135197#1199201
 - http://superuser.com/q/700082#1149845
 - http://unix.stackexchange.com/q/232302#326108
 - http://video.stackexchange.com/q/10423#19966
