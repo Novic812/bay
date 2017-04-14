@@ -1,15 +1,13 @@
 #!/usr/local/bin/shlib
 
 # clear explorer and wallpaper history
-while read br
-do
-  if REG QUERY "$br" >/dev/null 2>&1
-  then sh_trace REG DELETE "$br" /f
-  fi
-done <<'eof'
-HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\TypedPaths
-HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Wallpapers\Images
-eof
+if
+  REG DELETE \
+  'HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\TypedPaths' /f
+then
+  REG DELETE \
+  'HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Wallpapers\Images' /f
+fi
 
 # clear run history
 sh_trace rundll32 inetcpl.cpl ClearMyTracksByProcess 1
