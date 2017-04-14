@@ -55,9 +55,12 @@ REG ADD 'HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer' \
   /v Link /t REG_BINARY /d 00000000 /f
 
 # Environment
-REG DELETE \
-'HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Environment' /v TMP /f
-REG DELETE 'HKCU\Environment' /v TMP /f
+if REG QUERY 'HKCU\Environment' /v TMP
+then
+  REG DELETE 'HKCU\Environment' /v TMP /f
+  REG DELETE \
+  'HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Environment' /v TMP /f
+fi
 SETX Path 'C:\ProgramData\Bin;C:\Windows\System32' /M
 
 # hide file extensions
