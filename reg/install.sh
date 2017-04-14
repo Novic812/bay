@@ -16,6 +16,8 @@ REG ADD 'HKCR\.css' /v PerceivedType /f
 REG ADD 'HKCR\.htm' /v PerceivedType /f
 REG ADD 'HKCR\.ini' /v PerceivedType /f
 REG ADD 'HKCR\.txt' /v PerceivedType /f
+# cygwin.bat
+REG ADD 'HKCR\batfile\shell\Notepad2\command' /d 'Notepad2 "%1"' /f
 REG ADD 'HKCR\CSSfile\shell' /d Notepad2 /f
 REG ADD 'HKCR\CSSfile\shell\Notepad\command' /d 'notepad "%1"' /f
 REG ADD 'HKCR\CSSfile\shell\Notepad2\command' /d 'Notepad2 "%1"' /f
