@@ -3,9 +3,8 @@ Convert line endings
 http://unix.stackexchange.com/q/32001
 
 Cue
-===============================
-- http://superuser.com/q/577476
-- http://superuser.com/q/675491
+=============================
+http://superuser.com/q/675491
 
 In place
 ===============================

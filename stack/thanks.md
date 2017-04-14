@@ -33,6 +33,7 @@ Cue
 - http://askubuntu.com/q/521388#858965
 - http://musicfans.stackexchange.com/q/2451#4439
 - http://superuser.com/q/368950#1155860
+- http://superuser.com/q/577476#577477
 - http://unix.stackexchange.com/q/10251#278970
 
 Cygwin Git with Notepad2
