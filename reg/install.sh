@@ -55,7 +55,7 @@ REG ADD 'HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer' \
   /v Link /t REG_BINARY /d 00000000 /f
 
 # Environment
-if REG QUERY 'HKCU\Environment' /v TMP
+if REG QUERY 'HKCU\Environment' /v TMP >/dev/null 2>&1
 then
   REG DELETE 'HKCU\Environment' /v TMP /f
   REG DELETE \
