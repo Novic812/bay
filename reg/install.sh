@@ -16,7 +16,7 @@ REG ADD 'HKCR\.css' /v PerceivedType /f
 REG ADD 'HKCR\.htm' /v PerceivedType /f
 REG ADD 'HKCR\.ini' /v PerceivedType /f
 REG ADD 'HKCR\.txt' /v PerceivedType /f
-# cygwin.bat
+# Cygwin.bat
 REG ADD 'HKCR\batfile\shell\Notepad2\command' /d 'Notepad2 "%1"' /f
 REG ADD 'HKCR\CSSfile\shell' /d Notepad2 /f
 REG ADD 'HKCR\CSSfile\shell\Notepad\command' /d 'notepad "%1"' /f
@@ -55,9 +55,8 @@ REG ADD 'HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer' \
   /v Link /t REG_BINARY /d 00000000 /f
 
 # Environment
-if REG QUERY 'HKCU\Environment' /v TMP >/dev/null 2>&1
+if REG DELETE 'HKCU\Environment' /v TMP /f 2>/dev/null
 then
-  REG DELETE 'HKCU\Environment' /v TMP /f
   REG DELETE \
   'HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Environment' /v TMP /f
 fi
