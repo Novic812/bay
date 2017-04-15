@@ -2,10 +2,6 @@ Convert line endings
 =====================================
 http://unix.stackexchange.com/q/32001
 
-Cue
-=============================
-http://superuser.com/q/675491
-
 In place
 ===============================
 - http://askubuntu.com/q/752174
