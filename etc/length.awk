@@ -1,18 +1,18 @@
 #!/usr/local/bin/awklib -f
 BEGIN {
   if (ARGC != 3) {
-    print "length.awk <file> <asc | desc>"
+    print "length.awk <asc | desc> <file>"
     exit
   }
-  ARGC = 2
+  br = arr_shift(ARGV)
   while (getline) {
     qu = length
     xr[qu] = xr[qu] ? xr[qu] RS $0 : $0
   }
   for (qu in xr) {
-    ya[++zu] = xr[qu]
+    ya = arr_push(zu, xr[qu])
   }
-  for (qu = zu; qu; qu--) {
-    print ya[math_mod(ARGV[2] == "asc" ? -qu : qu, zu + 1)]
+  for (qu in zu) {
+    print zu[math_mod(br == "asc" ? qu : -qu, ya + 1)]
   }
 }
