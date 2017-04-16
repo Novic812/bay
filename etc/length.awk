@@ -1,7 +1,7 @@
 #!/usr/local/bin/awklib -f
 BEGIN {
-  if (ARGC != 3) {
-    print "length.awk <asc | desc> <file>"
+  if (ARGC == 1) {
+    print "length.awk <asc | desc>"
     exit
   }
   br = arr_shift(ARGV)
