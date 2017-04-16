@@ -1,8 +1,8 @@
 #!/usr/local/bin/awklib -f
 BEGIN {
   if (ARGC != 2) {
-    print "ff-split.awk [cue file]"
-    exit
+    print "ff-split.awk <cue file>"
+    exit 1
   }
 }
 $1 == "FILE" {

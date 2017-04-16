@@ -10,10 +10,14 @@ git diff --cached | awk '
   y = NR
 }
 /^[-+]/ && NR > y + 2 {
-  if (/^-/ && z) next
-  if (/#/) next
+  if (/^-/ && z)
+    next
+  if (/#/)
+    next
   z = $0
-  if (/^\+/ && z) exit
+  if (/^\+/ && z) {
+    exit
+  }
 }
 END {
   print substr(z, 2, 62)

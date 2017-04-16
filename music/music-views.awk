@@ -6,7 +6,7 @@ function vpt(view, td, ts, prec) {
 BEGIN {
   if (ARGC != 2) {
     print "music-views.awk <URL>"
-    exit
+    exit 1
   }
   while ("curl -L " ARGV[1] | getline) {
     if (/interactionCount/)

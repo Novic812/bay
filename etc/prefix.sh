@@ -2,8 +2,8 @@
 # get compiler prefix
 if [ "$#" != 1 ]
 then
-  echo 'prefix.sh [compiler]'
-  exit
+  echo 'prefix.sh <compiler>'
+  exit 1
 fi
 qu=$1
 

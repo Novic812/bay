@@ -1,8 +1,8 @@
 #!/bin/sh -e
 if [ "$#" != 1 ]
 then
-  echo 'ff-downmix.sh [file]'
-  exit
+  echo 'ff-downmix.sh <file>'
+  exit 1
 fi
 sc=$1
 
@@ -15,8 +15,8 @@ bad=$?
 rm swresample.c
 if [ "$bad" = 0 ]
 then
-  echo Good downmix available, fix script
-  exit
+  echo 'Good downmix available, fix script'
+  exit 1
 fi
 
 # get streams

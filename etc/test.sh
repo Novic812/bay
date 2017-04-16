@@ -1,8 +1,8 @@
 #!/bin/dash -e
 if [ "$#" = 0 ]
 then
-  echo 'test.sh [items]'
-  exit
+  echo 'test.sh <items>'
+  exit 1
 fi
 
 for pa in b c d e f g h k n p r s u w x z G O S

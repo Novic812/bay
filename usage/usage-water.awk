@@ -2,14 +2,14 @@
 BEGIN {
   if (ARGC != 3) {
     print "SYNOPSIS"
-    print "  water.awk [gallons per flush] [hours between flushes]"
+    print "  water.awk <gallons per flush> <hours between flushes>"
     print
     print "GALLONS PER FLUSH"
     print "  will be 3.5 or 5"
     print
     print "HOURS BETWEEN FLUSHES"
     print "  will be 3 or 4"
-    exit
+    exit 1
   }
   gpf = ARGV[1]
   hbf = ARGV[2]

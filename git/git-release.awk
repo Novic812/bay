@@ -20,7 +20,7 @@ BEGIN {
     "REMOTE",
     "  1. push commits",
     "  2. push release"
-    exit
+    exit 1
   }
   "git ls-tree @ license.txt | git mktree" | getline go
   "git for-each-ref --sort -refname" | getline

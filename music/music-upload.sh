@@ -23,13 +23,12 @@ readu() {
     echo '[y,e,q]?'
     read line
     case $line in
-    y) break
-       ;;
-    e) read -ei "${!1}" $1
-       break
-       ;;
-    q) exit
-       ;;
+    y) break ;;
+    e)
+      read -ei "${!1}" $1
+      break
+    ;;
+    q) exit 1 ;;
     esac
     echo 'y - accept'
     echo 'e - edit'
@@ -49,13 +48,13 @@ if [ "$#" -lt 2 ]
 then
   cat <<'eof'
 SYNOPSIS
-  music-upload.sh [picture] [songs]
+  music-upload.sh <picture> <songs>
 
 DESCRIPTION
   Script will use files to create high quality videos, then upload videos to
   YouTube.
 eof
-  exit
+  exit 1
 fi
 
 img=$1

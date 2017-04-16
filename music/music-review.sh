@@ -3,12 +3,12 @@
 if [ ! "$BROWSER" ]
 then
   echo 'BROWSER not set or not exported'
-  exit
+  exit 1
 fi
 if [ "$#" != 1 ]
 then
-  echo 'review.sh [artist]'
-  exit
+  echo 'review.sh <artist>'
+  exit 1
 fi
 
 "$BROWSER" albumoftheyear.org/search.php?q="$1"

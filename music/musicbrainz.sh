@@ -50,7 +50,7 @@ proxy() {
 if [ ! "$BROWSER" ]
 then
   echo 'BROWSER not set or not exported'
-  exit
+  exit 1
 fi
 
 case $1 in
@@ -73,7 +73,7 @@ when adding release, make sure to include
 - track titles
 - track lengths
 eof
-  exit
+  exit 1
 ;;
 img-set)
   convert "$2" -resize x1000 -compress lossless 1000-"$2"

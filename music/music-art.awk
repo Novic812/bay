@@ -2,11 +2,11 @@
 BEGIN {
   if (!ENVIRON["BROWSER"]) {
     print "BROWSER not set or not exported"
-    exit
+    exit 1
   }
   if (ARGC != 3) {
-    print "music-art.awk [artist] [album]"
-    exit
+    print "music-art.awk <artist> <album>"
+    exit 1
   }
 
   _ = RS

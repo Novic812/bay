@@ -2,7 +2,7 @@
 BEGIN {
   if (ARGC != 3) {
     print "nato.awk <variable length> <file>"
-    exit
+    exit 1
   }
   var_len = arr_shift(ARGV)
   split("alfa bravo charlie delta echo foxtrot golf hotel india juliet kilo " \

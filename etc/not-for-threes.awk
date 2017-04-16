@@ -1,8 +1,8 @@
 #!/usr/bin/awk -f
 BEGIN {
   if (ARGC != 2) {
-    print "not-for-threes.awk [threshold]"
-    exit
+    print "not-for-threes.awk <threshold>"
+    exit 1
   }
   while (5 ^ ++br < ARGV[1]);
 

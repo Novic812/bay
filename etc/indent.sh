@@ -1,8 +1,8 @@
 #!/bin/dash -e
 if [ "$#" != 1 ]
 then
-  echo 'indent.sh [file]'
-  exit
+  echo 'indent.sh <file>'
+  exit 1
 fi
 type indent
 ex -s "$1" <<'eof'

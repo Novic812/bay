@@ -6,13 +6,13 @@ NAME
   date.sh
 
 SYNOPSIS
-  date.sh [date]
+  date.sh <date>
 
 EXAMPLES
   date.sh now
   date.sh 2015-5-15
 eof
-  exit
+  exit 1
 fi
 
 ch=$1

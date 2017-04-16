@@ -2,7 +2,7 @@
 if [ "$#" != 2 ]
 then
   echo 'tex.sh <tex input> <pdf output>'
-  exit
+  exit 1
 fi
 
 pa=$1

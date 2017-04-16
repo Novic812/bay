@@ -2,7 +2,7 @@
 if [ "$#" != 1 ]
 then
   echo 'stack-highlight.sh <file>'
-  exit
+  exit 1
 fi
 xr=$1
 ya=$(mktemp)

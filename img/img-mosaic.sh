@@ -5,7 +5,7 @@
 if [ "$#" = 0 ]
 then
   cat <<'eof'
-img-mosaic.sh [options] [files]
+img-mosaic.sh [options] <files>
 
 -d     dry run, create pieces only
 
@@ -24,7 +24,7 @@ img-mosaic.sh [options] [files]
 -r <r>     comma separated list of resize markers
            example y,y,y,n
 eof
-  exit
+  exit 1
 fi
 
 mn() {
@@ -116,7 +116,7 @@ then
     ;;
     *)
       echo 'cannot automatically set dimensions' >&2
-      exit
+      exit 1
     ;;
   esac > "$dm"
 fi

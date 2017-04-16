@@ -2,7 +2,7 @@
 BEGIN {
   if (ARGC == 1) {
     print "length.awk <asc | desc>"
-    exit
+    exit 1
   }
   br = arr_shift(ARGV)
   while (getline) {

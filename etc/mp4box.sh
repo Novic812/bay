@@ -1,8 +1,8 @@
 #!/usr/local/bin/shlib
 if [ "$#" = 0 ]
 then
-  echo 'mp4box.sh [MP4] [SRT]'
-  exit
+  echo 'mp4box.sh <MP4> [SRT]'
+  exit 1
 fi
 xr=$1
 if [ "$2" ]

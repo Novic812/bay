@@ -9,14 +9,14 @@ if [ "$#" = 0 ]
 then
   cat <<'eof'
 SYNOPSIS
-  music-download.sh [targets]
+  music-download.sh <targets>
 
 TARGETS
   http://youtube.com/watch?v=qjgnOP8f5NU
   http://soundcloud.com/greco-roman/roosevelt-night-moves
   http://reddit.com/r/stationalpha/new
 eof
-  exit
+  exit 1
 fi
 
 pa=$(date -d '-1 year' +%Y%m%d)

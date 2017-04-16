@@ -3,12 +3,12 @@
 if [ ! "$BROWSER" ]
 then
   echo 'BROWSER not set or not exported'
-  exit
+  exit 1
 fi
 if [ "$#" != 2 ]
 then
-  echo 'music-search.sh [artist] [song]'
-  exit
+  echo 'music-search.sh <artist> <song>'
+  exit 1
 fi
 
 while read z

@@ -3,7 +3,7 @@ BEGIN {
   OFS = RS
   if (ARGC != 3) {
     print "bsa.awk <good> <bad>", "", "hex allowed - use 0x"
-    exit
+    exit 1
   }
   while (1) {
     x = math_div(arr_sum(ARGV), 2)

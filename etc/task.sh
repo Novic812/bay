@@ -10,7 +10,7 @@ task.sh create sun,tue,thu 23:59 'hello world'
 
 task.sh delete 'hello world'
 eof
-  exit
+  exit 1
 fi
 case $1 in
 query)
