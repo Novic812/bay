@@ -1,4 +1,5 @@
-#!/usr/bin/awk -f
+#!/usr/local/bin/awklib -f
+# cant store values in indices because sorting will break if threshold >= 6251
 BEGIN {
   if (ARGC != 2) {
     print "not-for-threes.awk <threshold>"
@@ -10,12 +11,13 @@ BEGIN {
     ch = br ? 0 : 1
     do {
       de = 5 ^ br * 2 ^ ch++
-      ec[de]
+      arr_push(ec, de)
     } while (de < ARGV[1])
     br--
   }
 
+  arr_sort(ec)
   for (br in ec) {
-    printf "%\47d\n", br
+    printf "%\47d\n", ec[br]
   }
 }
