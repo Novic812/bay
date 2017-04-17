@@ -6,7 +6,7 @@ BEGIN {
   print "Careful, screencaps will dump in current directory.",
   "Drag video here, then press enter (backslashes ok):"
 
-  getline br < "-"
+  getline br
   if (!br)
     exit 1
   gsub("\42", "", br)
@@ -25,7 +25,7 @@ BEGIN {
   }
 
   print "Drag picture here, then press enter (backslashes ok):"
-  getline zu < "-"
+  getline zu
   if (!zu)
     exit 1
   gsub("\42", "", zu)
