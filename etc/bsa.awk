@@ -5,6 +5,7 @@ BEGIN {
     print "bsa.awk <good> <bad>", "", "hex allowed - use 0x"
     exit 1
   }
+  ARGC = 0
   while (1) {
     x = math_div(arr_sum(ARGV), 2)
     if (w[x]++)
@@ -12,7 +13,7 @@ BEGIN {
     printf ARGV[1] ~ /[xX]/ ? "\n%X\n" : "\n%d\n", x
     while (1) {
       printf "[g,b]? "
-      getline v < "-"
+      getline v
       if (v == "g")
         ARGV[1] = x
       else if (v == "b")
