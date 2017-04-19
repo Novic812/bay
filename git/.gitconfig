@@ -1,6 +1,5 @@
 [alias]
 dwo = diff --word-diff=color
-dws = diff --ws-error-highlight=all
 
 [color "diff"]
 meta = yellow bold
