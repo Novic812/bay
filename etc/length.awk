@@ -4,6 +4,7 @@ BEGIN {
     print "length.awk <asc | desc>"
     exit 1
   }
+  br = ARGV[1]
   arr_slice(ARGV, 2)
   while (getline) {
     qu = length
@@ -13,6 +14,6 @@ BEGIN {
     ya = arr_push(zu, xr[qu])
   }
   for (qu in zu) {
-    print zu[math_mod(ARGV[1] == "asc" ? qu : -qu, ya + 1)]
+    print zu[math_mod(br == "asc" ? qu : -qu, ya + 1)]
   }
 }
