@@ -10,6 +10,7 @@ helper = store
 
 [diff]
 algorithm = histogram
+wsErrorHighlight = all
 
 [hub]
 protocol = https
