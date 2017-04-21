@@ -16,7 +16,7 @@
   .dislikes {
     opacity: .3 !important;
   }
-  .goldvertisement, .sidebox:not(.create):not(.submit) {
+  .goldvertisement, .recommended-link, .sidebox:not(.create):not(.submit) {
     display: none !important;
   }
   .usertext-edit, textarea {
