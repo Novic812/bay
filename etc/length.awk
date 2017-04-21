@@ -5,7 +5,7 @@ BEGIN {
     exit 1
   }
   br = ARGV[1]
-  arr_slice(ARGV, 2)
+  arr_slice(ARGV, 3)
   while (getline) {
     qu = length
     xr[qu] = xr[qu] ? xr[qu] RS $0 : $0
@@ -14,6 +14,6 @@ BEGIN {
     ya = arr_push(zu, xr[qu])
   }
   for (qu in zu) {
-    print zu[math_mod(br == "asc" ? qu : -qu, ya + 1)]
+    print zu[br == "asc" ? qu : ya - qu + 1]
   }
 }
