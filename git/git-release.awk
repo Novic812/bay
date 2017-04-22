@@ -22,7 +22,7 @@ BEGIN {
     "  2. push release"
     exit 1
   }
-  "git ls-tree @ license.txt | git mktree" | getline go
+  "git ls-tree @ license.md | git mktree" | getline go
   "git for-each-ref --sort -refname" | getline
   ju = $1
   ki = $NF
