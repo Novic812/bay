@@ -2,7 +2,7 @@
 # Set thumbnail for MP4 video
 
 BEGIN {
-  _ = OFS = RS
+  OFS = RS
   print "Careful, screencaps will dump in current directory.",
   "Drag video here, then press enter (backslashes ok):"
 
@@ -18,9 +18,9 @@ BEGIN {
   xr = .09 * ch["stream.0.duration"]
   ya = (ch["stream.0.duration"] - 2 * xr) / (ki - 1)
   while (ki--) {
-    split("ffmpeg" _ "-y" _ "-v" _ "error" _ "-ss" _ xr _ "-i" _ br _ \
-    "-frames" _ 1 _ xr ".jpg", ch, _)
-    sh_trace(ch)
+    ch["ffmpeg", "-y", "-v", "error", "-ss", xr, "-i", br,
+    "-frames", 1, xr ".jpg"]
+    sh_trace(arr_index(ch))
     xr += ya
   }
 
@@ -29,7 +29,6 @@ BEGIN {
   if (!zu)
     exit 1
   gsub("\42", "", zu)
-  split("tageditor" _ "-s" _ "cover=" zu _ "--max-padding" _ 100000 _ \
-  "-f" _ br, ch, _)
-  sh_trace(ch)
+  ch["tageditor", "-s", "cover=" zu, "--max-padding", 100000, "-f", br]
+  sh_trace(arr_index(ch))
 }
