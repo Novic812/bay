@@ -47,6 +47,7 @@ REG ADD 'HKCR\Directory\Background\shell\Bash\command' /d 'sh -l' /f
 # Console
 REG ADD 'HKCU\Console' /v CodePage /t REG_DWORD /d 65001 /f
 REG ADD 'HKCU\Console' /v QuickEdit /t REG_DWORD /d 1 /f
+REG ADD 'HKCU\Console' /v ScreenBufferSize /t REG_DWORD /d 0x1F400050 /f
 REG ADD 'HKCU\Console' /v WindowPosition /t REG_DWORD /d 0x012C0384 /f
 REG ADD 'HKCU\Console' /v WindowSize /t REG_DWORD /d 0x00180050 /f
 
