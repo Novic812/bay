@@ -2,13 +2,9 @@
 
 BEGIN {
   if (ARGC != 4) {
-    OFS = RS
-    print \
-    "SYNOPSIS",
-    "  ff-seq.awk <start> <duration> <file>",
-    "",
-    "DESCRIPTION",
-    "  Make an image sequence from a video"
+    br["SYNOPSIS", "ff-seq.awk <start> <duration> <file>", "",
+    "DESCRIPTION", "Make an image sequence from a video"]
+    print str_gsub(SUBSEP, RS, arr_index(br))
     exit 1
   }
   br["ffmpeg", "-hide_banner", "-ss", ARGV[1], "-i", ARGV[3], "-t", ARGV[2],
