@@ -6,18 +6,18 @@ BEGIN {
   }
 }
 $1 == "FILE" {
-  split($0, un, "\42")
+  str_split($0, un, "\42")
   vi = un[2]
 }
 $1 == "TRACK" {
   wh[++xr] = $2
 }
 $1 == "TITLE" && xr {
-  split($0, un, "\42")
+  str_split($0, un, "\42")
   ya[xr] = un[2]
 }
 $1 == "INDEX" && $2 {
-  split($3, un, ":")
+  str_split($3, un, ":")
   zu[xr] = sprintf("%d:%02d:%06.3f", un[1] / 60, un[1] % 60, un[2] + un[3] / 75)
 }
 END {
