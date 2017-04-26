@@ -20,7 +20,7 @@ BEGIN {
   while (ki--) {
     ch["ffmpeg", "-y", "-v", "error", "-ss", xr, "-i", br,
     "-frames", 1, xr ".jpg"]
-    sh_trace(arr_index(ch))
+    sh_trace(arr_search(ch))
     xr += ya
   }
 
@@ -30,5 +30,5 @@ BEGIN {
     exit 1
   gsub("\42", "", zu)
   ch["tageditor", "-s", "cover=" zu, "--max-padding", 100000, "-f", br]
-  sh_trace(arr_index(ch))
+  sh_trace(arr_search(ch))
 }

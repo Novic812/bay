@@ -26,6 +26,6 @@ END {
     "-ss", zu[xr] (zu[xr + 1] ? "\34-to\34" zu[xr + 1] : ""), "-b:a", "256k",
     "-movflags", "faststart", "-metadata", "track=" wh[xr],
     "-metadata", "title=" ya[xr], wh[xr] FS ya[xr] ".m4a"]
-    sh_trace(arr_index(br))
+    sh_trace(arr_search(br))
   }
 }

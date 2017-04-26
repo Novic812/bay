@@ -2,7 +2,7 @@
 BEGIN {
   if (ARGC != 3) {
     qu["bsa.awk <good> <bad>", "", "hex allowed - use 0x"]
-    str_dump(arr_index(qu))
+    str_dump(arr_search(qu))
     exit 1
   }
   ARGC = 0
@@ -20,7 +20,7 @@ BEGIN {
       else if (zu == "b")
         ARGV[2] = xr
       else {
-        str_dump(arr_index(qu))
+        str_dump(arr_search(qu))
         continue
       }
       break
