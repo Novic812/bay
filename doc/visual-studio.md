@@ -2,7 +2,7 @@
 1. File -> Preferences -> Default Machine Folder
 2. Install Windows
 3. UAC
-4. Install Guest Additions
+4. Devices -> Insert Guest Additions CD image
 5. Devices -> Optical Drives -> Remove disk from virtual drive
 6. Devices -> Shared Folders -> Shared Folders Settings
   - Add new shared folder
