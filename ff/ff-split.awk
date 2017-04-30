@@ -6,26 +6,26 @@ BEGIN {
   }
 }
 $1 == "FILE" {
-  str_split($0, un, "\42")
-  vi = un[2]
+  str_split($0, pa, "\42")
+  qu = pa[2]
 }
 $1 == "TRACK" {
-  wh[++xr] = $2
+  ro[++wh] = $2
 }
-$1 == "TITLE" && xr {
-  str_split($0, un, "\42")
-  ya[xr] = un[2]
+$1 == "TITLE" && wh {
+  str_split($0, pa, "\42")
+  xr[wh] = pa[2]
 }
 $1 == "INDEX" && $2 {
-  str_split($3, un, ":")
-  zu[xr] = sprintf("%d:%02d:%06.3f", un[1] / 60, un[1] % 60, un[2] + un[3] / 75)
+  str_split($3, pa, ":")
+  ya[wh] = sprintf("%d:%02d:%06.3f", pa[1] / 60, pa[1] % 60, pa[2] + pa[3] / 75)
 }
 END {
-  for (xr in wh) {
-    _["ffmpeg", "-v", "warning", "-stats", "-i", vi,
-    "-ss", zu[xr] (zu[xr + 1] ? "\34-to\34" zu[xr + 1] : ""), "-b:a", "256k",
-    "-movflags", "faststart", "-metadata", "track=" wh[xr],
-    "-metadata", "title=" ya[xr], wh[xr] FS ya[xr] ".m4a"]
-    sh_trace(arr_search(_))
+  for (wh in ro) {
+    zu["ffmpeg", "-v", "warning", "-stats", "-i", qu,
+    "-ss", ya[wh] (ya[wh + 1] ? "\34-to\34" ya[wh + 1] : ""),
+    "-b:a", "256k", "-movflags", "faststart", "-metadata", "track=" ro[wh],
+    "-metadata", "title=" xr[wh], ro[wh] FS xr[wh] ".m4a"]
+    sh_trace(arr_splice(zu))
   }
 }
