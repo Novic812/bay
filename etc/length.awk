@@ -4,8 +4,7 @@ BEGIN {
     print "length.awk <asc | desc>"
     exit 1
   }
-  br = ARGV[1]
-  arr_slice(ARGV, 3)
+  br = arr_splice(ARGV, 2, 1)
   while (getline) {
     qu = length
     xr[qu] = xr[qu] ? xr[qu] RS $0 : $0
