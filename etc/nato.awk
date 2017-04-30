@@ -4,8 +4,7 @@ BEGIN {
     print "nato.awk <variable length> <file>"
     exit 1
   }
-  var_len = ARGV[1]
-  arr_slice(ARGV, 3)
+  var_len = arr_splice(ARGV, 2, 1)
   str_split("alfa bravo charlie delta echo foxtrot golf hotel india juliet " \
   "kilo lima mike november oscar papa quebec romeo sierra tango uniform " \
   "victor whiskey xray yankee zulu", q)
