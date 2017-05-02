@@ -23,5 +23,5 @@ END {
   for (each in nfa)
     arr_push(m, sprintf("%2d", nfa[each]) FS each)
   arr_sort(m)
-  print arr_join(m, RS)
+  print ar_vjoin(m, RS)
 }
