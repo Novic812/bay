@@ -10,7 +10,7 @@ BEGIN {
     xr[qu] = xr[qu] ? xr[qu] RS $0 : $0
   }
   for (qu in xr) {
-    ya = arr_push(zu, xr[qu])
+    ya = arr_bpush(zu, xr[qu])
   }
   for (qu in zu) {
     print zu[br == "asc" ? qu : ya - qu + 1]
