@@ -32,7 +32,7 @@ BEGIN {
     xr[1] += $1
     xr[2] += $2
   }
-  ya = math_max(xr) / pa * 100
+  ya = mt_max(xr) / pa * 100
   if (ya >= 100) zu = 100
   else if (ya >= 10) zu = 10
   else zu = 1
@@ -41,6 +41,6 @@ BEGIN {
   printf "old tag lines = %d\n", pa
   printf "new tag insertions = %d\n", xr[1]
   printf "new tag deletions = %d\n", xr[2]
-  printf "%d/%d = %d%\n", math_max(xr), pa, ya
+  printf "%d/%d = %d%\n", mt_max(xr), pa, ya
   printf "new tag = %s\n", tag(zu * mt_div(zu + ki, zu))
 }
