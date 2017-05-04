@@ -8,7 +8,7 @@ BEGIN {
   ARGC = 0
   qu["", "g - good", "b - bad"]
   while (1) {
-    xr = math_div(arr_sum(ARGV), 2)
+    xr = mt_div(arr_sum(ARGV), 2)
     if (ya[xr]++)
       break
     printf ARGV[1] ~ /[xX]/ ? "\n%X\n" : "\n%d\n", xr

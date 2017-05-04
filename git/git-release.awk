@@ -2,7 +2,7 @@
 function tag(expr,   br, ec) {
   OFS = "."
   for (br = 100; br >= 1; br /= 10) {
-    $++ec = math_div(expr, br)
+    $++ec = mt_div(expr, br)
     expr %= br
   }
   return $0
@@ -42,5 +42,5 @@ BEGIN {
   printf "new tag insertions = %d\n", xr[1]
   printf "new tag deletions = %d\n", xr[2]
   printf "%d/%d = %d%\n", math_max(xr), pa, ya
-  printf "new tag = %s\n", tag(zu * math_div(zu + ki, zu))
+  printf "new tag = %s\n", tag(zu * mt_div(zu + ki, zu))
 }
