@@ -12,4 +12,5 @@ GraphicsMagick
 VIPS
 ==========================
 - Native: bytes 21,169,650
+- http://github.com/jcupitt/libvips/issues/653
 - http://github.com/jcupitt/libvips/issues/652
