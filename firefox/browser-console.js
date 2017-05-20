@@ -19,8 +19,6 @@ qu = {
   'browser.tabs.delayHidingAudioPlayingIconMS': 0,
   // title bar
   'browser.tabs.drawInTitlebar': false,
-  // multiprocess windows
-  'browser.tabs.remote.autostart.2': false,
   // jumplist setting
   'browser.taskbar.lists.enabled': false,
   // disable URL autocomplete
