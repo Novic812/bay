@@ -41,6 +41,8 @@ qu = {
   'geo.enabled': false,
   // play gifs
   'image.animation_mode': 'once',
+  // disable GPU process
+  'layers.gpu-process.enabled': false,
   // reader view
   'reader.parse-on-load.enabled': false,
   // need this to use bookmarklets @ github.com
