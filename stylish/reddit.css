@@ -16,7 +16,9 @@
     line-height: 20px !important;
     margin-bottom: 10px !important;
   }
-  .nestedlisting > .thing {
+  .thing {
+    background: white !important;
+  } .nestedlisting > .thing {
     background: aliceblue !important;
   }
   .usertext-edit, textarea {
