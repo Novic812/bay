@@ -17,7 +17,7 @@
     margin-bottom: 10px !important;
   }
   .nestedlisting > .thing {
-    border-color: red !important;
+    border: 2px solid plum !important;
   }
   .usertext-edit, textarea {
     min-width: 90% !important;
