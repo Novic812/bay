@@ -16,10 +16,13 @@
     line-height: 20px !important;
     margin-bottom: 10px !important;
   }
-  .thing {
-    background: white !important;
-  } .nestedlisting > .thing {
-    background: aliceblue !important;
+  .nestedlisting > .thing {
+    padding: 0 !important;
+  }
+  .nestedlisting > .thing > .entry {
+    border-left: 1em solid plum !important;
+    padding-left: 1em !important;
+    margin: 0 !important;
   }
   .usertext-edit, textarea {
     min-width: 90% !important;
