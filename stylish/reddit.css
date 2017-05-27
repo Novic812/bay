@@ -5,7 +5,8 @@
   .down {
     display: block !important;
   }
-  .goldvertisement, .recommended-link, .sidebox:not(.create):not(.submit) {
+  .goldvertisement, .recommended-link, .sidebox:not(.create):not(.submit),
+  .thing::before {
     display: none !important;
   }
   .md a:hover {
@@ -20,9 +21,12 @@
     padding: 0 !important;
   }
   .nestedlisting > .thing > .entry {
-    border-left: 1em solid plum !important;
-    padding-left: 1em !important;
+    border-left: 10px solid plum !important;
+    padding-left: 4px !important;
     margin: 0 !important;
+  }
+  .nestedlisting > .thing > .midcol {
+    margin: 4px !important;
   }
   .usertext-edit, textarea {
     min-width: 90% !important;
