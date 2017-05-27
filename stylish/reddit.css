@@ -1,6 +1,12 @@
 @-moz-document domain(reddit.com) {
-  body {
-    background-image: none !important;
+  .dislikes {
+    opacity: .3 !important;
+  }
+  .down {
+    display: block !important;
+  }
+  .goldvertisement, .recommended-link, .sidebox:not(.create):not(.submit) {
+    display: none !important;
   }
   .md a:hover {
     color: #ff862c !important
@@ -10,16 +16,13 @@
     line-height: 20px !important;
     margin-bottom: 10px !important;
   }
-  .down {
-    display: block !important;
-  }
-  .dislikes {
-    opacity: .3 !important;
-  }
-  .goldvertisement, .recommended-link, .sidebox:not(.create):not(.submit) {
-    display: none !important;
+  .nestedlisting > .thing {
+    border-color: red !important;
   }
   .usertext-edit, textarea {
     min-width: 90% !important;
+  }
+  body {
+    background-image: none !important;
   }
 }
