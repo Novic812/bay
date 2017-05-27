@@ -17,12 +17,9 @@
     margin-bottom: 10px !important;
   }
   .nestedlisting > .thing {
-    background: beige !important;
+    background: aliceblue !important;
   }
   .usertext-edit, textarea {
     min-width: 90% !important;
-  }
-  body {
-    background-image: none !important;
   }
 }
