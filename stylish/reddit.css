@@ -28,7 +28,13 @@
   .nestedlisting > .thing > .midcol {
     margin: 4px !important;
   }
-  .usertext-edit, textarea {
-    min-width: 90% !important;
+  .usertext-edit {
+    width: auto !important;
+  }
+  .usertext-edit .md {
+    display: flex !important;
+  }
+  textarea {
+    flex: 1 !important;
   }
 }
