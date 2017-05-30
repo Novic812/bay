@@ -33,9 +33,7 @@ BEGIN {
     xr[2] += $2
   }
   ya = mt_max(xr) / pa * 100
-  if (ya >= 100) zu = 100
-  else if (ya >= 10) zu = 10
-  else zu = 1
+  zu = ya >= 100 ? 100 : ya >= 10 ? 10 : 1
   gsub(/[^[:digit:]]/, "", ki)
   printf "old tag = %s\n", tag(ki)
   printf "old tag lines = %d\n", pa
