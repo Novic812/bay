@@ -19,11 +19,12 @@
   .nestedlisting > .thing {
     border-top: 1em solid plum !important;
   }
-  .usertext-edit {
+  .usertext-edit, textarea {
     width: auto !important;
   }
   .usertext-edit .md {
     display: flex !important;
+    max-width: none !important;
   }
   textarea {
     flex: 1 !important;
