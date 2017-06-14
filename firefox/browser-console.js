@@ -43,6 +43,8 @@ qu = {
   'image.animation_mode': 'once',
   // disable GPU process
   'layers.gpu-process.enabled': false,
+  // disable HTTP referrer
+  'network.http.sendRefererHeader': 0,
   // reader view
   'reader.parse-on-load.enabled': false,
   // need this to use bookmarklets @ github.com
