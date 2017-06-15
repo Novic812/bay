@@ -41,8 +41,6 @@ qu = {
   'geo.enabled': false,
   // play gifs
   'image.animation_mode': 'once',
-  // disable GPU process
-  'layers.gpu-process.enabled': false,
   // disable HTTP referrer
   'network.http.sendRefererHeader': 0,
   // reader view
