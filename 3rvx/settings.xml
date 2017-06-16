@@ -1,7 +1,7 @@
-<settings>  
+<settings>
   <skin>Windows Default</skin>
   <hotkeys>
-    <hotkey combination="431" action="Increase Volume"/>
-    <hotkey combination="430" action="Decrease Volume"/>
+    <hotkey combination="289" action="Increase Volume"/>
+    <hotkey combination="290" action="Decrease Volume"/>
   </hotkeys>
 </settings>
