@@ -55,12 +55,12 @@ xr = {number: 'setIntPref', boolean: 'setBoolPref', string: 'setCharPref'};
 ya = Services.prefs;
 ya.resetUserPrefs();
 
-for (zu in qu) {
-  if (!ya.getPrefType(zu)) {
-    console.log(zu + ': PREF_INVALID');
+for ([ky, vu] of Object.entries(qu)) {
+  if (!ya.getPrefType(ky)) {
+    console.log(ky + ': PREF_INVALID');
   }
-  ya[xr[typeof qu[zu]]](zu, qu[zu]);
-  if (!ya.prefHasUserValue(zu)) {
-    console.log(zu + ': PREF_DEFAULT');
+  ya[xr[typeof vu]](ky, vu);
+  if (!ya.prefHasUserValue(ky)) {
+    console.log(ky + ': PREF_DEFAULT');
   }
 }
