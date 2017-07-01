@@ -1,72 +1,72 @@
 * * 3p-script block
 
-# alternativeto.net
+# http://alternativeto.net
 * jsdelivr.net * noop
 
-# avclub.com
+# http://avclub.com
 * onionstatic.com * noop
 
-# bandcamp.com
+# http://bandcamp.com
 * bcbits.com * noop
 
-# bankofamerica.com
+# http://bankofamerica.com
 * bac-assets.com * noop
 
-# facebook.com
+# http://facebook.com
 * fbcdn.net * noop
 
-# gfycat.com
+# http://gfycat.com
 * ampproject.org * noop
 
-# github.io
+# http://github.io
 * bootstrapcdn.com * noop
 
-# google.com
+# http://google.com
 * gstatic.com * noop
 
-# msnbc.com
+# http://msnbc.com
 * nbcnews.com * noop
 * s-nbcnews.com * noop
 * theplatform.com * noop
 
-# musicbrainz.org
+# http://musicbrainz.org
 * staticbrainz.org * noop
 
-# musicplayer.io
+# http://musicplayer.io
 * ravenjs.com * noop
 * reddit.com * noop
 * soundcloud.com * noop
 * youtube.com * noop
 
-# nowness.com
+# http://nowness.com
 * brightcove.net * noop
 
-# reddit.com
+# http://reddit.com
 * redditstatic.com * noop
 
-# soundcloud.com
+# http://soundcloud.com
 * sndcdn.com * noop
 
-# stackexchange.com
+# http://stackexchange.com
 * googleapis.com * noop
 * sstatic.net * noop
 * stacksnippets.net * noop
 
-# trakt.tv
+# http://trakt.tv
 * cloudflare.com * noop
 
-# vimeo.com
+# http://vimeo.com
 * vimeocdn.com * noop
 
-# washingtonpost.com
+# http://washingtonpost.com
 * cloudfront.net * noop
 * polyfill.io * noop
 
-# watchcommunity.tv
+# http://watchcommunity.tv
 * jquery.com * noop
 * wpplayer.org * noop
 
-# youtube.com
+# http://youtube.com
 * google.com * noop
 * rawgit.com * noop
 * ytimg.com * noop
