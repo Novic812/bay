@@ -15,8 +15,8 @@ qu = {
   'browser.startup.homepage_override.mstone': 'ignore',
   // show windows and tabs from last time
   'browser.startup.page': 3,
-  // disable delay hiding mute tab
-  'browser.tabs.delayHidingAudioPlayingIconMS': 0,
+  // disable mute tab
+  'browser.tabs.showAudioPlayingIcon': false,
   // title bar
   'browser.tabs.drawInTitlebar': false,
   // jumplist setting
