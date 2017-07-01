@@ -38,6 +38,10 @@
 * soundcloud.com * noop
 * youtube.com * noop
 
+# http://newsweek.com
+* jwpcdn.com * noop
+* jwplatform.com * noop
+
 # http://nowness.com
 * brightcove.net * noop
 
