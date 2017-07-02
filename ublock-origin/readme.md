@@ -14,7 +14,7 @@
 
 # http://cnn.com
 * cnn.io * noop
-* zqtk.net * noop
+* turner.com * noop
 
 # http://facebook.com
 * fbcdn.net * noop
