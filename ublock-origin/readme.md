@@ -12,6 +12,10 @@
 # http://bankofamerica.com
 * bac-assets.com * noop
 
+# http://cnn.com
+* cnn.io * noop
+* zqtk.net * noop
+
 # http://facebook.com
 * fbcdn.net * noop
 
