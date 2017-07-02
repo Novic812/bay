@@ -60,6 +60,10 @@
 * sstatic.net * noop
 * stacksnippets.net * noop
 
+# http://thehill.com
+* twimg.com * noop
+* twitter.com * noop
+
 # http://trakt.tv
 * cloudflare.com * noop
 
