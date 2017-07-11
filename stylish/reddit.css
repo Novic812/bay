@@ -29,4 +29,12 @@
   .usertext-edit textarea {
     flex: 1 !important;
   }
+  [href="/domain/cnn.com/"], [href="/domain/msnbc.com/"],
+  [href="/domain/newsweek.com/"], [href="/domain/thehill.com/"],
+  [href="/domain/washingtonpost.com/"] {
+    background: peru !important;
+    border-radius: 3px !important;
+    color: white !important;
+    padding: 3px !important;
+  }
 }
