@@ -62,7 +62,9 @@
 * stacksnippets.net * noop
 
 # http://thehill.com
+* abcnews.com * noop
 * adobedtm.com * noop
+* akamaihd.net * noop
 * twimg.com * noop
 * twitter.com * noop
 
