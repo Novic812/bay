@@ -38,10 +38,10 @@
   .header {
     background: #f5f5f5 !important;
   }
-  .header-logo-invertocat, .header-nav-link {
+  .header-logo-invertocat, .header-navlink {
     color: #555 !important;
   }
-  .header-logo-invertocat:hover, .header-nav-link:hover {
+  .header-logo-invertocat:hover, .header-navlink:hover {
     color: #4078c0 !important;
   }
   .form-control  {
