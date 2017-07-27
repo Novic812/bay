@@ -12,6 +12,10 @@
 # http://bankofamerica.com
 * bac-assets.com * noop
 
+# http://cbsnews.com
+* cbsistatic.com * noop
+* tiqcdn.com * noop
+
 # http://cnn.com
 * amazonaws.com * noop
 * cnn.io * noop
