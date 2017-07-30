@@ -98,13 +98,17 @@ MPlayer
 =======
 video
 
+Museeks
+=======
+http://github.com/KeitIG/museeks/issues/268
+
 MusicBee
 ========
 good?
 
 Musique
 =======
-https://github.com/flaviotordini/musique/issues/14
+http://github.com/flaviotordini/musique/issues/14
 
 Nightingale
 ===========
