@@ -134,6 +134,10 @@ Quod Libet
 ==========
 ID3 2.4 only - http://github.com/quodlibet/quodlibet/issues/160
 
+Soube
+=====
+http://github.com/DracotMolver/Soube/issues/10
+
 SPlayer
 =======
 video
