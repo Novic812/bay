@@ -53,7 +53,7 @@ video
 
 Exaile
 ======
-requires gStreamer 106 MB
+http://github.com/exaile/exaile/issues/422
 
 Foobnix
 =======
