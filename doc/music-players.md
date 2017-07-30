@@ -64,7 +64,7 @@ old
 
 Jajuk
 =====
-not Windows
+requires Java Runtime Environment
 
 JuK
 ===
