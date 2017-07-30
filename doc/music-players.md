@@ -1,71 +1,62 @@
-
-foobar2000
-==========
-ratings suck
-
-Clementine
-==========
-http://github.com/clementine-player/Clementine/issues/3666
-
 AIMP
 ====
 no POPM
-
-MusicBee
-========
-good?
 
 Amarok
 ======
 old - http://download.kde.org/stable/amarok
 
+Aqualung
+========
+not Windows
+
 Audacious
 =========
 no ratings - http://redmine.audacious-media-player.org/issues/524
 
-Tomahawk
+Cineplay
 ========
-http://github.com/tomahawk-player/tomahawk/issues/555
+video
 
-Quod Libet
+Clementine
 ==========
-ID3 2.4 only - http://github.com/quodlibet/quodlibet/issues/160
+http://github.com/clementine-player/Clementine/issues/3666
 
-MPC-BE
-======
-video
-
-UMPlayer
+Cmdradio
 ========
-video
+command line
 
-gPodder
+Cuberok
 =======
-podcasts
+old
 
-Nightingale
-===========
-old - http://github.com/nightingale-media-player/nightingale-hacking/releases
+DeKiBulle
+=========
+old
 
-SPlayer
-=======
-video
+Dopamine
+========
+http://github.com/digimezzo/Dopamine/issues/151
 
 Exaile
 ======
 http://github.com/exaile/exaile/issues/422
 
+foobar2000
+==========
+ratings suck
+
 Foobnix
 =======
 old - http://foobnix.com/en/download
 
-Qmmp
+Gmpc
 ====
-awful GUI
+old
 
-Meridian
-========
-vk.com
+gPodder
+=======
+podcasts
 
 Jaangle
 =======
@@ -75,73 +66,85 @@ Jajuk
 =====
 not Windows
 
-MPlayer
-=======
-video
-
-Gmpc
-====
-old
-
-qAIO
-====
-old
+JuK
+===
+not Windows
 
 Kantaris
 ========
 video
 
-Aqualung
-========
-not Windows
-
-plaYUVer
-========
-video
-
-Dopamine
-========
-http://github.com/digimezzo/Dopamine/issues/151
-
-Cineplay
-========
-video
-
-Cuberok
-=======
+KISS Player
+===========
 old
-
-Cmdradio
-========
-command line
-
-JuK
-===
-not Windows
 
 KnowTheList
 ===========
 party
 
-KISS Player
-===========
-old
+mc2
+============
+discontinued
 
-DeKiBulle
-=========
-old
+Meridian
+========
+vk.com
 
-Tiny PLayer
+MPC-BE
+======
+video
+
+MPlayer
+=======
+video
+
+MusicBee
+========
+good?
+
+Musique
+=======
+https://github.com/flaviotordini/musique/issues/14
+
+Nightingale
 ===========
-old
+old - http://github.com/nightingale-media-player/nightingale-hacking/releases
 
 okPlayer
 ========
 SourceForge
 
-mc2
-===
-discontinued
+plaYUVer
+========
+video
+
+qAIO
+====
+old
+
+Qmmp
+====
+awful GUI
+
+Quod Libet
+==========
+ID3 2.4 only - http://github.com/quodlibet/quodlibet/issues/160
+
+SPlayer
+=======
+video
+
+Tiny PLayer
+===========
+old
+
+Tomahawk
+========
+http://github.com/tomahawk-player/tomahawk/issues/555
+
+UMPlayer
+========
+video
 
 Waf Music Manager
 =================
