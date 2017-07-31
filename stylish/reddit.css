@@ -29,9 +29,9 @@
   .usertext-edit textarea {
     flex: 1 !important;
   }
-  [href="/domain/cbsnews.com/"], [href="/domain/cnn.com/"],
-  [href="/domain/msnbc.com/"], [href="/domain/newsweek.com/"],
-  [href="/domain/thehill.com/"], [href="/domain/washingtonpost.com/"] {
+  [href$="cbsnews.com/"], [href$="cnn.com/"], [href$="msnbc.com/"],
+  [href$="newsweek.com/"], [href$="thehill.com/"],
+  [href$="washingtonpost.com/"] {
     background: peru !important;
     border-radius: 3px !important;
     color: white !important;
