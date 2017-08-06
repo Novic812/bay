@@ -86,9 +86,6 @@
 * jquery.com * noop
 * wpplayer.org * noop
 
-# http://watchparksandrecreation.net
-* imagecoin.net * noop
-
 # http://youtube.com
 * google.com * noop
 * rawgit.com * noop
