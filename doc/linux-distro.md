@@ -6,8 +6,8 @@
 5. Antergos - 1.7 GB
 6. openSUSE - GNOME
 7. deepin - deepin
-8. **Fedora - 936 MB**
-9. Zorin - purchase
+8. **Fedora - 936 MB - DNF - NO DASH**
+9. Zorin - 1.5 GB
 10. elementary - pantheon
 11. Solus - 1.2 GB
 12. PCLinuxOS - 1.3 GB
@@ -19,7 +19,7 @@
 18. Kali - GNOME
 19. Mageia - 1.9 GB
 20. KDE neon - KDE
-21. **Lubuntu - 912 MB**
+21. **Lubuntu - 912 MB - APT - DASH**
 22. LXLE - SourceForge
 23. antiX - 1.1 GB
 24. Ubuntu MATE - 1.7 GB
@@ -88,4 +88,4 @@
 87. Ubuntu DP - website is a piece of shit
 88. Vector - not live
 89. siduction - 1.1 GB
-90. **Trisquel - 609 MB**
+90. **Trisquel - 609 MB - APT - DASH**
