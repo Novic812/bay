@@ -33,11 +33,6 @@
 # http://google.com
 * gstatic.com * noop
 
-# http://msnbc.com
-* nbcnews.com * noop
-* s-nbcnews.com * noop
-* theplatform.com * noop
-
 # http://musicbrainz.org
 * staticbrainz.org * noop
 
