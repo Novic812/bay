@@ -2,7 +2,7 @@
 1. Mint - 1.4 GB
 2. Debian - 1.8 GB
 3. Manjaro - SourceForge
-4. Ubuntu - GNOME
+4. Ubuntu - 1.5 GB
 5. Antergos - 1.7 GB
 6. openSUSE - GNOME
 7. deepin - deepin
