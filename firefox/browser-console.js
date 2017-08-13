@@ -31,6 +31,8 @@ qu = {
   'datareporting.policy.dataSubmissionPolicyBypassNotification': true,
   // browser console
   'devtools.chrome.enabled': true,
+  // disable notifications
+  'dom.push.enabled': false,
   // disable pocket
   'extensions.pocket.enabled': false,
   // congratulations, you've installed stylish
