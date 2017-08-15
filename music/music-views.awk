@@ -1,6 +1,6 @@
 #!/usr/local/bin/awklib -f
 function vpt(view, td, ts, prec) {
-  return sprintf("%\47.0f views / %\47.*f %ss = %\47.0f",
+  printf("%\47.0f views / %\47.*f %ss = %\47.0f\n",
   view, prec, td, ts, view / td)
 }
 BEGIN {
@@ -19,8 +19,15 @@ BEGIN {
       ch = tm_now() - tm_date(json_parse($0, "created_at"))
     }
   }
-  print vpt(br, ch / tm_day(365.25), "year", 3)
-  print vpt(br, ch / tm_day(1), "day")
-  print vpt(br, ch / tm_hour(1), "hour")
-  print vpt(br, ch / tm_minute(1), "minute")
+  if (br / ch < 1250000 / tm_day(365.25)) {
+    printf "\33[1;32m"
+  }
+  else {
+    printf "\33[1;31m"
+  }
+  vpt(br, ch / tm_day(365.25), "year", 3)
+  vpt(br, ch / tm_day(1), "day")
+  vpt(br, ch / tm_hour(1), "hour")
+  vpt(br, ch / tm_minute(1), "minute")
+  printf "\33[m"
 }
