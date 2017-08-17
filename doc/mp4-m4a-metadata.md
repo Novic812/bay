@@ -1,7 +1,8 @@
 
 Tag Editor
-==============================================
-http://github.com/Martchus/tageditor/issues/15
+================================================
+- http://github.com/Martchus/tageditor/issues/21
+- http://github.com/Martchus/tageditor/issues/15
 
 Operon
 ===================================================
