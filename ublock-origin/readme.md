@@ -33,14 +33,12 @@
 # http://google.com
 * gstatic.com * noop
 
+# http://huffingtonpost.com
+* huffpost.com * noop
+* youtube.com * noop
+
 # http://musicbrainz.org
 * staticbrainz.org * noop
-
-# http://musicplayer.io
-* ravenjs.com * noop
-* reddit.com * noop
-* soundcloud.com * noop
-* youtube.com * noop
 
 # http://newsweek.com
 * jwpcdn.com * noop
