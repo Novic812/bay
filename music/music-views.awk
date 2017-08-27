@@ -19,6 +19,7 @@ BEGIN {
       ch = tm_now() - tm_date(json_parse($0, "created_at"))
     }
   }
+  # youtube.com/watch?v=ZWmrfgj0MZI
   printf br / ch < 4400000 / tm_day(365.25) ? "\33[1;32m" : "\33[1;31m"
   vpt(br, ch / tm_day(365.25), "year", 3)
   vpt(br, ch / tm_day(1), "day")
