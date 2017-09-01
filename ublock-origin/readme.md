@@ -65,6 +65,7 @@
 * akamaihd.net * noop
 * mediamatters.org * noop
 * newsinc.com * noop
+* newsinc.com * noop
 * twimg.com * noop
 * twitter.com * noop
 
