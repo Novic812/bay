@@ -69,6 +69,9 @@
 * twimg.com * noop
 * twitter.com * noop
 
+# http://thinkprogress.org
+* ampproject.net * noop
+
 # http://trakt.tv
 * cloudflare.com * noop
 
