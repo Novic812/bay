@@ -47,6 +47,9 @@
 # http://nowness.com
 * brightcove.net * noop
 
+# http://oddshot.tv
+* akamaized.net * noop
+
 # http://reddit.com
 * redditstatic.com * noop
 
