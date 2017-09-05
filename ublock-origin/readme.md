@@ -3,9 +3,6 @@
 # http://alternativeto.net
 * jsdelivr.net * noop
 
-# http://avclub.com
-* onionstatic.com * noop
-
 # http://bandcamp.com
 * bcbits.com * noop
 
