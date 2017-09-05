@@ -35,8 +35,6 @@ qu = {
   'dom.push.enabled': false,
   // disable pocket
   'extensions.pocket.enabled': false,
-  // congratulations, you've installed stylish
-  'extensions.stylish.firstRun': 1,
   // about:config warning
   'general.warnOnAboutConfig': false,
   // share your location
