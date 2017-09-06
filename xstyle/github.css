@@ -104,14 +104,6 @@
   }
   /* blue */
   a {
-    color: #4078c0; /* do not mark important */
-  }
-  .subset-files-tab, .btn-outline, .btn-link,
-  .notification-actions .btn-link:hover, .timeline-comment-action:hover,
-  .discussion-item-help:hover, .link-gray-dark:hover, .toolbar-item:hover,
-  .btn-octicon:hover, .title-link:hover, .muted-link:hover, .commit-id:hover,
-  .tabnav-extra:hover, .social-count:hover, .menu-target:hover, .message:hover,
-  .numbers-summary a:hover, .timeline-comment-action:focus, .menu-target:focus {
     color: #4078c0 !important;
   }
   .bg-blue, .filter-item.selected, .select-menu-item.navigation-focus,
