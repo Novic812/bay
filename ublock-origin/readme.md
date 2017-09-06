@@ -83,6 +83,7 @@
 
 # http://watchcommunity.tv
 * jquery.com * noop
+* watchf1.tv * noop
 * wpplayer.org * noop
 
 # http://youtube.com
