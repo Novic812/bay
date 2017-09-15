@@ -32,6 +32,7 @@
 
 # http://huffingtonpost.com
 * huffpost.com * noop
+* vidible.tv * noop
 * youtube.com * noop
 
 # http://musicbrainz.org
