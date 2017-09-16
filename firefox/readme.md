@@ -19,4 +19,5 @@ http://bugzilla.mozilla.org/show_bug.cgi?id=855899
 
 resetUserPrefs
 --------------
-http://developer.mozilla.org/docs/Mozilla/Tech/XPCOM/Reference/Interface/nsIPrefService
+- http://developer.mozilla.org/docs/Mozilla/Tech/XPCOM/Reference/Interface/nsIPrefService
+- http://developer.mozilla.org/docs/Mozilla/JavaScript_code_modules/Services.jsm
