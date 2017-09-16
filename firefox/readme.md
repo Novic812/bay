@@ -1,30 +1,25 @@
-
-Start with Profile Manager
---------------------------
+[Start with Profile Manager][clo]
+---------------------------------
 
 ~~~
 firefox -P
 ~~~
 
-http://developer.mozilla.org/docs/Mozilla/Command_Line_Options
-
-Bypass Profile Manager and launch application with a profile
-------------------------------------------------------------
+[Bypass Profile Manager and launch application with a profile][855899]
+----------------------------------------------------------------------
 
 ~~~
 firefox -no-remote -P November
 ~~~
 
-http://bugzilla.mozilla.org/show_bug.cgi?id=855899
-
-http://developer.mozilla.org/docs/Mozilla/JavaScript_code_modules/Services.jsm
-------------------------------------------------------------------------------
+[Services.jsm][srvc]
+--------------------
 - Services.io
 - Services.perms
 - Services.prefs
 
-http://developer.mozilla.org/docs/Mozilla/Tech/XPCOM/Reference/Interface/nsIPrefService
---------------------------------------------------------------------------------
+[nsIPrefService][pref]
+----------------------------
 - Services.prefs.getPrefType
 - Services.prefs.prefHasUserValue
 - Services.prefs.resetUserPrefs
@@ -32,10 +27,22 @@ http://developer.mozilla.org/docs/Mozilla/Tech/XPCOM/Reference/Interface/nsIPref
 - Services.prefs.setCharPref
 - Services.prefs.setIntPref
 
-http://developer.mozilla.org/docs/Mozilla/Tech/XPCOM/Reference/Interface/nsIPermissionManager
---------------------------------------------------------------------------------
+[nsIPermissionManager][perm]
+----------------------------
 Services.perms.add
 
-http://developer.mozilla.org/docs/Mozilla/Tech/XPCOM/Reference/Interface/nsIIOService
---------------------------------------------------------------------------------
+[nsIIOService][io]
+------------------
 Services.io.newURI
+
+[855899]:
+//bugzilla.mozilla.org/show_bug.cgi?id=855899
+[clo]:
+//developer.mozilla.org/docs/mozilla/command_line_options
+[io]:
+//developer.mozilla.org/docs/mozilla/tech/xpcom/reference/interface/nsiioservice
+[perm]:
+//developer.mozilla.org/docs/mozilla/tech/xpcom/reference/interface/nsipermissionmanager
+[pref]:
+//developer.mozilla.org/docs/mozilla/tech/xpcom/reference/interface/nsiprefservice
+[srvc]://developer.mozilla.org/docs/Mozilla/JavaScript_code_modules/Services.jsm
