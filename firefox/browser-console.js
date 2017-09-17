@@ -52,15 +52,17 @@ qu = {
 };
 
 xr = {number: 'setIntPref', boolean: 'setBoolPref', string: 'setCharPref'};
-ya = Services.prefs;
-ya.resetUserPrefs();
+sr = Services;
+sr.prefs.resetUserPrefs();
 
 for ([ky, vu] of Object.entries(qu)) {
-  if (!ya.getPrefType(ky)) {
+  if (!sr.prefs.getPrefType(ky)) {
     console.log(ky + ': PREF_INVALID');
   }
-  ya[xr[typeof vu]](ky, vu);
-  if (!ya.prefHasUserValue(ky)) {
+  sr.prefs[xr[typeof vu]](ky, vu);
+  if (!sr.prefs.prefHasUserValue(ky)) {
     console.log(ky + ': PREF_DEFAULT');
   }
 }
+
+sr.perms.add(sr.io.newURI('https://www.google.com'), 'cookie', 2);
