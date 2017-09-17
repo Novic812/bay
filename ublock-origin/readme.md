@@ -83,6 +83,7 @@
 * polyfill.io * noop
 
 # http://watchcommunity.tv
+* embedtvseries.com * noop
 * jquery.com * noop
 * watchf1.tv * noop
 * wpplayer.org * noop
