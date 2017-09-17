@@ -39,8 +39,8 @@ Services.io.newURI
 //bugzilla.mozilla.org/show_bug.cgi?id=855899
 [clo]:
 //developer.mozilla.org/docs/mozilla/command_line_options
-[iosr]://
-developer.mozilla.org/docs/Mozilla/Tech/XPCOM/Reference/Interface/nsIIOService
+[iosr]:
+//developer.mozilla.org/docs/Mozilla/Tech/XPCOM/Reference/Interface/nsIIOService
 [perm]:
 //developer.mozilla.org/docs/mozilla/tech/xpcom/reference/interface/nsipermissionmanager
 [pref]:
