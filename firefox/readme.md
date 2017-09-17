@@ -14,9 +14,12 @@ firefox -no-remote -P November
 
 [Services.jsm][srvc]
 --------------------
-- Services.io
 - Services.perms
 - Services.prefs
+
+[NetUtil.jsm][nttl]
+-------------------
+NetUtil.newURI
 
 [nsIPrefService][pref]
 ----------------------------
@@ -31,18 +34,15 @@ firefox -no-remote -P November
 ----------------------------
 Services.perms.add
 
-[nsIIOService][io]
-------------------
-Services.io.newURI
-
 [855899]:
 //bugzilla.mozilla.org/show_bug.cgi?id=855899
 [clo]:
 //developer.mozilla.org/docs/mozilla/command_line_options
-[io]:
-//developer.mozilla.org/docs/mozilla/tech/xpcom/reference/interface/nsiioservice
+[nttl]:
+//developer.mozilla.org/docs/mozilla/javascript_code_modules/netutil.jsm
 [perm]:
 //developer.mozilla.org/docs/mozilla/tech/xpcom/reference/interface/nsipermissionmanager
 [pref]:
 //developer.mozilla.org/docs/mozilla/tech/xpcom/reference/interface/nsiprefservice
-[srvc]://developer.mozilla.org/docs/Mozilla/JavaScript_code_modules/Services.jsm
+[srvc]:
+//developer.mozilla.org/docs/Mozilla/JavaScript_code_modules/Services.jsm
