@@ -2,10 +2,8 @@
   [aria-label="promo"] {
     display: none !important;
   }
-  /*
-  switch your default search engine to google
-  */
-  #pushdown {
+  /* switch your default search engine to google */
+  .gb_g {
     display: none !important;
   }
 }
