@@ -2,8 +2,8 @@
   [aria-label="promo"] {
     display: none !important;
   }
-  /* switch your default search engine to google */
-  .gb_g {
+  /* element: "switch your default search engine to google", bad: "gb_g" */
+  .gb_0c {
     display: none !important;
   }
 }
