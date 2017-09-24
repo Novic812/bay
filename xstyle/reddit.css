@@ -5,7 +5,8 @@
   .down {
     display: block !important;
   }
-  .goldvertisement, .recommended-link, .sidebox:not(.create):not(.submit) {
+  .goldvertisement, .hover-bubble, .recommended-link,
+  .sidebox:not(.create):not(.submit) {
     display: none !important;
   }
   .md a:hover {
