@@ -35,6 +35,10 @@
 * vidible.tv * noop
 * youtube.com * noop
 
+# http://msnbc.com
+* s-nbcnews.com * noop
+* theplatform.com * noop
+
 # http://musicbrainz.org
 * staticbrainz.org * noop
 
