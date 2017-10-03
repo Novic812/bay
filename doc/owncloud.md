@@ -26,13 +26,13 @@ http://hostiso.com/owncloud-hosting
 -----------------------------------
 not free
 
+http://landernetworks.mx
+------------------------
+spanish only
+
 http://ocloud.de
 ----------------
 3 GB
-
-landernetworks.mx
------------------
-spanish only
 
 http://owndrive.com
 -------------------
