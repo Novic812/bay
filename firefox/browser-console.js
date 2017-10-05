@@ -41,6 +41,8 @@ qu = {
   'geo.enabled': false,
   // play gifs
   'image.animation_mode': 'once',
+  // allow autoplay
+  'media.block-autoplay-until-in-foreground': false,
   // disable HTTP referrer
   'network.http.sendRefererHeader': 0,
   // reader view
