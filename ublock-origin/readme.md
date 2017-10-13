@@ -86,6 +86,7 @@
 
 # http://washingtonpost.com
 * cloudfront.net * noop
+* newrelic.com * noop
 * polyfill.io * noop
 
 # http://watchcommunity.tv
