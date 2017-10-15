@@ -9,6 +9,8 @@ qu = {
   'browser.onboarding.hidden': true,
   // keep ‘most visited’ from reappearing
   'browser.places.smartBookmarksVersion': 1,
+  // hide search with
+  'browser.search.hiddenOneOffs': 'Google',
   // do not provide search suggestions
   'browser.search.suggest.enabled': false,
   // Firefox is not currently set as your default browser
