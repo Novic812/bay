@@ -32,7 +32,7 @@ qu = {
   // browser console
   'devtools.chrome.enabled': true,
   // disable notifications
-  'dom.push.enabled': false,
+  'dom.webnotifications.enabled': false,
   // disable pocket
   'extensions.pocket.enabled': false,
   // about:config warning
