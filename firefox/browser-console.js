@@ -5,6 +5,8 @@ qu = {
   'browser.newtabpage.enabled': false,
   // disable new tab page
   'browser.newtabpage.introShown': true,
+  // new to firefox
+  'browser.onboarding.hidden': true,
   // keep ‘most visited’ from reappearing
   'browser.places.smartBookmarksVersion': 1,
   // do not provide search suggestions
