@@ -70,6 +70,7 @@
 * abcnews.com * noop
 * adobedtm.com * noop
 * akamaihd.net * noop
+* cbsnews.com * noop
 * kaltura.com * noop
 * mediamatters.org * noop
 * newsinc.com * noop
