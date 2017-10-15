@@ -53,7 +53,9 @@
 * akamaized.net * noop
 
 # http://reddit.com
+* paypalobjects.com * noop
 * redditstatic.com * noop
+* vid.me * noop
 
 # http://soundcloud.com
 * sndcdn.com * noop
