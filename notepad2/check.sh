@@ -8,4 +8,3 @@ sh_trace git clone --depth 1 git://github.com/svnpenn/a
 sh_trace cd a
 echo EDITOR >> readme.md
 sh_trace git commit -a
-sh_trace hub pull-request

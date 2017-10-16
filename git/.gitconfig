@@ -11,9 +11,6 @@ helper = store
 algorithm = histogram
 wsErrorHighlight = all
 
-[hub]
-protocol = https
-
 [push]
 default = current
 
