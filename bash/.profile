@@ -14,6 +14,7 @@ alias acc='x86_64-w64-mingw32-gcc -Wall -Wextra -Wconversion -pedantic -std=c11'
 alias agit='git --no-pager'
 alias agrep='grep -I --color --exclude .bash_history --exclude-dir .git'
 alias aod='od -tcx1'
+alias area='readlink -e'
 alias atar='tar --checkpoint-action "ttyout=%T \r"'
 stty -ixon
 
