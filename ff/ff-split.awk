@@ -22,10 +22,11 @@ $1 == "INDEX" && $2 {
 }
 END {
   for (wh in ro) {
-    zu["ffmpeg", "-v", "warning", "-stats", "-i", qu,
-    "-ss", ya[wh] (ya[wh + 1] ? "\34-to\34" ya[wh + 1] : ""),
-    "-b:a", "256k", "-movflags", "faststart", "-metadata", "track=" ro[wh],
-    "-metadata", "title=" xr[wh], ro[wh] FS xr[wh] ".m4a"]
-    sh_trace(arr_splice(zu))
+    delete zu
+    zu["ffmpeg", "-v", "warning", "-stats", "-i", qu, "-ss",
+    ya[wh] (ya[wh + 1] ? "\34-to\34" ya[wh + 1] : ""), "-b:a", "256k",
+    "-movflags", "faststart", "-metadata", "track=" ro[wh], "-metadata",
+    "title=" xr[wh], ro[wh] FS str_gsub("\\?", "", xr[wh]) ".m4a"]
+    sh_trace(arr_search(zu))
   }
 }
