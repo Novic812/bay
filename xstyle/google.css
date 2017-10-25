@@ -4,9 +4,9 @@
   }
   /*
   element: switch your default search engine to google
-  bad: gb_g, gb_3c
+  bad: gb_g, gb_3c, .gb_4c
   */
-  .gb_4c {
+  .gb_5c {
     display: none !important;
   }
 }
