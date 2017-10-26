@@ -1,0 +1,13 @@
+# -*- sh -*-
+
+# Turn off the stupid bell
+set bell-style visible
+
+# Ctrl →
+"\33[1;5C": forward-word
+
+# Ctrl ←
+"\33[1;5D": backward-word
+
+# Alt F4
+"\33\33[[D": "\4"

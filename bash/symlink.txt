@@ -1,0 +1,12 @@
+C:\Program Files\GPAC\mp4box.exe
+C:\Program Files\Mozilla Firefox\firefox.exe
+C:\Program Files\Notepad2\Notepad2.exe
+C:\Windows\System32\chcp.com
+C:\Windows\System32\ftp.exe
+C:\Windows\System32\msiexec.exe
+C:\Windows\System32\PING.EXE
+C:\Windows\System32\reg.exe
+C:\Windows\System32\rundll32.exe
+C:\Windows\System32\schtasks.exe
+C:\Windows\System32\setx.exe
+C:\Windows\System32\wbem\WMIC.exe

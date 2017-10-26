@@ -1,0 +1,19 @@
+[alias]
+dwo = diff --word-diff=color
+
+[color "diff"]
+meta = yellow bold
+
+[credential]
+helper = store
+
+[diff]
+algorithm = histogram
+wsErrorHighlight = all
+
+[push]
+default = current
+
+[user]
+email = svnpenn@gmail.com
+name = Steven Penny

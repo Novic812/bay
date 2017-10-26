@@ -1,0 +1,9 @@
+@-moz-document domain(youtube.com) {
+  .annotation, .ytp-cards-button, .ytp-cards-teaser, .video-annotations,
+  .ytp-ce-element {
+    display: none !important;
+  }
+  .yt-uix-tile-link:visited {
+    color: #551a8b !important;
+  }
+}

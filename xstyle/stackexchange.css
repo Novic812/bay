@@ -1,0 +1,26 @@
+@-moz-document domain(stackexchange.com), domain(stackoverflow.com),
+domain(superuser.com) {
+  /* hot network questions */
+  #hot-network-questions :visited,
+  /* featured on meta */
+  .community-bulletin :visited,
+  /* non tag links will be absolute, but might not include protocol */
+  .post-text [href*="//"]:visited,
+  /* search results */
+  .result-link :visited,
+  /* question > linked */
+  .sidebar-linked :visited,
+  /* question > related */
+  .sidebar-related :visited,
+  /* questions, exclude tag links */
+  .summary h3 :visited,
+  /* user > activity > votes */
+  .timeline-answers:visited,
+  /* user > activity > summary, exclude question title links */
+  .answer-hyperlink:visited,
+  .question-hyperlink :visited,
+  /* user > profile > newest posts */
+  .post-container :visited {
+    color: #551a8b !important;
+  }
+}
