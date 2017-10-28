@@ -39,6 +39,8 @@ qu = {
   'dom.webnotifications.enabled': false,
   // disable pocket
   'extensions.pocket.enabled': false,
+  // disable screenshots
+  'extensions.screenshots.disabled': true,
   // about:config warning
   'general.warnOnAboutConfig': false,
   // share your location
