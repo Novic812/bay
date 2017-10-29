@@ -3,7 +3,7 @@ PATH=/usr/local/bin:/usr/bin
 q=$PWD
 
 # local
-find /usr/local/bin -lname '*yacht*' -delete -print
+find /usr/local/bin -lname "$q/*" -delete -print
 
 # config
 for x in config/*
