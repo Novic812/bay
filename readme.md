@@ -22,6 +22,7 @@ Author
 ------------
 Steven Penny
 
-[xr]://raw.githubusercontent.com/svnpenn/bay/master/bay.jpg
-[ya]://github.com/svnpenn/stdlib
-[zu]://github.com/svnpenn/bay
+[protocol is needed for image to render]::
+[xr]:http://raw.githubusercontent.com/svnpenn/bay/master/bay.jpg
+[ya]:http://github.com/svnpenn/stdlib
+[zu]:http://github.com/svnpenn/bay
