@@ -23,7 +23,7 @@ do
 
   printf 'trying %d\n' "$z"
   cd "$2"
-  if ! grep --color -r -f /tmp/"$z"
+  if ! grep -r --color --exclude-dir .git -f /tmp/"$z"
   then echo 'no matches'
   fi
 
