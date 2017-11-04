@@ -1,7 +1,7 @@
 #!/bin/dash -e
 if [ "$#" != 4 ]
 then
-  echo 'header.sh <source> <dest> <header> <depth>'
+  echo 'header.sh <source> <dest> <pattern file> <depth>'
   exit 1
 fi
 
@@ -14,10 +14,11 @@ do
   z=$((q + 1))
 
   printf 'building %d\n' "$z"
-  cd "$1"
   if [ "$z" = 1 ]
-  then echo "$3"
-  else grep -r -l -f /tmp/"$q"
+  then cat "$3"
+  else
+    cd "$1"
+    grep -r -l -f /tmp/"$q"
   fi |
   sed 's/^/[<"]/' > /tmp/"$z"
 
