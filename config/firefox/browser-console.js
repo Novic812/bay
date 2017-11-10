@@ -1,4 +1,6 @@
 qu = {
+  // check for updates but let you choose to install them
+  'app.update.auto': false,
   // always ask me where to save files
   'browser.download.folderList': 0,
   // disable new tab page
