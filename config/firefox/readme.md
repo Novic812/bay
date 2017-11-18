@@ -1,3 +1,10 @@
+Disable HTTP referrer
+---------------------
+
+~~~js
+Services.prefs.setIntPref('network.http.sendRefererHeader', 0);
+~~~
+
 [Start with Profile Manager][clo]
 ---------------------------------
 
