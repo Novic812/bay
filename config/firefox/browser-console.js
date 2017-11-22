@@ -40,6 +40,8 @@ qu = {
   // browser console
   'devtools.chrome.enabled': true,
   // disable notifications
+  'dom.push.enabled': false,
+  // disable notifications
   'dom.webnotifications.enabled': false,
   // disable pocket
   'extensions.pocket.enabled': false,
