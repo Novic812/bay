@@ -24,7 +24,7 @@
 # http://gfycat.com
 * ampproject.org * noop
 
-# github.com
+# http://github.com
 * githubusercontent.com * noop
 
 # http://github.io
