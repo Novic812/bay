@@ -1,5 +1,8 @@
 Site | Note
 -----|-----
+4chan | Anonymous
+76chan | Discontinued
+7chan | No user page
 Allthink | No thumbnails
 Boardest | Board Suggestions
 Calbel | Image waiting to be approved
@@ -8,6 +11,7 @@ demcra | User page has nothing
 Diaspora | Cannot search post content
 Digg | It doesn't allow users to post content
 Ello | Infinite scroll
+Euclid's Prime | Discontinued
 Gab | Infinite scroll
 Grewpler | Problem loading page
 Hacker News | No thumbnails
@@ -20,6 +24,7 @@ Mastodon | No thumbnails
 Minds | Infinite scroll
 Musteus | Absolute shit website
 Panpact | Absolute shit website
+quippd | Discontinued
 Reddit | http://github.com/pushshift/api/issues/4
 Slashdot | No thumbnails
 Snapzu | Currently an invite only community
@@ -32,9 +37,6 @@ Tumblr | Infinite scroll
 Twitter | Infinite scroll
 vi.sualize.us | Discontinued
 Voat.co | Sorry, you are doing that too fast. Please try again in 1 minute
-4chan |
-76chan |
-7chan |
 ADZbuzz |
 Amuzament.net |
 AnyChan |
@@ -54,7 +56,6 @@ Domain Probe |
 Echo JS |
 Empeopled |
 entre news |
-Euclid's Prime |
 Ezefs |
 Facebook |
 Failory |
@@ -96,7 +97,6 @@ Qabna |
 qmpeople |
 QueryHome |
 quickrant |
-quippd |
 Rememble |
 Sebangsa |
 Snapy Coins |
