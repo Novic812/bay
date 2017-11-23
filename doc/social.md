@@ -1,105 +1,128 @@
-Allthink
--------------
-no thumbnails
-
-Boardest
------------------
-Board Suggestions
-
-Calbel
-----------------------------
-Image waiting to be approved
-
-Demcra
----------------------
-User page has nothing
-
-Diaspora
---------------------------
-Cannot search post content
-
-Ello
----------------
-infinite scroll
-
-Gab
----------------
-infinite scroll
-
-Grewpler
---------------------
-Problem loading page
-
-Hacker News
--------------
-no thumbnails
-
-Headcycle
------------------
-Requires 2 clicks
-
-Hubski
--------------
-no thumbnails
-
-Landesy
---------------------
-Cant make new topics
-
-Linkgum
--------------------------------------------------------------
-Hmm, you're doing that a bit too much. Please try again later
-
-LiveTalkie
--------------
-Walled garden
-
-Mastodon
--------------
-no thumbnails
-
-Minds
----------------
-infinite scroll
-
-Musteus
----------------------
-Absolute shit website
-
-Panpact
----------------------
-Absolute shit website
-
-Reddit
-----------------------------------------
-http://github.com/pushshift/api/issues/4
-
-Snapzu
-----------------------------------------------------------------
-currently an invite only community but we do have a waiting list
-
-Steemit
---------------------------------------
-You may only post once every 5 minutes
-
-TopTopic
--------------------------------------------------------------------------------
-Topic submissions are reviewed to prevent duplication of existing Topics and to
-encourage substance and creativity
-
-Trendiee
--------------------------------------------------------------------------------
-Your post is awaiting moderation. You can check the status of your post on your
-profile page
-
-Tumblr
----------------
-infinite scroll
-
-Twitter
----------------
-infinite scroll
-
-Voat
-----------------------------------------------------------------
-Sorry, you are doing that too fast. Please try again in 1 minute
+Site | Note
+-----|-----
+Allthink | No thumbnails
+Boardest | Board Suggestions
+Calbel | Image waiting to be approved
+Chttr.co | Infinite scroll
+demcra | User page has nothing
+Diaspora | Cannot search post content
+Ello | Infinite scroll
+Gab | Infinite scroll
+Grewpler | Problem loading page
+Hacker News | No thumbnails
+Headcycle | Requires 2 clicks
+Hubski | No thumbnails
+Landesy | Cant make new topics
+Linkgum | Hmm, you're doing that a bit too much. Please try again later
+LiveTalkie | Walled garden
+Mastodon | No thumbnails
+Minds | Infinite scroll
+Musteus | Absolute shit website
+Panpact | Absolute shit website
+Reddit | http://github.com/pushshift/api/issues/4
+Snapzu | Currently an invite only community
+Steemit | You may only post once every 5 minutes
+TopTopic | Topic submissions are reviewed to prevent duplication of existing
+Trendiee | Your post is awaiting moderation
+Tumblr | Infinite scroll
+Twitter | Infinite scroll
+Voat.co | Sorry, you are doing that too fast. Please try again in 1 minute
+4chan |
+76chan |
+7chan |
+ADZbuzz |
+Amuzament.net |
+AnyChan |
+BabyTwit |
+BGRGNDZ DB |
+BitAsker |
+Bitnation |
+Boardlerts |
+Canning Town News |
+Commentum |
+CornerHub |
+Criticl |
+Crowd |
+CuteFox |
+Digg |
+dirty.us |
+Domain Probe |
+Echo JS |
+Empeopled |
+entre news |
+Euclid's Prime |
+Ezefs |
+Facebook |
+Failory |
+Finspi |
+Flaru |
+ForumPromotion |
+Frizbee |
+Futurenet |
+GONG |
+Heimo |
+hibloo |
+iFunny |
+IMeYou |
+Indie Hackers |
+Infothread |
+JumzleR |
+Kliqqi |
+Known |
+Lainchan |
+Lambda the Ultimate |
+Latest.is |
+Linkibl |
+LiQUiD CheeZ |
+LOL Inside! |
+LWN.net |
+MetaFilter |
+Mewch |
+MeWe |
+NALIJ |
+Noiys |
+Noosfeer |
+Old Pluto |
+PissedChicken |
+Plag |
+Plerb |
+Plurk |
+PushdUp |
+Qabna |
+qmpeople |
+QueryHome |
+quickrant |
+quippd |
+Rememble |
+Sebangsa |
+Slashdot |
+Snapy Coins |
+SocialER |
+SocialNumber |
+SocialPage |
+Soup.io |
+Sproutr |
+Stack Exchange |
+StackTrender |
+Swarmr |
+Swervel |
+Telescope |
+ThatsJavaInfo |
+Thoughtifies |
+Thymble |
+Tokumei |
+Topick |
+Total Social |
+TOUT |
+Twii |
+Twincl |
+Upbeat |
+vi.sualize.us |
+Viadeo |
+Viralicious |
+WallKeeper |
+WHOT?! |
+WrongThink |
+ZapChain |
+ZeroMe |
+Zhopped |
