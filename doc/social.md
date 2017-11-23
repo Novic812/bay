@@ -6,6 +6,7 @@ Calbel | Image waiting to be approved
 Chttr.co | Infinite scroll
 demcra | User page has nothing
 Diaspora | Cannot search post content
+Digg | It doesn't allow users to post content
 Ello | Infinite scroll
 Gab | Infinite scroll
 Grewpler | Problem loading page
@@ -20,12 +21,16 @@ Minds | Infinite scroll
 Musteus | Absolute shit website
 Panpact | Absolute shit website
 Reddit | http://github.com/pushshift/api/issues/4
+Slashdot | No thumbnails
 Snapzu | Currently an invite only community
+Stack Exchange | asking specific questions and getting helpful answers
 Steemit | You may only post once every 5 minutes
+Telescope | Self-Hosted
 TopTopic | Topic submissions are reviewed to prevent duplication of existing
 Trendiee | Your post is awaiting moderation
 Tumblr | Infinite scroll
 Twitter | Infinite scroll
+vi.sualize.us | Discontinued
 Voat.co | Sorry, you are doing that too fast. Please try again in 1 minute
 4chan |
 76chan |
@@ -44,7 +49,6 @@ CornerHub |
 Criticl |
 Crowd |
 CuteFox |
-Digg |
 dirty.us |
 Domain Probe |
 Echo JS |
@@ -95,18 +99,15 @@ quickrant |
 quippd |
 Rememble |
 Sebangsa |
-Slashdot |
 Snapy Coins |
 SocialER |
 SocialNumber |
 SocialPage |
 Soup.io |
 Sproutr |
-Stack Exchange |
 StackTrender |
 Swarmr |
 Swervel |
-Telescope |
 ThatsJavaInfo |
 Thoughtifies |
 Thymble |
@@ -117,7 +118,6 @@ TOUT |
 Twii |
 Twincl |
 Upbeat |
-vi.sualize.us |
 Viadeo |
 Viralicious |
 WallKeeper |
