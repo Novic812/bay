@@ -18,6 +18,10 @@ Diaspora
 --------------------------
 Cannot search post content
 
+Ello
+---------------
+infinite scroll
+
 Gab
 ---------------
 infinite scroll
@@ -71,6 +75,10 @@ Trendiee
 -------------------------------------------------------------------------------
 Your post is awaiting moderation. You can check the status of your post on your
 profile page
+
+Tumblr
+---------------
+infinite scroll
 
 Twitter
 ---------------
