@@ -14,6 +14,14 @@ Demcra
 ---------------------
 User page has nothing
 
+Diaspora
+--------------------------
+Cannot search post content
+
+Gab
+---------------
+infinite scroll
+
 Hacker News
 -------------
 no thumbnails
@@ -33,6 +41,10 @@ Cant make new topics
 Linkgum
 -------------------------------------------------------------
 Hmm, you're doing that a bit too much. Please try again later
+
+Minds
+---------------
+infinite scroll
 
 Panpact
 ---------------------
