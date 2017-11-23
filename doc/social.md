@@ -26,6 +26,10 @@ Gab
 ---------------
 infinite scroll
 
+Grewpler
+--------------------
+Problem loading page
+
 Hacker News
 -------------
 no thumbnails
@@ -45,6 +49,10 @@ Cant make new topics
 Linkgum
 -------------------------------------------------------------
 Hmm, you're doing that a bit too much. Please try again later
+
+LiveTalkie
+-------------
+Walled garden
 
 Mastodon
 -------------
