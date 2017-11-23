@@ -46,9 +46,17 @@ Linkgum
 -------------------------------------------------------------
 Hmm, you're doing that a bit too much. Please try again later
 
+Mastodon
+-------------
+no thumbnails
+
 Minds
 ---------------
 infinite scroll
+
+Musteus
+---------------------
+Absolute shit website
 
 Panpact
 ---------------------
