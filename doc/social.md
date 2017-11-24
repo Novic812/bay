@@ -28,6 +28,7 @@ Hubski | No thumbnails
 Indie Hackers | Founders share the revenue numbers behind their profitable app
 Kliqqi | Download Kliqqi
 Lainchan | Imageboard package
+Lambda the Ultimate | Community blogging website about programming languages
 Landesy | Cant make new topics
 Latest.is | Automatic list of the 10 best links from Twitter right now
 Linkgum | Hmm, you're doing that a bit too much. Please try again later
@@ -41,6 +42,8 @@ Musteus | Absolute shit website
 Noosfeer | No user page
 Old Pluto | News search engine
 Panpact | Absolute shit website
+PissedChicken | Imageboard
+PushdUp | Discontinued
 Qabna | Imageboard
 quippd | Discontinued
 Reddit | http://github.com/pushshift/api/issues/4
@@ -50,6 +53,7 @@ Stack Exchange | asking specific questions and getting helpful answers
 Steemit | You may only post once every 5 minutes
 Telescope | Self-Hosted
 Thymble | Download
+Topick | Discontinued
 TopTopic | Topic submissions are reviewed to prevent duplication of existing
 Trendiee | Your post is awaiting moderation
 Tumblr | Infinite scroll
@@ -57,6 +61,7 @@ Twitter | Infinite scroll
 vi.sualize.us | Discontinued
 Voat.co | Sorry, you are doing that too fast. Please try again in 1 minute
 WallKeeper | Under Maintenance
+ZapChain | 403 Forbidden
 ADZbuzz |
 Amuzament.net |
 BabyTwit |
@@ -84,18 +89,15 @@ IMeYou |
 Infothread |
 JumzleR |
 Known |
-Lambda the Ultimate |
 LiQUiD CheeZ |
 LOL Inside! |
 Mewch |
 MeWe |
 NALIJ |
 Noiys |
-PissedChicken |
 Plag |
 Plerb |
 Plurk |
-PushdUp |
 qmpeople |
 QueryHome |
 quickrant |
@@ -113,7 +115,6 @@ Swervel |
 ThatsJavaInfo |
 Thoughtifies |
 Tokumei |
-Topick |
 Total Social |
 TOUT |
 Twii |
@@ -123,6 +124,5 @@ Viadeo |
 Viralicious |
 WHOT?! |
 WrongThink |
-ZapChain |
 ZeroMe |
 Zhopped |
