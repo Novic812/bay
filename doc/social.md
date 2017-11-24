@@ -9,6 +9,7 @@ Boardest | Board Suggestions
 Calbel | Image waiting to be approved
 Chttr.co | Infinite scroll
 Commentum | Discontinued
+CornerHub | Discontinued
 Criticl | Journalism and general political discourse
 demcra | User page has nothing
 Diaspora | Cannot search post content
@@ -18,6 +19,7 @@ Domain Probe | Forum with programs to check the availability of domains
 Echo JS | entirely focused on JavaScript
 Ello | Infinite scroll
 Empeopled | Empeopled is being rebuilt on the blockchain
+entre news | Discontinued
 Euclid's Prime | Discontinued
 Ezefs | INVOICING SOFTWARE
 Failory | Where failed startup owners come to tell their failure stories
@@ -42,8 +44,10 @@ LiveTalkie | Walled garden
 LWN.net | No thumbnails
 Mastodon | No thumbnails
 MetaFilter | No thumbnails
+Mewch | English speaking alt imageboard
 Minds | Infinite scroll
 Musteus | Absolute shit website
+NALIJ | 成人电影,成人电影网,成人电影免费网站,成人电影免费在线观看
 Noosfeer | No user page
 Old Pluto | News search engine
 Panpact | Absolute shit website
@@ -70,6 +74,7 @@ vi.sualize.us | Discontinued
 Viralicious | Laugh with funny jokes about blondes, yo mama, science, family
 Voat.co | Sorry, you are doing that too fast. Please try again in 1 minute
 WallKeeper | Under Maintenance
+WHOT?! | Doesn't have any activities yet
 ZapChain | 403 Forbidden
 Zhopped | Free, online image editing community
 ADZbuzz |
@@ -80,10 +85,8 @@ BitAsker |
 Bitnation |
 Boardlerts |
 Canning Town News |
-CornerHub |
 Crowd |
 CuteFox |
-entre news |
 Facebook |
 Finspi |
 ForumPromotion |
@@ -96,9 +99,7 @@ Infothread |
 JumzleR |
 Known |
 LOL Inside! |
-Mewch |
 MeWe |
-NALIJ |
 Noiys |
 Plag |
 Plerb |
@@ -123,6 +124,5 @@ TOUT |
 Twii |
 Twincl |
 Viadeo |
-WHOT?! |
 WrongThink |
 ZeroMe |
