@@ -78,7 +78,7 @@ quippd | Discontinued
 Reddit | http://github.com/pushshift/api/issues/4
 Slashdot | No thumbnails
 Snapy Coins | Providing breaking cryptocurrency news
-Snapzu | Currently an invite only community
+Snapzu | Requires 2 clicks
 Soup.io | Infinite scroll
 Sproutr | Discontinued
 Stack Exchange | asking specific questions and getting helpful answers
