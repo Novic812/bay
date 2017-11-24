@@ -6,7 +6,9 @@ Site | Note
 Allthink | No thumbnails
 Amuzament.net | Problem loading page
 AnyChan | Image-based bulletin board
+BabyTwit | Micro-blogging site dedicated to school
 BitAsker | Paid question and answer plateform using Bitcoin
+Bitnation | Provides the same services traditional governments provides
 Boardest | Board Suggestions
 Boardlerts | Receive newsletters for posts you care about
 Calbel | Image waiting to be approved
@@ -31,6 +33,7 @@ Failory | Where failed startup owners come to tell their failure stories
 Flaru | NSFW
 ForumPromotion | No thumbnails
 Frizbee | Future home of something quite cool
+Futurenet | Adblock is enabled
 Gab | Infinite scroll
 GONG | Problem loading page
 Grewpler | Problem loading page
@@ -41,6 +44,7 @@ Hubski | No thumbnails
 iFunny | Share and view internet meme images, GIFs, videos and vines
 Indie Hackers | Founders share the revenue numbers behind their profitable app
 Infothread | uBlock Origin has prevented the following page from loading
+JumzleR | Problem loading page
 Kliqqi | Download Kliqqi
 Known | Learning, meet social
 Lainchan | Imageboard package
@@ -59,10 +63,13 @@ Mewch | English speaking alt imageboard
 Minds | Infinite scroll
 Musteus | Absolute shit website
 NALIJ | 成人电影,成人电影网,成人电影免费网站,成人电影免费在线观看
+Noiys | Post a note anonymously. It's viewed by many, then deleted
 Noosfeer | No user page
 Old Pluto | News search engine
 Panpact | Absolute shit website
 PissedChicken | Imageboard
+Plag | Download the app
+Plurk | No thumbnails
 PushdUp | Discontinued
 Qabna | Imageboard
 QueryHome | Knowledge Social Network for people to come together and ask
@@ -72,6 +79,7 @@ Reddit | http://github.com/pushshift/api/issues/4
 Slashdot | No thumbnails
 Snapy Coins | Providing breaking cryptocurrency news
 Snapzu | Currently an invite only community
+Soup.io | Infinite scroll
 Sproutr | Discontinued
 Stack Exchange | asking specific questions and getting helpful answers
 StackTrender | Follow what's trending in your favorite programming #hashtags
@@ -83,10 +91,12 @@ Topick | Discontinued
 TopTopic | Topic submissions are reviewed to prevent duplication of existing
 Trendiee | Your post is awaiting moderation
 Tumblr | Infinite scroll
+Twii | Twii has closed
 Twincl | Insecure Connection
 Twitter | Infinite scroll
 Upbeat | ERROR 403: Forbidden
 vi.sualize.us | Discontinued
+Viadeo | Connect with 720 000 recruiters and professionals
 Viralicious | Laugh with funny jokes about blondes, yo mama, science, family
 Voat.co | Sorry, you are doing that too fast. Please try again in 1 minute
 WallKeeper | Under Maintenance
@@ -95,34 +105,24 @@ ZapChain | 403 Forbidden
 ZeroMe | Self-Hosted
 Zhopped | Free, online image editing community
 ADZbuzz |
-BabyTwit |
 BGRGNDZ DB |
-Bitnation |
 Crowd |
 CuteFox |
 Finspi |
-Futurenet |
 hibloo |
 IMeYou |
-JumzleR |
 MeWe |
-Noiys |
-Plag |
 Plerb |
-Plurk |
 qmpeople |
 Rememble |
 Sebangsa |
 SocialER |
 SocialNumber |
 SocialPage |
-Soup.io |
 Swarmr |
 Swervel |
 Thoughtifies |
 Tokumei |
 Total Social |
 TOUT |
-Twii |
-Viadeo |
 WrongThink |
