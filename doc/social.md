@@ -19,12 +19,15 @@ Echo JS | entirely focused on JavaScript
 Ello | Infinite scroll
 Empeopled | Empeopled is being rebuilt on the blockchain
 Euclid's Prime | Discontinued
+Ezefs | INVOICING SOFTWARE
+Failory | Where failed startup owners come to tell their failure stories
 Flaru | NSFW
 Frizbee | Future home of something quite cool
 Gab | Infinite scroll
 Grewpler | Problem loading page
 Hacker News | No thumbnails
 Headcycle | Requires 2 clicks
+Heimo | Social media for life challenges
 Hubski | No thumbnails
 Indie Hackers | Founders share the revenue numbers behind their profitable app
 Kliqqi | Download Kliqqi
@@ -47,11 +50,13 @@ Panpact | Absolute shit website
 PissedChicken | Imageboard
 PushdUp | Discontinued
 Qabna | Imageboard
+QueryHome | Knowledge Social Network for people to come together and ask
 quippd | Discontinued
 Reddit | http://github.com/pushshift/api/issues/4
 Slashdot | No thumbnails
 Snapzu | Currently an invite only community
 Stack Exchange | asking specific questions and getting helpful answers
+StackTrender | Follow what's trending in your favorite programming #hashtags
 Steemit | You may only post once every 5 minutes
 Telescope | Self-Hosted
 Thymble | Download
@@ -79,14 +84,11 @@ CornerHub |
 Crowd |
 CuteFox |
 entre news |
-Ezefs |
 Facebook |
-Failory |
 Finspi |
 ForumPromotion |
 Futurenet |
 GONG |
-Heimo |
 hibloo |
 iFunny |
 IMeYou |
@@ -102,7 +104,6 @@ Plag |
 Plerb |
 Plurk |
 qmpeople |
-QueryHome |
 quickrant |
 Rememble |
 Sebangsa |
@@ -112,7 +113,6 @@ SocialNumber |
 SocialPage |
 Soup.io |
 Sproutr |
-StackTrender |
 Swarmr |
 Swervel |
 ThatsJavaInfo |
