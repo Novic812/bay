@@ -3,6 +3,7 @@ Site | Note
 4chan | Anonymous
 76chan | Discontinued
 7chan | No user page
+ADZbuzz | Walled garden
 Allthink | No thumbnails
 Amuzament.net | Problem loading page
 AnyChan | Image-based bulletin board
@@ -40,6 +41,7 @@ Grewpler | Problem loading page
 Hacker News | No thumbnails
 Headcycle | Requires 2 clicks
 Heimo | Social media for life challenges
+hibloo | Infinite scroll
 Hubski | No thumbnails
 iFunny | Share and view internet meme images, GIFs, videos and vines
 Indie Hackers | Founders share the revenue numbers behind their profitable app
@@ -60,6 +62,7 @@ LWN.net | No thumbnails
 Mastodon | No thumbnails
 MetaFilter | No thumbnails
 Mewch | English speaking alt imageboard
+MeWe | Walled garden
 Minds | Infinite scroll
 Musteus | Absolute shit website
 NALIJ | 成人电影,成人电影网,成人电影免费网站,成人电影免费在线观看
@@ -69,26 +72,33 @@ Old Pluto | News search engine
 Panpact | Absolute shit website
 PissedChicken | Imageboard
 Plag | Download the app
+Plerb | Posts are private
 Plurk | No thumbnails
 PushdUp | Discontinued
 Qabna | Imageboard
+qmpeople | Plaintext password
 QueryHome | Knowledge Social Network for people to come together and ask
 quickrant | No thumbnails
 quippd | Discontinued
 Reddit | http://github.com/pushshift/api/issues/4
+Sebangsa | Social platform developed and designed for Indonesian users
 Slashdot | No thumbnails
 Snapy Coins | Providing breaking cryptocurrency news
 Snapzu | Requires 2 clicks
+SocialNumber | Here you are just a number
 Soup.io | Infinite scroll
 Sproutr | Discontinued
 Stack Exchange | asking specific questions and getting helpful answers
 StackTrender | Follow what's trending in your favorite programming #hashtags
 Steemit | You may only post once every 5 minutes
+Swervel | Apache2 Ubuntu Default Page
 Telescope | Self-Hosted
 ThatsJavaInfo | A place to learn Java and its high end technologies
 Thymble | Download
+Tokumei | Anonymous microblogging
 Topick | Discontinued
 TopTopic | Topic submissions are reviewed to prevent duplication of existing
+TOUT | Discover, create and instantly share 15-second video updates
 Trendiee | Your post is awaiting moderation
 Tumblr | Infinite scroll
 Twii | Twii has closed
@@ -104,25 +114,15 @@ WHOT?! | Doesn't have any activities yet
 ZapChain | 403 Forbidden
 ZeroMe | Self-Hosted
 Zhopped | Free, online image editing community
-ADZbuzz |
 BGRGNDZ DB |
 Crowd |
 CuteFox |
 Finspi |
-hibloo |
 IMeYou |
-MeWe |
-Plerb |
-qmpeople |
 Rememble |
-Sebangsa |
 SocialER |
-SocialNumber |
 SocialPage |
 Swarmr |
-Swervel |
 Thoughtifies |
-Tokumei |
 Total Social |
-TOUT |
 WrongThink |
