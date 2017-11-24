@@ -4,12 +4,15 @@ Site | Note
 76chan | Discontinued
 7chan | No user page
 Allthink | No thumbnails
+AnyChan | Image-based bulletin board
 Boardest | Board Suggestions
 Calbel | Image waiting to be approved
 Chttr.co | Infinite scroll
+Commentum | Discontinued
 demcra | User page has nothing
 Diaspora | Cannot search post content
 Digg | It doesn't allow users to post content
+dirty.us | Популярное
 Domain Probe | Forum with programs to check the availability of domains
 Echo JS | entirely focused on JavaScript
 Ello | Infinite scroll
@@ -28,6 +31,7 @@ Lainchan | Imageboard package
 Landesy | Cant make new topics
 Latest.is | Automatic list of the 10 best links from Twitter right now
 Linkgum | Hmm, you're doing that a bit too much. Please try again later
+Linkibl | Offline for maintenance
 LiveTalkie | Walled garden
 LWN.net | No thumbnails
 Mastodon | No thumbnails
@@ -52,21 +56,19 @@ Tumblr | Infinite scroll
 Twitter | Infinite scroll
 vi.sualize.us | Discontinued
 Voat.co | Sorry, you are doing that too fast. Please try again in 1 minute
+WallKeeper | Under Maintenance
 ADZbuzz |
 Amuzament.net |
-AnyChan |
 BabyTwit |
 BGRGNDZ DB |
 BitAsker |
 Bitnation |
 Boardlerts |
 Canning Town News |
-Commentum |
 CornerHub |
 Criticl |
 Crowd |
 CuteFox |
-dirty.us |
 entre news |
 Ezefs |
 Facebook |
@@ -83,7 +85,6 @@ Infothread |
 JumzleR |
 Known |
 Lambda the Ultimate |
-Linkibl |
 LiQUiD CheeZ |
 LOL Inside! |
 Mewch |
@@ -120,7 +121,6 @@ Twincl |
 Upbeat |
 Viadeo |
 Viralicious |
-WallKeeper |
 WHOT?! |
 WrongThink |
 ZapChain |
