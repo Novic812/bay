@@ -18,6 +18,7 @@ Chttr.co | Infinite scroll
 Commentum | Discontinued
 CornerHub | Discontinued
 Criticl | Journalism and general political discourse
+Crowd | Problem loading page
 demcra | User page has nothing
 Diaspora | Cannot search post content
 Digg | It doesn't allow users to post content
@@ -31,6 +32,7 @@ Euclid's Prime | Discontinued
 Ezefs | INVOICING SOFTWARE
 Facebook | Walled garden
 Failory | Where failed startup owners come to tell their failure stories
+Finspi | This site is currently unavailable
 Flaru | NSFW
 ForumPromotion | No thumbnails
 Frizbee | Future home of something quite cool
@@ -85,7 +87,9 @@ Sebangsa | Social platform developed and designed for Indonesian users
 Slashdot | No thumbnails
 Snapy Coins | Providing breaking cryptocurrency news
 Snapzu | Requires 2 clicks
+SocialER | Insecure Connection
 SocialNumber | Here you are just a number
+SocialPage | Goal is to create a safer environment for kids
 Soup.io | Infinite scroll
 Sproutr | Discontinued
 Stack Exchange | asking specific questions and getting helpful answers
@@ -94,6 +98,7 @@ Steemit | You may only post once every 5 minutes
 Swervel | Apache2 Ubuntu Default Page
 Telescope | Self-Hosted
 ThatsJavaInfo | A place to learn Java and its high end technologies
+Thoughtifies | Problem loading page
 Thymble | Download
 Tokumei | Anonymous microblogging
 Topick | Discontinued
@@ -111,18 +116,13 @@ Viralicious | Laugh with funny jokes about blondes, yo mama, science, family
 Voat.co | Sorry, you are doing that too fast. Please try again in 1 minute
 WallKeeper | Under Maintenance
 WHOT?! | Doesn't have any activities yet
+WrongThink | Walled garden
 ZapChain | 403 Forbidden
 ZeroMe | Self-Hosted
 Zhopped | Free, online image editing community
 BGRGNDZ DB |
-Crowd |
 CuteFox |
-Finspi |
 IMeYou |
 Rememble |
-SocialER |
-SocialPage |
 Swarmr |
-Thoughtifies |
 Total Social |
-WrongThink |
