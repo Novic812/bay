@@ -10,7 +10,9 @@ Chttr.co | Infinite scroll
 demcra | User page has nothing
 Diaspora | Cannot search post content
 Digg | It doesn't allow users to post content
+Echo JS | entirely focused on JavaScript
 Ello | Infinite scroll
+Empeopled | Empeopled is being rebuilt on the blockchain
 Euclid's Prime | Discontinued
 Frizbee | Future home of something quite cool
 Gab | Infinite scroll
@@ -26,9 +28,12 @@ Linkgum | Hmm, you're doing that a bit too much. Please try again later
 LiveTalkie | Walled garden
 LWN.net | No thumbnails
 Mastodon | No thumbnails
+MetaFilter | No thumbnails
 Minds | Infinite scroll
 Musteus | Absolute shit website
+Old Pluto | News search engine
 Panpact | Absolute shit website
+Qabna | Imageboard
 quippd | Discontinued
 Reddit | http://github.com/pushshift/api/issues/4
 Slashdot | No thumbnails
@@ -58,8 +63,6 @@ Crowd |
 CuteFox |
 dirty.us |
 Domain Probe |
-Echo JS |
-Empeopled |
 entre news |
 Ezefs |
 Facebook |
@@ -81,19 +84,16 @@ Latest.is |
 Linkibl |
 LiQUiD CheeZ |
 LOL Inside! |
-MetaFilter |
 Mewch |
 MeWe |
 NALIJ |
 Noiys |
 Noosfeer |
-Old Pluto |
 PissedChicken |
 Plag |
 Plerb |
 Plurk |
 PushdUp |
-Qabna |
 qmpeople |
 QueryHome |
 quickrant |
