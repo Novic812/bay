@@ -12,14 +12,19 @@ Diaspora | Cannot search post content
 Digg | It doesn't allow users to post content
 Ello | Infinite scroll
 Euclid's Prime | Discontinued
+Frizbee | Future home of something quite cool
 Gab | Infinite scroll
 Grewpler | Problem loading page
 Hacker News | No thumbnails
 Headcycle | Requires 2 clicks
 Hubski | No thumbnails
+Indie Hackers | Founders share the revenue numbers behind their profitable app
+Kliqqi | Download Kliqqi
+Lainchan | Imageboard package
 Landesy | Cant make new topics
 Linkgum | Hmm, you're doing that a bit too much. Please try again later
 LiveTalkie | Walled garden
+LWN.net | No thumbnails
 Mastodon | No thumbnails
 Minds | Infinite scroll
 Musteus | Absolute shit website
@@ -62,25 +67,20 @@ Failory |
 Finspi |
 Flaru |
 ForumPromotion |
-Frizbee |
 Futurenet |
 GONG |
 Heimo |
 hibloo |
 iFunny |
 IMeYou |
-Indie Hackers |
 Infothread |
 JumzleR |
-Kliqqi |
 Known |
-Lainchan |
 Lambda the Ultimate |
 Latest.is |
 Linkibl |
 LiQUiD CheeZ |
 LOL Inside! |
-LWN.net |
 MetaFilter |
 Mewch |
 MeWe |
