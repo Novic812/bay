@@ -10,10 +10,12 @@ Chttr.co | Infinite scroll
 demcra | User page has nothing
 Diaspora | Cannot search post content
 Digg | It doesn't allow users to post content
+Domain Probe | Forum with programs to check the availability of domains
 Echo JS | entirely focused on JavaScript
 Ello | Infinite scroll
 Empeopled | Empeopled is being rebuilt on the blockchain
 Euclid's Prime | Discontinued
+Flaru | NSFW
 Frizbee | Future home of something quite cool
 Gab | Infinite scroll
 Grewpler | Problem loading page
@@ -24,6 +26,7 @@ Indie Hackers | Founders share the revenue numbers behind their profitable app
 Kliqqi | Download Kliqqi
 Lainchan | Imageboard package
 Landesy | Cant make new topics
+Latest.is | Automatic list of the 10 best links from Twitter right now
 Linkgum | Hmm, you're doing that a bit too much. Please try again later
 LiveTalkie | Walled garden
 LWN.net | No thumbnails
@@ -31,6 +34,7 @@ Mastodon | No thumbnails
 MetaFilter | No thumbnails
 Minds | Infinite scroll
 Musteus | Absolute shit website
+Noosfeer | No user page
 Old Pluto | News search engine
 Panpact | Absolute shit website
 Qabna | Imageboard
@@ -41,6 +45,7 @@ Snapzu | Currently an invite only community
 Stack Exchange | asking specific questions and getting helpful answers
 Steemit | You may only post once every 5 minutes
 Telescope | Self-Hosted
+Thymble | Download
 TopTopic | Topic submissions are reviewed to prevent duplication of existing
 Trendiee | Your post is awaiting moderation
 Tumblr | Infinite scroll
@@ -62,13 +67,11 @@ Criticl |
 Crowd |
 CuteFox |
 dirty.us |
-Domain Probe |
 entre news |
 Ezefs |
 Facebook |
 Failory |
 Finspi |
-Flaru |
 ForumPromotion |
 Futurenet |
 GONG |
@@ -80,7 +83,6 @@ Infothread |
 JumzleR |
 Known |
 Lambda the Ultimate |
-Latest.is |
 Linkibl |
 LiQUiD CheeZ |
 LOL Inside! |
@@ -88,7 +90,6 @@ Mewch |
 MeWe |
 NALIJ |
 Noiys |
-Noosfeer |
 PissedChicken |
 Plag |
 Plerb |
@@ -110,7 +111,6 @@ Swarmr |
 Swervel |
 ThatsJavaInfo |
 Thoughtifies |
-Thymble |
 Tokumei |
 Topick |
 Total Social |
