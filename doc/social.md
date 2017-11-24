@@ -9,6 +9,7 @@ Boardest | Board Suggestions
 Calbel | Image waiting to be approved
 Chttr.co | Infinite scroll
 Commentum | Discontinued
+Criticl | Journalism and general political discourse
 demcra | User page has nothing
 Diaspora | Cannot search post content
 Digg | It doesn't allow users to post content
@@ -33,6 +34,7 @@ Landesy | Cant make new topics
 Latest.is | Automatic list of the 10 best links from Twitter right now
 Linkgum | Hmm, you're doing that a bit too much. Please try again later
 Linkibl | Offline for maintenance
+LiQUiD CheeZ | Infinite scroll
 LiveTalkie | Walled garden
 LWN.net | No thumbnails
 Mastodon | No thumbnails
@@ -58,10 +60,13 @@ TopTopic | Topic submissions are reviewed to prevent duplication of existing
 Trendiee | Your post is awaiting moderation
 Tumblr | Infinite scroll
 Twitter | Infinite scroll
+Upbeat | ERROR 403: Forbidden
 vi.sualize.us | Discontinued
+Viralicious | Laugh with funny jokes about blondes, yo mama, science, family
 Voat.co | Sorry, you are doing that too fast. Please try again in 1 minute
 WallKeeper | Under Maintenance
 ZapChain | 403 Forbidden
+Zhopped | Free, online image editing community
 ADZbuzz |
 Amuzament.net |
 BabyTwit |
@@ -71,7 +76,6 @@ Bitnation |
 Boardlerts |
 Canning Town News |
 CornerHub |
-Criticl |
 Crowd |
 CuteFox |
 entre news |
@@ -89,7 +93,6 @@ IMeYou |
 Infothread |
 JumzleR |
 Known |
-LiQUiD CheeZ |
 LOL Inside! |
 Mewch |
 MeWe |
@@ -119,10 +122,7 @@ Total Social |
 TOUT |
 Twii |
 Twincl |
-Upbeat |
 Viadeo |
-Viralicious |
 WHOT?! |
 WrongThink |
 ZeroMe |
-Zhopped |
