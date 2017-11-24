@@ -4,9 +4,13 @@ Site | Note
 76chan | Discontinued
 7chan | No user page
 Allthink | No thumbnails
+Amuzament.net | Problem loading page
 AnyChan | Image-based bulletin board
+BitAsker | Paid question and answer plateform using Bitcoin
 Boardest | Board Suggestions
+Boardlerts | Receive newsletters for posts you care about
 Calbel | Image waiting to be approved
+Canning Town News | Local And International News Channel
 Chttr.co | Infinite scroll
 Commentum | Discontinued
 CornerHub | Discontinued
@@ -24,13 +28,16 @@ Euclid's Prime | Discontinued
 Ezefs | INVOICING SOFTWARE
 Failory | Where failed startup owners come to tell their failure stories
 Flaru | NSFW
+ForumPromotion | No thumbnails
 Frizbee | Future home of something quite cool
 Gab | Infinite scroll
+GONG | Problem loading page
 Grewpler | Problem loading page
 Hacker News | No thumbnails
 Headcycle | Requires 2 clicks
 Heimo | Social media for life challenges
 Hubski | No thumbnails
+iFunny | Share and view internet meme images, GIFs, videos and vines
 Indie Hackers | Founders share the revenue numbers behind their profitable app
 Kliqqi | Download Kliqqi
 Lainchan | Imageboard package
@@ -78,22 +85,15 @@ WHOT?! | Doesn't have any activities yet
 ZapChain | 403 Forbidden
 Zhopped | Free, online image editing community
 ADZbuzz |
-Amuzament.net |
 BabyTwit |
 BGRGNDZ DB |
-BitAsker |
 Bitnation |
-Boardlerts |
-Canning Town News |
 Crowd |
 CuteFox |
 Facebook |
 Finspi |
-ForumPromotion |
 Futurenet |
-GONG |
 hibloo |
-iFunny |
 IMeYou |
 Infothread |
 JumzleR |
