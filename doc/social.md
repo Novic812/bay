@@ -8,6 +8,7 @@ Allthink | No thumbnails
 Amuzament.net | Problem loading page
 AnyChan | Image-based bulletin board
 BabyTwit | Micro-blogging site dedicated to school
+BGRGNDZ DB | Discontinued
 BitAsker | Paid question and answer plateform using Bitcoin
 Bitnation | Provides the same services traditional governments provides
 Boardest | Board Suggestions
@@ -19,6 +20,7 @@ Commentum | Discontinued
 CornerHub | Discontinued
 Criticl | Journalism and general political discourse
 Crowd | Problem loading page
+CuteFox | Problem loading page
 demcra | User page has nothing
 Diaspora | Cannot search post content
 Digg | It doesn't allow users to post content
@@ -46,6 +48,7 @@ Heimo | Social media for life challenges
 hibloo | Infinite scroll
 Hubski | No thumbnails
 iFunny | Share and view internet meme images, GIFs, videos and vines
+IMeYou | Ask the community of local experts
 Indie Hackers | Founders share the revenue numbers behind their profitable app
 Infothread | uBlock Origin has prevented the following page from loading
 JumzleR | Problem loading page
@@ -83,6 +86,7 @@ QueryHome | Knowledge Social Network for people to come together and ask
 quickrant | No thumbnails
 quippd | Discontinued
 Reddit | http://github.com/pushshift/api/issues/4
+Rememble | Insecure Connection
 Sebangsa | Social platform developed and designed for Indonesian users
 Slashdot | No thumbnails
 Snapy Coins | Providing breaking cryptocurrency news
@@ -95,6 +99,7 @@ Sproutr | Discontinued
 Stack Exchange | asking specific questions and getting helpful answers
 StackTrender | Follow what's trending in your favorite programming #hashtags
 Steemit | You may only post once every 5 minutes
+Swarmr | Activation failed
 Swervel | Apache2 Ubuntu Default Page
 Telescope | Self-Hosted
 ThatsJavaInfo | A place to learn Java and its high end technologies
@@ -103,6 +108,7 @@ Thymble | Download
 Tokumei | Anonymous microblogging
 Topick | Discontinued
 TopTopic | Topic submissions are reviewed to prevent duplication of existing
+Total Social | 404 Not Found
 TOUT | Discover, create and instantly share 15-second video updates
 Trendiee | Your post is awaiting moderation
 Tumblr | Infinite scroll
@@ -120,9 +126,3 @@ WrongThink | Walled garden
 ZapChain | 403 Forbidden
 ZeroMe | Self-Hosted
 Zhopped | Free, online image editing community
-BGRGNDZ DB |
-CuteFox |
-IMeYou |
-Rememble |
-Swarmr |
-Total Social |
