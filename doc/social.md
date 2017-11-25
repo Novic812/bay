@@ -1,128 +1,128 @@
 Site | Note
 -----|-----
+ZapChain | 403 Forbidden
+Total Social | 404 Not Found
+ThatsJavaInfo | A place to learn Java and its high end technologies
+Musteus | Absolute shit website
+Panpact | Absolute shit website
+Swarmr | Activation failed
+Futurenet | Adblock is enabled
 4chan | Anonymous
-76chan | Discontinued
-7chan | No user page
-ADZbuzz | Walled garden
-Allthink | No thumbnails
-Amuzament.net | Problem loading page
-AnyChan | Image-based bulletin board
-BabyTwit | Micro-blogging site dedicated to school
-BGRGNDZ DB | Discontinued
-BitAsker | Paid question and answer plateform using Bitcoin
-Bitnation | Provides the same services traditional governments provides
+Tokumei | Anonymous microblogging
+Swervel | Apache2 Ubuntu Default Page
+IMeYou | Ask the community of local experts
+Stack Exchange | asking specific questions and getting helpful answers
+Latest.is | Automatic list of the 10 best links from Twitter right now
 Boardest | Board Suggestions
-Boardlerts | Receive newsletters for posts you care about
-Calbel | Image waiting to be approved
-Canning Town News | Local And International News Channel
-Chttr.co | Infinite scroll
+Diaspora | Cannot search post content
+Landesy | Cant make new topics
+Lambda the Ultimate | Community blogging website about programming languages
+Viadeo | Connect with 720 000 recruiters and professionals
+76chan | Discontinued
+BGRGNDZ DB | Discontinued
 Commentum | Discontinued
 CornerHub | Discontinued
-Criticl | Journalism and general political discourse
-Crowd | Problem loading page
-CuteFox | Problem loading page
-demcra | User page has nothing
-Diaspora | Cannot search post content
-Digg | It doesn't allow users to post content
-dirty.us | Популярное
-Domain Probe | Forum with programs to check the availability of domains
-Echo JS | entirely focused on JavaScript
-Ello | Infinite scroll
-Empeopled | Empeopled is being rebuilt on the blockchain
 entre news | Discontinued
 Euclid's Prime | Discontinued
-Ezefs | INVOICING SOFTWARE
-Facebook | Walled garden
-Failory | Where failed startup owners come to tell their failure stories
-Finspi | This site is currently unavailable
-Flaru | NSFW
-ForumPromotion | No thumbnails
-Frizbee | Future home of something quite cool
-Futurenet | Adblock is enabled
-Gab | Infinite scroll
-GONG | Problem loading page
-Grewpler | Problem loading page
-Hacker News | No thumbnails
-Headcycle | Requires 2 clicks
-Heimo | Social media for life challenges
-hibloo | Infinite scroll
-Hubski | No thumbnails
-iFunny | Share and view internet meme images, GIFs, videos and vines
-IMeYou | Ask the community of local experts
-Indie Hackers | Founders share the revenue numbers behind their profitable app
-Infothread | uBlock Origin has prevented the following page from loading
-JumzleR | Problem loading page
+PushdUp | Discontinued
+quippd | Discontinued
+Sproutr | Discontinued
+Topick | Discontinued
+vi.sualize.us | Discontinued
+TOUT | Discover, create and instantly share 15-second video updates
+WHOT?! | Doesn't have any activities yet
+Thymble | Download
 Kliqqi | Download Kliqqi
-Known | Learning, meet social
-Lainchan | Imageboard package
-Lambda the Ultimate | Community blogging website about programming languages
-Landesy | Cant make new topics
-Latest.is | Automatic list of the 10 best links from Twitter right now
+Plag | Download the app
+Empeopled | Empeopled is being rebuilt on the blockchain
+Mewch | English speaking alt imageboard
+Echo JS | entirely focused on JavaScript
+Upbeat | ERROR 403: Forbidden
+StackTrender | Follow what's trending in your favorite programming #hashtags
+Domain Probe | Forum with programs to check the availability of domains
+Indie Hackers | Founders share the revenue numbers behind their profitable app
+Zhopped | Free, online image editing community
+Frizbee | Future home of something quite cool
+SocialPage | Goal is to create a safer environment for kids
+SocialNumber | Here you are just a number
 Linkgum | Hmm, you're doing that a bit too much. Please try again later
-Linkibl | Offline for maintenance
+Reddit | http://github.com/pushshift/api/issues/4
+Calbel | Image waiting to be approved
+AnyChan | Image-based bulletin board
+PissedChicken | Imageboard
+Qabna | Imageboard
+Lainchan | Imageboard package
+Chttr.co | Infinite scroll
+Ello | Infinite scroll
+Gab | Infinite scroll
+hibloo | Infinite scroll
 LiQUiD CheeZ | Infinite scroll
-LiveTalkie | Walled garden
-LOL Inside! | The Most Funny Pics On the Web
+Minds | Infinite scroll
+Soup.io | Infinite scroll
+Tumblr | Infinite scroll
+Twitter | Infinite scroll
+Rememble | Insecure Connection
+SocialER | Insecure Connection
+Twincl | Insecure Connection
+Ezefs | INVOICING SOFTWARE
+Digg | It doesn't allow users to post content
+Criticl | Journalism and general political discourse
+QueryHome | Knowledge Social Network for people to come together and ask
+Viralicious | Laugh with funny jokes about blondes, yo mama, science, family
+Known | Learning, meet social
+Canning Town News | Local And International News Channel
+BabyTwit | Micro-blogging site dedicated to school
+Old Pluto | News search engine
+Allthink | No thumbnails
+ForumPromotion | No thumbnails
+Hacker News | No thumbnails
+Hubski | No thumbnails
 LWN.net | No thumbnails
 Mastodon | No thumbnails
 MetaFilter | No thumbnails
-Mewch | English speaking alt imageboard
-MeWe | Walled garden
-Minds | Infinite scroll
-Musteus | Absolute shit website
-NALIJ | 成人电影,成人电影网,成人电影免费网站,成人电影免费在线观看
-Noiys | Post a note anonymously. It's viewed by many, then deleted
-Noosfeer | No user page
-Old Pluto | News search engine
-Panpact | Absolute shit website
-PissedChicken | Imageboard
-Plag | Download the app
-Plerb | Posts are private
 Plurk | No thumbnails
-PushdUp | Discontinued
-Qabna | Imageboard
-qmpeople | Plaintext password
-QueryHome | Knowledge Social Network for people to come together and ask
 quickrant | No thumbnails
-quippd | Discontinued
-Reddit | http://github.com/pushshift/api/issues/4
-Rememble | Insecure Connection
-Sebangsa | Social platform developed and designed for Indonesian users
 Slashdot | No thumbnails
-Snapy Coins | Providing breaking cryptocurrency news
-Snapzu | Requires 2 clicks
-SocialER | Insecure Connection
-SocialNumber | Here you are just a number
-SocialPage | Goal is to create a safer environment for kids
-Soup.io | Infinite scroll
-Sproutr | Discontinued
-Stack Exchange | asking specific questions and getting helpful answers
-StackTrender | Follow what's trending in your favorite programming #hashtags
-Steemit | You may only post once every 5 minutes
-Swarmr | Activation failed
-Swervel | Apache2 Ubuntu Default Page
-Telescope | Self-Hosted
-ThatsJavaInfo | A place to learn Java and its high end technologies
+7chan | No user page
+Noosfeer | No user page
+Flaru | NSFW
+Linkibl | Offline for maintenance
+BitAsker | Paid question and answer plateform using Bitcoin
+qmpeople | Plaintext password
+Noiys | Post a note anonymously. It's viewed by many, then deleted
+Plerb | Posts are private
+Amuzament.net | Problem loading page
+Crowd | Problem loading page
+CuteFox | Problem loading page
+GONG | Problem loading page
+Grewpler | Problem loading page
+JumzleR | Problem loading page
 Thoughtifies | Problem loading page
-Thymble | Download
-Tokumei | Anonymous microblogging
-Topick | Discontinued
-TopTopic | Topic submissions are reviewed to prevent duplication of existing
-Total Social | 404 Not Found
-TOUT | Discover, create and instantly share 15-second video updates
-Trendiee | Your post is awaiting moderation
-Tumblr | Infinite scroll
-Twii | Twii has closed
-Twincl | Insecure Connection
-Twitter | Infinite scroll
-Upbeat | ERROR 403: Forbidden
-vi.sualize.us | Discontinued
-Viadeo | Connect with 720 000 recruiters and professionals
-Viralicious | Laugh with funny jokes about blondes, yo mama, science, family
-Voat.co | Sorry, you are doing that too fast. Please try again in 1 minute
-WallKeeper | Under Maintenance
-WHOT?! | Doesn't have any activities yet
-WrongThink | Walled garden
-ZapChain | 403 Forbidden
+Bitnation | Provides the same services traditional governments provides
+Snapy Coins | Providing breaking cryptocurrency news
+Boardlerts | Receive newsletters for posts you care about
+Headcycle | **Requires 2 clicks**
+Snapzu | **Requires 2 clicks**
+Telescope | Self-Hosted
 ZeroMe | Self-Hosted
-Zhopped | Free, online image editing community
+iFunny | Share and view internet meme images, GIFs, videos and vines
+Heimo | Social media for life challenges
+Sebangsa | Social platform developed and designed for Indonesian users
+Voat.co | Sorry, you are doing that too fast. Please try again in 1 minute
+LOL Inside! | The Most Funny Pics On the Web
+Finspi | This site is currently unavailable
+TopTopic | Topic submissions are reviewed to prevent duplication of existing
+Twii | Twii has closed
+Infothread | uBlock Origin has prevented the following page from loading
+WallKeeper | Under Maintenance
+demcra | User page has nothing
+ADZbuzz | Walled garden
+Facebook | Walled garden
+LiveTalkie | Walled garden
+MeWe | Walled garden
+WrongThink | Walled garden
+Failory | Where failed startup owners come to tell their failure stories
+Steemit | You may only post once every 5 minutes
+Trendiee | Your post is awaiting moderation
+dirty.us | Популярное
+NALIJ | 成人电影,成人电影网,成人电影免费网站,成人电影免费在线观看
