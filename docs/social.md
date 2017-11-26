@@ -1,5 +1,7 @@
 Site | Note
 -----|-----
+Headcycle | **Requires 2 clicks**
+Snapzu | **Requires 2 clicks**
 ZapChain | 403 Forbidden
 Total Social | 404 Not Found
 ThatsJavaInfo | A place to learn Java and its high end technologies
@@ -11,7 +13,7 @@ Futurenet | Adblock is enabled
 Tokumei | Anonymous microblogging
 Swervel | Apache2 Ubuntu Default Page
 IMeYou | Ask the community of local experts
-Stack Exchange | asking specific questions and getting helpful answers
+Stack Exchange | Asking specific questions and getting helpful answers
 Latest.is | Automatic list of the 10 best links from Twitter right now
 Boardest | Board Suggestions
 Diaspora | Cannot search post content
@@ -36,16 +38,16 @@ Kliqqi | Download Kliqqi
 Plag | Download the app
 Empeopled | Empeopled is being rebuilt on the blockchain
 Mewch | English speaking alt imageboard
-Echo JS | entirely focused on JavaScript
+Echo JS | Entirely focused on JavaScript
 Upbeat | ERROR 403: Forbidden
 StackTrender | Follow what's trending in your favorite programming #hashtags
 Domain Probe | Forum with programs to check the availability of domains
 Indie Hackers | Founders share the revenue numbers behind their profitable app
 Zhopped | Free, online image editing community
 Frizbee | Future home of something quite cool
+Steemit | Giant header
 SocialPage | Goal is to create a safer environment for kids
 SocialNumber | Here you are just a number
-Linkgum | Hmm, you're doing that a bit too much. Please try again later
 Reddit | http://github.com/pushshift/api/issues/4
 Calbel | Image waiting to be approved
 AnyChan | Image-based bulletin board
@@ -100,15 +102,14 @@ JumzleR | Problem loading page
 Thoughtifies | Problem loading page
 Bitnation | Provides the same services traditional governments provides
 Snapy Coins | Providing breaking cryptocurrency news
+Voat.co | Racial slurs
+Linkgum | reCAPTCHA
 Boardlerts | Receive newsletters for posts you care about
-Headcycle | **Requires 2 clicks**
-Snapzu | **Requires 2 clicks**
 Telescope | Self-Hosted
 ZeroMe | Self-Hosted
 iFunny | Share and view internet meme images, GIFs, videos and vines
 Heimo | Social media for life challenges
 Sebangsa | Social platform developed and designed for Indonesian users
-Voat.co | Sorry, you are doing that too fast. Please try again in 1 minute
 LOL Inside! | The Most Funny Pics On the Web
 Finspi | This site is currently unavailable
 TopTopic | Topic submissions are reviewed to prevent duplication of existing
@@ -122,7 +123,6 @@ LiveTalkie | Walled garden
 MeWe | Walled garden
 WrongThink | Walled garden
 Failory | Where failed startup owners come to tell their failure stories
-Steemit | You may only post once every 5 minutes
 Trendiee | Your post is awaiting moderation
 dirty.us | Популярное
 NALIJ | 成人电影,成人电影网,成人电影免费网站,成人电影免费在线观看
