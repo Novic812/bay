@@ -13,4 +13,4 @@ case $2 in
 esac
 
 ffmpeg -y -hide_banner -loop 1 -r 1 -i "$1" -i "$2" -t "$ya" -c:a "$zu" \
--pix_fmt yuv420p -vf 'scale=-2:min(720\,trunc(ih/2)*2)' "$xr"
+-pix_fmt yuv420p -vf 'setsar,scale=-2:min(720\,trunc(ih/2)*2)' "$xr"
