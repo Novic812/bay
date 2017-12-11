@@ -1,7 +1,7 @@
 #!/usr/local/bin/awklib -f
 BEGIN {
-  if (ARGC != 3) {
-    print "nato.awk <variable length> <file>"
+  if (ARGC < 3) {
+    print "nato.awk <variable length> <file>..."
     exit 1
   }
   var_len = arr_splice(ARGV, 2, 1)
