@@ -104,5 +104,4 @@
 
 # http://youtube.com
 * google.com * noop
-* rawgit.com * noop
 * ytimg.com * noop
