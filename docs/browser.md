@@ -1,0 +1,27 @@
+
+- Brave: http://github.com/brave/browser-laptop/issues/3631
+- Chrome Canary: http://superuser.com/q/319958
+- Chromium: http://superuser.com/q/319958
+- Cyberfox: http://8pecxstudios.com/Forums/viewforum.php?f=5
+- Dooble: http://github.com/textbrowser/dooble/issues/19
+- Falkon: http://github.com/QupZilla/qupzilla/issues/1855
+- Firefox Developer Edition: http://bugzilla.mozilla.org/show_bug.cgi?id=1411795
+- Firefox Nightly Build: http://bugzilla.mozilla.org/show_bug.cgi?id=1411795
+- GNU IceCat: not Windows
+- Iridium: http://github.com/iridium-browser/tracker/issues/190
+- K-Meleon: discontinued
+- Konqueror: discontinued 
+- Light Firefox: discontinued
+- Links: CLI
+- Liri: http://github.com/lirios/browser/issues/24
+- Midori: no JavaScript extensions
+- Mozilla Firefox: http://bugzilla.mozilla.org/show_bug.cgi?id=1411795
+- Otter Browser: http://github.com/OtterBrowser/otter-browser/issues/42
+- Pale Moon: http://github.com/MoonchildProductions/Pale-Moon/issues/1541
+- QtWeb: discontinued
+- qutebrowser: CLI
+- Rekonq: discontinued
+- SeaMonkey: just really is a piece of crap
+- Ungoogled Chromium: http://github.com/Eloston/ungoogled-chromium/issues/314
+- Waterfox: http://github.com/MrAlex94/Waterfox/issues/308
+- xombrero: discontinued
