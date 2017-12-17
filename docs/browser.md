@@ -24,9 +24,11 @@
 - QtWeb: discontinued
 - qutebrowser: CLI
 - Rekonq: discontinued
+- Sandcat Browser: http://github.com/felipedaragon/sandcat/issues/3
 - SeaMonkey: just really is a piece of crap
 - Sushi Browser: stupid
 - Ungoogled Chromium: http://github.com/Eloston/ungoogled-chromium/issues/314
 - Waterfox: http://github.com/MrAlex94/Waterfox/issues/308
 - Webian Shell: no builds
+- WhiteHat Aviator: discontinued
 - xombrero: discontinued
