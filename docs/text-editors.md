@@ -1,48 +1,42 @@
-- 1.4 MB - Notepad2-mod
-- 1.4 MB - SciTE
-- 11 MB - Textadept
-- 113 MB - Atom
-- 14 MB - Geany
-- 16 MB, TEA, http://github.com/psemiletov/tea-qt/issues/6
-- 2.4 MB, Programmer's Notepad, http://github.com/simonsteele/pn/issues/152
-- 2.8 MB - Notepad++
-- 21 MB, LiteIDE, http://github.com/visualfc/liteide/issues/769
-- 33 MB - Visual Studio Code
-- 44 MB - Kate
-- 51 MB - Brackets
-- 7 MB - gVim
-- 74 MB - Komodo Edit
-- 77 MB - gedit
-- 90 MB - Emacs
-- CLI - JOE
-- CLI - nano
-- CLI - Neovim
-- CLI - slap
-- Discontinued - Aubrey's gVim
-- Discontinued - Devpad
-- Discontinued - Editra
-- Discontinued - Ynote
-- Does not use Windows GUI - NINJA-IDE
-- Does not use Windows GUI - Text Editor Pro
-- Does not work - SuperbEdit
-- http://alternativeto.net/software/notepad2-mod
-- http://alternativeto.net/software/notepad-plus-plus
-- Java - Redcar
-- Lime Text, http://github.com/limetext/backend/issues/124
-- No shell script highlighting - DtPad
-- No syntax highlighting, metapad, http://github.com/alexd/metapad/issues/3
-- SourceForge - AkelPad
-- SourceForge - Bluefish
-- SourceForge - BowPad
-- SourceForge - Emerald Editor
-- SourceForge - gEcrit
-- SourceForge - jEdit
-- SourceForge - JuffEd
-- SourceForge - MadEdit-Mod
-- SourceForge - medit
-- SourceForge - Mystix
-- SourceForge - Notepas
-- SourceForge - SynWrite
-- SourceForge - Thunderpad
-- SourceForge - wxMEdit
-- SourceForge - Zinjai
+Editor | Note
+-------|-----
+**LiteIDE** | AWK, 32 bit, 24.6 MB, http://github.com/visualfc/liteide
+**Textadept** | AWK, 32 bit, 11.7 MB, http://foicica.com/textadept
+AkelPad | SourceForge
+Atom | more than 40 MB
+Aubrey's gVim | discontinued
+Bluefish | no Awk
+BowPad | SourceForge
+Brackets | more than 40 MB
+ChrunchApp | discontinued
+Devpad | discontinued
+DtPad | discontinued
+Emerald Editor | discontinued
+Geany | download slow as fuck
+gEcrit | SourceForge
+gedit | discontinued
+GNU Emacs | CLI
+jEdit | SourceForge
+Kate | more than 40 MB
+Komodo Edit | more than 40 MB
+Lime Text | http://github.com/limetext/backend/issues/124
+MadEdit-Mod | SourceForge
+medit | SourceForge
+metapad | http://github.com/alexd/metapad/issues/3
+Neovim | CLI
+NINJA-IDE | does not use Windows GUI
+Notepad++ | http://github.com/notepad-plus-plus/notepad-plus-plus/issues/1620
+Notepad2-mod | http://github.com/XhmikosR/notepad2-mod/issues/208
+Notepas | SourceForge
+Programmer’s Notepad | http://github.com/simonsteele/pn/issues/152
+SciTE | no Awk
+SuperbEdit | discontinued
+SynWrite | SourceForge
+TEA | http://github.com/psemiletov/tea-qt/issues/6
+Text Editor Pro | discontinued
+Thunderpad | SourceForge
+Vim | CLI
+Visual Studio Code | more than 40 MB
+wxMEdit | SourceForge
+Ynote | discontinued
+Zinjai | SourceForge
