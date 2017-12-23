@@ -4,3 +4,8 @@
 - SCons: SourceForge
 - Gradle: Java
 - Premake: make wrapper
+- **GNU Make**
+- Ant: Java
+- Rake: Ruby
+- Ninja Build: http://github.com/ninja-build/ninja/issues/1368
+- MakeMe: http://github.com/embedthis/makeme/issues/92
