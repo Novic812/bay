@@ -5,11 +5,11 @@ then
   exit 1
 fi
 
-pa=$1
-qu=$(dirname "$2")
-ro=$(basename "$2")
+xr=$1
+ya=$(dirname "$2")
+zu=$(basename "$2" .pdf)
 
-pdflatex -halt-on-error -output-directory "$qu" -jobname "$ro" "$pa" |
+pdflatex -halt-on-error -output-directory "$ya" -jobname "$zu" "$xr" |
 awk '
 /Output/ {
   $0 = "\33[1;32m" $0 "\33[m"
