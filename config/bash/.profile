@@ -3,6 +3,7 @@
 [ "$BASH" ] && shopt -s completion_strip_exe
 HISTCONTROL=ignoredups
 HISTIGNORE=c
+HISTTIMEFORMAT='%x %r '
 PATH=/usr/local/bin:/usr/bin
 PROMPT_COMMAND=gsh
 TERM=cygwin-vb
