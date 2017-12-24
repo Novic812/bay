@@ -23,6 +23,6 @@ Author
 Steven Penny
 
 [protocol is needed for image to render]::
-[xr]:http://raw.githubusercontent.com/svnpenn/bay/master/bay.jpg
-[ya]:http://github.com/svnpenn/stdlib
-[zu]:http://github.com/svnpenn/bay
+[xr]:https://raw.githubusercontent.com/svnpenn/bay/master/bay.jpg
+[ya]:https://github.com/svnpenn/stdlib
+[zu]:https://github.com/svnpenn/bay
