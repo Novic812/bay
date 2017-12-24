@@ -1,44 +1,36 @@
-http://alternativeto.net/software/vlc-media-player/alternatives?license=opensource&platform=windows
+http://alternativeto.net/software/clementine?platform=windows
 
 Player | Note
 -------|-----
 **MusicBee** |
+1by1 | no ratings
 AIMP | no POPM
-Amarok | old - http://download.kde.org/stable/amarok
-Aqualung | not Windows
+Aqualung | http://github.com/jeremyevans/aqualung/issues/4
 Audacious | http://redmine.audacious-media-player.org/issues/524
-Cineplay | video
+Billy | old
 Clementine | http://github.com/clementine-player/Clementine/issues/3666
-Cmdradio | command line
 Cuberok | old
-DeKiBulle | old
 Dopamine | http://github.com/digimezzo/Dopamine/issues/151
 Exaile | http://github.com/exaile/exaile/issues/422
-foobar2000 | ratings suck
-Foobnix | http://foobnix.com/en/download
-Gmpc | old
-gPodder | podcasts
+foobar2000 | no M4A ratings
+Foobnix | old
+GOM Audio | bundleware
+Groove Music | discontinued
 Jaangle | old
 Jajuk | Java
-JuK | not Windows
-Kantaris | video
+KDE JuK Media Player | not Windows
 KISS Player | old
-KnowTheList | party
-mc2 | discontinued
+Kitten Player | http://github.com/Ch3shireDev/KittenPlayer/issues/1
+Media Jukebox | trial
 Meridian | vk.com
-MPC-BE | video
-MPlayer | video
 Museeks | http://github.com/KeitIG/museeks/issues/268
 Musique | http://github.com/flaviotordini/musique/issues/14
-Nightingale | old
+Nulloy | old
 okPlayer | SourceForge
-plaYUVer | video
 qAllInOne | SourceForge
 Qmmp | awful GUI
-Quod Libet | http://github.com/quodlibet/quodlibet/issues/160
+Quod Libet | http://github.com/quodlibet/quodlibet/issues/403
 Soube | http://github.com/DracotMolver/Soube/issues/10
-SPlayer | video
 Tiny PLayer | old
-Tomahawk | http://github.com/tomahawk-player/tomahawk/issues/555
-UMPlayer | video
 Waf Music Manager | http://github.com/jbe2277/musicmanager/issues/1
+Winyl | no ratings
