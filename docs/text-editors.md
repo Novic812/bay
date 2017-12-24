@@ -1,7 +1,6 @@
 Editor | Note
 -------|-----
 **LiteIDE** | AWK, 32 bit, 24.6 MB, http://github.com/visualfc/liteide
-**Textadept** | AWK, 32 bit, 11.7 MB, http://foicica.com/textadept
 AkelPad | SourceForge
 Atom | more than 40 MB
 Aubrey's gVim | discontinued
@@ -34,6 +33,7 @@ SuperbEdit | discontinued
 SynWrite | SourceForge
 TEA | http://github.com/psemiletov/tea-qt/issues/6
 Text Editor Pro | discontinued
+Textadept | no GUI prefs
 Thunderpad | SourceForge
 Vim | CLI
 Visual Studio Code | more than 40 MB
