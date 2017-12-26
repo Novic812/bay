@@ -7,8 +7,9 @@ BEGIN {
   str_dump(arr_shift(_, ""))
 
   getline br
-  if (!br)
+  if (!br) {
     exit 1
+  }
   gsub("\42", "", br)
   FS = "[=\42]+"
   while ("ffprobe -v 0 -show_streams -of flat=h=0 " sh_escape(br) | getline) {
@@ -26,8 +27,9 @@ BEGIN {
 
   print "Drag picture here, then press enter (backslashes ok):"
   getline zu
-  if (!zu)
+  if (!zu) {
     exit 1
+  }
   _["tageditor", "-s", "cover=" str_gsub("\42", "", zu),
   "--max-padding", 100000, "-f", br]
   sh_trace(arr_search(_))

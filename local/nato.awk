@@ -20,8 +20,9 @@ BEGIN {
   }
 }
 END {
-  for (each in nfa)
+  for (each in nfa) {
     arr_bpush(m, sprintf("%2d", nfa[each]) FS each)
+  }
   arr_sort(m)
   print arr_join(m, RS)
 }

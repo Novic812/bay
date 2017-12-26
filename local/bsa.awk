@@ -9,16 +9,19 @@ BEGIN {
   qu["", "g - good", "b - bad"]
   while (1) {
     xr = mt_div(arr_sum(ARGV), 2)
-    if (ya[xr]++)
+    if (ya[xr]++) {
       break
+    }
     printf ARGV[1] ~ /[xX]/ ? "\n%X\n" : "\n%d\n", xr
     while (1) {
       printf "[g,b]? "
       getline zu
-      if (zu == "g")
+      if (zu == "g") {
         ARGV[1] = xr
-      else if (zu == "b")
+      }
+      else if (zu == "b") {
         ARGV[2] = xr
+      }
       else {
         print arr_join(qu, RS, 1)
         continue

@@ -10,10 +10,12 @@ git diff --cached | awk '
   y = NR
 }
 /^[-+]/ && NR > y + 2 {
-  if (/^-/ && z)
+  if (/^-/ && z) {
     next
-  if (/#/)
+  }
+  if (/#/) {
     next
+  }
   z = $0
   if (/^\+/ && z) {
     exit

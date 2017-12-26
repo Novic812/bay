@@ -9,12 +9,15 @@ BEGIN {
     exit 1
   }
   while ("curl -L " ARGV[1] | getline) {
-    if (/interactionCount/)
+    if (/interactionCount/) {
       br = html_attr("content", $0)
-    if (/datePublished/)
+    }
+    if (/datePublished/) {
       ch = tm_now() - tm_date(html_attr("content", $0))
-    if (/playback_count/)
+    }
+    if (/playback_count/) {
       br = json_parse($0, "playback_count")
+    }
     if (/created_at/) {
       ch = tm_now() - tm_date(json_parse($0, "created_at"))
     }

@@ -26,21 +26,25 @@ NR == 1 {
   }
 }
 $w["Rate Type"] == "Fixed" {
-  for (q in y)
+  for (q in y) {
     if ($w["RepCompany"] == q) {
       next
     }
-  for (q in x)
+  }
+  for (q in x) {
     if ($w["Plan Name"] == q) {
       next
     }
+  }
   tot = 0
-  for (q in z)
-    if (z[q] >= 1000)
+  for (q in z) {
+    if (z[q] >= 1000) {
       tot += $w["Price/kWh 1000"] * z[q]
+    }
     else {
       tot += $w["Price/kWh 500"] * z[q]
     }
+  }
   v[NR, 1] = tot
   v[NR, 2] = $w["RepCompany"]
   v[NR, 3] = $w["Price/kWh 500"]

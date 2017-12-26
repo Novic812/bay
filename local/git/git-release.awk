@@ -26,8 +26,9 @@ BEGIN {
   "git for-each-ref --sort -refname" | getline
   ju = $1
   ki = $NF
-  while ("git diff-tree --numstat " go " " ju | getline)
+  while ("git diff-tree --numstat " go " " ju | getline) {
     pa += $1
+  }
   while ("git diff-tree --numstat " ju " @" | getline) {
     xr[1] += $1
     xr[2] += $2
