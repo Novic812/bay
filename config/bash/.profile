@@ -16,6 +16,7 @@ alias agrep='grep -I --color --exclude .bash_history --exclude-dir .git'
 alias aod='od -tcx1'
 alias area='readlink -e'
 alias atar='tar --checkpoint-action "ttyout=%T \r"'
+alias atit='printf "\33];%s\a"'
 stty -ixon
 
 c() {
@@ -35,26 +36,27 @@ ish() {
 gsh() {
   history -a
   if [ "$GSH" != "$PWD" ]
-  then GSH=$PWD
+  then
+    GSH=$PWD
   elif [ / -ot .git/HEAD ]
-  then touch /
+  then
+    touch /
   elif [ "${ISH[*]+1}" ]
-  then unset ISH
-  else return
+  then
+    unset ISH
+  else
+    return
   fi
   # we do not need "\[" and "\]" here, but if we had a oneline
   # prompt with color text, it would break on Ctrl + R, Esc
+  # also "033" is needed with PS1
   if [ -f .git/index ] || [ -f .git ]
   then
     local gnr=$(git name-rev --name-only @)
-    PS1='\033];\s\a\n\033[33m\w \033[36m'"$gnr"'\033[m\n$ '
-  else PS1='\033];\s\a\n\033[33m\w\033[m\n$ '
+    PS1='\n\033[33m\w \033[36m'"$gnr"'\033[m\n$ '
+  else
+    PS1='\n\033[33m\w\033[m\n$ '
   fi
-}
-
-nffmpeg() {
-  ffmpeg -hide_banner "$@" 2>&1 |
-  awk '$1 == "Stream" {$0 = "\33[1;33m" $0 "\33[m"} 1'
 }
 
 nffprobe() {
