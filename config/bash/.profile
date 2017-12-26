@@ -2,7 +2,7 @@
 [ -f ~/.editor ] && . ~/.editor
 [ "$BASH" ] && shopt -s completion_strip_exe
 HISTCONTROL=ignoredups
-HISTIGNORE=c
+HISTIGNORE='c:history *'
 HISTTIMEFORMAT='%x %r '
 PATH=/usr/local/bin:/usr/bin
 PROMPT_COMMAND=gsh
