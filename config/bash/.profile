@@ -13,6 +13,7 @@ export POSIXLY_CORRECT # man7.org/linux/man-pages/man1/getopt.1.html
 alias acc='x86_64-w64-mingw32-gcc -Wall -Wextra -Wconversion -pedantic -std=c11'
 alias agit='git --no-pager'
 alias agrep='grep -I --color --exclude .bash_history --exclude-dir .git'
+alias aman='man -K'
 alias aod='od -tcx1'
 alias area='readlink -e'
 alias atar='tar --checkpoint-action "ttyout=%T \r"'
@@ -23,16 +24,6 @@ c() {
   printf '\33c'
 }
 
-ish() {
-  if [ "${ISH[*]+1}" ]
-  then
-    PROMPT_COMMAND=gsh
-  else
-    PROMPT_COMMAND='history -a'
-    PS1='${ISH[*]+${ISH[\#]-=> $?\n\n}}${ISH[\#]=}$ '
-  fi
-}
-
 gsh() {
   history -a
   if [ "$GSH" != "$PWD" ]
@@ -41,9 +32,6 @@ gsh() {
   elif [ / -ot .git/HEAD ]
   then
     touch /
-  elif [ "${ISH[*]+1}" ]
-  then
-    unset ISH
   else
     return
   fi
