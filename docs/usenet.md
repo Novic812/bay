@@ -7,6 +7,7 @@ Automation
 ---------------------------------
 - http://github.com/Sonarr/Sonarr
 - http://github.com/CouchPotato/CouchPotatoServer
+- http://github.com/rembo10/headphones
 
 Indexers
 ---------------------
