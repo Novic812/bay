@@ -1,7 +1,5 @@
 # -*- sh -*-
 cygwin-vb|yellow standout mode and red visible bell,
-# newline ignored after 80 cols
-  xenl,
 # visible bell
   flash=\e7\e[40A\e[80C\e[4D\e[5;30;41mERROR\e[m\e8,
 # exit standout mode
