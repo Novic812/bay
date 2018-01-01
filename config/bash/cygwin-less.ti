@@ -1,0 +1,8 @@
+# -*- sh -*-
+cygwin-less|Cygwin yellow standout mode for less
+# begin standout mode
+  smso=\e[5;30;43m,
+# exit standout mode
+  rmso=\e[m,
+# similar terminal
+  use=cygwin,
