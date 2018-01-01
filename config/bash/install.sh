@@ -26,4 +26,5 @@ END {
 ' symlink.txt
 
 # /usr/share
-tic cygwin-vb.terminfo
+tic cygwin-readline.ti
+tic cygwin-less.ti
