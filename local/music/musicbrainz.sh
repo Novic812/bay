@@ -5,48 +5,6 @@ jn() {
   awk '$1 ~ key {print $2}' RS='([{}]|"?, ?")' FS='": ?"?' key="$1" "$2"
 }
 
-proxy() {
-  local msg url dt pool px cn
-  msg=$1
-  url=$2
-  set --
-  dt=proxy.txt
-  printf 'request %s... ' "$msg" >&2
-  while :
-  do
-    if [ "$#" = 0 ]
-    then
-      touch "$dt"
-      mapfile -t pool < "$dt"
-      set -- "${pool[@]}"
-    fi
-    if [ "$#" = 0 ]
-    then
-      wget -q -O "$dt" txt.proxyspy.net/"$dt"
-    fi
-    read px cn <<< "$1"
-    if [[ ! "$px" =~ : ]]
-    then
-      shift
-      continue
-    fi
-    if ! wget -q -T 2 -t 1 -O web.json -e http_proxy="$px" "$url"
-    then
-      shift
-      continue
-    fi
-    if jn responseStatus web.json | grep -q 403
-    then
-      shift
-      continue
-    else
-      break
-    fi
-  done
-  printf '%s\n' "$px" >&2
-  printf '%s\n' "$@" > "$dt"
-}
-
 if [ ! "$BROWSER" ]
 then
   echo 'BROWSER not set or not exported'

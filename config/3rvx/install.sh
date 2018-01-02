@@ -9,8 +9,11 @@ cd "$z"/OSD
 set *.png
 if [ ! -f "$1" ]
 then
-  wget -B https://raw.githubusercontent.com/malensek/3RVX/master/ -i- <<'eof'
-Skins/Windows Default/OSD/background.png
-Skins/Windows Default/OSD/bar.png
+  set https://raw.githubusercontent.com/malensek/3RVX/master/Skins
+  curl -K- <<eof
+url $1/Windows%20Default/OSD/background.png
+remote-name
+url $1/Windows%20Default/OSD/bar.png
+remote-name
 eof
 fi
