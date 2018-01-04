@@ -22,7 +22,7 @@ touch %/h.txt %/f.txt %/c.txt
   do
     case $each in
     *reddit*)
-      music-reddit.awk ex "$each"
+      music-reddit.sh ex "$each"
     ;;
     *)
       echo "$each"
