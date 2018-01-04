@@ -1,10 +1,4 @@
 #!/usr/local/bin/shlib
-br() {
-  for each
-  do echo "$each"
-  done
-}
-
 if [ "$#" = 0 ]
 then
   cat <<'eof'
@@ -23,17 +17,25 @@ pa=$(date -d '-1 year' +%Y%m%d)
 mkdir -p % %-new %-old
 touch %/h.txt %/f.txt %/c.txt
 
-# FIXME cygwin.com/ml/cygwin/2016-10/msg00298.html
 {
-  br "$@" | grep -v reddit
-  br "$@" | grep reddit | lynx -dump -listonly -nonumbers - '' |
-  awk '/Hidden/ {qu=1; next} ! $0 {qu=0} qu'
+  for each
+  do
+    case $each in
+    *reddit*)
+      music-reddit.awk ex "$each"
+    ;;
+    *)
+      echo "$each"
+    ;;
+    esac
+  done
 } |
 while read xr
 do
   char=$((char+1))
   if [ "$char" -ge 2 ]
-  then echo starting link "$char"
+  then
+    echo starting link "$char"
   fi
   if grep -Fq "$xr" %/h.txt
   then
@@ -80,14 +82,18 @@ done
 while IFS="${IFS# }" read xr upload_date source _filename
 do
   if [ ! -f %-new/"$_filename" ]
-  then continue
+  then
+    continue
   fi
   if [ "$upload_date" -gt "$pa" ]
-  then dest=1
-  else dest=0
+  then
+    dest=1
+  else
+    dest=0
   fi
   if [ "$source" = "$dest" ]
-  then continue
+  then
+    continue
   fi
   echo "$_filename"
   echo '[mv] file is now old, moving'
