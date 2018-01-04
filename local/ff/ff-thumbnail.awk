@@ -4,7 +4,7 @@
 BEGIN {
   _["Careful, screencaps will dump in current directory.",
   "Drag video here, then press enter (backslashes ok):"]
-  str_dump(arr_shift(_, ""))
+  str_dump(arr_fpop(_, ""))
 
   getline br
   if (!br) {
@@ -21,7 +21,7 @@ BEGIN {
   while (ki--) {
     _["ffmpeg", "-y", "-v", "error", "-ss", xr, "-i", br,
     "-frames", 1, xr ".jpg"]
-    sh_trace(arr_shift(_, ""))
+    sh_trace(arr_fpop(_, ""))
     xr += ya
   }
 
