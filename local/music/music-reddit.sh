@@ -16,12 +16,9 @@ eof
   exit 1
 fi
 
-awk '
-BEGIN {
-  sub(/(\?|$)/, ".json&", ARGV[1])
-  print "url", ARGV[1]
-}
-' "$2" |
+sed -E 's/(\?|$)/.json&/; s/^/url /' <<eof |
+$2
+eof
 curl -L -A0 -K- |
 case $1 in
 ex)
