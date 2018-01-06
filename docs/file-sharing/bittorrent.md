@@ -1,4 +1,12 @@
+Anonymous mode
+---------------------------------------------
+http://qbforums.shiki.hu/index.php?topic=5389
 
-- http://lifehacker.com/5897095/whats-a-private-bittorrent-tracker
+Private tracker
+---------------------------------------------------------------
 - http://wikipedia.org/wiki/BitTorrent_tracker#Private_trackers
-- http://wikipedia.org/wiki/BitTorrent_tracker#Public_trackers
+- http://lifehacker.com/5897095/whats-a-private-bittorrent-tracker
+
+Public tracker
+------------------------------------------------------------
+http://wikipedia.org/wiki/BitTorrent_tracker#Public_trackers
