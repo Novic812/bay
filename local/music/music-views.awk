@@ -1,7 +1,7 @@
 #!/usr/local/bin/awklib -f
 function vpt(view, td, ts, prec) {
-  printf("%\47.0f views / %\47.*f %ss = %\47.0f\n",
-  view, prec, td, ts, view / td)
+  printf "%\47.0f views / %\47.*f %ss = %\47.0f\n",
+  view, prec, td, ts, view / td
 }
 BEGIN {
   if (ARGC != 2) {
