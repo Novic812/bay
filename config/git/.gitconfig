@@ -13,7 +13,3 @@ wsErrorHighlight = all
 
 [push]
 default = current
-
-[user]
-email = svnpenn@gmail.com
-name = Steven Penny
