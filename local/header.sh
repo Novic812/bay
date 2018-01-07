@@ -6,16 +6,18 @@ then
 fi
 
 q=0
-until [ "$q" = "$4" ]  
+until [ "$q" = "$4" ]
 do
   if [ "$q" != 0 ]
-  then echo
+  then
+    echo
   fi
   z=$((q + 1))
 
   printf 'building %d\n' "$z"
   if [ "$z" = 1 ]
-  then cat "$3"
+  then
+    cat "$3"
   else
     cd "$1"
     grep -r -l -f /tmp/"$q"
@@ -25,7 +27,8 @@ do
   printf 'trying %d\n' "$z"
   cd "$2"
   if ! grep -r --color --exclude-dir .git -f /tmp/"$z"
-  then echo 'no matches'
+  then
+    echo 'no matches'
   fi
 
   q=$z

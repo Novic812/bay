@@ -11,8 +11,10 @@ do
   for qu
   do
     if [ -"$pa" "$qu" ]
-    then printf T
-    else printf F
+    then
+      printf T
+    else
+      printf F
     fi
     printf '  '
   done
@@ -21,8 +23,10 @@ do
   for qu
   do
     if [ ! -"$pa" "$qu" ] 2>/dev/null
-    then printf T
-    else printf F
+    then
+      printf T
+    else
+      printf F
     fi
     printf '  '
   done

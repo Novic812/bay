@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/dash
 # Firefox exits 1 if already open
 jn() {
   # parse JSON
@@ -46,7 +46,8 @@ date-get)
     fd="$date-$each"
     qy="%22$album%22 $fd"
     if [ "$each" -eq 1 ]
-    then "$BROWSER" 'http://google.com/search?q='"$qy"
+    then
+      "$BROWSER" 'http://google.com/search?q='"$qy"
     fi
     proxy "$fd" "ajax.googleapis.com/ajax/services/search/web?v=1.0&q=$qy"
     count=$(jq -r .responseData.cursor.resultCount web.json | tr -d '\r')
