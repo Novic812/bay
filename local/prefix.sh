@@ -19,7 +19,8 @@ do
     while grep -q include <<eof
 $PWD
 eof
-    do cd ..
+    do
+      cd ..
     done
     pwd
   fi
@@ -42,7 +43,8 @@ do
     while grep -q lib <<eof
 $PWD
 eof
-    do cd ..
+    do
+      cd ..
     done
     pwd
   fi
