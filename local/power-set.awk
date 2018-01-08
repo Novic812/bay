@@ -6,7 +6,7 @@ BEGIN {
     NF = 0
     for (zu = 0; zu < wh; zu++) {
       if (int(xr / 2 ^ zu) % 2) {
-        $(zu + 1) = ARGV[zu + 1] FS
+        $(zu + 1) = (NF ? FS : "") ARGV[zu + 1]
       }
     }
     print
