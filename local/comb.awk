@@ -5,25 +5,19 @@ BEGIN {
     exit 1
   }
   for (q = 0; q < ARGV[1]; q++) {
-    z[q] = q
+    z[q] = ARGV[1] - q;
   }
   while (1) {
-    for (q in z) {
-      printf "%s%s", ARGV[z[q] + 2], q == ARGV[1] - 1 ? "\n" : " "
+    for (q = ARGV[1]; q--;) {
+      printf "%s%s", ARGV[z[q] + 1], q ? " " : "\n"
     }
-    if (z[ARGV[1] - 1]++ < ARGC - 3) {
-      continue
+    for (q = 0; z[q] >= ARGC - 2 - q;) {
+      if (++q >= ARGV[1]) {
+        exit
+      }
     }
-    q = ARGV[1] - 2
-    while (q >= 0 && z[q] >= q - ARGV[1] + ARGC - 2) {
-      q--
-    }
-    if (q < 0) {
-      break
-    }
-    z[q]++
-    while (++q < ARGV[1]) {
-      z[q] = z[q - 1] + 1
+    for (z[q]++; q; q--) {
+      z[q - 1] = z[q] + 1;
     }
   }
 }
