@@ -15,11 +15,11 @@ alias acc='x86_64-w64-mingw32-gcc -Wall -Wextra -Wconversion -pedantic -std=c11'
 alias agit='git --no-pager'
 alias agrep='grep -I --color --exclude .bash_history --exclude-dir .git'
 alias ahist='history | grep -i --color'
+alias als='ls -So'
 alias aman='man -K'
 alias aod='od -tcx1'
 alias area='readlink -e'
 alias atar='tar --checkpoint-action "ttyout=%T \r"'
-alias atit='printf "\33];%s\a"'
 stty -ixon
 
 c() {
