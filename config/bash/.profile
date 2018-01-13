@@ -18,6 +18,7 @@ alias ahist='history | grep -i --color'
 alias als='ls -So'
 alias aman='man -K'
 alias aod='od -tcx1'
+alias apr='pr -dt'
 alias area='readlink -e'
 alias atar='tar --checkpoint-action "ttyout=%T \r"'
 stty -ixon
