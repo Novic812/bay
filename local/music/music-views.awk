@@ -15,12 +15,6 @@ BEGIN {
     if (/datePublished/) {
       ch = tm_now() - tm_date(html_attr("content", $0))
     }
-    if (/playback_count/) {
-      br = json_parse($0, "playback_count")
-    }
-    if (/created_at/) {
-      ch = tm_now() - tm_date(json_parse($0, "created_at"))
-    }
   }
   # youtube.com/watch?v=ZWmrfgj0MZI
   printf br / ch < 4500000 / tm_day(365.25) ? "\33[1;32m" : "\33[1;31m"
