@@ -6,4 +6,3 @@ c:\windows\system32\msiexec.exe
 c:\windows\system32\reg.exe
 c:\windows\system32\rundll32.exe
 c:\windows\system32\setx.exe
-c:\windows\system32\wbem\wmic.exe

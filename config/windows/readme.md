@@ -5,7 +5,6 @@ ftp | sage/sage
 mp4box | bay/local/mp4box.sh
 msiexec | glade/glade-msi.sh
 notepad2 |
-reg |
-rundll32 |
+rundll32 | bay/config/windows/remove.sh
 setx |
-wmic |
+reg | bay/config/windows/install.sh
