@@ -11,6 +11,3 @@ fi
 
 # clear run history
 sh_trace rundll32 inetcpl.cpl ClearMyTracksByProcess 1
-
-# remove dead symlinks
-find /usr/local/bin -xtype l -delete -print
