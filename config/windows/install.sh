@@ -1,5 +1,15 @@
 #!/bin/dash -e
 
+# /usr/local
+awklib '
+{
+  z = z FS sh_escape($0)
+}
+END {
+  system("ln -sfvt /usr/local/bin" z)
+}
+' symlink.txt
+
 # App Paths
 REG ADD \
   'HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\sh.exe' \

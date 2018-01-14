@@ -15,16 +15,6 @@ else
 fi
 ln -sfv "$PWD"/.bash_history "$PWD"/.inputrc "$PWD"/.profile ~
 
-# /usr/local
-awklib '
-{
-  z = z FS sh_escape($0)
-}
-END {
-  system("ln -sfvt /usr/local/bin" z)
-}
-' symlink.txt
-
 # /usr/share
 tic cygwin-readline.ti
 tic cygwin-less.ti
