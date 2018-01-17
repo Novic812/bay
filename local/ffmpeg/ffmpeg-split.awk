@@ -27,6 +27,6 @@ END {
     ya[wh] (ya[wh + 1] ? "\34-to\34" ya[wh + 1] : ""), "-b:a", "256k",
     "-movflags", "faststart", "-metadata", "track=" ro[wh], "-metadata",
     "title=" xr[wh], ro[wh] FS str_gsub("\\?", "", xr[wh]) ".m4a"]
-    sh_trace(arr_search(zu))
+    sh_trace(ar_search(zu))
   }
 }

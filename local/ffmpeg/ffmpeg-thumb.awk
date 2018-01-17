@@ -4,7 +4,7 @@
 BEGIN {
   _["Careful, screencaps will dump in current directory.",
   "Drag video here, then press enter (backslashes ok):"]
-  str_dump(arr_fpop(_, ""))
+  str_dump(ar_fpop(_, ""))
 
   getline br
   if (!br) {
@@ -21,7 +21,7 @@ BEGIN {
   while (ki--) {
     _["ffmpeg", "-y", "-v", "error", "-ss", xr, "-i", br,
     "-frames", 1, xr ".jpg"]
-    sh_trace(arr_fpop(_, ""))
+    sh_trace(ar_fpop(_, ""))
     xr += ya
   }
 
@@ -32,5 +32,5 @@ BEGIN {
   }
   _["tageditor", "-s", "cover=" str_gsub("\42", "", zu),
   "--max-padding", 100000, "-f", br]
-  sh_trace(arr_search(_))
+  sh_trace(ar_search(_))
 }

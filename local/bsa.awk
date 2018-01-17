@@ -2,13 +2,13 @@
 BEGIN {
   if (ARGC != 3) {
     qu["bsa.awk <good> <bad>", "", "hex allowed - use 0x"]
-    print arr_join(qu, RS, 1)
+    print ar_join(qu, RS, 1)
     exit 1
   }
   ARGC = 0
   qu["", "g - good", "b - bad"]
   while (1) {
-    xr = mt_div(arr_sum(ARGV), 2)
+    xr = mt_div(ar_sum(ARGV), 2)
     if (ya[xr]++) {
       break
     }
@@ -23,7 +23,7 @@ BEGIN {
         ARGV[2] = xr
       }
       else {
-        print arr_join(qu, RS, 1)
+        print ar_join(qu, RS, 1)
         continue
       }
       break

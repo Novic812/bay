@@ -11,12 +11,12 @@ BEGIN {
     ch = br ? 0 : 1
     do {
       de = 5 ^ br * 2 ^ ch++
-      arr_bpush(ec, de)
+      ar_bpush(ec, de)
     } while (de < ARGV[1])
     br--
   }
 
-  arr_sort(ec)
+  ar_sort(ec)
   for (br in ec) {
     printf "%\47d\n", ec[br]
   }
