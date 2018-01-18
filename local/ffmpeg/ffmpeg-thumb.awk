@@ -2,31 +2,31 @@
 # Set thumbnail for MP4 video
 
 BEGIN {
-  ARGV["Careful, screencaps will dump in current directory.",
+  sb["Careful, screencaps will dump in current directory.",
   "Drag video here, then press enter (backslashes ok):"]
-  print arb_join(ARGV, RS)
+  print arb_join(sb, RS)
 
-  if ("" == br = str_gsub("\42", "", file_gets("-"))) {
+  if ("" == ch = str_trim(file_gets("-"))) {
     exit 1
   }
   FS = "[=\42]+"
-  while ("ffprobe -show_streams -of flat=h=0 " sh_escape(br) | getline) {
-    ch[$1] = $2
+  while ("ffprobe -show_streams -of flat=h=0 " sh_escape(ch) | getline) {
+    fo[$1] = $2
   }
-  ki = ch["stream.0.width"] / ch["stream.0.height"] > 2 ? 36 : 30
-  xr = .09 * ch["stream.0.duration"]
-  ya = (ch["stream.0.duration"] - 2 * xr) / (ki - 1)
-  while (ki--) {
-    ARGV["ffmpeg", "-y", "-v", "error", "-ss", xr, "-i", br,
+  qu = fo["stream.0.width"] / fo["stream.0.height"] > 2 ? 36 : 30
+  xr = .09 * fo["stream.0.duration"]
+  ya = (fo["stream.0.duration"] - 2 * xr) / (qu - 1)
+  while (qu--) {
+    sb["ffmpeg", "-y", "-v", "error", "-ss", xr, "-i", ch,
     "-frames", 1, xr ".jpg"]
-    shb_trace(ARGV)
+    shb_trace(sb)
     xr += ya
   }
 
   print "Drag picture here, then press enter (backslashes ok):"
-  if ("" == zu = str_gsub("\42", "", file_gets("-"))) {
+  if ("" == zu = str_trim(file_gets("-"))) {
     exit 1
   }
-  ARGV["tageditor", "-s", "cover=" zu, "--max-padding", 100000, "-f", br]
-  shb_trace(ARGV)
+  sb["tageditor", "-s", "cover=" zu, "--max-padding", 100000, "-f", ch]
+  shb_trace(sb)
 }
