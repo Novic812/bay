@@ -1,12 +1,11 @@
 #!/usr/local/bin/awklib -f
 BEGIN {
   if (ARGC != 3) {
-    qu["bsa.awk <good> <bad>", "", "hex allowed - use 0x"]
-    print ar_join(qu, RS, 1)
+    sb["bsa.awk <good> <bad>", "", "hex allowed - use 0x"]
+    print arb_join(sb, RS)
     exit 1
   }
-  ARGC = 0
-  qu["", "g - good", "b - bad"]
+  sb["", "g - good", "b - bad"]
   while (1) {
     xr = mt_div(ar_sum(ARGV), 2)
     if (ya[xr]++) {
@@ -15,7 +14,7 @@ BEGIN {
     printf ARGV[1] ~ /[xX]/ ? "\n%X\n" : "\n%d\n", xr
     while (1) {
       printf "[g,b]? "
-      getline zu
+      zu = file_gets("-")
       if (zu == "g") {
         ARGV[1] = xr
       }
@@ -23,7 +22,7 @@ BEGIN {
         ARGV[2] = xr
       }
       else {
-        print ar_join(qu, RS, 1)
+        print arb_join(sb, RS)
         continue
       }
       break

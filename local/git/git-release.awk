@@ -10,16 +10,10 @@ function tag(expr,   br, ec) {
 
 BEGIN {
   if (system("[ -d .git ]")) {
-    OFS = RS
-    print \
-    "LOCAL",
-    "  1. commit program change",
-    "  2. commit version change",
-    "  3. tag new version",
-    "",
-    "REMOTE",
-    "  1. push commits",
-    "  2. push release"
+    sb["LOCAL", "  1. commit program change", "  2. commit version change",
+    "  3. tag new version", "", "REMOTE", "  1. push commits",
+    "  2. push release"]
+    print arb_join(sb, RS)
     exit 1
   }
   "git ls-tree @ license.md | git mktree" | getline go
