@@ -6,7 +6,8 @@ BEGIN {
   "Drag video here, then press enter (backslashes ok):"]
   print arb_join(sb, RS)
 
-  if ("" == ch = str_trim(file_gets("-"))) {
+  ch = str_trim(file_gets("-"))
+  if (!ch) {
     exit 1
   }
   FS = "[=\42]+"
@@ -24,7 +25,8 @@ BEGIN {
   }
 
   print "Drag picture here, then press enter (backslashes ok):"
-  if ("" == zu = str_trim(file_gets("-"))) {
+  zu = str_trim(file_gets("-"))
+  if (!zu) {
     exit 1
   }
   sb["tageditor", "-s", "cover=" zu, "--max-padding", 100000, "-f", ch]
