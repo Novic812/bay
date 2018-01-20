@@ -3,11 +3,6 @@ fd() {
   find %-new %-old -type f | sed 's-.*/--'
 }
 
-mr() {
-  mkdir -p % %-new %-old
-  touch %/h.txt %/f.txt %/c.txt
-}
-
 if [ "$#" != 1 ]
 then
   cat <<'eof'
@@ -22,7 +17,8 @@ eof
   exit 1
 fi
 
-mr
+mkdir -p % %-new %-old
+touch %/h.txt %/f.txt %/c.txt
 
 if [ "$1" = list ]
 then
