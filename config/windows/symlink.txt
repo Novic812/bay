@@ -3,6 +3,7 @@ c:\program files\mozilla firefox\firefox.exe
 c:\program files\notepad2\notepad2.exe
 c:\windows\system32\ftp.exe
 c:\windows\system32\msiexec.exe
+c:\windows\system32\ping.exe
 c:\windows\system32\reg.exe
 c:\windows\system32\rundll32.exe
 c:\windows\system32\setx.exe
