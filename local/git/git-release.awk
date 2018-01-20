@@ -1,11 +1,10 @@
 #!/usr/local/bin/awklib -f
-function tag(expr,   br, ec) {
-  OFS = "."
+function tg(mix,   br, ec) {
   for (br = 100; br >= 1; br /= 10) {
-    $++ec = mt_div(expr, br)
-    expr %= br
+    ar_bpush(ec, mt_div(mix, br))
+    mix %= br
   }
-  return $0
+  return ar_join(ec, ".")
 }
 
 BEGIN {
@@ -17,9 +16,10 @@ BEGIN {
     exit 1
   }
   "git ls-tree @ license.md | git mktree" | getline go
+  FS = "[[:blank:][:punct:]]"
   "git for-each-ref --sort -refname" | getline
   ju = $1
-  ki = $NF
+  ki = $(NF - 2) $(NF - 1) $NF
   while ("git diff-tree --numstat " go " " ju | getline) {
     pa += $1
   }
@@ -29,11 +29,10 @@ BEGIN {
   }
   ya = mt_max(xr) / pa * 100
   zu = ya >= 100 ? 100 : ya >= 10 ? 10 : 1
-  gsub(/[^[:digit:]]/, "", ki)
-  printf "old tag = %s\n", tag(ki)
+  printf "old tag = %s\n", tg(ki)
   printf "old tag lines = %d\n", pa
   printf "new tag insertions = %d\n", xr[1]
   printf "new tag deletions = %d\n", xr[2]
   printf "%d/%d = %d%\n", mt_max(xr), pa, ya
-  printf "new tag = %s\n", tag(zu * mt_div(zu + ki, zu))
+  printf "new tag = %s\n", tg(zu * mt_div(zu + ki, zu))
 }
