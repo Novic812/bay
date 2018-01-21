@@ -1,5 +1,0 @@
-unix.stackexchange.com/a/346069
-unix.stackexchange.com/q/346050
-unix.stackexchange.com/questions/346050
-unix.stackexchange.com/questions/346050/fix-config-in-vimrc-file
-unix.stackexchange.com/questions/346050/fix-config-in-vimrc-file/346069#346069
