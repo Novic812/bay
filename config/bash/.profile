@@ -52,6 +52,10 @@ gsh() {
   fi
 }
 
+ncurl() {
+  curl -v "$@" 2>&1 | awk '$1 == ">" {$0 = "\33[1;33m" $0 "\33[m"} 1'
+}
+
 nffprobe() {
   ffprobe -hide_banner "$@" 2>&1 |
   awk '$1 == "Stream" {$0 = "\33[1;33m" $0 "\33[m"} 1'
