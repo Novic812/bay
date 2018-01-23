@@ -47,6 +47,8 @@ qu = {
   'extensions.pocket.enabled': false,
   // disable screenshots
   'extensions.screenshots.disabled': true,
+  // disable update nag
+  'extensions.shield-recipe-client.enabled': false,
   // about:config warning
   'general.warnOnAboutConfig': false,
   // share your location
