@@ -15,13 +15,14 @@ BEGIN {
     print arb_join(sb, RS)
     exit 1
   }
-  "git ls-tree @ license.md | git mktree" | getline go
-  FS = "[[:blank:][:punct:]]"
+  "git mktree </dev/null" | getline go
   "git for-each-ref --sort -refname" | getline
   ju = $1
-  ki = $(NF - 2) $(NF - 1) $NF
+  ki = rx_replace("[^[:digit:]]", "", $3)
   while ("git diff-tree --numstat " go " " ju | getline) {
-    pa += $1
+    if ($3 != "license.md") {
+      pa += $1
+    }
   }
   while ("git diff-tree --numstat " ju " @" | getline) {
     xr[1] += $1
