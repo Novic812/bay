@@ -15,6 +15,6 @@ BEGIN {
   _["musicbrainz.org/search?type=release&query=" ARGV[1] "+" ARGV[2]]
   _["wikipedia.org/w/index.php?search=" ARGV[1] "+" ARGV[2]]
   for (each in _) {
-    system(ENVIRON["BROWSER"] FS sh_escape(str_gsub(FS, "+", each)))
+    system(ENVIRON["BROWSER"] FS sh_escape(rx_replace(FS, "+", each)))
   }
 }
