@@ -20,13 +20,15 @@ BEGIN {
   ju = $1
   ki = rx_replace("[^[:digit:]]", "", $3)
   while ("git diff-tree --numstat " go " " ju | getline) {
-    if ($3 != "license.md") {
+    if (!/license/) {
       pa += $1
     }
   }
   while ("git diff-tree --numstat " ju " @" | getline) {
-    xr[1] += $1
-    xr[2] += $2
+    if (!/license/) {
+      xr[1] += $1
+      xr[2] += $2
+    }
   }
   ya = mt_max(xr) / pa * 100
   zu = ya >= 100 ? 100 : ya >= 10 ? 10 : 1
