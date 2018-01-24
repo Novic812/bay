@@ -1,13 +1,28 @@
 #!/usr/local/bin/awklib -f
 
 BEGIN {
-  if (ARGC != 4) {
-    sb["SYNOPSIS", "ff-seq.awk <start> <duration> <file>", "",
-    "DESCRIPTION", "Make an image sequence from a video"]
+  if (ARGC != 5) {
+    sb["SYNOPSIS", "ffmpeg-seq.awk <start> <duration> <frames> <file>", "",
+    "DESCRIPTION", "Make an image sequence from a video", "", "FRAMES",
+    "key   I frames only", "all   I, P and B frames"]
     print arb_join(sb, RS)
     exit 1
   }
-  sb["ffmpeg", "-hide_banner", "-ss", ARGV[1], "-i", ARGV[3], "-t", ARGV[2],
-  "-vf", "select='eq(pict_type, I)'", "-vsync", "vfr", "-q", 1, "%d.jpg"]
-  shb_trace(sb)
+  ar_bpush(z, "ffmpeg")
+  ar_bpush(z, "-ss")
+  ar_bpush(z, ARGV[1])
+  ar_bpush(z, "-i")
+  ar_bpush(z, ARGV[4])
+  ar_bpush(z, "-t")
+  ar_bpush(z, ARGV[2])
+  if (ARGV[3] == "key") {
+    ar_bpush(z, "-vf")
+    ar_bpush(z, "select='eq(pict_type, I)'")
+  }
+  ar_bpush(z, "-vsync")
+  ar_bpush(z, "vfr")
+  ar_bpush(z, "-q")
+  ar_bpush(z, 1)
+  ar_bpush(z, "%d.jpg")
+  shv_trace(z)
 }
