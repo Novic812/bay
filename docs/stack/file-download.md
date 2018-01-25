@@ -1,7 +1,7 @@
 File download
-=================================
-- http://serverfault.com/q/716180
-- http://superuser.com/q/447873
+========================================
+- http://serverfault.com/q/716180#893987
+- http://superuser.com/q/447873#447875
 
 OpenSSL
 =======================================
@@ -9,4 +9,4 @@ OpenSSL
 - http://superuser.com/q/326403#1287926
 - http://unix.stackexchange.com/q/348581#418981
 - http://unix.stackexchange.com/q/370932#419225
-- http://unix.stackexchange.com/q/47852
+- http://unix.stackexchange.com/q/47852#419496
