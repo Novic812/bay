@@ -8,21 +8,11 @@ BEGIN {
     print arb_join(sb, RS)
     exit 1
   }
-  ar_bpush(z, "ffmpeg")
-  ar_bpush(z, "-ss")
-  ar_bpush(z, ARGV[1])
-  ar_bpush(z, "-i")
-  ar_bpush(z, ARGV[4])
-  ar_bpush(z, "-t")
-  ar_bpush(z, ARGV[2])
-  if (ARGV[3] == "key") {
-    ar_bpush(z, "-vf")
-    ar_bpush(z, "select='eq(pict_type, I)'")
+  sb["ffmpeg", "-ss", ARGV[1], "-i", ARGV[4], "-t", ARGV[2],
+  "-vf", "select='eq(pict_type, I)'", "-vsync", "vfr", "-q", 1, "%d.jpg"]
+  if (ARGV[3] == "all") {
+    arb_unset(sb, 8)
+    arb_unset(sb, 8)
   }
-  ar_bpush(z, "-vsync")
-  ar_bpush(z, "vfr")
-  ar_bpush(z, "-q")
-  ar_bpush(z, 1)
-  ar_bpush(z, "%d.jpg")
-  shv_trace(z)
+  shb_trace(sb)
 }
