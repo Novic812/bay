@@ -32,7 +32,7 @@ Programmer’s Notepad | http://github.com/simonsteele/pn/issues/152
 SciTE | http://github.com/mirror/scite/issues/1
 SuperbEdit | discontinued
 SynWrite | SourceForge
-TEA | http://github.com/psemiletov/tea-qt/issues/6
+TEA | http://github.com/psemiletov/tea-qt/issues/17
 Text Editor Pro | discontinued
 Textadept | no GUI prefs
 Thunderpad | SourceForge
