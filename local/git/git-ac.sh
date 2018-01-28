@@ -22,7 +22,7 @@ git diff --cached | awk '
   }
 }
 END {
-  print substr(z, 2, 62)
+  print substr(z, 2, 61)
 }
 ' |
 git commit --file -
