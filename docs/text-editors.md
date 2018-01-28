@@ -5,7 +5,7 @@ Atom | http://github.com/atom/atom/issues/5012
 Aubrey's gVim | discontinued
 Bluefish | no Awk
 BowPad | SourceForge
-Brackets | more than 40 MB
+Brackets | http://github.com/adobe/brackets/issues/14071
 ChrunchApp | discontinued
 Devpad | discontinued
 DtPad | discontinued
