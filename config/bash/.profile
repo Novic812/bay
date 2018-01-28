@@ -1,7 +1,7 @@
 [ -f ~/.browser ] && . ~/.browser
 [ -f ~/.editor ] && . ~/.editor
 [ "$BASH" ] && shopt -s completion_strip_exe
-HISTCONTROL=ignoredups
+HISTCONTROL=erasedups
 HISTIGNORE='c:ahist *'
 HISTTIMEFORMAT='%x %r '
 PATH=/usr/local/bin:/usr/bin
@@ -30,7 +30,7 @@ c() {
 }
 
 gsh() {
-  history -a
+  history -w
   if [ "$GSH" != "$PWD" ]
   then
     GSH=$PWD
