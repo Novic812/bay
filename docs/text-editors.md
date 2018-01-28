@@ -16,7 +16,7 @@ gedit | discontinued
 GNU Emacs | CLI
 jEdit | SourceForge
 Kate | more than 40 MB
-Komodo Edit | more than 40 MB
+Komodo Edit | http://github.com/Komodo/KomodoEdit/issues/3438
 Lime Text | http://github.com/limetext/backend/issues/124
 LiteIDE | http://github.com/visualfc/liteide/issues/903
 MadEdit-Mod | SourceForge
