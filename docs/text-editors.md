@@ -37,7 +37,7 @@ Text Editor Pro | discontinued
 Textadept | no GUI prefs
 Thunderpad | SourceForge
 Vim | CLI
-Visual Studio Code | more than 40 MB
+Visual Studio Code | http://github.com/Microsoft/vscode/issues/42265
 wxMEdit | SourceForge
 Ynote | discontinued
 Zinjai | SourceForge
