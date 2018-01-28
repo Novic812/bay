@@ -1,5 +1,6 @@
 Editor | Note
 -------|-----
+**Textadept** | no GUI prefs
 AkelPad | SourceForge
 Atom | http://github.com/atom/atom/issues/5012
 Aubrey's gVim | discontinued
@@ -34,7 +35,6 @@ SuperbEdit | discontinued
 SynWrite | SourceForge
 TEA | http://github.com/psemiletov/tea-qt/issues/17
 Text Editor Pro | discontinued
-Textadept | no GUI prefs
 Thunderpad | SourceForge
 Vim | CLI
 Visual Studio Code | http://github.com/Microsoft/vscode/issues/42265
