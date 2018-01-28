@@ -1,4 +1,4 @@
-#!/usr/local/bin/shlib
+#!/bin/dash -e
 if [ "$#" = 0 ]
 then
   cat <<'eof'
@@ -107,5 +107,5 @@ do
     $3 = 0
   }
   1
-  ' %/h.txt "$xr" | file_get %/h.txt
+  ' %/h.txt "$xr" | file-get %/h.txt
 done < %/h.txt

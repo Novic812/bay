@@ -1,6 +1,6 @@
 Bay
 ============
-![kiki][xr]
+![kiki][1]
 
 A user's home directory is intended to contain that user's files; including
 text documents, etc. It may also include their configuration files of
@@ -10,19 +10,16 @@ executable software in this directory, but it will only be available to users
 with permission to this directory. The home directory can be organized further
 with the use of sub-directories.
 
-Requirements
-------------
-[StdLib][ya]
-
 Links
-----------------
-[Repository][zu]
+------------------
+- [svnpenn/bay][2]
+- [svnpenn/stdlib (awklib, file-get, file-size, sh-trace)][3]
 
 Author
 ------------
 Steven Penny
 
 [protocol is needed for image to render]::
-[xr]:https://raw.githubusercontent.com/svnpenn/bay/master/bay.jpg
-[ya]:https://github.com/svnpenn/stdlib
-[zu]:https://github.com/svnpenn/bay
+[1]:https://raw.githubusercontent.com/svnpenn/bay/master/bay.jpg
+[2]:https://github.com/svnpenn/bay
+[3]:https://github.com/svnpenn/stdlib

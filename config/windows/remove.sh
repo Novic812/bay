@@ -1,4 +1,4 @@
-#!/usr/local/bin/shlib
+#!/bin/dash -e
 
 # clear explorer and wallpaper history
 if
@@ -10,4 +10,4 @@ then
 fi
 
 # clear run history
-sh_trace rundll32 inetcpl.cpl ClearMyTracksByProcess 1
+sh-trace rundll32 inetcpl.cpl ClearMyTracksByProcess 1

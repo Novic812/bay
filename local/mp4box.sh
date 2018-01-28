@@ -1,4 +1,4 @@
-#!/usr/local/bin/shlib
+#!/bin/dash -e
 if [ "$#" = 0 ]
 then
   echo 'mp4box.sh <MP4> [SRT]'
@@ -10,8 +10,8 @@ then
   zu=$2
 else
   zu=$(mktemp XXX.srt)
-  sh_trace ffmpeg -y -v warning -i "$xr" "$zu"
+  sh-trace ffmpeg -y -v warning -i "$xr" "$zu"
 fi
 ya=$(mktemp "XXX $xr")
-sh_trace mp4box -add "$xr"'#video' -add "$xr"'#audio' \
+sh-trace mp4box -add "$xr"'#video' -add "$xr"'#audio' \
 -add "$zu":txtflags=0xC0000000 -new "$ya"
