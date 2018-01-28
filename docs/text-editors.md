@@ -29,7 +29,7 @@ Notepad2-mod | http://github.com/XhmikosR/notepad2-mod/issues/208
 Notepad3 | http://github.com/rizonesoft/Notepad3/issues/37
 Notepas | SourceForge
 Programmer’s Notepad | http://github.com/simonsteele/pn/issues/152
-SciTE | no Awk
+SciTE | http://github.com/mirror/scite/issues/1
 SuperbEdit | discontinued
 SynWrite | SourceForge
 TEA | http://github.com/psemiletov/tea-qt/issues/6
