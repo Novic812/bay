@@ -1,6 +1,5 @@
 Editor | Note
 -------|-----
-**LiteIDE** | AWK, 32 bit, 24.6 MB, http://github.com/visualfc/liteide
 AkelPad | SourceForge
 Atom | more than 40 MB
 Aubrey's gVim | discontinued
@@ -19,6 +18,7 @@ jEdit | SourceForge
 Kate | more than 40 MB
 Komodo Edit | more than 40 MB
 Lime Text | http://github.com/limetext/backend/issues/124
+LiteIDE | http://github.com/visualfc/liteide/issues/903
 MadEdit-Mod | SourceForge
 medit | SourceForge
 metapad | http://github.com/alexd/metapad/issues/3
