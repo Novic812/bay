@@ -1,7 +1,7 @@
 Editor | Note
 -------|-----
 AkelPad | SourceForge
-Atom | more than 40 MB
+Atom | http://github.com/atom/atom/issues/5012
 Aubrey's gVim | discontinued
 Bluefish | no Awk
 BowPad | SourceForge
