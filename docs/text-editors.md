@@ -10,7 +10,7 @@ ChrunchApp | discontinued
 Devpad | discontinued
 DtPad | discontinued
 Emerald Editor | discontinued
-Geany | download slow as fuck
+Geany | http://github.com/geany/geany/issues/1355
 gEcrit | SourceForge
 gedit | discontinued
 GNU Emacs | CLI
@@ -26,6 +26,7 @@ Neovim | CLI
 NINJA-IDE | does not use Windows GUI
 Notepad++ | http://github.com/notepad-plus-plus/notepad-plus-plus/issues/1620
 Notepad2-mod | http://github.com/XhmikosR/notepad2-mod/issues/208
+Notepad3 | http://github.com/rizonesoft/Notepad3/issues/37
 Notepas | SourceForge
 Programmer’s Notepad | http://github.com/simonsteele/pn/issues/152
 SciTE | no Awk
