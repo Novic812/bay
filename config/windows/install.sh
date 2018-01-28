@@ -1,12 +1,15 @@
 #!/bin/dash -e
 
-# /usr/local
+# have to do this first before we use reg
 awklib '
+BEGIN {
+  sb["ln", "-sft", "/usr/local/bin"]
+}
 {
-  z = z FS sh_escape($0)
+  arb_bpush(sb, $0)
 }
 END {
-  system("ln -sfvt /usr/local/bin" z)
+  shb_trace(sb)
 }
 ' symlink.txt
 
