@@ -6,18 +6,18 @@ BEGIN {
   }
 }
 $1 == "FILE" {
-  rx_split("\42", $0, pa)
+  str_split("\42", $0, pa)
   qu = pa[2]
 }
 $1 == "TRACK" {
   ro[++wh] = $2
 }
 $1 == "TITLE" && wh {
-  rx_split("\42", $0, pa)
+  str_split("\42", $0, pa)
   xr[wh] = pa[2]
 }
 $1 == "INDEX" && $2 {
-  rx_split(":", $3, pa)
+  str_split(":", $3, pa)
   ya[wh] = sprintf("%d:%02d:%06.3f", pa[1] / 60, pa[1] % 60, pa[2] + pa[3] / 75)
 }
 END {
