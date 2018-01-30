@@ -18,7 +18,7 @@ BEGIN {
   "git mktree </dev/null" | getline go
   "git for-each-ref --sort -refname" | getline
   ju = $1
-  ki = rx_replace("[^[:digit:]]", "", $3)
+  ki = str_gsub("[^[:digit:]]", "", $3)
   while ("git diff-tree --numstat " go " " ju | getline) {
     if (!/license/) {
       pa += $1
