@@ -9,12 +9,14 @@ BEGIN {
     exit 1
   }
 
-  _["discogs.com/search?q=" ARGV[1] "+" ARGV[2]]
-  _["fanart.tv/api/getdata.php?type=2&s=" ARGV[1]]
-  _["google.com/search?tbm=isch&q=" ARGV[1] "+" ARGV[2]]
-  _["musicbrainz.org/search?type=release&query=" ARGV[1] "+" ARGV[2]]
-  _["wikipedia.org/w/index.php?search=" ARGV[1] "+" ARGV[2]]
-  for (each in _) {
-    system(ENVIRON["BROWSER"] FS sh_escape(str_gsub(FS, "+", each)))
-  }
+  xr = str_gsub(FS, "+", ARGV[1])
+  ya = str_gsub(FS, "+", ARGV[2])
+
+  sb[ENVIRON["BROWSER"], "-new-tab", "discogs.com/search?q=" xr "+" ya,
+  "-new-tab", "fanart.tv/api/getdata.php?type=2&s=" xr,
+  "-new-tab", "google.com/search?tbm=isch&q=" xr "+" ya,
+  "-new-tab", "musicbrainz.org/search?type=release&query=" xr "+" ya,
+  "-new-tab", "wikipedia.org/w/index.php?search=" xr "+" ya]
+
+  shb_trace(sb)
 }
