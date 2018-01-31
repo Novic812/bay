@@ -1,4 +1,3 @@
-[ -f ~/.browser ] && . ~/.browser
 [ -f ~/.editor ] && . ~/.editor
 [ "$BASH" ] && shopt -s completion_strip_exe
 HISTCONTROL=erasedups
@@ -7,6 +6,7 @@ HISTTIMEFORMAT='%x %r '
 PATH=/usr/local/bin:/usr/bin
 PROMPT_COMMAND=gsh
 TERM=cygwin-readline
+export BROWSER=firefox
 export CYGWIN=winsymlinks:native
 export LANG=en_US.UTF-8 # case insensitive sort
 export PAGER='env TERM=cygwin-less less'

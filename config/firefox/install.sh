@@ -1,4 +1,2 @@
-#!/bin/dash -e
-ln -sfv "$PWD"/firefox.sh /usr/local/bin
-ln -sfv "$PWD"/.browser ~
+#!/bin/dash
 install -Dvt "$APPDATA"/mozilla/firefox/profiles/mike/chrome userchrome.css

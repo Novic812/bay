@@ -1,2 +1,2 @@
 #!/bin/dash
-rm -fv ~/.browser
+rm -fv "$APPDATA"/mozilla/firefox/profiles/mike/chrome/userchrome.css
