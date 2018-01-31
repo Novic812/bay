@@ -7,11 +7,11 @@ then
 fi
 if [ "$#" != 1 ]
 then
-  echo 'review.sh <artist>'
+  echo 'music-review.sh <artist>'
   exit 1
 fi
 
-"$BROWSER" albumoftheyear.org/search.php?q="$1"
-"$BROWSER" allmusic.com/search/all/"$1"
-"$BROWSER" metacritic.com/search/all/"$1"/results
-"$BROWSER" pitchfork.com/search/?query="$1"
+"$BROWSER" -new-tab albumoftheyear.org/search.php?q="$1" \
+-new-tab allmusic.com/search/all/"$1" \
+-new-tab metacritic.com/search/all/"$1"/results \
+-new-tab pitchfork.com/search/?query="$1"
