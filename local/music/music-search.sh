@@ -1,5 +1,4 @@
 #!/bin/dash
-# Firefox exits 1 if already open
 if [ ! "$BROWSER" ]
 then
   echo 'BROWSER not set or not exported'
@@ -11,14 +10,10 @@ then
   exit 1
 fi
 
-while read z
-do
-  "$BROWSER" "$z"
-done <<eof
-youtube.com/results?q=intext:"$1 - Topic" intitle:"$2"
-youtube.com/results?q=-intitle:"$1" "$1" intitle:"$2", hd
-youtube.com/results?q=allintitle:$1 $2, hd
-youtube.com/results?q=allintitle:$1 $2
-google.com/search?tbm=vid&q="$1 - Topic" "$2"
-google.com/search?q=allintitle:$1 $2
-eof
+"$BROWSER" \
+-new-tab "youtube.com/results?q=intext:\"$1 - Topic\" intitle:\"$2\"" \
+-new-tab "youtube.com/results?q=-intitle:\"$1\" \"$1\" intitle:\"$2\", hd" \
+-new-tab "youtube.com/results?q=allintitle:$1 $2, hd" \
+-new-tab "youtube.com/results?q=allintitle:$1 $2" \
+-new-tab "google.com/search?tbm=vid&q=\"$1 - Topic\" \"$2\"" \
+-new-tab "google.com/search?q=allintitle:$1 $2"
