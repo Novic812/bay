@@ -5,8 +5,11 @@ function vpt(view, td, ts, prec) {
 }
 BEGIN {
   if (ARGC != 2) {
-    print "music-views.awk <URL>"
+    print "music-views.awk <URL | check>"
     exit 1
+  }
+  if (ARGV[1] == "check") {
+    ARGV[1] = "https://www.youtube.com/watch?v=ZWmrfgj0MZI"
   }
   while ("curl -L " ARGV[1] | getline) {
     if (/interactionCount/) {
@@ -16,7 +19,6 @@ BEGIN {
       ch = tm_now() - tm_date(html_attr("content", $0))
     }
   }
-  # youtube.com/watch?v=ZWmrfgj0MZI
   printf br / ch < 4500000 / tm_day(365.25) ? "\33[1;32m" : "\33[1;31m"
   vpt(br, ch / tm_day(365.25), "year", 3)
   vpt(br, ch / tm_day(1), "day")
