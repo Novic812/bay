@@ -11,6 +11,6 @@ BEGIN {
   z[NR] = $0
 }
 END {
-  ar_msort(y, z, q == "desc" ? 1 : 0)
+  ar_msort(y, z, q == "desc")
   print ar_join(z, RS)
 }
