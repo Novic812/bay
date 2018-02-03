@@ -1,7 +1,7 @@
 [ -f ~/.editor ] && . ~/.editor
 [ "$BASH" ] && shopt -s completion_strip_exe
 HISTCONTROL=erasedups
-HISTIGNORE='c:ahist *'
+HISTIGNORE='c:exit:ahist *'
 HISTTIMEFORMAT='%x %r '
 PATH=/usr/local/bin:/usr/bin
 PROMPT_COMMAND=gsh
