@@ -13,7 +13,8 @@ then
 else
   >> .bash_history
 fi
-ln -sfv "$PWD"/.bash_history "$PWD"/.inputrc "$PWD"/.profile ~
+ln -sfv "$PWD"/.bash_history "$PWD"/.bash_logout "$PWD"/.inputrc \
+"$PWD"/.profile ~
 
 # /usr/share
 tic cygwin-readline.ti

@@ -1,7 +1,7 @@
 [ -f ~/.editor ] && . ~/.editor
 [ "$BASH" ] && shopt -s completion_strip_exe
 HISTCONTROL=erasedups
-HISTIGNORE='c:exit:ahist *'
+HISTIGNORE='c:ahist *'
 HISTTIMEFORMAT='%x %r '
 PATH=/usr/local/bin:/usr/bin
 PROMPT_COMMAND=gsh
@@ -30,7 +30,7 @@ c() {
 }
 
 gsh() {
-  history -w
+  history -a
   if [ "$GSH" != "$PWD" ]
   then
     GSH=$PWD
