@@ -69,3 +69,14 @@ nffprobe() {
   ffprobe -hide_banner "$@" 2>&1 |
   awk '$1 == "Stream" {$0 = "\33[1;33m" $0 "\33[m"} 1'
 }
+
+xs() {
+  "$@"
+  z=$?
+  if [ "$z" = 0 ]
+  then
+    printf '\33[1;32m%d SUCCESS\33[m\n' "$z"
+  else
+    printf '\33[1;31m%d FAILURE\33[m\n' "$z"
+  fi
+}
