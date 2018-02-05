@@ -3,7 +3,6 @@ q=$PWD
 
 # config
 # we need to install bash first for /usr/local/bin
-. config/bash/.profile
 for z in bash 3rvx firefox git notepad2 windows
 do
   cd "$q"/config/"$z"

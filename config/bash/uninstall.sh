@@ -1,5 +1,4 @@
 #!/bin/dash -e
-. ./.profile
 
 # /etc
 rm -fv /etc/fstab
