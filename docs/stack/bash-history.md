@@ -1,7 +1,6 @@
 To do
 ================================
 - http://superuser.com/q/1202464
-- http://unix.stackexchange.com/q/48713
 
 Done
 ================================================
@@ -14,3 +13,4 @@ Done
 - http://superuser.com/q/739107#1291778
 - http://unix.stackexchange.com/q/267737#421722
 - http://unix.stackexchange.com/q/398763#421863
+- http://unix.stackexchange.com/q/48713#422019
