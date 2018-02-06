@@ -53,10 +53,11 @@ gsh() {
 ncurl() {
   curl -v "$@" 2>&1 | awk '
   $1 == ">" ||
-  $1 == "HTTP/1.1" ||
   $1 == "HTTP/2" ||
+  $1 == "HTTP/1.1" ||
+  $2 == "Connected" ||
   tolower($1) == "location:" ||
-  $2 == "Connected" {
+  tolower($1) == "content-length:" {
     $0 = "\33[1;33m" $0 "\33[m"
   }
   1
