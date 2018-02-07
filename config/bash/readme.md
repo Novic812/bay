@@ -1,5 +1,9 @@
+cygwin-readline.ti, cygwin-less.ti
+-------------------------------------------------
 http://cygwin.com/ml/cygwin/2018-01/msg00002.html
 
+HISTSIZE
+-----------------------------------------------------------------------
 With a clean cygwin install, HISTSIZE is set at 500. So if we start the
 default shell, then run the install script, then "exit", the history will get
 truncated. This will not be the case if we simply close the window, but we
