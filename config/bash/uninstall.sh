@@ -5,4 +5,4 @@ rm -fv /etc/fstab
 cp -v /etc/defaults/etc/profile /etc
 
 # /home
-rm -fv ~/.bash_history ~/.inputrc ~/.profile
+rm -fv ~/.bash_history ~/.bash_logout ~/.inputrc ~/.profile
