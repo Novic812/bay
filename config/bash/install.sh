@@ -16,7 +16,8 @@ fi
 ln -sfv "$PWD"/.bash_logout "$PWD"/.inputrc "$PWD"/.profile ~
 awklib '
 BEGIN {
-  printf "ln -sfv %s/.bash_history ~; rm /etc/profile", sh_escape(ARGV[1])
+  printf "PATH=/bin; ln -sf %s/.bash_history ~; rm /etc/profile",
+  sh_escape(ARGV[1])
 }
 ' "$PWD" > /etc/profile
 
