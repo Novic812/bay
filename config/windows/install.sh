@@ -74,7 +74,6 @@ then
   REG DELETE \
   'HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Environment' /v TMP /f
 fi
-SETX CYGWIN winsymlinks:native /M
 SETX PATH 'C:\ProgramData\Bin;C:\Windows\System32' /M
 
 # hide file extensions

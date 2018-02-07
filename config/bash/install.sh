@@ -1,8 +1,7 @@
 #!/bin/dash -e
 
-# /etc
-rm -fv /etc/profile
-ln -sfv "$PWD"/fstab /etc
+# symlinking fstab is circular dependency with awklib
+cp -v fstab /etc
 mount -a
 
 # /home
