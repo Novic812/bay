@@ -75,8 +75,6 @@ then
   'HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Environment' /v TMP /f
 fi
 SETX CYGWIN winsymlinks:native /M
-SETX HISTSIZE 10000 /M
-SETX HISTTIMEFORMAT '%x %r ' /M
 SETX PATH 'C:\ProgramData\Bin;C:\Windows\System32' /M
 
 # hide file extensions

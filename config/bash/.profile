@@ -2,6 +2,8 @@
 [ "$BASH" ] && shopt -s completion_strip_exe
 HISTCONTROL=erasedups
 HISTIGNORE='c:ahist *'
+HISTSIZE=10000
+HISTTIMEFORMAT='%x %r '
 PATH=/usr/local/bin:/usr/bin
 PROMPT_COMMAND=gsh
 TERM=cygwin-readline
