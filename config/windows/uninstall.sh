@@ -20,4 +20,4 @@ BEGIN {
 END {
   shb_trace(sb)
 }
-' symlink.cfg
+' symlink.conf

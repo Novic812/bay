@@ -11,7 +11,7 @@ BEGIN {
 END {
   shb_trace(sb)
 }
-' symlink.cfg
+' symlink.conf
 
 # App Paths
 REG ADD \
