@@ -3,7 +3,7 @@
   .ytp-ce-element {
     display: none !important;
   }
-  .yt-uix-tile-link:visited, .spf-link:visited .title {
+  .spf-link:visited, .spf-link:visited .title, .yt-uix-tile-link:visited {
     color: #551a8b !important;
   }
 }
