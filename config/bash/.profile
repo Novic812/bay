@@ -1,7 +1,7 @@
 [ -f ~/.editor ] && . ~/.editor
 [ "$BASH" ] && shopt -s completion_strip_exe
 HISTCONTROL=erasedups
-HISTIGNORE='c:ahist *'
+HISTIGNORE='atr:ahist *'
 HISTSIZE=10000
 HISTTIMEFORMAT='%x %r '
 PATH=/usr/local/bin:/usr/bin
@@ -23,12 +23,8 @@ alias aman='man -Kw'
 alias aod='od -tcx1'
 alias apr='pr -dt'
 alias area='readlink -e'
-alias atar='tar --checkpoint-action "ttyout=%T \r"'
+alias atr='tput reset'
 stty -ixon
-
-c() {
-  printf '\33c'
-}
 
 gsh() {
   history -a
@@ -70,6 +66,10 @@ ncurl() {
 nffprobe() {
   ffprobe -hide_banner "$@" 2>&1 |
   awk '$1 == "Stream" {$0 = "\33[1;33m" $0 "\33[m"} 1'
+}
+
+ntar() {
+  tar --checkpoint-action 'ttyout=%T \r' "$@"
 }
 
 xs() {
