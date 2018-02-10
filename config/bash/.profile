@@ -9,9 +9,9 @@ PROMPT_COMMAND=gsh
 TERM=cygwin-readline
 export BROWSER=firefox
 export CYGWIN=winsymlinks:native
-export LC_ALL=en_US.UTF-8 # case insensitive sort
+export LC_ALL=en_US.UTF-8
 export PAGER='env TERM=cygwin-less less'
-export POSIXLY_CORRECT # man7.org/linux/man-pages/man1/getopt.1.html
+export POSIXLY_CORRECT
 alias acc='x86_64-w64-mingw32-gcc -Wall -Wextra -Wconversion -pedantic -std=c11'
 alias afind='find -xtype l -delete -print'
 alias agit='git --no-pager'
