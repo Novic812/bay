@@ -1,7 +1,7 @@
 [ -f ~/.editor ] && . ~/.editor
 [ "$BASH" ] && shopt -s completion_strip_exe
 HISTCONTROL=erasedups
-HISTIGNORE='atr:ahist *'
+HISTIGNORE='q:ahist *'
 HISTSIZE=10000
 HISTTIMEFORMAT='%x %r '
 PATH=/usr/local/bin:/usr/bin
@@ -14,7 +14,6 @@ export PAGER='env TERM=cygwin-less less'
 export POSIXLY_CORRECT
 alias acc='x86_64-w64-mingw32-gcc -Wall -Wextra -Wconversion -pedantic -std=c11'
 alias acurl='curl -L'
-alias ae='tput reset'
 alias afind='find -xtype l -delete -print'
 alias agit='git --no-pager'
 alias agrep='grep -I --color --exclude .bash_history --exclude-dir .git'
@@ -25,6 +24,7 @@ alias aman='man -Kw'
 alias aod='od -tcx1'
 alias apr='pr -dt'
 alias area='readlink -e'
+alias q='tput reset'
 stty -ixon
 
 gsh() {
@@ -38,9 +38,6 @@ gsh() {
   else
     return
   fi
-  # we do not need "\[" and "\]" here, but if we had a oneline
-  # prompt with color text, it would break on Ctrl + R, Esc
-  # also "033" is needed with PS1
   if [ -f .git/index ] || [ -f .git ]
   then
     local gnr=$(git name-rev --name-only @)
