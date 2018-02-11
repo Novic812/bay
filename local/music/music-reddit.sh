@@ -26,5 +26,4 @@ ex)
 ;;
 in)
   jq -r '.. | "reddit.com" + (.permalink? // empty)' | tr -d '\r'
-;;
 esac

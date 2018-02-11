@@ -8,6 +8,5 @@ case $1 in
   then
     k=$1
   fi
-;;
 esac
 exec Notepad2 ${k+"$k"}

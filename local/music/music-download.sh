@@ -26,7 +26,6 @@ touch %/h.txt %/f.txt %/c.txt
     ;;
     *)
       echo "$each"
-    ;;
     esac
   done
 } |
