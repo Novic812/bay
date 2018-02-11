@@ -21,7 +21,6 @@ alias ahist='history | grep -i --color'
 alias aless='TERM=cygwin-less less'
 alias als='ls -ASgo'
 alias aman='man -Kw'
-alias aod='od -tcx1'
 alias apr='pr -dt'
 alias area='readlink -e'
 alias q='tput reset'
@@ -64,6 +63,10 @@ ncurl() {
 nffprobe() {
   ffprobe -hide_banner "$@" 2>&1 |
   awk '$1 == "Stream" {$0 = "\33[1;33m" $0 "\33[m"} 1'
+}
+
+nod() {
+  od -tcx1 -An -w19 | awk 'NR % 2 {$0 = "\33[1;32m" $0 "\33[m"} 1'
 }
 
 ntar() {
