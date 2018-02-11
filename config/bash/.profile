@@ -13,6 +13,7 @@ export LC_ALL=en_US.UTF-8
 export PAGER='env TERM=cygwin-less less'
 export POSIXLY_CORRECT
 alias acc='x86_64-w64-mingw32-gcc -Wall -Wextra -Wconversion -pedantic -std=c11'
+alias acurl='curl -L'
 alias afind='find -xtype l -delete -print'
 alias agit='git --no-pager'
 alias agrep='grep -I --color --exclude .bash_history --exclude-dir .git'
