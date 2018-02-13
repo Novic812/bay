@@ -41,7 +41,7 @@ echo "ln -sf $PWD/.bash_history ~; rm /etc/profile" >/etc/profile
 
 2nd option is better because it is shorter, less system calls in long run, and
 we were already removing /etc/profile anyway. however it creates the problem
-of escaping the input. We can solve that with trusty svnpenn/stdlib:
+of escaping the input. We can solve that with trusty svnpenn/velour:
 
 ~~~sh
 awklib '

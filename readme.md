@@ -13,7 +13,7 @@ with the use of sub-directories.
 Links
 ------------------
 - [svnpenn/bay][2]
-- [svnpenn/stdlib (awklib, file-get, file-size, sh-trace)][3]
+- [svnpenn/velour (awklib, file-get, file-size, sh-trace)][3]
 
 Author
 ------------
@@ -22,4 +22,4 @@ Steven Penny
 [protocol is needed for image to render]::
 [1]:https://raw.githubusercontent.com/svnpenn/bay/master/bay.jpg
 [2]:https://github.com/svnpenn/bay
-[3]:https://github.com/svnpenn/stdlib
+[3]:https://github.com/svnpenn/velour
