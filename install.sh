@@ -10,5 +10,5 @@ do
 done
 
 # local
-find "$q"/local '(' -name '*.sh' -o -name '*.awk' ')' \
+find "$q"/local "$q"/doc '(' -name '*.sh' -o -name '*.awk' ')' \
 -exec ln -sfvt /usr/local/bin {} +
