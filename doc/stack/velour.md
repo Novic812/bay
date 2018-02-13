@@ -1,10 +1,10 @@
 the awk [Velour library]
 ======================================
 - http://askubuntu.com/q/601137#897279
+- http://askubuntu.com/q/858160#864617
 - http://superuser.com/q/165680#1160876
+- http://superuser.com/q/897756#1192677
 - http://unix.stackexchange.com/q/104525#417042
-- todo - http://askubuntu.com/q/858160
-- todo - http://superuser.com/q/897756
 - todo - http://unix.stackexchange.com/q/136534
 - todo - http://unix.stackexchange.com/q/168476
 - todo - http://unix.stackexchange.com/q/171154
