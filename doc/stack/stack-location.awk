@@ -1,13 +1,21 @@
-#!/usr/bin/awk -f
-{
-  x[NR] = $NF
-}
-END {
-  for (y in x) {
-    "curl -IL -o /dev/null -w %{url_effective} " x[y] | getline x[y]
+#!/usr/local/bin/velour -f
+BEGIN {
+  if (ARGC != 3) {
+    sb["SYNOPSIS", "  stack-location.awk <infile> <outfile>", "",
+    "EXAMPLE", "  stack-location.awk /dev/clipboard /tmp/stack.txt"]
+    print arb_join(sb, RS)
+    exit 1
   }
-  for (y in x) {
-    split(x[y], z, "/")
-    printf "http://%s/q/%s%s\n", z[3], z[5], z[7] ? "#" z[7] : ""
+  while (getline < ARGV[1]) {
+    pa[++NR] = $NF
   }
+  for (qu in pa) {
+    "curl -IL -o /dev/null -w %{url_effective} " pa[qu] | getline pa[qu]
+  }
+  for (qu in pa) {
+    split(pa[qu], xr, "/")
+    pa[qu] = sprintf("http://%s/q/%s%s", xr[3], xr[5], xr[7] ? "#" xr[7] : "")
+  }
+  print ar_join(pa, RS) > ARGV[2]
+  system(ENVIRON["EDITOR"] FS ARGV[2])
 }
