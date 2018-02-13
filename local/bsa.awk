@@ -1,4 +1,4 @@
-#!/usr/local/bin/awklib -f
+#!/usr/local/bin/velour -f
 BEGIN {
   if (ARGC != 3) {
     sb["bsa.awk <good> <bad>", "", "hex allowed - use 0x"]

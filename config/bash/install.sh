@@ -1,6 +1,6 @@
 #!/bin/dash -e
 
-# symlinking fstab is circular dependency with awklib
+# symlinking fstab is circular dependency with velour
 cp -v fstab /etc
 mount -a
 
@@ -13,7 +13,7 @@ else
   >> .bash_history
 fi
 ln -sfv "$PWD"/.bash_logout "$PWD"/.inputrc "$PWD"/.profile ~
-awklib '
+velour '
 BEGIN {
   printf "PATH=/bin; ln -sf %s/.bash_history ~; rm /etc/profile",
   sh_escape(ARGV[1])

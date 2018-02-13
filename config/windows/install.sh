@@ -1,7 +1,7 @@
 #!/bin/dash -e
 
 # have to do this first before we use reg
-awklib '
+velour '
 BEGIN {
   sb["ln", "-sft", "/usr/local/bin"]
 }

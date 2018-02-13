@@ -13,7 +13,7 @@ with the use of sub-directories.
 Links
 ------------------
 - [svnpenn/bay][2]
-- [svnpenn/velour (awklib, file-get, file-size, sh-trace)][3]
+- [svnpenn/velour (file-get, file-size, sh-trace)][3]
 
 Author
 ------------

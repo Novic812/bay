@@ -1,4 +1,4 @@
-#!/usr/local/bin/awklib -f
+#!/usr/local/bin/velour -f
 # cant store values in indices because sorting will break if threshold >= 6251
 BEGIN {
   if (ARGC != 2) {

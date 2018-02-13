@@ -1,4 +1,4 @@
-#!/usr/local/bin/awklib -f
+#!/usr/local/bin/velour -f
 # Set thumbnail for MP4 video
 
 BEGIN {

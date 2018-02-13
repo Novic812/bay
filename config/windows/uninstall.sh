@@ -9,7 +9,7 @@ REG DELETE 'HKCR\txtfile\shell' /f
 REG DELETE 'HKCR\Unknown\shell' /f
 
 # remove symlinks
-awklib '
+velour '
 BEGIN {
   FS = "/"
   sb["rm"]

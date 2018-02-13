@@ -1,4 +1,4 @@
-#!/usr/local/bin/awklib -f
+#!/usr/local/bin/velour -f
 function tg(mix,   br, ec) {
   for (br = 100; br >= 1; br /= 10) {
     ar_bpush(ec, mt_div(mix, br))

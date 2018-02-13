@@ -1,4 +1,4 @@
-#!/usr/local/bin/awklib -f
+#!/usr/local/bin/velour -f
 function vpt(view, td, ts, prec) {
   printf "%\47.0f views / %\47.*f %ss = %\47.0f\n",
   view, prec, td, ts, view / td
