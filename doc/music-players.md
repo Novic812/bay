@@ -32,5 +32,6 @@ Qmmp | awful GUI
 Quod Libet | http://github.com/quodlibet/quodlibet/issues/403
 Soube | http://github.com/DracotMolver/Soube/issues/10
 Tiny PLayer | old
+Tomahawk | http://github.com/tomahawk-player/tomahawk/issues/555
 Waf Music Manager | http://github.com/jbe2277/musicmanager/issues/1
 Winyl | no ratings
