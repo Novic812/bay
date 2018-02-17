@@ -13,11 +13,9 @@ else
   >> .bash_history
 fi
 ln -sfv "$PWD"/.bash_logout "$PWD"/.inputrc "$PWD"/.profile ~
-velour '
-BEGIN {
-  printf "PATH=/bin; ln -sf %s/.bash_history ~; rm /etc/profile",
-  sh_escape(ARGV[1])
-}
+velour -n '
+printf "PATH=/bin; ln -sf %s/.bash_history ~; rm /etc/profile",
+sh_escape(ARGV[1])
 ' "$PWD" > /etc/profile
 
 # /usr/share
