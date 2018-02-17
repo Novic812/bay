@@ -36,6 +36,6 @@ BEGIN {
   printf "old tag lines = %d\n", pa
   printf "new tag insertions = %d\n", xr[1]
   printf "new tag deletions = %d\n", xr[2]
-  printf "%d/%d = %d%\n", mt_max(xr), pa, ya
+  printf "\33[1;33m%d/%d = %d%\33[m\n", mt_max(xr), pa, ya
   printf "new tag = %s\n", tg(zu * mt_div(zu + ki, zu))
 }
