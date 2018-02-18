@@ -19,7 +19,7 @@ BEGIN {
       ch = tm_now() - tm_date(html_attr("content", $0))
     }
   }
-  printf br / ch < 4500000 / tm_day(365.25) ? "\33[1;32m" : "\33[1;31m"
+  printf br / ch < 4510000 / tm_day(365.25) ? "\33[1;32m" : "\33[1;31m"
   vpt(br, ch / tm_day(365.25), "year", 3)
   vpt(br, ch / tm_day(1), "day")
   vpt(br, ch / tm_hour(1), "hour")
