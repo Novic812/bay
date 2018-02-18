@@ -9,3 +9,5 @@ ping | youtube-dl -U
 reg | bay/config/windows/install.sh
 rundll32 | bay/config/windows/remove.sh
 setx | bay/config/windows/install.sh
+
+http://blogs.technet.microsoft.com/jagbal/2017/09/04/where-can-i-download
