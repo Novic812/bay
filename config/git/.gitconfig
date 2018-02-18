@@ -4,6 +4,9 @@ dwo = diff --word-diff=color
 [color "diff"]
 meta = yellow bold
 
+[color "grep"]
+filename = magenta
+
 [credential]
 helper = store
 
