@@ -6,7 +6,7 @@ then
 fi
 if [ "$#" != 1 ]
 then
-  echo 'music-review.sh <artist>'
+  echo 'mu-review.sh <artist>'
   exit 1
 fi
 

@@ -5,7 +5,7 @@ function vpt(view, td, ts, prec) {
 }
 BEGIN {
   if (ARGC != 2) {
-    print "music-views.awk <URL | check>"
+    print "mu-views.awk <URL | check>"
     exit 1
   }
   if (ARGV[1] == "check") {

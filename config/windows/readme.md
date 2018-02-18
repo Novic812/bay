@@ -1,8 +1,8 @@
-Program | Reason
---------|-------
-ftp | sage/sage
+Program | Reason | Requires
+--------|--------|---------
 firefox | bay/config/firefox/firefox.sh
-mp4box | bay/local/mp4box.sh
+ftp | sage/sage
+mp4box | bay/local/mp4box.sh | Visual C++ 2010 (10.0)
 msiexec | glade/glade-msi.sh
 notepad2 | bay/config/notepad2/notepad2.sh
 ping | youtube-dl -U

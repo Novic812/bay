@@ -5,7 +5,7 @@ BEGIN {
     exit 1
   }
   if (ARGC != 3) {
-    print "music-art.awk <artist> <album>"
+    print "mu-art.awk <artist> <album>"
     exit 1
   }
 

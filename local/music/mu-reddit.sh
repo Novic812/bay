@@ -3,7 +3,7 @@ if [ "$#" != 2 ]
 then
   cat <<'eof'
 SYNOPSIS
-  music-reddit.sh <TYPE> <URL>
+  mu-reddit.sh <TYPE> <URL>
 
 TYPE
   ex   external links

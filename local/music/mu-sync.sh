@@ -7,7 +7,7 @@ if [ "$#" != 1 ]
 then
   cat <<'eof'
 SYNOPSIS
-  music-sync.sh <target>
+  mu-sync.sh <target>
 
 DESCRIPTION
   Sync files to target flash drive, and record all files transferred. If target
