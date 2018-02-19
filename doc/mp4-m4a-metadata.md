@@ -1,37 +1,52 @@
+MP4Box
+======
+
+~~~
+mp4box -itags cover=1.jpg 1.m4a
+~~~
+
+https://github.com/gpac/gpac/issues/693
+
+Bento4
+======
+
+~~~
+mp4tag --add Cover:JPEG:1.jpg 1.m4a 2.m4a
+~~~
+
+https://github.com/axiomatic-systems/Bento4/issues/104
 
 Tag Editor
-================================================
-- http://github.com/Martchus/tageditor/issues/21
-- http://github.com/Martchus/tageditor/issues/15
+==========
+
+~~~
+tageditor -s cover=1.jpg -f 1.m4a
+~~~
+
+https://github.com/Martchus/tageditor/issues/35
 
 Operon
-===================================================
-- http://github.com/quodlibet/quodlibet/issues/2337
-- http://github.com/quodlibet/quodlibet/issues/2336
-- http://github.com/quodlibet/quodlibet/issues/2335
+======
+
+~~~
+operon image-set 1.jpg 1.m4a
+~~~
+
+https://github.com/quodlibet/quodlibet/issues/2781
 
 FFmpeg
 ====================================
 - http://trac.ffmpeg.org/ticket/2798
 - http://ffmpeg.org/pipermail/ffmpeg-devel/2013-July/145365.html
 
-MP4Box
-======================================
-http://github.com/gpac/gpac/issues/693
-
-Bento4
-=====================================================
-- http://github.com/axiomatic-systems/Bento4/issues/105
-- http://github.com/axiomatic-systems/Bento4/issues/104
-
-ExifTool
-========================================
-- http://sno.phy.queensu.ca/~phil/exiftool
-- no in place editing
-
 AtomicParsley
 =================================================================
 http://softwarerecs.stackexchange.com/q/13865/fast-mp4-thumbnails
+
+ExifTool
+=====================
+- no in place editing
+- http://sno.phy.queensu.ca/~phil/exiftool
 
 Kid3
 ===========================
