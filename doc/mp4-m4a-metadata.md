@@ -81,11 +81,12 @@ Write subtitles
 mp4box -add infile.mp4 -add infile.srt -new outfile.mp4
 ~~~
 
-- https://ffmpeg.org/pipermail/ffmpeg-devel/2013-July/145365.html
-- https://github.com/axiomatic-systems/Bento4/issues/104
-- https://github.com/axiomatic-systems/Bento4/issues/248
-- https://github.com/gpac/gpac/issues/693
-- https://github.com/quodlibet/quodlibet/issues/2336
-- https://github.com/quodlibet/quodlibet/issues/2337
-- https://github.com/quodlibet/quodlibet/issues/2781
-- https://trac.ffmpeg.org/ticket/2798
+- http://ffmpeg.org/pipermail/ffmpeg-devel/2013-July/145365.html
+- http://github.com/axiomatic-systems/Bento4/issues/104
+- http://github.com/axiomatic-systems/Bento4/issues/248
+- http://github.com/gpac/gpac/issues/693
+- http://github.com/gpac/gpac/issues/990
+- http://github.com/quodlibet/quodlibet/issues/2336
+- http://github.com/quodlibet/quodlibet/issues/2337
+- http://github.com/quodlibet/quodlibet/issues/2781
+- http://trac.ffmpeg.org/ticket/2798
