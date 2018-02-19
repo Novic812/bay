@@ -44,15 +44,18 @@ mp4tag infile.m4a
 Write cover art
 ---------------
 
-~~~
-mp4box -itags cover=1.jpg 1.m4a
-~~~
-
-~~~
+~~~sh
+# fast
 operon image-set 1.jpg 1.m4a
 ~~~
 
+~~~sh
+# slow
+mp4box -itags cover=1.jpg 1.m4a
 ~~~
+
+~~~sh
+# 2 files
 mp4tag --add Cover:JPEG:1.jpg 1.m4a 2.m4a
 ~~~
 
