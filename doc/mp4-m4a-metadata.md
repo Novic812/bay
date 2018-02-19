@@ -1,53 +1,88 @@
-MP4Box
-======
+Read faststart
+--------------
+
+~~~sh
+ffprobe infile.m4a 2>&1 | awk '
+/major_brand/ && /M4A/ && $0 = "TRUE"
+/major_brand/ && /isom/ && $0 = "FALSE"
+'
+~~~
+
+~~~sh
+mp4box -info infile.m4a 2>&1 | awk '
+/Brand M4A/ && $0 = "TRUE"
+/Brand isom/ && $0 = "FALSE"
+'
+~~~
+
+~~~
+mp4info infile.m4a | awk '
+/fast start/ && /yes/ && $0 = "TRUE"
+/fast start/ && /no/ && $0 = "FALSE"
+'
+~~~
+
+Read tags
+---------
+
+~~~
+ffprobe infile.m4a
+~~~
+
+~~~
+mp4box -info infile.m4a
+~~~
+
+~~~
+operon list infile.m4a
+~~~
+
+~~~
+mp4tag infile.m4a
+~~~
+
+Write cover art
+---------------
 
 ~~~
 mp4box -itags cover=1.jpg 1.m4a
 ~~~
 
-https://github.com/gpac/gpac/issues/693
-
-Bento4
-======
+~~~
+operon image-set 1.jpg 1.m4a
+~~~
 
 ~~~
 mp4tag --add Cover:JPEG:1.jpg 1.m4a 2.m4a
 ~~~
 
-https://github.com/axiomatic-systems/Bento4/issues/104
-
-Tag Editor
-==========
+Write faststart
+---------------
 
 ~~~
-tageditor -s cover=1.jpg -f 1.m4a
+ffmpeg -i infile.m4a -c copy -movflags faststart outfile.m4a
 ~~~
 
-https://github.com/Martchus/tageditor/issues/35
-
-Operon
-======
-
 ~~~
-operon image-set 1.jpg 1.m4a
+mp4box -ipod infile.m4a
 ~~~
 
-https://github.com/quodlibet/quodlibet/issues/2781
+~~~
+mp4edit infile.m4a outfile.m4a
+~~~
 
-FFmpeg
-====================================
-- http://trac.ffmpeg.org/ticket/2798
-- http://ffmpeg.org/pipermail/ffmpeg-devel/2013-July/145365.html
+Write subtitles
+---------------
 
-AtomicParsley
-=================================================================
-http://softwarerecs.stackexchange.com/q/13865/fast-mp4-thumbnails
+~~~
+mp4box -add infile.mp4 -add infile.srt -new outfile.mp4
+~~~
 
-ExifTool
-=====================
-- no in place editing
-- http://sno.phy.queensu.ca/~phil/exiftool
-
-Kid3
-===========================
-http://kid3.sourceforge.net
+- https://ffmpeg.org/pipermail/ffmpeg-devel/2013-July/145365.html
+- https://github.com/axiomatic-systems/Bento4/issues/104
+- https://github.com/axiomatic-systems/Bento4/issues/248
+- https://github.com/gpac/gpac/issues/693
+- https://github.com/quodlibet/quodlibet/issues/2336
+- https://github.com/quodlibet/quodlibet/issues/2337
+- https://github.com/quodlibet/quodlibet/issues/2781
+- https://trac.ffmpeg.org/ticket/2798
