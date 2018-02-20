@@ -54,11 +54,11 @@ ffmpeg -i 1.m4a -c copy -movflags faststart 2.m4a
 ~~~
 
 ~~~
-mp4box -ipod infile.m4a
+mp4box -ipod 1.m4a
 ~~~
 
 ~~~
-mp4edit infile.m4a outfile.m4a
+mp4edit 1.m4a 2.m4a
 ~~~
 
 Subtitle write
@@ -78,19 +78,19 @@ tag read
 --------
 
 ~~~
-ffprobe infile.m4a
+ffprobe 1.m4a
 ~~~
 
 ~~~
-mp4box -info infile.m4a
+mp4box -info 1.m4a
 ~~~
 
 ~~~
-operon list infile.m4a
+operon list 1.m4a
 ~~~
 
 ~~~
-mp4tag infile.m4a
+mp4tag 1.m4a
 ~~~
 
 Issues
