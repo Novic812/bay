@@ -17,18 +17,16 @@ pa=$(date -d '-1 year' +%Y%m%d)
 mkdir -p % %-new %-old
 touch %/h.txt %/f.txt %/c.txt
 
-{
-  for each
-  do
-    case $each in
-    *reddit*)
-      music-reddit.sh ex "$each"
-    ;;
-    *)
-      echo "$each"
-    esac
-  done
-} |
+for each
+do
+  case $each in
+  *reddit*)
+    av-reddit.sh ex "$each"
+  ;;
+  *)
+    echo "$each"
+  esac
+done |
 while read xr
 do
   char=$((char+1))
