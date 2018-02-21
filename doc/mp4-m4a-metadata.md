@@ -35,15 +35,19 @@ faststart read
 --------------
 
 ~~~sh
-ffprobe -v 56 xr.m4a 2>&1 | awk '/moov/{exit}/mdat/{exit 1}'
+ffprobe -v trace xr.m4a
 ~~~
 
 ~~~sh
-mp4box -info xr.m4a 2>&1 | grep -q moov
+mp4box -info xr.m4a
 ~~~
 
 ~~~sh
-mp4info xr.m4a | grep -q 'fast start.*yes'
+mp4info xr.m4a
+~~~
+
+~~~sh
+awk '/moov/ {exit} /mdat/ {exit 1}' xr.m4a
 ~~~
 
 faststart write
