@@ -3,7 +3,7 @@ if [ "$#" = 0 ]
 then
   cat <<'eof'
 SYNOPSIS
-  mu-download.sh <targets>
+  av-download.sh <targets>
 
 TARGETS
   http://youtube.com/watch?v=qjgnOP8f5NU
