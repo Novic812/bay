@@ -3,62 +3,62 @@ Cover art add
 
 ~~~sh
 # fast
-operon image-set 1.jpg 1.m4a
+operon image-set xr.jpg xr.m4a
 ~~~
 
 ~~~sh
 # slow
-mp4box -itags cover=1.jpg 1.m4a
+mp4box -itags cover=xr.jpg xr.m4a
 ~~~
 
 ~~~sh
 # 2 files
-mp4tag --add Cover:JPEG:1.jpg 1.m4a 2.m4a
+mp4tag --add Cover:JPEG:xr.jpg xr.m4a ya.m4a
 ~~~
 
 Cover art remove
 ----------------
 
 ~~~
-operon image-clear 1.m4a
+operon image-clear xr.m4a
 ~~~
 
 ~~~
-mp4box -itags cover= 1.m4a
+mp4box -itags cover= xr.m4a
 ~~~
 
 ~~~
-mp4tag --remove Cover 2.m4a 3.m4a
+mp4tag --remove Cover xr.m4a ya.m4a
 ~~~
 
 faststart read
 --------------
 
 ~~~sh
-ffprobe 2.m4a 2>&1 | grep -q M4A
+ffprobe -v 56 xr.m4a 2>&1 | awk '/moov/{exit}/mdat/{exit 1}'
 ~~~
 
 ~~~sh
-mp4box -info 2.m4a 2>&1 | grep -q M4A
+mp4box -info xr.m4a 2>&1 | grep -q moov
 ~~~
 
 ~~~sh
-mp4info 2.m4a | grep -q M4A
+mp4info xr.m4a | grep -q 'fast start.*yes'
 ~~~
 
 faststart write
 ---------------
 
 ~~~
-ffmpeg -i 1.m4a -c copy -movflags faststart 2.m4a
+ffmpeg -i xr.m4a -c copy -movflags faststart ya.m4a
 ~~~
 
 ~~~
-mp4box -ipod 1.m4a
+mp4box -ipod xr.m4a
 ~~~
 
 ~~~
-mp4edit 1.m4a 2.m4a
+mp4edit xr.m4a ya.m4a
 ~~~
 
 Subtitle write
@@ -66,31 +66,31 @@ Subtitle write
 
 ~~~sh
 # forced
-mp4box -add 1.mp4 -add 1.srt:txtflags=0xC0000000 -new 2.mp4
+mp4box -add xr.mp4 -add xr.srt:txtflags=0xC0000000 -new ya.mp4
 ~~~
 
 ~~~sh
 # not forced
-ffmpeg -i 1.mp4 -i 1.srt -c copy -c:s mov_text 2.mp4
+ffmpeg -i xr.mp4 -i xr.srt -c copy -c:s mov_text ya.mp4
 ~~~
 
-tag read
+Tag read
 --------
 
 ~~~
-ffprobe 1.m4a
+ffprobe xr.m4a
 ~~~
 
 ~~~
-mp4box -info 1.m4a
+mp4box -info xr.m4a
 ~~~
 
 ~~~
-operon list 1.m4a
+operon list xr.m4a
 ~~~
 
 ~~~
-mp4tag 1.m4a
+mp4tag xr.m4a
 ~~~
 
 Issues
