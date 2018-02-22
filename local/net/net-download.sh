@@ -3,7 +3,7 @@ if [ "$#" = 0 ]
 then
   cat <<'eof'
 SYNOPSIS
-  av-download.sh <targets>
+  net-download.sh <targets>
 
 TARGETS
   http://youtube.com/watch?v=qjgnOP8f5NU
@@ -21,7 +21,7 @@ for each
 do
   case $each in
   *reddit*)
-    av-reddit.sh ex "$each"
+    net-reddit.sh ex "$each"
   ;;
   *)
     echo "$each"

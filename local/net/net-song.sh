@@ -6,7 +6,7 @@ then
 fi
 if [ "$#" != 2 ]
 then
-  echo 'av-search.sh <artist> <song>'
+  echo 'net-song.sh <artist> <song>'
   exit 1
 fi
 

@@ -3,7 +3,7 @@ if [ "$#" != 2 ]
 then
   cat <<'eof'
 SYNOPSIS
-  av-reddit.sh <TYPE> <URL>
+  net-reddit.sh <TYPE> <URL>
 
 TYPE
   ex   external links

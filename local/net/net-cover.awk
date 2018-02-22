@@ -5,7 +5,7 @@ BEGIN {
     exit 1
   }
   if (ARGC != 3) {
-    print "av-art.awk <artist> <album>"
+    print "net-cover.awk <artist> <album>"
     exit 1
   }
 
