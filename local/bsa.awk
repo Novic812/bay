@@ -14,7 +14,7 @@ BEGIN {
     printf ARGV[1] ~ /[xX]/ ? "\n%X\n" : "\n%d\n", xr
     while (1) {
       printf "[g,b]? "
-      zu = file_gets("-")
+      zu = io_getline("-")
       if (zu == "g") {
         ARGV[1] = xr
       }
