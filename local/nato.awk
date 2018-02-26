@@ -4,7 +4,7 @@ BEGIN {
     print "nato.awk <variable length> <file>..."
     exit 1
   }
-  var_len = ar_splice(ARGV, 2, 1)
+  var_len = ar_fpop(ARGV)
   sb["alfa", "bravo", "charlie", "delta", "echo", "foxtrot", "golf", "hotel",
   "india", "juliet", "kilo", "lima", "mike", "november", "oscar", "papa",
   "quebec", "romeo", "sierra", "tango", "uniform", "victor", "whiskey",
