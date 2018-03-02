@@ -19,10 +19,10 @@ BEGIN {
       ch = tm_now() - tm_date(html_attr("content", $0))
     }
   }
-  printf br / ch < 4510000 / tm_day(365.25) ? "\33[1;32m" : "\33[1;31m"
-  vpt(br, ch / tm_day(365.25), "year", 3)
-  vpt(br, ch / tm_day(1), "day")
-  vpt(br, ch / tm_hour(1), "hour")
-  vpt(br, ch / tm_minute(1), "minute")
+  printf br / ch < 4510000 / tm_yearsec(1) ? "\33[1;32m" : "\33[1;31m"
+  vpt(br, tm_secyear(ch), "year", 3)
+  vpt(br, tm_secday(ch), "day")
+  vpt(br, tm_sechour(ch), "hour")
+  vpt(br, tm_secmin(ch), "minute")
   printf "\33[m"
 }
