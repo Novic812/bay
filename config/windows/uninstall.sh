@@ -15,7 +15,7 @@ BEGIN {
   sb["rm"]
 }
 {
-  arb_bpush(sb, "/usr/local/bin/" $NF)
+  ab_push(sb, "/usr/local/bin/" $NF)
 }
 END {
   shb_trace(sb)

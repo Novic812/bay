@@ -12,7 +12,7 @@ BEGIN {
     sb["LOCAL", "  1. commit program change", "  2. commit version change",
     "  3. tag new version", "", "REMOTE", "  1. push commits",
     "  2. push release"]
-    print arb_join(sb, RS)
+    print ab_join(sb, RS)
     exit 1
   }
   "git mktree </dev/null" | getline go

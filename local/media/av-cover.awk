@@ -4,7 +4,7 @@
 BEGIN {
   sb["Careful, screencaps will dump in current directory.",
   "Drag video here, then press enter (backslashes ok):"]
-  print arb_join(sb, RS)
+  print ab_join(sb, RS)
 
   ch = str_trim(io_getline("-"))
   if (!ch) {

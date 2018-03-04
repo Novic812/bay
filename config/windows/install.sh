@@ -6,7 +6,7 @@ BEGIN {
   sb["ln", "-sft", "/usr/local/bin"]
 }
 {
-  arb_bpush(sb, $0)
+  ab_push(sb, $0)
 }
 END {
   shb_trace(sb)
