@@ -16,6 +16,6 @@ BEGIN {
     split(pa[qu], xr, "/")
     pa[qu] = sprintf("http://%s/q/%s%s", xr[3], xr[5], xr[7] ? "#" xr[7] : "")
   }
-  print ar_join(pa, RS) > ARGV[2]
+  print a_join(pa, RS) > ARGV[2]
   system(ENVIRON["EDITOR"] FS ARGV[2])
 }

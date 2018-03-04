@@ -1,10 +1,10 @@
 #!/usr/local/bin/velour -f
 function tg(mix,   br, ec) {
   for (br = 100; br >= 1; br /= 10) {
-    ar_bpush(ec, mt_div(mix, br))
+    a_push(ec, mt_div(mix, br))
     mix %= br
   }
-  return ar_join(ec, ".")
+  return a_join(ec, ".")
 }
 
 BEGIN {

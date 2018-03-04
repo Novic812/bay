@@ -11,7 +11,7 @@ BEGIN {
     ch = br ? 0 : 1
     do {
       de = 5 ^ br * 2 ^ ch++
-      ar_bpush(ec, de)
+      a_push(ec, de)
     } while (de < ARGV[1])
     br--
   }

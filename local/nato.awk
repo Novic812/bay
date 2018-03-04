@@ -4,7 +4,7 @@ BEGIN {
     print "nato.awk <variable length> <file>..."
     exit 1
   }
-  var_len = ar_fpop(ARGV)
+  var_len = a_shift(ARGV)
   sb["alfa", "bravo", "charlie", "delta", "echo", "foxtrot", "golf", "hotel",
   "india", "juliet", "kilo", "lima", "mike", "november", "oscar", "papa",
   "quebec", "romeo", "sierra", "tango", "uniform", "victor", "whiskey",
@@ -22,7 +22,7 @@ BEGIN {
 }
 END {
   for (each in nfa) {
-    ar_bpush(m, sprintf("%2d", nfa[each]) FS each)
+    a_push(m, sprintf("%2d", nfa[each]) FS each)
   }
   print arn_join(ar_sort(m), RS)
 }
