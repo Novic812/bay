@@ -16,7 +16,7 @@ BEGIN {
     br--
   }
 
-  ar_sort(ec)
+  a_sort(ec)
   for (br in ec) {
     printf "%\47d\n", ec[br]
   }
