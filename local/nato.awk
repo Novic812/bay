@@ -10,7 +10,7 @@ BEGIN {
   "quebec", "romeo", "sierra", "tango", "uniform", "victor", "whiskey",
   "xray", "yankee", "zulu"]
   while (each = ab_shift(sb)) {
-    nfa[str_slice(each, 1, var_len)] = 0
+    nfa[s_slice(each, 1, var_len)] = 0
   }
 }
 {

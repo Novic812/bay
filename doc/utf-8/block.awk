@@ -4,8 +4,8 @@ BEGIN {
     print "block.awk <from> <to>"
     exit 1
   }
-  d = str_pad(tolower(ARGV[1]), 6)
-  q = str_pad(tolower(ARGV[2]), 6)
+  d = s_rjust(tolower(ARGV[1]), 6)
+  q = s_rjust(tolower(ARGV[2]), 6)
   while ("fc-list -v : charset postscriptname" | getline) {
     if (NF > 6 && $1 > d && $1 < q) {
       z = 1
