@@ -16,7 +16,7 @@ BEGIN {
       br = html_attr("content", $0)
     }
     if (/datePublished/) {
-      ch = tm_now() - tm_date(html_attr("content", $0))
+      ch = tm_now() - t_utc(html_attr("content", $0))
     }
   }
   printf br / ch < 4510000 / tm_yearsec(1) ? "\33[1;32m" : "\33[1;31m"

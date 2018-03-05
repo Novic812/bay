@@ -6,7 +6,7 @@ BEGIN {
   "Drag video here, then press enter (backslashes ok):"]
   print ab_join(sb, RS)
 
-  ch = str_trim(io_gets("-"))
+  ch = s_chomp(io_gets("-"))
   if (!ch) {
     exit 1
   }
@@ -25,7 +25,7 @@ BEGIN {
   }
 
   print "Drag picture here, then press enter (backslashes ok):"
-  zu = str_trim(io_gets("-"))
+  zu = s_chomp(io_gets("-"))
   if (!zu) {
     exit 1
   }
