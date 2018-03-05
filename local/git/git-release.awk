@@ -30,12 +30,12 @@ BEGIN {
       xr[2] += $2
     }
   }
-  ya = mt_max(xr) / pa * 100
+  ya = a_max(xr) / pa * 100
   zu = ya >= 100 ? 100 : ya >= 10 ? 10 : 1
   printf "old tag = %s\n", tg(ki)
   printf "old tag lines = %d\n", pa
   printf "new tag insertions = %d\n", xr[1]
   printf "new tag deletions = %d\n", xr[2]
-  printf "\33[1;33m%d/%d = %d%\33[m\n", mt_max(xr), pa, ya
+  printf "\33[1;33m%d/%d = %d%\33[m\n", a_max(xr), pa, ya
   printf "new tag = %s\n", tg(zu * n_div(zu + ki, zu))
 }
