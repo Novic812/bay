@@ -16,13 +16,13 @@ BEGIN {
       br = html_attr("content", $0)
     }
     if (/datePublished/) {
-      ch = tm_now() - t_utc(html_attr("content", $0))
+      ch = t_now() - t_utc(html_attr("content", $0))
     }
   }
-  printf br / ch < 4510000 / tm_yearsec(1) ? "\33[1;32m" : "\33[1;31m"
-  vpt(br, tm_secyear(ch), "year", 3)
-  vpt(br, tm_secday(ch), "day")
-  vpt(br, tm_sechour(ch), "hour")
-  vpt(br, tm_secmin(ch), "minute")
+  printf br / ch < 4510000 / t_yearsec(1) ? "\33[1;32m" : "\33[1;31m"
+  vpt(br, t_secyear(ch), "year", 3)
+  vpt(br, t_secday(ch), "day")
+  vpt(br, t_sechour(ch), "hour")
+  vpt(br, t_secmin(ch), "minute")
   printf "\33[m"
 }
