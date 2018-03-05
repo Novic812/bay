@@ -15,7 +15,7 @@ fi
 ln -sfv "$PWD"/.bash_logout "$PWD"/.inputrc "$PWD"/.profile ~
 velour -n '
 printf "PATH=/bin; ln -sf %s/.bash_history ~; rm /etc/profile",
-sh_escape(ARGV[1])
+k_shellesc(ARGV[1])
 ' "$PWD" > /etc/profile
 
 # /usr/share

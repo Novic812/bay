@@ -45,7 +45,7 @@ of escaping the input. We can solve that with trusty svnpenn/velour:
 
 ~~~sh
 velour -n '
-printf "ln -s %s/.bash_history ~; rm %s", sh_escape(ARGV[1]), ARGV[2] > ARGV[2]
+printf "ln -s %s/.bash_history ~; rm %s", k_shellesc(ARGV[1]), ARGV[2] > ARGV[2]
 ' "$PWD" /etc/profile
 ~~~
 

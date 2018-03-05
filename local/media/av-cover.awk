@@ -11,7 +11,7 @@ BEGIN {
     exit 1
   }
   FS = "[=\42]+"
-  while ("ffprobe -show_streams -of flat=h=0 " sh_escape(ch) | getline) {
+  while ("ffprobe -show_streams -of flat=h=0 " k_shellesc(ch) | getline) {
     fo[$1] = $2
   }
   qu = fo["stream.0.width"] / fo["stream.0.height"] > 2 ? 36 : 30
