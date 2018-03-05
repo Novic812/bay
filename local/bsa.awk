@@ -7,7 +7,7 @@ BEGIN {
   }
   sb["", "g - good", "b - bad"]
   while (1) {
-    xr = mt_div(a_sum(ARGV), 2)
+    xr = n_div(a_sum(ARGV), 2)
     if (ya[xr]++) {
       break
     }
