@@ -10,8 +10,8 @@ then
   zu=$2
 else
   zu=$(mktemp XXX.srt)
-  sh-trace ffmpeg -y -v warning -i "$xr" "$zu"
+  k-trace ffmpeg -y -v warning -i "$xr" "$zu"
 fi
 ya=$(mktemp "XXX $xr")
-sh-trace mp4box -add "$xr"'#video' -add "$xr"'#audio' \
+k-trace mp4box -add "$xr"'#video' -add "$xr"'#audio' \
 -add "$zu":txtflags=0xC0000000 -new "$ya"

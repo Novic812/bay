@@ -10,4 +10,4 @@ then
 fi
 
 # clear run history
-sh-trace rundll32 inetcpl.cpl ClearMyTracksByProcess 1
+k-trace rundll32 inetcpl.cpl ClearMyTracksByProcess 1
