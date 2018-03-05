@@ -20,7 +20,7 @@ BEGIN {
   while (qu--) {
     sb["ffmpeg", "-y", "-v", "error", "-ss", xr, "-i", ch,
     "-frames", 1, xr ".jpg"]
-    shb_trace(sb)
+    kb_trace(sb)
     xr += ya
   }
 
@@ -30,5 +30,5 @@ BEGIN {
     exit 1
   }
   sb["tageditor", "-s", "cover=" zu, "--max-padding", 100000, "-f", ch]
-  shb_trace(sb)
+  kb_trace(sb)
 }

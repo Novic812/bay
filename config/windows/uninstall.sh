@@ -18,6 +18,6 @@ BEGIN {
   ab_push(sb, "/usr/local/bin/" $NF)
 }
 END {
-  shb_trace(sb)
+  kb_trace(sb)
 }
 ' symlink.conf

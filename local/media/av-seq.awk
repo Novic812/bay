@@ -16,5 +16,5 @@ BEGIN {
     ab_splice(sb, 8, 2)
   }
 
-  shb_trace(sb)
+  kb_trace(sb)
 }

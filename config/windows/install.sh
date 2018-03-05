@@ -9,7 +9,7 @@ BEGIN {
   ab_push(sb, $0)
 }
 END {
-  shb_trace(sb)
+  kb_trace(sb)
 }
 ' symlink.conf
 

@@ -9,8 +9,8 @@ BEGIN {
     exit 1
   }
 
-  xr = str_gsub(FS, "+", ARGV[1])
-  ya = str_gsub(FS, "+", ARGV[2])
+  xr = s_gsub(FS, "+", ARGV[1])
+  ya = s_gsub(FS, "+", ARGV[2])
 
   sb[ENVIRON["BROWSER"], "-new-tab", "discogs.com/search?q=" xr "+" ya,
   "-new-tab", "fanart.tv/api/getdata.php?type=2&s=" xr,
@@ -18,5 +18,5 @@ BEGIN {
   "-new-tab", "musicbrainz.org/search?type=release&query=" xr "+" ya,
   "-new-tab", "wikipedia.org/w/index.php?search=" xr "+" ya]
 
-  shb_trace(sb)
+  kb_trace(sb)
 }
