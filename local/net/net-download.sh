@@ -104,5 +104,5 @@ do
     $3 = 0
   }
   1
-  ' %/h.txt "$xr" | io-getfile %/h.txt
+  ' %/h.txt "$xr" | io-read %/h.txt
 done < %/h.txt
