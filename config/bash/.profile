@@ -73,6 +73,10 @@ ntar() {
   tar --checkpoint-action 'ttyout=%T \r' "$@"
 }
 
+nwtime() {
+  wtime "$@" 2>&1 | grep OperationCount
+}
+
 xs() {
   z=$?
   if [ "$z" = 0 ]
