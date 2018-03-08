@@ -74,7 +74,7 @@ ntar() {
 }
 
 nwtime() {
-  wtime "$@" 2>&1 | grep OperationCount
+  wtime "$@" 2>&1 | awk '/OperationCount/ {$0 = "\33[1;33m" $0 "\33[m"} 1'
 }
 
 xs() {
