@@ -12,7 +12,7 @@ q
 eof
 awk '
 /] / {
-  split($0, z, /] /)
-  print z[2]
+  sub("[^]]*] ", "")
+  print
 }
 '
