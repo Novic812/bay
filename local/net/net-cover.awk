@@ -9,8 +9,8 @@ BEGIN {
     exit 1
   }
 
-  xr = s_gsub(FS, "+", ARGV[1])
-  ya = s_gsub(FS, "+", ARGV[2])
+  xr = s_gsub(ARGV[1], FS, "+")
+  ya = s_gsub(ARGV[2], FS, "+")
 
   sb[ENVIRON["BROWSER"], "-new-tab", "discogs.com/search?q=" xr "+" ya,
   "-new-tab", "fanart.tv/api/getdata.php?type=2&s=" xr,
