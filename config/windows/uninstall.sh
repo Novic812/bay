@@ -15,9 +15,9 @@ BEGIN {
   sb["rm"]
 }
 {
-  ab_push(sb, "/usr/local/bin/" $NF)
+  ac_push(sb, "/usr/local/bin/" $NF)
 }
 END {
-  kb_trace(sb)
+  kc_trace(sb)
 }
 ' symlink.conf

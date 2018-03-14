@@ -4,7 +4,7 @@
 BEGIN {
   sb["Careful, screencaps will dump in current directory.",
   "Drag video here, then press enter (backslashes ok):"]
-  print ab_join(sb, RS)
+  print ac_join(sb, RS)
 
   ch = s_chomp(io_gets("-"))
   if (!ch) {
@@ -20,7 +20,7 @@ BEGIN {
   while (qu--) {
     sb["ffmpeg", "-y", "-v", "error", "-ss", xr, "-i", ch,
     "-frames", 1, xr ".jpg"]
-    kb_trace(sb)
+    kc_trace(sb)
     xr += ya
   }
 
@@ -30,5 +30,5 @@ BEGIN {
     exit 1
   }
   sb["tageditor", "-s", "cover=" zu, "--max-padding", 100000, "-f", ch]
-  kb_trace(sb)
+  kc_trace(sb)
 }

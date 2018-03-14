@@ -2,7 +2,7 @@
 BEGIN {
   if (ARGC != 3) {
     sb["bsa.awk <good> <bad>", "", "hex allowed - use 0x"]
-    print ab_join(sb, RS)
+    print ac_join(sb, RS)
     exit 1
   }
   sb["", "g - good", "b - bad"]
@@ -22,7 +22,7 @@ BEGIN {
         ARGV[2] = xr
       }
       else {
-        print ab_join(sb, RS)
+        print ac_join(sb, RS)
         continue
       }
       break

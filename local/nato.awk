@@ -9,7 +9,7 @@ BEGIN {
   "india", "juliet", "kilo", "lima", "mike", "november", "oscar", "papa",
   "quebec", "romeo", "sierra", "tango", "uniform", "victor", "whiskey",
   "xray", "yankee", "zulu"]
-  while (each = ab_shift(sb)) {
+  while (each = ac_shift(sb)) {
     nfa[s_slice(each, 1, var_len)] = 0
   }
 }
@@ -24,5 +24,5 @@ END {
   for (each in nfa) {
     a_push(m, sprintf("%2d", nfa[each]) FS each)
   }
-  print an_join(a_sort(m), RS)
+  print ad_join(a_sort(m), RS)
 }

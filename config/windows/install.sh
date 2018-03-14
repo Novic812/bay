@@ -6,10 +6,10 @@ BEGIN {
   sb["ln", "-sft", "/usr/local/bin"]
 }
 {
-  ab_push(sb, $0)
+  ac_push(sb, $0)
 }
 END {
-  kb_trace(sb)
+  kc_trace(sb)
 }
 ' symlink.conf
 
