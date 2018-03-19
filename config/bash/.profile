@@ -2,7 +2,7 @@
 [ "$BASH" ] && shopt -s completion_strip_exe
 HISTCONTROL=erasedups
 HISTIGNORE='q:ahist *'
-HISTSIZE=16000
+HISTSIZE=20000
 HISTTIMEFORMAT='%x %r '
 PATH=/usr/local/bin:/usr/bin
 PROMPT_COMMAND=gsh
