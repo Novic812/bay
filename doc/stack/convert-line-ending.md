@@ -1,5 +1,5 @@
 Convert line endings
 ======================================
-- todo - http://serverfault.com/q/6134
-- todo - http://superuser.com/q/156516
-- todo - http://unix.stackexchange.com/q/153091
+- http://serverfault.com/q/6134#790361
+- http://superuser.com/q/156516#1066353
+- http://unix.stackexchange.com/q/153091#296534
