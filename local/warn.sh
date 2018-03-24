@@ -1,4 +1,4 @@
-#!/bin/dash
+#!/bin/dash -e
 if [ "$#" -lt 3 ]
 then
   cat <<'eof'
