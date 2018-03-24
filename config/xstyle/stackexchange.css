@@ -23,4 +23,7 @@ domain(superuser.com) {
   .post-container :visited {
     color: #551a8b !important;
   }
+  .post-text a {
+    outline: 1px dotted !important;
+  }
 }
