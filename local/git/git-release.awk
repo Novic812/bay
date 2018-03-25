@@ -31,7 +31,7 @@ BEGIN {
     }
   }
   ya = a_max(xr) / pa * 100
-  zu = ya >= 100 ? 100 : ya >= 10 ? 10 : 1
+  zu = ya < 100 ? ya < 10 ? 1 : 10 : 100
   printf "old tag = %s\n", tg(ki)
   printf "old tag lines = %d\n", pa
   printf "new tag insertions = %d\n", xr[1]
