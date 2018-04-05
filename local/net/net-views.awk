@@ -19,7 +19,7 @@ BEGIN {
       ch = t_now() - t_utc(html_attr("content", $0))
     }
   }
-  printf br / ch < 4510000 / t_yearsec(1) ? "\33[1;32m" : "\33[1;31m"
+  printf br / ch < 4520000 / t_yearsec(1) ? "\33[1;32m" : "\33[1;31m"
   vpt(br, t_secyear(ch), "year", 3)
   vpt(br, t_secday(ch), "day")
   vpt(br, t_sechour(ch), "hour")
