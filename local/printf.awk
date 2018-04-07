@@ -6,7 +6,7 @@ BEGIN {
   }
   sb["%c", "%d", "%03d", "%\47d", "%e", "%E", "%.0f", "%.8f", "%.8g", "%G",
   "%i", "%o", "%s", "%40s", "%u", "%x", "%X", "%#x", "%#X"]
-  while (ch = ac_shift(sb)) {
+  while (ch = ad_shift(sb)) {
     printf "%" ch "\t" ch "\n", ARGV[1]
   }
 }

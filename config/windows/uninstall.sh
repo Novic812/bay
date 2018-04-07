@@ -15,7 +15,7 @@ BEGIN {
   sb["rm"]
 }
 {
-  ac_push(sb, "/usr/local/bin/" $NF)
+  ad_push(sb, "/usr/local/bin/" $NF)
 }
 END {
   kc_trace(sb)

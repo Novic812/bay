@@ -3,7 +3,7 @@ BEGIN {
   if (ARGC != 3) {
     sb["SYNOPSIS", "  stack-location.awk <infile> <outfile>", "",
     "EXAMPLE", "  stack-location.awk /dev/clipboard /tmp/stack.txt"]
-    print ac_join(sb, RS)
+    print ad_join(sb, RS)
     exit 1
   }
   while (getline < ARGV[1]) {

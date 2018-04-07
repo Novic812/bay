@@ -5,7 +5,7 @@ BEGIN {
     sb["SYNOPSIS", "av-seq.awk <start> <duration> <frames> <file>", "",
     "DESCRIPTION", "Make an image sequence from a video", "", "FRAMES",
     "key   I frames only", "all   I, P and B frames"]
-    print ac_join(sb, RS)
+    print ad_join(sb, RS)
     exit 1
   }
 
