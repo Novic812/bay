@@ -12,12 +12,12 @@ REG DELETE 'HKCR\Unknown\shell' /f
 velour '
 BEGIN {
   FS = "/"
-  sb["rm"]
+  dc["rm"]
 }
 {
-  ad_push(sb, "/usr/local/bin/" $NF)
+  ad_push(dc, "/usr/local/bin/" $NF)
 }
 END {
-  kc_trace(sb)
+  kd_trace(dc)
 }
 ' symlink.conf

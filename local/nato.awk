@@ -5,11 +5,11 @@ BEGIN {
     exit 1
   }
   var_len = a_shift(ARGV)
-  sb["alfa", "bravo", "charlie", "delta", "echo", "foxtrot", "golf", "hotel",
+  dc["alfa", "bravo", "charlie", "delta", "echo", "foxtrot", "golf", "hotel",
   "india", "juliet", "kilo", "lima", "mike", "november", "oscar", "papa",
   "quebec", "romeo", "sierra", "tango", "uniform", "victor", "whiskey",
   "xray", "yankee", "zulu"]
-  while (each = ad_shift(sb)) {
+  while (each = ad_shift(dc)) {
     nfa[s_slice(each, 1, var_len)] = 0
   }
 }

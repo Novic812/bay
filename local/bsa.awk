@@ -1,11 +1,11 @@
 #!/usr/local/bin/velour -f
 BEGIN {
   if (ARGC != 3) {
-    sb["bsa.awk <good> <bad>", "", "hex allowed - use 0x"]
-    print ad_join(sb, RS)
+    dc["bsa.awk <good> <bad>", "", "hex allowed - use 0x"]
+    print ad_join(dc, RS)
     exit 1
   }
-  sb["", "g - good", "b - bad"]
+  dc["", "g - good", "b - bad"]
   while (1) {
     xr = n_div(a_sum(ARGV), 2)
     if (ya[xr]++) {
@@ -22,7 +22,7 @@ BEGIN {
         ARGV[2] = xr
       }
       else {
-        print ad_join(sb, RS)
+        print ad_join(dc, RS)
         continue
       }
       break

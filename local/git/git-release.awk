@@ -9,10 +9,10 @@ function tg(mix,   br, ec) {
 
 BEGIN {
   if (k_system("[ -d .git ]")) {
-    sb["LOCAL", "  1. commit program change", "  2. commit version change",
+    dc["LOCAL", "  1. commit program change", "  2. commit version change",
     "  3. tag new version", "", "REMOTE", "  1. push commits",
     "  2. push release"]
-    print ad_join(sb, RS)
+    print ad_join(dc, RS)
     exit 1
   }
   "git mktree </dev/null" | getline go
