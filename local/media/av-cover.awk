@@ -20,7 +20,7 @@ BEGIN {
   while (qu--) {
     dc["ffmpeg", "-y", "-v", "error", "-ss", xr, "-i", ch,
     "-frames", 1, xr ".jpg"]
-    kd_trace(dc)
+    kh_trace(dc)
     xr += ya
   }
 
@@ -30,5 +30,5 @@ BEGIN {
     exit 1
   }
   dc["tageditor", "-s", "cover=" zu, "--max-padding", 100000, "-f", ch]
-  kd_trace(dc)
+  kh_trace(dc)
 }

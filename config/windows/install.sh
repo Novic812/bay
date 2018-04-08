@@ -9,7 +9,7 @@ BEGIN {
   ah_push(dc, $0)
 }
 END {
-  kd_trace(dc)
+  kh_trace(dc)
 }
 ' symlink.conf
 

@@ -9,7 +9,7 @@ BEGIN {
       while ("curl " q "/table.php?distribution=" x | getline) {
         if (/pkglist/) {
           kc["curl", "-o", x, q "/" $2]
-          kd_trace(kc)
+          kh_trace(kc)
           break
         }
       }

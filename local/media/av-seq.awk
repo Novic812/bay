@@ -16,5 +16,5 @@ BEGIN {
     ah_splice(dc, 8, 2)
   }
 
-  kd_trace(dc)
+  kh_trace(dc)
 }

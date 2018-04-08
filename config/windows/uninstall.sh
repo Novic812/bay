@@ -18,6 +18,6 @@ BEGIN {
   ah_push(dc, "/usr/local/bin/" $NF)
 }
 END {
-  kd_trace(dc)
+  kh_trace(dc)
 }
 ' symlink.conf

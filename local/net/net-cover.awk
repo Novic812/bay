@@ -18,5 +18,5 @@ BEGIN {
   "-new-tab", "musicbrainz.org/search?type=release&query=" xr "+" ya,
   "-new-tab", "wikipedia.org/w/index.php?search=" xr "+" ya]
 
-  kd_trace(dc)
+  kh_trace(dc)
 }
