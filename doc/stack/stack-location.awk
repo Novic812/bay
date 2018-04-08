@@ -13,7 +13,7 @@ BEGIN {
     "curl -IL -o /dev/null -w %{url_effective} " pa[qu] | getline pa[qu]
   }
   for (qu in pa) {
-    split(pa[qu], xr, "/")
+    s_split(pa[qu], xr, "/")
     pa[qu] = sprintf("http://%s/q/%s%s", xr[3], xr[5], xr[7] ? "#" xr[7] : "")
   }
   print a_join(pa, RS) > ARGV[2]
