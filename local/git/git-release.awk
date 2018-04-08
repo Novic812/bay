@@ -12,7 +12,7 @@ BEGIN {
     dc["LOCAL", "  1. commit program change", "  2. commit version change",
     "  3. tag new version", "", "REMOTE", "  1. push commits",
     "  2. push release"]
-    print ad_join(dc, RS)
+    print ah_join(dc, RS)
     exit 1
   }
   "git mktree </dev/null" | getline go

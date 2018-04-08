@@ -4,7 +4,7 @@
 BEGIN {
   dc["Careful, screencaps will dump in current directory.",
   "Drag video here, then press enter (backslashes ok):"]
-  print ad_join(dc, RS)
+  print ah_join(dc, RS)
 
   ch = s_chomp(io_gets("-"))
   if (!ch) {

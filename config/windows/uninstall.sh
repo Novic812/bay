@@ -15,7 +15,7 @@ BEGIN {
   dc["rm"]
 }
 {
-  ad_push(dc, "/usr/local/bin/" $NF)
+  ah_push(dc, "/usr/local/bin/" $NF)
 }
 END {
   kd_trace(dc)

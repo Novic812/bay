@@ -5,7 +5,7 @@ BEGIN {
     dc["SYNOPSIS", "av-seq.awk <start> <duration> <frames> <file>", "",
     "DESCRIPTION", "Make an image sequence from a video", "", "FRAMES",
     "key   I frames only", "all   I, P and B frames"]
-    print ad_join(dc, RS)
+    print ah_join(dc, RS)
     exit 1
   }
 
@@ -13,7 +13,7 @@ BEGIN {
   "-vf", "select='eq(pict_type, I)'", "-vsync", "vfr", "-q", 1, "%d.jpg"]
 
   if (ARGV[3] == "all") {
-    ad_splice(dc, 8, 2)
+    ah_splice(dc, 8, 2)
   }
 
   kd_trace(dc)

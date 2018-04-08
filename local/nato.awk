@@ -9,7 +9,7 @@ BEGIN {
   "india", "juliet", "kilo", "lima", "mike", "november", "oscar", "papa",
   "quebec", "romeo", "sierra", "tango", "uniform", "victor", "whiskey",
   "xray", "yankee", "zulu"]
-  while (each = ad_shift(dc)) {
+  while (each = ah_shift(dc)) {
     nfa[s_slice(each, 1, var_len)] = 0
   }
 }

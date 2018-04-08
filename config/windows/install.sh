@@ -6,7 +6,7 @@ BEGIN {
   dc["ln", "-sft", "/usr/local/bin"]
 }
 {
-  ad_push(dc, $0)
+  ah_push(dc, $0)
 }
 END {
   kd_trace(dc)
