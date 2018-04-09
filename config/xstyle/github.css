@@ -5,6 +5,9 @@
     color: #800080;
   }
   /* font */
+  textarea {
+    font-family: Consolas !important;
+  }
   body, .markdown-body {
     font-family: Arial !important;
   }
