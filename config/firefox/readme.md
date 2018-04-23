@@ -1,3 +1,10 @@
+Expire all favicons
+-------------------
+
+~~~js
+PlacesUtils.favicons.expireAllFavicons();
+~~~
+
 Disable HTTP referrer
 ---------------------
 
