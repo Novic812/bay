@@ -1,5 +1,6 @@
 Program | Reason | Requires
 --------|--------|---------
+codelite-make | glade/notepad2
 firefox | bay/config/firefox/firefox.sh
 ftp | sage/sage
 include-what-you-use | bay/local/include.sh | Visual C++ 2015 (14.0) x86
