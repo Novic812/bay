@@ -1,4 +1,7 @@
 @-moz-document domain(reddit.com) {
+  .dislikes {
+    opacity: .3 !important;
+  }
   .goldvertisement, .hover-bubble, .recommended-link,
   .sidebox:not(.create):not(.submit) {
     display: none !important;
