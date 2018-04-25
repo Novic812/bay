@@ -6,4 +6,8 @@
   .sidebox:not(.create):not(.submit) {
     display: none !important;
   }
+  .md p {
+    font-family: verdana !important;
+    margin-bottom: 10px !important;
+  }
 }
