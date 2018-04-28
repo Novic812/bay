@@ -1,6 +1,5 @@
 VirtualBox Guest Additions
-=====================================
-- todo - http://askubuntu.com/q/22743
+======================================
 - todo - http://askubuntu.com/q/573596
 - todo - http://askubuntu.com/q/596998
 - todo - http://askubuntu.com/q/792832
