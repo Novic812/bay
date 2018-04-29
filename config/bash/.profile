@@ -1,5 +1,15 @@
-[ -f ~/.editor ] && . ~/.editor
-[ "$BASH" ] && shopt -s completion_strip_exe
+if [ -f ~/.editor ]
+then
+  . ~/.editor
+fi
+if [ -f ~/.pager ]
+then
+  . ~/.pager
+fi
+if [ "$BASH" ]
+then
+  shopt -s completion_strip_exe
+fi
 HISTCONTROL=erasedups
 HISTIGNORE='q:ahist *'
 HISTSIZE=20000
@@ -10,13 +20,11 @@ TERM=cygwin-readline
 export BROWSER=firefox
 export CYGWIN=winsymlinks:native
 export LC_ALL=en_US.UTF-8
-export PAGER='env TERM=cygwin-less less'
 export POSIXLY_CORRECT
 alias acurl='curl -L'
 alias agit='git --no-pager'
 alias agrep='grep -I --color --exclude .bash_history --exclude-dir .git'
 alias ahist='history | grep -i --color'
-alias aless='TERM=cygwin-less less'
 alias als='ls -ASgo'
 alias aman='man -Kw'
 alias apr='pr -dt'

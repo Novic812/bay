@@ -3,7 +3,7 @@ q=$PWD
 
 # config
 # we need to install bash first for /usr/local/bin
-for z in bash 3rvx firefox git notepad2 windows
+for z in bash 3rvx firefox git less notepad2 windows
 do
   cd "$q"/config/"$z"
   ./install.sh
