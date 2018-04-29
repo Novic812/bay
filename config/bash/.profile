@@ -13,7 +13,6 @@ export LC_ALL=en_US.UTF-8
 export PAGER='env TERM=cygwin-less less'
 export POSIXLY_CORRECT
 alias acurl='curl -L'
-alias afind='find -xtype l -delete -print'
 alias agit='git --no-pager'
 alias agrep='grep -I --color --exclude .bash_history --exclude-dir .git'
 alias ahist='history | grep -i --color'
@@ -64,6 +63,10 @@ ncurl() {
 nffprobe() {
   ffprobe -hide_banner "$@" 2>&1 |
   awk '$1 == "Stream" {$0 = "\33[1;33m" $0 "\33[m"} 1'
+}
+
+nfind() {
+  find '(' -xtype l -o -type d -empty ')' -delete -print
 }
 
 nod() {
