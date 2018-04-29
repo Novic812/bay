@@ -8,6 +8,7 @@
   }
   .md p {
     font-family: verdana !important;
+    line-height: 20px !important;
     margin-bottom: 10px !important;
   }
 }
