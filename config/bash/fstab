@@ -1,5 +1,6 @@
 C:/ProgramData/Bin /usr/local/bin . noacl
 C:/ProgramData/Cache /var/local/cache . noacl
+C:/ProgramData/Lib /usr/local/lib . noacl
 C:/ProgramData/Share /usr/local/share . noacl
 D:/Desktop /Desktop . noacl
 D:/Git /Git . noacl
