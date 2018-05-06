@@ -10,11 +10,11 @@ BEGIN {
   }
 
   a_new(dc, "ffmpeg", "-ss", ARGV[1], "-i", ARGV[4], "-t", ARGV[2],
-  "-vf", "select='eq(pict_type, I)'", "-vsync", "vfr", "-q", 1, "%d.jpg")
+  "-vsync", "vfr", "-q", 1, "--", "--", "%d.jpg")
 
-  if (ARGV[3] == "all") {
-    a_delete(dc, 8)
-    a_delete(dc, 8)
+  if (ARGV[3] == "key") {
+    dc[12] = "-vf"
+    dc[13] = "select='eq(pict_type, I)'"
   }
 
   ka_trace(dc)
