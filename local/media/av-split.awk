@@ -22,12 +22,12 @@ $1 == "INDEX" && $2 {
 }
 END {
   for (z in tracks) {
-    a_new(q, "ffmpeg", "-v", "warning", "-stats", "-i", file, "-ss", idxs[z],
-    "-to", idxs[z + 1], "-b:a", "256k",
+    a_new(q, "ffmpeg", "-v", "warning", "-stats", "-ss", idxs[z], "-i", file,
+    "-b:a", "256k", "-copyts", "--", "--",
     tracks[z] " " s_gsub(titles[z], "\\?", "") ".m4a")
-    if (!idxs[z + 1]) {
-      a_delete(q, 9)
-      a_delete(q, 9)
+    if (idxs[z + 1]) {
+      q[12] = "-to"
+      q[13] = idxs[z + 1]
     }
     ka_trace(q)
   }
