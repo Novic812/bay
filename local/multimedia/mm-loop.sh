@@ -1,7 +1,7 @@
 #!/bin/dash -e
 if [ "$#" != 2 ]
 then
-  echo 'av-loop.sh <image> <audio>'
+  echo 'mm-loop.sh <image> <audio>'
   exit 1
 fi
 xr=$(mktemp XXX.mp4)

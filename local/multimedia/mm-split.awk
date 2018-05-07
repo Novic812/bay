@@ -1,7 +1,7 @@
 #!/usr/local/bin/velour -f
 BEGIN {
   if (ARGC != 2) {
-    print "av-split.awk <cue file>"
+    print "mm-split.awk <cue file>"
     exit 1
   }
 }

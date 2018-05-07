@@ -1,7 +1,7 @@
 #!/bin/dash -e
 if [ "$#" = 0 ]
 then
-  echo 'av-subtitle.sh <MP4> [SRT]'
+  echo 'mm-subtitle.sh <MP4> [SRT]'
   exit 1
 fi
 xr=$1
