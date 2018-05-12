@@ -20,5 +20,5 @@ shift 2
 for w
 do
   z=$(basename "$w" "$q")
-  k-trace ffmpeg -v warning -stats -i "$w" -b:a 256k "$z$v"
+  k-trace ffmpeg -v warning -stats -i "$w" -vn -b:a 256k "$z$v"
 done
