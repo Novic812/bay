@@ -1,6 +1,6 @@
 Browser | Issue
 --------|------
-Basilisk | http://github.com/MoonchildProductions/moebius/issues/244
+Basilisk | http://github.com/MoonchildProductions/UXP/issues/343
 Brave | http://github.com/brave/browser-laptop/issues/3631
 Chrome Canary | http://superuser.com/q/319958
 Chromium | http://superuser.com/q/319958
