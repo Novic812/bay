@@ -12,7 +12,7 @@ then
 fi
 HISTCONTROL=erasedups
 HISTIGNORE='q:ahist *'
-HISTSIZE=20000
+HISTSIZE=25000
 HISTTIMEFORMAT='%x %r '
 PATH=/usr/local/bin:/usr/bin
 PROMPT_COMMAND=gsh
