@@ -21,7 +21,6 @@ export BROWSER=firefox
 export CYGWIN=winsymlinks:native
 export LC_ALL=en_US.UTF-8
 export POSIXLY_CORRECT
-alias acurl='curl -L'
 alias agit='git --no-pager'
 alias agrep='grep -I --color --exclude .bash_history --exclude-dir .git'
 alias ahist='history | grep -i --color'
@@ -53,7 +52,7 @@ gsh() {
 }
 
 ncurl() {
-  curl -v "$@" 2>&1 | awk '
+  curl -L -v "$@" 2>&1 | awk '
   $1 == ">" ||
   $1 == "HTTP/2" ||
   $1 == "HTTP/1.1" ||
