@@ -84,8 +84,8 @@ ntar() {
   tar --checkpoint-action 'ttyout=%T \r' "$@"
 }
 
-nwtime() {
-  wtime "$@" 2>&1 | awk '/OperationCount/ {$0 = "\33[1;33m" $0 "\33[m"} 1'
+nyq() {
+  yq "$@" | tr '|' '>' | fmt -s -w 79
 }
 
 xs() {
