@@ -15,14 +15,14 @@ a robust solution. here is what we need, in order
 
 or alternatively:
 
-A. set HISTSIZE in .profile
-B. exit
-C. symlink .bash_history
+4. set HISTSIZE in .profile
+5. exit
+6. symlink .bash_history
 
 now number 1 is possible by cheating - we can use SETX. again this is bad
 because if we ever reinstalled Windows or took .bash_history to another
-computer we are screwed. letter C is interesting, but how do we do it? we can
-add something like this into install.sh:
+computer we are screwed. (6) is interesting, but how do we do it? we can add
+something like this into install.sh:
 
 ~~~sh
 echo "ln -sf $PWD/.bash_history ~" >/etc/profile
