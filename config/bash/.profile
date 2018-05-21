@@ -22,7 +22,7 @@ export CYGWIN=winsymlinks:native
 export LC_ALL=en_US.UTF-8
 export POSIXLY_CORRECT
 alias agit='git --no-pager'
-alias agrep='grep -I --color --exclude .bash_history --exclude-dir .git'
+alias agrep='grep -I --color --exclude-dir .git'
 alias ahist='history | grep -i --color'
 alias als='ls -ASgo'
 alias aman='man -Kw'
