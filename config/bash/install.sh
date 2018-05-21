@@ -1,22 +1,18 @@
 #!/bin/dash -e
+# this script needs to work without velour
 
-# symlinking fstab is circular dependency with velour
-cp -v fstab /etc
+# /etc
+cp -v fstab profile /etc
 mount -a
 
 # /home
-mkdir -p ~
-if [ ! -f .bash_history ] && [ -f ~/.bash_history ]
+if [ ! -f /usr/local/.bash_history ] && [ -f ~/.bash_history ]
 then
-  mv ~/.bash_history .
+  mv ~/.bash_history /usr/local
 else
-  >> .bash_history
+  >> /usr/local/.bash_history
 fi
-ln -sfv "$PWD"/.bash_logout "$PWD"/.inputrc "$PWD"/.profile ~
-velour -n '
-printf "PATH=/bin; ln -sf %s/.bash_history ~; rm /etc/profile",
-k_shellesc(ARGV[1])
-' "$PWD" > /etc/profile
+ln -f -s -v "$PWD"/.bash_logout "$PWD"/.inputrc "$PWD"/.profile ~
 
 # /usr/share
 tic cygwin-readline.ti
