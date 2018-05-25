@@ -24,7 +24,7 @@ END {
   for (z in tracks) {
     a_new(q, "ffmpeg", "-v", "warning", "-stats", "-ss", idxs[z], "-i", file,
     "-b:a", "256k", "-copyts", "--", "--",
-    tracks[z] " " s_gsub(titles[z], "\\?", "") ".m4a")
+    tracks[z] " " s_gsub(titles[z], "[:?]", "") ".m4a")
     if (idxs[z + 1]) {
       q[12] = "-to"
       q[13] = idxs[z + 1]
