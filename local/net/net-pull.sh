@@ -5,10 +5,10 @@ if [ "$#" != 6 ]
 then
 cat <<'eof'
 SYNOPSIS
-  pr.sh <repo> <issue> <from user> <from branch> <to user> <to branch>
+  net-pull.sh <repo> <issue> <from user> <from branch> <to user> <to branch>
 
 EXAMPLE
-  pr.sh jq 1671 svnpenn patch-1 stedolan master
+  net-pull.sh jq 1671 svnpenn patch-1 stedolan master
 eof
   exit 1
 fi
