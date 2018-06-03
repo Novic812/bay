@@ -1,6 +1,5 @@
 Link | Note
 -----|-----
-http://reddit.com/r/megalinks
 http://wikipedia.org/wiki/bittorrent | torrent
 http://wikipedia.org/wiki/file_sharing |
 http://wikipedia.org/wiki/internet_service_provider | ISP
