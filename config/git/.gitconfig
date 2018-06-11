@@ -1,5 +1,6 @@
 [alias]
 dwo = diff --word-diff=color
+bad = blame --abbrev=1 --date=relative
 
 [color "diff"]
 meta = yellow bold
@@ -13,6 +14,3 @@ helper = store
 [diff]
 algorithm = histogram
 wsErrorHighlight = all
-
-[push]
-default = current
