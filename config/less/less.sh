@@ -1,3 +1,3 @@
 #!/bin/dash
 TERM=cygwin-less
-exec less --shift 20
+exec less -i -# 20
