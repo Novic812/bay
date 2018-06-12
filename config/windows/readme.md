@@ -7,7 +7,6 @@ include-what-you-use | bay/local/include.sh | Visual C++ 2015 (14.0) x86
 megadl | bay/doc/file-sharing/mega.md
 mp4box | bay/local/mp4box.sh
 msiexec | glade/glade-msi.sh
-nim | velour/doc/prog-lang/nim.md
 notepad2 | bay/config/notepad2/notepad2.sh
 ping | youtube-dl -U
 reg | bay/config/windows/install.sh
