@@ -1,6 +1,9 @@
 [alias]
+bco = blame --color-by-age --abbrev=1 --date=relative
 dwo = diff --word-diff=color
-bad = blame --abbrev=1 --date=relative
+
+[color "blame"]
+highlightRecent = blue, 1 year ago, white, 1 week ago, red
 
 [color "diff"]
 meta = yellow bold
