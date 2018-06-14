@@ -80,3 +80,4 @@ for ([ky, vu] of Object.entries(qu)) {
 }
 
 sr.perms.add(sr.io.newURI('https://www.google.com'), 'cookie', 2);
+sr.perms.add(sr.io.newURI('https://www.washingtonpost.com'), 'cookie', 2);
