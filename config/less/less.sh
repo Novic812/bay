@@ -1,3 +1,3 @@
 #!/bin/dash
 TERM=cygwin-less
-exec less -i
+exec less -S -i
