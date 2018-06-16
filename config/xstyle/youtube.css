@@ -3,7 +3,7 @@
   .ytp-ce-element {
     display: none !important;
   }
-  .yt-uix-sessionlink:visited {
+  .yt-uix-sessionlink:visited, .yt-uix-sessionlink:visited .title {
     color: #551a8b !important;
   }
 }
