@@ -3,7 +3,7 @@
   .ytp-ce-element {
     display: none !important;
   }
-  .spf-link:visited .title, .spf-link[dir]:visited {
+  .yt-uix-sessionlink:visited {
     color: #551a8b !important;
   }
 }
