@@ -18,9 +18,6 @@
 * cnn.io * noop
 * turner.com * noop
 
-# http://facebook.com
-* fbcdn.net * noop
-
 # http://gfycat.com
 * ampproject.org * noop
 
@@ -53,8 +50,8 @@
 # http://nowness.com
 * brightcove.net * noop
 
-# http://oddshot.tv
-* akamaized.net * noop
+# http://pewtube.com
+* plyr.io * noop
 
 # http://reddit.com
 * paypalobjects.com * noop
