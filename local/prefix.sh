@@ -12,7 +12,8 @@ z=$(mktemp /tmp/XXX.c)
   "$q" -v "$z" 2>&1 |
   grep -E '^ [^ ]+$'
 
-  "$q" -### "$z" 2>&1 |
+  # need to quote the option for github
+  "$q" '-###' "$z" 2>&1 |
   sed '
   /LIBRARY_PATH=/!d
   s///
