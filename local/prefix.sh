@@ -9,13 +9,16 @@ fi
 "$1" -E -v -x c /dev/null 2>&1 |
 awk '
 BEGIN {
-  FS = "="
+  FS = "[ =\42]+"
 }
 /^ [^ ]+$/
 $1 == "LIBRARY_PATH" {
   gsub(":", "\n", $2)
   print $2
 }
+$2 == "nonexistent" {
+  print $4
+}
 ' |
-xargs readlink -e |
+xargs readlink -m |
 sort -u
