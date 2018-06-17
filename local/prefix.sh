@@ -5,20 +5,17 @@ then
   echo 'prefix.sh <compiler>'
   exit 1
 fi
-q=$1
-z=$(mktemp /tmp/XXX.c)
 
-{
-  "$q" -v "$z" 2>&1 |
-  grep -E '^ [^ ]+$'
-
-  # need to quote the option for github
-  "$q" '-###' "$z" 2>&1 |
-  sed '
-  /LIBRARY_PATH=/!d
-  s///
-  y/:/\n/
-  '
-} |
+"$1" -E -v -x c /dev/null 2>&1 |
+awk '
+BEGIN {
+  FS = "="
+}
+/^ [^ ]+$/
+$1 == "LIBRARY_PATH" {
+  gsub(":", "\n", $2)
+  print $2
+}
+' |
 xargs readlink -e |
 sort -u
