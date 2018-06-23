@@ -1,7 +1,7 @@
 #!/usr/local/bin/velour -f
 BEGIN {
   if (ARGC < 3) {
-    print "nato.awk <variable length> <file>..."
+    print "variable.awk <length> <file>..."
     exit 1
   }
   var_len = a_shift(ARGV)
