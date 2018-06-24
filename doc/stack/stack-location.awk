@@ -14,5 +14,5 @@ BEGIN {
     s_split(qu[xr], zu, "/")
     qu[xr] = sprintf("http://%s/q/%s%s", zu[3], zu[5], zu[7] ? "#" zu[7] : "")
   }
-  print a_join(qu, RS)
+  io_puts(qu)
 }

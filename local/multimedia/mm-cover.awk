@@ -2,9 +2,9 @@
 # Set thumbnail for MP4 video
 
 BEGIN {
-  dc["Careful, screencaps will dump in current directory.",
-  "Drag video here, then press enter (backslashes ok):"]
-  print ah_join(dc, RS)
+  a_new(dc, "Careful, screencaps will dump in current directory.",
+  "Drag video here, then press enter (backslashes ok):")
+  io_puts(dc)
 
   ch = s_chomp(io_gets("-"))
   if (!ch) {
@@ -18,9 +18,9 @@ BEGIN {
   xr = .09 * fo["stream.0.duration"]
   ya = (fo["stream.0.duration"] - 2 * xr) / (qu - 1)
   while (qu--) {
-    dc["ffmpeg", "-y", "-v", "error", "-ss", xr, "-i", ch,
-    "-frames", 1, xr ".jpg"]
-    kh_trace(dc)
+    a_new(dc, "ffmpeg", "-y", "-v", "error", "-ss", xr, "-i", ch,
+    "-frames", 1, xr ".jpg")
+    ka_trace(dc)
     xr += ya
   }
 
@@ -29,6 +29,6 @@ BEGIN {
   if (!zu) {
     exit 1
   }
-  dc["tageditor", "-s", "cover=" zu, "--max-padding", 100000, "-f", ch]
-  kh_trace(dc)
+  a_new(dc, "tageditor", "-s", "cover=" zu, "--max-padding", 100000, "-f", ch)
+  ka_trace(dc)
 }

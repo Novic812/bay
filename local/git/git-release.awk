@@ -9,10 +9,10 @@ function tg(mix,   br, ec) {
 
 BEGIN {
   if (k_system("[ -d .git ]")) {
-    dc["LOCAL", "  1. commit program change", "  2. commit version change",
-    "  3. tag new version", "", "REMOTE", "  1. push commits",
-    "  2. push release"]
-    print ah_join(dc, RS)
+    a_new(dc, "LOCAL", "  1. commit program change",
+    "  2. commit version change", "  3. tag new version", "", "REMOTE",
+    "  1. push commits", "  2. push release")
+    io_puts(dc)
     exit 1
   }
   "git mktree </dev/null" | getline go

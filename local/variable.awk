@@ -24,5 +24,6 @@ END {
   for (each in nfa) {
     a_push(m, sprintf("%2d", nfa[each]) FS each)
   }
-  print ab_join(a_sort(m), RS)
+  a_sort(m)
+  io_puts(m)
 }
