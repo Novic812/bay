@@ -3,13 +3,13 @@
 # have to do this first before we use reg
 velour '
 BEGIN {
-  dc["ln", "-sft", "/usr/local/bin"]
+  a_new(dc, "ln", "-sft", "/usr/local/bin")
 }
 {
-  ah_push(dc, $0)
+  a_push(dc, $0)
 }
 END {
-  kh_trace(dc)
+  ka_trace(dc)
 }
 ' symlink.conf
 

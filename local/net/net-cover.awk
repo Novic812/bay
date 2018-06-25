@@ -12,11 +12,11 @@ BEGIN {
   xr = s_gsub(ARGV[1], FS, "+")
   ya = s_gsub(ARGV[2], FS, "+")
 
-  dc[ENVIRON["BROWSER"], "-new-tab", "discogs.com/search?q=" xr "+" ya,
+  a_new(dc, ENVIRON["BROWSER"], "-new-tab", "discogs.com/search?q=" xr "+" ya,
   "-new-tab", "fanart.tv/api/getdata.php?type=2&s=" xr,
   "-new-tab", "google.com/search?tbm=isch&q=" xr "+" ya,
   "-new-tab", "musicbrainz.org/search?type=release&query=" xr "+" ya,
-  "-new-tab", "wikipedia.org/w/index.php?search=" xr "+" ya]
+  "-new-tab", "wikipedia.org/w/index.php?search=" xr "+" ya)
 
-  kh_trace(dc)
+  ka_trace(dc)
 }

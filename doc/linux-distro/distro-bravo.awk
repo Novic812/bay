@@ -8,8 +8,8 @@ BEGIN {
       x = $4
       while ("curl " q "/table.php?distribution=" x | getline) {
         if (/pkglist/) {
-          kc["curl", "-o", x, q "/" $2]
-          kh_trace(kc)
+          a_new(kc, "curl", "-o", x, q "/" $2)
+          ka_trace(kc)
           break
         }
       }
