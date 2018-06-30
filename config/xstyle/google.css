@@ -1,4 +1,4 @@
-@-moz-document domain(google.com) {
+@-moz-document domain("google.com") {
   [aria-label="promo"] {
     display: none !important;
   }

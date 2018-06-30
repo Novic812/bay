@@ -1,4 +1,4 @@
-@-moz-document domain(instagram.com) {
+@-moz-document domain("instagram.com") {
   [role] [role][class] div:last-child {
     display: none;
   }

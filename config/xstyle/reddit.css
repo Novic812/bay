@@ -1,4 +1,4 @@
-@-moz-document domain(reddit.com) {
+@-moz-document domain("reddit.com") {
   .commentarea .sitetable.nestedlisting > .comment {
     border-top: thick solid plum !important;
   }

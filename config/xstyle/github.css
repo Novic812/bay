@@ -1,5 +1,5 @@
 /* all rules checked 2018 */
-@-moz-document domain(github.com) {
+@-moz-document domain("github.com") {
   /* string */
   .pl-s, .pl-pds {
     color: #800080;

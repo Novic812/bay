@@ -1,4 +1,4 @@
-@-moz-document domain(youtube.com) {
+@-moz-document domain("youtube.com") {
   .annotation, .ytp-cards-button, .ytp-cards-teaser, .video-annotations,
   .ytp-ce-element {
     display: none !important;

@@ -1,5 +1,5 @@
-@-moz-document domain(stackexchange.com), domain(stackoverflow.com),
-domain(superuser.com) {
+@-moz-document domain("stackexchange.com"), domain("stackoverflow.com"),
+domain("superuser.com") {
   /* hot network questions */
   #hot-network-questions :visited,
   /* featured on meta */
