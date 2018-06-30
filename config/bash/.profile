@@ -32,7 +32,7 @@ alias q='tput reset'
 stty -ixon
 
 gsh() {
-  history -a
+  history -w
   if [ "$GSH" != "$PWD" ]
   then
     GSH=$PWD
