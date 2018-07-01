@@ -1,6 +1,4 @@
 [alias]
-; need at least 6 chars to be unique, which is 5+1
-bco = blame --color-by-age --abbrev=5 --date=relative
 dwo = diff --word-diff=color
 
 [color "blame"]
