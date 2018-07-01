@@ -13,12 +13,12 @@ eof
   exit 1
 fi
 
-q=$1
-v=$2
+qu=$1
+wh=$2
 shift 2
 
-for w
+for xr
 do
-  z=$(basename "$w" "$q")
-  k-trace ffmpeg -v warning -stats -i "$w" -vn -b:a 256k "$z$v"
+  zu=$(basename "$xr" "$qu")
+  k-trace ffmpeg -v warning -stats -i "$xr" -vn -b:a 256k "$zu$wh"
 done
