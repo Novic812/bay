@@ -1,6 +1,6 @@
 #!/bin/dash
 # need to fork first
-# stackoverflow.com/a/4529172
+# http://stackoverflow.com/questions/4528869/-/4529172
 if [ "$#" != 6 ]
 then
 cat <<'eof'

@@ -32,5 +32,5 @@ Linux Guest Additions
         sudo mount -t vboxsf VirtualBox_Shared /mnt
 
 --------------------------------------------------------------------------------
-- http://unix.stackexchange.com/a/429134
+- http://unix.stackexchange.com/questions/310620/-/429134
 - http://wiki.archlinux.org/index.php/VirtualBox#Enable_shared_folders
