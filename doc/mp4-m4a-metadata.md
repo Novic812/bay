@@ -97,13 +97,22 @@ operon list xr.m4a
 mp4tag xr.m4a
 ~~~
 
-Issues
+issues: ffmpeg, ffprobe
 ----------------------------------------------------------------
 - http://ffmpeg.org/pipermail/ffmpeg-devel/2013-July/145365.html
+- http://trac.ffmpeg.org/ticket/2798
+
+issues: mp4box
+--------------------------------------
+http://github.com/gpac/gpac/issues/693
+
+issues: mp4edit, mp4info, mp4tag
+-------------------------------------------------------
 - http://github.com/axiomatic-systems/Bento4/issues/104
 - http://github.com/axiomatic-systems/Bento4/issues/248
-- http://github.com/gpac/gpac/issues/693
+
+issues: operon
+---------------------------------------------------
 - http://github.com/quodlibet/quodlibet/issues/2336
 - http://github.com/quodlibet/quodlibet/issues/2337
 - http://github.com/quodlibet/quodlibet/issues/2781
-- http://trac.ffmpeg.org/ticket/2798
