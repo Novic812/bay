@@ -9,4 +9,4 @@ Bash history
 - http://superuser.com/q/739107#1291778
 - http://unix.stackexchange.com/q/267737#421722
 - http://unix.stackexchange.com/q/398763#421863
-- todo - http://unix.stackexchange.com/q/48713
+- http://unix.stackexchange.com/q/48713#422019
