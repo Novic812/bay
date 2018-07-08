@@ -3,7 +3,7 @@
 # have to do this first before we use reg
 velour '
 BEGIN {
-  a_new(dc, "ln", "-sft", "/usr/local/bin")
+  a_new(dc, "ln", "-f", "-s", "-t", "/usr/local/bin")
 }
 {
   a_push(dc, $0)
