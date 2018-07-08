@@ -5,10 +5,10 @@ BEGIN {
   q = "https://distrowatch.com"
   while ("curl " q | getline) {
     if (/phr2/) {
-      x = $4
-      while ("curl " q "/table.php?distribution=" x | getline) {
+      z = $4
+      while ("curl " q "/table.php?distribution=" z | getline) {
         if (/pkglist/) {
-          a_new(kc, "curl", "-o", x, q "/" $2)
+          a_new(kc, "curl", "-o", z, q "/" $2)
           ka_trace(kc)
           break
         }
