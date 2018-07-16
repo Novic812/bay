@@ -9,7 +9,7 @@ BEGIN {
     qu[++NR] = $NF
   }
   for (xr in qu) {
-    "curl -IL -o /dev/null -w %{url_effective} " qu[xr] | getline qu[xr]
+    "curl -I -L -o /dev/null -w %{url_effective} " qu[xr] | getline qu[xr]
   }
   for (xr in qu) {
     s_split(qu[xr], zu, "/")

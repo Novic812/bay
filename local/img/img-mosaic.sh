@@ -63,7 +63,7 @@ zu "$@" > "$sc"
 
 if [ -s "$rz" ]
 then
-  ex -sc '%s/n//|x' "$rz"
+  ex -s -c '%s/n//|x' "$rz"
 else
   yes | head -"$#" > "$rz"
 fi

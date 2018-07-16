@@ -1,2 +1,2 @@
 #!/bin/dash
-install -Dvt "$APPDATA"/mozilla/firefox/profiles/mike/chrome userchrome.css
+install -D -v -t "$APPDATA"/mozilla/firefox/profiles/mike/chrome userchrome.css

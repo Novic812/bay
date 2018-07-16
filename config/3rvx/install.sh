@@ -2,9 +2,9 @@
 q=$SYSTEMDRIVE'/Program Files (x86)/3RVX/Skins'
 z=$q'/Windows Default'
 [ -d "$q" ]
-mkdir -pv "$z"/OSD
-ln -sfv "$PWD"/skin.xml "$z"
-ln -sfv "$PWD"/settings.xml "$APPDATA"/3RVX
+mkdir -p -v "$z"/OSD
+ln -f -s -v "$PWD"/skin.xml "$z"
+ln -f -s -v "$PWD"/settings.xml "$APPDATA"/3RVX
 cd "$z"/OSD
 set *.png
 if [ ! -f "$1" ]

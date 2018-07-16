@@ -1,2 +1,2 @@
 #!/bin/dash
-rm -fv ~/.gitconfig
+rm -f -v ~/.gitconfig

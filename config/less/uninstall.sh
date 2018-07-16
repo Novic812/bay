@@ -1,2 +1,2 @@
 #!/bin/dash
-rm -fv /usr/local/bin/less.sh ~/.pager
+rm -f -v /usr/local/bin/less.sh ~/.pager

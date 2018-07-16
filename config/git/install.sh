@@ -1,2 +1,2 @@
 #!/bin/dash
-ln -sfv "$PWD"/.gitconfig ~
+ln -f -s -v "$PWD"/.gitconfig ~

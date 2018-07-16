@@ -1,8 +1,8 @@
 #!/bin/dash -e
 
 # /etc
-rm -fv /etc/fstab
+rm -f -v /etc/fstab
 cp -v /etc/defaults/etc/profile /etc
 
 # /home
-rm -fv ~/.bash_history ~/.bash_logout ~/.inputrc ~/.profile
+rm -f -v ~/.bash_history ~/.bash_logout ~/.inputrc ~/.profile

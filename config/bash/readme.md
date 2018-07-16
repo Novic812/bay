@@ -25,18 +25,18 @@ computer we are screwed. (6) is interesting, but how do we do it? we can add
 something like this into install.sh:
 
 ~~~sh
-echo "ln -sf $PWD/.bash_history ~" >/etc/profile
+echo "ln -f -s $PWD/.bash_history ~" >/etc/profile
 ~~~
 
 but this is bad because while idempotent, we dont want the extra syscalls if
 we can avoid them. we can solve this different ways:
 
 ~~~sh
-echo "[ -h ~/.bash_history ] || ln -sf $PWD/.bash_history ~" >/etc/profile
+echo "[ -h ~/.bash_history ] || ln -f -s $PWD/.bash_history ~" >/etc/profile
 ~~~
 
 ~~~sh
-echo "ln -sf $PWD/.bash_history ~; rm /etc/profile" >/etc/profile
+echo "ln -f -s $PWD/.bash_history ~; rm /etc/profile" >/etc/profile
 ~~~
 
 2nd option is better because it is shorter, less system calls in long run, and

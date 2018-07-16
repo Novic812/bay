@@ -11,6 +11,7 @@
 
 # http://cbsnews.com
 * cbsistatic.com * noop
+* evidon.com * noop
 * tiqcdn.com * noop
 
 # http://cnn.com
@@ -46,9 +47,6 @@
 # http://newsweek.com
 * jwpcdn.com * noop
 * jwplatform.com * noop
-
-# http://nowness.com
-* brightcove.net * noop
 
 # http://pewtube.com
 * plyr.io * noop

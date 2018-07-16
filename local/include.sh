@@ -32,4 +32,4 @@ awk '
 '
 
 # undecorate
-ex -sc 'd|x' "$xr"
+ex -s -c 'd|x' "$xr"

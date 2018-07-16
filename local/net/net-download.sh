@@ -34,7 +34,7 @@ do
   then
     echo starting link "$char"
   fi
-  if grep -Fq "$xr" %/h.txt
+  if grep -F -q "$xr" %/h.txt
   then
     printf '%s\nhas already been recorded in archive\n' "$xr"
     continue

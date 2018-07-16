@@ -24,9 +24,9 @@ export POSIXLY_CORRECT
 alias agit='git --no-pager'
 alias agrep='grep -I --color --exclude-dir .git'
 alias ahist='history | grep -i --color'
-alias als='ls -ASgo'
-alias aman='man -Kw'
-alias apr='pr -dt'
+alias als='ls -A -S -g -o'
+alias aman='man -K -w'
+alias apr='pr -d -t'
 alias area='readlink -e'
 alias q='tput reset'
 stty -ixon
@@ -77,7 +77,7 @@ nfind() {
 }
 
 nod() {
-  od -tcx1 -An -w19 | awk 'NR % 2 {$0 = "\33[1;32m" $0 "\33[m"} 1'
+  od -An -tcx1 -w19 | awk 'NR % 2 {$0 = "\33[1;32m" $0 "\33[m"} 1'
 }
 
 ntar() {
