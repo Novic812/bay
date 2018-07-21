@@ -84,10 +84,6 @@ ntar() {
   tar --checkpoint-action 'ttyout=%T \r' "$@"
 }
 
-nyq() {
-  yq "$@" | tr '|' '>' | fmt -s -w 79
-}
-
 xs() {
   z=$?
   if [ "$z" = 0 ]
