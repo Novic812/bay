@@ -7,16 +7,16 @@ the awk [Velour library]
 - http://unix.stackexchange.com/q/104525#417042
 - http://unix.stackexchange.com/q/1825#333436
 - http://unix.stackexchange.com/q/191205#354019
-- todo - http://unix.stackexchange.com/q/136534
-- todo - http://unix.stackexchange.com/q/168476
-- todo - http://unix.stackexchange.com/q/171154
-- todo - http://unix.stackexchange.com/q/215934
-- todo - http://unix.stackexchange.com/q/223338
-- todo - http://unix.stackexchange.com/q/24626
-- todo - http://unix.stackexchange.com/q/279505
-- todo - http://unix.stackexchange.com/q/281271
-- todo - http://unix.stackexchange.com/q/311904
-- todo - http://unix.stackexchange.com/q/333961
-- todo - http://unix.stackexchange.com/q/3794
-- todo - http://unix.stackexchange.com/q/422165
-- todo - http://unix.stackexchange.com/q/65280
+- todo: http://unix.stackexchange.com/q/136534
+- todo: http://unix.stackexchange.com/q/168476
+- todo: http://unix.stackexchange.com/q/171154
+- todo: http://unix.stackexchange.com/q/215934
+- todo: http://unix.stackexchange.com/q/223338
+- todo: http://unix.stackexchange.com/q/24626
+- todo: http://unix.stackexchange.com/q/279505
+- todo: http://unix.stackexchange.com/q/281271
+- todo: http://unix.stackexchange.com/q/311904
+- todo: http://unix.stackexchange.com/q/333961
+- todo: http://unix.stackexchange.com/q/3794
+- todo: http://unix.stackexchange.com/q/422165
+- todo: http://unix.stackexchange.com/q/65280
