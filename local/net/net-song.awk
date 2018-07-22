@@ -21,7 +21,7 @@ BEGIN {
   # initial only
   if (ARGV[1] == 1) {
     a_new(z, ENVIRON["BROWSER"],
-    "-new-tab", sprintf(yt "allintitle:%s %s, hd", ar, sg),
+    "-new-tab", sprintf(yt "allintitle:%s %s, hd", at, sg),
     "-new-tab", sprintf(yt "allintitle:%s %s", at, sg),
     "-new-tab", sprintf(gs "allintitle:%s %s", at, sg))
     ka_trace(z)

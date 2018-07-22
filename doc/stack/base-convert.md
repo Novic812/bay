@@ -9,3 +9,4 @@ Base convert
 - http://unix.stackexchange.com/q/279505#357884
 - http://unix.stackexchange.com/q/311904#354461
 - http://unix.stackexchange.com/q/65280#354324
+- todo: http://unix.stackexchange.com/q/457645
