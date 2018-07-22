@@ -1,8 +1,18 @@
 #!/bin/dash -e
-# get compiler prefix
 if [ "$#" != 1 ]
 then
-  echo 'prefix.sh <compiler>'
+cat <<'eof'
+SYNOPSIS
+  prefix.sh <compiler>
+
+COMPILER
+  x86_64-w64-mingw32-gcc
+  gcc
+
+PACKAGES
+  mingw64-x86_64-gcc-core
+  gcc-core
+eof
   exit 1
 fi
 
@@ -20,5 +30,5 @@ $2 == "nonexistent" {
   print $4
 }
 ' |
-xargs readlink -m |
+xargs realpath -m |
 sort -u

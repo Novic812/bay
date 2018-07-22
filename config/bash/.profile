@@ -27,7 +27,7 @@ alias ahist='history | grep -i --color'
 alias als='ls -A -S -g -o'
 alias aman='man -K -w'
 alias apr='pr -d -t'
-alias area='readlink -e'
+alias area='realpath -m'
 alias q='tput reset'
 stty -ixon
 
