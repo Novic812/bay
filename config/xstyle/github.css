@@ -14,6 +14,10 @@
   .comment-body code, .comment-body pre, .highlight td {
     font-size: 14px !important;
   }
+  /* contribution */
+  .js-calendar-graph-svg {
+    width: 700px;
+  }
   /* contribution red */
   [fill="#196127"] {
     fill: #e44b23;
