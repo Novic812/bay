@@ -52,9 +52,10 @@ gsh() {
 }
 
 ncurl() {
-  curl -L "$@" 2>&1 | awk '
+  curl -I -L "$@" 2>&1 | awk '
   {
-    if (tolower($1) ~ /content-length|location/) {
+    q = tolower($1)
+    if (q ~ /content-disposition|content-length|last-modified|location/) {
       $1 = "\33[1;32m" $1 "\33[m"
     }
     else if ($1 ~ /:/) {
