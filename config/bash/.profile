@@ -52,16 +52,14 @@ gsh() {
 }
 
 ncurl() {
-  curl -L -v "$@" 2>&1 | awk '
-  $1 == ">" ||
-  $1 == "HTTP/2" ||
-  $1 == "HTTP/1.1" ||
-  $2 == "Connected" ||
-  tolower($1) == "location:" {
-    $0 = "\33[1;33m" $0 "\33[m"
-  }
-  tolower($1) == "content-length:" {
-    $0 = sprintf("\33[1;33m%s %\47d\33[m", $1, $2)
+  curl -L "$@" 2>&1 | awk '
+  {
+    if (tolower($1) ~ /content-length|location/) {
+      $1 = "\33[1;32m" $1 "\33[m"
+    }
+    else if ($1 ~ /:/) {
+      $1 = "\33[1;33m" $1 "\33[m"
+    }
   }
   1
   '
