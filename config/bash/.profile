@@ -52,7 +52,7 @@ gsh() {
 }
 
 ncurl() {
-  curl -I -L "$@" 2>&1 | awk '
+  curl -I -L "$@" | awk '
   {
     q = tolower($1)
     if (q ~ /content-disposition|content-length|last-modified|location/) {

@@ -10,7 +10,7 @@ do
   io-size m "$pa" >> "$sz"
   git log --follow --max-count=1 --diff-filter=AM --date=short \
     --format='%at %ad' "$pa" >> "$dt"
-  echo "$pa" >> "$ob"
+  printf '%s\n' "$pa" >> "$ob"
 done
 echo
 awk '
