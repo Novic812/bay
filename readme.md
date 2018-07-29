@@ -12,14 +12,14 @@ with the use of sub-directories.
 
 Links
 ------------------
-- [svnpenn/bay][2]
-- [svnpenn/velour (io-read, io-size, k-trace)][3]
+- [punnet/bay][2]
+- [punnet/velour (io-read, io-size, k-trace)][3]
 
 Author
 ------------
 Steven Penny
 
 [protocol is needed for image to render]::
-[1]:https://raw.githubusercontent.com/svnpenn/bay/master/bay.jpg
-[2]:https://github.com/svnpenn/bay
-[3]:https://github.com/svnpenn/velour
+[1]:https://raw.githubusercontent.com/punnet/bay/master/bay.jpg
+[2]:https://github.com/punnet/bay
+[3]:https://github.com/punnet/velour
