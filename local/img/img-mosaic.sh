@@ -40,7 +40,7 @@ mn() {
   '
 }
 
-ya() {
+xr() {
   tr , '\n' <<eof
 $1
 eof
@@ -53,15 +53,26 @@ rz=$(mktemp /tmp/resize-XXX)
 while getopts ds:c:g:r:m: name
 do
   case $name in
-  d) dry=y ;;
-  s) sv=$OPTARG ;;
-  c) ya "$OPTARG" > "$eg" ;;
-  g) ya "$OPTARG" > "$gv" ;;
-  m) ya "$OPTARG" > "$dm" ;;
-  r) ya "$OPTARG" > "$rz" ;;
+  d)
+    dry=1
+  ;;
+  s)
+    sv=$OPTARG
+  ;;
+  c)
+    xr "$OPTARG" > "$eg"
+  ;;
+  g)
+    xr "$OPTARG" > "$gv"
+  ;;
+  m)
+    xr "$OPTARG" > "$dm"
+  ;;
+  r)
+    xr "$OPTARG" > "$rz"
   esac
 done
-shift $((OPTIND-1))
+shift $((OPTIND - 1))
 
 sc=$(mktemp /tmp/file-XXX)
 printf '%s\n' "$@" > "$sc"
