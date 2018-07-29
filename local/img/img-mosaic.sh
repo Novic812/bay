@@ -28,7 +28,16 @@ eof
 fi
 
 mn() {
-  awk '{for (; NF-1; NF--) if ($1 > $NF) $1 = $NF} 1'
+  awk '
+  {
+    for (; NF - 1; NF--) {
+      if ($1 > $NF) {
+        $1 = $NF
+      }
+    }
+  }
+  1
+  '
 }
 
 ya() {
