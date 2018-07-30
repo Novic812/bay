@@ -1,7 +1,6 @@
 #!/bin/dash -e
 # A mosaic in digital imaging is a plurality of non-overlapping images, arranged
 # in some tessellation.
-
 if [ "$#" = 0 ]
 then
   cat <<'eof'
@@ -83,17 +82,14 @@ then
 else
   yes | head -"$#" > "$rz"
 fi
-
 if [ ! -s "$gv" ]
 then
   yes center | head -"$#" > "$gv"
 fi
-
 if [ ! -s "$eg" ]
 then
   yes '' | head -"$#" > "$eg"
 fi
-
 if [ ! -s "$dm" ]
 then
   ao=$(identify -format '%[fx:w/h>1]' "$@")
@@ -113,6 +109,7 @@ then
     }
   }
   ' "$ao" > "$dm" <<'eof'
+0 1920x1080
 1 1920x1080
 11 1920x1080,1920x1080
 001 960x1080,960x1080,1920x1080
@@ -174,24 +171,40 @@ br=$(mktemp XXX)
 set =*
 
 case $ao in
-000011) k-trace convert "$1" "$2" "$3" "$4" '(' "$5" "$6" -append ')' +append \
-  -quality 100 "$br" ;;
-000110) k-trace convert "$1" "$2" "$3" '(' "$4" "$5" -append ')' "$6" +append \
-  -quality 100 "$br" ;;
-011011) k-trace convert "$1" '(' "$2" "$3" -append ')' "$4" \
-  '(' "$5" "$6" -append ')' +append -quality 100 "$br" ;;
-110000) k-trace convert '(' "$1" "$2" -append ')' "$3" "$4" "$5" "$6" +append \
-  -quality 100 "$br" ;;
-110011) k-trace convert '(' "$1" "$2" -append ')' "$3" "$4" \
-  '(' "$5" "$6" -append ')' +append -quality 100 "$br" ;;
-110110) k-trace convert '(' "$1" "$2" -append ')' "$3" \
-  '(' "$4" "$5" -append ')' "$6" +append -quality 100 "$br" ;;
-0000110) k-trace convert "$1" "$2" "$3" "$4" \
-  '(' "$5" "$6" -append ')' "$7" +append -quality 100 "$br" ;;
-11111111) k-trace convert '(' "$1" "$2" -append ')' '(' "$3" "$4" -append ')' \
-  '(' "$5" "$6" -append ')' '(' "$7" "$8" -append ')' +append \
-  -quality 100 "$br" ;;
-*) k-trace convert "$@" +append -quality 100 "$br" ;;
+000011)
+  k-trace convert "$1" "$2" "$3" \
+  "$4" '(' "$5" "$6" -append ')' +append -quality 100 "$br"
+;;
+000110)
+  k-trace convert "$1" "$2" "$3" \
+  '(' "$4" "$5" -append ')' "$6" +append -quality 100 "$br"
+;;
+011011)
+  k-trace convert "$1" '(' "$2" "$3" -append ')' \
+  "$4" '(' "$5" "$6" -append ')' +append -quality 100 "$br"
+;;
+110000)
+  k-trace convert '(' "$1" "$2" -append ')' "$3" \
+  "$4" "$5" "$6" +append -quality 100 "$br"
+;;
+110011)
+  k-trace convert '(' "$1" "$2" -append ')' "$3" \
+  "$4" '(' "$5" "$6" -append ')' +append -quality 100 "$br"
+;;
+110110)
+  k-trace convert '(' "$1" "$2" -append ')' "$3" \
+  '(' "$4" "$5" -append ')' "$6" +append -quality 100 "$br"
+;;
+0000110)
+  k-trace convert "$1" "$2" "$3" "$4" \
+  '(' "$5" "$6" -append ')' "$7" +append -quality 100 "$br"
+;;
+11111111)
+  k-trace convert '(' "$1" "$2" -append ')' '(' "$3" "$4" -append ')' \
+  '(' "$5" "$6" -append ')' '(' "$7" "$8" -append ')' +append -quality 100 "$br"
+;;
+*)
+  k-trace convert "$@" +append -quality 100 "$br"
 esac
 
 sn=$(basename "$PWD")
