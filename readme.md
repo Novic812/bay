@@ -1,5 +1,5 @@
 Bay
-============
+==========
 ![kiki][1]
 
 A user's home directory is intended to contain that user's files; including
@@ -11,15 +11,13 @@ with permission to this directory. The home directory can be organized further
 with the use of sub-directories.
 
 Links
-------------------
-- [punnet/bay][2]
-- [punnet/velour (io-read, io-size, k-trace)][3]
+-----------
+[Velour][2]
 
 Author
 ------------
 Steven Penny
 
 [protocol is needed for image to render]::
-[1]:https://raw.githubusercontent.com/punnet/bay/master/bay.jpg
-[2]:https://github.com/punnet/bay
-[3]:https://github.com/punnet/velour
+[1]:https://raw.githubusercontent.com/cup/bay/master/bay.jpg
+[2]:https://github.com/cup/velour
