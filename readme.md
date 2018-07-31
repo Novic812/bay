@@ -18,6 +18,5 @@ Author
 ------------
 Steven Penny
 
-[protocol is needed for image to render]::
-[1]:https://raw.githubusercontent.com/cup/bay/master/bay.jpg
+[1]:https://github.com/cup/bay/raw/master/bay.jpg
 [2]:https://github.com/cup/velour
