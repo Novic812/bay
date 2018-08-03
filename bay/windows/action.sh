@@ -1,12 +1,10 @@
 #!/bin/dash -e
 if [ "$#" != 1 ]
-then
-  cat <<eof
-synopsis: action.sh <operation>
+then printf 'synopsis: action.sh <operation>
 operations:
   -i: install
   -r: remove
-eof
+'
   exit 1
 fi
 
