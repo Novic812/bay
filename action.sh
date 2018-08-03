@@ -7,29 +7,31 @@ operations:
   -r: remove'
   exit 1
 fi
-q=$PWD
+oe=$1
+pd=$PWD
+# we need bash first for /usr/local/bin
+set bash 3rvx firefox git less notepad2 windows
 
-case $1 in
+case $oe in
 -i)
-  # bay: we need to install bash first for /usr/local/bin
-  for z in bash 3rvx firefox git less notepad2 windows
+  for each
   do
-    cd "$q"/bay/"$z"
+    cd "$pd"/bay/"$each"
     ./action.sh -i
   done
 
   # scripts
-  find "$q"/scripts "$q"/docs '(' -name '*.sh' -o -name '*.awk' ')' \
-  -exec ln -f -s -v -t /usr/local/bin {} +
+  find "$pd"/scripts "$pd"/docs '(' -name '*.sh' -o -name '*.awk' ')' \
+  -exec ln -f -s -t /usr/local/bin {} +
 ;;
 -r)
-  PATH=/usr/local/bin:/usr/bin
-  # local
-  find /usr/local/bin -lname "$q/*" -delete -print
-  # config
-  for z in config/*
+  # scripts
+  find /usr/local/bin -lname "$pd/*" -delete -print
+
+  # bay
+  for each
   do
-    cd "$q/$z"
+    cd "$pd"/bay/"$each"
     ./action.sh -r
   done
 esac
