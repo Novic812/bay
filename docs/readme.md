@@ -18,7 +18,11 @@ Elements
 4. `<title>`
 5. `<script>`
 
-http://developer.mozilla.org/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML
+`og:image` requires protocol absolute URL
+
+- http://developer.mozilla.org/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML
+- http://iframely.com/debug
+- http://github.com/itteco/iframely/issues/195
 
 Files
 --------------
@@ -70,8 +74,7 @@ Image
 image.jpg
 ~~~
 
-- http://developer.mozilla.org/docs/Learn/Getting_started_with_the_web/Dealing_with_files
-- http://iframely.com/debug
+http://developer.mozilla.org/docs/Learn/Getting_started_with_the_web/Dealing_with_files
 
 -----
 
