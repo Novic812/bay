@@ -1,3 +1,6 @@
+Style Guide
+===========
+
 CSS
 -----
 
@@ -86,3 +89,8 @@ main.js
 ~~~
 
 http://developer.mozilla.org/docs/Learn/Getting_started_with_the_web/JavaScript_basics
+
+`readme.md`
+-------------------------------------------
+- http://archlinux.org/pacman/pacman.8.html
+- http://wikipedia.org/wiki/Wikipedia:Manual_of_Style/Layout
