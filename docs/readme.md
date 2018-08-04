@@ -54,14 +54,14 @@ index.html
 
 http://developer.mozilla.org/docs/Learn/Getting_started_with_the_web/HTML_basics
 
-Icons
-----------------
-1. `favicon.ico`
-2. `icon.ico`
+Icon
+-----
 
-- http://developer.mozilla.org/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML
-- http://developer.mozilla.org/docs/Web/Manifest
-- http://wikipedia.org/wiki/Favicon
+~~~
+icon.ico
+~~~
+
+http://developer.mozilla.org/docs/Web/Manifest
 
 Image
 -----
@@ -70,7 +70,8 @@ Image
 image.jpg
 ~~~
 
-http://developer.mozilla.org/docs/Learn/Getting_started_with_the_web/Dealing_with_files
+- http://developer.mozilla.org/docs/Learn/Getting_started_with_the_web/Dealing_with_files
+- http://iframely.com/debug
 
 -----
 
