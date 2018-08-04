@@ -10,6 +10,15 @@ style.css
 
 http://developer.mozilla.org/docs/Learn/Getting_started_with_the_web/CSS_basics
 
+Favicon
+-------
+
+~~~
+favicon.ico
+~~~
+
+http://developer.mozilla.org/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML
+
 Folders
 ---------
 1. `core`
@@ -55,11 +64,15 @@ http://camo.githubusercontent.com/a11027e72e00612c421b1cb0387c19e271b318b1/6...
 
 This URL is valid:
 
+~~~
 http://raw.githubusercontent.com/cup/rosso/master/hero.jpg
+~~~
 
 but this one is shorter:
 
+~~~
 http://github.com/cup/rosso/raw/master/hero.jpg
+~~~
 
 -----
 
