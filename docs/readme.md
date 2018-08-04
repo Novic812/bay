@@ -63,15 +63,14 @@ Icons
 - http://developer.mozilla.org/docs/Web/Manifest
 - http://wikipedia.org/wiki/Favicon
 
-Images
-------------
-- `hero.jpg`
-- `image.jpg`
+Image
+-----
 
-References:
+~~~
+image.jpg
+~~~
 
-- http://wikipedia.org/wiki/Hero_image
-- http://developer.mozilla.org/docs/Learn/Getting_started_with_the_web/Dealing_with_files
+http://developer.mozilla.org/docs/Learn/Getting_started_with_the_web/Dealing_with_files
 
 -----
 
