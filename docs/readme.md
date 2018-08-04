@@ -10,15 +10,6 @@ style.css
 
 http://developer.mozilla.org/docs/Learn/Getting_started_with_the_web/CSS_basics
 
-Favicon
--------
-
-~~~
-favicon.ico
-~~~
-
-http://developer.mozilla.org/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML
-
 Files
 --------------
 1. `readme.md`
@@ -27,6 +18,7 @@ Files
   - See also
 2. `license.md`
 3. `notes.md`
+4. `examples.md`
 
 - http://archlinux.org/pacman/pacman.8.html
 - http://wikipedia.org/wiki/README
@@ -51,6 +43,14 @@ index.html
 ~~~
 
 http://developer.mozilla.org/docs/Learn/Getting_started_with_the_web/HTML_basics
+
+Icons
+----------------
+1. `favicon.ico`
+2. `icon.ico`
+
+- http://developer.mozilla.org/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML
+- http://developer.mozilla.org/docs/Web/Manifest
 
 Images
 ------------
