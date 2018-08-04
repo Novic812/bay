@@ -27,6 +27,15 @@ index.html
 
 http://developer.mozilla.org/docs/Learn/Getting_started_with_the_web/HTML_basics
 
+Image
+-----
+
+~~~
+hero.jpg
+~~~
+
+http://wikipedia.org/wiki/Hero_image
+
 JavaScript
 ----------
 
