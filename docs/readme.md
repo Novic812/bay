@@ -18,6 +18,15 @@ Folders
 - http://github.com/django/django
 - http://ruby-doc.org/core
 
+HTML
+-----
+
+~~~
+index.html
+~~~
+
+http://developer.mozilla.org/docs/Learn/Getting_started_with_the_web/HTML_basics
+
 JavaScript
 ----------
 
