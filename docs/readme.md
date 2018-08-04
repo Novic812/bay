@@ -10,6 +10,16 @@ style.css
 
 http://developer.mozilla.org/docs/Learn/Getting_started_with_the_web/CSS_basics
 
+Elements
+-----------
+1. `<head>`
+2. `<link>`
+3. `<meta>`
+4. `<title>`
+5. `<script>`
+
+http://developer.mozilla.org/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML
+
 Files
 --------------
 1. `readme.md`
@@ -51,6 +61,7 @@ Icons
 
 - http://developer.mozilla.org/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML
 - http://developer.mozilla.org/docs/Web/Manifest
+- http://wikipedia.org/wiki/Favicon
 
 Images
 ------------
