@@ -103,6 +103,17 @@ main.js
 
 http://developer.mozilla.org/docs/Learn/Getting_started_with_the_web/JavaScript_basics
 
+JSON
+-----
+
+~~~
+data.json
+~~~
+
+- http://github.com/stedolan/jq/blob/master/tests/modules/data.json
+- http://hyperpolyglot.org/scripting2
+- http://rosettacode.org/wiki/JSON#jq
+
 `readme.md`
 -------------------------------------------
 - http://archlinux.org/pacman/pacman.8.html
