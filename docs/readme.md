@@ -19,6 +19,19 @@ favicon.ico
 
 http://developer.mozilla.org/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML
 
+Files
+--------------
+1. `readme.md`
+  - Author
+  - Install
+  - See also
+2. `license.md`
+3. `notes.md`
+
+- http://archlinux.org/pacman/pacman.8.html
+- http://wikipedia.org/wiki/README
+- http://wikipedia.org/wiki/Wikipedia:Manual_of_Style/Layout
+
 Folders
 ---------
 1. `core`
@@ -112,9 +125,4 @@ data.json
 
 - http://github.com/stedolan/jq/blob/master/tests/modules/data.json
 - http://hyperpolyglot.org/scripting2
-- http://rosettacode.org/wiki/JSON#jq
-
-`readme.md`
--------------------------------------------
-- http://archlinux.org/pacman/pacman.8.html
-- http://wikipedia.org/wiki/Wikipedia:Manual_of_Style/Layout
+- http://taniarascia.com/how-to-use-the-javascript-fetch-api-to-get-json
