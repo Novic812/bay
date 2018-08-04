@@ -72,7 +72,11 @@ but not for `readme.md`. This is another valid URL format for image:
 http://github.com/cup/rosso/raw/master/hero.jpg
 ~~~
 
-but not for mobile.
+but not for mobile. Here is proper format:
+
+~~~
+https://github.com/cup/rosso/raw/master/hero.jpg
+~~~
 
 JavaScript
 ----------
