@@ -140,3 +140,10 @@ data.json
 - http://github.com/stedolan/jq/blob/master/tests/modules/data.json
 - http://hyperpolyglot.org/scripting2
 - http://taniarascia.com/how-to-use-the-javascript-fetch-api-to-get-json
+
+Padding newlines after blocks
+---------------------------------------------------------------------
+To save space, I thought about removing the newlines between function
+definitions. However this is not recommended:
+
+http://github.com/airbnb/javascript#whitespace--after-blocks
