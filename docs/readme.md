@@ -141,6 +141,12 @@ data.json
 - http://hyperpolyglot.org/scripting2
 - http://taniarascia.com/how-to-use-the-javascript-fetch-api-to-get-json
 
+Names for files and functions
+--------------------------------------------------
+9 characters or less, not including file extension
+
+http://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap12.html
+
 Padding newlines after blocks
 ---------------------------------------------------------------------
 To save space, I thought about removing the newlines between function
