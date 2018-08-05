@@ -147,6 +147,42 @@ Names for files and functions
 
 http://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap12.html
 
+Output
+-----------------------
+`echo` is not portable:
+
+~~~sh
+$ bash -c 'echo "1234\c5678"'
+1234\c5678
+$ dash -c 'echo "1234\c5678"'
+1234
+~~~
+
+even as a variable:
+
+~~~sh
+$ bash -c 'set "1234\c5678"; echo "$1"'
+1234\c5678
+$ dash -c 'set "1234\c5678"; echo "$1"'
+1234
+~~~
+
+Regarding usage, `cat` can be used:
+
+~~~
+cat <<eof
+hello world
+eof
+~~~
+
+but its not ideal:
+
+1. `cat` is an executable rather than builtin
+2. you have to name a delimeter
+3. really the delimeter should be quoted
+
+Should use instead `echo` or `printf` if escape sequences could be involved.
+
 Padding newlines after blocks
 ---------------------------------------------------------------------
 To save space, I thought about removing the newlines between function
