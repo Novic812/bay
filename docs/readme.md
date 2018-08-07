@@ -3,8 +3,20 @@ Style Guide
 
 Command output
 ----------------------------------------------------------------------
-If we want to capture command output as a variable, we can use command
-substitution:
+If we want to capture command output as a variable, we can use a pipe:
+
+~~~sh
+$ cat pe.sh
+pwd | {
+  read q
+  printf 'q: %s\n' "$q"
+}
+
+$ strace -o pe.txt dash pe.sh
+q: /home/Steven
+~~~
+
+Or command substitution:
 
 ~~~sh
 $ cat cs.sh
@@ -30,7 +42,8 @@ q: /home/Steven
 Result:
 
 ~~~
-$ wc *.txt
+$ wc pe.txt cs.txt tf.txt
+757  7931 65354 pe.txt
 538  5597 47218 cs.txt
 179  1934 43610 tf.txt
 ~~~
