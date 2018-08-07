@@ -1,6 +1,40 @@
 Style Guide
 ===========
 
+Command output
+----------------------------------------------------------------------
+If we want to capture command output as a variable, we can use command
+substitution:
+
+~~~sh
+$ cat cs.sh
+q=$(pwd)
+printf 'q: %s\n' "$q"
+
+$ strace -o cs.txt dash cs.sh
+q: /home/Steven
+~~~
+
+but a temporary file is faster:
+
+~~~sh
+$ cat tf.sh
+pwd > tf.txt
+read q < tf.txt
+printf 'q: %s\n' "$q"
+
+$ strace -o tf.txt dash tf.sh
+q: /home/Steven
+~~~
+
+Result:
+
+~~~
+$ wc *.txt
+538  5597 47218 cs.txt
+179  1934 43610 tf.txt
+~~~
+
 CSS
 -----
 

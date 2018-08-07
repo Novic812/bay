@@ -16,7 +16,7 @@ case $oe in
 -i)
   for each
   do
-    cd "$pd"/bay/"$each"
+    cd "$pd"/core/"$each"
     ./action.sh -i
   done
 
@@ -28,10 +28,10 @@ case $oe in
   # scripts
   find /usr/local/bin -lname "$pd/*" -delete -print
 
-  # bay
+  # core
   for each
   do
-    cd "$pd"/bay/"$each"
+    cd "$pd"/core/"$each"
     ./action.sh -r
   done
 esac
