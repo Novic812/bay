@@ -16,10 +16,6 @@ Cygwin Git with Notepad2
 - todo: http://emacs.stackexchange.com/q/14331
 - todo: http://superuser.com/q/335615
 
-In place
------------------------------------
-todo: http://askubuntu.com/q/752174
-
 MP4 M4A cover art
 -------------------------------------
 - todo: http://askubuntu.com/q/809175

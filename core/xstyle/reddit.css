@@ -5,8 +5,7 @@
   .dislikes {
     opacity: .3 !important;
   }
-  .goldvertisement, .hover-bubble, .recommended-link,
-  .sidebox:not(.create):not(.submit) {
+  .goldvertisement, .native-sidebar-ad {
     display: none !important;
   }
   .md p {
