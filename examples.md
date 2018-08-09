@@ -16,11 +16,6 @@ Cygwin Git with Notepad2
 - todo: http://emacs.stackexchange.com/q/14331
 - todo: http://superuser.com/q/335615
 
-Read tags
------------------------------------------------
-- todo: http://askubuntu.com/q/364415
-- todo: http://unix.stackexchange.com/q/131186
-
 Subtitles
 --------------------------------------
 - todo: http://superuser.com/q/1135197
