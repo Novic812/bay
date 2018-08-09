@@ -31,40 +31,6 @@ mp4box -itags cover= xr.m4a
 mp4tag --remove Cover xr.m4a ya.m4a
 ~~~
 
-faststart read
---------------
-
-~~~sh
-ffprobe -v trace xr.m4a
-~~~
-
-~~~sh
-mp4box -info xr.m4a
-~~~
-
-~~~sh
-mp4info xr.m4a
-~~~
-
-~~~sh
-awk '/moov/ {exit} /mdat/ {exit 1}' xr.m4a
-~~~
-
-faststart write
----------------
-
-~~~
-ffmpeg -i xr.m4a -c copy -movflags faststart ya.m4a
-~~~
-
-~~~
-mp4box -ipod xr.m4a
-~~~
-
-~~~
-mp4edit xr.m4a ya.m4a
-~~~
-
 Subtitle write
 --------------
 
@@ -112,7 +78,5 @@ issues: mp4edit, mp4info, mp4tag
 - http://github.com/axiomatic-systems/Bento4/issues/248
 
 issues: operon
----------------------------------------------------
-- http://github.com/quodlibet/quodlibet/issues/2336
-- http://github.com/quodlibet/quodlibet/issues/2337
-- http://github.com/quodlibet/quodlibet/issues/2781
+-------------------------------------------------
+http://github.com/quodlibet/quodlibet/issues/2336

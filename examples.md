@@ -16,11 +16,6 @@ Cygwin Git with Notepad2
 - todo: http://emacs.stackexchange.com/q/14331
 - todo: http://superuser.com/q/335615
 
-faststart
--------------------------------------
-- todo: http://superuser.com/q/559372
-- todo: http://superuser.com/q/616484
-
 In place
 -----------------------------------
 todo: http://askubuntu.com/q/752174
