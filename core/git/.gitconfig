@@ -1,4 +1,5 @@
 [alias]
+dcs = diff --cached --stat
 dwo = diff --word-diff=color
 
 [color "blame"]
