@@ -23,4 +23,7 @@ domain("superuser.com") {
   .post-container :visited {
     color: #551a8b !important;
   }
+  aside {
+    transform:none !important;
+  }
 }
