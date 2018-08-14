@@ -1,28 +1,35 @@
 #!/bin/dash -e
-# A mosaic in digital imaging is a plurality of non-overlapping images, arranged
-# in some tessellation.
 if [ "$#" = 0 ]
 then
-  cat <<'eof'
-img-mosaic.sh [options] <files>
+  echo 'synopsis:
+  img-mosaic.sh [options] <files>
 
--d     dry run, create pieces only
+description:
+  a mosaic in digital imaging is a plurality of non-overlapping images,
+  arranged in some tessellation.
 
--s <s>     how much to shave
-           example 6x6
+options:
+  -d:
+    dry run, create pieces only
 
--c <c>     comma separated list of crops
-           example -300,0,+300,0
+  -s <string>:
+    how much to shave
 
--g <g>     comma separated list of gravities
-           example north,south,east,southeast
+  -c <string>:
+    comma separated list of crops
 
--m <m>     comma separated list of dimensions
-           example 1920x1080,1280x1080,960x1080,640x1080
+  -g <string>:
+    comma separated list of gravities
 
--r <r>     comma separated list of resize markers
-           example y,y,y,n
-eof
+  -m <string>:
+    comma separated list of dimensions
+
+  -r <string>:
+    comma separated list of resize markers
+
+example:
+  img-mosaic.sh -c +300,0,-300,0 -g north,south,east,southeast \
+  -m 1920x1080,1280x1080,960x1080,640x1080 -r y,y,y,n -s 6x6'
   exit 1
 fi
 
