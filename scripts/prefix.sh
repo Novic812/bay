@@ -1,18 +1,16 @@
 #!/bin/dash -e
 if [ "$#" != 1 ]
 then
-cat <<'eof'
-SYNOPSIS
+  echo 'synopsis:
   prefix.sh <compiler>
 
-COMPILER
-  x86_64-w64-mingw32-gcc
-  gcc
+compiler:
+- gcc
+- x86_64-w64-mingw32-gcc
 
-PACKAGES
-  mingw64-x86_64-gcc-core
-  gcc-core
-eof
+packages:
+- gcc-core
+- mingw64-x86_64-gcc-core'
   exit 1
 fi
 

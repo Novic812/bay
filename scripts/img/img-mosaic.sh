@@ -104,7 +104,7 @@ then
   BEGIN {
     while (getline < "-") {
       if ($1 "" == ARGV[1]) {
-        split($2, q, ",")
+        split($2, q, /,/)
         for (z in q) {
           print q[z]
         }
