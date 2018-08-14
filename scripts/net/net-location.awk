@@ -5,7 +5,7 @@ BEGIN {
     print "stack-location.awk <file>"
     exit 1
   }
-  while (getline < ARGV[1]) {
+  while (getline < ARGV[1] > 0) {
     qu[++NR] = $NF
   }
   for (xr in qu) {

@@ -21,7 +21,7 @@ BEGIN {
 }
 /^ [^ ]+$/
 $1 == "LIBRARY_PATH" {
-  gsub(":", "\n", $2)
+  gsub(/:/, "\n", $2)
   print $2
 }
 $2 == "nonexistent" {
