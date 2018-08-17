@@ -1,10 +1,13 @@
 @-moz-document domain("youtube.com") {
-  .annotation, .ytp-cards-button, .ytp-cards-teaser, .video-annotations,
-  .ytp-ce-element {
-    display: none !important;
-  }
   /* no: .spf-link, .yt-uix-sessionlink, [data-sessionlink] */
   [rel]:visited, [rel]:visited .title {
     color: #551a8b !important;
+  }
+  #player {
+    max-width: none !important;
+  }
+  /* http://youtu.be/qKzmJhSFHzc?t=2m */
+  .annotation, .ytp-cards-button, .ytp-cards-teaser {
+    display: none !important;
   }
 }
