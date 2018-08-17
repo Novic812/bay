@@ -12,7 +12,7 @@ BEGIN {
     a_new(ar, "local:", "  1: commit program change",
     "  2: commit version change", "  3: tag new version", "remote:",
     "  1: push commits", "  2: push release")
-    io_puts(ar)
+    k_puts(ar)
     exit 1
   }
   "git mktree </dev/null" | getline go

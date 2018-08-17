@@ -3,9 +3,6 @@
   [rel]:visited, [rel]:visited .title {
     color: #551a8b !important;
   }
-  #player {
-    max-width: none !important;
-  }
   /* http://youtu.be/qKzmJhSFHzc?t=2m */
   .annotation, .ytp-cards-button, .ytp-cards-teaser {
     display: none !important;

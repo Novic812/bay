@@ -2,7 +2,7 @@
 BEGIN {
   if (ARGC != 3) {
     a_new(dc, "bsa.awk <good> <bad>", "", "hex allowed - use 0x")
-    io_puts(dc)
+    k_puts(dc)
     exit 1
   }
   a_new(dc, "", "g - good", "b - bad")
@@ -22,7 +22,7 @@ BEGIN {
         ARGV[2] = xr
       }
       else {
-        io_puts(dc)
+        k_puts(dc)
         continue
       }
       break

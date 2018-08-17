@@ -25,5 +25,5 @@ END {
     a_push(m, sprintf("%2d", nfa[each]) FS each)
   }
   a_sort(m)
-  io_puts(m)
+  k_puts(m)
 }

@@ -5,7 +5,7 @@ BEGIN {
     a_new(dc, "SYNOPSIS", "mm-sequence.awk <start> <duration> <frames> <file>",
     "", "DESCRIPTION", "Make an image sequence from a video", "", "FRAMES",
     "key   I frames only", "all   I, P and B frames")
-    io_puts(dc)
+    k_puts(dc)
     exit 1
   }
 

@@ -3,7 +3,7 @@ BEGIN {
   if (ARGC != 4) {
     a_new(z, "SYNOPSIS", "  net-song.awk <type> <artist> <song>", "", "TYPE",
     "  1   initial search", "  2   upgrade search")
-    io_puts(z)
+    k_puts(z)
     exit 1
   }
   at = s_gsub(ARGV[2], "&", "%26")

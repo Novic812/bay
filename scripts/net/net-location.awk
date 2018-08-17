@@ -16,5 +16,5 @@ BEGIN {
     qu[xr] = sprintf("http://%s/questions/%s%s",
     zu[3], zu[5], zu[7] ? "/-/" zu[7] : "")
   }
-  io_puts(qu)
+  k_puts(qu)
 }

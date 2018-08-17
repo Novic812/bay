@@ -4,7 +4,7 @@
 BEGIN {
   a_new(dc, "Careful, screencaps will dump in current directory.",
   "Drag video here, then press enter (backslashes ok):")
-  io_puts(dc)
+  k_puts(dc)
 
   ch = s_chomp(io_gets("-"))
   if (!ch) {
