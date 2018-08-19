@@ -1,13 +1,13 @@
 #!/usr/bin/awk -f
-function z() {
+function q() {
   getline < "/proc/uptime"
   close("/proc/uptime")
   return $0
 }
 BEGIN {
-  x = z()
+  x = q()
   while (1) {
-    y = z()
-    printf "%02d:%05.2f\r", (y - x) / 60, (y - x) % 60
+    z = q()
+    printf "%02d:%05.2f\r", (z - x) / 60, (z - x) % 60
   }
 }
