@@ -1,24 +1,21 @@
 #!/bin/dash -e
 if [ "$#" -lt 3 ]
 then
-  cat <<'eof'
-SYNOPSIS
-  warn.sh <machine> <compiler> <infile>
+  echo 'synopsis: warn.sh <machine> <compiler> <infile>
 
-MACHINE
-  mingw32
-  cygwin
+machine:
+- cygwin
+- mingw32
 
-COMPILER
-  g++
-  gcc
+compiler:
+- g++
+- gcc
 
-PACKAGES
-  mingw64-x86_64-gcc-g++
-  mingw64-x86_64-gcc-core
-  gcc-g++
-  gcc-core
-eof
+packages:
+- gcc-core
+- gcc-g++
+- mingw64-x86_64-gcc-core
+- mingw64-x86_64-gcc-g++'
   exit 1
 fi
 
