@@ -1,6 +1,6 @@
 [alias]
 dcs = diff --cached --stat
-dwo = diff --word-diff=color
+loa = log -1 --abbrev-commit
 
 [color "blame"]
 highlightRecent = blue, 1 year ago, white, 1 week ago, red

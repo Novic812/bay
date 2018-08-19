@@ -3,8 +3,11 @@
   [rel]:visited, [rel]:visited .title {
     color: #551a8b !important;
   }
-  /* http://youtu.be/qKzmJhSFHzc?t=2m */
-  .annotation, .ytp-cards-button, .ytp-cards-teaser {
+  /*
+  http://youtu.be/LgMcDT7PKuo
+  http://youtu.be/qKzmJhSFHzc?t=2m
+  */
+  .annotation, .video-annotations, .ytp-cards-button, .ytp-cards-teaser {
     display: none !important;
   }
 }
