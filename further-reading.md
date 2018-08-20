@@ -16,12 +16,6 @@ Cygwin Git with Notepad2
 - todo: http://emacs.stackexchange.com/q/14331
 - todo: http://superuser.com/q/335615
 
-Terminfo
-----------------------------------------------
-- todo: http://unix.stackexchange.com/q/108699
-- todo: http://unix.stackexchange.com/q/119
-- todo: http://unix.stackexchange.com/q/351497
-
 VirtualBox Guest Additions
 -------------------------------------
 - todo: http://askubuntu.com/q/573596

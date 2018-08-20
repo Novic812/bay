@@ -80,7 +80,7 @@ nod() {
 }
 
 ntar() {
-  tar --checkpoint-action 'ttyout=%T \r' "$@"
+  tar --checkpoint-action 'ttyout=\r\33[K%T' "$@"
 }
 
 xs() {

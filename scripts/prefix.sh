@@ -14,14 +14,21 @@ packages:
   exit 1
 fi
 
-"$1" -E -v -x c /dev/null 2>&1 |
+# /dev/null fails with build=mingw32
+"$1" -E -v -x c - <<eof 2>&1 |
+eof
 awk '
 BEGIN {
   FS = "[ =\42]+"
 }
 /^ [^ ]+$/
 $1 == "LIBRARY_PATH" {
-  gsub(/:/, "\n", $2)
+  if (index($2, ";")) {
+    gsub(/;/, "\n", $2)
+  }
+  else {
+    gsub(/:/, "\n", $2)
+  }
   print $2
 }
 $2 == "nonexistent" {
