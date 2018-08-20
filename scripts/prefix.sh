@@ -1,8 +1,7 @@
 #!/bin/dash -e
 if [ "$#" != 1 ]
 then
-  echo 'synopsis:
-  prefix.sh <compiler>
+  echo 'synopsis: prefix.sh <compiler>
 
 compiler:
 - gcc
