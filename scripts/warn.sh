@@ -21,7 +21,7 @@ fi
 
 z="$1 $2"
 shift 2
-set -- -Wall -Wextra -Wconversion -pedantic "$@"
+set -- -s -static -Wall -Wextra -Wconversion -pedantic "$@"
 
 case $z in
 'mingw32 g++')

@@ -10,13 +10,13 @@ executable software in this directory, but it will only be available to users
 with permission to this directory. The home directory can be organized further
 with the use of sub-directories.
 
-Links
------------
-[Velour][2]
-
 Author
 ------------
 Steven Penny
+
+See also
+-----------
+[Velour][2]
 
 [1]:https://github.com/cup/bay/raw/master/bay.jpg
 [2]:https://github.com/cup/velour
