@@ -1,8 +1,7 @@
 #!/bin/dash -e
 if [ "$#" = 0 ]
 then
-  echo 'synopsis:
-  img-mosaic.sh [options] <files>
+  echo 'synopsis: img-mosaic.sh [options] <files>
 
 description:
   a mosaic in digital imaging is a plurality of non-overlapping images,
