@@ -1,21 +1,17 @@
-atom: http://github.com/atom/atom/issues/5012
-bluefish: no awk
-brackets: http://github.com/adobe/brackets/issues/14071
-geany: http://github.com/geany/geany/issues/1355
-kate: more than 40 mb
-komodo edit: http://github.com/komodo/komodoedit/issues/3438
-lime text: http://github.com/limetext/backend/issues/124
-liteide: http://github.com/visualfc/liteide/issues/903
+liteide: http://github.com/visualfc/liteide/issues/972
 metapad: http://github.com/alexd/metapad/issues/3
 ninja-ide: does not use windows gui
 notepad++: http://github.com/notepad-plus-plus/notepad-plus-plus/issues/1620
-notepad2-mod: http://github.com/xhmikosr/notepad2-mod/issues/208
 notepad3: http://github.com/rizonesoft/notepad3/issues/37
 programmer’s notepad: http://github.com/simonsteele/pn/issues/152
 scite: http://github.com/mirror/scite/issues/1
 tea: http://github.com/psemiletov/tea-qt/issues/17
 textadept: no gui prefs
 visual studio code: http://github.com/microsoft/vscode/issues/42265
+zufuliu/notepad2: http://github.com/zufuliu/notepad2/issues/3
+awk:
+  bluefish:
+  geany: http://github.com/geany/geany/issues/1355
 command-line:
 - gnu emacs
 - neovim
@@ -29,7 +25,13 @@ discontinued:
 - gedit
 - superbedit
 - text editor pro
+- xhmikosr/notepad2-mod
 - ynote
+size:
+  atom: http://github.com/atom/atom/issues/5012
+  brackets: http://github.com/adobe/brackets/issues/14071
+  kate: more than 40 mb
+  komodo edit: http://github.com/komodo/komodoedit/issues/3438
 sourceforge:
 - akelpad
 - bowpad
@@ -42,3 +44,5 @@ sourceforge:
 - thunderpad
 - wxmedit
 - zinjai
+windows:
+  lime text: http://github.com/limetext/backend/issues/124
