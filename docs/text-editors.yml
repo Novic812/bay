@@ -1,16 +1,23 @@
 liteide: http://github.com/visualfc/liteide/issues/972
 ninja-ide: does not use windows gui
-notepad++: http://github.com/notepad-plus-plus/notepad-plus-plus/issues/1620
-notepad3: http://github.com/rizonesoft/notepad3/issues/37
-programmer’s notepad: http://github.com/simonsteele/pn/issues/152
-scite: http://github.com/mirror/scite/issues/1
 textadept: no gui prefs
-visual studio code: http://github.com/microsoft/vscode/issues/42265
-zufuliu/notepad2: http://github.com/zufuliu/notepad2/issues/3
 good:
   bluefish:
   geany: http://github.com/geany/geany
+  notepad3:
   tea: http://github.com/psemiletov/tea-qt
+lexer:
+  notepad++:
+    awk: http://github.com/notepad-plus-plus/notepad-plus-plus/issues/1620
+  programmer’s notepad:
+    awk: http://github.com/simonsteele/pn/issues/152
+  scite:
+    awk: http://github.com/mirror/scite/issues/1
+  visual studio code:
+    awk: http://github.com/microsoft/vscode/issues/42265
+  zufuliu/notepad2:
+    markdown: http://github.com/zufuliu/notepad2/issues/3
+    yaml: http://github.com/zufuliu/notepad2/issues/12
 sourceforge:
 - akelpad
 - bowpad
