@@ -68,7 +68,11 @@ ncurl() {
 
 nffprobe() {
   ffprobe -hide_banner "$@" 2>&1 |
-  awk '$1 == "Stream" {$0 = "\33[1;33m" $0 "\33[m"} 1'
+  awk '
+  {
+    print $1 == "Stream" ? "\33[1;33m" $0 "\33[m": $0
+  }
+  '
 }
 
 nfind() {
@@ -76,7 +80,12 @@ nfind() {
 }
 
 nod() {
-  od -An -tcx1 -w19 | awk 'NR % 2 {$0 = "\33[1;32m" $0 "\33[m"} 1'
+  od -An -tcx1 -w19 |
+  awk '
+  {
+    print NR % 2 ? "\33[1;32m" $0 "\33[m": $0
+  }
+  '
 }
 
 ntar() {
