@@ -11,11 +11,14 @@ zu=$(basename "$2" .pdf)
 
 pdflatex -halt-on-error -output-directory "$ya" -jobname "$zu" "$xr" |
 awk '
-/Output/ {
-  $0 = "\33[1;32m" $0 "\33[m"
+if (index($0, "Output")) {
+  print "\33[1;32m" $0 "\33[m"
 }
-/!|Overfull|Underfull|Warning/ {
-  $0 = "\33[1;31m" $0 "\33[m"
+else if (index($0, "!") || index($0, "Overfull") ||
+index($0, "Underfull") || index($0, "Warning")) {
+  print "\33[1;31m" $0 "\33[m"
 }
-1
+else {
+  print
+}
 '
