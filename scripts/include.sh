@@ -4,17 +4,17 @@ then
   echo 'include.sh <infile> [mapfile]'
   exit 1
 fi
-xr=$1
-ya=$2
+pa=$1
+xr=$2
 
 # decorate
 zu=$(mktemp "$LOCALAPPDATA"/temp/XXX)
-printf '#include "%s"\n' "$zu" >> "$xr"
+printf '#include "%s"\n' "$zu" >> "$pa"
 
 # transform
 include-what-you-use -w -ferror-limit=1 \
 -isystem C:/cygwin64/usr/x86_64-w64-mingw32/sys-root/mingw/include \
--Xiwyu --no_default_mappings ${ya:+-Xiwyu --mapping_file "$ya"} "$xr" 2>&1 |
+-Xiwyu --no_default_mappings ${xr:+-Xiwyu --mapping_file "$xr"} "$pa" 2>&1 |
 awk '
 /should add these lines|has correct/ {
   $0 = "\33[1;32m" $0
@@ -32,4 +32,4 @@ awk '
 '
 
 # undecorate
-ex -s -c 'd|x' "$xr"
+ex -s -c 'd|x' "$pa"
