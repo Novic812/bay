@@ -1,8 +1,8 @@
 #!/usr/local/bin/velour -f
 BEGIN {
   if (ARGC != 4) {
-    a_new(z, "SYNOPSIS", "  net-song.awk <type> <artist> <song>", "", "TYPE",
-    "  1   initial search", "  2   upgrade search")
+    a_new(z, "synopsis: net-song.awk <type> <artist> <song>", "", "type:",
+    "  1: initial search", "  2: upgrade search")
     k_puts(z)
     exit 1
   }
