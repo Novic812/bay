@@ -1,26 +1,33 @@
+Further reading
+===============
+
 Bash history
------------------------------------------------
-- todo: http://apple.stackexchange.com/q/306248
-- todo: http://askubuntu.com/q/144938
-- todo: http://askubuntu.com/q/15926
-- todo: http://elementaryos.stackexchange.com/q/367
-- todo: http://serverfault.com/q/121396
-- todo: http://superuser.com/q/119204
-- todo: http://superuser.com/q/739107
-- todo: http://unix.stackexchange.com/q/267737
-- todo: http://unix.stackexchange.com/q/398763
-- todo: http://unix.stackexchange.com/q/48713
+------------
+
+- http://apple.stackexchange.com/questions/306248
+- http://askubuntu.com/questions/144938
+- http://askubuntu.com/questions/15926
+- http://elementaryos.stackexchange.com/questions/367
+- http://serverfault.com/questions/121396
+- http://superuser.com/questions/119204
+- http://superuser.com/questions/739107
+- http://unix.stackexchange.com/questions/267737
+- http://unix.stackexchange.com/questions/398763
+- http://unix.stackexchange.com/questions/48713
 
 Cygwin Git with Notepad2
-----------------------------------------------
-- todo: http://emacs.stackexchange.com/q/14331
-- todo: http://superuser.com/q/335615
+------------------------
+
+- http://emacs.stackexchange.com/questions/14331
+- http://superuser.com/questions/335615
+
 
 VirtualBox Guest Additions
--------------------------------------
-- todo: http://askubuntu.com/q/573596
-- todo: http://askubuntu.com/q/596998
-- todo: http://askubuntu.com/q/792832
-- todo: http://askubuntu.com/q/99003
-- todo: http://superuser.com/q/485380
-- todo: http://unix.stackexchange.com/q/72035
+--------------------------
+
+- http://askubuntu.com/questions/573596
+- http://askubuntu.com/questions/596998
+- http://askubuntu.com/questions/792832
+- http://askubuntu.com/questions/99003
+- http://superuser.com/questions/485380
+- http://unix.stackexchange.com/questions/72035
