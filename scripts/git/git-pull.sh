@@ -1,15 +1,14 @@
 #!/bin/dash
-# need to fork first
-# http://stackoverflow.com/questions/4528869/-/4529172
 if [ "$#" != 6 ]
 then
-cat <<'eof'
-SYNOPSIS
-  net-pull.sh <repo> <issue> <from user> <from branch> <to user> <to branch>
+  echo 'synopsis:
+  git-pull.sh <repo> <issue> <from user> <from branch> <to user> <to branch>
 
-EXAMPLE
-  net-pull.sh jq 1671 cup patch-1 stedolan master
-eof
+example:
+  git-pull.sh jq 1671 cup patch-1 stedolan master
+
+notes:
+  need to fork first'
   exit 1
 fi
 issue=$2

@@ -15,13 +15,6 @@ Bash history
 - http://unix.stackexchange.com/questions/398763
 - http://unix.stackexchange.com/questions/48713
 
-Cygwin Git with Notepad2
-------------------------
-
-- http://emacs.stackexchange.com/questions/14331
-- http://superuser.com/questions/335615
-
-
 VirtualBox Guest Additions
 --------------------------
 
