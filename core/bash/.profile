@@ -1,11 +1,3 @@
-if [ -f ~/.editor ]
-then
-  . ~/.editor
-fi
-if [ -f ~/.pager ]
-then
-  . ~/.pager
-fi
 if [ "$BASH" ]
 then
   shopt -s completion_strip_exe
@@ -19,7 +11,9 @@ PROMPT_COMMAND=gsh
 TERM=cygwin-readline
 export BROWSER=firefox
 export CYGWIN=winsymlinks:native
+export EDITOR=notepad2.sh
 export LC_ALL=en_US.UTF-8
+export PAGER=less.sh
 export POSIXLY_CORRECT
 alias agit='git --no-pager'
 alias agrep='grep -I --color --exclude-dir .git'
