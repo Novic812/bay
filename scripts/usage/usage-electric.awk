@@ -1,58 +1,58 @@
 #!/usr/bin/awk -f
 BEGIN {
   FS = ","
-  z["2015 05"] =  417
-  z["2015 04"] =  457
-  z["2015 03"] =  940
-  z["2015 02"] = 1282
-  z["2015 01"] = 1308
-  z["2014 12"] = 1216
-  z["2014 11"] = 1115
-  z["2014 10"] =  611
-  z["2014 09"] =  778
-  z["2014 08"] = 1035
-  z["2014 07"] =  954
-  z["2014 06"] =  861
+  br["2015 05"] =  417
+  br["2015 04"] =  457
+  br["2015 03"] =  940
+  br["2015 02"] = 1282
+  br["2015 01"] = 1308
+  br["2014 12"] = 1216
+  br["2014 11"] = 1115
+  br["2014 10"] =  611
+  br["2014 09"] =  778
+  br["2014 08"] = 1035
+  br["2014 07"] =  954
+  br["2014 06"] =  861
 
   # exclude company
-  # y["4CHANGE ENERGY"]
+  # ec["4CHANGE ENERGY"]
 
   # exclude plan
-  # x["Gexa Choice Conserve 5"]
+  # ro["Gexa Choice Conserve 5"]
 }
 NR == 1 {
-  while (q++ < NF) {
-    w[$q] = q
+  while (ta++ < NF) {
+    xr[$ta] = ta
   }
 }
-$w["Rate Type"] == "Fixed" {
-  for (q in y) {
-    if ($w["RepCompany"] == q) {
+$xr["Rate Type"] == "Fixed" {
+  for (ta in ec) {
+    if ($xr["RepCompany"] == ta) {
       next
     }
   }
-  for (q in x) {
-    if ($w["Plan Name"] == q) {
+  for (ta in ro) {
+    if ($xr["Plan Name"] == ta) {
       next
     }
   }
   tot = 0
-  for (q in z) {
-    if (z[q] >= 1000) {
-      tot += $w["Price/kWh 1000"] * z[q]
+  for (ta in br) {
+    if (br[ta] >= 1000) {
+      tot += $xr["Price/kWh 1000"] * br[ta]
     }
     else {
-      tot += $w["Price/kWh 500"] * z[q]
+      tot += $xr["Price/kWh 500"] * br[ta]
     }
   }
-  v[NR, 1] = tot
-  v[NR, 2] = $w["RepCompany"]
-  v[NR, 3] = $w["Price/kWh 500"]
-  v[NR, 4] = $w["Price/kWh 1000"]
+  zu[NR, 1] = tot
+  zu[NR, 2] = $xr["RepCompany"]
+  zu[NR, 3] = $xr["Price/kWh 500"]
+  zu[NR, 4] = $xr["Price/kWh 1000"]
 }
 END {
-  for (q = 2; q <= NR; q++) {
+  for (ta = 2; ta <= NR; ta++) {
     printf "$%.0f - %s - 500 kWh %s - 1000 kWh %s\n",
-    v[q, 1], v[q, 2], v[q, 3], v[q, 4]
+    zu[ta, 1], zu[ta, 2], zu[ta, 3], zu[ta, 4]
   }
 }
