@@ -5,19 +5,20 @@ BEGIN {
     print "not-for-threes.awk <threshold>"
     exit 1
   }
-  while (5 ^ ++br < ARGV[1]);
+  while (5 ^ ++de < ARGV[1]);
 
-  while (br >= 0) {
-    ch = br ? 0 : 1
+  while (de >= 0) {
+    ta = de ? 0 : 1
     do {
-      de = 5 ^ br * 2 ^ ch++
-      a_push(ec, de)
-    } while (de < ARGV[1])
-    br--
+      xr = 5 ^ de * 2 ^ ta++
+      a_push(zu, xr)
+    }
+    while (xr < ARGV[1])
+    de--
   }
 
-  a_sort(ec)
-  for (br in ec) {
-    printf "%\47d\n", ec[br]
+  a_sort(zu)
+  for (de in zu) {
+    printf "%\47d\n", zu[de]
   }
 }
