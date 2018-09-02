@@ -31,7 +31,7 @@ FILENAME == ARGV[4] {
   ob[FNR] = $0
 }
 END {
-  while (++q <= FNR) {
+  for (q = 1; q <+ FNR; q++) {
     print cm[q] * sz[q] * at[q], cm[q], sz[q], ad[q], ob[q]
   }
 }

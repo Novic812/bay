@@ -1,6 +1,5 @@
 #!/usr/local/bin/velour -f
 # Git remove sensitive data
-# help.github.com/articles/remove-sensitive-data
 BEGIN {
   if (ARGC != 2) {
     print "git-remove.awk <file>"
@@ -9,7 +8,7 @@ BEGIN {
 
   a_new(q, "git", "filter-branch", "-f", "--prune-empty",
   "--tag-name-filter", "cat",
-  "--index-filter", "git rm --cached --ignore-unmatch " k_shellesc(ARGV[1]),
+  "--index-filter", "git rm --cached --ignore-unmatch " k_se(ARGV[1]),
   "--", "--all")
   ka_trace(q)
 

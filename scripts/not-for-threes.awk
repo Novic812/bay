@@ -5,7 +5,7 @@ BEGIN {
     print "not-for-threes.awk <threshold>"
     exit 1
   }
-  while (5 ^ ++de < ARGV[1]);
+  for (de = 1; 5 ^ de < ARGV[1]; de++);
 
   while (de >= 0) {
     ta = de ? 0 : 1

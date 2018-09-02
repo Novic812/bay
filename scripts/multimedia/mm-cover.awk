@@ -2,26 +2,26 @@
 # Set thumbnail for MP4 video
 
 BEGIN {
-  a_new(dc, "Careful, screencaps will dump in current directory.",
+  a_new(ay, "Careful, screencaps will dump in current directory.",
   "Drag video here, then press enter (backslashes ok):")
-  k_puts(dc)
+  k_puts(ay)
 
-  ch = s_chomp(io_gets("-"))
-  if (!ch) {
+  br = s_chomp(io_gets("-"))
+  if (!br) {
     exit 1
   }
   FS = "[=\42]+"
-  while ("ffprobe -show_streams -of flat=h=0 " k_shellesc(ch) | getline) {
+  while ("ffprobe -show_streams -of flat=h=0 " k_se(br) | getline) {
     fo[$1] = $2
   }
   qu = fo["stream.0.width"] / fo["stream.0.height"] > 2 ? 36 : 30
-  xr = .09 * fo["stream.0.duration"]
-  ya = (fo["stream.0.duration"] - 2 * xr) / (qu - 1)
+  un = .09 * fo["stream.0.duration"]
+  xr = (fo["stream.0.duration"] - 2 * un) / (qu - 1)
   while (qu--) {
-    a_new(dc, "ffmpeg", "-y", "-v", "error", "-ss", xr, "-i", ch,
-    "-frames", 1, xr ".jpg")
-    ka_trace(dc)
-    xr += ya
+    a_new(ay, "ffmpeg", "-y", "-v", "error", "-ss", un, "-i", br,
+    "-frames", 1, un ".jpg")
+    ka_trace(ay)
+    un += xr
   }
 
   print "Drag picture here, then press enter (backslashes ok):"
@@ -29,6 +29,6 @@ BEGIN {
   if (!zu) {
     exit 1
   }
-  a_new(dc, "tageditor", "-s", "cover=" zu, "--max-padding", 100000, "-f", ch)
-  ka_trace(dc)
+  a_new(ay, "tageditor", "-s", "cover=" zu, "--max-padding", 100000, "-f", br)
+  ka_trace(ay)
 }

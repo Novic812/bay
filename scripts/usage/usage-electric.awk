@@ -21,7 +21,7 @@ BEGIN {
   # ro["Gexa Choice Conserve 5"]
 }
 NR == 1 {
-  while (ta++ < NF) {
+  for (ta = 1; ta <= NF; ta++) {
     xr[$ta] = ta
   }
 }
