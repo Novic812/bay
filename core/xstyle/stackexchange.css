@@ -1,5 +1,5 @@
-@-moz-document domain("askubuntu.com"), domain("stackexchange.com"),
-domain("stackoverflow.com"), domain("superuser.com") {
+@-moz-document domain("askubuntu.com"), domain("stackexchange.com"), domain("stackoverflow.com"), domain("superuser.com")
+{
   /* hot network questions */
   #hot-network-questions :visited,
   /* featured on meta */
@@ -20,10 +20,12 @@ domain("stackoverflow.com"), domain("superuser.com") {
   .answer-hyperlink:visited,
   .question-hyperlink :visited,
   /* user > profile > newest posts */
-  .post-container :visited {
+  .post-container :visited
+  {
     color: #551a8b !important;
   }
-  aside {
+  aside
+  {
     transform:none !important;
   }
 }

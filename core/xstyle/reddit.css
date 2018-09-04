@@ -1,14 +1,19 @@
-@-moz-document domain("reddit.com") {
-  .commentarea .sitetable.nestedlisting > .comment {
+@-moz-document domain("reddit.com")
+{
+  .commentarea .sitetable.nestedlisting > .comment
+  {
     border-top: thick solid plum !important;
   }
-  .dislikes {
+  .dislikes
+  {
     opacity: .3 !important;
   }
-  .goldvertisement, .native-sidebar-ad {
+  .goldvertisement, .native-sidebar-ad
+  {
     display: none !important;
   }
-  .md p {
+  .md p
+  {
     font-family: verdana !important;
     line-height: 20px !important;
     margin-bottom: 10px !important;

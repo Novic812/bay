@@ -1,5 +1,7 @@
-@-moz-document domain("vice.com") {
-  .gutter {
+@-moz-document domain("vice.com")
+{
+  .gutter
+  {
     display: none;
   }
 }

@@ -1,5 +1,7 @@
-@-moz-document domain("soundcloud.com") {
-  .announcements {
+@-moz-document domain("soundcloud.com")
+{
+  .announcements
+  {
     display: none !important;
   }
 }

@@ -1,5 +1,7 @@
-@-moz-document domain("gnu.org") {
-  dt {
+@-moz-document domain("gnu.org")
+{
+  dt
+  {
     background: plum;
   }
 }

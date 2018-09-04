@@ -1,5 +1,7 @@
-@-moz-document domain("trakt.tv") {
-  #huckster-desktop-wrapper {
+@-moz-document domain("trakt.tv")
+{
+  #huckster-desktop-wrapper
+  {
     display: none;
   }
 }
