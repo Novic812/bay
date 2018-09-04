@@ -1,4 +1,5 @@
-qu = {
+qu =
+{
   // check for updates but let you choose to install them
   'app.update.auto': false,
   // never check for updates
@@ -65,16 +66,22 @@ qu = {
   'signon.rememberSignons': false
 };
 
-xr = {number: 'setIntPref', boolean: 'setBoolPref', string: 'setCharPref'};
+xr =
+{
+  number: 'setIntPref', boolean: 'setBoolPref', string: 'setCharPref'
+};
 sr = Services;
 sr.prefs.resetUserPrefs();
 
-for ([ky, vu] of Object.entries(qu)) {
-  if (!sr.prefs.getPrefType(ky)) {
+for ([ky, vu] of Object.entries(qu))
+{
+  if (!sr.prefs.getPrefType(ky))
+  {
     console.log(ky + ': PREF_INVALID');
   }
   sr.prefs[xr[typeof vu]](ky, vu);
-  if (!sr.prefs.prefHasUserValue(ky)) {
+  if (!sr.prefs.prefHasUserValue(ky))
+  {
     console.log(ky + ': PREF_DEFAULT');
   }
 }

@@ -1,5 +1,6 @@
 #context_sendTabToDevice, #context_sendTabToDevice_separator,
 #context-sendlinktodevice, #context-sendpagetodevice,
-#context-sep-sendlinktodevice, #context-sep-sendpagetodevice {
+#context-sep-sendlinktodevice, #context-sep-sendpagetodevice
+{
   display: none !important;
 }
