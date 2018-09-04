@@ -9,13 +9,8 @@ git diff --cached | awk '
 /^i/ {
   q = NR
 }
-/^[-+]/ && NR > q + 2
-{
+/^[-+]/ && NR > q + 2 {
   if (/^-/ && z)
-  {
-    next
-  }
-  if (/#/)
   {
     next
   }

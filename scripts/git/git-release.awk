@@ -1,6 +1,8 @@
 #!/usr/local/bin/velour -f
-function tg(mix,   br, ec) {
-  for (br = 100; br >= 1; br /= 10) {
+function tg(mix,   br, ec)
+{
+  for (br = 100; br >= 1; br /= 10)
+  {
     a_push(ec, n_div(mix, br))
     mix %= br
   }
@@ -8,7 +10,8 @@ function tg(mix,   br, ec) {
 }
 
 BEGIN {
-  if (k_system("[ -d .git ]")) {
+  if (k_system("[ -d .git ]"))
+  {
     a_new(ar, "local:", "  1: commit program change",
     "  2: commit version change", "  3: tag new version", "", "remote:",
     "  1: push commits", "  2: push release")
@@ -19,13 +22,17 @@ BEGIN {
   "git for-each-ref --sort -refname" | getline
   ju = $1
   ki = s_gsub($3, "[^[:digit:]]", "")
-  while ("git diff-tree --numstat " go " " ju | getline) {
-    if (!/license/) {
+  while ("git diff-tree --numstat " go " " ju | getline)
+  {
+    if (!/license/)
+    {
       pa += $1
     }
   }
-  while ("git diff-tree --numstat " ju " @" | getline) {
-    if (!/license/) {
+  while ("git diff-tree --numstat " ju " @" | getline)
+  {
+    if (!/license/)
+    {
       xr[1] += $1
       xr[2] += $2
     }
