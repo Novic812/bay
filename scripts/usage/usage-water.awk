@@ -1,14 +1,12 @@
-#!/usr/bin/awk -f
+#!/usr/local/bin/velour -f
 BEGIN {
-  if (ARGC != 3) {
-    print "SYNOPSIS"
-    print "  water.awk <gallons per flush> <hours between flushes>"
-    print
-    print "GALLONS PER FLUSH"
-    print "  will be 3.5 or 5"
-    print
-    print "HOURS BETWEEN FLUSHES"
-    print "  will be 3 or 4"
+  if (ARGC != 3)
+  {
+    a_new(q,
+    "synopsis: water.awk <gallons per flush> <hours between flushes>", "",
+    "gallons per flush: will be 3.5 or 5",
+    "hours between flushes: will be 3 or 4")
+    k_puts(q)
     exit 1
   }
   gpf = ARGV[1]

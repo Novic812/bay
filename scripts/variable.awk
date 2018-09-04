@@ -1,6 +1,7 @@
 #!/usr/local/bin/velour -f
 BEGIN {
-  if (ARGC < 3) {
+  if (ARGC < 3)
+  {
     print "variable.awk <length> <file>..."
     exit 1
   }
@@ -9,19 +10,23 @@ BEGIN {
   "hotel", "india", "juliet", "kilo", "lima", "mike", "november", "oscar",
   "papa", "quebec", "romeo", "sierra", "tango", "uniform", "victor",
   "whiskey", "xray", "yankee", "zulu")
-  for (each in dc) {
+  for (each in dc)
+  {
     nfa[s_slice(dc[each], 1, var_len)] = 0
   }
 }
 {
-  for (each in nfa) {
-    if (tolower($0) ~ each) {
+  for (each in nfa)
+  {
+    if (tolower($0) ~ each)
+    {
       nfa[each]++
     }
   }
 }
 END {
-  for (each in nfa) {
+  for (each in nfa)
+  {
     a_push(m, sprintf("%2s %s", nfa[each], each))
   }
   a_sort(m)
