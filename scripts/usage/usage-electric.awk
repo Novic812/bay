@@ -13,37 +13,34 @@ BEGIN {
   br["2014 08"] = 1035
   br["2014 07"] =  954
   br["2014 06"] =  861
-
-  # exclude company
-  # ec["4CHANGE ENERGY"]
-
-  # exclude plan
-  # ro["Gexa Choice Conserve 5"]
+  # exclude company: ec["4CHANGE ENERGY"]
+  # exclude plan: ro["Gexa Choice Conserve 5"]
 }
 NR == 1 {
-  for (ta = 1; ta <= NF; ta++) {
+  for (ta = 1; ta <= NF; ta++)
+  {
     xr[$ta] = ta
   }
 }
 $xr["Rate Type"] == "Fixed" {
-  for (ta in ec) {
-    if ($xr["RepCompany"] == ta) {
+  for (ta in ec)
+  {
+    if ($xr["RepCompany"] == ta)
+    {
       next
     }
   }
-  for (ta in ro) {
-    if ($xr["Plan Name"] == ta) {
+  for (ta in ro)
+  {
+    if ($xr["Plan Name"] == ta)
+    {
       next
     }
   }
   tot = 0
-  for (ta in br) {
-    if (br[ta] >= 1000) {
-      tot += $xr["Price/kWh 1000"] * br[ta]
-    }
-    else {
-      tot += $xr["Price/kWh 500"] * br[ta]
-    }
+  for (ta in br)
+  {
+    tot += $xr["Price/kWh " (br[ta] >= 1000 ? 1000 : 500)] * br[ta]
   }
   zu[NR, 1] = tot
   zu[NR, 2] = $xr["RepCompany"]
@@ -51,7 +48,8 @@ $xr["Rate Type"] == "Fixed" {
   zu[NR, 4] = $xr["Price/kWh 1000"]
 }
 END {
-  for (ta = 2; ta <= NR; ta++) {
+  for (ta = 2; ta <= NR; ta++)
+  {
     printf "$%.0f - %s - 500 kWh %s - 1000 kWh %s\n",
     zu[ta, 1], zu[ta, 2], zu[ta, 3], zu[ta, 4]
   }
