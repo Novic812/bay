@@ -24,8 +24,8 @@ alias apr='pr -d -t'
 alias area='realpath -m'
 alias q='tput reset'
 stty -ixon
-
-gsh() {
+gsh()
+{
   history -w
   if [ "$GSH" != "$PWD" ]
   then
@@ -44,23 +44,25 @@ gsh() {
     PS1='\n\033[33m\w\033[m\n$ '
   fi
 }
-
-ncurl() {
+ncurl()
+{
   curl -I -L "$@" | awk '
   {
     q = tolower($1)
-    if (q ~ /content-disposition|content-length|last-modified|location/) {
+    if (q ~ /content-disposition|content-length|last-modified|location/)
+    {
       $1 = "\33[1;32m" $1 "\33[m"
     }
-    else if ($1 ~ /:/) {
+    else if ($1 ~ /:/)
+    {
       $1 = "\33[1;33m" $1 "\33[m"
     }
   }
   1
   '
 }
-
-nffprobe() {
+nffprobe()
+{
   ffprobe -hide_banner "$@" 2>&1 |
   awk '
   {
@@ -68,12 +70,12 @@ nffprobe() {
   }
   '
 }
-
-nfind() {
+nfind()
+{
   find '(' -xtype l -o -type d -empty ')' -delete -print
 }
-
-nod() {
+nod()
+{
   od -An -tcx1 -w19 |
   awk '
   {
@@ -81,12 +83,12 @@ nod() {
   }
   '
 }
-
-ntar() {
+ntar()
+{
   tar --checkpoint-action 'ttyout=\r\33[K%T' "$@"
 }
-
-xs() {
+xs()
+{
   z=$?
   if [ "$z" = 0 ]
   then
