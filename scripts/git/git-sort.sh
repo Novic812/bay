@@ -6,7 +6,8 @@ ob=$(mktemp)
 for pa in *
 do
   printf . >&2
-  git log --follow --format=%% "$pa" | wc -l >> "$cm"
+  git log --follow --format=%% "$pa" |
+    wc -l >> "$cm"
   io-size m "$pa" >> "$sz"
   git log --follow --max-count=1 --diff-filter=AM --date=short \
     --format='%at %ad' "$pa" >> "$dt"
@@ -31,7 +32,8 @@ FILENAME == ARGV[4] {
   ob[FNR] = $0
 }
 END {
-  for (q = 1; q <+ FNR; q++) {
+  for (q = 1; q <+ FNR; q++)
+  {
     print cm[q] * sz[q] * at[q], cm[q], sz[q], ad[q], ob[q]
   }
 }

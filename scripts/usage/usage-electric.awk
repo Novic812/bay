@@ -13,6 +13,7 @@ BEGIN {
   br["2017 12"] = 610
   br["2017 11"] = 436
   br["2017 10"] = 689
+  # average 710.583
   # exclude company: ec["4CHANGE ENERGY"]
   # exclude plan: ro["Gexa Choice Conserve 5"]
 }
