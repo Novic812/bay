@@ -1,7 +1,7 @@
 #!/bin/dash -e
 if [ "$#" = 0 ]
 then
-  echo 'synopsis: img-mosaic.sh [options] <files>
+  echo 'synopsis: mosaic.sh [options] <files>
 
 description:
   a mosaic in digital imaging is a plurality of non-overlapping images,
@@ -27,7 +27,7 @@ options:
     comma separated list of resize markers
 
 example:
-  img-mosaic.sh -c +300,0,-300,0 -g north,south,east,southeast \
+  img-mosaic -c +300,0,-300,0 -g north,south,east,southeast \
   -m 1920x1080,1280x1080,960x1080,640x1080 -r y,y,y,n -s 6x6'
   exit 1
 fi
@@ -166,7 +166,7 @@ do
   ${rze:+-resize "$dme"^} \
   -extent "$dme" \
   -gravity "$gve" \
-  "$sce" ="$sce"
+  "$sce" %"$sce"
 done
 
 # combine
@@ -174,7 +174,7 @@ ${dry+exit}
 # this needs to be here otherwise you are measuring the wrong height
 ju=$(identify -format '%h ' "$@" | mn)
 br=$(mktemp XXX)
-set =*
+set %*
 
 case $ao in
 000011)
