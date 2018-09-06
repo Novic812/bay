@@ -1,8 +1,9 @@
 #!/usr/local/bin/velour -f
 BEGIN {
-  if (ARGC != 4) {
+  if (ARGC != 4)
+  {
     a_new(z, "synopsis: net-song.awk <type> <artist> <song>", "", "type:",
-    "  1: initial search", "  2: upgrade search")
+      "  1: initial search", "  2: upgrade search")
     k_puts(z)
     exit 1
   }
@@ -19,11 +20,12 @@ BEGIN {
   ka_trace(z)
 
   # initial only
-  if (ARGV[1] == 1) {
+  if (ARGV[1] == 1)
+  {
     a_new(z, ENVIRON["BROWSER"],
-    "-new-tab", sprintf(yt "allintitle:%s %s, hd", at, sg),
-    "-new-tab", sprintf(yt "allintitle:%s %s", at, sg),
-    "-new-tab", sprintf(gs "allintitle:%s %s", at, sg))
+      "-new-tab", sprintf(yt "allintitle:%s %s, hd", at, sg),
+      "-new-tab", sprintf(yt "allintitle:%s %s", at, sg),
+      "-new-tab", sprintf(gs "allintitle:%s %s", at, sg))
     ka_trace(z)
   }
 }
