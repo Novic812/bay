@@ -17,16 +17,20 @@ include-what-you-use -w -ferror-limit=1 \
 -Xiwyu --no_default_mappings ${xr:+-Xiwyu --mapping_file "$xr"} "$pa" 2>&1 |
 awk '
 {
-  if (index($0, "should remove these lines")) {
+  if (index($0, "should remove these lines"))
+  {
     print "\33[1;31m"
   }
-  if (index($0, "has correct") || index($0, "should add these lines")) {
+  if (index($0, "has correct") || index($0, "should add these lines"))
+  {
     print "\33[1;32m"
   }
-  if (index($0, "full include-list for")) {
+  if (index($0, "full include-list for"))
+  {
     print "\33[1;33m"
   }
-  if ($0 == "" || index($0, "make") || index($0, "---")) {
+  if ($0 == "" || index($0, "make") || index($0, "---"))
+  {
     print "\33[m"
   }
   print
