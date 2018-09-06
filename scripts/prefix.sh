@@ -22,10 +22,12 @@ BEGIN {
 }
 /^ [^ ]+$/
 $1 == "LIBRARY_PATH" {
-  if (index($2, ";")) {
+  if (index($2, ";"))
+  {
     gsub(/;/, "\n", $2)
   }
-  else {
+  else
+  {
     gsub(/:/, "\n", $2)
   }
   print $2
