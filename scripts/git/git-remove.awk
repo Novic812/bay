@@ -10,7 +10,7 @@ BEGIN {
    "--tag-name-filter", "cat",
    "--index-filter", "git rm --cached --ignore-unmatch " k_se(ARGV[1]),
    "--", "--all")
-   ka_trace(q)
+   kv_trace(q)
 
    # Cleanup and reclaming space
    system("rm -r .git/refs/original")
