@@ -32,6 +32,6 @@ END {
          q[12] = "-to"
          q[13] = idxs[z + 1]
       }
-      ka_trace(q)
+      kv_trace(q)
    }
 }
