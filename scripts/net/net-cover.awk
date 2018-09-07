@@ -18,5 +18,5 @@ BEGIN {
       "-new-tab", "google.com/search?tbm=isch&q=" wh "+" xr,
       "-new-tab", "musicbrainz.org/search?type=release&query=" wh "+" xr,
       "-new-tab", "wikipedia.org/w/index.php?search=" wh "+" xr)
-   ka_trace(zu)
+   kv_trace(zu)
 }
