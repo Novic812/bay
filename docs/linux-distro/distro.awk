@@ -13,7 +13,7 @@ BEGIN {
             if (/pkglist/)
             {
                a_new(kc, "curl", "-o", z, q "/" $2)
-               ka_trace(kc)
+               kv_trace(kc)
                break
             }
          }
