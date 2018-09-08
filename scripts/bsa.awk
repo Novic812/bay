@@ -2,7 +2,8 @@
 BEGIN {
    if (ARGC != 3)
    {
-      print a_create("bsa.awk <good> <bad>", "", "hex allowed - use 0x")
+      print a_create("synopsis: bsa.awk <good> <bad>", "",
+      "notes:", "- for each step use 'g' or 'b'", "- for hex use '0x'")
       exit 1
    }
    while (1)
@@ -12,10 +13,9 @@ BEGIN {
       {
          break
       }
-      printf ARGV[1] ~ /[xX]/ ? "\n%X\n" : "\n%d\n", ta
       while (1)
       {
-         printf "[g,b]? "
+         printf (ARGV[1] ~ /[xX]/ ? "%x" : "%d") ": ", ta
          zu = io_gets("-")
          if (zu == "g")
          {
@@ -27,7 +27,6 @@ BEGIN {
          }
          else
          {
-            print a_create("", "g - good", "b - bad")
             continue
          }
          break
