@@ -1,7 +1,7 @@
 #!/usr/local/bin/velour -f
 # note not all distro have "Full Package List"
 BEGIN {
-   FS = "\42"
+   FS = "\""
    x = "https://distrowatch.com"
    while ("curl " x | getline)
    {

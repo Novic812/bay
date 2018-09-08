@@ -2,13 +2,13 @@
 # Set thumbnail for MP4 video
 BEGIN {
    print a_create("Careful, screencaps will dump in current directory.",
-    "Drag video here, then press enter (backslashes ok):")
+      "Drag video here, then press enter (backslashes ok):")
    br = s_chomp(io_gets("-"))
    if (!br)
    {
       exit 1
    }
-   FS = "[=\42]+"
+   FS = "[=\"]+"
    while ("ffprobe -show_streams -of flat=h=0 " k_se(br) | getline)
    {
       fo[$1] = $2
@@ -18,7 +18,8 @@ BEGIN {
    xr = (fo["stream.0.duration"] - 2 * un) / (qu - 1)
    while (qu--)
    {
-      a_new(ay, "ffmpeg", "-y", "-v", "error", "-ss", un, "-i", br, "-frames", 1, un ".jpg")
+      a_new(ay, "ffmpeg", "-y", "-v", "error", "-ss", un, "-i", br,
+         "-frames", 1, un ".jpg")
       kv_trace(ay)
       un += xr
    }
