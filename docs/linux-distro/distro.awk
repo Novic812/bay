@@ -2,17 +2,17 @@
 # note not all distro have "Full Package List"
 BEGIN {
    FS = "\42"
-   q = "https://distrowatch.com"
-   while ("curl " q | getline)
+   x = "https://distrowatch.com"
+   while ("curl " x | getline)
    {
       if (/phr2/)
       {
          z = $4
-         while ("curl " q "/table.php?distribution=" z | getline)
+         while ("curl " x "/table.php?distribution=" z | getline)
          {
             if (/pkglist/)
             {
-               a_new(kc, "curl", "-o", z, q "/" $2)
+               a_new(kc, "curl", "-o", z, x "/" $2)
                kv_trace(kc)
                break
             }

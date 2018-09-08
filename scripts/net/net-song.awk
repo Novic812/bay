@@ -14,10 +14,13 @@ BEGIN {
 
   # initial and upgrade
   a_new(z, ENVIRON["BROWSER"],
-  "-new-tab", sprintf(yt "intext:\42%s - Topic\42 intitle:\42%s\42", at, sg),
-  "-new-tab", sprintf(yt "-intitle:\42%s\42 \42%s\42 intitle:\42%s\42, hd", at, at, sg),
-  "-new-tab", sprintf(gs "\42%s - Topic\42 \42%s\42&tbm=vid", at, sg))
-  ka_trace(z)
+    "-new-tab",
+    sprintf(yt "intext:\42%s - Topic\42 intitle:\42%s\42", at, sg),
+    "-new-tab",
+    sprintf(yt "-intitle:\42%s\42 \42%s\42 intitle:\42%s\42, hd", at, at, sg),
+    "-new-tab",
+    sprintf(gs "\42%s - Topic\42 \42%s\42&tbm=vid", at, sg))
+  kv_trace(z)
 
   # initial only
   if (ARGV[1] == 1)
@@ -26,6 +29,6 @@ BEGIN {
       "-new-tab", sprintf(yt "allintitle:%s %s, hd", at, sg),
       "-new-tab", sprintf(yt "allintitle:%s %s", at, sg),
       "-new-tab", sprintf(gs "allintitle:%s %s", at, sg))
-    ka_trace(z)
+    kv_trace(z)
   }
 }
