@@ -18,7 +18,7 @@ fi
 eof
 awk '
 BEGIN {
-  FS = "[ =\42]+"
+  FS = "[ =\"]+"
 }
 /^ [^ ]+$/
 $1 == "LIBRARY_PATH" {

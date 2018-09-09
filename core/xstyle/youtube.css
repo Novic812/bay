@@ -1,16 +1,21 @@
 @-moz-document domain("youtube.com")
 {
-  /* no: .spf-link, .yt-uix-sessionlink, [data-sessionlink] */
-  [rel]:visited, [rel]:visited .title
-  {
-    color: #551a8b !important;
-  }
-  /*
-  http://youtu.be/LgMcDT7PKuo
-  http://youtu.be/qKzmJhSFHzc?t=2m
-  */
-  .annotation, .video-annotations, .ytp-cards-button, .ytp-cards-teaser
-  {
-    display: none !important;
-  }
+   /*
+   no:
+   - .spf-link
+   - .yt-uix-sessionlink
+   - [data-sessionlink]
+   */
+   .yt-lockup-title a:visited, [rel]:visited .title, [rel]:visited
+   {
+      color: #551a8b !important;
+   }
+   /*
+   - http://youtu.be/LgMcDT7PKuo
+   - http://youtu.be/qKzmJhSFHzc?t=2m
+   */
+   .annotation, .video-annotations, .ytp-cards-button, .ytp-cards-teaser
+   {
+      display: none !important;
+   }
 }
