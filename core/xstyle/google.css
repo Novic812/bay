@@ -1,11 +1,11 @@
 @-moz-document domain("google.com")
 {
-  [aria-label="promo"]
-  {
-    display: none !important;
-  }
-  [role="dialog"] /* switch your default search engine to google */
-  {
-    display: none !important;
-  }
+   [aria-label="promo"]
+   {
+      display: none !important;
+   }
+   [role="dialog"] /* switch your default search engine to google */
+   {
+      display: none !important;
+   }
 }
