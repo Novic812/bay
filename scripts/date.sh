@@ -1,23 +1,15 @@
 #!/bin/dash -e
 if [ "$#" != 1 ]
 then
-  cat <<'eof'
-NAME
-  date.sh
+   echo 'synopsis: date.sh <date>
 
-SYNOPSIS
-  date.sh <date>
-
-EXAMPLES
-  date.sh now
-  date.sh 2015-5-15
-eof
+examples:
+- date.sh now
+- date.sh 2015-5-15'
   exit 1
 fi
 
-ch=$1
-
-date -d "$ch" +'%%a = %a
+date -d "$1" +'%%a = %a
 %%b = %b
 %%c = %c
 %%d = %d

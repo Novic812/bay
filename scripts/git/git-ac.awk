@@ -1,13 +1,13 @@
-#!/usr/bin/awk -f
+#!/usr/local/bin/velour -f
 BEGIN {
    if (!system("git diff --cached --quiet"))
    {
       system("git add --all " a_join(ARGV, " "))
    }
    # print first added line if found, else print first removed line
-   while ("git diff --cached" | getline)
+   for (NR = 1; "git diff --cached" | getline; NR++)
    {
-      if (index($0, "i") == 1)
+      if ($1 == "index")
       {
          xr = NR
       }
@@ -15,14 +15,14 @@ BEGIN {
       {
          if (/^-/ && zu)
          {
-            next
+            continue
          }
          zu = $0
          if (/^\+/ && zu)
          {
-            exit
+            break
          }
       }
    }
-   system("git commit -m " substr(zu, 2, 61))
+   system("git commit -m " k_se(substr(zu, 2, 61)))
 }
