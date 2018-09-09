@@ -1,15 +1,15 @@
 #!/bin/dash
 if [ "$#" != 6 ]
 then
-  echo 'synopsis:
-  git-pull.sh <repo> <issue> <from user> <from branch> <to user> <to branch>
+   echo 'synopsis:
+   git-pull.sh <repo> <issue> <from user> <from branch> <to user> <to branch>
 
 example:
-  git-pull.sh jq 1671 cup patch-1 stedolan master
+   git-pull.sh jq 1671 cup patch-1 stedolan master
 
 notes:
-  need to fork first'
-  exit 1
+   need to fork first'
+   exit 1
 fi
 issue=$2
 f_user=$3
@@ -19,8 +19,8 @@ url=https://api.github.com/repos/$5/$1/pulls
 
 curl -u "$f_user" -d @- "$url" <<eof
 {
-  "base": "$t_branch",
-  "head": "$f_user:$f_branch",
-  "issue": $issue
+   "base": "$t_branch",
+   "head": "$f_user:$f_branch",
+   "issue": $issue
 }
 eof
