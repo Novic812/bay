@@ -6,7 +6,7 @@ then
 examples:
 - date.sh now
 - date.sh 2015-5-15'
-  exit 1
+   exit 1
 fi
 
 date -d "$1" +'%%a = %a

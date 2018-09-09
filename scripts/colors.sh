@@ -1,31 +1,31 @@
 #!/bin/dash -e
-<<'eof'
- 1 foreground bright
- 5 background bright
-
-30 foreground black
-31 foreground red
-32 foreground green
-33 foreground yellow
-34 foreground blue
-35 foreground magenta
-36 foreground cyan
-37 foreground white
-
-40 background black
-41 background red
-42 background green
-43 background yellow
-44 background blue
-45 background magenta
-46 background cyan
-47 background white
+<<eof
+background:
+   black: 40
+   blue: 44
+   bright: 5
+   cyan: 46
+   green: 42
+   magenta: 45
+   red: 41
+   white: 47
+   yellow: 43
+foreground:
+   black: 30
+   blue: 34
+   bright: 1
+   cyan: 36
+   green: 32
+   magenta: 35
+   red: 31
+   white: 37
+   yellow: 33
 eof
 
-while read br
+while read q
 do
-  printf '%9s fg [\33[%bm██\33[m] bg [\33[%bm  \33[m]\n' "$br" "$br" "$br"
-done <<'eof'
+   printf '%9s fg [\33[%bm██\33[m] bg [\33[%bm  \33[m]\n' "$q" "$q" "$q"
+done <<eof
 30
 31
 32
