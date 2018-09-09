@@ -7,7 +7,7 @@ format:
 - flac
 - m4a
 - mp3'
-  exit 1
+   exit 1
 fi
 
 qu=$1
