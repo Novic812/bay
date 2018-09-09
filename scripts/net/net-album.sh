@@ -1,12 +1,12 @@
 #!/bin/dash
 if [ ! "$BROWSER" ]
 then
-  echo 'BROWSER not set or not exported'
-  exit 1
+   echo 'BROWSER not set or not exported'
+   exit 1
 elif [ "$#" != 2 ]
 then
-  echo 'net-album.sh <artist> <album>'
-  exit 1
+   echo 'net-album.sh <artist> <album>'
+   exit 1
 fi
 
 "$BROWSER" \

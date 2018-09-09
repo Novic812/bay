@@ -1,18 +1,19 @@
 #!/bin/dash -e
 if [ "$#" != 2 ]
 then
-  echo 'mm-loop.sh <image> <audio>'
-  exit 1
+   echo 'mm-loop.sh <image> <audio>'
+   exit 1
 fi
+
 qu=$(mktemp XXX.mp4)
 xr=$(ffprobe -v 0 -of csv=p=0 -show_entries format=duration "$2" | tr -d '\r')
 
 case $2 in
 *.m4a|*.mp3)
-  zu=copy
-;;
+   zu=copy
+   ;;
 *)
-  zu=libfdk_aac
+   zu=libfdk_aac
 esac
 
 ffmpeg -y -hide_banner -loop 1 -r 1 -i "$1" -i "$2" -t "$xr" -c:a "$zu" \
