@@ -1,7 +1,7 @@
 @-moz-document domain("wikipedia.org")
 {
-  #centralNotice /* ad */
-  {
-    display: none !important;
-  }
+   #centralNotice /* ad */
+   {
+      display: none !important;
+   }
 }

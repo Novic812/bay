@@ -1,7 +1,7 @@
 @-moz-document domain("trakt.tv")
 {
-  #huckster-desktop-wrapper
-  {
-    display: none;
-  }
+   #huckster-desktop-wrapper
+   {
+      display: none;
+   }
 }

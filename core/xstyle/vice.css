@@ -1,7 +1,7 @@
 @-moz-document domain("vice.com")
 {
-  .gutter
-  {
-    display: none;
-  }
+   .gutter
+   {
+      display: none;
+   }
 }
