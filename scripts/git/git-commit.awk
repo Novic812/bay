@@ -1,10 +1,6 @@
 #!/usr/local/bin/velour -f
+# print first added line if found, else print first removed line
 BEGIN {
-   if (!system("git diff --cached --quiet"))
-   {
-      system("git add --all " a_join(ARGV, " "))
-   }
-   # print first added line if found, else print first removed line
    for (NR = 1; "git diff --cached" | getline; NR++)
    {
       if ($1 == "index")

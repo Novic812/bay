@@ -1,23 +1,23 @@
 editors: |
-  http://alternativeto.net/software/notepad-plus-plus?license=opensource&platform=windows
+   http://alternativeto.net/software/notepad-plus-plus?license=opensource&platform=windows
 good:
-  bluefish:
-  geany: http://github.com/geany/geany
-  notepad3:
-  tea: http://github.com/psemiletov/tea-qt
-  textadept:
+   bluefish:
+   geany: http://github.com/geany/geany
+   notepad3:
+   tea: http://github.com/psemiletov/tea-qt
+   textadept:
 lexer:
-  notepad++:
-    awk: http://github.com/notepad-plus-plus/notepad-plus-plus/issues/1620
-  programmer’s notepad:
-    awk: http://github.com/simonsteele/pn/issues/152
-  scite:
-    awk: http://github.com/mirror/scite/issues/1
-  visual studio code:
-    awk: http://github.com/microsoft/vscode/issues/42265
-  zufuliu/notepad2:
-    markdown: http://github.com/zufuliu/notepad2/issues/3
-    yaml: http://github.com/zufuliu/notepad2/issues/12
+   notepad++:
+      awk: http://github.com/notepad-plus-plus/notepad-plus-plus/issues/1620
+   programmer’s notepad:
+      awk: http://github.com/simonsteele/pn/issues/152
+   scite:
+      awk: http://github.com/mirror/scite/issues/1
+   visual studio code:
+      awk: http://github.com/microsoft/vscode/issues/42265
+   zufuliu/notepad2:
+      markdown: http://github.com/zufuliu/notepad2/issues/3
+      yaml: http://github.com/zufuliu/notepad2/issues/12
 no GUI:
 - gnu emacs
 - neovim
@@ -35,16 +35,16 @@ sourceforge:
 - wxmedit
 - zinjai
 no 64-bit:
-  liteide: http://github.com/visualfc/liteide/issues/883
+   liteide: http://github.com/visualfc/liteide/issues/883
 size:
-  atom: http://github.com/atom/atom/issues/5012
-  brackets: http://github.com/adobe/brackets/issues/14071
-  kate:
-  komodo edit: http://github.com/komodo/komodoedit/issues/3438
+   atom: http://github.com/atom/atom/issues/5012
+   brackets: http://github.com/adobe/brackets/issues/14071
+   kate:
+   komodo edit: http://github.com/komodo/komodoedit/issues/3438
 no native-looking interface:
 - ninja-ide
 no windows:
-  lime text: http://github.com/limetext/backend/issues/124
+   lime text: http://github.com/limetext/backend/issues/124
 discontinued:
 - aubrey’s gvim
 - chrunchapp
