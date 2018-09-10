@@ -28,12 +28,14 @@ firefox -no-remote -P November
 
 [Services.jsm][srvc]
 --------------------
+
 - Services.io
 - Services.perms
 - Services.prefs
 
 [nsIPrefService][pref]
-----------------------------
+----------------------
+
 - Services.prefs.getPrefType
 - Services.prefs.prefHasUserValue
 - Services.prefs.resetUserPrefs
@@ -43,10 +45,12 @@ firefox -no-remote -P November
 
 [nsIPermissionManager][perm]
 ----------------------------
+
 Services.perms.add
 
 [nsIIOService][iosr]
 --------------------
+
 Services.io.newURI
 
 [855899]:

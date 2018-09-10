@@ -1,8 +1,8 @@
 # -*- sh -*-
 cygwin-readline|Cygwin eat newline glitch for readline and red visible bell,
 # newline ignored after 80 cols
-  xenl,
+   xenl,
 # visible bell
-  flash=\e7\e[40A\e[80C\e[4D\e[5;30;41mERROR\e[m\e8,
+   flash=\e7\e[40A\e[80C\e[4D\e[5;30;41mERROR\e[m\e8,
 # similar terminal
-  use=cygwin,
+   use=cygwin,
