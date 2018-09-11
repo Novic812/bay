@@ -1,5 +1,5 @@
 #!/bin/dash -e
-if [ "$#" -lt 3 ]
+if [ "$#" != 3 ]
 then
    echo 'synopsis: warn.sh <machine> <compiler> <infile>
 
@@ -20,8 +20,7 @@ packages:
 fi
 
 z="$1 $2"
-shift 2
-set -- -s -static -Wall -Wextra -Wconversion -pedantic "$@"
+set -- -s -static -Wall -Wextra -Wconversion -pedantic -o "${3%.*}" "$3"
 
 case $z in
 'mingw32 g++')

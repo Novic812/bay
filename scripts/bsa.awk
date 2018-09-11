@@ -15,7 +15,14 @@ BEGIN {
       }
       while (1)
       {
-         printf (ARGV[1] ~ /[xX]/ ? "%x" : "%d") ": ", ta
+         if (index(ARGV[1], "x") || index(ARGV[1], "X"))
+         {
+            printf "%x: ", ta
+         }
+         else
+         {
+            printf "%d: ", ta
+         }
          zu = io_gets("-")
          if (zu == "g")
          {
