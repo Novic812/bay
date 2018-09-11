@@ -1,24 +1,28 @@
 #!/usr/local/bin/velour -f
 # print first added line if found, else print first removed line
 BEGIN {
-   for (NR = 1; "git diff --cached" | getline; NR++)
+   for (q = 1; "git diff --cached" | getline; q++)
    {
       if ($1 == "index")
       {
-         xr = NR
+         w = q + 3
       }
-      if (/^[-+]/ && NR > xr + 2)
+      if (q <= w)
       {
-         if (/^-/ && zu)
+         continue
+      }
+      if (index($0, "-") == 1 || index($0, "+") == 1)
+      {
+         if (z && index($0, "-") == 1)
          {
             continue
          }
-         zu = $0
-         if (/^\+/ && zu)
+         z = $0
+         if (z && index($0, "+") == 1)
          {
             break
          }
       }
    }
-   system("git commit -m " k_se(substr(zu, 2, 61)))
+   system("git commit -m " k_se(substr(z, 2, 61)))
 }
