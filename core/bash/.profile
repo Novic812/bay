@@ -1,6 +1,6 @@
 if [ "$BASH" ]
 then
-  shopt -s completion_strip_exe
+   shopt -s completion_strip_exe
 fi
 HISTCONTROL=erasedups
 HISTIGNORE='q:ahist *'
@@ -26,74 +26,72 @@ alias q='tput reset'
 stty -ixon
 gsh()
 {
-  history -w
-  if [ "$GSH" != "$PWD" ]
-  then
-    GSH=$PWD
-  elif [ / -ot .git/HEAD ]
-  then
-    touch /
-  else
-    return
-  fi
-  if [ -f .git/index ] || [ -f .git ]
-  then
-    local gnr=$(git name-rev --name-only @)
-    PS1='\n\033[33m\w \033[36m'"$gnr"'\033[m\n$ '
-  else
-    PS1='\n\033[33m\w\033[m\n$ '
-  fi
+   history -w
+   if [ "$GSH" != "$PWD" ]
+   then
+      GSH=$PWD
+   elif [ / -ot .git/HEAD ]
+   then
+      touch /
+   else
+      return
+   fi
+   if [ -f .git/index ] || [ -f .git ]
+   then
+      local gnr=$(git name-rev --name-only @)
+      PS1='\n\033[33m\w \033[36m'"$gnr"'\033[m\n$ '
+   else
+      PS1='\n\033[33m\w\033[m\n$ '
+   fi
 }
 ncurl()
 {
-  curl -I -L "$@" | awk '
-  {
-    q = tolower($1)
-    if (q ~ /content-disposition|content-length|last-modified|location/)
-    {
-      $1 = "\33[1;32m" $1 "\33[m"
-    }
-    else if ($1 ~ /:/)
-    {
-      $1 = "\33[1;33m" $1 "\33[m"
-    }
-  }
-  1
-  '
+   curl -I -L "$@" | awk '
+   {
+      q = tolower($1)
+      if (q ~ /content-disposition|content-length|last-modified|location/)
+      {
+         $1 = "\33[1;32m" $1 "\33[m"
+      }
+      else if ($1 ~ /:/)
+      {
+         $1 = "\33[1;33m" $1 "\33[m"
+      }
+   }
+   1
+   '
 }
 nffprobe()
 {
-  ffprobe -hide_banner "$@" 2>&1 |
-  awk '
-  {
-    print $1 == "Stream" ? "\33[1;33m" $0 "\33[m": $0
-  }
-  '
+   ffprobe -hide_banner "$@" 2>&1 | awk '
+   {
+      print $1 == "Stream" ? "\33[1;33m" $0 "\33[m": $0
+   }
+   '
 }
 nfind()
 {
-  find '(' -xtype l -o -type d -empty ')' -delete -print
+   find '(' -xtype l -o -type d -empty ')' -delete -print
 }
 nod()
 {
-  od -An -tcx1 -w19 |
-  awk '
-  {
-    print NR % 2 ? "\33[1;32m" $0 "\33[m": $0
-  }
-  '
+   od -An -tcx1 -w19 | awk '
+   {
+      print NR % 2 ? "\33[1;32m" $0 "\33[m": $0
+   }
+   '
 }
 ntar()
 {
-  tar --checkpoint-action 'ttyout=\r\33[K%T' "$@"
+   tar --checkpoint-action 'ttyout=\r\33[K%T' "$@"
 }
 xs()
 {
-  z=$?
-  if [ "$z" = 0 ]
-  then
-    printf '\33[1;32m%d SUCCESS\33[m\n' "$z"
-  else
-    printf '\33[1;31m%d FAILURE\33[m\n' "$z"
-  fi
+   z=$?
+   if [ "$z" = 0 ]
+   then
+      printf '\33[1;32m%d SUCCESS\33[m\n' "$z"
+   else
+      printf '\33[1;31m%d FAILURE\33[m\n' "$z"
+   fi
 }
