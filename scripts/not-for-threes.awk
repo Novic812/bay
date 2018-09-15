@@ -21,6 +21,6 @@ BEGIN {
    a_sort(zu)
    for (de in zu)
    {
-      printf "%\47d\n", zu[de]
+      printf "%'d\n", zu[de]
    }
 }
