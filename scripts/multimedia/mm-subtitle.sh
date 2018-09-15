@@ -4,16 +4,16 @@ then
    echo 'mm-subtitle.sh <MP4> [SRT]'
    exit 1
 fi
-xr=$1
+wh=$1
 
 if [ "$2" ]
 then
-   zu=$2
+   xr=$2
 else
-   zu=$(mktemp XXX.srt)
-   k-trace ffmpeg -y -v warning -i "$xr" "$zu"
+   xr=$(mktemp XXX.srt)
+   ffmpeg -y -v warning -i "$wh" "$xr"
 fi
 
-ya=$(mktemp "XXX $xr")
-k-trace mp4box -add "$xr"'#video' -add "$xr"'#audio' \
--add "$zu":txtflags=0xC0000000 -new "$ya"
+zu=$(mktemp "XXX $wh")
+mp4box -add "$wh"'#video' -add "$wh"'#audio' \
+-add "$xr":txtflags=0xC0000000 -new "$zu"

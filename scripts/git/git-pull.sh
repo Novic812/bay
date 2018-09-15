@@ -5,7 +5,7 @@ then
    git-pull.sh <repo> <issue> <from user> <from branch> <to user> <to branch>
 
 example:
-   git-pull.sh jq 1671 cup patch-1 stedolan master
+   git-pull.sh redis 941 cup patch-1 antirez unstable
 
 notes:
    need to fork first'
