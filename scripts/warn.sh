@@ -20,7 +20,8 @@ packages:
 fi
 
 z="$1 $2"
-set -- -s -static -Wall -Wextra -Wconversion -pedantic -o "${3%.*}" "$3"
+# "-o" will not work with "/dev/clipboard"
+set -- -s -static -Wall -Wextra -Wconversion -pedantic "$3"
 
 case $z in
 'mingw32 g++')

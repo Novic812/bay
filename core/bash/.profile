@@ -18,7 +18,7 @@ export POSIXLY_CORRECT
 alias agit='git --no-pager'
 alias agrep='grep -I --color --exclude-dir .git'
 alias ahist='history | grep -i --color'
-alias als='ls -A -g -o'
+alias als='ls -A -N -g -o'
 alias aman='man -K -w'
 alias apr='pr -d -t'
 alias area='realpath -m'
@@ -49,11 +49,14 @@ ncurl()
    curl -I -L "$@" | awk '
    {
       q = tolower($1)
-      if (q ~ /content-disposition|content-length|last-modified|location/)
+      if (index(q, "content-disposition") ||
+      index(q, "content-length") ||
+      index(q, "last-modified") ||
+      index(q, "location"))
       {
          $1 = "\33[1;32m" $1 "\33[m"
       }
-      else if ($1 ~ /:/)
+      else if (index($1, ":"))
       {
          $1 = "\33[1;33m" $1 "\33[m"
       }
