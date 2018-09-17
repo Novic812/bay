@@ -8,7 +8,7 @@ BEGIN {
    }
    while (1)
    {
-      ta = n_div(a_sum(ARGV), 2)
+      ta = m_div(a_sum(ARGV), 2)
       if (xr[ta]++)
       {
          break

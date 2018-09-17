@@ -13,8 +13,10 @@
    /*
    - http://youtu.be/LgMcDT7PKuo
    - http://youtu.be/qKzmJhSFHzc?t=2m
+   - http://youtu.be/f54sDEmHJI4?t=3m30s
    */
-   .annotation, .video-annotations, .ytp-cards-button, .ytp-cards-teaser
+   .annotation, .video-annotations, .ytp-cards-button, .ytp-cards-teaser,
+   .ytp-ce-element
    {
       display: none !important;
    }

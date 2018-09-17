@@ -3,7 +3,7 @@ function tg(mix,   br, ec)
 {
    for (br = 100; br >= 1; br /= 10)
    {
-      a_push(ec, n_div(mix, br))
+      a_push(ec, m_div(mix, br))
       mix %= br
    }
    return a_join(ec, ".")
@@ -42,5 +42,5 @@ BEGIN {
    printf "new tag insertions = %d\n", xr[1]
    printf "new tag deletions = %d\n", xr[2]
    printf "\33[1;33m%d/%d = %d%\33[m\n", a_max(xr), pa, ya
-   printf "new tag = %s\n", tg(zu * n_div(zu + ki, zu))
+   printf "new tag = %s\n", tg(zu * m_div(zu + ki, zu))
 }
