@@ -1,11 +1,12 @@
 <skin>
-  <osds>
-    <volume background="OSD/background.png">
-      <meter type="Text" format="[[PERC]]" font="Segoe UI" size="25"
-        style="Bold" align="center" x="-8" y="95" width="80" height="40"/>
-      <meter type="VerticalBar" image="OSD/bar.png" x="27" y="20" units="79"/>
-    </volume>
-    <mute background="OSD/background.png"/>
-    <eject/>
-  </osds>
+   <osds>
+      <volume background="OSD/background.png">
+         <meter type="Text" format="[[PERC]]" font="Segoe UI" size="25"
+         style="Bold" align="center" x="-8" y="95" width="80" height="40"/>
+         <meter type="VerticalBar" image="OSD/bar.png" x="27" y="20"
+         units="79"/>
+      </volume>
+      <mute background="OSD/background.png"/>
+      <eject/>
+   </osds>
 </skin>
