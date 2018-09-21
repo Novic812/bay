@@ -10,7 +10,6 @@ msiexec | glade/glade-msi.sh
 notepad2 | bay/config/notepad2/notepad2.sh
 ping | youtube-dl -U
 reg | bay/config/windows/install.sh
-ruby | velour/time/tests/time.rb
 setx | bay/config/windows/install.sh
 typeperf | glade/contrib/bytes-per-sec.awk
 
