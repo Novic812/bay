@@ -17,12 +17,7 @@
    }
    .comment-body code, .comment-body pre, .highlight td
    {
-      font-size: 14px !important;
-   }
-   /* contribution */
-   .js-calendar-graph-svg
-   {
-      width: 700px;
+      font-size: 2ex !important;
    }
    /* contribution red */
    [fill="#196127"]
@@ -78,19 +73,16 @@
    {
       background: #fff !important;
       border: 1px solid #ddd !important;
-      box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1) !important;
       color: #333 !important;
    }
    .header-search-scope
    {
       border-right: 1px solid #eee !important;
       color: #767676 !important;
-      font-size: 13px !important;
    }
    .header-search-input
    {
       border: 0 !important;
-      font-size: 14px !important;
    }
    ::placeholder
    {
@@ -107,6 +99,6 @@
    /* short header */
    .Header
    {
-      padding: 7px !important;
+      padding: 1ex !important;
    }
 }
