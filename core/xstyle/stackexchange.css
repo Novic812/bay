@@ -27,6 +27,6 @@ domain("stackoverflow.com"), domain("superuser.com")
    }
    aside
    {
-      transform:none !important;
+      transform: none !important;
    }
 }
