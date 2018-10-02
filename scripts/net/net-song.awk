@@ -2,7 +2,7 @@
 BEGIN {
    if (ARGC != 4)
    {
-      print a_create(z, "synopsis: net-song.awk <type> <artist> <song>", "",
+      print a_create("synopsis: net-song.awk <type> <artist> <song>", "",
       "type:", "   1: initial search", "   2: upgrade search")
       exit 1
    }
