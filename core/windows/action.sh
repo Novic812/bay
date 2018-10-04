@@ -23,12 +23,6 @@ case $1 in
    }
    ' symlink.conf
 
-   # App Paths
-   set 'HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\'
-   REG ADD "$1"sh.exe /d 'C:\cygwin64\bin\sh.exe' /f
-   REG ADD "$1"cygstart.exe /d 'C:\cygwin64\bin\cygstart.exe' /f
-   REG ADD "$1"Notepad2.exe /d 'C:\Program Files\Notepad2\Notepad2.exe' /f
-
    # Notepad2
    REG ADD 'HKCR\.css' /v PerceivedType /f
    REG ADD 'HKCR\.htm' /v PerceivedType /f
@@ -70,10 +64,6 @@ case $1 in
    REG ADD 'HKCU\Console' /v WindowPosition /t REG_DWORD /d 0x012C0384 /f
    REG ADD 'HKCU\Console' /v WindowSize /t REG_DWORD /d 0x00180050 /f
 
-   # remove shortcut text - must restart explorer
-   set 'HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer'
-   REG ADD "$1" /v Link /t REG_BINARY /d 00000000 /f
-
    # Environment
    if REG DELETE 'HKCU\Environment' /v TMP /f 2>/dev/null
    then
@@ -82,9 +72,23 @@ case $1 in
    fi
    SETX PATH 'C:\ProgramData\Local\bin;C:\Windows\System32' /M
 
+   # remove shortcut text - must restart explorer
+   set 'HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer'
+   REG ADD "$1" /v Link /t REG_BINARY /d 00000000 /f
+
    # hide file extensions
    set 'HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced'
    REG ADD "$1" /v HideFileExt /t REG_DWORD /d 0 /f
+
+   # App Paths
+   set 'HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\'
+   REG ADD "$1"sh.exe /d 'C:\cygwin64\bin\sh.exe' /f
+   REG ADD "$1"cygstart.exe /d 'C:\cygwin64\bin\cygstart.exe' /f
+   REG ADD "$1"Notepad2.exe /d 'C:\Program Files\Notepad2\Notepad2.exe' /f
+
+   # font linking
+   set 'HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\FontLink\SystemLink'
+   reg add "$1" /f /t REG_MULTI_SZ /v Consolas /d 'segoeui.ttf\0seguisym.ttf'
    ;;
 -r)
    # have to do this first before we remove reg
