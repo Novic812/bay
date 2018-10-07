@@ -3,7 +3,7 @@
 BEGIN {
    if (ARGC != 2)
    {
-      print "stack-location.awk <file>"
+      print "net-location.awk <file>"
       exit 1
    }
    while (getline < ARGV[1] > 0)
