@@ -2,8 +2,8 @@ Browser | Issue
 --------|------
 Basilisk | http://github.com/MoonchildProductions/UXP/issues/343
 Brave | http://github.com/brave/browser-laptop/issues/3631
-Chrome Canary | http://superuser.com/q/319958
-Chromium | http://superuser.com/q/319958
+Chrome Canary | http://superuser.com/questions/319958
+Chromium | http://superuser.com/questions/319958
 Crusta Browser | http://github.com/CrustaBrowser/CrustaBrowser/issues/7
 Cyberfox | http://8pecxstudios.com/Forums/viewforum.php?f=5
 Dooble | http://github.com/textbrowser/dooble/issues/19
