@@ -11,12 +11,86 @@ backup:
    6: screenshot of installed programs
 
 restore:
-   external drives: remove
    install windows:
    - 100 gb
    - 900 gb
-   drivers:
-   - network
-   - graphics
-   cloud: google
    desktop folder location: d:\desktop
+
+control panel:
+   action center:
+      change action center settings:
+         windows update: off
+         network firewall: off
+         virus protection: off
+         windows backup: off
+      change user account control settings:
+         choose when to be notified about changes to your computer: never notify
+   autoplay:
+      use autoplay for all media and devices: no
+   display:
+      set custom text size (dpi):
+         scale to this percentage of normal size: 125%
+   ease of access center:
+      always read this section aloud: no
+      always scan this section: no
+      make the keyboard easier to use:
+         set up filter keys:
+            turn on filter keys when right shift is pressed for 8 seconds: no
+   folder options:
+      view:
+         apply to folders:
+         hide extensions for known file types: off
+         hide protected operating system files: off
+   indexing options:
+      1: c:\cloud
+      2: d:
+   personalization:
+      change desktop icons: computer
+      desktop background:
+         picture position: fill
+   power options:
+      balanced:
+         change plan settings:
+            turn off the display: 30 minutes
+            put the computer to sleep: 3 hours
+   programs and features:
+      turn windows features on or off:
+         media features:
+            windows dvd maker: off
+            windows media center: off
+   region and language:
+      short date: yyyy-mm-dd
+   system:
+      advanced system settings:
+         performance:
+            settings:
+            - show shadows under mouse pointer
+            - show thumbnails instead of icons
+            - smooth edges of screen fonts
+            - use drop shadows for icon labels on the desktop
+            - use visual styles on windows and buttons
+         startup and recovery:
+            settings:
+               system failure:
+                  automatically restart: no
+   taskbar and start menu:
+      taskbar:
+         taskbar buttons: combine when taskbar is full
+      start menu:
+         customize:
+            default programs: off
+            devices and printers: off
+            games: don't display this item
+            help: off
+            open submenus when i pause on them with the mouse pointer: no
+            videos: display as a link
+            number of recent programs to display: 10
+         privacy:
+            store and display recently opened items: off
+   windows firewall:
+      turn windows firewall on or off:
+         home network settings: turn off
+         public network settings: turn off
+   windows update:
+      change settings:
+         important updates: never check for updates
