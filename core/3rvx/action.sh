@@ -4,6 +4,7 @@ z=$q'/Windows Default'
 [ -d "$q" ]
 mkdir -p "$z"/OSD
 ln -f -s "$PWD"/skin.xml "$z"
+# FIXME need to create this folder first
 ln -f -s "$PWD"/settings.xml "$APPDATA"/3RVX
 cd "$z"/OSD
 set *.png
