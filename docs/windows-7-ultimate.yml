@@ -1,0 +1,22 @@
+rufus:   
+   partition scheme: mbr
+   cluster size: 64 kilobytes
+
+backup:
+   1: C:\ProgramData\Local
+   2: cloud storage
+   3: DriverBackup
+   4: screenshot of desktop
+   5: screenshot of firefox add-ons
+   6: screenshot of installed programs
+
+restore:
+   external drives: remove
+   install windows:
+   - 100 gb
+   - 900 gb
+   drivers:
+   - network
+   - graphics
+   cloud: google
+   desktop folder location: d:\desktop
