@@ -94,3 +94,6 @@ control panel:
    windows update:
       change settings:
          important updates: never check for updates
+
+references:
+   hibernation: http://support.microsoft.com/help/920730
