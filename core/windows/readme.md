@@ -13,5 +13,12 @@ reg | bay/config/windows/install.sh
 setx | bay/config/windows/install.sh
 typeperf | glade/contrib/bytes-per-sec.awk
 
-- http://blogs.technet.microsoft.com/jagbal/2017/09/04/where-can-i-download
-- http://superuser.com/questions/1257160/microsoft-visual-c-repository
+References
+----------
+
+http://blogs.technet.microsoft.com/jagbal/2017/09/04/where-can-i-download
+
+Further reading
+---------------
+
+http://superuser.com/questions/1257160/microsoft-visual-c-repository
