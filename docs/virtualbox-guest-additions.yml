@@ -4,40 +4,26 @@ virtualbox preferences:
    3: default machine folder
 
 windows guest additions:
-   1: install windows
-   2: uac
-   3:
-      a: devices
-      b: insert guest additions cd image
+   1: file, import appliance
+   2: machine, settings, storage, add optical drive
+   3: devices, insert guest additions cd image
    4: install guest additions
-   5:
-      a: devices
-      b: optical drives
-      c: remove disk from virtual drive
-   6:
-      a: devices
-      b: shared folders
-      c: shared folders settings
+   5: devices, optical drives, remove disk from virtual drive
+   6: devices, shared folders, shared folders settings
    7: add new shared folder
-   8:
-      folder path: d:\virtualbox shared
-   9:
-      make permanent: true
-   10:
-      access: \\vboxsvr\virtualbox shared
-   11: snapshot
+   8: folder path, d:\virtualbox shared
+   9: make permanent, true
+   10: create shortcut, \\vboxsvr\virtualbox shared
+   11: desktop background
+   12: snapshot
 
 linux guest additions:
    1: start virtual machine
    2: press right ctrl + f1, then right ctrl + f7
    3: sudo apt install virtualbox-guest-utils
-   4:
-      a: devices
-      b: shared folders
-      c: shared folders settings
+   4: devices, shared folders, shared folders settings
    5: add new shared folder
-   6:
-      folder path: d:\virtualbox shared
+   6: folder path, d:\virtualbox shared
    7: sudo mount -t vboxsf virtualbox_shared /mnt
 
 references:
