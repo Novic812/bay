@@ -86,6 +86,7 @@ control panel:
             videos: display as a link
             number of recent programs to display: 10
          privacy:
+            store and display recently opened programs: off
             store and display recently opened items: off
    windows firewall:
       turn windows firewall on or off:

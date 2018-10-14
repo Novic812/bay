@@ -27,6 +27,7 @@ linux guest additions:
    7: sudo mount -t vboxsf virtualbox_shared /mnt
 
 references:
-   1: http://wiki.archlinux.org/index.php/virtualbox#enable_shared_folders
+   1: http://developer.microsoft.com/microsoft-edge/tools/vms
+   2: http://wiki.archlinux.org/index.php/virtualbox#enable_shared_folders
 
 further reading: http://unix.stackexchange.com/questions/310620/-/429134
