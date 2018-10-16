@@ -31,6 +31,8 @@ case $1 in
 
    # Cygwin.bat
    REG ADD 'HKCR\*\shell\Notepad2\command' /f /d 'Notepad2 "%1"'
+   REG ADD 'HKCR\Unknown\shell' /f /d Notepad2
+   REG ADD 'HKCR\Unknown\shell\Notepad2\command' /f /d 'Notepad2 "%1"'
 
    # - working directory can contain single quotes; wrap with double quotes
    # - drive will end with backslash; add a space to counter
