@@ -35,6 +35,8 @@ qu = {
    'browser.urlbar.suggest.openpage': false,
    // trim URLs
    'browser.urlbar.trimURLs': false,
+   // telemetry
+   'datareporting.healthreport.uploadEnabled': false,
    // browser console
    'devtools.chrome.enabled': true,
    // disable notifications
@@ -60,9 +62,7 @@ qu = {
    // need this to use bookmarklets @ github.com
    'security.csp.enable': false,
    // remember passwords
-   'signon.rememberSignons': false,
-   // telemetry
-   'toolkit.telemetry.unified': false
+   'signon.rememberSignons': false
 };
 xr = {
    boolean: 'setBoolPref',

@@ -30,26 +30,7 @@ case $1 in
    REG ADD 'HKCR\.txt' /v PerceivedType /f
 
    # Cygwin.bat
-   REG ADD 'HKCR\batfile\shell\Notepad2\command' /d 'Notepad2 "%1"' /f
-   REG ADD 'HKCR\CSSfile\shell' /d Notepad2 /f
-   REG ADD 'HKCR\CSSfile\shell\Notepad\command' /d 'notepad "%1"' /f
-   REG ADD 'HKCR\CSSfile\shell\Notepad2\command' /d 'Notepad2 "%1"' /f
-   REG ADD 'HKCR\FirefoxHTML\shell' /d Firefox /f
-   REG ADD 'HKCR\FirefoxHTML\shell\Firefox\command' /d 'firefox "%1"' /f
-   REG ADD 'HKCR\FirefoxHTML\shell\Notepad\command' /d 'notepad "%1"' /f
-   REG ADD 'HKCR\FirefoxHTML\shell\Notepad2\command' /d 'Notepad2 "%1"' /f
-   REG ADD 'HKCR\inifile\shell' /d Notepad2 /f
-   REG ADD 'HKCR\inifile\shell\Notepad\command' /d 'notepad "%1"' /f
-   REG ADD 'HKCR\inifile\shell\Notepad2\command' /d 'Notepad2 "%1"' /f
-   REG ADD 'HKCR\JSFile\shell' /d Notepad2 /f
-   REG ADD 'HKCR\JSFile\shell\Notepad\command' /d 'notepad "%1"' /f
-   REG ADD 'HKCR\JSFile\shell\Notepad2\command' /d 'Notepad2 "%1"' /f
-   REG ADD 'HKCR\txtfile\shell' /d Notepad2 /f
-   REG ADD 'HKCR\txtfile\shell\Notepad\command' /d 'notepad "%1"' /f
-   REG ADD 'HKCR\txtfile\shell\Notepad2\command' /d 'Notepad2 "%1"' /f
-   REG ADD 'HKCR\Unknown\shell' /d Notepad2 /f
-   REG ADD 'HKCR\Unknown\shell\Notepad\command' /d 'notepad "%1"' /f
-   REG ADD 'HKCR\Unknown\shell\Notepad2\command' /d 'Notepad2 "%1"' /f
+   REG ADD 'HKCR\*\shell\Notepad2\command' /f /d 'Notepad2 "%1"'
 
    # - working directory can contain single quotes; wrap with double quotes
    # - drive will end with backslash; add a space to counter
@@ -92,12 +73,7 @@ case $1 in
    ;;
 -r)
    # have to do this first before we remove reg
-   REG DELETE 'HKCR\CSSfile\shell' /f
-   REG DELETE 'HKCR\FirefoxHTML\shell' /f
-   REG DELETE 'HKCR\inifile\shell' /f
-   REG DELETE 'HKCR\JSFile\shell' /f
-   REG DELETE 'HKCR\txtfile\shell' /f
-   REG DELETE 'HKCR\Unknown\shell' /f
+   REG DELETE 'HKCR\*\shell\Noteapd2' /f
 
    # remove symlinks
    velour '
