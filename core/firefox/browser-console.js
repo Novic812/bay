@@ -35,8 +35,6 @@ qu = {
    'browser.urlbar.suggest.openpage': false,
    // trim URLs
    'browser.urlbar.trimURLs': false,
-   // Firefox automatically sends some data to Mozilla
-   'datareporting.policy.dataSubmissionPolicyBypassNotification': true,
    // browser console
    'devtools.chrome.enabled': true,
    // disable notifications
@@ -62,7 +60,9 @@ qu = {
    // need this to use bookmarklets @ github.com
    'security.csp.enable': false,
    // remember passwords
-   'signon.rememberSignons': false
+   'signon.rememberSignons': false,
+   // telemetry
+   'toolkit.telemetry.unified': false
 };
 xr = {
    boolean: 'setBoolPref',
