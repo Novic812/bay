@@ -42,8 +42,11 @@ control panel:
          hide extensions for known file types: off
          hide protected operating system files: off
    indexing options:
-      1: c:\cloud
-      2: d:
+      modify:
+         1: c:\cloud
+         2: d:
+      advanced:
+         1: json
    personalization:
       change desktop icons: computer
       desktop background:
