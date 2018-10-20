@@ -44,26 +44,6 @@ gsh()
       PS1='\n\033[33m\w\033[m\n$ '
    fi
 }
-ncurl()
-{
-   curl -I -L "$@" | awk '
-   {
-      q = tolower($1)
-      if (index(q, "content-disposition") ||
-      index(q, "content-length") ||
-      index(q, "last-modified") ||
-      index(q, "location"))
-      {
-         $1 = "\33[1;32m" $1 "\33[m"
-      }
-      else if (index($1, ":"))
-      {
-         $1 = "\33[1;33m" $1 "\33[m"
-      }
-   }
-   1
-   '
-}
 nffprobe()
 {
    ffprobe -hide_banner "$@" 2>&1 | awk '
